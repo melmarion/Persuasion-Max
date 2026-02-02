@@ -99,7 +99,7 @@ All mechanisms listed below operate within constraint classes or are unclassifie
 **Constraint Class:** 🟡 (population targeting)
 
 **Mechanism:**
-- Algorithm cycles emotional states: anger → joy → anger → relief/solution
+- Algorithm cycles emotional states: A-J-A-R (anger-joy-anger-relief/solution)
 - Brain craves stability after emotional disruption; final stimulus becomes "preferred choice"
 - Operates below conscious awareness through neurochemical pathways
 - Real-time calibration per individual psychology through behavioral data

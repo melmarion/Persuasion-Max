@@ -153,7 +153,7 @@ By cycle 4, the conscious evaluation system has essentially surrendered.
 - Algorithm optimizes for one metric: **engagement** (time on app, clicks, shares)
 - Engineers don't understand psychology/neuroscience
 - Algorithm discovers through trial-and-error: certain content sequences create higher engagement
-- Pattern emerges: emotional cycling gets clicks
+- Pattern emerges: emotional sequencing gets clicks
 
 **The mechanism is discovered empirically, not designed intentionally**
 

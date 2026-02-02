@@ -165,7 +165,7 @@ After 10+ minutes of social media:
 
 **Analysis:**
 - Map emotional content in sequence
-- Do you see anger → joy → anger → product?
+- Do you see A-J-A-R (anger-joy-anger-relief/product) sequence?
 - Does the sequence differ per account?
 - Which sequences create engagement?
 

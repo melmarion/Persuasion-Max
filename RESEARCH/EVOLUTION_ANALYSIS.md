@@ -393,7 +393,7 @@
 
 #### 2. **Fractionation Cycles (Emotional Hypnosis)**
 **How it works:**
-- Algorithm cycles through emotional states in rapid sequence: anger → joy → anger → ad relief
+- Algorithm cycles through emotional states in rapid sequence: A-J-A-R (anger-joy-anger-relief)
 - After 4 cycles in under 10 minutes, users 200%+ more suggestible
 - **Mechanism:** Brain craves stability after emotional chaos; ad becomes "stable ground"
 

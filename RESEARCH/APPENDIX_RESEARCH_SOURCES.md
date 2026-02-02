@@ -152,8 +152,8 @@ This appendix provides the academic and regulatory sources underlying the detect
 
 | Measure | Normal Range | Indicator State |
 |---------|--------------|-----------------|
-| Blink Rate | 15-20/min | <10/min = focused engagement |
-| Blink Rate (Arousal) | 30-45/min | Elevated during threat content |
+| Blink Rate | 15-20 blinks/min | <10 blinks/min = focused engagement |
+| Blink Rate (Arousal) | 30-45 blinks/min | Elevated during threat content |
 | Skin Conductance | 0-1 microsiemens | 2-5 = elevated arousal |
 | HRV | 50-100ms | <40ms = stress/anger |
 | Pupil Dilation | 1.0 (baseline) | 1.15+ = reduced critical engagement |
@@ -179,6 +179,25 @@ This appendix provides the academic and regulatory sources underlying the detect
 | Algorithmic polarization shift | 2+ points/100 | Science 2024 |
 | Analytical capability after 10-15 decisions | -40% | Decision fatigue research |
 | FOMO-influenced millennial purchases | 68% within 24 hours | Consumer research |
+
+---
+
+## PRECISION AUDIT METRIC CALIBRATION SOURCES
+
+| Metric | Threshold Value | Research Source |
+|--------|-----------------|-----------------|
+| Circadian cognitive low | 2-4 AM = 40%+ reduced critical thinking | Circadian neuroscience research |
+| Decision fatigue onset | 7 decisions | Baumeister ego depletion studies |
+| Decision fatigue severe | 20 decisions = +35% compliance | Marketing research |
+| Working memory limit | 7 ± 2 chunks | Miller (1956) cognitive psychology |
+| Hot-cold empathy gap | 50%+ prediction error | Loewenstein behavioral economics |
+| Loss aversion ratio | 2x (losses vs gains) | Kahneman & Tversky |
+| Urgency critical threshold | <60 seconds remaining | E-commerce conversion research |
+| Scarcity critical threshold | 1-3 units remaining | Cialdini scarcity studies |
+| Price anchor suspicious ratio | >3.0x (70%+ discount) | Consumer behavior research |
+| Social proof credibility floor | <100 reviews = suspicious | Fake review detection studies |
+| Notification arousal window | 0-30 seconds = peak susceptibility | Attention capture research |
+| Stacking multiplier per technique | +15% per additional technique | Combination effectiveness studies |
 
 ---
 

@@ -23,7 +23,7 @@ This positions you to own an entire market that doesn't yet exist.
 - Neuroscientists understand brain mechanisms in labs without real-world access (you prove they matter at scale)
 - Economists observe irrational behavior without understanding emotion mechanisms (you show the neurochemistry that forces it)
 
-**What you'll discover:** Fractionation (rapid emotional cycling) increases behavioral suggestibility by 200%+, increases purchasing impulse 40-60%, and is invisible to users.
+**What you'll discover:** Fractionation (rapid emotional sequencing) increases behavioral suggestibility by 200%+, increases purchasing impulse 40-60%, and is invisible to users.
 
 ---
 

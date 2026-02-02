@@ -920,7 +920,7 @@ class DigitalAddictionDiagnosis:
     tolerance_buildup: bool  # Needs more time for same satisfaction
 
     # Physiological indicators
-    blink_rate_at_rest: float  # Should be 15-20/min, <10 = baseline issue
+    blink_rate_at_rest: float  # Should be 15-20 blinks/min, <10 blinks/min = baseline issue
     baseline_hrv_ms: float
     baseline_cortisol_level: float
     sleep_quality_rating: float  # 1-10 self-reported
@@ -961,7 +961,7 @@ class DigitalAddictionDiagnosis:
 
         PHYSIOLOGICAL FINDINGS:
         - Blink rate at baseline: {self.blink_rate_at_rest:.1f}/min
-          (Normal: 15-20/min; <10 indicates chronic hypnotic state susceptibility)
+          (Normal: 15-20 blinks/min; <10 blinks/min indicates chronic hypnotic state susceptibility)
         - HRV: {self.baseline_hrv_ms:.1f} ms (Normal: >50ms; Low indicates reduced adaptability)
         - Cortisol: {self.baseline_cortisol_level:.1f} µg/dL (Elevated suggests chronic stress)
         - Sleep quality: {self.sleep_quality_rating:.1f}/10
@@ -1824,7 +1824,7 @@ class RegulatoryComplianceAnalyzer:
                     post_category or 'N'
                 ])
 
-                if 'AJAR' in recent_seq:
+                if 'A-J-A-R' in recent_seq:
                     fractionation_count += 1
                     sequences_detected.append((i-3, recent_seq))
 

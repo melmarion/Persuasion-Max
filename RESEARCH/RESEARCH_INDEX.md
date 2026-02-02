@@ -2,13 +2,37 @@
 
 ## Overview
 
-This research package contains 5 comprehensive documents analyzing how persuasion techniques have evolved from early psychology to modern digital systems.
+This research package contains **7 comprehensive documents** analyzing persuasion techniques—from historical evolution to modern digital systems, and now including **systematic linguistic analysis**.
 
 **Key finding:** Persuasion hasn't fundamentally changed—human psychology hasn't. What's evolved is **scale, precision, and invisibility** through technology and data.
+
+**NEW:** The package now includes dedicated **linguistic persuasion research**, covering rhetorical devices, syntactic patterns, semantic framing, and pragmatic mechanisms—filling a critical gap in the original framework.
 
 ---
 
 ## Document Guide
+
+### NEW: LINGUISTIC_PERSUASION_RESEARCH.md
+**What:** Systematic analysis of language-based influence techniques
+**Covers:** Rhetorical devices, syntactic patterns, framing effects, pragmatics, discourse markers
+**Length:** ~4,500 words
+**Best for:** Understanding HOW language itself persuades (beyond psychological content)
+
+**Contents:**
+- **Part 1:** Rhetorical Devices (anaphora, antithesis, rhetorical questions, chiasmus)
+- **Part 2:** Syntactic Patterns (active/passive voice, nominalization, sentence complexity)
+- **Part 3:** Semantic Framing (loss vs. gain, euphemism, dysphemism)
+- **Part 4:** Pragmatics (presupposition, implicature, indirect directives)
+- **Part 5:** Discourse Markers (causal connectives, contrast markers)
+- **Part 6:** Hedging & Certainty (epistemic modality, boosters)
+- **Part 7:** Register & Formality (authority vs. intimacy signaling)
+- **Part 8:** Linguistic Personality Matching (targeting by Big Five traits)
+
+**Key insight:** Many linguistic influence techniques operate below conscious awareness—listeners focus on *what* is said while *how* it's said shapes their response.
+
+**Companion document:** `DETECTION/LINGUISTIC_DETECTION_FRAMEWORK.md` (production Python code)
+
+---
 
 ### 1. EVOLUTION_ANALYSIS.md
 **What:** Historical progression of persuasion from theory to practice
@@ -150,7 +174,7 @@ AI (2020-2026)
 
 1. **Bernays:** Emotional arc in campaigns (threat → relief)
 2. **Goebbels:** Emotional priming before facts (emotion blocks reason)
-3. **Platforms:** Fractionation cycles (anger → joy → anger → relief)
+3. **Platforms:** Fractionation cycles (A-J-A-R: anger-joy-anger-relief)
    - Algorithm discovered empirically: 4 cycles in 10 min = 200%+ susceptibility
    - Completely automated; platform didn't understand what it was doing
    - User doesn't recognize pattern
@@ -226,6 +250,14 @@ AI (2020-2026)
 - Noble - Algorithms of Oppression
 - Harris - The Attention Merchants
 - Sunstein - Nudge, Sludge
+
+**Linguistic (NEW):**
+- Aristotle - Rhetoric
+- Lakoff & Johnson - Metaphors We Live By
+- Fairclough - Language and Power
+- Perelman & Olbrechts-Tyteca - The New Rhetoric
+- O'Keefe - Persuasion: Theory and Research
+- Grice - Logic and Conversation
 
 ---
 

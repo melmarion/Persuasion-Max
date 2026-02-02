@@ -878,7 +878,7 @@ class EmotionalContagionDetector:
             if emotion_counts['anger'] > emotion_counts['fear'] * 2:
                 analysis['manipulation_indicators'].append('ANGER_AMPLIFICATION')
 
-            # Check for emotional cycling (fractionation)
+            # Check for emotional sequencing (fractionation)
             if self._detect_emotional_cycling(posts):
                 analysis['manipulation_indicators'].append('EMOTIONAL_CYCLING_DETECTED')
                 analysis['contagion_risk_score'] += 0.2
@@ -913,7 +913,7 @@ class EmotionalContagionDetector:
             if emotions_sequence[i] != emotions_sequence[i-1]:
                 switches += 1
 
-        # High switch rate = emotional cycling
+        # High switch rate = emotional sequencing
         switch_rate = switches / len(emotions_sequence) if emotions_sequence else 0
 
         return switch_rate > 0.4  # More than 40% switches
@@ -1667,9 +1667,9 @@ class InfiniteScrollDetector:
 - Gaze patterns reveal deception in sender-receiver games
 
 **Blink Rate:**
-- Normal: 15-20/minute
-- Focused engagement: <10/minute
-- Elevated arousal: 30-45/minute
+- Normal: 15-20 blinks/min
+- Focused engagement: <10 blinks/min
+- Elevated arousal: 30-45 blinks/min
 
 **Skin Conductance (GSR):**
 - 2-5 microsiemens = elevated arousal
