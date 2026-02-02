@@ -417,4 +417,123 @@ Removing or oversimplifying specifications destroys analytical credibility and u
 
 ---
 
+## TECHNIQUE CLASSIFICATION MATRIX
+
+| Technique | Disclosure | Targeting | Mechanism Transparency | Effectiveness |
+|-----------|------------|-----------|------------------------|---------------|
+| Visual presentation | High | Population | Clear | 20-40% |
+| Transparent social proof | High | Population | Clear | 35-75% |
+| Genuine scarcity signals | High | Population | Clear | 60%+ |
+| Transparent anchoring | High | Population | Clear | 40-60% |
+| Quantified scarcity | Moderate | Population | Partial | 60%+ |
+| Curated social proof | Moderate | Population | Partial | 35-75% |
+| Authority (undisclosed relationship) | Moderate | Population | Partial | 65%+ |
+| Temporal emotional sequencing | Moderate | Population | Partial | 200%+ |
+| Default choice architecture | Moderate | Population | Partial | 50-90% |
+| Demographic targeting | Moderate | Group | Partial | 30-50% |
+| Identity misrepresentation | Low | Population | Hidden | Variable |
+| Deceptive credentials | Low | Population | Hidden | 65%+ |
+| Hidden commercial intent | Low | Population | Hidden | Variable |
+| Algorithmic filtering | Low | Individual | Hidden | 70-85% |
+| Behavioral commitment lock-in | Low | Individual | Hidden | 65-90% |
+| Cognitive load optimization | Low | Individual | Hidden | Variable |
+| Vulnerability targeting | Low | Individual | Hidden | 30-50% |
+| Consensus falsification | Low | Population | Hidden | 35-75% |
+| Psychological state targeting | Low | Individual | Hidden | 200%+ |
+| Behavioral funnel routing | Low | Individual | Hidden | Variable |
+
+---
+
+## EFFECTIVENESS STACKING
+
+**For maximum effect, combine mechanisms in this order:**
+
+**Tier 1 Stack (200%+ effect):**
+1. Emotional fractionation cycles
+2. Identity lock-in through public commitment
+3. Algorithmic curation
+
+**Tier 2 Stack (50-90% effect):**
+4. Default choice architecture
+5. Authority symbols
+6. Social proof
+7. Scarcity signals
+
+**Tier 3-4 Stack (15-50% effect):**
+8. Semantic framing
+9. Reciprocity triggers
+10. Anchoring
+11. Personalization
+12. Repetition
+
+**Tier 5 Stack (10-30% effect):**
+13. Sunk cost psychology
+14. Mental accounting
+15. Tribe belonging
+
+---
+
+## PRECISE EFFECTIVENESS METRICS SUMMARY
+
+| Mechanism | Effectiveness | Threshold |
+|-----------|---------------|-----------|
+| Emotional fractionation | 200%+ susceptibility | 4 cycles in ~10 min |
+| Identity lock-in | 65-90% consistency | After public act |
+| Algorithmic isolation | 70-85% persistence | In curated bubble |
+| Default architecture | 50-90% | Depending on friction |
+| Authority symbols | 65%+ obedience increase | With authority present |
+| Social proof | 35-75% | Depending on visibility |
+| Scarcity signals | 60%+ conversion | "Only X left" messaging |
+| Anchoring | 40-60% pull | Toward first number |
+| Illusory truth | Cumulative | After 3-5 exposures |
+
+---
+
+## PRECISE MECHANISMS (Not Interchangeable Terms)
+
+- **Illusory truth effect** (NOT just "familiarity")
+- **Cognitive dissonance resolution** (NOT just "consistency")
+- **Neurochemical entrainment at 90-110 BPM** (NOT generalized "emotional manipulation")
+- **Fractionation cycles** (NOT just "emotional content")
+- **3-5 exposure threshold** for illusory truth (specific & measurable)
+
+---
+
+## EVOLUTION CHAINS (Historical Context)
+
+- **Repetition:** Freud → Bernays → Goebbels → Platforms → AI
+- **Authority:** Bernays → Goebbels → Platforms → AI
+- **Identity lock-in:** Bernays → Goebbels → Platforms
+
+---
+
+## RESEARCH MEASUREMENT QUESTIONS
+
+### Effectiveness Measurement
+- What behavioral change magnitude results from specific technique implementations?
+- How does effectiveness vary across individual differences (age, cognitive capacity, psychological profile)?
+- What measurement approaches can distinguish technique effects from baseline behavior change?
+
+### Mechanism Characterization
+- How do identified information asymmetry dimensions affect behavioral outcomes?
+- Which disclosure dimensions have largest behavioral effects?
+- Can behavioral changes be predicted from information asymmetry profiles?
+
+### Population Heterogeneity
+- Which populations show differential susceptibility to specific techniques?
+- What individual characteristics predict technique sensitivity?
+- Can vulnerability profiles be identified through behavioral or physiological assessment?
+
+### System Integration Effects
+- How do techniques compound when applied in combination?
+- What is the interaction between multiple information asymmetry dimensions?
+- Can algorithmic systems create emergent effects not present with individual techniques?
+
+### Reversibility and Recovery
+- To what extent can behavior changes be reversed after manipulation exposure?
+- What factors affect return to baseline behaviors?
+- Can awareness of technique mechanism affect subsequent susceptibility?
+
+---
+
 **This is technical documentation. Constraint classes are operational classification only—not moral judgment.**
