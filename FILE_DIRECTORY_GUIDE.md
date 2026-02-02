@@ -40,7 +40,7 @@ Persuasion Max/
 │   └── BEHAVIORAL_ANALYSIS_FRAMEWORK.md
 │
 ├── RESEARCH/                       # Research foundation & case studies
-│   ├── 19_REAL_WORLD_CASE_STUDIES_DETAILED.md  # Famous examples with detection rules
+│   ├── 19_REAL_WORLD_CASE_STUDIES_DETAILED.md
 │   ├── 25_EXPANDED_RESEARCH_DIMENSIONS.md
 │   ├── APPENDIX_RESEARCH_SOURCES.md
 │   ├── BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md
@@ -48,6 +48,7 @@ Persuasion Max/
 │   ├── EVOLUTION_PATTERNS_AND_MECHANISMS.md
 │   ├── FRACTIONATION_BEHAVIORAL_SCIENCE.md
 │   ├── FRACTIONATION_DETECTION_METHODS.md
+│   ├── RESEARCH_INDEX.md
 │   └── RESEARCH_SUMMARY_AND_NEXT_STEPS.md
 │
 ├── EXECUTION/                      # Implementation roadmaps
@@ -55,14 +56,12 @@ Persuasion Max/
 │   ├── 08_QUICK_START_CHECKLIST.md            # 48-hour setup
 │   └── 22_IMPLEMENTATION_SPECIFICATION.md
 │
-├── ETHICS/                         # Ethical frameworks
-│   ├── RED_LINES_AND_ETHICAL_BOUNDARIES.md
-│   ├── COMBINED_ETHICAL_FRAMEWORK.md
-│   └── ETHICAL_FRAMEWORK_FINAL.md
+├── ETHICS/                         # Ethical framework (consolidated)
+│   └── ETHICAL_FRAMEWORK.md        # Complete ethical boundaries & audit
 │
-├── META/                           # Project summaries & status
-│   ├── 09_MASTER_COMPLETION_SUMMARY.md
-│   └── [other completion reports]
+├── META/                           # Project status
+│   ├── PROJECT_STATUS.md           # System overview & capabilities
+│   └── 20_COMPREHENSIVE_GAP_ANALYSIS.md
 │
 └── Compilation.txt                 # Raw research data (2.3MB)
 ```
@@ -91,6 +90,9 @@ Persuasion Max/
 2. `EXECUTION/07_COMPLETE_IMPLEMENTATION_ROADMAP.md` - 24-month plan
 3. `EXECUTION/22_IMPLEMENTATION_SPECIFICATION.md` - Full spec
 
+### I want the ETHICAL framework
+1. `ETHICS/ETHICAL_FRAMEWORK.md` - Complete ethical boundaries, audit checklists, and rule violations
+
 ---
 
 ## FILE COUNTS BY FOLDER
@@ -100,11 +102,11 @@ Persuasion Max/
 | ROOT | 5 | Core docs + entry points |
 | CODE | 3 | Production Python code |
 | DETECTION | 8 | Detection frameworks & patterns |
-| RESEARCH | 9 | Research foundation & case studies |
+| RESEARCH | 10 | Research foundation & case studies |
 | EXECUTION | 3 | Implementation roadmaps |
-| ETHICS | 3 | Ethical frameworks |
-| META | 9 | Project summaries |
-| **TOTAL** | **40** | - |
+| ETHICS | 1 | Ethical framework (consolidated) |
+| META | 2 | Project status |
+| **TOTAL** | **32** | - |
 
 ---
 
@@ -147,6 +149,7 @@ Persuasion Max/
 | `EVOLUTION_PATTERNS_AND_MECHANISMS.md` | Technique transformations |
 | `BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md` | Week-by-week research execution |
 | `RESEARCH_SUMMARY_AND_NEXT_STEPS.md` | 7 research questions + trajectory |
+| `RESEARCH_INDEX.md` | Quick reference + evolution chain visualization |
 | `APPENDIX_RESEARCH_SOURCES.md` | Source citations |
 
 ---
@@ -158,3 +161,5 @@ Persuasion Max/
 **For Researchers:** `RESEARCH/FRACTIONATION_BEHAVIORAL_SCIENCE.md` → `RESEARCH/FRACTIONATION_DETECTION_METHODS.md`
 
 **For Auditors:** `DETECTION/15_PROFESSIONAL_AUDITOR_MANUAL.md` → `DETECTION/11_TACTICAL_DETECTION_FRAMEWORK.md`
+
+**For Ethics/Policy:** `ETHICS/ETHICAL_FRAMEWORK.md` (complete ethical boundaries and audit checklists)
