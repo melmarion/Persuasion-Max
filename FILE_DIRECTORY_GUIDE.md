@@ -37,6 +37,7 @@ Persuasion Max/
 │   ├── 15_PROFESSIONAL_AUDITOR_MANUAL.md
 │   ├── 17_MACHINE_READABLE_DETECTION_SYSTEM.md
 │   ├── 24_ENHANCED_DETECTION_RESEARCH.md
+│   ├── 26_COMPREHENSIVE_DETECTION_FRAMEWORKS.md
 │   └── BEHAVIORAL_ANALYSIS_FRAMEWORK.md
 │
 ├── RESEARCH/                       # Research foundation & case studies
@@ -99,14 +100,14 @@ Persuasion Max/
 
 | Folder | Files | Purpose |
 |--------|-------|---------|
-| ROOT | 5 | Core docs + entry points |
+| ROOT | 6 | Core docs + entry points |
 | CODE | 3 | Production Python code |
-| DETECTION | 8 | Detection frameworks & patterns |
+| DETECTION | 9 | Detection frameworks & patterns |
 | RESEARCH | 10 | Research foundation & case studies |
 | EXECUTION | 3 | Implementation roadmaps |
 | ETHICS | 1 | Ethical framework (consolidated) |
 | META | 2 | Project status |
-| **TOTAL** | **32** | - |
+| **TOTAL** | **34** | - |
 
 ---
 
@@ -133,7 +134,8 @@ Persuasion Max/
 | `15_PROFESSIONAL_AUDITOR_MANUAL.md` | How to conduct audits |
 | `17_MACHINE_READABLE_DETECTION_SYSTEM.md` | Regex patterns, JSON scoring |
 | `24_ENHANCED_DETECTION_RESEARCH.md` | Latest research + enhanced code |
-| `BEHAVIORAL_ANALYSIS_FRAMEWORK.md` | Behavioral science methodology |
+| `26_COMPREHENSIVE_DETECTION_FRAMEWORKS.md` | Multimodal, platform-specific, AI detection |
+| `BEHAVIORAL_ANALYSIS_FRAMEWORK.md` | Effectiveness metrics & technical specs |
 
 ---
 

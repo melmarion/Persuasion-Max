@@ -49,21 +49,15 @@ This research package contains 5 comprehensive documents analyzing how persuasio
 
 ---
 
-### 3. RED_LINES_AND_ETHICAL_BOUNDARIES.md
+### 3. ETHICS/ETHICAL_FRAMEWORK.md
 **What:** Ethical framework distinguishing persuasion from manipulation
-**Covers:** Informed consent as the boundary; tier 1-3 ethical spectrum
-**Length:** ~3,000 words
+**Covers:** Three bright-line rules; tier 1-3 ethical spectrum; audit checklists
 **Best for:** Understanding where to draw ethical lines
 
 **Structure:**
-- **Tier 1 (Green):** Ethical persuasion (truth, honest authority, transparent motives)
-- **Tier 2 (Yellow):** Gray zone (legal but questionable; disclosing might change effectiveness)
-- **Tier 3 (Red):** Clear manipulation (deception, hidden intent, compromised autonomy)
-
-**Key principles:**
-- Informed consent = person has true info + transparent motives + accessible alternatives + cognitive capacity + meaningful choice
-- Red lines = violations of informed consent
-- Current regulatory gaps (what's NOT legally required but ethically problematic)
+- **Rule 1:** No false claims about product function
+- **Rule 2:** No obstruction of exit
+- **Rule 3:** No targeting crisis states
 
 **Key insight:** Regulatory frameworks haven't kept up with technique evolution
 
@@ -199,22 +193,22 @@ AI (2020-2026)
 1. Read EVOLUTION_ANALYSIS.md (understand historical context)
 2. Read EVOLUTION_PATTERNS_AND_MECHANISMS.md (understand specific escalations)
 3. Read RESEARCH_SUMMARY_AND_NEXT_STEPS.md (identify your research question)
-4. Use RED_LINES_AND_ETHICAL_BOUNDARIES.md as reference
+4. Use ETHICS/ETHICAL_FRAMEWORK.md as reference
 
 ### If you're designing platforms:
 1. Read EVOLUTION_PATTERNS_AND_MECHANISMS.md (understand how your algorithm might manipulate)
 2. Check RESEARCH_SUMMARY_AND_NEXT_STEPS.md for audit recommendations
-3. Use RED_LINES_AND_ETHICAL_BOUNDARIES.md to identify what to remove
+3. Use ETHICS/ETHICAL_FRAMEWORK.md to identify what to remove
 
 ### If you're writing policy:
 1. Read EVOLUTION_ANALYSIS.md (understand what you're regulating)
-2. Use RED_LINES_AND_ETHICAL_BOUNDARIES.md (establish bright lines)
+2. Use ETHICS/ETHICAL_FRAMEWORK.md (establish bright lines)
 3. Reference RESEARCH_SUMMARY_AND_NEXT_STEPS.md (understand what's measured vs. assumed)
 
 ### If you're teaching/educating:
 1. Use EVOLUTION_ANALYSIS.md for historical context
 2. Use EVOLUTION_PATTERNS_AND_MECHANISMS.md for specific examples
-3. Use RED_LINES_AND_ETHICAL_BOUNDARIES.md for ethical framework
+3. Use ETHICS/ETHICAL_FRAMEWORK.md for ethical framework
 4. Use RESEARCH_SUMMARY_AND_NEXT_STEPS.md for awareness/inoculation
 
 ---

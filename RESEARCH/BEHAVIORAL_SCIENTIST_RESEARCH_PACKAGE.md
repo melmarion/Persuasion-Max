@@ -19,7 +19,7 @@ A comprehensive research package on **fractionation** (emotional cycling as a ma
    - Shows why fractionation is most dangerous evolution
    - Specific examples of technique adaptation
 
-3. **RED_LINES_AND_ETHICAL_BOUNDARIES.md**
+3. **ETHICS/ETHICAL_FRAMEWORK.md**
    - Ethical framework: persuasion vs manipulation
    - Identifies bright-line rules
    - Regulatory gaps and policy recommendations
@@ -473,7 +473,7 @@ The question is: Will you?
 ### Your Documents (All in Same Folder)
 1. EVOLUTION_ANALYSIS.md - Historical context
 2. EVOLUTION_PATTERNS_AND_MECHANISMS.md - Technical analysis
-3. RED_LINES_AND_ETHICAL_BOUNDARIES.md - Ethics framework
+3. ETHICS/ETHICAL_FRAMEWORK.md - Ethics framework
 4. RESEARCH_SUMMARY_AND_NEXT_STEPS.md - Research design
 5. FRACTIONATION_BEHAVIORAL_SCIENCE.md - Mechanism details
 6. FRACTIONATION_DETECTION_METHODS.md - Measurement methods

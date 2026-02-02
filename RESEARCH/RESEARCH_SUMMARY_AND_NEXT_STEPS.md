@@ -24,7 +24,7 @@ Three detailed research documents analyzing how persuasion techniques evolved:
      - Information isolation
      - Behavioral prediction & pre-commitment
 
-3. **RED_LINES_AND_ETHICAL_BOUNDARIES.md**
+3. **ETHICS/ETHICAL_FRAMEWORK.md**
    - Ethical framework for distinguishing persuasion from manipulation
    - Informed consent as the boundary
    - Tier 1-3 ethical spectrum (Green/Yellow/Red zones)
