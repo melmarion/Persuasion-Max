@@ -13,7 +13,21 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(grep:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(for file in *.md)",
+      "Bash(do)",
+      "Bash(if [[ \"$file\" != \"00_CORE_THESIS.md\")",
+      "Bash(\"$file\" != \"00_READ_THIS_FIRST.md\")",
+      "Bash(\"$file\" != \"RED_LINES_AND_ETHICAL_BOUNDARIES.md\")",
+      "Bash(\"$file\" != \"COMBINED_ETHICAL_FRAMEWORK.md\")",
+      "Bash(\"$file\" != \"ETHICAL_FRAMEWORK_FINAL.md\")",
+      "Bash(\"$file\" != \"01_TOOLS_YOU_CAN_BUILD.md\" ]])",
+      "Bash(then)",
+      "Bash(echo:*)",
+      "Bash(fi:*)",
+      "Bash(done)",
+      "Bash(git restore:*)",
+      "Bash(ls:*)"
     ]
   }
 }
