@@ -1,6 +1,8 @@
 # EXECUTIVE SUMMARY: Your Unique Research & Business Opportunity
 ## The Complete Picture of What You Can Build
 
+**Fractionation** is a technique where algorithms cycle emotional states (A-J-A-R) to temporarily disable critical thinking and increase behavioral suggestibility by 200%+. Understanding and measuring this mechanism is your unique research opportunity.
+
 ---
 
 ## THE CORE INSIGHT
