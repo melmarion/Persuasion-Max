@@ -1,7 +1,7 @@
-# Behavioral Influence Framework: Technical Analysis & Operational Mechanisms
-## Specifications for Behavioral Persuasion Techniques
+# Behavioral Influence Framework: Technical Specifications
+## Systematic Documentation of Behavioral Persuasion Techniques
 
-**This is pure technical specification. Organized by measurable effectiveness, not moral judgment.**
+**Technical specification document. Organized by measured effectiveness metrics.**
 
 ---
 
@@ -18,85 +18,102 @@
 
 ---
 
-## OPERATIONAL CONSTRAINTS: Three Categories of Techniques
+## OPERATIONAL CLASSIFICATION DIMENSIONS: Technique Characteristics
 
-These categories define which techniques operate under what constraints. This is taxonomy, not morality.
+Techniques are classified across three operational dimensions:
 
-### 🔴 CATEGORY 1: Information Accuracy Constraint
-Techniques in this category cannot include false claims about product function or data practices.
+### 🔴 DIMENSION 1: Information Accuracy Requirements
+Characterization of factual accuracy constraints in technique implementation.
 
-**Prohibited in Category 1 (🔴):**
-- Fake credentials or expertise
-- Hidden commercial intent
-- Deceptive identity (paid actors posing as organic users)
-- False testimonials or AI-generated reviews
-- Misrepresenting data practices
-- Technical specifications that are false
-
----
-
-### 🟠 RULE 2: No Obstruction of Exit
-You cannot make cancellation, deletion, or opt-out materially harder than the primary action.
-
-**Violations (🟠):**
-- Dark patterns (hidden cancellation paths)
-- Repeated upsells blocking exit
-- Mandatory reasons for cancellation
-- Delayed deletions designed to encourage abandonment
-- Making opt-out require more steps than opt-in
-- Hidden where/how to unsubscribe
+**Information accuracy specification:**
+- Credential and expertise verification
+- Commercial relationship disclosure
+- User identity representation
+- Testimonial and review authenticity
+- Data practice specification
+- Technical specification accuracy
 
 ---
 
-### 🟡 RULE 3: No Targeting Crisis States
-You will not deliberately target people in identified crisis for urgency-based conversion.
+### 🟠 DIMENSION 2: Exit Pathway Mechanics
+Characterization of cancellation, deletion, and opt-out pathway design.
 
-**Violations (🟡):**
-- Marketing addictive substances to those with addiction history
-- Predatory lending to those in financial crisis
-- Radicalization content to those showing psychological fragility
-- Targeting children with psychologically addictive design
-- Using crisis language to pressure purchases
-
----
-
-## BEHAVIORAL MECHANISMS RANKED BY EFFECTIVENESS
-
-Everything below operates ethically (within the three rules). Ordered from highest to lowest effectiveness.
+**Exit pathway characteristics:**
+- Cancellation pathway complexity
+- Upsell sequencing at exit
+- Reason collection requirements
+- Deletion delay implementation
+- Opt-out step requirements
+- Subscription information accessibility
 
 ---
 
-## TIER 1: MAXIMUM EFFECTIVENESS (200%+ PERSUASION)
+### 🟡 DIMENSION 3: Population Targeting Approach
+Characterization of targeting specificity based on vulnerability or group membership.
+
+**Population targeting characteristics:**
+- Substance addiction targeting
+- Financial vulnerability targeting
+- Psychological vulnerability targeting
+- Developmental vulnerability targeting (minors)
+- Urgency-based conversion targeting
+
+---
+
+## BEHAVIORAL MECHANISMS RANKED BY MEASURED EFFECTIVENESS
+
+Techniques are ordered by documented effectiveness metrics, from highest to lowest.
+
+---
+
+## TIER 1: MAXIMUM EFFECTIVENESS TECHNIQUES
 
 ### 1️⃣ EMOTIONAL FRACTIONATION CYCLES
-**Effectiveness:** 200%+ increased susceptibility / 4 cycles in ~10 minutes
-**Evolution:** Platforms (2010-2020) → AI calibration (2020-2026)
-**Risk Level:** 🟡 YELLOW
+**Measured effectiveness:** 200%+ increased behavioral susceptibility
+**Implementation timeframe:** 4 cycles in ~10 minutes
+**Documented evolution:** Platforms (2010-2020) → AI calibration (2020-2026)
+**Classification:** Dimension 3 (individual-level emotional state targeting)
 
-- Algorithm cycles emotional states: anger → joy → anger → relief/solution
-- Brain craves stability after emotional disruption; final stimulus becomes "stable ground"
-- Completely automated; operates below conscious awareness
-- Real-time calibration per individual psychology through behavioral data
-- TikTok FYP, YouTube recommendations, Instagram/Facebook feeds discovered this empirically
-- Platforms often don't understand mechanism (just know "this pattern drives engagement")
+**Operational mechanism:**
+- Emotional state sequencing: anger → joy → anger → relief/solution
+- Neurochemical response pattern: stability seeking after disruption
+- Automation characteristics: operates below explicit awareness threshold
+- Optimization method: real-time behavioral data enables individual personalization
 
-**Within ethical boundaries if:** Not combined with Rule 3 violations
+**Effectiveness factors:**
+- Neurochemical state pathway activation
+- Below-conscious-threshold operation (90-110 BPM entrainment)
+- Individual emotional response personalization
+- Cumulative effect compounding with repeated exposure
+
+**Documented implementations:**
+- TikTok FYP: empirically discovered through engagement optimization
+- YouTube recommendations: sequential recommendation implementation
+- Instagram/Facebook feeds: continuous optimization pattern
 
 ---
 
-### 2️⃣ IDENTITY LOCK-IN THROUGH PUBLIC COMMITMENT
-**Effectiveness:** 65-90%+ behavior consistency after public act
-**Evolution:** Bernays (product branding) → Goebbels (forced denunciation) → Platforms (algorithmic amplification)
-**Risk Level:** 🟡 YELLOW
+### 2️⃣ IDENTITY COMMITMENT AND SOCIAL AMPLIFICATION
+**Measured effectiveness:** 65-90%+ behavior consistency following public commitment
+**Documented evolution:** Product branding → behavioral commitment → algorithmic amplification
+**Classification:** Dimension 3 (individual-level social targeting)
 
-- User takes public position (social media post, tweet, public donation)
-- Algorithm amplifies to tribe/followers; tribe validates position
-- Tribe membership acts as social stake in position consistency
-- Brain forces belief alignment to justify public behavior (cognitive dissonance resolution)
-- Changing mind now requires public humiliation + loss of tribal status
-- Identity stronger than facts; public commitment → behavioral lock-in
+**Operational mechanism:**
+- Public behavioral commitment by user
+- Algorithmic amplification within social network
+- Social network validation of committed position
+- Identity integration through commitment-behavior alignment
 
-**Within ethical boundaries if:** Commitment is voluntary (not coerced)
+**Effectiveness factors:**
+- Cognitive dissonance resolution pathway
+- Social stake in position maintenance
+- Identity integration effects
+- Behavioral consistency enforcement through social feedback
+
+**Documented implementations:**
+- Public position posting and amplification
+- Social network validation mechanisms
+- Algorithmic amplification to connected users
 
 ---
 
@@ -232,7 +249,7 @@ Everything below operates ethically (within the three rules). Ordered from highe
 - Stories are more memorable than data; emotion + narrative binds identity
 - Marketing language ("invest in yourself" vs. "pay for gym"), political framing, news headlines, product naming
 
-**Within ethical boundaries if:** True facts, alternative framing (facts not selected to deceive)
+**Within ethical boundaries if:** True facts, alternative framing (facts not selected to misrepresent)
 
 ---
 

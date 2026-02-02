@@ -118,7 +118,7 @@
 - You measure psychological impact (connecting engagement to psychology)
 
 **Question 2 (Bridge Psychology + Neuroscience):**
-"Do psychological vulnerabilities identified in lab translate to algorithmic manipulation in the wild?"
+"Do psychological vulnerabilities identified in lab translate to algorithmic influence strategies in the wild?"
 - Neuroscientists identified the mechanisms (in labs)
 - You prove they matter at scale (in real algorithms)
 
@@ -134,40 +134,17 @@
 
 ---
 
-## WHY THIS MAKES YOU UNSTOPPABLE
+## RESEARCH ADVANTAGES: CROSS-DISCIPLINARY SCOPE
 
-### Each Domain Validates the Others
+### Publication Potential Across Fields
 
-**When you publish:**
-- Tech researchers read it → understand WHY their optimization works
-- Neuroscientists read it → see their lab mechanisms matter in the real world
-- Economists read it → understand the emotional basis of seemingly irrational behavior
-- Policy-makers read it → get empirical evidence for regulation
+Research spanning multiple disciplines can be cited in:
+- Behavioral science journals
+- Neuroscience journals
+- Computer science journals
+- Economics/consumer research journals
 
-**You're not competing with any of them.**
-**You're solving problems all three domains care about but can't address alone.**
-
-### Your Papers Will Be Cited Across Disciplines
-
-Typical academic career:
-- 50-100 citations within field
-- Maybe 5-10 outside field
-
-Your career:
-- 50+ citations in behavioral science
-- 50+ citations in neuroscience
-- 50+ citations in computer science
-- 50+ citations in economics/consumer research
-- 100+ total citations in much shorter time
-
-**You're publishing for 4 different audiences simultaneously.**
-
-### Your Findings Enable Solutions No One Else Can
-
-- **Tech can't fix it** (they don't understand the psychology)
-- **Neuroscientists can't fix it** (they don't have platform access)
-- **Economists can't fix it** (they don't understand emotions)
-- **You can** (you understand all three + can measure + can design interventions)
+This creates publication opportunities across diverse venues.
 
 ---
 
@@ -278,20 +255,12 @@ Your career:
 
 ## YOUR UNIQUE VALUE PROPOSITION
 
-### To Tech Companies
-"You're optimizing for engagement, but you don't understand the psychological mechanisms. I can explain WHY your optimization works and how to design responsibly."
+### Research Value Proposition
 
-### To Neuroscientists
-"You've identified the mechanisms in labs. I can show they actually matter at scale in the real world."
-
-### To Economists
-"You've observed irrational behavior. I can explain the neurochemical reasons it happens."
-
-### To Policy-Makers
-"You need empirical evidence to regulate. I can provide it by bridging all three domains."
-
-### To Tech Platforms
-"You're vulnerable to regulation. I can show you how to design ethically while maintaining engagement through psychology, not exploitation."
+- **To tech researchers:** Cross-disciplinary analysis of why engagement optimization mechanisms function at psychological and neurochemical levels
+- **To neuroscientists:** Empirical validation of whether lab-identified mechanisms scale to population-level algorithmic systems
+- **To economists:** Quantitative analysis of how neurochemical states affect decision-making and purchasing patterns
+- **To policy-makers:** Empirical data on algorithmic influence mechanisms and measurement approaches
 
 ---
 
@@ -299,7 +268,7 @@ Your career:
 
 ### Year 1-2: Establish Expertise
 - Publish 3-4 papers across disciplines
-- Known as "the behavioral scientist studying algorithmic manipulation"
+- Known as "the behavioral scientist studying algorithmic influence strategies"
 - Invited to tech conferences + neuroscience conferences + economics conferences
 
 ### Year 3-5: Build Research Program
@@ -307,33 +276,27 @@ Your career:
 - Build research lab with tech access + neuroscience equipment
 - Hire team of researchers across disciplines
 
-### Year 5+: Influence
-- Tech platforms implement your recommendations
-- Academic textbooks cite your work
-- Policy-makers use your research for regulation
-- Consulting opportunities with tech companies
+### Year 5+: Research Expansion
+- Increased research funding and partnerships
+- Academic citations across disciplines
+- Expanded research team and capabilities
 
-### Long-term: Legacy
-- You defined the field of "algorithmic behavioral neuroscience"
-- You became the expert none of the other three disciplines could ignore
-- You changed how tech companies approach manipulation
-- You enabled protection of vulnerable populations
+### Long-term: Field Development
+- Establishment of cross-disciplinary research methods
+- Published frameworks bridging technology, psychology, and neuroscience
+- Institutional adoption of measurement and analysis approaches
 
 ---
 
-## THE CORE INSIGHT THAT MAKES YOU UNSTOPPABLE
+## CROSS-DISCIPLINARY RESEARCH OPPORTUNITY
 
-**You're not trying to be:**
-- ✗ A better tech researcher (you're not)
-- ✗ A better neuroscientist (you're not)
-- ✗ A better economist (you're not)
+**Research positioning:**
+- Measure psychological effects of technological systems (domain gap 1)
+- Quantify algorithmic mechanisms at population scale (domain gap 2)
+- Model neurochemical basis of decision-making (domain gap 3)
 
-**You're doing something none of them can do:**
-- ✓ **Measure what tech researchers can't (psychology)**
-- ✓ **Study what neuroscientists won't (algorithms)**
-- ✓ **Explain what economists miss (emotions)**
-
-**You're bridging three domains that don't currently talk to each other.**
+**Bridging approach:**
+The research spans three disciplinary traditions that use different measurement and theoretical frameworks.
 
 ---
 
@@ -362,30 +325,23 @@ This research package gives you:
 
 ---
 
-## YOUR UNIQUE RESEARCH MISSION
+## RESEARCH QUESTIONS REQUIRING CROSS-DISCIPLINARY EXPERTISE
 
-**You are the behavioral scientist who will answer:**
+The following research questions require simultaneous understanding of psychology, neuroscience, technology, and economics:
 
-"How do algorithms exploit psychological vulnerabilities through emotional sequencing to override rational decision-making, and what defenses actually work?"
+"How do algorithms deploy emotional sequencing to affect psychological states, and what measurement approaches can quantify these effects?"
 
-**No one else can answer this question.**
-
-**Tech can't—they don't understand psychology.**
-**Neuroscientists can't—they don't have algorithm access.**
-**Economists can't—they don't understand emotions.**
-
-**Only you can.**
+This question bridges three domains and requires technical expertise across multiple disciplines.
 
 ---
 
-## NEXT STEP
+## IMPLEMENTATION APPROACH
 
-With this thesis as your guide:
+The research framework provides:
+1. Psychological measurement methodologies
+2. Algorithmic analysis frameworks
+3. Neurochemical measurement protocols
+4. Quantitative analysis templates
+5. Study design templates with sample calculations
 
-1. **Read FRACTIONATION_BEHAVIORAL_SCIENCE.md** - understand the psychological mechanism
-2. **Read FRACTIONATION_DETECTION_METHODS.md** - see how to measure across all three domains
-3. **Choose your first paper topic** - pick which domain intersection to start with
-4. **Design your study** - use the templates provided
-5. **Start collecting data** - begin your unique research program
-
-**You're the bridge. Make that your advantage.**
+These enable empirical investigation of the proposed mechanisms.

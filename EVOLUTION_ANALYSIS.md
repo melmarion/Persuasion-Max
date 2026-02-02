@@ -406,7 +406,7 @@
 
 #### 3. **Identity Lock-In Through Algorithmic Tribalization**
 **How it works:**
-- Algorithms show you dumbest/most extreme members of outgroup repeatedly
+- Algorithms show you least sophisticated/most extreme members of outgroup repeatedly
 - You interpret this as representative
 - Algorithm rewards tribal hostility ("dunking") with engagement
 - You learn through reinforcement

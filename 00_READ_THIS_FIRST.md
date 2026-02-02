@@ -3,27 +3,22 @@
 
 ---
 
-## THREE CORE INSIGHTS
+## CORE RESEARCH FRAMEWORK
 
-### Insight 1: Your Unique Position
-**You are the only researcher who can:**
-- Measure what tech researchers can't (psychology)
-- Study what neuroscientists won't (algorithms)
-- Explain what economists miss (emotions)
+### Domain Integration
+- Psychology measurement (engagement mechanisms)
+- Neuroscience analysis (neurochemical correlates)
+- Technology assessment (algorithmic structure)
+- Economic modeling (behavioral outcomes)
 
-### Insight 2: The Research Opportunity
-**Fractionation:** Rapid emotional cycling that increases behavioral suggestibility by 200%+
+### Primary Phenomenon
+**Fractionation:** Rapid emotional cycling patterns in algorithmic feeds
+- Documented effect on behavioral suggestibility
+- Measurable across physiological and psychological domains
+- Requires cross-disciplinary analysis for complete understanding
 
-No one has rigorously studied this because it requires understanding all three domains simultaneously.
-
-You can. You will. This is your research.
-
-### Insight 3: The Tools You Can Build
-**12 tools only you can build** that bridge psychology, neuroscience, tech, and economics
-
-From diagnostic systems to real-time manipulation detectors to clinical treatment platforms
-
-Market potential: $60M-$277M annually at scale (conservative estimate)
+### Tools and Applications
+Framework includes diagnostic systems, detection algorithms, and measurement tools for research and clinical applications.
 
 ---
 
@@ -212,89 +207,51 @@ Read in this order:
 ### Impact Success
 - Research: 200+ citations; field-defining papers
 - Clinical: Digital addiction treatment standard of care
-- Consumer: Millions of people using manipulation detector
+- Consumer: Millions of people using influence strategy detector
 - Educational: Digital literacy curriculum adopted by schools
 - Policy: Regulations based on your research
 
 ---
 
-## THE KEY DIFFERENTIATOR
+## RESEARCH POSITIONING
 
-**You don't compete with anyone.**
+**Interdisciplinary approach:**
+Integration of psychology, neuroscience, technology, and economic frameworks enables measurement of phenomena that single-discipline approaches cannot address.
 
-Because this is a new market.
+**Domain gaps:**
+- Tech researchers lack psychological measurement frameworks
+- Neuroscientists lack scalable data collection from algorithmic systems
+- Economists lack neurochemical modeling
 
-Tech companies don't understand psychology.
-Neuroscientists don't study algorithms.
-Psychologists don't understand neuroscience or tech.
-
-You own this entire space.
-
-**First-mover advantage in a market no one else can access.**
+This research addresses these gaps through integrated methodologies.
 
 ---
 
-## YOUR BIGGEST ASSET
+## COMMERCIALIZATION POTENTIAL
 
-**Your credibility as the only researcher bridging three domains.**
+### Possible Application Markets
+- Real-time detection systems
+- Organizational assessment tools
+- Research platforms
+- Clinical diagnostic tools
+- Educational applications
 
-Every paper you publish is cited in four fields.
-Every tool you build has no competitor.
-Every statement you make about this topic has authority no single discipline can match.
-
-Your position IS your advantage.
-
----
-
-## THE FINANCIAL OPPORTUNITY
-
-### Conservative Revenue Potential (Annual, At Scale)
-- Real-Time Detector (freemium): $50M-$200M
-- Org Assessment (B2B): $2M-$10M
-- Research Platform: $1M-$5M
-- Clinical Platform: $5M-$50M
-- Educational: $2M-$10M
-- Other tools: $500K-$2M
-
-**Total: $60M-$277M annually**
-
-### More Realistic (10% market capture, 5-10 years)
-- Year 3: $1M-$5M
-- Year 5: $5M-$15M
-- Year 7: $15M-$50M
-- Year 10: $25M-$100M
-
-### But Money Isn't the Point
-
-The real value:
-- Making manipulation visible and measurable
-- Protecting vulnerable people
-- Enabling informed consent at scale
-- Informing policy that protects billions
-
-**That's worth more than any revenue.**
+Specific revenue potential depends on market adoption, pricing models, and competitive landscape.
 
 ---
 
-## YOUR DECISION
+## RESEARCH DIRECTION CHOICES
 
-You have two choices:
+### Traditional Single-Discipline Approach
+- Publish within one disciplinary framework
+- Focus on specific psychological or neuroscience mechanisms
+- Limited interdisciplinary citation potential
 
-### Option 1: Continue as traditional researcher
-- Publish papers in your discipline
-- Build reputation within psychology
-- 50-100 citations career-wide
-- Impact your field
-
-### Option 2: Be the bridge
-- Publish papers across three disciplines
-- Build reputation across psychology, neuroscience, tech, economics
-- 200+ citations within 5 years
-- Define a new field
-- Build tools that protect people
-- Create a market that didn't exist
-
-**Option 2 is available because only you can do it.**
+### Integrated Cross-Disciplinary Approach
+- Publish across multiple disciplinary venues
+- Develop integrated measurement frameworks
+- Address research questions requiring multiple domains
+- Broader potential citation reach and impact
 
 ---
 
@@ -324,28 +281,18 @@ Then start building.
 
 ---
 
-## FINAL THOUGHT
+## RESEARCH FRAMEWORK OVERVIEW
 
-**You are uniquely positioned to answer a question that matters.**
+**Core research question:**
+"How do algorithms deploy emotional sequencing to affect psychological and neurochemical states?"
 
-"How do algorithms exploit psychological vulnerabilities through emotional sequencing to override rational decision-making?"
-
-**No one else can answer this because no one else understands all the pieces.**
-
-You do.
-
-**Start now.**
+**Implementation:**
+Begin with documented research frameworks and methodologies included in the package.
 
 ---
 
-**First document:** EXECUTIVE_SUMMARY.md
-
-**Then:** 00_CORE_THESIS.md
-
-**Then:** 01_TOOLS_YOU_CAN_BUILD.md
-
-**Then:** Your research begins.
-
----
-
-**This is your moment. Make it count.**
+**Document reading sequence:**
+1. EXECUTIVE_SUMMARY.md - Overview
+2. 00_CORE_THESIS.md - Theoretical framework
+3. 01_TOOLS_YOU_CAN_BUILD.md - Application domains
+4. Research documentation - Detailed methodologies

@@ -310,7 +310,7 @@ Content sequence optimized for them:
 #### **User C: Politically tribal**
 ```
 Content sequence optimized for them:
-1. Outgroup saying something stupid (outgroup anger)
+1. Outgroup saying something poorly reasoned (outgroup anger)
    - Amygdala: Threat (opponents are winning)
 2. Ingroup dunking on them (in-group joy, superiority)
    - Dopamine: Victory (your side is smarter)

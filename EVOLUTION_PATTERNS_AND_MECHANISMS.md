@@ -156,7 +156,7 @@ Cognitive dissonance → Brain justifies action through belief → True believer
 ```
 
 **Phase 4 - Platforms (Algorithmic)**
-- Algorithm shows you dumbest members of outgroup repeatedly
+- Algorithm shows you least sophisticated members of outgroup repeatedly
 - You interpret this as representative
 - Algorithm rewards "dunking" on outgroup with engagement
 - You learn through reinforcement

@@ -197,7 +197,7 @@ You can build tools that none of the individual disciplines can create alone.
 - Digital wellness apps that warn users
 - "Warning: Your current emotional state + feed sequence creates 73% impulse purchase risk"
 - Could save people money/harm
-- **This is the ethical flip of manipulation—prevention**
+- **This is the ethical flip of influence strategy—prevention**
 
 ---
 
@@ -293,7 +293,7 @@ You can build tools that none of the individual disciplines can create alone.
 
 **Commercial value:**
 - Digital wellness apps would integrate this
-- "Apple Health, but for detecting manipulation"
+- "Apple Health, but for detecting influence strategies"
 - Premium subscription feature
 - **Market size: Potentially $100M+ if becomes standard**
 
@@ -301,7 +301,7 @@ You can build tools that none of the individual disciplines can create alone.
 - Unprecedented data richness
 - Real-time measurement during actual algorithm exposure
 - Individual-level tracking of vulnerability and resilience
-- **Becomes standard methodology for studying manipulation**
+- **Becomes standard methodology for studying influence strategies**
 
 ---
 
@@ -351,7 +351,7 @@ You can build tools that none of the individual disciplines can create alone.
 **Research value:**
 - Becomes your core research infrastructure
 - Other researchers license it to replicate your findings
-- Standard tool for studying algorithmic manipulation
+- Standard tool for studying algorithmic influence strategies
 - Enables research questions no one else can ask
 
 **Commercial/Policy value:**
@@ -413,12 +413,12 @@ You can build tools that none of the individual disciplines can create alone.
 - Protect vulnerable users (high anxiety, neuroticism, young people)
 - Reduce impulse purchasing, addiction-like behavior
 - Enable informed consent
-- **This is manipulation-prevention technology**
+- **This is influence strategy prevention technology**
 
 ---
 
 ### Tool 9: Organizational Vulnerability Assessment System
-**What it does:** Helps companies audit their own systems for unethical manipulation
+**What it does:** Helps companies audit their own systems for unethical influence strategies
 
 **Who needs it:** Tech platforms, especially those wanting to compete on ethics
 
@@ -433,7 +433,7 @@ You can build tools that none of the individual disciplines can create alone.
    - Which user groups are most vulnerable? (age, personality, prior behavior)
    - How many users hit hypnotic state daily? (estimate from pattern)
    - What's the purchasing impulse increase? (based on your research)
-   - What's the total economic manipulation amount? (sum of increased spending)
+   - What's the total economic influence strategy impact? (sum of increased spending)
 
 3. **Comparative analysis:**
    - "Your fractionation index is 67/100"
@@ -503,7 +503,7 @@ You can build tools that none of the individual disciplines can create alone.
 ## TIER 6: CLINICAL & EDUCATIONAL TOOLS (Build After Proof)
 
 ### Tool 11: Digital Addiction Assessment & Treatment Platform
-**What it does:** Comprehensive system for diagnosing and treating digital manipulation susceptibility
+**What it does:** Comprehensive system for diagnosing and treating digital influence strategy susceptibility
 
 **Who needs it:** Therapists, counselors, mental health programs, schools
 
@@ -512,7 +512,7 @@ You can build tools that none of the individual disciplines can create alone.
    - Full vulnerability profile (3 domains)
    - Feed exposure tracking (what algorithm is showing them)
    - Behavioral impact (purchases, time spent, mood changes)
-   - Diagnostic criteria for "digital manipulation syndrome"
+   - Diagnostic criteria for "digital influence strategy syndrome"
 
 2. **Treatment planning:**
    - Personalized intervention based on vulnerability profile
@@ -521,7 +521,7 @@ You can build tools that none of the individual disciplines can create alone.
    - Progress tracking
 
 3. **Clinician education:**
-   - Training in fractionation, emotional sequencing, manipulation mechanisms
+   - Training in fractionation, emotional sequencing, influence strategy mechanisms
    - Case studies
    - Treatment protocols
 
@@ -540,7 +540,7 @@ You can build tools that none of the individual disciplines can create alone.
 ---
 
 ### Tool 12: Educational Curriculum on Algorithmic Literacy
-**What it does:** High school and college-level course materials teaching students to resist manipulation
+**What it does:** High school and college-level course materials teaching students to resist influence strategies
 
 **Who needs it:** Schools, universities, parents
 
@@ -558,7 +558,7 @@ You can build tools that none of the individual disciplines can create alone.
    - Discussion prompts
 
 3. **Parental guidance:**
-   - How to talk to kids about manipulation
+   - How to talk to kids about influence strategies
    - Warning signs of high vulnerability
    - When to seek help
    - Digital family contracts
@@ -570,7 +570,7 @@ You can build tools that none of the individual disciplines can create alone.
 - Requires educational design expertise
 
 **Educational value:**
-- Inoculates young people against manipulation
+- Inoculates young people against influence strategies
 - Builds cognitive flexibility (proven defense)
 - Creates informed digital citizens
 - **Could become standard curriculum (like sex ed or financial literacy)**
@@ -807,7 +807,7 @@ As you do your research and build your tools, remember:
 
 **You're not building tools to make money.** (Though you could.)
 **You're not building tools to get famous.** (Though you might.)
-**You're building tools to make algorithmic manipulation measurable, visible, and preventable.**
+**You're building tools to make algorithmic influence strategies measurable, visible, and preventable.**
 
 Because once something is measurable, it becomes:
 - Researchable (academics can study it)
@@ -815,6 +815,6 @@ Because once something is measurable, it becomes:
 - Preventable (users can protect themselves)
 - Accountable (platforms can be held responsible)
 
-Your tools transform manipulation from invisible art into visible science.
+Your tools transform influence strategies from invisible art into visible science.
 
 **That's the real power of what you can build.**

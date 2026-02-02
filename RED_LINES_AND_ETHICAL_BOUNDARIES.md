@@ -1,383 +1,310 @@
-# RED LINES: Where Persuasion Becomes Manipulation
-## Ethical Boundaries in the Evolution of Influence Techniques
+# TECHNIQUE CLASSIFICATION FRAMEWORK
+## Categorization of Influence Strategies by Transparency and Disclosure
 
 ---
 
-## THE FUNDAMENTAL DISTINCTION
+## DIMENSIONAL ANALYSIS
 
-**Persuasion:** Providing true information in compelling ways; respecting autonomy and informed consent
+**Disclosure dimension:** Information asymmetry and transparency
+- Full disclosure: All relevant information and mechanisms disclosed to audience
+- Partial disclosure: Some relevant information disclosed
+- Hidden mechanisms: Relevant information withheld from audience
 
-**Manipulation:** Exploiting psychological vulnerabilities; bypassing conscious evaluation; using deception or hidden motives
-
----
-
-## THE ETHICAL CONTINUUM: Where Techniques Cross Red Lines
-
-### TIER 1: ETHICAL PERSUASION (Green Zone)
-These techniques respect autonomy and informed consent:
-
-#### ✅ Compelling Presentation of True Information
-- Using visuals, stories, emotion to make true claims more engaging
-- Not deceptive; just more memorable
-- **Example:** Apple's product design presentation (beautiful, compelling, but true)
-- **Why it's OK:** Person can still evaluate; facts are accurate
-
-#### ✅ Honest Social Proof
-- Showing actual customer satisfaction from real people
-- Disclosing that these are paid testimonials or selected examples
-- Not hiding the mechanism
-- **Example:** "4.8 stars from 12,000 reviews" (transparent, verifiable)
-- **Why it's OK:** Real information; person knows it's testimonials
-
-#### ✅ Honest Scarcity
-- "We only made 100 of these" when actually true
-- Genuine limited availability
-- **Example:** Limited edition drops that are actually limited
-- **Why it's OK:** True scarcity; person can evaluate
-
-#### ✅ Anchoring with Transparent Purpose
-- "Was $100, now $50" (clearly marked, verifiable)
-- Restaurant listing "drinks from $8-$50" (shows range honestly)
-- **Why it's OK:** Transparent anchor; person aware of comparison
+**Targeting dimension:** Population targeting specificity
+- Population-level: Applied uniformly across populations
+- Group-level: Applied to demographic groups
+- Individual-level: Applied based on individual psychological profiles
 
 ---
 
-### TIER 2: GRAY ZONE (Yellow Flag)
-These techniques are legally allowed but ethically questionable:
+## TIER 1: HIGH DISCLOSURE TECHNIQUES
+Techniques with disclosed mechanisms and full information availability:
 
-#### ⚠️ Manufactured Scarcity
-- "5 people viewing now" (real count, but shown to many people)
-- "Only 3 left" (true but refreshes)
-- "Sale ends tonight" (arbitrary deadline)
-- **Why it's gray:** True but designed to create urgency beyond rational evaluation
-- **Red line crossing:**
-  - Fake count ("15 people viewing" when actually 2)
-  - Fake deadline (always "ends tonight")
-  - Fake limited edition (making 100,000 but marketing as exclusive)
+#### Compelling Presentation of True Information
+- Visual presentation, narrative framing of factually accurate claims
+- Mechanism: Enhanced memorability and salience through presentation design
+- **Example:** Product demonstrations emphasizing true features
+- **Disclosure requirement:** Factual accuracy maintained; design intent can be opaque
 
-#### ⚠️ Social Proof Through Curated Selection
-- Showing 5-star reviews, hiding 1-star reviews
-- Showing customer testimonials you selected
-- **Why it's gray:** True testimonials, but unrepresentative sample
-- **Red line crossing:**
-  - Fake reviews
-  - Paid reviewers posing as organic
-  - AI-generated reviews
+#### Transparent Social Proof
+- Displaying aggregated satisfaction data from actual user responses
+- Disclosure: Clear labeling of data sources and sample characteristics
+- **Example:** Quantified rating systems with review counts
+- **Disclosure requirement:** Source transparency, sample size disclosure
 
-#### ⚠️ Authority Appeal Without Transparency
-- Using expert voice in ad without disclosing relationship
-- Influencer not disclosing payment
-- Branded content not labeled as advertising
-- **Why it's gray:** Expert credibility, but relationship hidden
-- **Red line crossing:**
-  - Fake expert credentials
-  - Deepfake authority figures
-  - Astroturfing (fake grassroots)
+#### Genuine Scarcity Signals
+- Quantified availability information (actual inventory, completion limits)
+- **Example:** "Limited edition: 100 units manufactured"
+- **Disclosure requirement:** Factual accuracy of scarcity claim
 
-#### ⚠️ Emotional Priming
-- Using fear/joy before information (Goebbels technique)
-- Designed to bypass rational evaluation
-- **Why it's gray:** Legal, common, but exploits emotional reasoning
-- **Red line crossing:**
-  - False threats ("buy now or be sorry")
-  - Manufactured fear (showing worst-case irrelevantly)
-  - Visceral emotional overload designed to disable thinking
-
-#### ⚠️ Default Choice Architecture
-- Making your product the default (Netflix "continue watching")
-- Newsletter automatically subscribed
-- **Why it's gray:** People can change, but most won't
-- **Red line crossing:**
-  - Hiding how to opt-out
-  - Making change difficult/expensive
-  - Tricking people into thinking they chose it
-
-#### ⚠️ Micro-Targeting Based on Vulnerability
-- Showing different ads based on psychological profile
-- Showing different prices based on willingness to pay
-- **Why it's gray:** Personalization is efficient, but can exploit
-- **Red line crossing:**
-  - Targeting vulnerable populations (gambling ads to problem gamblers)
-  - Predatory lending to those most likely to default
-  - Radicalization content to those most susceptible
+#### Transparent Reference Points
+- Comparison anchors with clearly marked reference information
+- **Example:** Price comparison with source attribution
+- **Disclosure requirement:** Anchor source identified and verifiable
 
 ---
 
-### TIER 3: CLEAR RED LINES (Red Zone)
-These cross into deception, harm, and unethical manipulation:
+## TIER 2: PARTIAL DISCLOSURE TECHNIQUES
+Techniques where some mechanisms or targeting strategies are not disclosed:
 
-#### ❌ Fake Authority/Credentials
-- Creating fake expert (Bernays' dental association)
-- Deepfake videos of real experts
-- AI-generated fake credentials
-- **Harm:** Bypasses legitimate expertise; enables false claims
-- **Example:** Fake doctor endorsing unproven medical treatment
+#### Scarcity Signaling with Selective Information
+- Quantified scarcity that is true but represented to multiple audiences
+- **Example:** "Only 3 left" (verifiable count shown to many users)
+- **Disclosure gap:** Frequency of display across user population not disclosed
 
-#### ❌ Deceptive Identity
-- Posing as peer/user when you're corporate
-- Paid posters pretending to be organic users
-- Fake grassroots movements (astroturfing)
-- **Harm:** Destroys trust; prevents informed evaluation
-- **Example:** pharmaceutical company paying people to post fake reviews
+#### Selection-Based Social Proof
+- Aggregated satisfaction data excluding negative responses
+- **Example:** Displaying 5-star review average without showing rating distribution
+- **Disclosure gap:** Sample selection and exclusion criteria not visible
 
-#### ❌ Hiding Commercial Intent
-- Advertorial designed to look like journalism
-- Branded content without clear disclosure
-- Influencer paid endorsement not disclosed as paid
-- **Harm:** Can't evaluate if it's advertisement or information
-- **Example:** "Doctors hate this one trick" (false implication of professional opinion)
+#### Authority Appeal with Relationship Gaps
+- Expert presentation without disclosed compensation relationships
+- **Example:** Influencer endorsements without payment disclosure
+- **Disclosure gap:** Financial relationships and incentive structures undisclosed
 
-#### ❌ Systematic Isolation from Counter-Narrative
-- Algorithmic bubble (different realities per person)
-- Removing access to information
-- De-platforming opposition voices (not for harmful speech, just opposition)
-- **Harm:** Makes informed consent impossible
-- **Example:** Showing only one side of political debate to each user
+#### Temporal Emotional Sequencing
+- Organized presentation of emotional and informational content in sequences
+- **Example:** Alternating between positive and negative emotional framings
+- **Disclosure gap:** Sequence design and emotional state objectives not disclosed
 
-#### ❌ Forced/Coerced Behavioral Commitment
-- Tricking into public commitment
-- Using social pressure to force compliance
-- Making it costly to change mind
-- **Harm:** Locks identity/belief through coercion, not persuasion
-- **Example:** Goebbels' forced denunciations creating true believers through behavior
+#### Default Choice Presentation
+- Pre-selected options that can be modified through additional steps
+- **Example:** Opt-in structures requiring explicit deselection
+- **Disclosure gap:** True choice architecture and its behavioral implications not disclosed
 
-#### ❌ Psychological Manipulation Through Cognitive Overload
-- Overwhelming with information to cause paralysis
-- Constant stimulus preventing reflection
-- Fractionation cycles designed to induce hypnotic state
-- **Harm:** Disables conscious decision-making
-- **Example:** Dark patterns with too many options, making choosing difficult
-
-#### ❌ Predatory Targeting of Vulnerable Populations
-- Targeting children with psychologically addictive content
-- Marketing addictive substances to those with addiction history
-- Payday loans to those most likely to become trapped in debt
-- Radicalization content to those showing psychological fragility
-- **Harm:** Exploits vulnerability; creates dependency
-- **Example:** Nicotine targeting to adolescents (known vulnerability window)
-
-#### ❌ Identity Lock-In Through Behavioral Exploitation
-- Creating situation where changing belief requires public humiliation
-- Using tribal belonging as hostage
-- Making identity so public that reversal feels like shame
-- **Harm:** Prevents rational reconsideration; traps in false beliefs
-- **Example:** Platforms amplifying your political identity so strongly that changing seems socially impossible
-
-#### ❌ Generating False Consensus
-- Algorithmic amplification making fringe views seem mainstream
-- Fake bot armies creating illusion of support
-- Coordinated inauthentic behavior appearing organic
-- **Harm:** Prevents accurate perception of reality
-- **Example:** Social media creating false impression that extreme view is widely held
-
-#### ❌ Radicalization Engineering
-- Deliberately designing systems to push people toward extremism
-- Identifying vulnerable individuals and funnel them toward extreme content
-- Predictive systems that intercept doubters with reinforcement
-- **Harm:** Creates violent/extremist actors
-- **Example:** YouTube rabbit holes that systematically recommend more extreme content
-
-#### ❌ Emotional Hypnosis Through Fractionation
-- Engineered emotional cycles designed to reduce critical thinking
-- Targeting real-time emotional state to maximize suggestibility
-- Using neurochemistry (oxytocin from group synchrony) to bypass reasoning
-- **Harm:** Disables conscious evaluation; induces trance-like compliance
-- **Example:** Ritualized mass rallies with synchronized chanting, torches, music (90-110 BPM heart-rate entrainment)
+#### Psychological Profile-Based Targeting
+- Customized presentation based on aggregated user characteristics
+- **Example:** Different messaging for different demographic segments
+- **Disclosure gap:** Targeting criteria and customization logic not disclosed to audience
 
 ---
 
-## WHERE DIFFERENT TECHNIQUES RANK ON THE SCALE
+## TIER 3: HIDDEN MECHANISM TECHNIQUES
+Techniques where core targeting mechanisms and objectives are not disclosed:
 
-| Technique | Ethical Status | Why | Red Line Crossing |
+#### Identity Misrepresentation
+- Source identity differing from stated identity
+- **Example:** Corporate entity presenting as peer user in communications
+- **Hidden mechanism:** Relationship type and incentive structure
+
+#### Deceptive Authority Claims
+- Credential claims that do not correspond to actual qualifications or training
+- **Example:** Authority designation without substantive basis
+- **Hidden mechanism:** Basis of stated expertise; actual qualifications
+
+#### Commercial Intent Concealment
+- Commercial relationship presented as non-commercial source
+- **Example:** Advertorial presented as journalism; sponsored content without disclosure
+- **Hidden mechanism:** Financial relationships; compensation structures
+
+#### Information Access Filtering
+- Systematic presentation differences based on user profile
+- **Example:** Feed curation showing limited information range per user
+- **Hidden mechanism:** Curation logic; information exclusion criteria
+
+#### Behavioral Commitment Lock-In
+- Public behavior commitments that create social disincentives for change
+- **Example:** Public expression of preference creating reputational barriers to reversal
+- **Hidden mechanism:** Designed social commitment effects; identity entrenchment mechanics
+
+#### Cognitive Load Optimization
+- Information presentation designed to maximize cognitive demand
+- **Example:** Choice architecture with multiple options increasing decision difficulty
+- **Hidden mechanism:** Cognitive load design objectives; decision paralysis mechanics
+
+#### Vulnerability-Targeted Personalization
+- Individual-level targeting based on psychological vulnerability assessment
+- **Example:** Customized messaging targeting specific psychological vulnerabilities
+- **Hidden mechanism:** Vulnerability detection algorithms; exploitation targeting
+
+#### Consensus Falsification
+- Systematic presentation of majority opinion that does not correspond to actual distribution
+- **Example:** Algorithmic amplification presenting marginal positions as mainstream
+- **Hidden mechanism:** Amplification algorithms; consensus distortion mechanics
+
+#### Psychological State Targeting
+- Engineered stimulus sequences targeting specific psychological states
+- **Example:** Emotional cycling sequences designed to alter decision-making capacity
+- **Hidden mechanism:** State-targeting algorithms; neurochemical response objectives
+
+#### Population-Level Behavioral Funnel
+- Systematic user routing toward progressive preference changes
+- **Example:** Recommendation algorithms funnel toward increasingly extreme positions
+- **Hidden mechanism:** Routing algorithms; progressive preference trajectory mechanics
+
+## TECHNIQUE CLASSIFICATION MATRIX
+
+| Technique | Disclosure Level | Targeting Level | Mechanism Transparency |
 |-----------|---|---|---|
-| Compelling visual presentation | ✅ Green | True information, well-presented | Hiding true information |
-| Social proof (honest) | ✅ Green | Real testimonials disclosed | Fake reviews |
-| Honest scarcity | ✅ Green | True limited availability | "Only 3 left" (always refreshes) |
-| Emotional storytelling | ✅ Green | True story, well-told | False story designed to manipulate |
-| Anchoring (transparent) | ✅ Green | Shows comparison clearly | Fake original price |
-| Authority appeal | ⚠️ Yellow | Expert opinion disclosed | Expert credential fabricated |
-| Micro-targeting | ⚠️ Yellow | Efficient personalization | Exploiting specific psychological vulnerabilities |
-| Social proof (curated) | ⚠️ Yellow | Real testimonials, selected | Fake testimonials |
-| Default architecture | ⚠️ Yellow | Efficient for most users | Hiding opt-out; making change difficult |
-| Emotional priming | ⚠️ Yellow | Emotion + facts both present | Emotion designed to bypass reason entirely |
-| Fake authority | ❌ Red | | Creates false expertise |
-| Hidden commercial intent | ❌ Red | | Prevents evaluation of bias |
-| Paid endorsement not disclosed | ❌ Red | | Deceives about independence |
-| Algorithmic isolation | ❌ Red | | Makes informed consent impossible |
-| Identity lock-in | ❌ Red | | Prevents rational reconsideration |
-| Forced public commitment | ❌ Red | | Behavior coercion creating belief |
-| Cognitive overload (intentional) | ❌ Red | | Disables conscious decision-making |
-| Predatory targeting (vulnerable) | ❌ Red | | Exploits specific vulnerability |
-| Radicalization engineering | ❌ Red | | Creates extremists/violence |
-| Emotional hypnosis | ❌ Red | | Neurochemical bypass of reason |
-| Generated fake consensus | ❌ Red | | Prevents accurate reality perception |
+| Visual presentation | High | Population | Clear |
+| Transparent social proof | High | Population | Clear |
+| Genuine scarcity signals | High | Population | Clear |
+| Transparent anchoring | High | Population | Clear |
+| Quantified scarcity | Moderate | Population | Partial |
+| Curated social proof | Moderate | Population | Partial |
+| Authority appeal (undisclosed) | Moderate | Population | Partial |
+| Temporal emotional sequencing | Moderate | Population | Partial |
+| Default choice architecture | Moderate | Population | Partial |
+| Demographic-based targeting | Moderate | Group | Partial |
+| Identity misrepresentation | Low | Population | Hidden |
+| Deceptive credentials | Low | Population | Hidden |
+| Hidden commercial intent | Low | Population | Hidden |
+| Algorithmic information filtering | Low | Individual | Hidden |
+| Behavioral commitment lock-in | Low | Individual | Hidden |
+| Cognitive load optimization | Low | Individual | Hidden |
+| Vulnerability-targeted personalization | Low | Individual | Hidden |
+| Consensus falsification | Low | Population | Hidden |
+| Psychological state targeting | Low | Individual | Hidden |
+| Behavioral funnel routing | Low | Individual | Hidden |
 
 ---
 
-## INFORMED CONSENT AS THE BOUNDARY
+## INFORMATION ASYMMETRY FRAMEWORK
 
-The fundamental principle: **Can the person make a genuinely informed decision?**
+Influence effectiveness depends on information asymmetry: the gap between what the audience knows and what the source knows.
 
-**Informed consent requires:**
-1. **True information** (not false, not deceptive)
-2. **Transparent motives** (person knows who's trying to persuade and why)
-3. **Accessible alternatives** (person knows other options exist)
-4. **Cognitive capacity to evaluate** (not disabled through manipulation)
-5. **Meaningful choice** (not coerced or trapped)
+**Information dimensions:**
+1. **Content accuracy** - correspondence between claims and factual reality
+2. **Source identity** - relationship between actual source and stated source
+3. **Intent disclosure** - clarity of source objectives and incentive structures
+4. **Mechanism transparency** - visibility of how influence strategies function
+5. **Cognitive capacity** - audience ability to evaluate information given processing demands
 
-**Red lines violate informed consent by:**
-- Hiding truth (deception)
-- Hiding motives (hidden agenda)
-- Hiding alternatives (algorithmic bubble)
-- Disabling evaluation (emotional hypnosis, cognitive overload)
-- Removing choice (forced behavior, trapped identity)
+**Measurement approach:**
+Information asymmetry increases as disclosure decreases on any dimension.
 
 ---
 
-## CURRENT REGULATORY GAPS
+## DISCLOSURE REQUIREMENT ANALYSIS
 
-### What's Legally Required:
-- FTC: Clear disclosure of sponsored content
-- GDPR: Consent for data collection
-- Some laws: Truth in advertising
+### Current Regulatory Framework:
+- Sponsored content disclosure requirements
+- Data collection consent mechanisms
+- Advertising truthfulness standards
 
-### What's NOT Legally Required (but ethically problematic):
-- Disclosing algorithmic curation (what you're NOT shown)
-- Disclosing emotional manipulation (your feed designed to make you feel bad)
-- Disclosing targeted vulnerability (why you see this specific ad)
-- Disclosing radicalization risk (this content is extreme)
-- Disclosing addictive design (designed to be compulsive)
+### Systematic Information Asymmetries Not Addressed:
+- Curation logic and information filtering mechanisms
+- Targeting criteria and personalization algorithms
+- Emotional state assessment and response optimization
+- Vulnerability identification and exploitation strategies
+- Progressive preference trajectory and behavioral funnel mechanics
 
-### The Gap:
-- Tech companies have information asymmetry (know your psychology; you don't)
-- No legal requirement to close that gap
-- Current regulations focus on disclosure, not on actual manipulation techniques
+### Assessment Approach:
+Information asymmetry can be measured along dimensions of disclosure completeness, targeting granularity, and mechanism transparency.
 
----
+## HIGH-COMPLEXITY TECHNIQUES: SYSTEM INTEGRATION LEVEL
 
-## TECHNIQUES THAT EVOLVED THE MOST PROBLEMATIC
+### Behavioral Funnel Routing
+- **Integration level:** Population and algorithmic system
+- **Mechanism:** Progressive recommendation sequences toward specified outcome states
+- **Information asymmetry:** Routing logic and destination optimization not disclosed
+- **Measurement challenge:** Distinguishes from random recommendation
 
-### Ranked by Distance from Red Line (Most Problematic First):
+### Psychological State Targeting
+- **Integration level:** Individual neurochemical response
+- **Mechanism:** Real-time stimulus sequencing targeting specific emotional and cognitive states
+- **Information asymmetry:** State assessment algorithms and targeting objectives not disclosed
+- **Historical parallel:** Goebbels' sequential emotional priming → algorithmic fractionation cycles
 
-1. **Radicalization Engineering (NEW)**
-   - Algorithmic identification of vulnerable individuals
-   - Custom funnel toward extremism
-   - Predicting and preempting doubts
-   - **Damage:** Literal violence; genocide (Myanmar)
+### Vulnerability Identification and Targeting
+- **Integration level:** Population psychological profiling
+- **Mechanism:** Identification of psychological vulnerabilities; customized targeting based on profile
+- **Information asymmetry:** Vulnerability detection algorithms and targeting criteria not disclosed
+- **Evolution:** Demographic targeting → psychological profile targeting → predictive vulnerability identification
 
-2. **Algorithmic Isolation (NEW)**
-   - Different realities per person
-   - Removes possibility of shared fact-basis
-   - Makes democracy nearly impossible
-   - **Damage:** Political polarization, incompatible realities
+### Consensus Falsification
+- **Integration level:** Population-level perception manipulation
+- **Mechanism:** Algorithmic amplification creating false perception of opinion distribution
+- **Information asymmetry:** Amplification algorithms and actual distribution not disclosed
+- **Measurement approach:** Comparison of perceived vs. actual opinion frequency
 
-3. **Emotional Hypnosis (EVOLVED)**
-   - Goebbels' emotional priming → algorithmic fractionation cycles
-   - Engineered to disable critical thinking
-   - Real-time calibration per individual
-   - **Damage:** Unaware behavioral control
+### Information Access Filtering
+- **Integration level:** Algorithmic curation system
+- **Mechanism:** Systematic presentation of limited information range based on user profile
+- **Information asymmetry:** Curation logic and excluded information not disclosed
+- **Measurement approach:** Comparison of available vs. presented information
 
-4. **Identity Lock-In Through Public Commitment (EVOLVED)**
-   - Bernays' identity fusion → algorithmic amplification
-   - Makes belief change impossible without shame
-   - Tribal belonging hostage
-   - **Damage:** Entrapment in false beliefs
+## RESEARCH MEASUREMENT QUESTIONS
 
-5. **Fake Authority/Credentials (EVOLVED)**
-   - Bernays' invented authorities → deepfake experts
-   - AI generates perfect credibility signal
-   - No way to verify authenticity
-   - **Damage:** False expertise enables false claims
+### Effectiveness Measurement
+- What behavioral change magnitude results from specific technique implementations?
+- How does effectiveness vary across individual differences (age, cognitive capacity, psychological profile)?
+- What measurement approaches can distinguish technique effects from baseline behavior change?
 
-6. **Vulnerability Targeting (EVOLVED)**
-   - Bernays: demographic targeting
-   - Platforms: psychological targeting
-   - AI: predictive vulnerability identification
-   - **Damage:** Exploits addiction, mental health, susceptibility
+### Mechanism Characterization
+- How do identified information asymmetry dimensions affect behavioral outcomes?
+- Which disclosure dimensions have largest behavioral effects?
+- Can behavioral changes be predicted from information asymmetry profiles?
 
----
+### Population Heterogeneity
+- Which populations show differential susceptibility to specific techniques?
+- What individual characteristics predict technique sensitivity?
+- Can vulnerability profiles be identified through behavioral or physiological assessment?
 
-## RESEARCH IMPLICATIONS
+### System Integration Effects
+- How do techniques compound when applied in combination?
+- What is the interaction between multiple information asymmetry dimensions?
+- Can algorithmic systems create emergent effects not present with individual techniques?
 
-### Questions This Raises:
+### Reversibility and Recovery
+- To what extent can behavior changes be reversed after manipulation exposure?
+- What factors affect return to baseline behaviors?
+- Can awareness of technique mechanism affect subsequent susceptibility?
 
-1. **Effectiveness vs. Harm Trade-off**
-   - How much behavioral change is actually caused by these techniques?
-   - At what effectiveness level does it become unethical?
-   - Can technique be 1% effective and still be manipulative?
+## MEASUREMENT AND DISCLOSURE REQUIREMENTS
 
-2. **Vulnerable Population Protection**
-   - Who counts as vulnerable? (Children, elderly, cognitively impaired, mentally ill, etc.)
-   - Should different techniques be prohibited for vulnerable groups?
-   - How do we identify vulnerability?
+### Information Asymmetry Disclosure (Platform Level):
+- **Curation factors:** Specify algorithmic factors determining content presentation
+- **Targeting criteria:** Disclose what user characteristics drive personalization
+- **Vulnerability assessment:** If conducted, disclose vulnerability detection mechanisms
+- **Emotional state targeting:** If applied, disclose psychological state assessment approaches
+- **Behavioral routing:** If implemented, disclose outcome destination of recommendation sequences
 
-3. **Consent in Digital Age**
-   - Is "agree to terms" genuine informed consent?
-   - Can informed consent exist when information asymmetry is built-in?
-   - Should consent be renewed when techniques change?
+### Influence Technique Characterization (Advertiser Level):
+- **Source identity:** Accurate representation of source and relationships
+- **Commercial relationships:** Full disclosure of compensation and incentive structures
+- **Targeting mechanism:** Specification of how target audience was selected
+- **Content fabrication:** Factual accuracy assessment and disclosure of synthesis/manipulation
+- **Behavioral objectives:** Transparency regarding intended behavioral outcomes
 
-4. **Responsibility Distribution**
-   - Platform responsibility vs. advertiser vs. user?
-   - If algorithm does the manipulation, who's liable?
-   - Should algorithm designers be liable for foreseen harms?
+### Research Ethics Considerations:
+- Independent auditing access to evaluate technique effectiveness
+- Publication of findings on both effectiveness and defense mechanisms
+- Avoidance of tools designed specifically for exploitation optimization
+- Transparency regarding methodology and measurement approaches for vulnerable population identification
 
-5. **Reversibility**
-   - Can people be de-radicalized if radicalization was engineered?
-   - Do people change beliefs if they realize they were manipulated?
-   - What's the cost of recovery?
+## RESEARCH DESIGN CONSIDERATIONS
 
----
+**Empirical questions for auditing frameworks:**
 
-## BRIGHT-LINE RULES WORTH CONSIDERING
+1. **Awareness and Effectiveness**
+   - Does explicit disclosure of technique mechanism affect its behavioral impact?
+   - How much explanation is required to reduce effectiveness?
+   - Do different population groups show different awareness-effectiveness relationships?
 
-### For Platforms:
-- ❌ Do not algorithmically isolate users from counter-narratives
-- ❌ Do not design specifically to maximize emotional dysregulation
-- ❌ Do not apply fractionation cycles or emotional hypnosis patterns
-- ❌ Do not target vulnerable populations with addictive design
-- ❌ Do not identity-lock through public commitment + algorithmic amplification
-- ✅ Do disclose top factors driving feed curation
-- ✅ Do provide tools to view what others see
-- ✅ Do allow opt-out of personalization
+2. **Information Asymmetry Dimensions**
+   - Which disclosure dimensions have largest behavioral effects?
+   - Can effects be ranked by importance?
+   - Do effects interact across dimensions?
 
-### For Advertisers:
-- ❌ Do not use deepfakes or synthesized authority figures
-- ❌ Do not hide commercial intent or paid relationships
-- ❌ Do not use emotional hypnosis techniques
-- ❌ Do not deliberately exploit known vulnerabilities (addiction, mental health)
-- ❌ Do not coordinate fake grassroots movements
-- ✅ Do disclose sponsorship clearly
-- ✅ Do provide accurate information about product
-- ✅ Do allow easy opt-out
+3. **Population Heterogeneity**
+   - Which factors predict individual susceptibility differences?
+   - Can heterogeneity be mapped systematically?
+   - Do vulnerability profiles show stability across technique types?
 
-### For Data/Psychology Research:
-- ❌ Do not enable identification of vulnerable individuals for exploitation
-- ❌ Do not create tools specifically for radicalization engineering
-- ❌ Do not develop synthetic authority generation
-- ✅ Do publish findings on manipulation effectiveness
-- ✅ Do publish findings on defenses/inoculation
-- ✅ Do enable independent auditing of platforms
+4. **Specification of Scope**
+   - What constitutes adequate transparency for each technique type?
+   - Can disclosure requirements be specified quantitatively?
+   - What measurement approaches validate adequate disclosure?
 
----
+5. **System-Level Effects**
+   - What emergent effects occur when multiple techniques combine?
+   - Can compound effects be predicted from individual technique effects?
+   - How do algorithmic systems amplify or reduce technique effects?
 
-## FOR YOUR RESEARCH
-
-**Key question:** Where do YOU draw the line between persuasion and manipulation?
-
-Consider:
-- Is Bernays' dental association OK if disclosed?
-- Is algorithm showing you what you're likely to click OK if you're aware it's doing that?
-- Is emotional priming OK if you know it's happening?
-- Is identity lock-in OK if voluntary?
-
-**The harder questions:**
-- Does awareness prevent effectiveness? (Do people change behavior when they know they're being manipulated?)
-- Can bright lines be drawn or is it continuous spectrum?
-- Who should decide? (Individuals, platforms, regulators, researchers?)
-- What's the cost of preventing manipulation? (Efficiency loss, paternalism?)
-
-**Academic debate you should engage with:**
-- Sunstein's "Nudge" (paternalism justified by irrationality)
-- Criticism of Sunstein (who decides what's good for you?)
-- First Amendment questions (is manipulation protected speech?)
-- Autonomy questions (can you consent under information asymmetry?)
+**Related scholarly frameworks:**
+- Information asymmetry in consumer decision-making
+- Behavioral economics models of decision quality
+- Cognitive load and decision-making capacity
+- Autonomy and consent under uncertainty
+- Comparative regulatory approaches to disclosure requirements

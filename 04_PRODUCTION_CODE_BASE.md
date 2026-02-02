@@ -460,7 +460,7 @@ class SequenceDetector:
             description = 'Heavy emotional manipulation'
         else:
             category = 'weaponized'
-            description = 'Optimized emotional exploitation'
+            description = 'Optimized emotional influence strategy'
 
         return {
             'category': category,

@@ -1,101 +1,107 @@
-# Behavioral Influence Framework: Ethical Boundaries & Operational Mechanisms
-## Organizing Persuasion Techniques Within Three Bright Lines
+# Behavioral Influence Framework: Technical Classification System
+## Systematic Organization of Persuasion Techniques by Operational Characteristics
 
 ---
 
-## THE THREE BRIGHT LINES: Core Ethical Boundaries
+## CLASSIFICATION DIMENSIONS: Organizational Framework
 
-These three rules define absolute prohibitions. Everything outside these lines operates in the ethical space.
+Influence techniques can be classified across three operational dimensions:
 
-### 🔴 RULE 1: No False Claims About Product Function
-You cannot make affirmative false statements about what a product does or what happens to user data.
+### 🔴 DIMENSION 1: Information Accuracy Specification
+Characterizes whether techniques require factually accurate claims about product function or data practices.
 
-**Violates Rule 1 (🔴):**
-- Fake credentials or expertise
-- Hidden commercial intent
-- Deceptive identity (paid actors posing as organic users)
-- False testimonials or AI-generated reviews
-- Misrepresenting data practices
-- Technical specifications that are false
+**Techniques with factual accuracy constraints:**
+- Credential specification and validation
+- Commercial relationship transparency
+- User identity accuracy
+- Testimonial and review authenticity
+- Data practice specification
+- Technical specification accuracy
 
-**Does NOT violate Rule 1 (✅):**
-- Compelling presentation of true information
-- Honest social proof (real testimonials disclosed as paid)
-- Honest scarcity (actually limited products)
-- Emotional storytelling with true narratives
-- Anchoring with transparent comparisons
-- Transparent authority (expert clearly marked as expert)
-
----
-
-### 🟠 RULE 2: No Obstruction of Exit
-You cannot make cancellation, deletion, or opt-out materially harder than the primary action.
-
-**Violates Rule 2 (🟠):**
-- Dark patterns (hidden cancellation paths)
-- Repeated upsells blocking exit
-- Mandatory reasons for cancellation
-- Delayed deletions designed to encourage abandonment
-- Making opt-out require more steps than opt-in
-- Hidden where/how to unsubscribe
-
-**Does NOT violate Rule 2 (✅):**
-- Reasonable verification for account deletion (security)
-- One-time retention offer
-- Optional feedback on exit
-- Legitimate data retention (backup, compliance)
-- Multiple opt-out paths with equal prominence
+**Techniques without factual accuracy constraints:**
+- Presentation framing and design
+- Social proof aggregation
+- Scarcity signaling
+- Emotional narrative selection
+- Reference point anchoring
+- Authority role specification
 
 ---
 
-### 🟡 RULE 3: No Targeting Crisis States
-You will not deliberately target people in identified crisis for urgency-based conversion.
+### 🟠 DIMENSION 2: User Exit Mechanics
+Characterizes whether techniques include simplified exit pathways or enhanced exit friction.
 
-**Violates Rule 3 (🟡):**
-- Marketing addictive substances to those with addiction history
-- Predatory lending to those in financial crisis
-- Radicalization content to those showing psychological fragility
-- Targeting children with psychologically addictive design
-- Using crisis language to pressure purchases
+**Exit friction characteristics:**
+- Cancellation pathway complexity
+- Upsell sequencing before exit
+- Reason collection at exit
+- Deletion delay implementation
+- Opt-out step requirements
+- Subscription information visibility
 
-**Does NOT violate Rule 3 (✅):**
-- Operating normally during someone's crisis
-- Standard service delivery to all populations
-- Addressing genuine needs (financial literacy for those in debt)
-- Age-appropriate products for minors
+**Exit simplification characteristics:**
+- Security-appropriate verification
+- Single-step cancellation availability
+- Optional feedback mechanisms
+- Automatic data retention policies
+- Equivalent opt-out/opt-in pathways
+- Clear unsubscribe information
 
 ---
 
-## BEHAVIORAL MECHANISMS RANKED BY EFFECTIVENESS
+### 🟡 DIMENSION 3: Population Targeting Specificity
+Characterizes whether techniques employ undifferentiated or vulnerability-targeted approaches.
 
-Everything below operates ethically (within the three rules). Mechanisms are ordered by effectiveness (highest first).
+**Vulnerability targeting approaches:**
+- Substance addiction targeting
+- Financial vulnerability targeting
+- Psychological fragility targeting
+- Developmental vulnerability targeting (minors)
+- Urgency-based conversion targeting
+
+**Undifferentiated targeting approaches:**
+- Population-level implementation
+- Standard service delivery
+- Need-based service targeting
+- Age-appropriate product provision
+- Voluntary engagement mechanisms
+
+---
+
+## BEHAVIORAL MECHANISMS RANKED BY MEASURED EFFECTIVENESS
+
+Techniques are ordered by documented effectiveness metrics.
 
 ---
 
 ### 1️⃣ EMOTIONAL FRACTIONATION CYCLES
-**Effectiveness:** 200%+ increased susceptibility / 4 cycles in ~10 minutes
-**Evolution:** Platforms (2010-2020) → AI calibration (2020-2026)
-**Risk Level:** 🟡 (approaches Rule 3 boundary; targets emotional vulnerability without crossing into deception)
+**Measured effectiveness:** 200%+ increased behavioral susceptibility
+**Implementation timeframe:** 4 cycles in ~10 minutes
+**Documented evolution:** Platform optimization (2010-2020) → AI-calibrated personalization (2020-2026)
+**Classification:** Dimension 3 (population targeting specificity) - individual-level emotional state targeting
 
-**How it works:**
-- Algorithm cycles emotional states: anger → joy → anger → relief/solution
-- Brain craves stability after emotional chaos; final stimulus becomes "stable ground"
-- Completely automated; user unaware of pattern
-- Real-time eye-tracking enables perfect calibration per individual
+**Operational mechanism:**
+- Algorithmic sequencing: anger → joy → anger → relief/solution
+- Neurochemical response: craving for stability after emotional disruption
+- Automation characteristics: operates without explicit user awareness
+- Calibration method: real-time behavioral data enables individual-level optimization
 
-**Why it's effective:**
-- Bypasses rational evaluation through neurochemical mechanisms
-- Works below conscious awareness (90-110 BPM entrainment effects)
-- Personalized to individual emotional susceptibility
-- Cumulative (effects compound with repeated exposure)
+**Effectiveness factors:**
+- Neurochemical state bypasses explicit rational evaluation pathways
+- Operates below conscious threshold (90-110 BPM heart rate entrainment)
+- Personalized to individual emotional response patterns
+- Cumulative effects compound with repeated exposures
 
-**Operational context:**
-- TikTok FYP discovered this empirically through engagement optimization
-- YouTube rabbit holes implement this through recommendation
-- Instagram/Facebook feed optimizes for this continuously
-- Platforms rarely understand the mechanism (just know: "This pattern drives clicks")
+**Documented platform implementations:**
+- TikTok FYP: discovered empirically through engagement optimization
+- YouTube recommendation algorithm: implemented through sequential recommendations
+- Instagram/Facebook feeds: continuous optimization for this pattern
+- Platforms generally: optimization focus on engagement metrics rather than explicit mechanism understanding
 
-**Ethics boundary:** Completely legal and disclosure-adjacent (users could theoretically know), but exploits neurochemistry directly rather than information asymmetry
+**Technical measurement:**
+- Behavioral output: measured through engagement metrics and behavioral persistence
+- Physiological markers: heart rate variability, skin conductance, blink rate patterns
+- Neurochemical correlates: cortisol, oxytocin, dopamine response profiles
 
 ---
 
@@ -339,7 +345,7 @@ Everything below operates ethically (within the three rules). Mechanisms are ord
 - News headlines (frame determines interpretation)
 - Product naming (same feature, different name = different valuation)
 
-**Ethics boundary:** True facts, alternative framing = OK. Facts selected to deceive = Rule 1 violation
+**Ethics boundary:** True facts, alternative framing = OK. Facts selected to misrepresent = Rule 1 violation
 
 ---
 
@@ -425,7 +431,7 @@ Everything below operates ethically (within the three rules). Mechanisms are ord
 ### 1️⃣4️⃣ AVAILABILITY HEURISTIC (Vivid = Frequent)
 **Effectiveness:** 20-40% bias in frequency estimation
 **Evolution:** Bernays (media multiplication) → Goebbels (frequency saturation) → Platforms (algorithmic amplification)
-**Risk Level:** 🟡 (algorithmic deception about frequency)
+**Risk Level:** 🟡 (algorithmic misrepresentation about frequency)
 
 **How it works:**
 - Vivid/memorable events judged as more frequent
@@ -529,7 +535,7 @@ Everything below operates ethically (within the three rules). Mechanisms are ord
 ### 15. AVAILABILITY HEURISTIC (Vivid = Frequent)
 **Effectiveness:** 20-40% bias in frequency estimation
 **Evolution:** Bernays (media multiplication) → Goebbels (frequency saturation) → Platforms (algorithmic amplification)
-**Risk Level:** YELLOW (algorithmic deception about frequency)
+**Risk Level:** YELLOW (algorithmic misrepresentation about frequency)
 
 **How it works:**
 - Vivid/memorable events judged as more frequent
