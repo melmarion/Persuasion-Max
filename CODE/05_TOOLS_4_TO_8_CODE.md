@@ -759,7 +759,7 @@ class OrganizationAssessment:
         index = (
             metrics['fractionation_intensity'] * 0.40 +
             metrics['personalization_depth'] * 0.30 +
-            metrics['vulnerable_targeting'] * 0.20 +
+            metrics['susceptibility_targeting'] * 0.20 +
             metrics['predictability'] * 0.10
         )
 
@@ -790,7 +790,7 @@ class OrganizationAssessment:
                 'Critical: Algorithm heavily optimized for influence intensity',
                 'Reduce emotional fractionation in feed sequencing',
                 'Implement content diversity requirements',
-                'Add protections for vulnerable populations',
+                'Adjust intensity thresholds for high-susceptibility populations',
                 'Increase time between relief-bearing content'
             ]
         elif index > 50:
@@ -822,8 +822,8 @@ class OrganizationAssessment:
         # Implementation: analyze feed variation per user
         return 50.0  # Placeholder
 
-    def _estimate_vulnerable_targeting(self, feeds: List[List[str]]) -> float:
-        """Estimate targeting of vulnerable groups"""
+    def _estimate_susceptibility_targeting(self, feeds: List[List[str]]) -> float:
+        """Estimate targeting of high-susceptibility groups"""
         # Implementation: analyze content targeting patterns
         return 50.0  # Placeholder
 ```

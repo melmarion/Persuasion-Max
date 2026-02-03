@@ -717,7 +717,7 @@ class ResearchDesignTemplates:
     def three_way_moderation_design() -> Dict:
         """Does personality moderate the effect of fractionation?
 
-        Research question: Are people high in neuroticism MORE vulnerable to fractionation?
+        Research question: Are people high in neuroticism MORE susceptible to fractionation?
         """
         return {
             'design_type': '2x3 Factorial ANOVA',
@@ -967,9 +967,9 @@ class DigitalEngagementDiagnosis:
         - Sleep quality: {self.sleep_quality_rating:.1f}/10
 
         PSYCHOLOGICAL PROFILE:
-        - Trait anxiety: {self.trait_anxiety_score:.1f}/20 (Higher = more vulnerable)
+        - Trait anxiety: {self.trait_anxiety_score:.1f}/20 (Higher = higher susceptibility)
         - Depression screening: {self.depression_screening_score:.1f} (PHQ-9 format)
-        - Self-esteem: {self.self_esteem_score:.1f}/50 (Lower = more vulnerable)
+        - Self-esteem: {self.self_esteem_score:.1f}/50 (Lower = higher susceptibility)
         - FOMO severity: {self.fomo_score:.1f}/100
 
         SUSCEPTIBILITY ASSESSMENT:
@@ -1461,7 +1461,7 @@ ECONOMICS DOMAIN: Decision-Making Patterns
 1. I make impulsive purchases I later regret
 2. I have strong FOMO (Fear of Missing Out)
 3. When offered limited-time deals, I act quickly
-4. I buy things when I'm emotionally vulnerable (sad, angry, lonely)
+4. I buy things when I'm emotionally reactive (sad, angry, lonely)
 5. I don't track where my money goes week-to-week
 
 SCORING: Add your answers
@@ -1580,8 +1580,8 @@ Week 4+: Consistency
 class ParentEducationModule:
     """Special curriculum for parents learning to protect their teenagers
 
-    Research note: Parents are often more vulnerable than teens
-    Teens know algorithms leverage emotions; parents sometimes don't
+    Research note: Parents and teens have different susceptibility patterns
+    Teens understand algorithms leverage emotions; parents may not recognize the patterns
     """
 
     modules = {
@@ -1711,7 +1711,7 @@ class PlatformAuditReport:
     rapid_mood_shift_frequency: float  # How often users experience A-J-A-R cycling?
 
     # Vulnerable population targeting
-    percentage_vulnerable_audience: float  # Estimated % high-anxiety users targeted
+    percentage_high_susceptibility_audience: float  # Estimated % high-anxiety users targeted
     aggressive_targeting_of_minors: bool  # Are algorithms differently aggressive with teens?
 
     # Algorithmic opacity
