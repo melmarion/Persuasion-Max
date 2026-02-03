@@ -5,6 +5,12 @@ Detection Patterns for 10 Influence Integrity Categories
 Source: Derived from behavioral influence research
 Purpose: Pattern matching for content integrity analysis with mechanism documentation
 Application: Content auditing for influence technique identification
+
+Adaptation Notice:
+    This code is provided as a reference implementation. Readers are encouraged
+    to adapt, modify, and convert this code to fit their own programs, frameworks,
+    and use cases. The patterns, structures, and detection logic can be customized
+    to suit specific project requirements, programming languages, or platforms.
 """
 
 import re

@@ -18,6 +18,12 @@ Usage:
 
 Author: Persuasion Max Project
 Version: 1.0.0
+
+Adaptation Notice:
+    This code is provided as a reference implementation. Readers are encouraged
+    to adapt, modify, and convert this code to fit their own programs, frameworks,
+    and use cases. The patterns, structures, and generation logic can be customized
+    to suit specific project requirements, programming languages, or platforms.
 """
 
 import re
