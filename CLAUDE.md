@@ -56,6 +56,11 @@ Apply the same principle to code:
 - `manipulation_detector` → `influence_detector`
 - `dark_pattern_flag` → `pattern_type_flag`
 - `addiction_risk` → `engagement_intensity`
+- `consent_score` → `awareness_score` or `understanding_score`
+- `protection_features` → `transparency_features` or `control_features`
+- `vulnerable_targeting` → `susceptibility_targeting` or `population_response_targeting`
+- `prevents_harm` → `measures_intensity` or `reduces_impact`
+- `user_protection` → `user_analytics` or `user_insights`
 
 ### Exception: Detection Markers
 
@@ -94,25 +99,48 @@ The project measures **intensity levels** objectively. Users and researchers det
 
 | Avoid | Preferred Alternative |
 |-------|----------------------|
-| protect, protection | enable, support, transparency |
-| prevention technology, preventable | analysis technology, measurable |
-| vulnerable users | users with different susceptibility levels |
-| warning (when describing tool output) | analysis, feedback, insights |
-| intervene, intervention | provide feedback, analytics, insights |
-| defend, defense | measure, analyze, understand |
-| at-risk populations | populations with distinct response patterns |
+| protect, protection | enable, support, transparency, measure |
+| prevention technology, preventable | analysis technology, measurable, detection system |
+| vulnerable users | users with different susceptibility levels, high-susceptibility users |
+| warning (when describing tool output) | analysis, feedback, insights, measurements |
+| intervene, intervention | provide feedback, analytics, insights, report findings |
+| defend, defense | measure, analyze, understand, countermeasure |
+| at-risk populations | populations with distinct response patterns, high-susceptibility populations |
+| informed consent | information access, transparency, user awareness |
+| consent mechanisms | disclosure mechanisms, information delivery systems |
+| consent procedures | transparency procedures, participation protocols |
 | emotional appeal/fear-based language | intensity-focused language |
 
 ### Specific Framings to Remove
 
-1. **"Protect vulnerable users"** → Remove or reframe as enabling informed engagement
+1. **"Protect vulnerable users"** → Remove or reframe as: "Measure intensity for high-susceptibility users"
 2. **"Prevention technology"** → "Analysis technology" or "Detection and measurement system"
-3. **"Preventable: Users can protect themselves"** → "Analyzable: Patterns become quantifiable"
+3. **"Preventable: Users can protect themselves"** → "Analyzable: Patterns become quantifiable and measurable"
 4. **"Tool warns users"** → "Tool provides real-time analytical feedback"
 5. **"Tool intervenes"** → "Tool offers analytics and insights"
 6. **"Defense/defensive"** → "Analysis," "countermeasure," or "research strategy"
 7. **"Identify vulnerable populations"** → "Identify populations with distinct susceptibility patterns"
 8. **"When to seek help/warning signs"** → "Behavioral patterns, engagement indicators"
+9. **"Enable informed consent"** → "Provide information access" or "Supply transparency"
+10. **"Informed consent requires X"** → "User autonomy requires X" or "Meaningful choice requires X"
+11. **"Ethical boundaries"** → "Intensity thresholds" or "Classification boundaries"
+12. **"Protect against X threat"** → "Measure X impact" or "Analyze X intensity"
+
+### Exception: Acceptable Use of "Vulnerable"
+
+The term "vulnerable populations" or "users with high susceptibility" is **acceptable when used descriptively** in these contexts:
+
+- **Behavioral analysis:** "Populations vulnerable to fractionation sequences" = describing susceptibility pattern ✓
+- **Data structures:** `vulnerable_populations` variable in detection code = labeling data categories ✓
+- **Research findings:** "This population shows higher susceptibility to X stimulus" = reporting measurement results ✓
+- **Technical specifications:** "High-susceptibility user segments" in targeting analysis = analytical taxonomy ✓
+
+**NOT acceptable when used for:**
+- "We need to protect vulnerable users" (replace: "We need to measure intensity for high-susceptibility users")
+- "Vulnerable populations need safeguards" (replace: "Different populations require different intensity thresholds")
+- "These users are at risk" (replace: "These users show high responsiveness to stimulus X")
+
+The distinction: Use "vulnerable" for **describing observable susceptibility patterns**, not for implying users need protection.
 
 ### Principle
 
@@ -130,3 +158,4 @@ Tools are **measurement and analysis systems**, not protection mechanisms. They 
 2. **Broader applicability** - Neutral tools serve research, regulatory, commercial, and clinical purposes
 3. **User agency** - Frames users as information consumers, not vulnerable populations needing protection
 4. **Academic credibility** - Measurement language aligns with scientific discourse
+5. **Consistency** - All project language reflects measurement/analysis framing, not protection framing

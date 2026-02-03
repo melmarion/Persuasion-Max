@@ -1685,7 +1685,7 @@ class PlatformIntensityLevel(Enum):
     Based on: Compilation.txt research on fractionation, emotional sequencing,
     targeting of susceptible populations, intentionality of design
     """
-    ETHICAL = "Ethical (0-20)"  # Minimal intensity detected
+    MINIMAL_INTENSITY = "Minimal Intensity (0-20)"  # Minimal intensity detected
     MINIMAL = "Minimal Intensity (21-40)"  # Some patterns but not systematic
     MODERATE = "Moderate Intensity (41-60)"  # Systematic patterns detected
     HEAVY = "Heavy Intensity (61-80)"  # Extensive influence design
@@ -1752,26 +1752,26 @@ class RegulatoryComplianceAnalyzer:
         - Susceptible population targeting: 20% weight
         - Personalization/opacity: 20% weight
         - Economic impact: 15% weight
-        - User consent/awareness: 5% weight
+        - User awareness/understanding: 5% weight
         """
 
         fractionation_score = audit_findings.get('fractionation_index', 0) * 0.40
         targeting_score = audit_findings.get('susceptible_targeting_score', 0) * 0.20
         opacity_score = audit_findings.get('algorithmic_opacity_score', 0) * 0.20
         impact_score = audit_findings.get('economic_impact_score', 0) * 0.15
-        consent_score = (100 - audit_findings.get('user_understanding', 0)) * 0.05
+        awareness_score = (100 - audit_findings.get('user_understanding', 0)) * 0.05
 
         intensity_index = (
             fractionation_score +
             targeting_score +
             opacity_score +
             impact_score +
-            consent_score
+            awareness_score
         )
 
         # Categorize
         if intensity_index < 20:
-            level = PlatformIntensityLevel.ETHICAL
+            level = PlatformIntensityLevel.MINIMAL_INTENSITY
         elif intensity_index < 40:
             level = PlatformIntensityLevel.MINIMAL
         elif intensity_index < 60:

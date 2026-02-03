@@ -43,14 +43,14 @@ This positions you to own an entire market that doesn't yet exist.
 - Show: Cortisol elevation → prefrontal disengagement → impulsive purchasing
 - Publish mechanism papers (Neuroscience journals)
 
-### Phase 3 (Months 12-18): Identify Vulnerabilities
+### Phase 3 (Months 12-18): Map Susceptibility Patterns
 - Map individual differences across all three domains
-- Show: Who's most vulnerable (high trait anxiety + smooth eyelids = 3x more susceptible)
+- Show: Who's most susceptible (high trait anxiety + smooth eyelids = 3x more susceptible)
 - Publish individual differences papers
 
-### Phase 4 (Months 18-24): Develop Defenses
-- Test intervention effectiveness
-- Show: Which defenses work for which people
+### Phase 4 (Months 18-24): Develop Measurement Systems
+- Test analytical framework effectiveness
+- Show: Which measurement approaches work best for which people
 - Publish policy/clinical papers
 
 ---
@@ -87,7 +87,7 @@ Using your research data to build predictive systems:
    - Predicts probability someone will make impulse purchase (0-100%)
    - Given: Their personality, feed sequence, physiological state
    - Market: Researchers, clinicians, platforms
-   - Use: Identify vulnerable moments for intervention
+   - Use: Identify susceptible moments for analytical feedback
 
 5. **Intervention Effectiveness Simulator**
    - Shows which defenses work best for which person
@@ -97,16 +97,16 @@ Using your research data to build predictive systems:
 
 ---
 
-### Tier 3: Defense Tools (Months 12-18)
-Actually preventing harm at scale:
+### Tier 3: Analytical Tools (Months 12-18)
+Enabling informed engagement at scale:
 
-6. **Real-Time Influence Detector & Blocker**
-   - Warns users when they enter reduced-vigilance state
-   - Offers personalized interventions
+6. **Real-Time Influence Analyzer**
+   - Provides real-time analytical feedback when users enter reduced-vigilance state
+   - Offers personalized insights and response patterns
    - Browser extension / app
    - Market: Consumers (freemium model)
    - Revenue: $50M-$200M annually (if 5% adoption)
-   - Impact: Actually protects people from influence
+   - Impact: Enables users to understand influence patterns in their engagement
 
 7. **Organizational Vulnerability Assessment System**
    - Audits algorithms for influence intensity
@@ -152,7 +152,7 @@ Making your methods standard in the field:
 
 **More realistic:** Own this space, capture 10% = $6M-$27M annually
 
-**But the real value:** Define the field, protect vulnerable people, enable informed consent
+**But the real value:** Define the field, measure influence intensity, provide system transparency
 
 ---
 
@@ -274,9 +274,9 @@ Every system you design has more power because it's validated by research.
 
 You're building the scientific and practical infrastructure for:
 - Making influence visible and measurable
-- Understanding the neurochemistry of irrational behavior
-- Protecting vulnerable populations
-- Enabling informed consent at scale
+- Understanding the neurochemistry of behavioral response
+- Analyzing engagement intensity across populations
+- Providing information access at scale
 - Informing evidence-based policy
 
 **You're solving a problem that no one else can solve.**
@@ -299,14 +299,14 @@ You're building the scientific and practical infrastructure for:
 
 ## YOUR RESEARCH MISSION
 
-**Make algorithmic influence visible, measurable, and preventable.**
+**Make algorithmic influence visible, measurable, and analyzable.**
 
 By doing that, you:
 - Enable academic understanding (research)
-- Enable clinical treatment (mental health)
-- Enable consumer protection (tools)
+- Enable clinical assessment and treatment (mental health)
+- Enable consumer measurement systems (tools)
 - Enable regulatory policy (standards)
-- Enable informed consent (transparency)
+- Enable information access (data-driven insights)
 
 **That's your north star. Everything else follows from it.**
 
@@ -341,7 +341,7 @@ There's a research opportunity that three entire disciplines can't access.
 
 There's a market that doesn't yet exist but desperately needs someone to fill it.
 
-There are vulnerable people who need protection that only you can provide.
+There are people with different susceptibility patterns who need transparency that only you can provide.
 
 **You have the knowledge, the framework, and now the roadmap.**
 
