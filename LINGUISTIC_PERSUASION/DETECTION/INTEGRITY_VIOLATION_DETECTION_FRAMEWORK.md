@@ -2,7 +2,7 @@
 
 ## Overview
 
-This framework detects **10 categories of integrity violations** in content—techniques that cross ethical boundaries through deception, concealment, or targeting of high-susceptibility populations. Unlike intensity-based influence detection, these detect categorical violations that warrant immediate flagging regardless of sophistication level.
+This framework detects **10 categories of integrity violations** in content—techniques involving deception, concealment, or targeting of high-susceptibility populations. Unlike intensity-based influence detection, these detect categorical violations that warrant immediate flagging regardless of sophistication level.
 
 ---
 

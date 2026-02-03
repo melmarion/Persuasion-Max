@@ -237,7 +237,7 @@ OUTPUT: Influence Index (0-100)
 
 **Commercial Application:**
 - Platform performance benchmarking
-- Competitive marketing: "Most ethical platform"
+- Competitive marketing: "Most transparent platform"
 - Could become industry standard (like carbon footprint)
 
 **Next Action:** Define weighting formula—how much does each factor contribute to final score?
@@ -590,7 +590,7 @@ RECOMMENDATION ENGINE:
 **Commercial Value:**
 - Platforms pay to show compliance/ethics
 - "We scored 28/100 on digital wellness influence index"
-- Competitive marketing: "Most ethical platform"
+- Competitive marketing: "Most transparent platform"
 - Could become industry standard (like carbon footprint)
 - Estimated licensing: $500K-$2M per platform
 

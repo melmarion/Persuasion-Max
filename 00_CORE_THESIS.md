@@ -74,7 +74,7 @@
 
 **Neuroscientists** study brain mechanisms in controlled labs, but they:
 - Don't have access to real social media algorithms
-- Can't ethically force participants into algorithmic feed loops
+- Can't justify forcing participants into algorithmic feed loops for extended periods
 - Study mechanisms in isolation, not at scale
 - Miss the ecological validity of real-world exposure
 

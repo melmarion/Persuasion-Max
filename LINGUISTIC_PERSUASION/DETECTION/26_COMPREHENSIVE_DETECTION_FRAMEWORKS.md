@@ -3314,7 +3314,7 @@ class InterventionType(Enum):
     WARNING_LABEL = "content_warning"
     COOLING_OFF = "decision_delay"
     TRANSPARENCY = "disclosure_requirement"
-    DESIGN_CHANGE = "ethical_design_modification"
+    DESIGN_CHANGE = "intensity_reduction_design_modification"
 
 @dataclass
 class InterventionEffectiveness:

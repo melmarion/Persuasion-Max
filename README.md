@@ -368,7 +368,7 @@ This project uses **neutral professional language** to describe behavioral influ
 - ✅ 10 detection framework documents
 - ✅ 14 research foundation documents
 - ✅ 3 implementation roadmaps
-- ✅ Complete ethical framework
+- ✅ Complete intensity threshold framework
 - ✅ 40+ total documentation files
 
 See [META/PROJECT_STATUS.md](META/PROJECT_STATUS.md) for detailed status.
