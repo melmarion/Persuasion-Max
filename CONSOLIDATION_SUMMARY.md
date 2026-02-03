@@ -230,9 +230,46 @@ const colorSpec = COLOR_WAVELENGTHS.WARM_ACCENT;
 
 ---
 
+## Consolidation Verification Checklist
+
+**This checklist is mandatory for any file migration, consolidation, or deletion workflow.**
+
+During this project's consolidation, two documentation files (`UX_LAW_CONTRADICTIONS.md` and `UX_LAYOUT_DESCRIPTION.md`) were deleted from the source folder without being moved to the destination first. The JS export verification passed (97/97 symbols), but these were `.md` files with no JS exports — so the automated check missed them entirely. They had to be restored from git history.
+
+**Lesson:** Verifying one file type does not verify all file types. Every file must be accounted for individually before any source is deleted.
+
+### Before Deleting Source Files
+
+- [ ] **Full file inventory**: List every file in the source folder (not just `.js` — include `.md`, `.json`, `.css`, `.txt`, and any other types)
+- [ ] **Per-file disposition**: For each file, document one of:
+  - Migrated to `[destination path]`
+  - Content inlined into `[destination file]`
+  - Intentionally not migrated (reason: ___)
+- [ ] **No file left unaccounted**: The number of files in the inventory must equal the number of dispositions
+- [ ] **Verify non-code files separately**: Documentation, config, and asset files have no exports to count — confirm they exist at their destination by reading them
+- [ ] **Verify code files**: Run export/symbol count or equivalent check against the destination
+- [ ] **Diff spot-check**: For critical files, compare source content against destination content to confirm nothing was truncated or altered
+
+### After Deleting Source Files
+
+- [ ] **Confirm destination files exist**: Read each migrated file to verify it's present and non-empty
+- [ ] **Cross-reference inventory**: Every "migrated to" entry has a real file at that path
+- [ ] **Update all references**: Search the project for any paths pointing to the deleted source folder and update them
+- [ ] **Git status review**: Confirm only expected files show as deleted — no unintended deletions
+
+### Red Flags to Stop and Re-check
+
+- File count before deletion != file count accounted for in disposition list
+- Verification only covers one file type (e.g., only `.js` but source also had `.md`)
+- Any file marked "intentionally not migrated" without a clear reason
+- Destination file is significantly smaller than source without explanation
+
+---
+
 ## Version
 
 - **Created:** 2026-02-02
+- **Updated:** 2026-02-03
 - **Status:** Consolidated and Production-Ready
 - **Available:** Root-level `UX_DESIGN_SYSTEM.md` and `UX_DESIGN_SYSTEM.js`
 - **Location:** `UX_DESIGN_SYSTEM.js` (primary import, all modules consolidated inline)
