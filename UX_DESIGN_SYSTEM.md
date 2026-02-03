@@ -11,14 +11,25 @@ This master document consolidates all UX design system guidance for implementing
 ```javascript
 // Import all exports from main entry point
 import {
+  // Core tokens
   TOUCH_TARGETS, SPACING, TYPOGRAPHY, COLORS, HIERARCHY,
   RESPONSE_TIMES, CHUNK_LIMITS, A11Y,
   EASING, SPRINGS, TIMINGS, HAPTIC_RULES,
   THUMB_ZONES, GESTURE_SHORTCUTS, SCREEN_PRIORITIES,
   PROGRESS, PROGRESS_MESSAGING, EMOTIONAL_DESIGN,
   VERTICAL_RHYTHM, OPTICAL_GUIDE, BREAKPOINTS,
-  getProgressPercent, shouldShowProgress, spacing, withOpacity
-} from './uxDesignSystem';
+  getProgressPercent, shouldShowProgress, spacing, withOpacity,
+
+  // Engagement patterns (P1-P12)
+  P1_VARIABLE_REWARD, P2_PROGRESS_MOMENTUM, /* ... P3-P12 */
+  USER_PATTERN_RESPONSIVENESS, PATTERN_COMBINATIONS,
+
+  // Session design
+  SESSION_PHASES, CRITICAL_EVENTS, RETURN_HOOKS,
+
+  // Neuro-aesthetic parameters
+  COLOR_WAVELENGTHS, AUDIO_FREQUENCIES, HAPTIC_SPECIFICATIONS
+} from './UX_DESIGN_SYSTEM';
 ```
 
 ---
@@ -461,31 +472,44 @@ Use this checklist when auditing new tools for implementation:
 
 ## 12. File Reference Guide
 
-| Module | Purpose | Key Exports |
+All content is consolidated into root-level files:
+
+| File | Purpose | Key Exports |
 |--------|---------|-------------|
-| `uxDesignSystem.js` | Main entry point | All re-exports |
-| `uxConstants.js` | Core design tokens | Spacing, colors, typography, touch targets |
-| `uxAnimations.js` | Motion & animation | Easing, springs, haptic rules, sound specs |
-| `uxMobile.js` | Mobile optimization | Thumb zones, gestures, screen priorities |
-| `uxProgress.js` | Progress indicators | Progress rules, messaging, triggers |
-| `uxEmotional.js` | Emotional design | Core emotion, feedback patterns |
-| `uxSocial.js` | Social proof | Display types, proof patterns |
-| `uxLayout.js` | Layout patterns | Vertical rhythm, breakpoints, widths |
-| `uxHelpers.js` | Utility functions | Spacing, styling, responsive helpers |
-| `UX_LAYOUT_DESCRIPTION.md` | Detailed layout specs | Component dimensions, positions, behaviors |
-| `UX_LAW_CONTRADICTIONS.md` | Law analysis | Design law implementations and trade-offs |
+| **`UX_DESIGN_SYSTEM.js`** | **MAIN ENTRY POINT** | **All consolidated exports - import from here** |
+| **`UX_DESIGN_SYSTEM.md`** | **This document** | Master reference & audit checklist |
+
+### Sections within `UX_DESIGN_SYSTEM.js`
+
+| Section | Purpose | Key Exports |
+|---------|---------|-------------|
+| Core Constants | Design tokens | Spacing, colors, typography, touch targets |
+| Animations & Motion | Motion & animation | Easing, springs, haptic rules, sound specs |
+| Mobile Optimizations | Mobile design | Thumb zones, gestures, screen priorities |
+| Progress Indicators | Progress & Zeigarnik | Progress rules, messaging, triggers |
+| Emotional Design | Emotion framework | Core emotion, feedback patterns |
+| Social Proof | Social patterns | Display types, proof patterns |
+| Layout Patterns | Layout specs | Vertical rhythm, breakpoints, widths |
+| Helper Functions | Utilities | Spacing, styling, responsive helpers |
+| Engagement Patterns (P1-P12) | User engagement specs | P1-P12 constants, user responsiveness, metrics |
+| Session Design | Session architecture | 11-min phases, event timestamps, hooks |
+| Neuro-Aesthetic Parameters | Sensory design specs | Colors, audio frequencies, haptic, environmental |
 
 ---
 
 ## Notes for Implementation
 
-1. **Always import from main entry point** (`uxDesignSystem.js`) for convenience
+1. **Always import from main entry point** (`UX_DESIGN_SYSTEM.js`) for convenience
 2. **Use named imports** for better tree-shaking and clarity
 3. **Reference this master document** when implementing features
-4. **Check specific module documentation** for detailed parameters
-5. **Test on mobile** to ensure touch targets and gestures work
-6. **Verify animations** complete within Doherty threshold
-7. **Validate color contrast** against WCAG AA standards
+4. **Test on mobile** to ensure touch targets and gestures work
+5. **Verify animations** complete within Doherty threshold
+6. **Validate color contrast** against WCAG AA standards
+
+### Consolidated Modules (all in `UX_DESIGN_SYSTEM.js`)
+- **Engagement Patterns (P1-P12)**: User responsiveness multipliers, metrics per pattern
+- **Session Architecture**: 11-minute reward curves, critical event timestamps, return hooks
+- **Neuro-Aesthetic**: Color wavelengths, audio frequencies, haptic durations, sensory timing
 
 ---
 
@@ -493,7 +517,7 @@ Use this checklist when auditing new tools for implementation:
 
 ### Creating a Button
 ```javascript
-import { TOUCH_TARGETS, SPACING, TYPOGRAPHY, COLORS } from './uxDesignSystem';
+import { TOUCH_TARGETS, SPACING, TYPOGRAPHY, COLORS } from './UX_DESIGN_SYSTEM';
 
 const buttonStyle = {
   minHeight: TOUCH_TARGETS.MEDIUM,        // 44px
@@ -508,7 +532,7 @@ const buttonStyle = {
 
 ### Creating Responsive Spacing
 ```javascript
-import { SPACING } from './uxDesignSystem';
+import { SPACING } from './UX_DESIGN_SYSTEM';
 
 const containerStyle = {
   padding: SPACING.XL,        // 24px
@@ -519,7 +543,7 @@ const containerStyle = {
 
 ### Mobile-First Approach
 ```javascript
-import { BREAKPOINTS } from './uxDesignSystem';
+import { BREAKPOINTS } from './UX_DESIGN_SYSTEM';
 
 const responsiveStyle = {
   width: '100%',

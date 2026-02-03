@@ -235,4 +235,4 @@ const colorSpec = COLOR_WAVELENGTHS.WARM_ACCENT;
 - **Created:** 2026-02-02
 - **Status:** Consolidated and Production-Ready
 - **Available:** Root-level `UX_DESIGN_SYSTEM.md` and `UX_DESIGN_SYSTEM.js`
-- **Location:** `directory that contains UX design system/index.js` (primary import)
+- **Location:** `UX_DESIGN_SYSTEM.js` (primary import, all modules consolidated inline)

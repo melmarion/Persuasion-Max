@@ -26,8 +26,7 @@ Persuasion Max/
 │   ├── TERMINOLOGY_AND_DEFINITIONS.md
 │   ├── CLAUDE.md                   # Project language guidelines
 │   ├── UX_DESIGN_SYSTEM.md         # Tool attractiveness audit framework ← USE FOR IMPLEMENTATIONS
-│   ├── UX_DESIGN_SYSTEM.js         # Consolidated design tokens & utilities
-│   └── directory that contains UX design system/  # Detailed specs by module
+│   └── UX_DESIGN_SYSTEM.js         # Consolidated design tokens, patterns & utilities (all modules inline)
 │
 ├── UX_UI_ENGAGEMENT/               # Interface patterns & gamification ← NEW DOMAIN
 │   ├── ENGAGEMENT_PATTERNS_P1_P12.md    # 12 engagement patterns with specs
@@ -90,9 +89,7 @@ Persuasion Max/
 │   ├── PROJECT_STATUS.md
 │   └── 20_COMPREHENSIVE_GAP_ANALYSIS.md
 │
-└── _archive/                       # Original source files (after integration)
-    ├── BEHAVIORAL_SCIENCE_NOTES.md
-    └── RESEARCH_FINDINGS.md
+└── _archive/                       # (Cleared - original source files removed after integration)
 ```
 
 ---
@@ -178,18 +175,7 @@ Message-level influence through rhetoric, framing, cognitive biases, and emotion
 ### I want to BUILD attractive tools (UX/Design)
 1. `UX_DESIGN_SYSTEM.md` ← **Tool Attractiveness Audit Framework** - Reference guide with checklist
 2. `UX_DESIGN_SYSTEM.js` - Consolidated design tokens & helper functions (for import)
-3. `directory that contains UX design system/` - Detailed specifications by module:
-   - `index.js` - All tokens in one file
-   - `uxConstants.js` - Core design tokens (spacing, colors, typography)
-   - `uxAnimations.js` - Motion & timing specifications
-   - `uxMobile.js` - Mobile optimization & thumb zones
-   - `uxProgress.js` - Progress indicators & Zeigarnik Effect
-   - `uxEmotional.js` - Emotional design framework
-   - `uxSocial.js` - Social proof patterns
-   - `uxLayout.js` - Layout patterns & breakpoints
-   - `uxHelpers.js` - Utility functions
-   - `UX_LAYOUT_DESCRIPTION.md` - Detailed component specifications
-   - `UX_LAW_CONTRADICTIONS.md` - Design law trade-offs
+3. All module content (core tokens, engagement patterns P1-P12, session design, neuro-aesthetic parameters, animations, mobile, progress, emotional, social, layout, helpers) is consolidated inline within `UX_DESIGN_SYSTEM.js`
 
 ---
 
@@ -198,7 +184,7 @@ Message-level influence through rhetoric, framing, cognitive biases, and emotion
 | Folder | Files | Purpose |
 |--------|-------|---------|
 | ROOT | 10 | Core docs + entry points + UX design system |
-| directory that contains UX design system | 12 | Design tokens, patterns, helpers |
+| (consolidated into UX_DESIGN_SYSTEM.js) | — | Design tokens, patterns, helpers |
 | UX_UI_ENGAGEMENT | 8 | Interface engagement patterns |
 | LINGUISTIC_PERSUASION/DETECTION | 11 | Linguistic detection frameworks |
 | LINGUISTIC_PERSUASION/RESEARCH | 15 | Research foundation |
@@ -206,7 +192,7 @@ Message-level influence through rhetoric, framing, cognitive biases, and emotion
 | EXECUTION | 3 | Implementation roadmaps |
 | ETHICS | 1 | Ethical framework |
 | META | 2 | Project status |
-| _archive | 2 | Original source files |
+| _archive | 0 | (Cleared after integration) |
 | **TOTAL** | **54** | - |
 
 ---
