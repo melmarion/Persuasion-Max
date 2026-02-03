@@ -10,7 +10,7 @@ This manual provides **exact, specific criteria** for professional auditing. Unl
 
 1. **Specific language patterns** to look for
 2. **Exact scoring criteria** with examples
-3. **Real-world red flags** organized by category
+3. **High-intensity indicators** organized by category
 4. **Decision trees** for complex cases
 5. **Audit templates** you can use immediately
 6. **Common tactics** with specific indicators
@@ -95,7 +95,7 @@ ANALYSIS:
 | 61-80 | STRONG personal stimulus | Multiple status references + community appeal |
 | 81-100 | HIGH personal stimulus | Explicit status positioning + exclusive positioning + group appeal |
 
-**Red Flag Example (Score = 85):**
+**High-Intensity Example (Score = 85):**
 ```
 Text: "Not for everyone. If you know, you know. For those who
        recognize the reference. You're wearing what the algorithm
@@ -743,7 +743,7 @@ when encountered elsewhere
 - [ ] Search for status threat language ("Being basic," "Fear of cultural irrelevance")
 - [ ] Search for tribal safety signals ("We understand the references you understand")
 - [ ] Total score: _____ / 100
-- [ ] Red flags detected: _________________
+- [ ] High-intensity indicators found: _________________
 
 **STIMULUS 2: CONTRASTABLE**
 - [ ] Identify binary oppositions (Mass ↔ Artifact, Algorithmic ↔ Authored, etc.)
@@ -898,27 +898,27 @@ DETAILED STIMULUS BREAKDOWN
 
 STIMULUS 1 - PERSONAL (Self-centered targeting): _____ / 100
 Key signals: _________________________________
-Risk: [ ] Low [ ] Medium [ ] High
+Intensity: [ ] Low [ ] Medium [ ] High
 
 STIMULUS 2 - CONTRASTABLE (Binary framing): _____ / 100
 Key signals: _________________________________
-Risk: [ ] Low [ ] Medium [ ] High
+Intensity: [ ] Low [ ] Medium [ ] High
 
 STIMULUS 3 - TANGIBLE (Material specificity): _____ / 100
 Key signals: _________________________________
-Risk: [ ] Low [ ] Medium [ ] High
+Intensity: [ ] Low [ ] Medium [ ] High
 
 STIMULUS 4 - MEMORABLE (U-curve structure): _____ / 100
 Key signals: _________________________________
-Risk: [ ] Low [ ] Medium [ ] High
+Intensity: [ ] Low [ ] Medium [ ] High
 
 STIMULUS 5 - VISUAL (Anti-aesthetic): _____ / 100
 Key signals: _________________________________
-Risk: [ ] Low [ ] Medium [ ] High
+Intensity: [ ] Low [ ] Medium [ ] High
 
 STIMULUS 6 - EMOTIONAL (Fear→Relief arc): _____ / 100
 Key signals: _________________________________
-Risk: [ ] Low [ ] Medium [ ] High
+Intensity: [ ] Low [ ] Medium [ ] High
 
 ─────────────────────────────────────────────────────────────
 PSYCHOLOGICAL PRINCIPLES DETECTED
@@ -957,7 +957,7 @@ ADVANCED TACTICS DETECTED
 [ ] Manufactured Reality: _____ / 100
 
 ─────────────────────────────────────────────────────────────
-RED FLAGS & CRITICAL FINDINGS
+HIGH-INTENSITY FINDINGS
 ─────────────────────────────────────────────────────────────
 
 CRITICAL (Score > 75 on any dimension):
@@ -970,7 +970,7 @@ MODERATE CONCERN (Score 26-50):
 _________________________________
 
 ─────────────────────────────────────────────────────────────
-VULNERABLE AUDIENCES
+HIGH-SUSCEPTIBILITY AUDIENCES
 ─────────────────────────────────────────────────────────────
 
 This messaging is most effective for:
@@ -1018,7 +1018,7 @@ Auditor Signature: _________________ Date: _________
 
 **Answer:** No. There's a spectrum:
 
-- **0-25 (Ethical):** Clear value proposition, no exclusion tactics, transparent about benefits
+- **0-25 (Low-Intensity):** Clear value proposition, no exclusion tactics, transparent about benefits
   - Example: "Quality water bottles. Durable design. Made in the USA."
 
 - **26-50 (Some Targeting):** Audience-specific messaging without exclusion

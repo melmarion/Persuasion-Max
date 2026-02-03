@@ -49,20 +49,20 @@ uvicorn tool_1_fractionation:app --reload
 
 ---
 
-### Week 2: Vulnerability Scanner
+### Week 2: Susceptibility Assessment Tool
 **Code source:** 04_PRODUCTION_CODE_BASE.md (Tool 2)
-**Deliverable:** Working web interface for vulnerability assessment
+**Deliverable:** Working web interface for susceptibility assessment
 
 ```python
 # Integrate with Tool 1
-# Create HTML form for vulnerability quiz
+# Create HTML form for susceptibility questionnaire
 # Connect to physiological measurement inputs (HRV from smartwatch API)
 # Store results in PostgreSQL
 ```
 
 **Success criteria:**
 - [ ] Web form accepting user data
-- [ ] Vulnerability scores calculated (0-10 for each domain)
+- [ ] Susceptibility scores calculated (0-10 for each domain)
 - [ ] Results stored and retrievable
 
 ---
@@ -84,10 +84,10 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 - Demonstrate fractionation sequences exceed random expectation (Chi-square test)
 - Submit to: *Computers in Human Behavior*, *Cyberpsychology, Behavior, and Social Computing*
 
-### Paper 2: "Individual Differences in Vulnerability to Algorithmic Fractionation"
-- Use Tools 1-2 (Detection + Vulnerability Scanner)
+### Paper 2: "Individual Differences in Susceptibility to Algorithmic Fractionation"
+- Use Tools 1-2 (Detection + Susceptibility Assessment)
 - N=120 college student sample
-- Test interaction: Fractionation × Personal Vulnerability → Purchase behavior
+- Test interaction: Fractionation × Individual Susceptibility → Purchase behavior
 - Publish: *Psychological Science*, *Journal of Experimental Psychology*
 
 ### Paper 3: "Cross-Domain Integration in Digital Influence Research"
@@ -144,9 +144,9 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 - Contact: Regulatory bodies, research institutes, Meta/Google compliance teams
 - Close 2-3 customers → $200K-$1M revenue
 
-**Tool 2 (Vulnerability Scanner):** Target = Mental Health / Digital Wellness Apps
+**Tool 2 (Susceptibility Assessment):** Target = Mental Health / Digital Wellness Apps
 - Licensing price: $100K-$300K per year
-- Pitch: "Integrate our assessment into your app to measure user vulnerability"
+- Pitch: "Integrate our assessment into your app to measure user response patterns"
 - Contact: Mindfulness apps (Calm, Headspace), therapy platforms (BetterHelp, Talkspace)
 - Close 1-2 customers → $100K-$300K revenue
 
@@ -199,7 +199,7 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 - [ ] Reach 50+ paying customers across all tools
 - [ ] Achieve $2M-$5M annual revenue run rate
 - [ ] Establish partnerships with 10+ platforms/institutions
-- [ ] Launch B2C consumer app version of vulnerability scanner
+- [ ] Launch B2C consumer app version of susceptibility assessment
 
 ### Months 22-24: Institutional Positioning
 - [ ] Become standard measure: "Algorithmic Intensity Index" (like carbon footprint)
@@ -330,7 +330,7 @@ If you need capital (you probably will):
 ### Option 3: Seed Funding
 - Angels interested in: EdTech, digital wellness, AI safety
 - Typical seed round: $500K-$2M
-- Pitch: "We're building the tools tech platforms need to measure and prevent psychological influence"
+- Pitch: "We're building the tools tech platforms need to measure and analyze psychological influence intensity"
 
 ### Option 4: Partner Funding
 - Platforms wanting to audit themselves (Meta, Google): Pay for development

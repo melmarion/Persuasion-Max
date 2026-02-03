@@ -64,9 +64,6 @@ Persuasion Max/
 │   ├── 08_QUICK_START_CHECKLIST.md
 │   └── 22_IMPLEMENTATION_SPECIFICATION.md
 │
-├── ETHICS/ (1 file)
-│   └── ETHICAL_FRAMEWORK.md        # Consolidated ethical framework
-│
 ├── META/ (2 files)
 │   ├── PROJECT_STATUS.md           # This file
 │   └── 20_COMPREHENSIVE_GAP_ANALYSIS.md
@@ -84,7 +81,7 @@ Persuasion Max/
 3. **Identify 20+ principles** deployed
 4. **Detect advanced architectures** (cognitive load, decision fatigue, etc.)
 5. **Generate professional reports** (JSON format)
-6. **Assess audience vulnerability** (who is most at risk?)
+6. **Assess audience susceptibility patterns** (identify high-susceptibility populations)
 7. **Flag high-intensity persuasion** immediately
 8. **Provide remediation** (how to fix the content)
 9. **Track historical precedent** (which Bernays campaign does this match?)
@@ -153,7 +150,7 @@ All documents use neutral professional terminology:
 | Feb 2026 | Initial complete system |
 | Feb 2026 | Language revision to professional terminology |
 | Feb 2026 | Folder reorganization (46 → 40 files) |
-| Feb 2026 | ETHICS folder consolidated (3 → 1 file) |
+| Feb 2026 | Intensity framework documentation updated |
 | Feb 2026 | META folder consolidated (9 → 2 files) |
 
 ---
