@@ -380,7 +380,7 @@ Output:
 - Strongest domain: Personality (7.1/10)
 - Weakest domain: Neuroscience (7.1/10) - actually balanced
 - Top vulnerability factor: Need for belonging + neuroticism
-- Recommendation: Focus interventions on tribal belonging triggers
+- Recommendation: Focus analysis on tribal belonging triggers
 ```
 
 ### Output: Personal Vulnerability Report

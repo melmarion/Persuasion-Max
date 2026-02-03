@@ -1042,7 +1042,7 @@ class EnhancedAnchoringDetector:
             "anchoring_score": min(score, 100),
             "flags": flags,
             "consumer_impact": "70% of consumers influenced by initial price anchor",
-            "ethical_concern": "Artificially inflated 'original' prices erode trust when discovered"
+            "intensity_concern": "Artificially inflated 'original' prices erode trust when discovered"
         }
 
     def _detect_decoy_products(self, products: List[Dict], flags: List[str]):

@@ -1637,7 +1637,7 @@ class SynergyCalculator:
         ),
         frozenset(["AUTHORITY", "EMOTIONAL", "SCARCITY"]): (
             1.75,
-            "Expert warning + emotional appeal + time pressure",
+            "Expert authority + emotional appeal + time pressure",
             "Fear appeal research"
         ),
         frozenset(["EMOTIONAL", "SCARCITY", "COMMITMENT"]): (

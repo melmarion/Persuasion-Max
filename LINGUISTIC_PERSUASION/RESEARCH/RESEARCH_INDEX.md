@@ -268,5 +268,5 @@ If you need to dig deeper into any specific area, the referenced academic source
 ---
 
 **Last updated:** February 2026
-**Format:** Academic research synthesis with defensive framing
+**Format:** Academic research synthesis with countermeasure framing
 **Purpose:** Understanding evolution to enable defense, not offense

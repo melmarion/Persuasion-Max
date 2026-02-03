@@ -154,7 +154,7 @@ Legend: ████ = Very High | ███ = High | ██ = Moderate | █ = 
 ### Engagement Metrics
 ```
 ├── Collection completion priority: 78% cite as primary motivation
-├── Progress preservation spending: 56% spend on protection mechanics
+├── Progress preservation spending: 56% spend on retention mechanics
 ├── Sunk cost sensitivity: 7.2x baseline (multiplier for invested time/resources)
 ├── Abandonment rate at partial completion: 3% vs 34% baseline
 ├── Tier progression engagement: 89% pursue next tier immediately

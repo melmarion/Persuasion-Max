@@ -145,7 +145,7 @@ CompleteAdvancedInfluence strategyAudit() # All advanced frameworks
 - **76-100:** Expert-level influence strategy architecture
 
 ### Composite Scores
-- **0-25:** LOW influence strategy intensity (ethical messaging)
+- **0-25:** LOW influence strategy intensity (low-intensity messaging)
 - **26-50:** MODERATE influence strategy (some targeting)
 - **51-75:** HIGH influence strategy (sophisticated tactics)
 - **76-100:** EXTREME influence strategy (optimized)

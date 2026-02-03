@@ -902,7 +902,7 @@ class RedTeamAuditChecklist:
         return {
             "touchpoint": touchpoint_name,
             "audit_results": audit,
-            "passes_ethical_threshold": audit['composite_score'] < 40,  # Threshold for concern
+            "passes_intensity_threshold": audit['composite_score'] < 40,  # Threshold for concern
             "recommendations": self._generate_recommendations(audit)
         }
 
@@ -948,7 +948,7 @@ product_page_audit = red_team.audit_brand_touchpoint(
     image_desc="Grainy photo on concrete, CCTV angle"
 )
 
-print(f"Passes ethical threshold: {product_page_audit['passes_ethical_threshold']}")
+print(f"Passes intensity threshold: {product_page_audit['passes_intensity_threshold']}")
 print(f"Recommendations:\n" + "\n".join(product_page_audit['recommendations']))
 ```
 

@@ -460,7 +460,7 @@ Why: Brain craves stability. Ad becomes "stable ground"
 - Jan 6 (radicalization pipeline)
 
 **Key questions for your research:**
-1. Where exactly does persuasion become influence ethically?
+1. Where exactly does persuasion become intensive influence?
 2. What defenses actually work?
 3. How do we design systems that resist intensive application?
 4. What's the cost of protecting against influence?

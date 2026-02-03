@@ -2,7 +2,7 @@
 
 ## Overview
 
-This framework detects **10 categories of integrity violations** in content—techniques that cross ethical boundaries through deception, concealment, or exploitation of vulnerable populations. Unlike intensity-based influence detection, these detect categorical violations that warrant immediate flagging regardless of sophistication level.
+This framework detects **10 categories of integrity violations** in content—techniques that cross ethical boundaries through deception, concealment, or targeting of high-susceptibility populations. Unlike intensity-based influence detection, these detect categorical violations that warrant immediate flagging regardless of sophistication level.
 
 ---
 
@@ -18,7 +18,7 @@ This framework detects **10 categories of integrity violations** in content—te
 | IV-04 | ALGORITHMIC_ISOLATION | Echo chamber engineering, counter-narrative suppression |
 | IV-05 | FORCED_COMMITMENT | Public position trapping, escalating pledges |
 | IV-06 | COGNITIVE_OVERLOAD | Decision fatigue, information flooding, complexity walls |
-| IV-07 | VULNERABLE_TARGETING | Children, habitual users, mental health exploitation |
+| IV-07 | HIGH_SUSCEPTIBILITY_TARGETING | Children, habitual users, mental health targeting |
 | IV-08 | IDENTITY_LOCK | Shame-based belief persistence, identity-tied positions |
 | IV-09 | RADICALIZATION_ENGINEERING | Extremism pipelines, outrage escalation |
 | IV-10 | EMOTIONAL_CYCLING | Fractionation patterns, emotional dependency creation |
@@ -544,8 +544,8 @@ vulnerable_targeting_score = (
     (child_targeting_count * 35) +
     (addiction_pattern_count * 30) +
     (mental_health_targeting_count * 35) +
-    (compulsive_exploitation_count * 25) +
-    (self_worth_exploitation_count * 30)
+    (compulsive_engagement_intensity_count * 25) +
+    (self_worth_engagement_intensity_count * 30)
 ) / MAX_POSSIBLE * 100
 
 THRESHOLD: > 25 = FLAG (lower threshold due to severity)
@@ -873,7 +873,7 @@ IVI 81-100: CRITICAL - Multiple severe violations, immediate action recommended
 ```python
 RED_FLAG_RULES = {
     # Single category severe violations
-    'VULNERABLE_TARGETING_HIGH': lambda s: s['vulnerable_targeting'] > 50,
+    'HIGH_SUSCEPTIBILITY_TARGETING_HIGH': lambda s: s['vulnerable_targeting'] > 50,
     'RADICALIZATION_DETECTED': lambda s: s['radicalization_engineering'] > 40,
     'VIOLENCE_ADJACENT': lambda s: s['violence_adjacent'] > 30,
 

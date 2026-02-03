@@ -19,7 +19,7 @@ fractionation-detector/
 │   │   ├── sequence_detector.py
 │   │   ├── vulnerability_scorer.py
 │   │   ├── behavioral_predictor.py
-│   │   └── intervention_simulator.py
+│   │   └── response_strategy_simulator.py
 │   ├── api/
 │   │   ├── __init__.py
 │   │   ├── main.py

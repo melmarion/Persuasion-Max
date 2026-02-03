@@ -816,7 +816,7 @@ Informed consent impossible when:
 
 **Key insight for behavioral scientists:** Fractionation reveals that the line between persuasion and influence is not about intent—it's about information asymmetry and autonomy preservation.
 
-**The ethical boundary:**
+**The intensity boundary:**
 - Can the person reasonably become aware of what's happening? (Transparency)
 - Can the person meaningfully opt-out? (Agency)
 - Is the effect size disclosed? (Informed consent)

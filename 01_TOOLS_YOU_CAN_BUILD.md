@@ -248,7 +248,7 @@ OUTPUT: Influence Index (0-100)
 
 **Purpose:** Predict probability of impulse purchase given a person's profile and feed sequence.
 
-**Users:** Researchers, ethical prevention apps
+**Users:** Researchers, analysis and detection apps
 
 **Architecture:**
 
@@ -672,7 +672,7 @@ CLINICIAN EDUCATION:
 - Becomes standard of care for digital wellness
 - Enables evidence-based treatment
 - Better outcomes for high-susceptibility populations
-- Could improve mental health outcomes (depression, anxiety prevention via informed digital habits)
+- Could improve mental health outcomes (depression, anxiety mitigation via informed digital habits)
 
 **Technical Requirements:**
 - HIPAA-compliant infrastructure
@@ -695,7 +695,7 @@ CLINICIAN EDUCATION:
 
 | Audience | Content | Format |
 |----------|---------|--------|
-| Students (K-12) | Age-appropriate fractionation explanation, detect your own patterns, practical defenses | Interactive lessons |
+| Students (K-12) | Age-appropriate fractionation explanation, detect your own patterns, practical response strategies | Interactive lessons |
 | Students (College) | Deep dive into mechanisms, research methods, policy implications | Lecture + lab |
 | Teachers | Lesson plans, lab exercises (analyze own feeds), assessments, discussion prompts | Curriculum guide |
 | Parents | How to discuss with kids, behavioral patterns, digital literacy resources, engagement tracking | Parent handbook |

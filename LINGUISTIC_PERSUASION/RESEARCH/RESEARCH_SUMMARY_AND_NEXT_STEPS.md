@@ -328,7 +328,7 @@ After reading the original compilation, here are legitimate research gaps:
 **Research approach:**
 - Be clear about what's known vs. speculated
 - Acknowledge effectiveness uncertainty
-- Discuss defensive implications equally with offensive
+- Discuss countermeasure implications equally with offensive
 - Avoid exaggeration of platform influence
 - Center human agency (people retain decision-making capability)
 

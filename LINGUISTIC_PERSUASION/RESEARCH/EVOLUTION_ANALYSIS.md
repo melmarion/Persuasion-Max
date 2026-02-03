@@ -586,9 +586,9 @@ AI (2020-2026)
    - Suicide contagion (social media spillover)
    - Political polarization (tribal algorithms)
 
-3. **Where are the bright lines ethically?**
-   - Persuasion (presenting true information persuasively) = ethical?
-   - Influence (hiding true motives, leveraging biases) = unethical?
+3. **Where are the bright lines in intensity thresholds?**
+   - Persuasion (presenting true information persuasively) = low-intensity?
+   - Influence (hiding true motives, leveraging biases) = high-intensity?
    - Where's the boundary?
 
 4. **What defenses are effective?**

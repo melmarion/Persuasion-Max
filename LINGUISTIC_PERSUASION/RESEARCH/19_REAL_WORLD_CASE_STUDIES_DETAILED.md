@@ -1123,7 +1123,7 @@ Advanced_Avg = (CL + DF + I + PR + RC + MR) / 6
 
 COMPOSITE = (Tactical × 0.35) + (Psychological × 0.35) + (Advanced × 0.30)
 
-0-25: Minimal influence strategy (ethical persuasion)
+0-25: Minimal influence strategy (low-intensity persuasion)
 26-50: Moderate (industry standard)
 51-75: High (requires scrutiny)
 76-100: Extreme (likely leverageative)
@@ -1141,7 +1141,7 @@ Every famous influence strategy example (Bernays, Goebbels, Netflix, Apple, luxu
 4. **Lock in with commitment** (ritual, ownership, identity)
 5. **Hide the hand** (make it feel like discovery, not persuasion)
 
-The difference between ethical persuasion and influence strategy is **transparency about the mechanism**.
+The difference between low-intensity persuasion and influence strategy is **transparency about the mechanism**.
 
 A luxury brand that says "We create status signals" is transparent. One that says "This is about the material quality" while charging 10x material cost is obscuring mechanism.
 

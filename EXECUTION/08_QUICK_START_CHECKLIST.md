@@ -117,9 +117,9 @@ git push -u origin main
   - [ ] Endpoint: `/predict-behavior`
   - [ ] Test prediction accuracy
 
-- [ ] Tool 5: Intervention Effectiveness Simulator
-  - [ ] Copy InterventionSimulator class
-  - [ ] Create endpoint: `/simulate-intervention`
+- [ ] Tool 5: Response Strategy Effectiveness Simulator
+  - [ ] Copy ResponseStrategySimulator class
+  - [ ] Create endpoint: `/simulate-response-strategy`
   - [ ] Test with different personality profiles
 
 ### Academic Paper 1
@@ -258,7 +258,7 @@ Key findings:
 
 We've built Tool 1 (Fractionation Detection Algorithm) that [THEIR ORGANIZATION] could use for:
 - [If researcher] Academic validation and replication
-- [If platform] Compliance auditing and ethical verification
+- [If platform] Compliance auditing and intensity measurement verification
 - [If clinical] Patient assessment and treatment planning
 - [If education] Curriculum development and training
 

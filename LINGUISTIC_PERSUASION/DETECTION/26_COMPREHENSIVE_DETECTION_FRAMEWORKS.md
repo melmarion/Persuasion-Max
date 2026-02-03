@@ -1007,7 +1007,7 @@ class EchoChAmberDetector:
 **Trust Development Processes (2024):**
 - Two primary trust mechanisms leveraged: relationship history and future expectations
 - Future expectations (rewards, urgency, threats) dominate phishing tactics
-- Trust is a critical antecedent for unethical behavior intensity
+- Trust is a critical antecedent for high-intensity behavior
 - Social engineering 2.0: 98% of cyberattacks involve human influence
 
 **Grooming Patterns:**
@@ -1383,7 +1383,7 @@ class PlatformInfluenceDetector:
 
     Research basis:
     - CHI 2024: "Staying at the Roach Motel" subscription analysis
-    - 2024 research on gamification dark patterns
+    - 2024 research on gamification interface design patterns
     - Kahneman's Prospect Theory (loss aversion)
     - Wansink's "bottomless bowl" experiment
     """
@@ -2418,7 +2418,7 @@ class ChildSafetyDetector:
             analysis['risk_level'] = 'medium'
             analysis['concerns'].append('Moderate child-targeting elements')
 
-        # Check for dark patterns in children's content
+        # Check for intensive interface patterns in children's content
         if 'collect' in tactic_matches and 'limited' in text:
             analysis['concerns'].append('Artificial scarcity targeting children')
 

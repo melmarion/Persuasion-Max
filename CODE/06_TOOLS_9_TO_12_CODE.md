@@ -166,7 +166,7 @@ class FeedCoder:
         logger.info(f"Coder {self.coder_id} training: {accuracy:.1%} accuracy")
 
         if accuracy < min_accuracy:
-            logger.warning(f"WARNING: Coder accuracy {accuracy:.1%} below threshold {min_accuracy:.1%}")
+            logger.info(f"NOTICE: Coder accuracy {accuracy:.1%} below threshold {min_accuracy:.1%}")
             error_patterns = self._analyze_error_patterns(predictions)
             self.training_performance['calibration_feedback'] = error_patterns
 
@@ -996,7 +996,7 @@ class DigitalEngagementDiagnosis:
             ),
             DigitalInfluenceSyndromeLevel.MILD: (
                 "Patient meets 3-4 diagnostic criteria suggesting mild digital susceptibility. "
-                "Recommend: Cognitive-behavioral interventions, digital literacy training, media diet adjustment."
+                "Recommend: Cognitive-behavioral analytics, digital literacy training, media diet adjustment."
             ),
             DigitalInfluenceSyndromeLevel.MODERATE: (
                 "Patient meets 5-6 criteria indicating moderate influence susceptibility. "
@@ -1008,7 +1008,7 @@ class DigitalEngagementDiagnosis:
             ),
             DigitalInfluenceSyndromeLevel.CRISIS: (
                 "Patient meets all 9 criteria with acute crisis presentation. "
-                "Recommend: IMMEDIATE intervention - restrict device access, psychiatric evaluation, crisis support. Consider inpatient program."
+                "Recommend: IMMEDIATE response - restrict device access, psychiatric evaluation, crisis support. Consider inpatient program."
             )
         }
 
@@ -1090,7 +1090,7 @@ class TreatmentPlanner:
             'effectiveness': 0.35,
             'best_for': ['withdrawal', 'tolerance']
         },
-        'family_interventions': {
+        'family_engagement_strategies': {
             'description': 'Family sessions to establish digital boundaries, mutual accountability',
             'duration_weeks': 10,
             'frequency': 'Weekly 90-minute family session',
@@ -1131,12 +1131,12 @@ class TreatmentPlanner:
             'severity_level': diagnosis.diagnosis_level.value,
             'duration_weeks': 0,
             'total_therapy_hours': 0,
-            'recommended_interventions': [],
+            'recommended_strategies': [],
             'implementation_timeline': [],
             'progress_monitoring': {}
         }
 
-        # Select interventions based on vulnerability profile
+        # Select response strategies based on susceptibility profile
         selected = []
 
         if diagnosis.fractionation_susceptibility > 75:
@@ -1162,7 +1162,7 @@ class TreatmentPlanner:
 
         if diagnosis.daily_social_media_minutes > 300:
             selected.append({
-                'intervention': 'family_interventions',
+                'intervention': 'family_engagement_strategies',
                 'weeks': 10,
                 'rationale': 'Severe use requires family system restructuring'
             })
@@ -1184,7 +1184,7 @@ class TreatmentPlanner:
             hours_per_week = int(freq_match.split('x')[0]) if 'x' in freq_match else 1
             hours_per_session = float(intervention_details['frequency'].split()[-2].split('-')[0]) / 60
 
-            treatment_plan['recommended_interventions'].append({
+            treatment_plan['recommended_strategies'].append({
                 'intervention': intervention_name,
                 'details': intervention_details,
                 'weeks': weeks,
@@ -1405,7 +1405,7 @@ YOUR EXPERIENCE: "I couldn't put my phone down" = your brain is in engagement lo
         'key_concept': """
 You are NOT weak for being susceptible. Everyone has different susceptibilities.
 An algorithm that knows your specific tendencies can influence you effectively.
-The goal: Know YOUR susceptibilities so you can defend them.
+The goal: Know YOUR susceptibilities so you can address them analytically.
         """,
         'lessons': [
             {
@@ -1414,7 +1414,7 @@ The goal: Know YOUR susceptibilities so you can defend them.
                 'learning_objectives': [
                     'Assess your own psychological vulnerability factors',
                     'Understand neuroscience markers of susceptibility',
-                    'Create personalized defense strategy'
+                    'Create personalized response strategy'
                 ],
                 'hands_on_exercise': {
                     'name': 'Three-Domain Vulnerability Assessment',
@@ -1480,7 +1480,7 @@ YOUR VULNERABILITY PROFILE:
 
 COMPOSITE VULNERABILITY (0-100): ___
 
-What does this mean for YOUR defenses?
+What does this mean for YOUR response strategies?
                     """
                 }
             }
@@ -1492,9 +1492,9 @@ What does this mean for YOUR defenses?
         'title': 'Your Defense Toolkit',
         'duration_weeks': 2,
         'introduction': """
-Research from your research study identified what ACTUALLY works to prevent influence.
+Research from your research study identified what ACTUALLY works to measure and reduce influence.
 Not all defenses are equal. Some are 18% effective, others 50%+ effective.
-Build your personal defense system based on YOUR vulnerabilities.
+Build your personal response system based on YOUR susceptibilities.
         """,
         'lessons': [
             {
@@ -1662,7 +1662,7 @@ Signed: _____________ Date: _______
 ---
 
 ## TOOL 12: Regulatory & Policy Analytics Platform
-*What it does:* Measures platform compliance with ethical guidelines, generates standardized metrics for regulators
+*What it does:* Measures platform compliance with intensity guidelines, generates standardized metrics for regulators
 *Who needs it:* Tech platforms, regulators, policy organizations
 *Time to implement:* 12-16 hours | Platform audit system + reporting engine
 
@@ -1735,7 +1735,7 @@ class PlatformAuditReport:
     key_recommendations: List[str]
 
 class RegulatoryComplianceAnalyzer:
-    """Analyze platform compliance with ethical standards"""
+    """Analyze platform compliance with intensity standards"""
 
     # Regulatory thresholds
     INDUSTRY_AVERAGE_INTENSITY_INDEX = 55

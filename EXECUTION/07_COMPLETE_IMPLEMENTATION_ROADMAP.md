@@ -383,7 +383,7 @@ If you need capital (you probably will):
 ## RISK MITIGATION
 
 ### Risk: Platforms don't want to admit influence
-**Mitigation:** Reframe as "compliance tool" - they need to show regulators they're ethical
+**Mitigation:** Reframe as "compliance tool" - they need to show regulators they meet intensity thresholds
 
 ### Risk: Academic papers get rejected
 **Mitigation:** Aim for 5 papers; publish at least 1 in top venue; don't give up after 2 rejections
