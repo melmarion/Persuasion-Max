@@ -51,32 +51,24 @@ This positions you to own an entire market that doesn't yet exist.
 ### Phase 4 (Months 18-24): Develop Measurement Systems
 - Test analytical framework effectiveness
 - Show: Which measurement approaches work best for which people
-- Publish policy/clinical papers
+- Publish clinical and research papers
 
 ---
 
 ## THE TOOLS YOU CAN BUILD
 
-### Tier 1: Diagnostic Tools (Months 1-6)
+### Tier 1: Measurement Tools (Months 1-6)
 What you'll build RIGHT NOW as you do your research:
 
-1. **Fractionation Detection Algorithm**
-   - Analyzes feeds to identify influence patterns
-   - Outputs: "Your feed is 67% fractionation sequences"
-   - Market: Researchers, platforms, policy-makers
-   - Potential: $50K-500K licensing
+1. **Personal Susceptibility Measurement System**
+   - Measures individual response patterns across all three domains
+   - Outputs: "You show high neuroticism + normal cortisol + high belongingness need"
+   - Users: Mental health apps, wellness platforms, researchers
 
-2. **Personal Vulnerability Scanner**
-   - Measures individual susceptibility across all three domains
-   - Outputs: "You're high neuroticism + normal cortisol + high belongingness need"
-   - Market: Mental health apps, wellness platforms, consumers
-   - Potential: $1M-$50M (if adopted at scale)
-
-3. **Automated Physiological Measurement Suite**
+2. **Automated Physiological Measurement Suite**
    - Real-time tracking of blink rate, HRV, cortisol, skin conductance
    - Correlates with feed content and behavior
-   - Market: Researchers, apps, healthcare
-   - Potential: $100M+ if becomes standard
+   - Users: Researchers, research applications
 
 ---
 
@@ -86,13 +78,11 @@ Using your research data to build predictive systems:
 4. **Behavioral Response Predictor**
    - Predicts probability someone will make impulse purchase (0-100%)
    - Given: Their personality, feed sequence, physiological state
-   - Market: Researchers, clinicians, platforms
    - Use: Identify susceptible moments for analytical feedback
 
 5. **Intervention Effectiveness Simulator**
    - Shows which defenses work best for which person
    - Personalizes treatment plans
-   - Market: Clinicians, digital wellness apps
    - Use: Evidence-based digital engagement treatment
 
 ---
@@ -100,43 +90,32 @@ Using your research data to build predictive systems:
 ### Tier 3: Analytical Tools (Months 12-18)
 Enabling informed engagement at scale:
 
-6. **Real-Time Influence Analyzer**
+5. **Real-Time Influence Analyzer**
    - Provides real-time analytical feedback when users enter reduced-vigilance state
    - Offers personalized insights and response patterns
    - Browser extension / app
-   - Market: Consumers (freemium model)
-   - Revenue: $50M-$200M annually (if 5% adoption)
    - Impact: Enables users to understand influence patterns in their engagement
 
-7. **Organizational Vulnerability Assessment System**
+6. **Organizational Intensity Assessment System**
    - Audits algorithms for influence intensity
    - Generates "Intensity Index" (0-100)
-   - For platforms wanting to compete on ethics
-   - Market: Tech platforms, regulators
-   - Revenue: $2M-$10M annually licensing
+   - For platforms seeking to understand their influence patterns
+   - Users: Tech platforms, research institutions
 
 ---
 
 ### Tier 4: Academic & Clinical Infrastructure (Months 18-24)
 Making your methods standard in the field:
 
-8. **Research Toolkit (Open Source)**
+7. **Research Toolkit (Open Source)**
    - Tools for other researchers to replicate your work
    - Feed coding systems, statistical templates, protocols
-   - Market: Academic researchers worldwide
    - Impact: Defines field; accelerates knowledge
 
-9. **Digital Engagement Assessment & Treatment Platform**
-   - Clinical system for diagnosing and treating influence susceptibility
+8. **Digital Engagement Assessment & Treatment Platform**
+   - Clinical system for assessing and treating influence susceptibility
    - Integration with therapists, treatment protocols
-   - Market: Mental health providers, hospitals, schools
-   - Revenue: $5M-$50M annually
-
-10. **Educational Curriculum**
-    - High school/college materials teaching algorithmic literacy
-    - Inoculates young people against influence techniques
-    - Market: Schools worldwide
-    - Revenue: $2M-$10M; impact: Saves lives
+   - Users: Mental health providers, hospitals, schools
 
 ---
 
@@ -148,11 +127,7 @@ Making your methods standard in the field:
 - Economists observe without mechanism
 - No one bridges these domains
 
-**Your market:** $60M-$277M annually at scale (conservative estimate)
-
-**More realistic:** Own this space, capture 10% = $6M-$27M annually
-
-**But the real value:** Define the field, measure influence intensity, provide system transparency
+**The real value:** Define the field, measure influence intensity
 
 ---
 
@@ -241,29 +216,10 @@ Every system you design has more power because it's validated by research.
 
 ---
 
-## THE FINANCIAL PATH
-
-### Revenue Potential (Annual, At Scale)
-- Real-Time Detector (freemium): $50M-$200M
-- Org Assessment (B2B licensing): $2M-$10M
-- Data Platform (research licensing): $1M-$5M
-- Clinical Platform (healthcare): $5M-$50M
-- Educational (school licensing): $2M-$10M
-- Research toolkit (academic): $500K-$2M
-
-**Total: $60M-$277M annually**
-
-### Realistic Path (10% market capture, 5-10 years)
-- Year 3: $1M-$5M (research tools + early freemium)
-- Year 5: $5M-$15M (consumer + enterprise adoption)
-- Year 7: $15M-$50M (all products mature)
-- Year 10: $25M-$100M (market leader)
-
-### More Important Than Money
+### Impact Goals
 - Academic impact: 200+ citations, define field
-- Clinical impact: Mental health treatment standard of care
-- Consumer impact: Millions of people protected from influence
-- Policy impact: Regulation based on your research
+- Clinical impact: Treatment standard of care
+- Consumer impact: Millions of people understanding influence patterns
 - Educational impact: Generation of digitally literate youth
 
 ---
@@ -277,7 +233,6 @@ You're building the scientific and practical infrastructure for:
 - Understanding the neurochemistry of behavioral response
 - Analyzing engagement intensity across populations
 - Providing information access at scale
-- Informing evidence-based policy
 
 **You're solving a problem that no one else can solve.**
 
@@ -303,9 +258,8 @@ You're building the scientific and practical infrastructure for:
 
 By doing that, you:
 - Enable academic understanding (research)
-- Enable clinical assessment and treatment (mental health)
+- Enable clinical assessment and treatment
 - Enable consumer measurement systems (tools)
-- Enable regulatory policy (standards)
 - Enable information access (data-driven insights)
 
 **That's your north star. Everything else follows from it.**
