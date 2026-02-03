@@ -70,3 +70,4 @@ test_output/
 *_api_key.txt
 credentials.json
 secrets/
+CLAUDE.md
