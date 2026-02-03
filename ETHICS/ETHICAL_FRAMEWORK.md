@@ -21,7 +21,7 @@ This document defines ethical boundaries for influence techniques. It provides:
 
 **Violations Include:**
 - **Fake Authority/Credentials:** Deepfakes, fabricated experts, AI-generated credentials
-- **Deceptive Identity:** Corporate posing as peer user, paid posters as organic users, astroturfing
+- **Non-transparent Identity:** Corporate posing as peer user, paid posters as organic users, astroturfing
 - **Hidden Commercial Intent:** Advertorial as journalism, undisclosed sponsored content
 - **Systematic Isolation:** Algorithmic bubble removing counter-narratives completely
 - **Cognitive Overload:** Information overwhelm designed to disable conscious decision-making
@@ -41,10 +41,10 @@ This document defines ethical boundaries for influence techniques. It provides:
 ### 🟡 RULE 3: NO TARGETING CRISIS STATES
 
 **Violations Include:**
-- **Predatory Targeting:** Children with addictive content, addiction history targeting, payday loans to trapped demographics
-- **Identity Lock-In Exploitation:** Making belief change require public humiliation, tribal belonging as hostage
+- **Intensive Targeting:** Children with high-engagement content, engagement history targeting, payday loans to trapped demographics
+- **Identity Lock-In Intensity:** Making belief change require public humiliation, tribal belonging as hostage
 - **Radicalization Engineering:** Deliberately pushing toward extremism, funneling vulnerable individuals to extreme content
-- **Emotional State Exploitation:** Engineered emotional cycles reducing critical thinking when targeting vulnerable populations
+- **Emotional State Intensity:** Engineered emotional cycles reducing critical thinking when targeting vulnerable populations
 
 ---
 
@@ -66,7 +66,7 @@ This document defines ethical boundaries for influence techniques. It provides:
 - Relevant information withheld from audience
 - Core targeting mechanisms and objectives concealed
 - Violates one or more bright lines
-- **Examples:** Identity misrepresentation, deceptive credentials, algorithmic isolation without counter-narrative access
+- **Examples:** Identity misrepresentation, non-transparent credentials, algorithmic isolation without counter-narrative access
 
 ---
 
@@ -76,7 +76,7 @@ This document defines ethical boundaries for influence techniques. It provides:
 |-----------------|----------------|-----------|
 | **Population-Level** | ✅ Generally OK | Standard service delivery |
 | **Group-Level** | 🟡 Requires disclosure | Demographic targeting with transparency |
-| **Individual-Level** | 🟡/🔴 Depends | OK if not targeting vulnerabilities; prohibited if exploiting crisis states |
+| **Individual-Level** | 🟡/🔴 Depends | OK if not targeting vulnerabilities; prohibited if leveraging crisis states |
 
 ---
 
@@ -85,14 +85,14 @@ This document defines ethical boundaries for influence techniques. It provides:
 | Technique | Ethical When | Prohibited When |
 |-----------|--------------|-----------------|
 | **Authority signals** | Real credentials, disclosed relationships | Fake credentials, deepfakes |
-| **Social proof** | Real testimonials, shown distribution | Fake reviews, bot armies, deceptive selection |
+| **Social proof** | Real testimonials, shown distribution | Fake reviews, bot armies, non-transparent selection |
 | **Scarcity signals** | Honest availability | Fake scarcity ("Only 3 left" that refreshes) |
 | **Anchoring** | Transparent reference point | Fake original prices |
 | **Reciprocity** | Transparent exchange | Hidden quid pro quo |
 | **Default architecture** | Transparent, easily reversible | Hidden, difficult to change |
 | **Commitment** | Voluntary | Coerced public commitment |
 | **Personalization** | Efficient matching | Targeting vulnerable populations |
-| **Repetition** | Transparent | Deceptive (pretending to be random) |
+| **Repetition** | Transparent | Non-transparent (pretending to be random) |
 | **Framing** | True facts, alternative angle | Facts selected to misrepresent |
 | **Tribe/community** | Genuine shared interests | Algorithmic tribalization with artificial enemies |
 | **Emotional content** | Authentic emotion | Engineered cycles targeting vulnerable users |
@@ -119,12 +119,12 @@ This document defines ethical boundaries for influence techniques. It provides:
 - [ ] Is unsubscribe link visible and functional?
 
 ### Rule 3 Audit (Crisis Targeting)
-- [ ] Are minors protected from addictive design?
+- [ ] Are minors protected from high-engagement design?
 - [ ] Is radicalization content not algorithmically accelerated?
 - [ ] Are vulnerable populations not micro-targeted?
 - [ ] Is urgency language not used on crisis-state users?
-- [ ] Is the business model not dependent on exploitation?
-- [ ] Are addiction-prone users not specifically targeted?
+- [ ] Is the business model not dependent on intensity?
+- [ ] Are engagement-prone users not specifically targeted?
 
 **If you answer "No" to any question: Fix it before launch.**
 
@@ -143,7 +143,7 @@ This document defines ethical boundaries for influence techniques. It provides:
 - **Source identity:** Accurate representation of source and relationships
 - **Commercial relationships:** Full disclosure of compensation and incentive structures
 - **Targeting mechanism:** Specification of how target audience was selected
-- **Content fabrication:** Factual accuracy assessment and disclosure of synthesis/manipulation
+- **Content fabrication:** Factual accuracy assessment and disclosure of synthesis/modification
 - **Behavioral objectives:** Transparency regarding intended behavioral outcomes
 
 ---
@@ -199,7 +199,7 @@ Current regulations address:
 - Curation logic and information filtering mechanisms
 - Targeting criteria and personalization algorithms
 - Emotional state assessment and response optimization
-- Vulnerability identification and exploitation strategies
+- Vulnerability identification and intensity strategies
 - Progressive preference trajectory and behavioral funnel mechanics
 
 ---
@@ -209,7 +209,7 @@ Current regulations address:
 When studying influence techniques:
 - Independent auditing access to evaluate technique effectiveness
 - Publication of findings on both effectiveness AND defense mechanisms
-- Avoid creating tools designed specifically for exploitation optimization
+- Avoid creating tools designed specifically for intensity optimization
 - Transparency regarding methodology for vulnerable population identification
 - Framing: understanding for protection, not offense
 

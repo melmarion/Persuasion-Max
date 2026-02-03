@@ -298,7 +298,7 @@ class InterventionSimulator:
                 'time_investment': 'Lifestyle change'
             },
             'real_time_detector': {
-                'description': 'Use app that warns of hypnotic state',
+                'description': 'Use app that warns of reduced-vigilance state',
                 'base_effectiveness': 0.38,  # 38% reduction
                 'cost': 'low',
                 'time_investment': 'Active during use'
@@ -475,16 +475,16 @@ class InterventionSimulator:
 
 ---
 
-## TOOL 6: REAL-TIME MANIPULATION DETECTOR
+## TOOL 6: REAL-TIME INFLUENCE DETECTOR
 ### Browser Extension API
 
 **File: `src/api/realtime_detector.py`**
 
 ```python
 """
-Real-Time Manipulation Detector API
+Real-Time Influence Detector API
 
-For browser extension: Warns users when in hypnotic state
+For browser extension: Warns users when in reduced-vigilance state
 """
 
 from fastapi import WebSocket, WebSocketDisconnect
@@ -503,7 +503,7 @@ class RealtimeDetectorManager:
     def __init__(self):
         self.active_connections: List[WebSocket] = []
         self.thresholds = {
-            'blink_rate_alert': 10,  # bpm - below this is hypnotic state
+            'blink_rate_alert': 10,  # bpm - below this is reduced-vigilance state
             'hrv_alert': 35,  # milliseconds - below this is stress
             'cortisol_alert': 20,  # nmol/L - above this is elevated
             'fractionation_alert': 50  # index - above this is significant
@@ -550,11 +550,11 @@ class RealtimeDetectorManager:
         # Check thresholds
         if blink_rate < self.thresholds['blink_rate_alert']:
             alerts.append({
-                'type': 'hypnotic_state',
+                'type': 'reduced_vigilance_state',
                 'severity': 'high',
-                'message': f'⚠️ Hypnotic state detected. Blink rate: {blink_rate:.0f}/min'
+                'message': f'⚠️ Reduced-vigilance state detected. Blink rate: {blink_rate:.0f}/min'
             })
-            status = 'hypnotic'
+            status = 'reduced_vigilance'
 
         if hrv < self.thresholds['hrv_alert']:
             alerts.append({
@@ -598,7 +598,7 @@ class RealtimeDetectorManager:
 
         recommendations = []
 
-        if status == 'hypnotic':
+        if status == 'reduced_vigilance':
             recommendations = [
                 '🧘 Take a 2-minute break - do breathing exercise',
                 '✋ Step away from screen immediately',
@@ -606,7 +606,7 @@ class RealtimeDetectorManager:
             ]
         else:
             recommendations = [
-                '💭 Remember: This sequence is designed to manipulate',
+                '💭 Remember: This sequence is designed to influence behavior',
                 '⏱️ Consider setting time limit on this feed',
                 '🌍 Connect with genuine community offline'
             ]
@@ -625,7 +625,7 @@ class RealtimeDetectorManager:
 """
 Organizational Vulnerability Assessment
 
-Audit platform algorithms for exploitation intensity
+Audit platform algorithms for influence intensity
 """
 
 from typing import Dict, List
@@ -636,14 +636,14 @@ logger = logging.getLogger(__name__)
 
 class OrganizationAssessment:
     """
-    Assess organizational exploitation level
+    Assess organizational influence intensity level
     """
 
     def __init__(self):
         self.metrics = {
             'fractionation_intensity': 0,  # 0-100
             'content_diversity': 0,  # 0-100 (higher = better)
-            'predictability': 0,  # 0-100 (higher = more predictable/manipulative)
+            'predictability': 0,  # 0-100 (higher = more predictable/influential)
             'personalization_depth': 0,  # 0-100 (higher = deeper individual targeting)
             'vulnerable_targeting': 0  # 0-100 (higher = more targeting of vulnerable groups)
         }
@@ -672,8 +672,8 @@ class OrganizationAssessment:
         # Estimate vulnerable targeting
         vulnerable_targeting = self._estimate_vulnerable_targeting(sample_feeds)
 
-        # Calculate overall exploitation index
-        exploitation_index = self._calculate_exploitation_index({
+        # Calculate overall intensity index
+        intensity_index = self._calculate_intensity_index({
             'fractionation_intensity': fractionation_intensity,
             'content_diversity': content_diversity,
             'predictability': predictability,
@@ -683,8 +683,8 @@ class OrganizationAssessment:
 
         return {
             'platform': platform_name,
-            'exploitation_index': exploitation_index,
-            'exploitation_category': self._categorize_exploitation(exploitation_index),
+            'intensity_index': intensity_index,
+            'intensity_category': self._categorize_intensity(intensity_index),
             'metrics': {
                 'fractionation_intensity': fractionation_intensity,
                 'content_diversity': content_diversity,
@@ -692,7 +692,7 @@ class OrganizationAssessment:
                 'personalization_depth': personalization_depth,
                 'vulnerable_targeting': vulnerable_targeting
             },
-            'recommendations': self._generate_recommendations(exploitation_index)
+            'recommendations': self._generate_recommendations(intensity_index)
         }
 
     def _calculate_fractionation_intensity(self, feeds: List[List[str]]) -> float:
@@ -716,7 +716,7 @@ class OrganizationAssessment:
         return min(100, frequency * 100 * 5)  # Scale to 0-100
 
     def _calculate_content_diversity(self, feeds: List[List[str]]) -> float:
-        """Higher diversity = less manipulation"""
+        """Higher diversity = less influence intensity"""
 
         all_items = [item for feed in feeds for item in feed]
 
@@ -745,9 +745,9 @@ class OrganizationAssessment:
 
         return 100 - diversity_score  # Invert: lower diversity = higher score
 
-    def _calculate_exploitation_index(self, metrics: Dict) -> float:
+    def _calculate_intensity_index(self, metrics: Dict) -> float:
         """
-        Calculate overall exploitation index (0-100)
+        Calculate overall intensity index (0-100)
 
         Weights:
         - Fractionation intensity: 40%
@@ -768,26 +768,26 @@ class OrganizationAssessment:
 
         return min(100, max(0, index))
 
-    def _categorize_exploitation(self, index: float) -> str:
-        """Categorize exploitation level"""
+    def _categorize_intensity(self, index: float) -> str:
+        """Categorize intensity level"""
 
         if index < 20:
             return 'minimal'
         elif index < 40:
             return 'moderate'
         elif index < 60:
-            return 'heavy'
+            return 'significant'
         elif index < 80:
-            return 'extreme'
+            return 'high'
         else:
-            return 'weaponized'
+            return 'maximized'
 
     def _generate_recommendations(self, index: float) -> List[str]:
         """Generate recommendations for platform improvement"""
 
         if index > 70:
             return [
-                'Critical: Algorithm heavily optimized for exploitation',
+                'Critical: Algorithm heavily optimized for influence intensity',
                 'Reduce emotional fractionation in feed sequencing',
                 'Implement content diversity requirements',
                 'Add protections for vulnerable populations',
@@ -795,21 +795,21 @@ class OrganizationAssessment:
             ]
         elif index > 50:
             return [
-                'High exploitation detected',
+                'High influence intensity detected',
                 'Review content sequencing patterns',
                 'Diversify emotional categories',
                 'Implement user protection features'
             ]
         elif index > 30:
             return [
-                'Moderate exploitation present',
+                'Moderate influence intensity present',
                 'Continue monitoring feed patterns',
                 'Consider user wellness features'
             ]
         else:
             return [
-                'Low exploitation detected',
-                'Current algorithm design is relatively benign'
+                'Low influence intensity detected',
+                'Current algorithm design is relatively neutral'
             ]
 
     def _calculate_predictability(self, feeds: List[List[str]]) -> float:
@@ -910,7 +910,7 @@ class CrossDomainDataProcessor:
 
         if correlations['fractionation_vs_blink_rate'] < -0.5:
             insights.append(
-                "Strong correlation: High fractionation → Lower blink rate (hypnotic state)"
+                "Strong correlation: High fractionation → Lower blink rate (reduced-vigilance state)"
             )
 
         if correlations['fractionation_vs_hrv'] < -0.5:

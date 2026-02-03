@@ -15,7 +15,7 @@ The fractionation sequence operates as follows:
 - **Cycle 1 (Anger Phase):** Exposure to threat/outrage content activates the amygdala (fear-anger pathway), increasing cortisol and blink rate (35-45 blinks/min). Prefrontal engagement is reduced as threat-detection circuits dominate.
 - **Cycle 2 (Joy Phase):** Exposure to bonding/achievement content activates reward circuits, releasing dopamine and temporarily improving mood. Blink rate drops to 20-25 blinks/min as attention narrows.
 - **Cycle 3 (Second Anger):** Return to threat/outrage content reactivates amygdala while dopamine levels remain elevated, creating a conflict between threat-detection and reward systems.
-- **Cycle 4 (Relief Phase):** Exposure to solution/product/relief content creates a sense of resolution. Working memory is severely overloaded from three emotional reversals; blink rate drops below 10 blinks/min (hypnotic focus state); prefrontal engagement is minimized; behavioral suggestions encounter minimal critical evaluation.
+- **Cycle 4 (Relief Phase):** Exposure to solution/product/relief content creates a sense of resolution. Working memory is severely overloaded from three emotional reversals; blink rate drops below 10 blinks/min (reduced-vigilance focus state); prefrontal engagement is minimized; behavioral suggestions encounter minimal critical evaluation.
 
 ---
 
@@ -44,7 +44,7 @@ Emotional sequencing refers to the deliberate ordering of content designed to ev
 - **A (Anger):** Threat/outrage/fear content; activates amygdala; increases cortisol
 - **J (Joy):** Bonding/achievement/wholesome content; activates reward circuits; releases dopamine
 - **A (Anger - second):** Return to threat content; amygdala reactivates with elevated dopamine
-- **R (Relief):** Solution/product/resolution content; creates sense of closure; induces hypnotic focus state
+- **R (Relief):** Solution/product/resolution content; creates sense of closure; induces reduced-vigilance focus state
 
 **Usage:**
 - Use "A-J-A-R" for the notation when referencing the pattern
@@ -82,7 +82,7 @@ Used in research, behavioral analysis, clinical assessment, and empirical docume
 **Fractionation State Phases:**
 - **Anger Phase (Initial):** 35-45 blinks/min (elevated arousal, threat detection)
 - **Joy Phase:** 20-25 blinks/min (moderate arousal, positive emotion)
-- **Relief Phase (Hypnotic Focus):** <10 blinks/min (severe attentional narrowing, reduced critical evaluation)
+- **Relief Phase (Focused Engagement):** <10 blinks/min (severe attentional narrowing, reduced critical evaluation)
 
 **Stress/High Arousal State:**
 - 30+ blinks/min (general elevated arousal, not specific to fractionation)

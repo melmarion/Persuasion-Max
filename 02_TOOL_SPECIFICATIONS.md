@@ -6,7 +6,7 @@
 ## TOOL 1: FRACTIONATION DETECTION ALGORITHM
 
 ### Purpose
-Analyze social media feed content to identify and measure emotional sequencing patterns that indicate algorithmic manipulation through fractionation.
+Analyze social media feed content to identify and measure emotional sequencing patterns that indicate algorithmic influence through fractionation.
 
 ### Functional Requirements
 
@@ -228,7 +228,7 @@ Phase 2: Fractionation Exposure (5 minutes)
   - Anger content (60 sec): Political outrage again
   - Relief content (60 sec): Product advertisement
 - System records blink rate continuously
-- Track: Blink rate drops below 10 BPM? (Hypnotic state)
+- Track: Blink rate drops below 10 BPM? (Focused engagement state)
 
 Phase 3: Recovery (3 minutes)
 - Neutral content
@@ -250,8 +250,8 @@ Measurements:
   "baseline_bpm": 17,
   "minimum_bpm_during_exposure": 8,
   "vulnerability_score": 7.2,
-  "hypnotic_state_achieved": true,
-  "time_to_hypnotic_state": 180,
+  "focused_engagement_state_achieved": true,
+  "time_to_focused_engagement_state": 180,
   "recovery_time": 120,
   "interpretation": "High blink-rate vulnerability (7.2/10)"
 }
@@ -465,7 +465,7 @@ def detect_fractionation_pattern(feed_items):
     classifications = [classify_content(item) for item in feed_items]
 
     # Step 2: Find A-J-A-R patterns
-    patterns = find_sequences(classifications, pattern='AJAR')
+    patterns = find_sequences(classifications, pattern='A-J-A-R')
 
     # Step 3: Calculate statistical significance
     observed_count = len(patterns)
@@ -544,7 +544,7 @@ CREATE TABLE feed_exposures (
     start_time TIMESTAMP,
     end_time TIMESTAMP,
     feed_type VARCHAR(50), -- 'twitter', 'tiktok', 'instagram', etc
-    feed_sequence VARCHAR(20), -- 'AJAR', 'AJA', 'JA', etc
+    feed_sequence VARCHAR(20), -- 'A-J-A-R', 'AJA', 'JA', etc
     sequence_intensity FLOAT, -- 0-10
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
@@ -567,9 +567,9 @@ Display:
 │ Feed Analysis:                      │
 │ ├─ Current Sequence: A-J-A-R       │
 │ ├─ Fractionation Intensity: 0.78   │
-│ └─ Time in Hypnotic State: 120s    │
+│ └─ Time in Focused Engagement: 120s│
 │                                     │
-│ ⚠️ ALERT: You're in hypnotic state  │
+│ ⚠️ ALERT: Focused engagement state  │
 │    Your critical thinking is       │
 │    temporarily reduced by 60%       │
 │                                     │

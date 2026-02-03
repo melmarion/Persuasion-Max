@@ -138,10 +138,10 @@ Persuasion Max/
 ## LANGUAGE STANDARDS
 
 All documents use neutral professional terminology:
-- "Persuasion" instead of "manipulation"
+- "Influence" instead of loaded terminology
 - "Persuasion Intensity" instead of "Risk Level"
 - "VERY HIGH" instead of "EXTREME"
-- "Intensive" instead of "Weaponized"
+- "Intensive" instead of "Optimized" for high-intensity applications
 - "Professional Audit Methodology" throughout
 
 ---

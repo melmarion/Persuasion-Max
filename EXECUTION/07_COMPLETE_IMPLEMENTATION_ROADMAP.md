@@ -78,7 +78,7 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 **Goal: Publish first paper using Tools 1-3**
 **Time: 40-60 hours (research + writing)**
 
-### Paper 1: "Detecting Emotional Manipulation Patterns in Social Media Feeds"
+### Paper 1: "Detecting Emotional Influence Patterns in Social Media Feeds"
 - Use Tool 1 (Fractionation Detection Algorithm)
 - Analyze 50,000+ real posts from major platforms
 - Demonstrate fractionation sequences exceed random expectation (Chi-square test)
@@ -90,7 +90,7 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 - Test interaction: Fractionation × Personal Vulnerability → Purchase behavior
 - Publish: *Psychological Science*, *Journal of Experimental Psychology*
 
-### Paper 3: "Cross-Domain Integration in Digital Manipulation Research"
+### Paper 3: "Cross-Domain Integration in Digital Influence Research"
 - Use Tool 3 (Physiological Measurement Suite)
 - Integrate psychology (blink rate) + neuroscience (HRV/cortisol) + economics (purchasing)
 - Demonstrate three-domain approach is more predictive than any single domain
@@ -112,7 +112,7 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 ### Month 3: Kick off
 - [ ] Write 2-3 Medium/Substack essays on your findings
 - [ ] Post on Twitter/LinkedIn daily (research updates, insights, methodology)
-- [ ] Reach out to podcast hosts (60 podcasts on psychology, tech, manipulation)
+- [ ] Reach out to podcast hosts (60 podcasts on psychology, tech, influence)
 - [ ] Pitch journalists at major outlets (NYT, Washington Post, The Atlantic)
 
 ### Month 4: Build audience
@@ -121,13 +121,13 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 - [ ] Speaking opportunity: 1-2 university seminars
 
 ### Month 5: Escalate
-- [ ] Target: Op-ed in major publication about algorithmic manipulation
+- [ ] Target: Op-ed in major publication about algorithmic influence
 - [ ] Speaking opportunity: 1 conference talk
 - [ ] Podcast appearances: 3-5 episodes as guest
 
 ### Month 6: Establish authority
 - [ ] Target: 20,000 Twitter followers
-- [ ] Result: Being called "the expert" on fractionation/manipulation
+- [ ] Result: Being called "the expert" on fractionation/influence
 - [ ] Interest: Universities, platforms, policy bodies wanting your expertise
 
 ---
@@ -140,7 +140,7 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 
 **Tool 1 (Fractionation Detection):** Target = Research Institutions + Policy Organizations
 - Licensing price: $50K-$500K depending on usage
-- Pitch: "Objective measure of platform manipulation for compliance/research"
+- Pitch: "Objective measure of platform influence for compliance/research"
 - Contact: Regulatory bodies, research institutes, Meta/Google compliance teams
 - Close 2-3 customers → $200K-$1M revenue
 
@@ -151,7 +151,7 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 - Close 1-2 customers → $100K-$300K revenue
 
 **Tools 3-8 (Prediction/Intervention Suite):** Target = Insurance/Corporate Wellness
-- Pitch: "Measure and reduce digital manipulation in employee/customer populations"
+- Pitch: "Measure and reduce digital influence in employee/customer populations"
 - Create B2B SaaS model
 - Goal: 5-10 enterprise pilots → $50K-$200K revenue
 
@@ -169,9 +169,9 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 **Goal: Complete research infrastructure and policy tools**
 **Time: 20-30 developer-hours per tool**
 
-### Month 9-10: Tool 9 (Research Toolkit) + Tool 10 (Digital Addiction Platform)
+### Month 9-10: Tool 9 (Research Toolkit) + Tool 10 (Digital Engagement Platform)
 - Deploy open-source research toolkit (GitHub + documentation)
-- Launch digital addiction assessment platform (web app)
+- Launch digital engagement assessment platform (web app)
 - Target: 1,000 therapists using Tool 10 within 3 months
 
 ### Month 11-12: Tool 11 (Educational Curriculum)
@@ -202,7 +202,7 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 - [ ] Launch B2C consumer app version of vulnerability scanner
 
 ### Months 22-24: Institutional Positioning
-- [ ] Become standard measure: "Algorithmic Exploitation Index" (like carbon footprint)
+- [ ] Become standard measure: "Algorithmic Intensity Index" (like carbon footprint)
 - [ ] Position for regulatory adoption: Platforms must measure/report scores
 - [ ] Goal: 100+ customers, $5M-$10M annual revenue
 - [ ] Position for acquisition or Series A funding
@@ -250,7 +250,7 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 - [ ] 100+ customers
 - [ ] $5M-$10M annual revenue
 - [ ] Regulatory adoption beginning
-- [ ] Algorithmic Exploitation Index as industry standard
+- [ ] Algorithmic Intensity Index as industry standard
 - [ ] Position for exit (acquisition or IPO path)
 
 ---
@@ -330,7 +330,7 @@ If you need capital (you probably will):
 ### Option 3: Seed Funding
 - Angels interested in: EdTech, digital wellness, AI safety
 - Typical seed round: $500K-$2M
-- Pitch: "We're building the tools tech platforms need to measure and prevent psychological manipulation"
+- Pitch: "We're building the tools tech platforms need to measure and prevent psychological influence"
 
 ### Option 4: Partner Funding
 - Platforms wanting to audit themselves (Meta, Google): Pay for development
@@ -345,7 +345,7 @@ If you need capital (you probably will):
 2. **Immediate revenue potential** - Tools have clear customers willing to pay Day 1
 3. **Academic credibility supports commercial success** - Papers = proof = trusted partnerships
 4. **Network effects** - Each tool makes the others more valuable
-5. **Regulatory tailwinds** - Digital manipulation is increasingly regulated; you're ahead of the curve
+5. **Regulatory tailwinds** - Digital influence is increasingly regulated; you're ahead of the curve
 6. **Founder advantage** - Your unique three-domain positioning is defensible
 
 ---
@@ -365,7 +365,7 @@ If you need capital (you probably will):
 ### 3. Media Presence
 - Become recognizable = authority = partnership opportunities
 - Post daily, speak publicly, write essays
-- Goal: "When people think 'algorithmic manipulation,' they think of you"
+- Goal: "When people think 'algorithmic influence,' they think of you"
 
 ### 4. Customer Development
 - Month 3: Identify ideal customer profile (ICP)
@@ -382,7 +382,7 @@ If you need capital (you probably will):
 
 ## RISK MITIGATION
 
-### Risk: Platforms don't want to admit manipulation
+### Risk: Platforms don't want to admit influence
 **Mitigation:** Reframe as "compliance tool" - they need to show regulators they're ethical
 
 ### Risk: Academic papers get rejected
@@ -407,7 +407,7 @@ If you need capital (you probably will):
 - Your outcome: $10M-$50M (depending on dilution + cap table)
 
 **Scenario 2: Regulatory Success**
-- Year 2: Your "Exploitation Index" becomes industry standard
+- Year 2: Your "Intensity Index" becomes industry standard
 - Regulatory requirement: All platforms must measure and report
 - Your company becomes essential infrastructure
 - Path to IPO or strategic acquisition

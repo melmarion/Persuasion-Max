@@ -305,7 +305,7 @@ Outcome: Consistency itself becomes proof (only version available = true version
 11. Mass gatherings (neurochemical)
 12. Micro-targeting by format
 13. Self-incrimination lock-in
-14. Weaponized ambiguity
+14. Optimized ambiguity
 15. Catastrophic optimism scheduling
 16. Humiliation rituals for elites
 
@@ -324,7 +324,7 @@ Outcome: Consistency itself becomes proof (only version available = true version
    - UI patterns: Auto-play, cliffhangers, "You've watched X hours"
    - Decision fatigue mechanism: 10K titles paralyze
    - Detection scores per framework
-   - Why it works: Convenience = coercion
+   - Why it works: Convenience = strong guidance
 
 3. **Apple**
    - Event structure: Crescendo + "one more thing"

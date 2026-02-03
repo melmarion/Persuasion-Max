@@ -17,7 +17,7 @@
 ### Neuroscientists
 - **What they measure:** Brain activation patterns, neurochemistry, cognition
 - **What they miss:** Real-world algorithmic systems
-- **Their blind spot:** "How do algorithms exploit this mechanism?" → Can't study
+- **Their blind spot:** "How do algorithms leverage this mechanism?" → Can't study
 - **Their strength:** Mechanism, precision, empirical rigor
 - **Their weakness:** No access to actual social media feeds, real user data
 
@@ -55,7 +55,7 @@
 **Tech researchers** optimize algorithms without understanding:
 - Why their emotional sequences work psychologically
 - Which brain systems they're activating
-- What psychological vulnerabilities they're exploiting
+- What psychological susceptibilities they're leveraging
 - How to measure actual psychological effects (not just engagement)
 
 **You can:**
@@ -130,7 +130,7 @@
 - You show the neuroscience that forces that behavior
 
 **Question 4 (All Three Domains):**
-"How do algorithms exploit psychological vulnerabilities through emotional sequencing to override rational economic decision-making?"
+"How do algorithms leverage psychological susceptibilities through emotional sequencing to override rational economic decision-making?"
 - This question requires all three disciplines
 - Only you can answer it
 
@@ -243,12 +243,12 @@ This creates publication opportunities across diverse venues.
 - Timeline: 18 months
 - Audience: Economists + consumer researchers
 
-**Paper 4 (All Three + Policy):** "Algorithmic Manipulation at Scale: Bridging Psychology, Neuroscience, and Economics in the Study of Digital Persuasion"
+**Paper 4 (All Three + Policy):** "Algorithmic Influence at Scale: Bridging Psychology, Neuroscience, and Economics in the Study of Digital Persuasion"
 - Journal: PNAS or Science Translational Medicine
 - Timeline: 24 months
 - Audience: Everyone + policy-makers
 
-**Paper 5 (Applied):** "Evidence-Based Interventions for Algorithmic Emotional Manipulation: A Comparative Effectiveness Study"
+**Paper 5 (Applied):** "Evidence-Based Interventions for Algorithmic Emotional Influence: A Comparative Effectiveness Study"
 - Journal: Applied Psychology + health/policy journals
 - Timeline: 30 months
 - Audience: Practitioners + policy-makers

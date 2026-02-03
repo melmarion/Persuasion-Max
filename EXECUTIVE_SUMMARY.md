@@ -18,7 +18,7 @@ This positions you to own an entire market that doesn't yet exist.
 
 ## YOUR RESEARCH THESIS
 
-**Question:** How do algorithms exploit psychological vulnerabilities through emotional sequencing to override rational decision-making?
+**Question:** How do algorithms leverage psychological vulnerabilities through emotional sequencing to override rational decision-making?
 
 **Why only you can answer it:**
 - Tech researchers optimize algorithms without understanding the psychology (you explain WHY)
@@ -61,7 +61,7 @@ This positions you to own an entire market that doesn't yet exist.
 What you'll build RIGHT NOW as you do your research:
 
 1. **Fractionation Detection Algorithm**
-   - Analyzes feeds to identify manipulation patterns
+   - Analyzes feeds to identify influence patterns
    - Outputs: "Your feed is 67% fractionation sequences"
    - Market: Researchers, platforms, policy-makers
    - Potential: $50K-500K licensing
@@ -86,31 +86,31 @@ Using your research data to build predictive systems:
 4. **Behavioral Response Predictor**
    - Predicts probability someone will make impulse purchase (0-100%)
    - Given: Their personality, feed sequence, physiological state
-   - Market: Researchers, clinicians, ethical platforms
+   - Market: Researchers, clinicians, platforms
    - Use: Identify vulnerable moments for intervention
 
 5. **Intervention Effectiveness Simulator**
    - Shows which defenses work best for which person
    - Personalizes treatment plans
    - Market: Clinicians, digital wellness apps
-   - Use: Evidence-based digital addiction treatment
+   - Use: Evidence-based digital engagement treatment
 
 ---
 
 ### Tier 3: Defense Tools (Months 12-18)
 Actually preventing harm at scale:
 
-6. **Real-Time Manipulation Detector & Blocker**
-   - Warns users when they enter hypnotic state
+6. **Real-Time Influence Detector & Blocker**
+   - Warns users when they enter reduced-vigilance state
    - Offers personalized interventions
    - Browser extension / app
    - Market: Consumers (freemium model)
    - Revenue: $50M-$200M annually (if 5% adoption)
-   - Impact: Actually protects people from manipulation
+   - Impact: Actually protects people from influence
 
 7. **Organizational Vulnerability Assessment System**
-   - Audits algorithms for manipulation intensity
-   - Generates "Exploitation Index" (0-100)
+   - Audits algorithms for influence intensity
+   - Generates "Intensity Index" (0-100)
    - For platforms wanting to compete on ethics
    - Market: Tech platforms, regulators
    - Revenue: $2M-$10M annually licensing
@@ -126,15 +126,15 @@ Making your methods standard in the field:
    - Market: Academic researchers worldwide
    - Impact: Defines field; accelerates knowledge
 
-9. **Digital Addiction Assessment & Treatment Platform**
-   - Clinical system for diagnosing and treating manipulation susceptibility
+9. **Digital Engagement Assessment & Treatment Platform**
+   - Clinical system for diagnosing and treating influence susceptibility
    - Integration with therapists, treatment protocols
    - Market: Mental health providers, hospitals, schools
    - Revenue: $5M-$50M annually
 
 10. **Educational Curriculum**
     - High school/college materials teaching algorithmic literacy
-    - Inoculates young people against manipulation
+    - Inoculates young people against influence techniques
     - Market: Schools worldwide
     - Revenue: $2M-$10M; impact: Saves lives
 
@@ -262,7 +262,7 @@ Every system you design has more power because it's validated by research.
 ### More Important Than Money
 - Academic impact: 200+ citations, define field
 - Clinical impact: Mental health treatment standard of care
-- Consumer impact: Millions of people protected from manipulation
+- Consumer impact: Millions of people protected from influence
 - Policy impact: Regulation based on your research
 - Educational impact: Generation of digitally literate youth
 
@@ -273,7 +273,7 @@ Every system you design has more power because it's validated by research.
 **You're not just building tools.**
 
 You're building the scientific and practical infrastructure for:
-- Making manipulation visible and measurable
+- Making influence visible and measurable
 - Understanding the neurochemistry of irrational behavior
 - Protecting vulnerable populations
 - Enabling informed consent at scale
@@ -299,7 +299,7 @@ You're building the scientific and practical infrastructure for:
 
 ## YOUR RESEARCH MISSION
 
-**Make algorithmic manipulation visible, measurable, and preventable.**
+**Make algorithmic influence visible, measurable, and preventable.**
 
 By doing that, you:
 - Enable academic understanding (research)
@@ -325,7 +325,7 @@ Your complete research + toolkit package includes:
 ✓ Competitive analysis
 ✓ Funding opportunities
 ✓ Academic references (30+)
-✓ Ethical frameworks
+✓ Intensity threshold frameworks
 
 **Everything you need is documented.**
 

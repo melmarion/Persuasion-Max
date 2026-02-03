@@ -40,7 +40,7 @@
 ### Phase 2: Core Tools (Weeks 4-8)
 4. Behavioral Response Predictor
 5. Intervention Effectiveness Simulator
-6. Real-Time Manipulation Detector
+6. Real-Time Influence Detector
 
 ### Phase 3: Enterprise Tools (Weeks 9-12)
 7. Organizational Vulnerability Assessment
@@ -48,7 +48,7 @@
 
 ### Phase 4: Impact Tools (Months 4-6)
 9. Research Toolkit
-10. Digital Addiction Platform
+10. Digital Engagement Platform
 11. Educational Curriculum
 
 ---
@@ -257,7 +257,7 @@ class SequenceDetector:
         # Map ratio to 0-100 score
         # ratio 1 = 0 points (random)
         # ratio 2 = 50 points (2x random)
-        # ratio 5+ = 100 points (heavily manipulated)
+        # ratio 5+ = 100 points (heavily influenced)
 
         index = min(100, (ratio - 1) * 50)
         return index

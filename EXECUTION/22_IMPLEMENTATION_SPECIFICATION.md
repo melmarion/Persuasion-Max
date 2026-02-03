@@ -1035,7 +1035,7 @@ COGNITIVE_LOAD.Composite_Score (Advanced Framework):
 
 ---
 
-## ADVANCED FRAMEWORK 2: DECISION FATIGUE EXPLOITATION
+## ADVANCED FRAMEWORK 2: DECISION FATIGUE LEVERAGE
 
 ### DECISION_FATIGUE.Decision_Multiplication Detection:
 ```
@@ -1159,10 +1159,10 @@ COMPOSITE.Overall_Influence strategy_Index (Scoring Algorithm):
 │  └─ CAPPING: final_influence strategy_index = min(overall_score, 100)
 │
 ├─ CATEGORIZATION:
-│  ├─ 0-25: LOW (Minimal influence strategy, ethical persuasion)
+│  ├─ 0-25: LOW (Minimal influence strategy, standard persuasion)
 │  ├─ 26-50: MODERATE (Industry-standard persuasion)
 │  ├─ 51-75: HIGH (Significant influence strategy, requires scrutiny)
-│  └─ 76-100: EXTREME (Leverageative influence strategy, likely unethical)
+│  └─ 76-100: EXTREME (High-intensity influence strategy)
 │
 ├─ VULNERABILITY_ASSESSMENT: based on which_principles_score_highest
 │  ├─ if PERSONAL > 50: vulnerable_profile = "identity-conscious"
@@ -1314,11 +1314,11 @@ DECISION_TREE_3.Influence strategy_Intensity_Classification (Action Assignment):
 ├─ condition: classify_and_recommend_action()
 ├─ implementation: classification = assign_intensity_class()
 │
-│  ├─ CLASS 1: ETHICAL (0-25 composite score)
+│  ├─ CLASS 1: LOW (0-25 composite score)
 │  │  ├─ condition: influence strategy_index <= 25
 │  │  ├─ characteristics: primarily informational, minimal emotional influence strategy
 │  │  ├─ action_required: NONE
-│  │  ├─ rationale: within ethical persuasion bounds
+│  │  ├─ rationale: within standard persuasion bounds
 │  │  └─ recommendation: "No concerns; standard persuasive communication"
 │  │
 │  ├─ CLASS 2: MODERATE (26-50 composite score)
@@ -1332,7 +1332,7 @@ DECISION_TREE_3.Influence strategy_Intensity_Classification (Action Assignment):
 │  │  ├─ condition: (influence strategy_index > 50) ∧ (influence strategy_index <= 75)
 │  │  ├─ characteristics: multiple frameworks deployed, sophisticated targeting
 │  │  ├─ action_required: REVIEW_REQUIRED
-│  │  ├─ rationale: exceeds ethical standards, requires human evaluation
+│  │  ├─ rationale: exceeds intensity thresholds, requires human evaluation
 │  │  └─ recommendation: "Significant influence strategy detected; human review recommended"
 │  │
 │  ├─ CLASS 4: EXTREME (76-100 composite score)
@@ -1571,7 +1571,7 @@ DECISION_TREE_3.Influence strategy_Intensity_Classification (Action Assignment):
 
   "remediation_recommendations": [
     {
-      "issue": "description_of_manipulative_element",
+      "issue": "description_of_influence_element",
       "severity": "HIGH" | "MODERATE" | "LOW",
       "recommended_fix": "specific_action_to_remove_influence strategy",
       "estimated_impact": "if_removed_influence strategy_score_drops_to: XX/100"

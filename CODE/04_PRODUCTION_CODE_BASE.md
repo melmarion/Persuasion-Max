@@ -420,7 +420,7 @@ class SequenceDetector:
         - 20-40: Moderate
         - 40-60: Heavy
         - 60-80: Extreme
-        - 80-100: Weaponized
+        - 80-100: Maximized
         """
 
         observed = detected_patterns['patterns_found']
@@ -457,9 +457,9 @@ class SequenceDetector:
             description = 'Systematic fractionation detected'
         elif index < 80:
             category = 'extreme'
-            description = 'Heavy emotional manipulation'
+            description = 'Heavy emotional influence'
         else:
-            category = 'weaponized'
+            category = 'optimized'
             description = 'Optimized emotional influence strategy'
 
         return {
@@ -490,7 +490,7 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(
     title="Fractionation Detection API",
-    description="Analyze social media feeds for algorithmic emotional manipulation",
+    description="Analyze social media feeds for algorithmic emotional influence",
     version="1.0.0"
 )
 
@@ -630,7 +630,7 @@ if __name__ == "__main__":
 Vulnerability Scorer - Measure individual susceptibility to fractionation
 
 From Compilation.txt research:
-- Blink rate drops below 10/min = hypnotic state
+- Blink rate drops below 10/min = reduced-vigilance state
 - High trait anxiety + high neuroticism + smooth eyelids = 3x more susceptible
 - Cortisol elevated + low HRV = vulnerable baseline
 """
@@ -674,11 +674,11 @@ class VulnerabilityScorer:
         Score blink-rate vulnerability (0-10)
 
         From Compilation.txt:
-        "Blink rate drops below 10/min during hypnotic state"
+        "Blink rate drops below 10/min during reduced-vigilance state"
 
         Logic:
         - Larger drop = higher vulnerability
-        - Drop below 10/min = hypnotic state achieved
+        - Drop below 10/min = reduced-vigilance state achieved
         """
 
         if baseline_bpm == 0:
@@ -835,7 +835,7 @@ class VulnerabilityScorer:
             'very_high_vulnerability': [
                 'Consider digital wellness counseling',
                 'Temporary social media breaks recommended',
-                'Use manipulation detector tools (browser extension)',
+                'Use influence detector tools (browser extension)',
                 'Combined interventions: awareness + prefrontal + community'
             ]
         }
@@ -914,7 +914,7 @@ class FeedExposure(Base):
     start_time = Column(DateTime, index=True)
     end_time = Column(DateTime)
     feed_type = Column(String)  # 'twitter', 'tiktok', 'instagram'
-    feed_sequence = Column(String)  # 'AJAR', 'AJA', 'JA'
+    feed_sequence = Column(String)  # 'A-J-A-R', 'AJA', 'JA'
     sequence_intensity = Column(Float)
     fractionation_index = Column(Float)
     created_at = Column(DateTime, default=datetime.utcnow)

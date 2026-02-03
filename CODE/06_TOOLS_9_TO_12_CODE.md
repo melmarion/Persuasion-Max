@@ -1,11 +1,11 @@
 # PRODUCTION CODE: TOOLS 9-12
-## Research Toolkit, Digital Addiction Platform, Educational Curriculum, Policy Analytics
+## Research Toolkit, Digital Engagement Platform, Educational Curriculum, Policy Analytics
 **Extracted from Compilation.txt research | Ready-to-implement Python**
 
 ---
 
 ## TOOL 9: Fractionation Research Toolkit (Open-Source)
-*What it does:* Provides researchers with reusable components for studying algorithmic manipulation
+*What it does:* Provides researchers with reusable components for studying algorithmic influence
 *Who needs it:* Academic researchers, replication efforts, meta-analyses
 *Time to implement:* 12-16 hours | Framework + training materials
 
@@ -537,7 +537,7 @@ class ProtocolLibrary:
         5. Calculate: baseline_blinks_per_minute, exposure_bpm, reduction_percentage
 
         Scoring: Blinks <10/min during exposure = suggestibility increase observed
-        (Source: Compilation.txt - Hypnotic state identification)
+        (Source: Compilation.txt - Reduced-vigilance state identification)
         """,
         equipment="Webcam-based eye tracking (OpenCV) or Tobii eye tracker",
         duration="9 minutes per session",
@@ -874,17 +874,17 @@ class CrossDomainAnalyzer:
 
 ---
 
-## TOOL 10: Digital Addiction Assessment & Treatment Platform
-*What it does:* Comprehensive system for diagnosing and treating digital manipulation susceptibility
+## TOOL 10: Digital Engagement Assessment & Treatment Platform
+*What it does:* Comprehensive system for diagnosing and treating digital influence susceptibility
 *Who needs it:* Therapists, counselors, mental health programs, schools
 *Time to implement:* 16-20 hours | Assessment + treatment planning + clinician dashboard
 
 ---
 
-### Digital Addiction Diagnostic System
+### Digital Engagement Diagnostic System
 
 ```python
-# tool_10_digital_addiction/assessment_engine.py
+# tool_10_digital_engagement/assessment_engine.py
 
 from enum import Enum
 from typing import Dict, List, Tuple
@@ -892,11 +892,11 @@ from dataclasses import dataclass
 import json
 from datetime import datetime, timedelta
 
-class DigitalManipulationSyndromeLevel(Enum):
-    """Diagnostic levels based on Compilation.txt behavioral addiction research
+class DigitalInfluenceSyndromeLevel(Enum):
+    """Diagnostic levels based on Compilation.txt behavioral engagement research
 
-    Analogous to addiction severity (mild/moderate/severe)
-    Applied to digital manipulation susceptibility
+    Analogous to engagement intensity (mild/moderate/severe)
+    Applied to digital influence susceptibility
     """
     MINIMAL = "Minimal"
     MILD = "Mild"
@@ -905,7 +905,7 @@ class DigitalManipulationSyndromeLevel(Enum):
     CRISIS = "Crisis (Immediate Intervention Needed)"
 
 @dataclass
-class DigitalAddictionDiagnosis:
+class DigitalEngagementDiagnosis:
     """Complete diagnostic assessment across all relevant domains"""
 
     patient_id: str
@@ -931,13 +931,13 @@ class DigitalAddictionDiagnosis:
     self_esteem_score: float  # Rosenberg Self-Esteem Scale
     fomo_score: float  # Fear of Missing Out specific assessment
 
-    # Vulnerability profile
+    # Susceptibility profile
     fractionation_susceptibility: float  # 0-100
     reward_sensitivity: float  # How dopamine-reactive (0-100)
     impulse_control_deficit: float  # Self-regulation capacity (0-100)
 
     # Diagnostic summary
-    diagnosis_level: DigitalManipulationSyndromeLevel
+    diagnosis_level: DigitalInfluenceSyndromeLevel
     diagnostic_criteria_met: int  # How many of 9 criteria are met
     severity_scores: Dict[str, float]  # By domain
 
@@ -945,7 +945,7 @@ class DigitalAddictionDiagnosis:
         """Generate clinician-friendly diagnostic report"""
 
         report = f"""
-        DIGITAL MANIPULATION SUSCEPTIBILITY ASSESSMENT
+        DIGITAL INFLUENCE SUSCEPTIBILITY ASSESSMENT
         Patient ID: {self.patient_id}
         Date: {self.assessment_date.strftime('%Y-%m-%d')}
 
@@ -961,7 +961,7 @@ class DigitalAddictionDiagnosis:
 
         PHYSIOLOGICAL FINDINGS:
         - Blink rate at baseline: {self.blink_rate_at_rest:.1f}/min
-          (Normal: 15-20 blinks/min; <10 blinks/min indicates chronic hypnotic state susceptibility)
+          (Normal: 15-20 blinks/min; <10 blinks/min indicates chronic reduced-vigilance state susceptibility)
         - HRV: {self.baseline_hrv_ms:.1f} ms (Normal: >50ms; Low indicates reduced adaptability)
         - Cortisol: {self.baseline_cortisol_level:.1f} µg/dL (Elevated suggests chronic stress)
         - Sleep quality: {self.sleep_quality_rating:.1f}/10
@@ -972,7 +972,7 @@ class DigitalAddictionDiagnosis:
         - Self-esteem: {self.self_esteem_score:.1f}/50 (Lower = more vulnerable)
         - FOMO severity: {self.fomo_score:.1f}/100
 
-        VULNERABILITY ASSESSMENT:
+        SUSCEPTIBILITY ASSESSMENT:
         - Fractionation susceptibility: {self.fractionation_susceptibility:.0f}/100
         - Reward sensitivity: {self.reward_sensitivity:.0f}/100
         - Impulse control: {self.impulse_control_deficit:.0f}/100
@@ -990,23 +990,23 @@ class DigitalAddictionDiagnosis:
         """Generate narrative interpretation for clinician"""
 
         interpretations = {
-            DigitalManipulationSyndromeLevel.MINIMAL: (
-                "Patient shows minimal signs of digital manipulation susceptibility. "
-                "Recommend: Monitor for changes, provide psychoeducation on manipulation techniques."
+            DigitalInfluenceSyndromeLevel.MINIMAL: (
+                "Patient shows minimal signs of digital influence susceptibility. "
+                "Recommend: Monitor for changes, provide psychoeducation on influence techniques."
             ),
-            DigitalManipulationSyndromeLevel.MILD: (
+            DigitalInfluenceSyndromeLevel.MILD: (
                 "Patient meets 3-4 diagnostic criteria suggesting mild digital susceptibility. "
                 "Recommend: Cognitive-behavioral interventions, digital literacy training, media diet adjustment."
             ),
-            DigitalManipulationSyndromeLevel.MODERATE: (
-                "Patient meets 5-6 criteria indicating moderate manipulation vulnerability. "
+            DigitalInfluenceSyndromeLevel.MODERATE: (
+                "Patient meets 5-6 criteria indicating moderate influence susceptibility. "
                 "Recommend: Intensive behavioral therapy, physiological biofeedback training, family involvement."
             ),
-            DigitalManipulationSyndromeLevel.SEVERE: (
+            DigitalInfluenceSyndromeLevel.SEVERE: (
                 "Patient meets 7-8 criteria with significant functional impairment. "
                 "Recommend: Multi-modal treatment including CBT, possible psychiatric medication for underlying anxiety/depression, residential program consideration."
             ),
-            DigitalManipulationSyndromeLevel.CRISIS: (
+            DigitalInfluenceSyndromeLevel.CRISIS: (
                 "Patient meets all 9 criteria with acute crisis presentation. "
                 "Recommend: IMMEDIATE intervention - restrict device access, psychiatric evaluation, crisis support. Consider inpatient program."
             )
@@ -1014,16 +1014,16 @@ class DigitalAddictionDiagnosis:
 
         return interpretations[self.diagnosis_level]
 
-class DigitalAddictionAssessmentEngine:
+class DigitalEngagementAssessmentEngine:
     """Calculate diagnostic level from patient data"""
 
-    # Diagnostic criteria (DSM-5 Adapted for Digital Manipulation)
+    # Diagnostic criteria (DSM-5 Adapted for Digital Influence)
     DIAGNOSTIC_CRITERIA = {
         'tolerance': 'Needs increasing amounts of social media engagement for satisfaction',
         'withdrawal': 'Anxiety or irritability when unable to access platform',
         'loss_of_control': 'Unsuccessful attempts to reduce use',
         'functional_impairment': 'Neglects work, school, relationships due to use',
-        'deception': 'Deceives others about amount of time spent',
+        'concealment': 'Conceals from others the amount of time spent',
         'escape_motivation': 'Uses to escape problems or regulate mood',
         'jeopardized_relationships': 'Relationships threatened by use',
         'risky_behavior': 'Engages in risky financial decisions (impulse purchases)',
@@ -1031,7 +1031,7 @@ class DigitalAddictionAssessmentEngine:
     }
 
     @staticmethod
-    def assess_diagnostic_criteria(diagnosis: DigitalAddictionDiagnosis) -> Tuple[int, Dict[str, bool]]:
+    def assess_diagnostic_criteria(diagnosis: DigitalEngagementDiagnosis) -> Tuple[int, Dict[str, bool]]:
         """Count how many diagnostic criteria are met"""
 
         criteria_met = {}
@@ -1041,7 +1041,7 @@ class DigitalAddictionAssessmentEngine:
         criteria_met['loss_of_control'] = (diagnosis.unsuccessful_reduction_attempts > 0 or
                                           diagnosis.unplanned_social_media_sessions_daily > 3)
         criteria_met['functional_impairment'] = diagnosis.neglected_responsibilities
-        criteria_met['deception'] = False  # Would need self-report or collateral
+        criteria_met['concealment'] = False  # Would need self-report or collateral
         criteria_met['escape_motivation'] = diagnosis.depression_screening_score > 10
         criteria_met['jeopardized_relationships'] = diagnosis.neglected_responsibilities
         criteria_met['risky_behavior'] = diagnosis.reward_sensitivity > 75
@@ -1055,22 +1055,22 @@ class DigitalAddictionAssessmentEngine:
         return count, criteria_met
 
     @staticmethod
-    def calculate_severity_level(diagnosis: DigitalAddictionDiagnosis) -> DigitalManipulationSyndromeLevel:
+    def calculate_severity_level(diagnosis: DigitalEngagementDiagnosis) -> DigitalInfluenceSyndromeLevel:
         """Determine severity level based on multiple factors"""
 
-        criteria_count, _ = DigitalAddictionAssessmentEngine.assess_diagnostic_criteria(diagnosis)
+        criteria_count, _ = DigitalEngagementAssessmentEngine.assess_diagnostic_criteria(diagnosis)
 
         # Algorithm: Combine criteria count + severity indicators
         if criteria_count >= 8:
-            return DigitalManipulationSyndromeLevel.CRISIS
+            return DigitalInfluenceSyndromeLevel.CRISIS
         elif criteria_count >= 7:
-            return DigitalManipulationSyndromeLevel.SEVERE
+            return DigitalInfluenceSyndromeLevel.SEVERE
         elif criteria_count >= 5:
-            return DigitalManipulationSyndromeLevel.MODERATE
+            return DigitalInfluenceSyndromeLevel.MODERATE
         elif criteria_count >= 3:
-            return DigitalManipulationSyndromeLevel.MILD
+            return DigitalInfluenceSyndromeLevel.MILD
         else:
-            return DigitalManipulationSyndromeLevel.MINIMAL
+            return DigitalInfluenceSyndromeLevel.MINIMAL
 
 class TreatmentPlanner:
     """Generate personalized treatment recommendations based on vulnerability profile"""
@@ -1121,10 +1121,10 @@ class TreatmentPlanner:
     }
 
     @staticmethod
-    def create_treatment_plan(diagnosis: DigitalAddictionDiagnosis) -> Dict:
+    def create_treatment_plan(diagnosis: DigitalEngagementDiagnosis) -> Dict:
         """Generate personalized treatment plan"""
 
-        criteria_count, criteria_met = DigitalAddictionAssessmentEngine.assess_diagnostic_criteria(diagnosis)
+        criteria_count, criteria_met = DigitalEngagementAssessmentEngine.assess_diagnostic_criteria(diagnosis)
 
         treatment_plan = {
             'patient_id': diagnosis.patient_id,
@@ -1202,7 +1202,7 @@ class TreatmentPlanner:
 ---
 
 ## TOOL 11: Educational Curriculum on Algorithmic Literacy
-*What it does:* High school and college-level course materials teaching students to resist manipulation
+*What it does:* High school and college-level course materials teaching students to resist influence techniques
 *Who needs it:* Schools, universities, parents
 *Time to implement:* 14-18 hours | Lessons + lab exercises + assessment tools
 
@@ -1288,12 +1288,12 @@ EXAMPLE: Social Media Fractionation
 - But amygdala has already triggered dopamine anticipation
 - By the time you're thinking logically, your emotions have decided
 
-YOUR VULNERABILITY: The gap between 15ms (emotions) and 500ms (logic)
+YOUR SUSCEPTIBILITY: The gap between 15ms (emotions) and 500ms (logic)
                 """,
                 'discussion_prompts': [
                     'What\'s a time you reacted emotionally before thinking?',
                     'When do you notice your logical brain "catching up" to your emotions?',
-                    'How could someone exploit the speed difference between emotional and logical thinking?'
+                    'How could someone leverage the speed difference between emotional and logical thinking?'
                 ],
                 'hands_on_exercise': {
                     'name': 'Monitor Your Brain States',
@@ -1349,17 +1349,17 @@ THE PATTERN: A-J-A-R (Anger → Joy → Anger → Relief)
 RESULT: You've cycled through emotional extremes in 2-3 minutes
         Your prefrontal cortex (logic) is offline
         Your amygdala (emotion) is driving decisions
-        You're NOW in hypnotic state (blink rate drops below 10/min)
+        You're NOW in reduced-vigilance state (blink rate drops below 10/min)
         Suggestibility increases 200%+
 
 WHY IT WORKS:
 - Predictable emotional relief → you anticipate the pattern
 - When relief comes, your brain REWARDS you for whatever action was suggested
-- Pattern repeats → addiction-like cycle
+- Pattern repeats → engagement-like cycle
 - Your logic thinks you're "convinced by the argument"
 - Actually: Your emotions are completely hijacked
 
-YOUR EXPERIENCE: "I couldn't put my phone down" = your brain is in dopamine loop
+YOUR EXPERIENCE: "I couldn't put my phone down" = your brain is in engagement loop
                 """,
                 'hands_on_exercise': {
                     'name': 'Detect Fractionation in Real Feeds',
@@ -1403,9 +1403,9 @@ YOUR EXPERIENCE: "I couldn't put my phone down" = your brain is in dopamine loop
         'title': 'What Makes YOU Vulnerable?',
         'duration_weeks': 1.5,
         'key_concept': """
-You are NOT weak for being vulnerable. Everyone has different vulnerabilities.
-An algorithm that knows your specific weaknesses can exploit you perfectly.
-The goal: Know YOUR vulnerabilities so you can defend them.
+You are NOT weak for being susceptible. Everyone has different susceptibilities.
+An algorithm that knows your specific tendencies can influence you effectively.
+The goal: Know YOUR susceptibilities so you can defend them.
         """,
         'lessons': [
             {
@@ -1433,7 +1433,7 @@ SCORING: Add your answers.
 - 11-15 = Moderate vulnerability
 - 16-20 = High vulnerability (be careful with emotional content)
 
-INTERPRETATION: This scores how susceptible you are to EMOTIONAL manipulation.
+INTERPRETATION: This scores how susceptible you are to EMOTIONAL influence.
 Algorithms will emphasize emotional content around YOUR vulnerabilities.
 
 
@@ -1465,7 +1465,7 @@ ECONOMICS DOMAIN: Decision-Making Patterns
 5. I don't track where my money goes week-to-week
 
 SCORING: Add your answers
-- 5-10 = Thoughtful decision-maker (harder to manipulate)
+- 5-10 = Thoughtful decision-maker (harder to influence)
 - 11-15 = Sometimes impulsive (moderate financial vulnerability)
 - 16-20 = Very impulsive (algorithms know how to make you spend)
 
@@ -1492,7 +1492,7 @@ What does this mean for YOUR defenses?
         'title': 'Your Defense Toolkit',
         'duration_weeks': 2,
         'introduction': """
-Research from your research study identified what ACTUALLY works to prevent manipulation.
+Research from your research study identified what ACTUALLY works to prevent influence.
 Not all defenses are equal. Some are 18% effective, others 50%+ effective.
 Build your personal defense system based on YOUR vulnerabilities.
         """,
@@ -1503,7 +1503,7 @@ Build your personal defense system based on YOUR vulnerabilities.
                 'learning_objectives': [
                     'Strengthen prefrontal cortex (logical brain)',
                     'Practice thinking from multiple perspectives',
-                    'Build resilience to emotional manipulation'
+                    'Build resilience to emotional influence'
                 ],
                 'research_backing': 'Effectiveness: 50% reduction in fractionation impact',
                 'daily_exercise': {
@@ -1543,7 +1543,7 @@ TRACKING: After 2 weeks, can you resist the emotional pull of ONE-SIDED content?
                     'details': """
 CURRENT (Algorithmic):
 - Open app → algorithm shows you whatever maximizes engagement
-- You: consumer of whatever emotionally manipulates you
+- You: consumer of whatever emotionally influences you
 
 FUTURE (Deliberate):
 - Decide FIRST what content you want (curated list, specific accounts, specific times)
@@ -1566,11 +1566,11 @@ Week 2: Create deliberate list
 Week 3: Implement
 - Install app blockers (Freedom, Cold Turkey) to enforce schedule
 - Phone notifications OFF (except for direct messages)
-- Use website instead of app when possible (apps are engineered for addiction)
+- Use website instead of app when possible (apps are engineered for engagement)
 
 Week 4+: Consistency
 - Track: How many times did you follow your media diet?
-- Measure: Do you feel less manipulated? More in control?
+- Measure: Do you feel less influenced? More in control?
                     """
                 }
             }
@@ -1581,12 +1581,12 @@ class ParentEducationModule:
     """Special curriculum for parents learning to protect their teenagers
 
     Research note: Parents are often more vulnerable than teens
-    Teens know algorithms exploit emotions; parents sometimes don't
+    Teens know algorithms leverage emotions; parents sometimes don't
     """
 
     modules = {
         'early_warning_signs': {
-            'title': 'When to Worry: Early Warning Signs of Manipulation',
+            'title': 'When to Worry: Early Warning Signs of Influence',
             'signs': [
                 'Sudden mood shifts after looking at phone',
                 'Expressing beliefs completely unlike family values',
@@ -1624,7 +1624,7 @@ class ParentEducationModule:
             'sample_contract': """
 OUR FAMILY DIGITAL AGREEMENT
 
-We agree that social media apps are designed to manipulate emotions.
+We agree that social media apps are designed to influence emotions.
 We want to use them intentionally, not be controlled by them.
 
 SHARED AGREEMENTS:
@@ -1642,7 +1642,7 @@ TEEN AGREEMENTS:
 PARENT AGREEMENTS:
 - I'll also use mindful media consumption (modeling matters)
 - I'll ask before assuming worst
-- I'll help you notice manipulative patterns without shame
+- I'll help you notice influence patterns without shame
 - [ADDITIONAL]: _______________________
 
 CONSEQUENCE PLAN (Not Punishment):
@@ -1679,22 +1679,22 @@ from dataclasses import dataclass
 import json
 from datetime import datetime
 
-class PlatformExploitationLevel(Enum):
-    """Categorization scale for algorithmic manipulation intensity
+class PlatformIntensityLevel(Enum):
+    """Categorization scale for algorithmic influence intensity
 
     Based on: Compilation.txt research on fractionation, emotional sequencing,
-    targeting of vulnerable populations, intentionality of design
+    targeting of susceptible populations, intentionality of design
     """
-    ETHICAL = "Ethical (0-20)"  # Minimal exploitation detected
-    MINIMAL = "Minimal Exploitation (21-40)"  # Some patterns but not systematic
-    MODERATE = "Moderate Exploitation (41-60)"  # Systematic patterns detected
-    HEAVY = "Heavy Exploitation (61-80)"  # Extensive manipulation design
-    EXTREME = "Extreme Exploitation (81-100)"  # Full-spectrum psychological exploitation
-    WEAPONIZED = "Weaponized (100+)"  # Intentional deployment of psychological warfare
+    ETHICAL = "Ethical (0-20)"  # Minimal intensity detected
+    MINIMAL = "Minimal Intensity (21-40)"  # Some patterns but not systematic
+    MODERATE = "Moderate Intensity (41-60)"  # Systematic patterns detected
+    HEAVY = "Heavy Intensity (61-80)"  # Extensive influence design
+    EXTREME = "Extreme Intensity (81-100)"  # Full-spectrum psychological influence
+    MAXIMIZED = "Maximized (100+)"  # Intentional deployment of intensive influence
 
 @dataclass
 class PlatformAuditReport:
-    """Comprehensive audit of a platform's algorithmic manipulation level"""
+    """Comprehensive audit of a platform's algorithmic influence level"""
 
     platform_name: str
     audit_date: datetime
@@ -1720,11 +1720,11 @@ class PlatformAuditReport:
 
     # Economic impact on users
     estimated_avg_impulse_purchase_increase: float  # % above baseline
-    estimated_annual_exploitation_revenue_per_user: float  # $ extracted via manipulation
+    estimated_annual_intensity_revenue_per_user: float  # $ extracted via influence
 
-    # Overall exploitation index
-    exploitation_index: float  # 0-100 final score
-    exploitation_level: PlatformExploitationLevel
+    # Overall intensity index
+    intensity_index: float  # 0-100 final score
+    intensity_level: PlatformIntensityLevel
 
     # Comparative analysis
     industry_average_index: float
@@ -1738,56 +1738,56 @@ class RegulatoryComplianceAnalyzer:
     """Analyze platform compliance with ethical standards"""
 
     # Regulatory thresholds
-    INDUSTRY_AVERAGE_EXPLOITATION_INDEX = 55
+    INDUSTRY_AVERAGE_INTENSITY_INDEX = 55
     BEST_PRACTICE_THRESHOLD = 30  # Below this = "ethical"
-    HEAVY_MANIPULATION_THRESHOLD = 60
-    EXTREME_MANIPULATION_THRESHOLD = 80
+    HEAVY_INTENSITY_THRESHOLD = 60
+    EXTREME_INTENSITY_THRESHOLD = 80
 
     @staticmethod
-    def calculate_exploitation_index(audit_findings: Dict) -> Tuple[float, PlatformExploitationLevel]:
-        """Calculate comprehensive exploitation index (0-100)
+    def calculate_intensity_index(audit_findings: Dict) -> Tuple[float, PlatformIntensityLevel]:
+        """Calculate comprehensive intensity index (0-100)
 
         Formula weighted by research evidence:
-        - Fractionation intensity: 40% weight (strongest evidence of intent to manipulate)
-        - Vulnerable population targeting: 20% weight
+        - Fractionation intensity: 40% weight (strongest evidence of intent to influence)
+        - Susceptible population targeting: 20% weight
         - Personalization/opacity: 20% weight
-        - Economic extraction: 15% weight
+        - Economic impact: 15% weight
         - User consent/awareness: 5% weight
         """
 
         fractionation_score = audit_findings.get('fractionation_index', 0) * 0.40
-        targeting_score = audit_findings.get('vulnerable_targeting_score', 0) * 0.20
+        targeting_score = audit_findings.get('susceptible_targeting_score', 0) * 0.20
         opacity_score = audit_findings.get('algorithmic_opacity_score', 0) * 0.20
-        extraction_score = audit_findings.get('economic_extraction_score', 0) * 0.15
+        impact_score = audit_findings.get('economic_impact_score', 0) * 0.15
         consent_score = (100 - audit_findings.get('user_understanding', 0)) * 0.05
 
-        exploitation_index = (
+        intensity_index = (
             fractionation_score +
             targeting_score +
             opacity_score +
-            extraction_score +
+            impact_score +
             consent_score
         )
 
         # Categorize
-        if exploitation_index < 20:
-            level = PlatformExploitationLevel.ETHICAL
-        elif exploitation_index < 40:
-            level = PlatformExploitationLevel.MINIMAL
-        elif exploitation_index < 60:
-            level = PlatformExploitationLevel.MODERATE
-        elif exploitation_index < 80:
-            level = PlatformExploitationLevel.HEAVY
-        elif exploitation_index <= 100:
-            level = PlatformExploitationLevel.EXTREME
+        if intensity_index < 20:
+            level = PlatformIntensityLevel.ETHICAL
+        elif intensity_index < 40:
+            level = PlatformIntensityLevel.MINIMAL
+        elif intensity_index < 60:
+            level = PlatformIntensityLevel.MODERATE
+        elif intensity_index < 80:
+            level = PlatformIntensityLevel.HEAVY
+        elif intensity_index <= 100:
+            level = PlatformIntensityLevel.EXTREME
         else:
-            level = PlatformExploitationLevel.WEAPONIZED
+            level = PlatformIntensityLevel.MAXIMIZED
 
-        return exploitation_index, level
+        return intensity_index, level
 
     @staticmethod
     def audit_algorithm_feed(sample_posts: List[Dict], platform_name: str) -> Dict:
-        """Audit a platform's feed for exploitation indicators
+        """Audit a platform's feed for influence intensity indicators
 
         Args:
             sample_posts: Random sample of 10,000+ posts from platform
@@ -1866,13 +1866,13 @@ class RegulatoryComplianceAnalyzer:
             ) if sample_posts else 0
         }
 
-        # 4. ECONOMIC EXTRACTION METRICS
+        # 4. ECONOMIC IMPACT METRICS
         findings['economic_impact'] = {
             'estimated_impulse_purchase_rate_increase': 200,  # 200% from fractionation research
-            'estimated_per_user_annual_extraction': (
+            'estimated_per_user_annual_impact': (
                 findings['fractionation_analysis']['percentage_of_posts_in_fractionation'] *
                 12 *  # months
-                2.5  # average extract per fractionation sequence
+                2.5  # average impact per fractionation sequence
             )
         }
 
@@ -1888,8 +1888,8 @@ class RegulatoryComplianceAnalyzer:
         Audit Date: {audit_findings['timestamp']}
         Posts Analyzed: {audit_findings['posts_analyzed']:,}
 
-        EXPLOITATION INDEX: {audit_findings['calculated_exploitation_index']:.0f}/100
-        REGULATORY LEVEL: {audit_findings['exploitation_level'].value}
+        INTENSITY INDEX: {audit_findings['calculated_intensity_index']:.0f}/100
+        REGULATORY LEVEL: {audit_findings['intensity_level'].value}
 
         FRACTIONATION ANALYSIS:
         - Fractionation sequences detected: {audit_findings['fractionation_analysis']['fractionation_sequences_detected']:,}
@@ -1903,14 +1903,14 @@ class RegulatoryComplianceAnalyzer:
 
         VULNERABLE POPULATION TARGETING:
         - Estimated % high-anxiety users targeted: {audit_findings['targeting_analysis']['inferred_percentage_high_anxiety_users_targeted']:.1f}%
-        - Estimated % minors targeted with manipulation: {audit_findings['targeting_analysis']['inferred_percentage_minors_targeted']:.1f}%
+        - Estimated % minors targeted with influence: {audit_findings['targeting_analysis']['inferred_percentage_minors_targeted']:.1f}%
 
-        ECONOMIC EXTRACTION:
-        - Estimated annual extraction per user: ${audit_findings['economic_impact']['estimated_per_user_annual_extraction']:.2f}
-        - Total estimated annual extraction (100M users): ${audit_findings['economic_impact']['estimated_per_user_annual_extraction'] * 100_000_000 / 1e9:.1f}B
+        ECONOMIC IMPACT:
+        - Estimated annual impact per user: ${audit_findings['economic_impact']['estimated_per_user_annual_impact']:.2f}
+        - Total estimated annual impact (100M users): ${audit_findings['economic_impact']['estimated_per_user_annual_impact'] * 100_000_000 / 1e9:.1f}B
 
         COMPLIANCE ASSESSMENT:
-        {'✓ COMPLIANT' if audit_findings['calculated_exploitation_index'] < 30 else '✗ NON-COMPLIANT'}
+        {'COMPLIANT' if audit_findings['calculated_intensity_index'] < 30 else 'NON-COMPLIANT'}
         Percentile rank vs. industry: {audit_findings['percentile_rank']}%
         """
 
@@ -1926,7 +1926,7 @@ class RegulatoryComplianceAnalyzer:
 
 ### Week 1-2: Deploy Tools 9-10 (Research Infrastructure)
 - **Tool 9:** Research Toolkit (developers deploy to academic repositories)
-- **Tool 10:** Digital Addiction Platform (partner with clinical institutions)
+- **Tool 10:** Digital Engagement Platform (partner with clinical institutions)
 
 ### Week 3-4: Deploy Tools 11-12 (Policy/Education)
 - **Tool 11:** Educational Curriculum (distribute to schools, convert to interactive platform)

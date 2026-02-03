@@ -123,7 +123,7 @@ git push -u origin main
   - [ ] Test with different personality profiles
 
 ### Academic Paper 1
-- [ ] Title: "Detecting Emotional Manipulation Patterns in Social Media Feeds"
+- [ ] Title: "Detecting Emotional Influence Patterns in Social Media Feeds"
 - [ ] Structure:
   - [ ] Introduction (1,000 words)
   - [ ] Methods - Tool 1 explanation (1,500 words)
@@ -151,7 +151,7 @@ git push -u origin main
 ### Complete Tools 6-8
 **Reference:** 05_TOOLS_4_TO_8_CODE.md
 
-- [ ] Tool 6: Real-Time Manipulation Detector
+- [ ] Tool 6: Real-Time Influence Detector
 - [ ] Tool 7: Organizational Vulnerability Assessment
 - [ ] Tool 8: Cross-Domain Data Integration
 
@@ -169,7 +169,7 @@ git push -u origin main
   - Digital wellness podcasts
   - AI safety podcasts
   - General business/startup podcasts
-- [ ] Write 1 op-ed for publication: "We Must Measure Algorithmic Manipulation"
+- [ ] Write 1 op-ed for publication: "We Must Measure Algorithmic Influence"
 
 ### Investor Conversations
 - [ ] Identify 5 seed-stage investors interested in:
@@ -227,7 +227,7 @@ git push -u origin main
 - [ ] 10,000+ Twitter followers
 - [ ] 3-5 podcast appearances
 - [ ] 1 major publication mention
-- [ ] Be "The Expert" on algorithmic manipulation
+- [ ] Be "The Expert" on algorithmic influence
 
 ### Next Phase
 - [ ] Plan Tools 13-15 (premium/adjacent offerings)
@@ -273,11 +273,11 @@ Thanks,
 
 ### First Blog Post Template
 
-**Title:** "Why Fractionation Works: The Neuroscience of Emotional Manipulation"
+**Title:** "Why Fractionation Works: The Neuroscience of Emotional Influence"
 
 **Outline:**
-1. Hook: "Your brain is predictable. Here's how algorithms exploit that."
-2. The problem: Traditional persuasion models don't explain modern manipulation
+1. Hook: "Your brain is predictable. Here's how algorithms leverage that."
+2. The problem: Traditional persuasion models don't explain modern influence
 3. The mechanism: A-J-A-R emotional sequencing (use diagrams)
 4. The evidence: Your research findings
 5. The implications: Why this matters

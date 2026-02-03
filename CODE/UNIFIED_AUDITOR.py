@@ -1757,7 +1757,7 @@ class RegisterFormalityDetector:
             register = "NEUTRAL"
         details["dominant_register"] = register
 
-        # Composite - higher score for strategic register manipulation
+        # Composite - higher score for strategic register variation
         total_score = min(formal_score + informal_score + intimacy_score + contraction_score, 100)
 
         intensity = self._classify_intensity(total_score)
