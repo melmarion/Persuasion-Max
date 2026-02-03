@@ -317,7 +317,7 @@ class IndividualDifferenceProfiler:
         "older_adults": {
             "increased_susceptibility": ["impulsive_influence", "stereotype_effects"],
             "decreased_susceptibility": ["complex_arguments"],  # May require more processing time
-            "protective_factors": ["experience", "crystallized_knowledge"]
+            "response_factors": ["experience", "crystallized_knowledge"]
         },
         "adolescents": {
             "increased_susceptibility": ["peer_influence", "identity_appeals", "fomo"],
@@ -350,7 +350,7 @@ class IndividualDifferenceProfiler:
 
         profile = {
             "vulnerability_factors": [],
-            "protective_factors": [],
+            "response_factors": [],
             "susceptible_techniques": [],
             "resistance_patterns": [],
             "overall_vulnerability_score": 50  # Baseline
@@ -369,7 +369,7 @@ class IndividualDifferenceProfiler:
         if age_group and age_group in self.AGE_VULNERABILITY_PATTERNS:
             age_pattern = self.AGE_VULNERABILITY_PATTERNS[age_group]
             profile["susceptible_techniques"].extend(age_pattern.get("increased_susceptibility", []))
-            profile["protective_factors"].extend(age_pattern.get("protective_factors", []))
+            profile["response_factors"].extend(age_pattern.get("response_factors", []))
             profile["vulnerability_factors"].append(f"Age group {age_group}: specific vulnerability patterns")
 
         # Analyze cognitive style
@@ -380,7 +380,7 @@ class IndividualDifferenceProfiler:
                 profile["resistance_patterns"].append("Resistant to weak arguments")
                 profile["resistance_patterns"].append("High attitude persistence")
                 profile["overall_vulnerability_score"] *= 0.7  # Protective
-                profile["protective_factors"].append("High NFC: elaborative processing")
+                profile["response_factors"].append("High NFC: elaborative processing")
             elif nfc_level == "low":
                 nfc_pattern = self.COGNITIVE_STYLE_FACTORS["low_need_for_cognition"]
                 profile["susceptible_techniques"].extend(nfc_pattern["susceptible_to"])

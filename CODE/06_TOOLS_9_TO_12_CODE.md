@@ -1585,7 +1585,7 @@ class ParentEducationModule:
     """
 
     modules = {
-        'early_warning_signs': {
+        'early_response_indicators': {
             'title': 'When to Worry: Early Warning Signs of Influence',
             'signs': [
                 'Sudden mood shifts after looking at phone',
@@ -1596,7 +1596,7 @@ class ParentEducationModule:
                 'Sleep disruption (phone last thing before bed)',
                 'Neglecting schoolwork, sports, hobbies'
             ],
-            'not_warning_signs': [
+            'not_response_indicators': [
                 'Scrolling social media (normal teen behavior)',
                 'Wanting latest trends (normal development)',
                 'Wanting privacy (normal development)'

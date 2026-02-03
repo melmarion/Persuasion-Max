@@ -699,7 +699,7 @@ class VulnerabilityTimingDetector:
         intensity_patterns = {
             'sadness': [r'feel better', r'cheer up', r'you deserve', r'treat yourself'],
             'loneliness': [r'connect', r'community', r'join', r'you\'re not alone', r'find (friends|love)'],
-            'anxiety': [r'peace of mind', r'protection', r'security', r'don\'t worry', r'safe'],
+            'anxiety': [r'peace of mind', r'analysis', r'security', r'don\'t worry', r'safe'],
             'boredom': [r'exciting', r'new', r'adventure', r'discover', r'experience'],
             'excitement': [r'now', r'act', r'limited', r'special']  # Leverage excitement for impulse
         }
@@ -2663,7 +2663,7 @@ class BehavioralIndicator:
     observable_behaviors: List[str]
     cognitive_mechanism: str
     susceptibility_increase: float
-    protective_intervention: str
+    analytical_framework: str
 
 @dataclass
 class PreciseSusceptibilityProfile:
@@ -2673,7 +2673,7 @@ class PreciseSusceptibilityProfile:
     cognitive_patterns: List[CognitiveProcessingPattern] = field(default_factory=list)
     estimated_susceptibility_increase: float = 0.0
     high_risk_influence_types: List[str] = field(default_factory=list)
-    recommended_protections: List[str] = field(default_factory=list)
+    recommended_analytics: List[str] = field(default_factory=list)
 
 class PreciseBehavioralIndicatorDetector:
     """
@@ -2696,7 +2696,7 @@ class PreciseBehavioralIndicatorDetector:
             ],
             cognitive_mechanism="Persuasion knowledge develops gradually; metacognitive awareness requires mature theory of mind and executive function",
             susceptibility_increase=2.5,
-            protective_intervention="Adult co-viewing and explicit discussion of persuasive intent. Content gatekeeping."
+            analytical_framework="Adult co-viewing and explicit discussion of persuasive intent. Content gatekeeping."
         ),
         'developing_impulse_regulation': BehavioralIndicator(
             indicator_name="Developing impulse regulation system",
@@ -2707,7 +2707,7 @@ class PreciseBehavioralIndicatorDetector:
             ],
             cognitive_mechanism="Prefrontal cortex development continues through mid-20s. Limbic system (emotion, reward) matures earlier, creating developmental imbalance.",
             susceptibility_increase=1.8,
-            protective_intervention="Structured decision delays. Explicit teaching of influence tactics."
+            analytical_framework="Structured decision delays. Explicit teaching of influence tactics."
         ),
         'cognitive_depletion_state': BehavioralIndicator(
             indicator_name="Cognitive resource depletion",
@@ -2719,7 +2719,7 @@ class PreciseBehavioralIndicatorDetector:
             ],
             cognitive_mechanism="Executive function requires glucose and rest. Depletion shifts processing toward System 1 (automatic) from System 2 (analytical).",
             susceptibility_increase=1.5,
-            protective_intervention="Rest before important decisions. Reduce decision count. Use checklists to externalize analysis."
+            analytical_framework="Rest before important decisions. Reduce decision count. Use checklists to externalize analysis."
         ),
         'limited_verification_network': BehavioralIndicator(
             indicator_name="Limited social verification network",
@@ -2731,7 +2731,7 @@ class PreciseBehavioralIndicatorDetector:
             ],
             cognitive_mechanism="Social verification is key defense against influence. Isolation removes this check and increases reliance on influencer as sole information source.",
             susceptibility_increase=2.0,
-            protective_intervention="Mandatory consultation with trusted others before major decisions. Structured social connection."
+            analytical_framework="Mandatory consultation with trusted others before major decisions. Structured social connection."
         ),
         'different_social_signal_processing': BehavioralIndicator(
             indicator_name="Different social signal processing",
@@ -2743,7 +2743,7 @@ class PreciseBehavioralIndicatorDetector:
             ],
             cognitive_mechanism="Neurodivergent processing often involves different social cue weighting. Influence tactics leverage neurotypical defaults, which may be processed differently.",
             susceptibility_increase=1.8,
-            protective_intervention="Explicit verbal explanation of influence tactics. Written/visual guides. Trusted advisor consultation."
+            analytical_framework="Explicit verbal explanation of influence tactics. Written/visual guides. Trusted advisor consultation."
         ),
         'heightened_emotional_state': BehavioralIndicator(
             indicator_name="Heightened emotional processing state",
@@ -2755,7 +2755,7 @@ class PreciseBehavioralIndicatorDetector:
             ],
             cognitive_mechanism="Strong emotional states (grief, loneliness, fear, excitement) activate limbic processing and reduce prefrontal engagement. Creates 'hot' cognition.",
             susceptibility_increase=1.9,
-            protective_intervention="Mandatory cooling-off periods during emotional states. Pre-commitment to decision delays."
+            analytical_framework="Mandatory cooling-off periods during emotional states. Pre-commitment to decision delays."
         ),
     }
 
@@ -2826,7 +2826,7 @@ class PreciseBehavioralIndicatorDetector:
 
         # Generate protections
         for indicator in profile.behavioral_indicators:
-            profile.recommended_protections.append(indicator.protective_intervention)
+            profile.recommended_analytics.append(indicator.analytical_framework)
 
         return profile
 ```
@@ -2992,7 +2992,7 @@ class MasterHighImpactAuditor:
             report['user_susceptibility'] = {
                 'factors': [f.value for f in susceptibility.active_factors],
                 'increase': susceptibility.estimated_susceptibility_increase,
-                'protections': susceptibility.recommended_protections
+                'protections': susceptibility.recommended_analytics
             }
             if susceptibility.estimated_susceptibility_increase > 1.5:
                 risk_scores = [r * min(2.0, susceptibility.estimated_susceptibility_increase) for r in risk_scores]

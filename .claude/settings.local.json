@@ -37,7 +37,9 @@
       "Bash(more:*)",
       "Bash(git mv:*)",
       "Bash(powershell -Command:*)",
-      "Bash(pandoc:*)"
+      "Bash(pandoc:*)",
+      "Bash(git -C '/c/Users/Mario/Downloads/Persuasion Max' diff --stat HEAD)",
+      "Bash(git -C '/c/Users/Mario/Downloads/Persuasion Max' status)"
     ]
   }
 }

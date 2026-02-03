@@ -156,7 +156,7 @@ This creates publication opportunities across diverse venues.
 - Can measure emotional states (blink rate, skin conductance, heart rate)
 - Can identify psychological mechanisms (prefrontal overload, amygdala dominance)
 - Can assess individual differences in vulnerability
-- Can design psychological interventions
+- Can design psychological analysiss
 
 **Tech researchers lack this entirely.**
 
@@ -216,9 +216,9 @@ This creates publication opportunities across diverse venues.
 ---
 
 ### Phase 4: Develop Solutions (Why Policy Cares)
-**Study:** Which interventions reduce susceptibility?
+**Study:** Which analysiss reduce susceptibility?
 **Measure:** Awareness training, cognitive flexibility, prefrontal activation, platform design changes
-**Find:** Combined interventions reduce susceptibility 40-60%
+**Find:** Combined analysiss reduce susceptibility 40-60%
 **Publication:** Applied psychology + policy journals
 **Impact:** Regulators have evidence-based approaches
 

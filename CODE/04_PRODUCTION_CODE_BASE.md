@@ -567,7 +567,7 @@ async def analyze_feed(request: AnalysisRequest):
         fractionation_index = detector.calculate_fractionation_index(patterns)
         categorization = detector.categorize_fractionation(fractionation_index)
 
-        # Vulnerable populations (from Compilation.txt research)
+        # User susceptibility profiles (from Compilation.txt research)
         susceptibility_populations = [
             {
                 'group': 'high_trait_anxiety',

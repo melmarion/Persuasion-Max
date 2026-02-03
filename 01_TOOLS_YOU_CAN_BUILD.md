@@ -28,7 +28,7 @@ Pick ONE tool and complete Week 1:
 
 - **Tool 1:** Define your A-J-A-R coding schema (what qualifies as Anger, Joy, Relief content)
 - **Tool 2:** Draft the 15-question personality assessment module
-- **Tool 8:** Sketch the browser extension alert UI and intervention options
+- **Tool 8:** Sketch the browser extension alert UI and analysis options
 
 ---
 
@@ -59,7 +59,7 @@ All tools in this document require integration across these domains:
 
 **Why this combination is unique:** Tech researchers understand algorithms but not psychology. Psychologists understand minds but not neural correlates. Neuroscientists understand brains but not behavioral economics. These tools require all four domains integrated—that's your competitive advantage.
 
-**Application domains:** Research (empirical validation), Commercial (platform analysis), Policy (regulatory standards), Clinical (assessment/intervention), Educational (training).
+**Application domains:** Research (empirical validation), Commercial (platform analysis), Policy (regulatory standards), Clinical (assessment/analysis), Educational (training).
 
 ---
 
@@ -181,7 +181,7 @@ RECOMMENDED STRATEGIES:
 
 **Clinical Value:**
 - Therapists treating social media anxiety could use it
-- Identifies high-risk individuals for targeted interventions
+- Identifies high-risk individuals for targeted analysiss
 - Becomes standard part of digital wellness assessment
 
 **Next Action:** Draft the 15-question personality module with validated scales.
@@ -277,7 +277,7 @@ PREDICTION ENGINE
 **Research Value:**
 - Test which personality traits matter most
 - Identify inflection points (where small changes change prediction)
-- Design targeted interventions
+- Design targeted analysiss
 - Becomes a core research instrument
 
 **Application Notes:**
@@ -310,7 +310,7 @@ STRATEGY DATABASE:
 - Awareness training: Effectiveness by personality type
 - Prefrontal activation: Effectiveness by physiological profile
 - Cognitive flexibility: Effectiveness by trait combination
-- Combined interventions: Interaction effects
+- Combined analysiss: Interaction effects
 
 MATCHING ENGINE:
     For each strategy:
@@ -656,7 +656,7 @@ ASSESSMENT MODULE:
     - Diagnostic criteria for "digital influence strategy syndrome"
 
 TREATMENT PLANNING:
-    - Personalized intervention based on susceptibility profile (Tool 5)
+    - Personalized analysis based on susceptibility profile (Tool 5)
     - Family-based protocols (for minors)
     - Workplace/educational adaptations
     - Progress tracking dashboard

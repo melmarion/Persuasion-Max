@@ -798,7 +798,7 @@ class OrganizationAssessment:
                 'High influence intensity detected',
                 'Review content sequencing patterns',
                 'Diversify emotional categories',
-                'Implement user protection features'
+                'Implement user measurement features'
             ]
         elif index > 30:
             return [

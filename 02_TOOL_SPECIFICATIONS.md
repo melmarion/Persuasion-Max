@@ -409,7 +409,7 @@ Output:
       "community_exclusion_triggers",
       "status_threat_content"
     ],
-    "recommended_interventions": [
+    "recommended_analytics": [
       {
         "intervention": "cognitive_flexibility_training",
         "expected_reduction": "25%"

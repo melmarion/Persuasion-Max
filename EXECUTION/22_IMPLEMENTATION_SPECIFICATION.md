@@ -1165,10 +1165,10 @@ COMPOSITE.Overall_Influence strategy_Index (Scoring Algorithm):
 │  └─ 76-100: EXTREME (High-intensity influence strategy)
 │
 ├─ VULNERABILITY_ASSESSMENT: based on which_principles_score_highest
-│  ├─ if PERSONAL > 50: vulnerable_profile = "identity-conscious"
-│  ├─ if EMOTIONAL > 60: vulnerable_profile = "emotionally_responsive"
-│  ├─ if SCARCITY > 60 AND COMPETITION_SIGNALS > 2: vulnerable_profile = "status_conscious_FOMO"
-│  ├─ if AUTHORITY > 50 AND THREAT = 0: vulnerable_profile = "deference_to_authority"
+│  ├─ if PERSONAL > 50: susceptibility_profile = "identity-conscious"
+│  ├─ if EMOTIONAL > 60: susceptibility_profile = "emotionally_responsive"
+│  ├─ if SCARCITY > 60 AND COMPETITION_SIGNALS > 2: susceptibility_profile = "status_conscious_FOMO"
+│  ├─ if AUTHORITY > 50 AND THREAT = 0: susceptibility_profile = "deference_to_authority"
 │  └─ return all_vulnerable_dimensions
 │
 ├─ MEASUREMENT_OUTPUT: return {
@@ -1339,7 +1339,7 @@ DECISION_TREE_3.Influence strategy_Intensity_Classification (Action Assignment):
 │  │  ├─ condition: influence strategy_index > 75
 │  │  ├─ characteristics: orchestrated multi-framework deployment, high leverageation risk
 │  │  ├─ action_required: IMMEDIATE_REMEDIATION
-│  │  ├─ rationale: likely leverageative, potential harm to vulnerable audiences
+│  │  ├─ rationale: likely leverageative, potential harm to populations with distinct response patterns
 │  │  └─ recommendation: "EXTREME influence strategy detected; immediate remediation required"
 │  │
 │  └─ FINAL_CLASSIFICATION: apply_class_rules()
