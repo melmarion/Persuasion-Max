@@ -63,7 +63,7 @@ Binaural Configuration:
 ├── Left ear:  180 Hz
 ├── Right ear: 186 Hz
 ├── Perceived: 6 Hz (theta range)
-└── Effect:    Relaxed focus, reduced critical thinking
+└── Observed correlation: Relaxed focus state, reduced analytical engagement
 ```
 
 ### Audio Intensity by Pattern

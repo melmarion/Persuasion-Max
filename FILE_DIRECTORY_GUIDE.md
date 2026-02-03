@@ -111,7 +111,7 @@ Interface-level behavioral influence through design, gamification, and sensory f
 | P6 | Timely Opportunities | Scarcity, urgency, countdown timers |
 | P7 | Contextual Offers | Emotion-timed offers, failure recovery |
 | P8 | Immersive Experience | Flow state, time suppression |
-| P9 | Personalized Tiers | Whale targeting, spend-based pricing |
+| P9 | Personalized Tiers | High-value user segmentation, spend-based pricing |
 | P10 | Community Activity | Social proof, activity displays |
 | P11 | Community Connection | Group pressure, reciprocity |
 | P12 | Identity & Achievement | Status labels, milestone systems |

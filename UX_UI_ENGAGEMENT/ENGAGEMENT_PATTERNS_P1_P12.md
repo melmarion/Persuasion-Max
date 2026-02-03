@@ -194,7 +194,7 @@ Engagement:
 
 ## Pattern 4: Progress Protection
 
-Losses perceived as 2.25x more impactful than gains; protection offers capitalize on this asymmetry.
+Losses perceived as 2.25x more impactful than gains (Kahneman & Tversky); protection offers leverage this documented asymmetry.
 
 ### Constants
 ```
@@ -436,7 +436,7 @@ Flow Indicators:
 
 ## Pattern 9: Personalized Experience Tiers
 
-Revenue concentration; 0.19% of users generate 48% of revenue. Tier-specific offers maximize whale LTV.
+Revenue concentration; 0.19% of users generate 48% of revenue. Tier-specific offers target high-value user LTV.
 
 ### Constants
 ```
@@ -472,8 +472,8 @@ VALUE_SIGNALS:
 
 ### Results
 ```
-AVERAGE_WHALE_SPENDING: $450/month
-SUPER_WHALE_CEILING: $10,000+/month
+AVERAGE_HIGH_VALUE_SPENDING: $450/month
+TOP_TIER_CEILING: $10,000+/month
 LTV_MULTIPLIER_HIGH_FREQUENCY: 2.3x
 LTV_MULTIPLIER_LONG_SESSIONS: 1.8x
 LTV_MULTIPLIER_PROTECTION_BUY: 4.1x
@@ -484,8 +484,8 @@ LTV_MULTIPLIER_PROTECTION_BUY: 4.1x
 Revenue Distribution:
 ├── 0.19% of players = 48% of revenue
 ├── Top 10% = 92% of revenue
-├── Average whale: $450/month
-└── Super whale ceiling: $10,000+/month
+├── Average high-value user: $450/month
+└── Top tier ceiling: $10,000+/month
 
 LTV Signals:
 ├── Sessions >5/week: 2.3x LTV

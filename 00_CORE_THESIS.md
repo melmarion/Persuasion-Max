@@ -1,7 +1,7 @@
 # THE UNIQUE RESEARCHER: YOUR CORE THESIS
 ## Why You're the Only Person Who Can Study Fractionation
 
-**Fractionation** is the rapid cycling of emotional states (A-J-A-R: anger-joy-anger-relief) designed to temporarily exceed working memory capacity, reduce prefrontal cortex engagement, and increase behavioral suggestibility by 200%+. This technique is deployed by algorithms at scale to influence user behavior. See TERMINOLOGY_AND_DEFINITIONS.md for complete definition and mechanistic details.
+**Fractionation** is the rapid cycling of emotional states (A-J-A-R: anger-joy-anger-relief) that correlates with working memory load, reduced prefrontal cortex engagement, and measurable changes in behavioral responsiveness. Research indicates these patterns are deployed by algorithms at scale. See TERMINOLOGY_AND_DEFINITIONS.md for complete definition and mechanistic details.
 
 ---
 
@@ -66,7 +66,7 @@
 
 **Example:**
 - Tech: "Anger-joy-anger-relief sequence gets 40% more clicks"
-- You: "It increases prefrontal cortex overload by 60%, reducing critical thinking by 200%, which is WHY it gets clicks"
+- You: "This sequence correlates with measurable prefrontal load increases, which may explain the engagement pattern"
 
 ---
 

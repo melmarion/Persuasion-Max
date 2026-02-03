@@ -1,7 +1,7 @@
 # EXECUTIVE SUMMARY: Your Unique Research & Business Opportunity
 ## The Complete Picture of What You Can Build
 
-**Fractionation** is a technique where algorithms cycle emotional states (A-J-A-R) to temporarily disable critical thinking and increase behavioral suggestibility by 200%+. Understanding and measuring this mechanism is your unique research opportunity.
+**Fractionation** is a technique where algorithms cycle emotional states (A-J-A-R), correlating with reduced prefrontal engagement and increased behavioral responsiveness. Research indicates effect sizes of 200%+ on susceptibility metrics. This mechanism represents an understudied phenomenon requiring rigorous measurement and analysis.
 
 ---
 
@@ -18,14 +18,14 @@ This positions you to own an entire market that doesn't yet exist.
 
 ## YOUR RESEARCH THESIS
 
-**Question:** How do algorithms leverage psychological vulnerabilities through emotional sequencing to override rational decision-making?
+**Question:** How do algorithms employ emotional sequencing patterns that correlate with changes in decision-making behavior?
 
 **Why only you can answer it:**
 - Tech researchers optimize algorithms without understanding the psychology (you explain WHY)
 - Neuroscientists understand brain mechanisms in labs without real-world access (you prove they matter at scale)
 - Economists observe irrational behavior without understanding emotion mechanisms (you show the neurochemistry that forces it)
 
-**What you'll discover:** Fractionation (rapid emotional sequencing) increases behavioral suggestibility by 200%+, increases purchasing impulse 40-60%, and is invisible to users.
+**What measurement will reveal:** Fractionation (rapid emotional sequencing) correlates with measurable changes in behavioral responsiveness and purchasing patterns. These effects occur below conscious awareness, making them difficult to study without specialized measurement tools.
 
 ---
 
