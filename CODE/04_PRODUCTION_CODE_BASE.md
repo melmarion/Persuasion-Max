@@ -521,7 +521,7 @@ class AnalysisResponse(BaseModel):
     patterns_found: int
     expected_random: float
     interpretation: str
-    vulnerable_populations: List[Dict]
+    susceptibility_populations: List[Dict]
 
 
 @app.post("/api/v1/analyze/feed", response_model=AnalysisResponse)
@@ -568,7 +568,7 @@ async def analyze_feed(request: AnalysisRequest):
         categorization = detector.categorize_fractionation(fractionation_index)
 
         # Vulnerable populations (from Compilation.txt research)
-        vulnerable_populations = [
+        susceptibility_populations = [
             {
                 'group': 'high_trait_anxiety',
                 'estimated_susceptibility': 0.72,
@@ -595,7 +595,7 @@ async def analyze_feed(request: AnalysisRequest):
             patterns_found=patterns['patterns_found'],
             expected_random=patterns['expected_random'],
             interpretation=categorization['description'],
-            vulnerable_populations=vulnerable_populations
+            susceptibility_populations=susceptibility_populations
         )
 
     except Exception as e:
@@ -632,7 +632,7 @@ Vulnerability Scorer - Measure individual susceptibility to fractionation
 From Compilation.txt research:
 - Blink rate drops below 10/min = reduced-vigilance state
 - High trait anxiety + high neuroticism + smooth eyelids = 3x more susceptible
-- Cortisol elevated + low HRV = vulnerable baseline
+- Cortisol elevated + low HRV = high-susceptibility baseline
 """
 
 from dataclasses import dataclass
@@ -697,8 +697,8 @@ class VulnerabilityScorer:
         Score physiological vulnerability based on HRV and cortisol
 
         From Compilation.txt:
-        - Low HRV (<30ms) = very vulnerable
-        - High cortisol + low HRV = chronic stress = vulnerable
+        - Low HRV (<30ms) = highly susceptible
+        - High cortisol + low HRV = chronic stress = high susceptibility
         """
 
         hrv_score = 0.0

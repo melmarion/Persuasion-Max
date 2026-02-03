@@ -390,7 +390,7 @@ SENSOR LAYER:
 **Dashboard Features:**
 - Real-time state display during scrolling
 - Alerts: "Blink rate dropped below 8/min—focused engagement state detected"
-- Pattern insights: "You're most vulnerable during evening hours when HRV is low"
+- Pattern insights: "You show highest susceptibility during evening hours when HRV is low"
 - Correlations: "Anger→Joy sequences reliably reduce your critical engagement by 45%"
 - Historical: "When your HRV dropped to 35, you spent 40 seconds on impulse products"
 
@@ -577,7 +577,7 @@ RECOMMENDATION ENGINE:
     - Reduce anger-content frequency by 30%
     - Increase joy-content duration from 2s to 5s
     - Add 10-second pauses between emotional sequences
-    - Reduce personalization aggressiveness for vulnerable populations
+    - Calibrate personalization intensity for high-susceptibility populations
 ```
 
 **Technical Requirements:**
@@ -671,7 +671,7 @@ CLINICIAN EDUCATION:
 **Clinical Value:**
 - Becomes standard of care for digital wellness
 - Enables evidence-based treatment
-- Better outcomes for vulnerable populations
+- Better outcomes for high-susceptibility populations
 - Could improve mental health outcomes (depression, anxiety prevention via informed digital habits)
 
 **Technical Requirements:**

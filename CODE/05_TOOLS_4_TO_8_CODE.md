@@ -81,9 +81,9 @@ class BehavioralResponsePredictor:
             feed_sequence.get('cycles_completed', 0) / 4,
 
             # Physiological (3 features)
-            min(30, physiological_state.get('blink_rate', 15)) / 30,  # Low = vulnerable
+            min(30, physiological_state.get('blink_rate', 15)) / 30,  # Low = high susceptibility
             physiological_state.get('hrv', 50) / 100,  # High = resilient
-            min(30, physiological_state.get('cortisol', 15)) / 30  # High = vulnerable
+            min(30, physiological_state.get('cortisol', 15)) / 30  # High = high susceptibility
         ]).reshape(1, -1)
 
         return features
@@ -645,7 +645,7 @@ class OrganizationAssessment:
             'content_diversity': 0,  # 0-100 (higher = better)
             'predictability': 0,  # 0-100 (higher = more predictable/influential)
             'personalization_depth': 0,  # 0-100 (higher = deeper individual targeting)
-            'vulnerable_targeting': 0  # 0-100 (higher = more targeting of vulnerable groups)
+            'susceptibility_targeting': 0  # 0-100 (higher = more targeting of high-susceptibility groups)
         }
 
     def audit_algorithm(self,
@@ -669,8 +669,8 @@ class OrganizationAssessment:
         # Estimate personalization depth
         personalization_depth = self._estimate_personalization(sample_feeds)
 
-        # Estimate vulnerable targeting
-        vulnerable_targeting = self._estimate_vulnerable_targeting(sample_feeds)
+        # Estimate susceptibility-based targeting
+        susceptibility_targeting = self._estimate_susceptibility_targeting(sample_feeds)
 
         # Calculate overall intensity index
         intensity_index = self._calculate_intensity_index({
@@ -678,7 +678,7 @@ class OrganizationAssessment:
             'content_diversity': content_diversity,
             'predictability': predictability,
             'personalization_depth': personalization_depth,
-            'vulnerable_targeting': vulnerable_targeting
+            'susceptibility_targeting': susceptibility_targeting
         })
 
         return {
@@ -690,7 +690,7 @@ class OrganizationAssessment:
                 'content_diversity': content_diversity,
                 'predictability': predictability,
                 'personalization_depth': personalization_depth,
-                'vulnerable_targeting': vulnerable_targeting
+                'susceptibility_targeting': susceptibility_targeting
             },
             'recommendations': self._generate_recommendations(intensity_index)
         }

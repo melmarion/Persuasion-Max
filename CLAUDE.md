@@ -101,7 +101,7 @@ The project measures **intensity levels** objectively. Users and researchers det
 |-------|----------------------|
 | protect, protection | enable, support, transparency, measure |
 | prevention technology, preventable | analysis technology, measurable, detection system |
-| vulnerable users | users with different susceptibility levels, high-susceptibility users |
+| vulnerable, vulnerable users, vulnerable populations | users with different susceptibility levels, high-susceptibility users, high-susceptibility populations |
 | warning (when describing tool output) | analysis, feedback, insights, measurements |
 | intervene, intervention | provide feedback, analytics, insights, report findings |
 | defend, defense | measure, analyze, understand, countermeasure |
@@ -126,21 +126,18 @@ The project measures **intensity levels** objectively. Users and researchers det
 11. **"Ethical boundaries"** → "Intensity thresholds" or "Classification boundaries"
 12. **"Protect against X threat"** → "Measure X impact" or "Analyze X intensity"
 
-### Exception: Acceptable Use of "Vulnerable"
+### Critical: "Vulnerable" is NEVER Acceptable
 
-The term "vulnerable populations" or "users with high susceptibility" is **acceptable when used descriptively** in these contexts:
+Remove "vulnerable" entirely from all contexts:
 
-- **Behavioral analysis:** "Populations vulnerable to fractionation sequences" = describing susceptibility pattern ✓
-- **Data structures:** `vulnerable_populations` variable in detection code = labeling data categories ✓
-- **Research findings:** "This population shows higher susceptibility to X stimulus" = reporting measurement results ✓
-- **Technical specifications:** "High-susceptibility user segments" in targeting analysis = analytical taxonomy ✓
+**Never use:**
+- "vulnerable users" → "high-susceptibility users"
+- "vulnerable populations" → "high-susceptibility populations" or "populations with distinct response patterns"
+- "populations vulnerable to X" → "populations with high susceptibility to X"
+- `vulnerable_populations` (variable name) → `susceptibility_populations` or `high_susceptibility_segments`
+- "at-risk users" → "high-responsiveness users"
 
-**NOT acceptable when used for:**
-- "We need to protect vulnerable users" (replace: "We need to measure intensity for high-susceptibility users")
-- "Vulnerable populations need safeguards" (replace: "Different populations require different intensity thresholds")
-- "These users are at risk" (replace: "These users show high responsiveness to stimulus X")
-
-The distinction: Use "vulnerable" for **describing observable susceptibility patterns**, not for implying users need protection.
+The term "vulnerable" inherently implies a protective stance. Use only susceptibility/response pattern language instead.
 
 ### Principle
 
@@ -156,6 +153,6 @@ Tools are **measurement and analysis systems**, not protection mechanisms. They 
 
 1. **Philosophical clarity** - Tools measure and make visible; they don't prescribe outcomes
 2. **Broader applicability** - Neutral tools serve research, regulatory, commercial, and clinical purposes
-3. **User agency** - Frames users as information consumers, not vulnerable populations needing protection
+3. **User agency** - Frames users as information consumers, not susceptible populations needing protection
 4. **Academic credibility** - Measurement language aligns with scientific discourse
 5. **Consistency** - All project language reflects measurement/analysis framing, not protection framing

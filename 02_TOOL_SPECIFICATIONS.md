@@ -116,7 +116,7 @@ Output:
   },
   "fractionation_index": 0.67,
   "interpretation": "Heavy fractionation detected (67/100)",
-  "vulnerable_populations": [
+  "high_susceptibility_populations": [
     {
       "group": "high_neuroticism",
       "estimated_susceptibility": 0.72
@@ -287,12 +287,12 @@ Interpretation:
 ```
 High HRV (>70ms): 2-3 points (resilient)
 Normal HRV (50-70ms): 4-6 points
-Low HRV (<50ms): 7-9 points (vulnerable)
-Very low HRV (<30ms): 10 points (highly vulnerable)
+Low HRV (<50ms): 7-9 points (high-susceptibility)
+Very low HRV (<30ms): 10 points (highly susceptible)
 
 Interpretation:
 - High HRV = parasympathetic dominant = can recover from stress
-- Low HRV = sympathetic dominant = stays stressed = more vulnerable
+- Low HRV = sympathetic dominant = stays stressed = higher susceptibility
 ```
 
 **Output:**

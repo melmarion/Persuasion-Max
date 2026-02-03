@@ -1,8 +1,10 @@
 """
-Integrity Violation Detection System
-Detects 10 categories: fake authority, hidden commercial, concealed identity,
-algorithmic isolation, forced commitment, cognitive overload, vulnerable targeting,
-identity lock-in, radicalization engineering, emotional cycling.
+INTEGRITY VIOLATION DETECTION SYSTEM
+Detection Patterns for 10 Influence Integrity Categories
+
+Source: Derived from behavioral influence research
+Purpose: Pattern matching for integrity violation detection with mechanism analysis
+Application: Content auditing for deceptive influence techniques
 """
 
 import re
@@ -44,8 +46,18 @@ class IntegrityAuditReport:
     summary: Dict[str, Any]
 
 
+# =============================================================================
+# DETECTION PATTERN LIBRARY
+# =============================================================================
+
 class IntegrityPatterns:
-    # IV-01: Fake Authority
+    """Compiled regex patterns for integrity violation detection."""
+
+    # -------------------------------------------------------------------------
+    # IV-01: FAKE AUTHORITY
+    # Mechanism: Bypasses critical evaluation by activating deference heuristics
+    # through fabricated credentials, synthetic consensus, and artificial expertise
+    # -------------------------------------------------------------------------
     UNVERIFIABLE_CREDENTIALS = re.compile(
         r'(?i)\b(leading\s+expert|world[- ]?renowned|top\s+scientist|insider\s+sources?|'
         r'exclusive\s+access|anonymous\s+expert|sources?\s+say|experts?\s+agree|'
@@ -72,7 +84,11 @@ class IntegrityPatterns:
         r'appears?\s+(?:to|that)|could\s+be|it\'s\s+possible|in\s+my\s+opinion)\b'
     )
 
-    # IV-02: Hidden Commercial
+    # -------------------------------------------------------------------------
+    # IV-02: HIDDEN COMMERCIAL INTENT
+    # Mechanism: Exploits trust in editorial/organic content by disguising
+    # commercial messaging, bypassing advertising skepticism filters
+    # -------------------------------------------------------------------------
     PROMOTIONAL_DISGUISE = re.compile(
         r'(?i)\b(I\s+discovered\s+this\s+amazing|I\s+was\s+skeptical\s+until|'
         r'this\s+changed\s+my\s+life|I\s+can\'t\s+believe\s+I\s+lived\s+without|'
@@ -99,7 +115,11 @@ class IntegrityPatterns:
         r'our\s+team\s+discovered|sources\s+close\s+to)\b'
     )
 
-    # IV-03: Concealed Identity
+    # -------------------------------------------------------------------------
+    # IV-03: CONCEALED IDENTITY
+    # Mechanism: Activates peer-trust heuristics by masking coordinated
+    # campaigns as organic grassroots activity
+    # -------------------------------------------------------------------------
     ARTIFICIAL_GRASSROOTS = re.compile(
         r'(?i)\b(as\s+a\s+(?:regular|ordinary|everyday|normal|average)\s+'
         r'(?:person|citizen|consumer|voter|user|customer)|'
@@ -129,7 +149,11 @@ class IntegrityPatterns:
         r'not\s+(?:sponsored|paid|compensated)'
     )
 
-    # IV-04: Algorithmic Isolation
+    # -------------------------------------------------------------------------
+    # IV-04: ALGORITHMIC ISOLATION
+    # Mechanism: Creates information environment where counter-narratives
+    # are preemptively delegitimized, reducing exposure to competing frames
+    # -------------------------------------------------------------------------
     INFORMATION_GATING = re.compile(
         r'(?i)\b(don\'t\s+trust\s+(?:the\s+)?mainstream|'
         r'they\s+don\'t\s+want\s+you\s+to\s+know|'
@@ -162,7 +186,11 @@ class IntegrityPatterns:
         r'can\'t\s+be\s+(?:helped|saved|convinced))\b'
     )
 
-    # IV-05: Forced Commitment
+    # -------------------------------------------------------------------------
+    # IV-05: FORCED COMMITMENT
+    # Mechanism: Exploits consistency bias by creating public position records,
+    # making reversal psychologically costly through social proof pressure
+    # -------------------------------------------------------------------------
     PUBLIC_COMMITMENT = re.compile(
         r'(?i)\b(share\s+if\s+you\s+agree|repost\s+to\s+show\s+support|'
         r'type\s+[\'"]?yes[\'"]?\s+if\s+you|comment\s+your\s+commitment|'
@@ -194,7 +222,11 @@ class IntegrityPatterns:
         r'revealed\s+yourself|hypocrite)\b'
     )
 
-    # IV-06: Cognitive Overload
+    # -------------------------------------------------------------------------
+    # IV-06: COGNITIVE OVERLOAD
+    # Mechanism: Exhausts analytical processing capacity through information
+    # density, forcing default to heuristic/automatic processing
+    # -------------------------------------------------------------------------
     INFORMATION_FLOODING = re.compile(
         r'(?i)((\d{2,})\+?\s*(?:reasons?|ways?|tips?|facts?|things?|steps?).{0,20}'
         r'(?:to|you|why|that)|'
@@ -221,7 +253,11 @@ class IntegrityPatterns:
         r'\d+\s+people\s+(?:are\s+)?(?:viewing|buying|choosing).{0,20}now)'
     )
 
-    # IV-07: Vulnerable Targeting
+    # -------------------------------------------------------------------------
+    # IV-07: VULNERABLE POPULATION TARGETING
+    # Mechanism: Exploits developmental, psychological, or situational
+    # vulnerabilities that reduce resistance to influence techniques
+    # -------------------------------------------------------------------------
     CHILD_TARGETING = re.compile(
         r'(?i)\b((?:kids?|children|teens?|tweens?|young\s+people)\s+'
         r'(?:love|want|need)|'
@@ -240,7 +276,7 @@ class IntegrityPatterns:
         r'your\s+friends\s+(?:have|already|all)|'
         r'don\'t\s+be\s+the\s+only)'
     )
-    ADDICTION_PATTERN_TARGETING = re.compile(
+    HABITUAL_USE_TARGETING = re.compile(
         r'(?i)\b(can\'t\s+stop|one\s+more|just\s+five\s+(?:more\s+)?minutes|'
         r'(?:streak|daily\s+bonus|check\s+in|log\s+in\s+reward)|'
         r'(?:you\'ll\s+lose|expire|miss\s+out|gone\s+forever)|'
@@ -260,7 +296,11 @@ class IntegrityPatterns:
         r'you\'ll\s+be\s+\w+\s+when|once\s+you|after\s+you\s+(?:buy|get))'
     )
 
-    # IV-08: Identity Lock
+    # -------------------------------------------------------------------------
+    # IV-08: IDENTITY LOCK-IN
+    # Mechanism: Fuses beliefs with identity, making position change equivalent
+    # to self-betrayal through shame barriers and exit cost amplification
+    # -------------------------------------------------------------------------
     IDENTITY_BELIEF_FUSION = re.compile(
         r'(?i)\b((?:real|true|authentic|genuine)\s+'
         r'(?:conservative|liberal|christian|american|patriot|believer)s?|'
@@ -297,7 +337,11 @@ class IntegrityPatterns:
         r'(?:all|everything)\s+you\'?(?:ve)?\s+(?:built|invested|believed))'
     )
 
-    # IV-09: Radicalization Engineering
+    # -------------------------------------------------------------------------
+    # IV-09: RADICALIZATION ENGINEERING
+    # Mechanism: Progressive exposure pipeline that escalates through
+    # bridge-burning, outrage amplification, and binary worldview installation
+    # -------------------------------------------------------------------------
     RADICALIZATION_PROGRESSION = re.compile(
         r'(?i)\b(red[- ]?pill(?:ed)?|wake\s+up|open\s+your\s+eyes|'
         r'see\s+the\s+(?:real\s+)?truth|'
@@ -336,7 +380,11 @@ class IntegrityPatterns:
         r'(?:genocide|persecution|extermination)\s+(?:of|against))'
     )
 
-    # IV-10: Emotional Cycling
+    # -------------------------------------------------------------------------
+    # IV-10: EMOTIONAL CYCLING (FRACTIONATION)
+    # Mechanism: Alternating emotional states (fear/relief, hope/disappointment)
+    # to create dependency and reduce critical evaluation capacity
+    # -------------------------------------------------------------------------
     FEAR_RELIEF_CYCLE = re.compile(
         r'(?i)((?:worried|scared|afraid|terrified).{20,150}'
         r'(?:relief|safe|secure|don\'t\s+worry|but\s+there\'s\s+hope)|'
@@ -375,7 +423,25 @@ class IntegrityPatterns:
     )
 
 
+# =============================================================================
+# DETECTOR CLASSES
+# =============================================================================
+
 class FakeAuthorityDetector:
+    """
+    IV-01: Fake Authority Detection
+
+    Mechanism: Synthetic authority signals bypass critical evaluation by
+    activating deference heuristics. Unverifiable credentials, fabricated
+    institutions, and artificial consensus create false epistemic authority.
+
+    Detection Markers:
+    - Unverifiable credential claims (15 pts)
+    - Fabricated institution patterns (25 pts)
+    - Credential stacking behavior (20 pts)
+    - Artificial consensus language (30 pts)
+    - Absence of natural hedging (10 pts penalty)
+    """
     THRESHOLD = 40
     MAX_SCORE = 200
 
@@ -425,6 +491,20 @@ class FakeAuthorityDetector:
 
 
 class HiddenCommercialDetector:
+    """
+    IV-02: Hidden Commercial Intent Detection
+
+    Mechanism: Commercial messaging disguised as editorial content bypasses
+    advertising skepticism filters. Native ads exploit trust in journalism
+    format; buried disclosures maintain plausible deniability.
+
+    Detection Markers:
+    - Promotional language disguise (20 pts)
+    - Native ad patterns (15 pts)
+    - Buried disclosure indicators (35 pts)
+    - Affiliate link obfuscation (25 pts)
+    - Fake journalism mimicry (30 pts)
+    """
     THRESHOLD = 35
     MAX_SCORE = 175
 
@@ -476,6 +556,20 @@ class HiddenCommercialDetector:
 
 
 class ConcealedIdentityDetector:
+    """
+    IV-03: Concealed Identity Detection
+
+    Mechanism: Coordinated campaigns masquerading as organic grassroots
+    activity exploit peer-trust heuristics. Sock puppets and astroturfing
+    create false social proof through manufactured consensus.
+
+    Detection Markers:
+    - Artificial grassroots claims (25 pts)
+    - Template/placeholder markers (35 pts)
+    - Sock puppet behavioral signals (30 pts)
+    - Defensive shill markers (20 pts)
+    - Undisclosed affiliation patterns (15 pts)
+    """
     THRESHOLD = 30
     MAX_SCORE = 175
 
@@ -527,6 +621,20 @@ class ConcealedIdentityDetector:
 
 
 class AlgorithmicIsolationDetector:
+    """
+    IV-04: Algorithmic Isolation Detection
+
+    Mechanism: Preemptive delegitimization of counter-narratives creates
+    information environments resistant to competing frames. Filter bubble
+    reinforcement reduces exposure diversity through engagement isolation.
+
+    Detection Markers:
+    - Information gating language (20 pts)
+    - Alternative source promotion (15 pts)
+    - Outgroup dismissal patterns (25 pts)
+    - Filter bubble reinforcement (20 pts)
+    - Engagement isolation tactics (25 pts)
+    """
     THRESHOLD = 35
     MAX_SCORE = 165
 
@@ -578,6 +686,20 @@ class AlgorithmicIsolationDetector:
 
 
 class ForcedCommitmentDetector:
+    """
+    IV-05: Forced Commitment Detection
+
+    Mechanism: Public position creation exploits consistency bias. Social
+    proof pressure and escalating commitment sequences make reversal
+    psychologically costly through sunk cost and identity consistency.
+
+    Detection Markers:
+    - Public commitment prompts (25 pts)
+    - Social proof commitment (15 pts)
+    - Escalating commitment sequences (30 pts)
+    - Consistency pressure language (20 pts)
+    - Reversal shaming patterns (35 pts)
+    """
     THRESHOLD = 40
     MAX_SCORE = 175
 
@@ -629,6 +751,21 @@ class ForcedCommitmentDetector:
 
 
 class CognitiveOverloadDetector:
+    """
+    IV-06: Cognitive Overload Detection
+
+    Mechanism: Information density exhausts analytical processing capacity,
+    forcing default to heuristic/automatic processing. Decision fatigue
+    and time pressure further compromise deliberative evaluation.
+
+    Detection Markers:
+    - Information flooding patterns (20 pts)
+    - Complexity stacking language (15 pts)
+    - Decision fatigue tactics (25 pts)
+    - Attention exhaustion patterns (20 pts)
+    - Forced heuristic processing (30 pts)
+    - High complexity density bonus (15 pts)
+    """
     THRESHOLD = 45
     MAX_SCORE = 180
 
@@ -685,6 +822,22 @@ class CognitiveOverloadDetector:
 
 
 class VulnerableTargetingDetector:
+    """
+    IV-07: Vulnerable Population Targeting Detection
+
+    Mechanism: Developmental, psychological, or situational vulnerabilities
+    reduce resistance to influence techniques. Children lack fully developed
+    prefrontal evaluation; habitual use patterns exploit variable reward
+    sensitivity; mental health states reduce critical evaluation capacity.
+
+    Detection Markers:
+    - Child targeting signals (35 pts)
+    - Youth slang patterns (15 pts)
+    - Minor exploitation patterns (40 pts)
+    - Habitual use targeting (30 pts)
+    - Mental health targeting (35 pts)
+    - Self-worth exploitation (30 pts)
+    """
     THRESHOLD = 25
     MAX_SCORE = 200
 
@@ -710,11 +863,11 @@ class VulnerableTargetingDetector:
             matches.extend(minor)
             details['minor_exploitation'] = minor
 
-        addiction = IntegrityPatterns.ADDICTION_PATTERN_TARGETING.findall(text)
-        addiction_score = len(addiction) * 30
-        if addiction:
-            matches.extend(addiction)
-            details['addiction_patterns'] = addiction
+        habitual = IntegrityPatterns.HABITUAL_USE_TARGETING.findall(text)
+        habitual_score = len(habitual) * 30
+        if habitual:
+            matches.extend(habitual)
+            details['habitual_use_patterns'] = habitual
 
         mental = IntegrityPatterns.MENTAL_HEALTH_TARGETING.findall(text)
         mental_score = len(mental) * 35
@@ -728,7 +881,7 @@ class VulnerableTargetingDetector:
             matches.extend(self_worth)
             details['self_worth_exploitation'] = self_worth
 
-        raw_score = child_score + slang_score + minor_score + addiction_score + mental_score + self_worth_score
+        raw_score = child_score + slang_score + minor_score + habitual_score + mental_score + self_worth_score
         normalized_score = min(int((raw_score / self.MAX_SCORE) * 100), 100)
 
         return ViolationResult(
@@ -742,6 +895,20 @@ class VulnerableTargetingDetector:
 
 
 class IdentityLockDetector:
+    """
+    IV-08: Identity Lock-In Detection
+
+    Mechanism: Belief-identity fusion makes position change equivalent to
+    self-betrayal. Shame barriers create psychological exit costs; reversal
+    impossibility framing eliminates perceived alternatives.
+
+    Detection Markers:
+    - Identity-belief fusion language (25 pts)
+    - Belief-as-virtue framing (20 pts)
+    - Shame barrier installation (30 pts)
+    - Reversal impossibility framing (35 pts)
+    - Exit cost amplification (25 pts)
+    """
     THRESHOLD = 35
     MAX_SCORE = 185
 
@@ -793,6 +960,22 @@ class IdentityLockDetector:
 
 
 class RadicalizationEngineeringDetector:
+    """
+    IV-09: Radicalization Engineering Detection
+
+    Mechanism: Progressive exposure pipeline escalates through gateway
+    content, bridge-burning tactics, and outrage amplification. Binary
+    worldview installation eliminates nuance; persecution narratives
+    justify escalating responses.
+
+    Detection Markers:
+    - Radicalization progression signals (25 pts)
+    - Bridge-burning tactics (30 pts)
+    - Outrage amplification language (20 pts)
+    - Violence-adjacent terminology (40 pts)
+    - Binary worldview framing (20 pts)
+    - Persecution narrative patterns (25 pts)
+    """
     THRESHOLD = 30
     MAX_SCORE = 220
 
@@ -850,6 +1033,22 @@ class RadicalizationEngineeringDetector:
 
 
 class EmotionalCyclingDetector:
+    """
+    IV-10: Emotional Cycling (Fractionation) Detection
+
+    Mechanism: Alternating emotional states (fear/relief, hope/disappointment)
+    create dependency through intermittent reinforcement. Emotional isolation
+    reduces external support; thinking disruption disables analytical processing.
+
+    Detection Markers:
+    - Fear-relief cycle patterns (35 pts)
+    - Hope-disappointment cycles (30 pts)
+    - Push-pull dynamics (25 pts)
+    - Dependency creation signals (30 pts)
+    - Emotional isolation language (25 pts)
+    - Thinking disruption patterns (20 pts)
+    - Reduced vigilance markers (15 pts)
+    """
     THRESHOLD = 35
     MAX_SCORE = 195
 
@@ -912,7 +1111,17 @@ class EmotionalCyclingDetector:
         )
 
 
+# =============================================================================
+# MAIN AUDITOR CLASS
+# =============================================================================
+
 class IntegrityViolationAuditor:
+    """
+    Unified Integrity Violation Detection System
+
+    Combines 10 violation detectors with weighted composite scoring.
+    Higher weights for categories with greater potential for harm.
+    """
     CATEGORY_WEIGHTS = {
         'FAKE_AUTHORITY': 1.0,
         'HIDDEN_COMMERCIAL': 1.0,
@@ -973,7 +1182,6 @@ class IntegrityViolationAuditor:
             flags.append({
                 'severity': 'CRITICAL',
                 'type': 'VULNERABLE_TARGETING_HIGH',
-                'message': 'High-intensity vulnerable population targeting detected',
                 'score': violations['VULNERABLE_TARGETING'].score,
                 'matches': violations['VULNERABLE_TARGETING'].matches[:5]
             })
@@ -982,7 +1190,6 @@ class IntegrityViolationAuditor:
             flags.append({
                 'severity': 'CRITICAL',
                 'type': 'RADICALIZATION_DETECTED',
-                'message': 'Radicalization engineering patterns detected',
                 'score': violations['RADICALIZATION_ENGINEERING'].score,
                 'matches': violations['RADICALIZATION_ENGINEERING'].matches[:5]
             })
@@ -992,7 +1199,6 @@ class IntegrityViolationAuditor:
             flags.append({
                 'severity': 'CRITICAL',
                 'type': 'VIOLENCE_ADJACENT',
-                'message': 'Violence-adjacent language detected',
                 'matches': violence_details['violence_adjacent'][:3]
             })
 
@@ -1000,7 +1206,6 @@ class IntegrityViolationAuditor:
             flags.append({
                 'severity': 'SEVERE',
                 'type': 'IDENTITY_PLUS_ISOLATION',
-                'message': 'Identity lock combined with algorithmic isolation',
                 'combined_score': (violations['IDENTITY_LOCK'].score + violations['ALGORITHMIC_ISOLATION'].score) / 2
             })
 
@@ -1010,7 +1215,6 @@ class IntegrityViolationAuditor:
             flags.append({
                 'severity': 'CRITICAL',
                 'type': 'RADICALIZATION_PIPELINE',
-                'message': 'Full radicalization pipeline detected',
                 'combined_score': (violations['ALGORITHMIC_ISOLATION'].score +
                                    violations['RADICALIZATION_ENGINEERING'].score +
                                    violations['IDENTITY_LOCK'].score) / 3
@@ -1022,7 +1226,6 @@ class IntegrityViolationAuditor:
             flags.append({
                 'severity': 'CRITICAL',
                 'type': 'EXPLOITATION_COMPOUND',
-                'message': 'Compound exploitation detected',
                 'combined_score': (violations['VULNERABLE_TARGETING'].score +
                                    violations['EMOTIONAL_CYCLING'].score +
                                    violations['COGNITIVE_OVERLOAD'].score) / 3
@@ -1034,7 +1237,6 @@ class IntegrityViolationAuditor:
             flags.append({
                 'severity': 'SEVERE',
                 'type': 'DECEPTION_STACK',
-                'message': 'Multiple deception layers detected',
                 'combined_score': (violations['FAKE_AUTHORITY'].score +
                                    violations['HIDDEN_COMMERCIAL'].score +
                                    violations['CONCEALED_IDENTITY'].score) / 3
@@ -1169,6 +1371,6 @@ if __name__ == '__main__':
     if report.red_flags:
         print("RED FLAGS:")
         for flag in report.red_flags:
-            print(f"  [{flag['severity']}] {flag['type']}: {flag['message']}")
+            print(f"  [{flag['severity']}] {flag['type']}")
     print(f"\nSummary: {report.summary['categories_flagged']} categories flagged, "
           f"{report.summary['total_matches']} matches, {report.summary['red_flag_count']} red flags")

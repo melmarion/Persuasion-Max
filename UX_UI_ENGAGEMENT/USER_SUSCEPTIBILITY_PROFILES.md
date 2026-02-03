@@ -1,4 +1,4 @@
-# User Vulnerability Profiles
+# User Susceptibility Profiles
 ## Pattern Responsiveness by User Type
 
 This document maps how different user segments respond to the 12 engagement patterns, with detailed behavioral metrics and conversion contexts.
@@ -58,11 +58,11 @@ Legend: ████ = Very High | ███ = High | ██ = Moderate | █ = 
 ├── Community validation: +38% engagement
 ```
 
-### Key Vulnerabilities
+### Key Responsiveness Factors
 - Identity formation stage makes P12 highly effective
 - Social pressure amplifies P11 effects
-- Underdeveloped prefrontal cortex reduces P8 resistance
-- FOMO particularly acute in peer contexts
+- Developing prefrontal cortex increases P8 responsiveness
+- FOMO particularly strong in peer contexts
 
 ---
 
@@ -95,7 +95,7 @@ Legend: ████ = Very High | ███ = High | ██ = Moderate | █ = 
 └── Time perception distortion: 87% underestimate duration
 ```
 
-### Key Vulnerabilities
+### Key Responsiveness Factors
 - Dopamine system hyperresponsive to variable rewards
 - Near-miss effect strongly amplified
 - Illusion of control particularly pronounced
@@ -132,11 +132,11 @@ Legend: ████ = Very High | ███ = High | ██ = Moderate | █ = 
 └── Membership tier with social access: +$156 LTV increase
 ```
 
-### Key Vulnerabilities
-- Social obligations override individual judgment
-- Platform identity becomes core self-concept
-- Community pressure drives continued engagement
-- Fear of social exclusion amplifies all social patterns
+### Key Responsiveness Factors
+- Social considerations shape individual judgment
+- Platform identity becomes central to self-concept
+- Community signals reinforce continued engagement
+- Social inclusion signals amplify social responsiveness patterns
 
 ---
 
@@ -170,11 +170,11 @@ Legend: ████ = Very High | ███ = High | ██ = Moderate | █ = 
 └── "Complete your collection" messaging: 4.2x conversion
 ```
 
-### Key Vulnerabilities
-- Zeigarnik effect (incomplete tasks) extremely powerful
-- Sunk cost fallacy heavily influences decisions
-- Loss aversion for progress particularly acute
-- Limited-time completables create intense urgency
+### Key Responsiveness Factors
+- Zeigarnik effect (incomplete tasks) highly influential
+- Sunk cost sensitivity strongly influences decisions
+- Loss aversion for progress particularly strong
+- Limited-time completables create strong urgency response
 
 ---
 
@@ -207,11 +207,11 @@ Legend: ████ = Very High | ███ = High | ██ = Moderate | █ = 
 └── One-click purchase: 89% of transactions
 ```
 
-### Key Vulnerabilities
-- Reduced deliberation window makes P6 highly effective
-- Emotional purchasing decisions amplify P7
-- Whale targeting (P9) particularly successful
-- Post-purchase regret doesn't reduce future vulnerability
+### Key Responsiveness Factors
+- Reduced deliberation window increases P6 effectiveness
+- Emotional states influence P7 responsiveness
+- High-value targeting (P9) particularly effective
+- Post-purchase responses show limited impact on future engagement
 
 ---
 
@@ -275,10 +275,10 @@ Legend: ████ = Very High | ███ = High | ██ = Moderate | █ = 
 ## Detection Applications
 
 These profiles inform detection by:
-1. **Identifying high-risk combinations** (pattern × profile)
-2. **Flagging exploitation** when products target vulnerable profiles
-3. **Assessing audience vulnerability** based on demographic indicators
-4. **Prioritizing interventions** for highest-risk scenarios
+1. **Identifying high-intensity combinations** (pattern × profile)
+2. **Measuring influence intensity** when products target susceptible profiles
+3. **Assessing audience responsiveness patterns** based on demographic indicators
+4. **Prioritizing analysis** for highest-intensity scenarios
 
 ---
 
