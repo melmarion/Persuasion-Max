@@ -1,5 +1,5 @@
 # PROJECT STATUS & COMPLETION REPORT
-## Persuasion Detection Framework - System Overview
+## Communication Pattern Detection Framework - System Overview
 
 **Status:** ✅ COMPLETE AND READY FOR EXECUTION
 **Last Updated:** February 2026
@@ -24,7 +24,7 @@
 ## FOLDER STRUCTURE
 
 ```
-Persuasion Max/
+Engagement-Max/
 ├── ROOT (5 files)
 │   ├── 00_CORE_THESIS.md           # Unique positioning
 │   ├── 01_TOOLS_YOU_CAN_BUILD.md   # 12 tools + tech specs
@@ -82,7 +82,7 @@ Persuasion Max/
 4. **Detect advanced architectures** (cognitive load, decision fatigue, etc.)
 5. **Generate professional reports** (JSON format)
 6. **Assess audience susceptibility patterns** (identify high-susceptibility populations)
-7. **Flag high-intensity persuasion** immediately
+7. **Flag high-intensity patterns** immediately
 8. **Provide remediation** (how to fix the content)
 9. **Track historical precedent** (which Bernays campaign does this match?)
 10. **Validate with research** (30+ peer-reviewed studies)
@@ -94,7 +94,7 @@ Persuasion Max/
 ### TIER 1: Foundational Frameworks
 | Document | Focus | Use Case |
 |----------|-------|----------|
-| 11_TACTICAL_DETECTION | 6 Primal Stimuli with regex | Identify basic triggers |
+| 11_TACTICAL_DETECTION | 6 Primal Stimuli with regex | Identify basic signals |
 | 12_PSYCHOLOGICAL_PRINCIPLES | Cialdini + 10 cognitive biases | Advanced principle mapping |
 | 13_ADVANCED_FRAMEWORKS | 7 sophisticated architectures | Catch sophisticated tactics |
 | 14_MASTER_INDEX | Reference guide + workflows | Navigate all frameworks |
@@ -135,8 +135,8 @@ Persuasion Max/
 ## LANGUAGE STANDARDS
 
 All documents use neutral professional terminology:
-- "Influence" instead of loaded terminology
-- "Persuasion Intensity" instead of "Risk Level"
+- "Engagement patterns" instead of loaded terminology
+- "Pattern Intensity" instead of "Risk Level"
 - "VERY HIGH" instead of "EXTREME"
 - "Intensive" instead of "Optimized" for high-intensity applications
 - "Professional Audit Methodology" throughout

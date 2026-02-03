@@ -1,6 +1,6 @@
 # PROFESSIONAL AUDITOR'S MANUAL
 ## Detailed Detection Criteria for Marketing Messaging Audit
-**Complete Measurement Guide for Persuasion Tactic Quantification**
+**Complete Measurement Guide for Communication Pattern Quantification**
 
 ---
 
@@ -406,12 +406,12 @@ Signals that make the source seem credible, knowledgeable, or in-control. These 
 #### Authority Effect Research
 
 **Formula Results:**
-- Result < 5 = ~20-30% influence
-- Result 5-15 = ~40-50% influence
-- Result 15-30 = ~65% influence likelihood
-- Result 30+ = ~65%+ influence probability
+- Result < 5 = ~20-30% response rate
+- Result 5-15 = ~40-50% response rate
+- Result 15-30 = ~65% response likelihood
+- Result 30+ = ~65%+ response probability
 
-**Example Audit Case (Score = 45 influence level = HIGH):**
+**Example Audit Case (Score = 45 effectiveness level = HIGH):**
 ```
 Text: "Dr. John Smith, Harvard Medical School, 30 years experience.
        Speaks with steady tone, precise language. No aggressive elements."
@@ -422,7 +422,7 @@ Confidence: "steady tone" (10) + "precise language" (10) = 20
 Threat: None = 0 (base = 1)
 
 Authority = (55 + 20) / 1 = 75
-Expected influence: ~65%+ (HIGH)
+Expected response: ~65%+ (HIGH)
 ```
 
 ---
@@ -443,7 +443,7 @@ Messaging about limited supply, high demand, or threat of unavailability that cr
 "Rare opportunity"    "One-time only"      "Never again"
 ```
 
-**COMPETITION LANGUAGE (20 points each - strongest trigger):**
+**COMPETITION LANGUAGE (20 points each - strongest signal):**
 
 ```
 "Many want this"              → High demand signal (20)
@@ -581,7 +581,7 @@ analytical capacity remaining = highly susceptible to final ask
 ### ANCHORING EFFECT - Detailed Detection
 
 **What You're Looking For:**
-First number mentioned disproportionately influences final agreement, even if the number is arbitrary.
+First number mentioned disproportionately shapes final agreement, even if the number is arbitrary.
 
 #### Detection Criteria (Find First Numbers)
 
@@ -886,11 +886,11 @@ Advanced Frameworks Score (avg of 7): _____ / 100
 
 OVERALL PERSUASION INTENSITY INDEX: _____ / 100
 
-Persuasion Intensity Level:
-[ ] LOW (0-25): Minimal persuasion techniques
-[ ] MODERATE (26-50): Some persuasion targeting present
-[ ] HIGH (51-75): Sophisticated persuasion techniques
-[ ] VERY HIGH (76-100): Intensive persuasion techniques deployed
+Pattern Intensity Level:
+[ ] LOW (0-25): Minimal engagement techniques
+[ ] MODERATE (26-50): Some audience targeting present
+[ ] HIGH (51-75): Sophisticated engagement techniques
+[ ] VERY HIGH (76-100): Intensive engagement techniques deployed
 
 ─────────────────────────────────────────────────────────────
 DETAILED STIMULUS BREAKDOWN
@@ -1002,8 +1002,8 @@ MONITOR (if score < 50):
 AUDITOR CERTIFICATION
 ─────────────────────────────────────────────────────────────
 
-This audit was conducted using professional persuasion detection
-frameworks extracted from comprehensive research on persuasion tactics.
+This audit was conducted using professional pattern detection
+frameworks extracted from comprehensive research on communication techniques.
 
 Auditor Signature: _________________ Date: _________
 
@@ -1014,7 +1014,7 @@ Auditor Signature: _________________ Date: _________
 
 ## PART 7: COMMON AUDIT SCENARIOS & DECISIONS
 
-### Scenario 1: "It's Just Marketing, Isn't ALL Marketing Influence-Based?"
+### Scenario 1: "It's Just Marketing, Isn't ALL Marketing Engagement-Based?"
 
 **Answer:** No. There's a spectrum:
 
@@ -1034,7 +1034,7 @@ Auditor Signature: _________________ Date: _________
 
 ### Scenario 2: "What if the Company Actually Does Make Things in Portugal?"
 
-**Rule:** Specificity of claims doesn't matter. What matters is whether they're used to influence.
+**Rule:** Specificity of claims doesn't matter. What matters is whether they're used for engagement positioning.
 
 **Check:**
 - Is "Made in Portugal" just a fact statement (0 points)
@@ -1048,7 +1048,7 @@ Auditor Signature: _________________ Date: _________
 
 ### Scenario 3: "The Company Says They're Targeting a Specific Niche"
 
-**Rule:** Niche targeting ≠ intensive persuasion. Exclusion ≠ niche marketing.
+**Rule:** Niche targeting ≠ intensive engagement. Exclusion ≠ niche marketing.
 
 **Niche Marketing (LOW score):**
 "For runners: we've engineered the perfect running shoe"

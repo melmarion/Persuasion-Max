@@ -78,7 +78,7 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 **Goal: Publish first paper using Tools 1-3**
 **Time: 40-60 hours (research + writing)**
 
-### Paper 1: "Detecting Emotional Influence Patterns in Social Media Feeds"
+### Paper 1: "Detecting Emotional Engagement Patterns in Social Media Feeds"
 - Use Tool 1 (Fractionation Detection Algorithm)
 - Analyze 50,000+ real posts from major platforms
 - Demonstrate fractionation sequences exceed random expectation (Chi-square test)
@@ -90,7 +90,7 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 - Test interaction: Fractionation × Individual Susceptibility → Purchase behavior
 - Publish: *Psychological Science*, *Journal of Experimental Psychology*
 
-### Paper 3: "Cross-Domain Integration in Digital Influence Research"
+### Paper 3: "Cross-Domain Integration in Digital Engagement Research"
 - Use Tool 3 (Physiological Measurement Suite)
 - Integrate psychology (blink rate) + neuroscience (HRV/cortisol) + economics (purchasing)
 - Demonstrate three-domain approach is more predictive than any single domain
@@ -112,7 +112,7 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 ### Month 3: Kick off
 - [ ] Write 2-3 Medium/Substack essays on your findings
 - [ ] Post on Twitter/LinkedIn daily (research updates, insights, methodology)
-- [ ] Reach out to podcast hosts (60 podcasts on psychology, tech, influence)
+- [ ] Reach out to podcast hosts (60 podcasts on psychology, tech, engagement)
 - [ ] Pitch journalists at major outlets (NYT, Washington Post, The Atlantic)
 
 ### Month 4: Build audience
@@ -121,13 +121,13 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 - [ ] Speaking opportunity: 1-2 university seminars
 
 ### Month 5: Escalate
-- [ ] Target: Op-ed in major publication about algorithmic influence
+- [ ] Target: Op-ed in major publication about algorithmic engagement patterns
 - [ ] Speaking opportunity: 1 conference talk
 - [ ] Podcast appearances: 3-5 episodes as guest
 
 ### Month 6: Establish authority
 - [ ] Target: 20,000 Twitter followers
-- [ ] Result: Being called "the expert" on fractionation/influence
+- [ ] Result: Being called "the expert" on fractionation/engagement patterns
 - [ ] Interest: Universities, platforms, policy bodies wanting your expertise
 
 ---
@@ -140,7 +140,7 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 
 **Tool 1 (Fractionation Detection):** Target = Research Institutions + Policy Organizations
 - Licensing price: $50K-$500K depending on usage
-- Pitch: "Objective measure of platform influence for compliance/research"
+- Pitch: "Objective measure of platform engagement patterns for compliance/research"
 - Contact: Regulatory bodies, research institutes, Meta/Google compliance teams
 - Close 2-3 customers → $200K-$1M revenue
 
@@ -151,7 +151,7 @@ Each tool builds on previous. By Week 8, you have working prototype for all 8.
 - Close 1-2 customers → $100K-$300K revenue
 
 **Tools 3-8 (Prediction/Intervention Suite):** Target = Insurance/Corporate Wellness
-- Pitch: "Measure and reduce digital influence in employee/customer populations"
+- Pitch: "Measure and analyze digital engagement patterns in employee/customer populations"
 - Create B2B SaaS model
 - Goal: 5-10 enterprise pilots → $50K-$200K revenue
 
@@ -330,7 +330,7 @@ If you need capital (you probably will):
 ### Option 3: Seed Funding
 - Angels interested in: EdTech, digital wellness, AI safety
 - Typical seed round: $500K-$2M
-- Pitch: "We're building the tools tech platforms need to measure and analyze psychological influence intensity"
+- Pitch: "We're building the tools tech platforms need to measure and analyze communication pattern intensity"
 
 ### Option 4: Partner Funding
 - Platforms wanting to audit themselves (Meta, Google): Pay for development
@@ -345,7 +345,7 @@ If you need capital (you probably will):
 2. **Immediate revenue potential** - Tools have clear customers willing to pay Day 1
 3. **Academic credibility supports commercial success** - Papers = proof = trusted partnerships
 4. **Network effects** - Each tool makes the others more valuable
-5. **Regulatory tailwinds** - Digital influence is increasingly regulated; you're ahead of the curve
+5. **Regulatory tailwinds** - Digital engagement is increasingly measured; you're ahead of the curve
 6. **Founder advantage** - Your unique three-domain positioning is defensible
 
 ---
@@ -365,7 +365,7 @@ If you need capital (you probably will):
 ### 3. Media Presence
 - Become recognizable = authority = partnership opportunities
 - Post daily, speak publicly, write essays
-- Goal: "When people think 'algorithmic influence,' they think of you"
+- Goal: "When people think 'algorithmic engagement patterns,' they think of you"
 
 ### 4. Customer Development
 - Month 3: Identify ideal customer profile (ICP)
@@ -382,7 +382,7 @@ If you need capital (you probably will):
 
 ## RISK MITIGATION
 
-### Risk: Platforms don't want to admit influence
+### Risk: Platforms don't want to measure engagement patterns
 **Mitigation:** Reframe as "compliance tool" - they need to show regulators they meet intensity thresholds
 
 ### Risk: Academic papers get rejected
