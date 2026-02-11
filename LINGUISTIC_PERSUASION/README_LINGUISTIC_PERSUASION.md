@@ -12,12 +12,12 @@
 
 | # | File | Focus | Lines | Sources |
 |---|------|-------|-------|---------|
-| 1 | `1_DETECTION_FRAMEWORKS_PROMPT.md` | Detection frameworks, intensity scales, Cialdini principles, primal stimuli taxonomy | ~2,440 | 11, 12, 13, 14 |
-| 2 | `2_LINGUISTIC_RHETORICAL_PATTERNS_PROMPT.md` | Linguistic influence techniques, rhetorical devices, syntactic patterns, pragmatics | ~2,785 | LINGUISTIC_PERSUASION_RESEARCH, CLASSICAL_RHETORICAL_TECHNIQUES, LINGUISTIC_DETECTION_FRAMEWORK |
-| 3 | `3_FRACTIONATION_INTEGRITY_VIOLATIONS_PROMPT.md` | Emotional fractionation, A-J-A-R cycles, dark patterns, integrity violations | ~1,900 | FRACTIONATION_BEHAVIORAL_SCIENCE, FRACTIONATION_DETECTION_METHODS, BEHAVIORAL_ANALYSIS_FRAMEWORK, INTEGRITY_VIOLATION_DETECTION_FRAMEWORK |
-| 4 | `4_DETECTION_CODE_SCORING_PROMPT.md` | Machine-readable detection code, regex patterns, Python classes, scoring algorithms, 10-domain comprehensive frameworks, 9 high-impact detectors, audit checklists, report template | ~7,215 | 15, 17, 24, 26, 27 |
-| 5 | `5_RANKINGS_EFFECTIVENESS_DATA_PROMPT.md` | 40 ranked combinations, effectiveness multipliers, research dimensions, empirical synthesis | ~3,110 | 28, 25, EMPIRICAL_RESEARCH_SYNTHESIS |
-| 6 | `6_CASE_STUDIES_RESEARCH_PROMPT.md` | Historical evolution (7 phases), 20 Bernays campaigns, Goebbels frameworks, modern case studies, academic sources, research methodology | ~2,020 | EVOLUTION_ANALYSIS, EVOLUTION_PATTERNS_AND_MECHANISMS, 19, APPENDIX_RESEARCH_SOURCES, RESEARCH_SUMMARY_AND_NEXT_STEPS |
+| 1 | `1_DETECTION_FRAMEWORKS_PROMPT.md` | Detection frameworks, intensity scales, Cialdini principles, primal stimuli taxonomy | ~2,441 | 11, 12, 13, 14 |
+| 2 | `2_LINGUISTIC_RHETORICAL_PATTERNS_PROMPT.md` | Linguistic influence techniques, rhetorical devices, syntactic patterns, pragmatics | ~2,800 | LINGUISTIC_PERSUASION_RESEARCH, CLASSICAL_RHETORICAL_TECHNIQUES, LINGUISTIC_DETECTION_FRAMEWORK |
+| 3 | `3_FRACTIONATION_INTEGRITY_VIOLATIONS_PROMPT.md` | Emotional fractionation, A-J-A-R cycles, dark patterns, integrity violations | ~2,387 | FRACTIONATION_BEHAVIORAL_SCIENCE, FRACTIONATION_DETECTION_METHODS, BEHAVIORAL_ANALYSIS_FRAMEWORK, INTEGRITY_VIOLATION_DETECTION_FRAMEWORK |
+| 4 | `4_DETECTION_CODE_SCORING_PROMPT.md` | Machine-readable detection code, regex patterns, Python classes, scoring algorithms, 10-domain comprehensive frameworks, 9 high-impact detectors, audit checklists, report template | ~15,209 | 15, 17, 24, 26, 27 |
+| 5 | `5_RANKINGS_EFFECTIVENESS_DATA_PROMPT.md` | 40 ranked combinations, effectiveness multipliers, research dimensions, empirical synthesis | ~3,201 | 28, 25, EMPIRICAL_RESEARCH_SYNTHESIS |
+| 6 | `6_CASE_STUDIES_RESEARCH_PROMPT.md` | Historical evolution (7 phases), 20 Bernays campaigns, Goebbels frameworks, modern case studies, academic sources, research methodology | ~2,049 | EVOLUTION_ANALYSIS, EVOLUTION_PATTERNS_AND_MECHANISMS, 19, APPENDIX_RESEARCH_SOURCES, RESEARCH_SUMMARY_AND_NEXT_STEPS |
 
 ---
 

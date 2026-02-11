@@ -37,6 +37,7 @@ Send this prompt to an AI when you want to:
 **Technical mechanism:** Anger → Joy → Anger → Relief (A-J-A-R)
 **Timing:** 3-4 cycles in under 5-10 minutes
 **Effect:** 200%+ increase in behavioral suggestibility
+**Result:** Continuous mild reduced-vigilance states at population scale. Invisible to users. Indistinguishable from autonomous choice.
 **Discovery:** Algorithms discovered this empirically (through engagement optimization)
 **Current application:** Continuous, personalized, automated
 
@@ -256,6 +257,8 @@ Result: Brain accepts input 4 without evaluation as "relief" from chaos
 | Relief | Rapid drop | Parasympathetic engagement |
 
 ### 3. Heart Rate Variability
+**Normal:** Varies 60-100 bpm with breathing patterns
+
 | Phase | HRV | Interpretation |
 |-------|-----|----------------|
 | Baseline | 60ms | Normal |
@@ -277,6 +280,13 @@ Result: Brain accepts input 4 without evaluation as "relief" from chaos
 | Joy | 2-3 seconds | Quick relief |
 | Anger again | 4-7 seconds | Longer due to cognitive load |
 | Ad/relief | 5+ seconds | Deep engagement, ready to convert |
+
+### 6. Linguistic Shift During/After Fractionation
+
+**Before fractionation:** "I'm just scrolling"
+**After fractionation:** "I found this product I need" or "I need to share this"
+
+**Change:** Agency shifts from passive consumption to active wanting
 
 ---
 
@@ -337,6 +347,8 @@ Result: Brain accepts input 4 without evaluation as "relief" from chaos
 
 ### The Emotional Sine Wave Detection
 
+**Track your emotion level 0-10 as you scroll:**
+
 ```
 Normal feed:     6, 6, 6, 6 (stable)
 Fractioned feed: 8, 4, 8, 2 (oscillating)
@@ -390,6 +402,30 @@ Fractioned feed: 8, 4, 8, 2 (oscillating)
 | Facial Muscle Check | Mirror (optional) | Alternating tension/relaxation |
 | FATE Daily Audit | Phone timer, journal | Systematic algorithmic influence |
 
+#### Blink Rate Self-Test Procedure
+**Equipment needed:** Just yourself and 60 seconds
+1. Open your normal social media feed
+2. Before scrolling, count blinks for 60 seconds (baseline)
+3. Record: "My baseline is X blinks per minute"
+4. Now scroll normally for 10 minutes
+5. Every 2 minutes, count blinks for 30 seconds
+
+#### Emotional State Tracking Procedure
+Every 2 minutes while scrolling, rate your emotional state 0-10:
+```
+0 min: Emotion 6 (normal engagement)
+2 min: Emotion 8 (angry political content)
+4 min: Emotion 3 (cute animals)
+6 min: Emotion 8 (political outrage again)
+8 min: Emotion 2 (relief from wholesome content)
+10 min: Emotion 7 (product ad appears)
+```
+- If pattern 8 → 3 → 8 → 2: You're being fractionated
+- If flat 5-6-5-6: Not being influenced this session
+
+#### FATE Audit Questions
+- **EMOTION Audit (Check every 5 minutes):** How emotionally activated am I right now (0-10)?
+
 ### Platform-Level Detection (Researchers)
 
 | Method | Equipment | What It Detects |
@@ -399,6 +435,45 @@ Fractioned feed: 8, 4, 8, 2 (oscillating)
 | Content Sequence Mapping | Spreadsheet, 30 minutes | A-J-A-R sequence frequency |
 | Personalization Audit | 10 accounts with different profiles | Individual vulnerability targeting |
 
+#### Multi-Account Feed Comparison Procedure
+1. Follow identical accounts on all 3 profiles
+2. Like/engage with identical content initially
+3. Allow algorithm to personalize for 1 week
+4. Capture 50-item feed from each account on the same day/time
+5. Analyze content sequences
+
+#### Engagement Timeline Analysis Procedure
+1. Record 100 content items with:
+   - Content type (anger, joy, aspiration, threat, relief)
+   - Time viewed (seconds)
+   - Engagement (like, comment, share, just scroll)
+   - Item position in feed (1st, 5th, 10th, etc.)
+2. Create graph:
+   - X-axis: Item position (1-100)
+   - Y-axis: Time spent (seconds)
+**Expected pattern with fractionation:**
+- Anger items: 5-7 seconds
+- Joy items: 3-4 seconds (people scroll faster)
+- Anger again: 6-8 seconds (longer, more focused)
+- Relief/ad item: 8-12 seconds (maximum focus)
+
+#### Personalization Audit Procedure
+**Create accounts:**
+- Account 1: 25-year-old woman, yoga/fitness interest
+- Account 2: 50-year-old man, political interest (conservative)
+- Account 3: 50-year-old man, political interest (liberal)
+- Account 4: 19-year-old non-binary, trendy/lifestyle
+- Account 5: 35-year-old parent, parenting content interest
+
+**Procedure:**
+1. Let each account "live naturally" for 2 weeks
+2. On day 15, capture identical:
+   - Time of day
+   - Device type
+   - Feed position
+   - Same 100 items per account
+3. Analyze differences: Do different accounts see DIFFERENT emotional sequences?
+
 ### Neuroscience-Grade Measurement
 
 | Method | Equipment | What It Measures |
@@ -406,6 +481,39 @@ Fractioned feed: 8, 4, 8, 2 (oscillating)
 | Pupil Dilation Tracking | Smartphone + eye-tracking app | Reduced-vigilance state (pupils remain dilated during ad) |
 | Skin Conductance | Arduino kit (~$50) | Objective physiological arousal response |
 | Heart Rate Variability | Smartwatch | Sympathetic/parasympathetic cycling |
+
+#### Pupil Dilation Tracking Procedure
+1. Install eye-tracking app
+2. Calibrate to your phone camera (5 min)
+3. Set app to record pupil dilation while scrolling
+4. Scroll normal feed for 10 minutes
+5. Export data
+
+#### Skin Conductance Measurement (Budget DIY)
+**Equipment needed:** Arduino kit, conductive sensors (total ~$50)
+1. Attach two metal sensors to your fingers
+2. Connect to Arduino (Adafruit has tutorials)
+3. Set up data logging
+4. Scroll while recording skin conductance
+
+#### Heart Rate Variability Procedure
+1. Enable continuous heart rate monitoring on watch
+2. Note the time you start using social media
+3. Scroll for 15 minutes
+4. Export heart rate data
+
+**Analysis:**
+- Normal: HRV varies 50-100ms
+- Stress/anger: HRV drops to 20-40ms (heart rate becomes fixed/elevated)
+
+**Expected pattern:**
+```
+Time 0-3 min: HRV 60ms (baseline)
+Time 3-5 min: HRV 25ms (anger content, sympathetic activated)
+Time 5-7 min: HRV 65ms (joy content, parasympathetic activated)
+Time 7-9 min: HRV 30ms (anger again, confused sympathetic response)
+Time 9-12 min: HRV 35ms → 50ms (ad appears, relief partially restores parasympathetic)
+```
 
 ### Statistical Analysis
 
@@ -473,7 +581,11 @@ Fractioned feed: 8, 4, 8, 2 (oscillating)
 **Method:**
 - **N=300**, 5 conditions: Control, Awareness training, FATE audits, Prefrontal activation, Combined
 
-**Expected reductions:** Awareness 10-20%, FATE 15-30%, Prefrontal activation 25-40%, Combined 40-60%
+**Expected results:**
+- Awareness: 10-20% reduction in susceptibility
+- FATE audits: 15-30% reduction
+- Prefrontal activation: 25-40% reduction
+- Combined: 40-60% reduction
 
 ---
 
@@ -487,60 +599,102 @@ Fractioned feed: 8, 4, 8, 2 (oscillating)
 6. **Platform comparison** — TikTok vs. Instagram vs. Twitter differences?
 7. **Radicalization causation** — Fractionation's role in extremism pipelines?
 
+**These are the empirical questions that separate science from speculation.**
+
 ---
 
 # SECTION B: BEHAVIORAL INFLUENCE FRAMEWORK
 
+## CORE SPECIFICATIONS (Mandatory in all analysis):
+
+- **Effectiveness metrics** (200%+ susceptibility, 65-90% persistence, etc.)
+- **Timeframes & thresholds** (4 cycles in ~10 minutes, 3-5 exposures, 90-110 BPM)
+- **Psychological mechanisms** (illusory truth effect, cognitive dissonance resolution, etc.)
+- **Evolution chains** (Bernays → Goebbels → Platforms → AI)
+- **Operational implementation** (TikTok FYP, YouTube, Instagram/Facebook specifics)
+- **Classification taxonomy** (🔴🟠🟡✅ by operational constraint type)
+
+**All specifications remain intact in analysis, discussion, or revision. Changing specifications undermines analytical validity.**
+
+---
+
 ## OPERATIONAL CONSTRAINT TAXONOMY
 
-Three classes classify techniques by operational constraints:
+Three categories classify techniques by operational constraints, not morality. These constraints are either present or absent in a given application.
 
 ### 🔴 CONSTRAINT CLASS: Information Accuracy Requirements
 
-**Incompatible Operations:**
+**Definition:** Techniques in this class require accurate representation of information states.
+
+**Incompatible Operations (produce invalid deployments):**
 - Synthetic credentials or expertise (deepfakes, AI-generated qualifications)
 - Commercial actors presented as independent users
 - Payment relationships without disclosure
 - Fabricated testimonials or synthetically generated reviews
 - Misrepresented data handling procedures
-- False technical specifications
+- False technical specifications or performance claims
 
-**Compatible Operations:**
-- Factual information with compelling presentation
-- Real testimonials with disclosed relationships
+**Compatible Operations (valid deployments):**
+- Factual information with compelling visual/narrative presentation
+- Real testimonials with disclosed relationships and payment structures
 - Actual availability constraints (genuine scarcity)
+- Factually accurate storytelling
 - Comparison claims with transparent anchor points
+- Clearly marked authority figures with disclosed relationships
 
 ### 🟠 CONSTRAINT CLASS: Exit Path Parity Requirements
 
-**Incompatible Operations:**
+**Definition:** Techniques in this class require that exit paths maintain parity with entry paths.
+
+**Incompatible Operations (produce invalid deployments):**
 - Exit friction exceeding entry friction
 - Cancellation requiring more steps than signup
+- Opt-out procedures requiring greater effort than opt-in
 - Mandatory confirmation loops blocking exit
+- Unsubscribe mechanisms buried or inaccessible
 - Delayed deletion timelines designed to encourage re-engagement
 
-**Compatible Operations:**
+**Compatible Operations (valid deployments):**
 - Equal or lower friction for exit vs. entry
 - One-click opt-out availability
 - Immediate deletion on request
+- Transparent cancellation pathways
 
 ### 🟡 CONSTRAINT CLASS: Population Targeting Limitations
 
-**Incompatible Operations:**
+**Definition:** Techniques in this class operate under population-targeting constraints.
+
+**Incompatible Operations (produce invalid deployments):**
 - Compulsive-use product marketing to documented susceptible populations
 - Intensive financial products targeted to populations in active financial distress
 - Radicalization content algorithmically accelerated to psychologically fragile populations
 - Engagement-optimization mechanics applied to minors (<18)
 - Urgency-based messaging deployed during identified crisis states
 
-**Compatible Operations:**
+**Compatible Operations (valid deployments):**
 - Standard operations with adult general populations
-- Age-appropriate content delivery
+- Generic product availability without targeting psychological vulnerabilities
+- Age-appropriate content delivery to minors
 - Non-urgency-based messaging during any state
 
 ---
 
 ## MECHANISMS: Ranked by Measured Effectiveness
+
+> **Analytical Layer: Individual Psychological Mechanisms**
+> This table ranks **standalone persuasion mechanisms** by their measured effectiveness (% susceptibility increase).
+> This is one of four effectiveness layers across the Linguistic Persuasion system:
+>
+> | Layer | Prompt | What It Ranks | Scale | Example |
+> |-------|--------|---------------|-------|---------|
+> | 1 — Linguistic devices | Prompt 2 | Single language techniques in isolation | Score /100 | Loss Framing = 95/100 |
+> | **2 — Psychological mechanisms** | **Prompt 3 (this file)** | **Single persuasion mechanisms** | **% susceptibility increase** | **Fractionation = 200%+** |
+> | 3 — Detection combinations | Prompt 4 (§5.6) | 2–3 technique combos for detection code | Multiplier (1.28x–2.1x) | Scarcity + social proof + urgency = 1.95x |
+> | 4 — Expanded combinations | Prompt 5 | 2–4 technique combos (40 ranks, 6 tiers) | Multiplier (1.05x–2.5x) | Arousal + overload + urgency + authority = 2.5x |
+>
+> Mechanisms here are the building blocks that combine into the technique stacks ranked in Prompts 4 and 5.
+> A mechanism like "Authority Symbol Deployment" (65%+ here) appears as a *component* of combinations
+> like "Authority + Fear + Urgency" (1.95x in Prompt 4, Rank 4 at 1.95x in Prompt 5).
 
 ### TIER 1: MAXIMUM EFFECTIVENESS (200%+)
 
@@ -598,13 +752,26 @@ Three classes classify techniques by operational constraints:
 
 | Technique | Disclosure | Targeting | Transparency | Effectiveness |
 |-----------|------------|-----------|--------------|---------------|
+| Visual presentation | High | Population | Clear | 20-40% |
 | Transparent social proof | High | Population | Clear | 35-75% |
 | Genuine scarcity signals | High | Population | Clear | 60%+ |
+| Transparent anchoring | High | Population | Clear | 40-60% |
+| Quantified scarcity | Moderate | Population | Partial | 60%+ |
+| Curated social proof | Moderate | Population | Partial | 35-75% |
+| Authority (undisclosed relationship) | Moderate | Population | Partial | 65%+ |
 | Temporal emotional sequencing | Moderate | Population | Partial | 200%+ |
 | Default choice architecture | Moderate | Population | Partial | 50-90% |
+| Demographic targeting | Moderate | Group | Partial | 30-50% |
+| Identity misrepresentation | Low | Population | Hidden | Variable |
+| Non-transparent credentials | Low | Population | Hidden | 65%+ |
+| Hidden commercial intent | Low | Population | Hidden | Variable |
 | Algorithmic filtering | Low | Individual | Hidden | 70-85% |
 | Behavioral commitment lock-in | Low | Individual | Hidden | 65-90% |
+| Cognitive load optimization | Low | Individual | Hidden | Variable |
+| Vulnerability targeting | Low | Individual | Hidden | 30-50% |
+| Consensus falsification | Low | Population | Hidden | 35-75% |
 | Psychological state targeting | Low | Individual | Hidden | 200%+ |
+| Behavioral funnel routing | Low | Individual | Hidden | Variable |
 
 ### Precise Mechanisms (Not Interchangeable)
 - **Illusory truth effect** (NOT just "familiarity")
@@ -617,6 +784,20 @@ Three classes classify techniques by operational constraints:
 - **Repetition:** Freud → Bernays → Goebbels → Platforms → AI
 - **Authority:** Bernays → Goebbels → Platforms → AI
 - **Identity lock-in:** Bernays → Goebbels → Platforms
+
+### Precise Effectiveness Metrics Summary
+
+| Mechanism | Effectiveness | Threshold |
+|-----------|---------------|-----------|
+| Emotional fractionation | 200%+ susceptibility | 4 cycles in ~10 min |
+| Identity lock-in | 65-90% consistency | After public act |
+| Algorithmic isolation | 70-85% persistence | In curated bubble |
+| Default architecture | 50-90% | Depending on friction |
+| Authority symbols | 65%+ obedience increase | With authority present |
+| Social proof | 35-75% | Depending on visibility |
+| Scarcity signals | 60%+ conversion | "Only X left" messaging |
+| Anchoring | 40-60% pull | Toward first number |
+| Illusory truth | Cumulative | After 3-5 exposures |
 
 ---
 
@@ -1059,23 +1240,27 @@ def enhanced_audit(text: str) -> dict:
 
 ### Effectiveness Measurement
 - What behavioral change magnitude results from specific technique implementations?
-- How does effectiveness vary across individual differences?
-- What measurement approaches distinguish technique effects from baseline?
+- How does effectiveness vary across individual differences (age, cognitive capacity, psychological profile)?
+- What measurement approaches can distinguish technique effects from baseline behavior change?
 
 ### Mechanism Characterization
-- How do information asymmetry dimensions affect behavioral outcomes?
+- How do identified information asymmetry dimensions affect behavioral outcomes?
 - Which disclosure dimensions have largest behavioral effects?
+- Can behavioral changes be predicted from information asymmetry profiles?
 
 ### Population Heterogeneity
-- Which populations show differential susceptibility?
+- Which populations show differential susceptibility to specific techniques?
+- What individual characteristics predict technique sensitivity?
 - Can vulnerability profiles be identified through behavioral or physiological assessment?
 
 ### System Integration Effects
-- How do techniques compound in combination?
-- Can algorithmic systems create emergent effects not present individually?
+- How do techniques compound when applied in combination?
+- What is the interaction between multiple information asymmetry dimensions?
+- Can algorithmic systems create emergent effects not present with individual techniques?
 
 ### Reversibility and Recovery
-- To what extent can behavior changes be reversed?
+- To what extent can behavior changes be reversed after influence technique exposure?
+- What factors affect return to baseline behaviors?
 - Can awareness of technique mechanism affect subsequent susceptibility?
 
 ---
@@ -1870,13 +2055,310 @@ These are deployments where constraints make techniques invalid. Listed for refe
 - Engagement optimization targeting minors
 - Urgency-based messaging during crisis states
 
-### C.2 Default Choice Architecture
+### C.2 Detailed Mechanism Descriptions (All 19 Mechanisms)
 
+#### TIER 1: MAXIMUM EFFECTIVENESS (200%+)
+
+**1️⃣ EMOTIONAL FRACTIONATION CYCLES**
+**Effectiveness:** 200%+ increased susceptibility / 4 cycles in ~10 minutes
+**Evolution:** Platforms (2010-2020) → AI calibration (2020-2026)
+**Constraint Class:** 🟡 (population targeting)
+
+**Mechanism:**
+- Algorithm cycles emotional states: A-J-A-R (anger-joy-anger-relief/solution)
+- Brain craves stability after emotional disruption; final stimulus becomes "preferred choice"
+- Operates below conscious awareness through neurochemical pathways
+- Real-time calibration per individual psychology through behavioral data
+- TikTok FYP, YouTube recommendations, Instagram/Facebook feeds implement this
+- Platforms often don't explicitly understand mechanism (just know "this pattern drives engagement")
+
+**Implementation requirement:** Not compatible with Class 🟡 if targeting crisis populations
+
+---
+
+**2️⃣ IDENTITY LOCK-IN THROUGH PUBLIC COMMITMENT**
+**Effectiveness:** 65-90%+ behavior consistency after public act
+**Evolution:** Bernays (product branding) → Goebbels (mass denunciation campaigns) → Platforms (algorithmic amplification)
+**Constraint Class:** 🟡 (population targeting)
+
+**Mechanism:**
+- Subject takes public position (social media post, tweet, public donation)
+- Algorithm amplifies position to followers; peer group validates
+- Peer membership acts as social stake in position consistency
+- Brain forces belief alignment to justify public behavior (cognitive dissonance resolution)
+- Position reversal requires public humiliation + loss of group status
+- Identity persistence stronger than fact-based reasoning; public commitment → behavioral lock-in
+
+**Implementation requirement:** Not compatible with Class 🟡 if directing populations in crisis states
+
+---
+
+**3️⃣ ALGORITHMIC ISOLATION & CUSTOM REALITY CONSTRUCTION**
+**Effectiveness:** 70-85% persistence of curated belief reinforcement
+**Evolution:** Centralized monopoly (Goebbels) → Personalized bubbles (Platforms) → Individualized realities (AI)
+**Constraint Class:** 🔴 (information accuracy) — technically compatible if counter-narratives remain accessible
+
+**Mechanism:**
+- Different users receive different reality models through algorithmic curation
+- Counter-narratives actively suppressed from individual feed
+- Subject perceives feed as objective reality (unaware of curation)
+- Cannot observe what other subjects see—prevents resistance coordination
+- Makes informed consent nearly impossible
+- Self-reinforcing: algorithm optimizes for engagement, creating stronger isolation
+- Worse than monopoly model: monopoly imposes single narrative; algorithms create individualized false-realities per subject
+
+**Implementation requirement:** Remains compatible with Class 🔴 only if counter-narratives remain discoverable (bubble, not monopoly)
+
+---
+
+#### TIER 2: HIGH EFFECTIVENESS (50-90%)
+
+**4️⃣ DEFAULT CHOICE ARCHITECTURE**
 **Effectiveness:** 50-90% depending on friction level (organ donation: 40% opt-in vs. 90% opt-out in identical population)
 **Evolution:** Cognitive bias (identified) → Automated platform design (deployed)
-**Constraint Class:** Exit parity — must maintain equal friction for opt-out
+**Constraint Class:** 🟠 (exit parity) — must maintain equal friction for opt-out
 
-### C.3 Specifications Preservation
+**Mechanism:**
+- Path of least resistance maps to operator-desired outcome
+- Majority of subjects accept default rather than actively decide
+- Changing default requires decision energy; most subjects don't expend it
+- Newsletter subscribed by default (4-5x higher signup than opt-in), Netflix "Continue Watching," Spotify pre-selected
+
+**Implementation requirement:** Defaults must be equally reversible; changing default cannot require more effort than setting it
+
+---
+
+**5️⃣ AUTHORITY SYMBOL DEPLOYMENT**
+**Effectiveness:** 65%+ persuasion increase with authority symbol presence (Milgram: 65% compliance WITH authority, 20% without)
+**Evolution:** Constructed expertise (Bernays) → Eliminated competing authorities (Goebbels) → Influencer authority (Platforms) → Synthetic authority (AI)
+**Constraint Class:** 🔴 (information accuracy) — incompatible with fabricated credentials
+
+**Mechanism:**
+- Authority symbols increase message acceptance and persuasiveness
+- Credibility transfers from authority figure to endorsed claims
+- Works even when subject knows it's persuasion mechanism
+- Symbol substitutes for competence verification
+
+**Implementation requirement:** Credentials must be genuine; synthetic authority (deepfakes, AI-generated experts) violates Class 🔴
+
+---
+
+**6️⃣ SOCIAL PROOF & CONSENSUS SIGNALS**
+**Effectiveness:** 35-75% behavior change depending on visibility level
+**Evolution:** Coordinated messaging (Bernays) → Measured effects (Cialdini: "75% reuse towels" = 35% increased compliance) → Algorithmic amplification (Platforms)
+**Constraint Class:** 🔴 (information accuracy) — requires genuine consensus, not fabricated
+
+**Mechanism:**
+- Perceived consensus drives behavior more than actual consensus
+- Unrepresentative sample selection creates consensus illusion
+- "Most people are doing X" notifications amplify effect
+- Subject doesn't distinguish between consensus and representative sample
+
+**Implementation requirement:** Must use genuine data; fabricated signals violate Class 🔴
+
+---
+
+**7️⃣ SCARCITY & LOSS AVERSION SIGNALS**
+**Effectiveness:** 60%+ higher conversion vs. gain-framed equivalent
+**Evolution:** Manufactured scarcity (Bernays) → Existential scarcity framing (Goebbels) → Dynamic signals (Platforms)
+**Constraint Class:** 🔴 (information accuracy) — requires actual constraints, not fabricated
+
+**Mechanism:**
+- Loss aversion: "You might LOSE this" outweighs "You could GAIN this"
+- Real scarcity: actual inventory limits
+- Fake scarcity: "Only 3 left" that refreshes infinitely (violates Class 🔴)
+- Dynamic scarcity: real count shown to many (real data, multiplied exposure)
+
+**Implementation requirement:** Must reflect actual constraints; fabricated scarcity violates Class 🔴
+
+---
+
+#### TIER 3: MODERATE EFFECTIVENESS (30-70%)
+
+**8️⃣ COMMITMENT & CONSISTENCY MECHANICS**
+**Effectiveness:** 30-70% behavior persistence depending on commitment magnitude
+**Evolution:** Behavioral research → Design implementation → Algorithmic amplification
+**Constraint Class:** ✅ GREEN (no population targeting restriction)
+
+**Mechanism:**
+- Initial small commitment creates foundation for larger commitments
+- Written commitments stronger than verbal
+- Public commitments stronger than private
+- Creates internal consistency motivation
+
+---
+
+**9️⃣ GROUP IDENTITY & BELONGING MECHANISMS**
+**Effectiveness:** 30-60% loyalty and in-group preference effects
+**Evolution:** Group psychology → Community design → Algorithmic tribalization
+**Constraint Class:** 🟡 (population targeting) — cannot artificially manufacture outgroup conflict
+
+**Mechanism:**
+- Group assignment alone creates instant loyalty (Minimal Group Paradigm)
+- Shared identity creates behavioral alignment
+- Group assignment effects persist even when arbitrary is revealed
+
+---
+
+**🔟 RECIPROCITY PRINCIPLE**
+**Effectiveness:** 2x+ engagement with reciprocal benefits
+**Evolution:** Social norm research → Exchange design → Platform implementation
+**Constraint Class:** ✅ GREEN (no constraints)
+
+**Mechanism:**
+- Providing value creates reciprocal engagement
+- Unexpected benefits increase reciprocation likelihood
+- Transparent exchange with clear mutual benefit
+
+---
+
+#### TIER 4: MODERATE-LOW EFFECTIVENESS (15-50%)
+
+**1️⃣1️⃣ SEMANTIC FRAMING & NARRATIVE ARCHITECTURE**
+**Effectiveness:** 20-40% behavior change depending on frame selection
+**Evolution:** Symbolic psychology → Narrative deployment → Algorithmic selection
+**Constraint Class:** 🔴 (information accuracy) — facts must remain accurate regardless of frame
+
+**Mechanism:**
+- Identical facts produce different behaviors depending on narrative frame
+- Narrative structure improves information retention
+- Emotion + narrative together more persuasive than facts alone
+
+---
+
+**1️⃣2️⃣ MICRO-TARGETING & PERSONALIZATION**
+**Effectiveness:** 30-50% depending on targeting accuracy
+**Evolution:** Demographic segmentation → Psychological profiling → Individual vulnerability mapping
+**Constraint Class:** 🟡 (population targeting) — cannot target vulnerability in crisis populations
+
+**Mechanism:**
+- Different messages for different psychological profiles
+- Efficient personalization (correct message for individual motivation)
+- Can identify and target specific psychological vulnerabilities
+- Subject unaware of psychological profiling
+
+**Implementation requirement:** Cannot target problem gambling susceptibility in gambling contexts, compulsive use susceptibility in related contexts
+
+---
+
+**1️⃣3️⃣ REPETITION & COMPULSION LOOPS**
+**Effectiveness:** Cumulative (illusory truth effect after 3-5 exposures; false statements feel true)
+**Evolution:** Compulsion theory → Systematic campaigns → Algorithmic optimization
+**Constraint Class:** ✅ GREEN (no constraints) — provided information is accurate
+
+**Mechanism:**
+- Repeated exposure produces illusory truth effect (familiar = feels true)
+- False statements feel true after 3-5 exposures
+- Compulsion repetition locks psychological associations
+- Habit formation through repetition (neural pathway strengthening)
+- Works even when subject knows statement is false
+
+**Implementation requirement:** Requires accurate underlying information for deployment; false claims repeated become more persistent
+
+---
+
+**1️⃣4️⃣ ANCHORING EFFECT**
+**Effectiveness:** 40-60% pull toward first number mentioned
+**Evolution:** Decision science research → Applied strategy → Implementation
+**Constraint Class:** 🔴 (information accuracy) — anchors must be truthful
+
+**Mechanism:**
+- First number mentioned acts as gravity; subsequent negotiation pulled toward it
+- Works even when anchor is obviously random or irrelevant
+- Final agreement pulled 40-60% toward anchor
+
+---
+
+**1️⃣5️⃣ AVAILABILITY & SALIENCE**
+**Effectiveness:** 20-40% effect on frequency perception
+**Evolution:** Cognitive psychology → Media strategy → Algorithmic visibility
+**Constraint Class:** 🔴 (information accuracy) — frequency representation must match actual frequency or be clearly marked as curated
+
+**Mechanism:**
+- Visible/memorable content seems more common than actual frequency
+- Subject uses frequency heuristic (memorable = common)
+- Self-reinforcing effect
+
+---
+
+**1️⃣6️⃣ SIMILARITY & LIKING**
+**Effectiveness:** 20-35% persuasion increase based on perceived similarity
+**Evolution:** Social psychology → Community building → Relatable positioning
+**Constraint Class:** ✅ GREEN
+
+**Mechanism:**
+- Perceived similarity increases liking and persuasiveness
+- Shared characteristics create identification
+- Peer examples drive behavioral influence
+
+---
+
+**1️⃣7️⃣ PROBLEM-SOLUTION PAIRING**
+**Effectiveness:** 15-30% behavior change
+**Evolution:** Visual anxiety creation → Solution offering → Emotional arc
+**Constraint Class:** 🔴 (information accuracy) — problem must be real need, not artificially amplified
+
+**Mechanism:**
+- Present problem scenario followed by solution
+- Emotional disruption → relief arc creates memory binding
+- Shame → relief emotional pairing locks association
+
+---
+
+#### TIER 5: LOW EFFECTIVENESS (10-30%)
+
+**1️⃣8️⃣ SUNK COST ECONOMICS**
+**Effectiveness:** 10-30% impact on continued engagement
+**Evolution:** Decision theory → Design implementation
+**Constraint Class:** ✅ GREEN — provided costs are transparent
+
+**Mechanism:**
+- Prior investment influences continued use decisions
+- Ownership increases perceived value (endowment effect)
+- Subjects continue use to justify expenditure
+
+---
+
+**1️⃣9️⃣ MENTAL ACCOUNTING & VALUE PERCEPTION**
+**Effectiveness:** 10-25% valuation effect
+**Evolution:** Behavioral accounting theory → Design implementation
+**Constraint Class:** 🔴 (information accuracy) — total costs must be transparent
+
+**Mechanism:**
+- Context affects perceived value of identical resources
+- Same resource valued differently in different mental frames
+- Payment method influences spending patterns
+
+---
+
+### C.3 Effectiveness Stacking
+
+**For maximum effect, combine mechanisms in this order:**
+
+**Tier 1 Stack (200%+ effect):**
+1. Emotional fractionation cycles
+2. Identity lock-in through public commitment
+3. Algorithmic curation
+
+**Tier 2 Stack (50-90% effect):**
+4. Default choice architecture
+5. Authority symbols
+6. Social proof
+7. Scarcity signals
+
+**Tier 3-4 Stack (15-50% effect):**
+8. Semantic framing
+9. Reciprocity triggers
+10. Anchoring
+11. Personalization
+12. Repetition
+
+**Tier 5 Stack (10-30% effect):**
+13. Sunk cost psychology
+14. Mental accounting
+15. Tribe belonging
+
+### C.4 Specifications Preservation
 
 All numerical specifications are mandatory in analysis:
 - 200%+, 65-90%, 70-85%, 40-60%, 3-5, 90-110 BPM, 4 cycles/10 min, etc.
@@ -1891,6 +2373,10 @@ All evolution chains are necessary context:
 - Shows how techniques evolved across eras
 
 Removing or oversimplifying specifications destroys analytical credibility and usefulness as reference material.
+
+---
+
+**This is technical documentation. Constraint classes are operational classification only—not moral judgment.**
 
 ---
 

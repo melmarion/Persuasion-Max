@@ -1037,7 +1037,7 @@ Detects deployment of 20+ psychological principles and cognitive biases commonly
 
 ### 1. AUTHORITY
 
-**Definition:** Compliance driven by perceived authority, credentials, titles, or expert status.
+**Definition:** Compliance driven by perceived authority, credentials, titles, uniforms, or expert status.
 
 **How It Works:**
 - Authority signals influence decision-making processes

@@ -504,6 +504,414 @@ INTENSITY LEVEL: [LOW/MODERATE/HIGH/VERY HIGH/CRITICAL]
 
 ---
 
+### 1.8 Detailed Auditor Reference — Exact Language Patterns & Scoring (from Professional Auditor Manual)
+
+#### STIMULUS 1: PERSONAL — Detailed Detection Criteria
+
+Content that makes the audience feel separated from the masses, isolated from "normal" people, or part of an exclusive group.
+
+**EXCLUSION LANGUAGE - Flag these EXACT phrases (20 points each):**
+```
+"Not for everyone"           → EXACT MATCH = 20 points
+"If you know, you know"      → EXACT MATCH = 20 points
+"For those who recognize"    → EXACT MATCH = 20 points
+"For the 300 people who"     → EXACT MATCH = 20 points
+"You'll be illegible to the algorithm"  → EXACT MATCH = 20 points
+```
+
+**VARIATIONS ON EXCLUSION (15 points each):**
+- "For the initiated" / "For insiders" / "For those in the know"
+- "Not your typical..." / "Unlike mainstream..." / "Against the grain"
+- "We're not for you if..." [followed by common characteristic]
+- "Only [small number] people will understand this"
+- "If you recognize" = EXCLUSION VARIANT (15 points)
+
+**STATUS THREAT LANGUAGE - Flag these (30 points each):**
+```
+"You're wearing what the algorithm thinks you like"
+→ EXACT MATCH = 30 points (explicitly threatens status)
+
+"Your references are being sold back to you"
+→ EXACT MATCH = 30 points (threatens intellectual autonomy)
+
+"Fear of being basic"
+→ EXACT MATCH = 30 points (directly addresses status anxiety)
+
+"You're still too visible"
+→ EXACT MATCH = 30 points (threatens desire for obscurity)
+```
+
+**TRIBAL SAFETY SIGNALS - Flag these (25 points each):**
+```
+"We understand the references you understand"
+→ EXACT MATCH = 25 points (promises in-group recognition)
+
+"Silent mutual recognition"
+→ EXACT MATCH = 25 points (tribal bonding signal)
+
+"Pre-algorithmic feeling"
+→ EXACT MATCH = 25 points (promises authenticity)
+
+"Obscurity signals"
+→ EXACT MATCH = 25 points (promises hiddenness = safety)
+```
+
+**Red Flag Example (Score = 85):**
+```
+Text: "Not for everyone. If you know, you know. For those who
+       recognize the reference. You're wearing what the algorithm
+       thinks you like. We understand the references you understand.
+       Silent mutual recognition among our people."
+
+BREAKDOWN:
+- "Not for everyone" (20) + "If you know, you know" (20) = 40
+- "You're wearing what the algorithm thinks" (30) = 30
+- "We understand the references you understand" (25) = 25
+- "Silent mutual recognition" (25) = 25
+TOTAL = 120 (capped at 100) = HIGH PERSONAL STIMULUS
+```
+
+#### STIMULUS 2: CONTRASTABLE — Detailed Detection Criteria
+
+**PRIMARY BINARY PAIRS - Flag these (30 points each if BOTH sides mentioned):**
+```
+PAIR 1: Mass-produced ↔ Artifact
+- Points: 30 if both present, 15 if only one side
+
+PAIR 2: Algorithmic ↔ Authored
+- Points: 30 if both present, 15 if only one side
+
+PAIR 3: Visible ↔ Coded
+- Points: 30 if both present, 15 if only one side
+
+PAIR 4: Commercial ↔ Authentic
+- Points: 30 if both present, 15 if only one side
+```
+
+**Example Audit Case (Score = 65 = STRONG):**
+```
+Text: "While they buy logos, you buy language.
+       Not made by algorithm, made by intention.
+       Unlike mainstream brands, we create evidence.
+       Mass-produced or artifact? We make artifacts."
+
+BREAKDOWN:
+- "While they...you" (contrast marker, 10)
+- "logos" vs "language" (partial PAIR, 15)
+- "Not made by algorithm, made by intention" (PAIR 2, 30)
+- "Unlike mainstream" (contrast marker, 10)
+- Explicit artifact positioning (15)
+TOTAL = 80 → Capped at 75 = STRONG CONTRASTABLE STIMULUS
+```
+
+**Common Mistakes:**
+- Offering multiple options ("Choose from styles A, B, or C") = NOT binary
+- Using spectrum language = NOT binary
+
+#### STIMULUS 3: TANGIBLE — Detailed Detection Criteria
+
+**MATERIAL WEIGHT SPECIFICATIONS - Flag these (20 points each):**
+```
+"680gsm cotton"        → EXACT SPECIFICATION (20 points)
+"200gsm" [any fabric]  → EXACT WEIGHT (20 points)
+"Heavyweight"          → VAGUE - only 5 points
+"Premium quality"      → ABSTRACT - SUBTRACT 5 points
+"Heavy-weight twill"   → SOMEWHAT SPECIFIC (10 points)
+```
+
+**PRODUCTION LOCATION - Flag these (20 points each):**
+```
+"Made in Portugal"                           → SPECIFIC (20 points)
+"Manufactured in a closed Portuguese mill"   → HIGHLY SPECIFIC (25 points)
+"Made in a factory that closed in 2003"      → NARRATIVE DETAIL (25 points)
+"Made in Europe"    → VAGUE - only 10 points
+"Made locally"      → VAGUE - only 8 points
+```
+
+**DECAY/MATERIAL CHANGE - Flag these (20 points each):**
+```
+"Fades to gray in 6 months"           → SPECIFIC TIMELINE (20 points)
+"Shrinks 2% after first soak"         → SPECIFIC MEASUREMENT (20 points)
+"Dye bleeds onto skin in heat"        → SPECIFIC PHENOMENON (20 points)
+```
+
+**SENSORY DETAILS - Flag these (15 points each):**
+```
+"Smells like zinc and old rain"       → SPECIFIC SCENT (15 points)
+"Texture of aged linen"               → VAGUE TEXTURE (5 points)
+```
+
+**PRODUCTION ARTIFACTS/IMPERFECTIONS - Flag these (15 points each):**
+```
+"Uneven dye"                          → SPECIFIC IMPERFECTION (15 points)
+"Visible seams"                       → SPECIFIC ARTIFACT (15 points)
+"Not identical—each is unique"        → VARIATION DETAIL (12 points)
+```
+
+**SUBTRACT POINTS for ABSTRACT LANGUAGE (5 points deduction each):**
+```
+"Premium quality"      "Luxury"              "Elevated basics"
+"Timeless style"       "Perfection"          "Excellence"
+"Superior"             "World-class"         "Sophisticated"
+"Elegant"              "Refined"             "Exquisite"
+```
+
+| Score Range | Interpretation | Example |
+|-------------|---|---|
+| 0-30 | HIGHLY ABSTRACT | "Premium quality, timeless elegance" |
+| 31-60 | MIXED | Some specifics + some abstract |
+| 61-85 | CONCRETE | Mostly material details, few abstractions |
+| 86-100 | EXTREMELY TANGIBLE | Pure technical specs, no aspirational language |
+
+**Example Audit Case (Score = 72 = CONCRETE):**
+```
+Text: "680gsm cotton twill. Enzyme-washed. Shrinks 2% after first
+       soak. Dye bleeds onto skin in heat. Smells like zinc and
+       old rain. Made in a Portuguese mill that closed in 2003.
+       Fades to gray in 6 months. Each is unique."
+
+BREAKDOWN:
+680gsm (20) + enzyme-washed (5) + shrinks 2% (20) +
+dye bleeds (20) + smells like zinc (15) + Portuguese mill (20) +
+fades 6 months (20) + unique variations (12) = 132
+Capped at 100, subtract any abstract language = 72
+TOTAL = 72 (CONCRETE MESSAGING)
+```
+
+#### STIMULUS 4: MEMORABLE — Detailed Detection Criteria (U-Curve Structure)
+
+**OPENING STRENGTH - Flag these OPENING LINES (20 points each):**
+```
+"Archive 01"                          → System signal (20 points)
+"If you recognize the reference"      → Cryptic opening (20 points)
+"We don't have a story"               → Unexpected statement (20 points)
+```
+
+**CLOSING STRENGTH - Flag these FINAL STATEMENTS (20 points each):**
+```
+"Or you were already"                 → Unresolved (20 points)
+"The rest is up to you"               → Gap left for completion (20 points)
+"If you've found this, you were looking for it"  → Questioning close (20 points)
+```
+
+**MIDDLE WEAKNESS - Deduct points:**
+```
+"Also"              → Filler word (-5 points)
+"Moreover"          → Filler word (-5 points)
+"Choose from options"  → Removes focus (-8 points)
+"And we also..."    → Dilutes message (-10 points)
+```
+
+| Score Range | Interpretation | Example |
+|-------------|---|---|
+| 0-30 | NO STRUCTURAL EMPHASIS | Even information distribution |
+| 31-60 | SUBTLE EMPHASIS | Some beginning/end focus |
+| 61-80 | CLEAR EMPHASIS | Strong opening/closing, sparse middle |
+| 81-100 | STRONG EMPHASIS | High contrast opening/closing, minimal middle |
+
+**Example Audit Case (Score = 75 = CLEAR U-CURVE):**
+```
+Opening:
+"Archive 01: Unbranded. Non-returnable. Fades to gray in 6 months."
+(20 + 15 + 15 = 50 opening strength)
+
+Middle:
+"Also available in other colors. Additionally, we have sizing options.
+Choose from variations. And we also ship worldwide."
+(Multiple filler signals = -30 total)
+
+Closing:
+"Or you were already looking for this."
+(20 closing strength)
+
+TOTAL: 50 - 30 + 20 = 40... but U-curve structure itself adds 35
+for clear beginning/end emphasis = 75 TOTAL
+```
+
+#### AUTHORITY PRINCIPLE — Detailed Detection Criteria
+
+**COMPETENCE SIGNALS (15 points each):**
+```
+"Doctor" / "Dr."      → Title (15 points)
+"Ph.D"                → Advanced degree (15 points)
+"Professor"           → Academic title (15 points)
+"Licensed"            → License (15 points)
+"Harvard" / "Stanford" / "MIT"  → Prestigious institution (20 points)
+"30 years experience" → Experience quantified (20 points)
+```
+
+**CONFIDENCE MARKERS (10 points each):**
+```
+"Steady vocal tone"           → Vocal confidence (10 points)
+"Unhurried pace"              → Paced delivery (10 points)
+"120-150 words per minute"    → Optimal speaking speed (10 points)
+"Relaxed shoulders"           → Body language (10 points)
+"Slight forward lean"         → Engagement signal (10 points)
+```
+
+**THREAT REDUCTION (-20 points each):**
+```
+"Demanding language"          → Intimidation (-20)
+```
+
+**Formula Results:**
+- Result < 5 = ~20-30% influence
+- Result 5-15 = ~40-50% influence
+- Result 15-30 = ~65% influence likelihood
+
+**Example Audit Case (Score = 45 influence level = HIGH):**
+```
+Text: "Dr. John Smith, Harvard Medical School, 30 years experience.
+       Speaks with steady tone, precise language. No aggressive elements."
+
+CALCULATION:
+Competence: "Dr." (15) + "Harvard" (20) + "30 years" (20) = 55
+Confidence: "steady tone" (10) + "precise language" (10) = 20
+Threat: None = 0 (base = 1)
+Authority = (55 + 20) / 1 = 75
+```
+
+#### SCARCITY PRINCIPLE — Detailed Detection Criteria
+
+**COMPETITION LANGUAGE (20 points each):**
+```
+"Interest is high"            → Demand signal (20)
+"Don't miss out"              → FOMO (20)
+"Popular with [group]"        → Desirability (15)
+```
+
+**SCARCITY THROUGH FINALITY (30 points each - strongest scarcity mechanism):**
+```
+"We'll burn the unsold copies"        → Finality statement (30)
+"Will be discontinued forever"        → Permanent removal (30)
+"Last chance forever"                 → Ultimate deadline (30)
+```
+
+**URGENCY LANGUAGE (15 points each):**
+```
+"Don't delay"     "Time-sensitive"  "Limited time offer"
+```
+
+| Score Range | Interpretation | Mechanism |
+|-------------|---|---|
+| 0-20 | MINIMAL | No scarcity signal |
+| 21-40 | MILD | Soft limitations mentioned |
+| 41-60 | MODERATE | Clear time limits, demand signals |
+| 61-80 | STRONG | Multiple scarcity signals, urgency emphasis |
+| 81-100 | VERY HIGH | Finality language + competition + time pressure |
+
+**Example Audit Case (Score = 75 = STRONG):**
+```
+Text: "Limited edition. Only 50 pieces worldwide. Quickly selling.
+       People are buying. Don't miss out. Last chance—we're burning
+       the remaining unsold pieces next week."
+
+BREAKDOWN:
+"Limited edition" (15) + "Only 50" (15) + "Quickly selling" (20) +
+"People are buying" (20) + "Don't miss out" (20) +
+"burning unsold pieces" (30) = 120
+```
+
+#### DECISION FATIGUE — Detailed Detection Criteria
+
+**DECISION MULTIPLICATION (15 points each):**
+```
+"Choose from"         → Forces selection (15)
+"Select which"        → Decision required (15)
+"Pick your"           → Selection needed (15)
+"Decide between"      → Choice needed (15)
+"Multiple options"    → Multiple decisions (15)
+"Configure"           → Setup decisions (20)
+"Various choices"     → Multiple decisions (15)
+```
+
+**FATIGUE POSITIONING - Big ask at end (25 points):**
+```
+"Final decision"      → Strategic timing (25)
+"Last step"           → Final phase (25)
+"One more thing"      → After multiple asks (25)
+"Just one more"       → Leverages fatigue (25)
+"Final ask"           → End position (25)
+"Closing decision"    → Final request (25)
+```
+
+**Research Baseline:**
+- After 10-15 decisions: analytical capability drops 40%
+- Compliance increases 35%
+
+**Example Audit Case (Score = 65 = HIGH INTENSITY):**
+```
+1. "Choose your size" (Decision 1 = 15 points)
+2. "Select color" (Decision 2 = 15 points)
+3. "Pick shipping method" (Decision 3 = 15 points)
+4. "Choose gift wrap" (Decision 4 = 15 points)
+[At this point: 60 points worth of depleted willpower]
+
+Then:
+"Just one more thing—upgrade to our premium membership"
+(Positioned at end = 25 points)
+```
+
+#### ANCHORING EFFECT — Detailed Detection Criteria
+
+**HIGH ANCHORS (40 points each if followed by concessions):**
+```
+"Normally $500" [then "now $45"]       → Extreme anchor (40)
+"Enterprise clients pay $2M annually"  → High anchor (40)
+```
+
+**ANCHOR FOLLOWED BY CONCESSION (adds 20 points):**
+```
+"$500 enterprise package... actually, for your needs: $45"
+= 40 (high anchor) + 20 (concession adjustment) = 60
+```
+
+**Example Audit Case (Score = 60 = STRONG ANCHORING):**
+```
+1. "Enterprise clients invest $500K-$2M annually"
+   (Extreme anchor, first number = 40 points)
+
+3. "For your specific situation: $45K annual investment"
+   (Adjusted down, but still anchored to the $500K-$2M range)
+
+High anchor: $500K-$2M
+Concession framing: "actually... for you"
+Final offer: $45K (which feels reasonable compared to $500K)
+
+If anchored to $500K: $45K = 9% of anchor (feels like huge discount)
+If evaluated independently: $45K = significant investment
+
+ANCHORING SCORE = 60 (STRONG)
+```
+
+#### INOCULATION/OBJECTION HANDLING — Detailed Detection Criteria
+
+**PART 2: VALIDATION - Validate the objection (10 points):**
+```
+"That's a fair point"                  → Validation (10)
+"That's a reasonable concern"          → Reasonableness (10)
+```
+
+**PART 3: REFUTATION (25 points):**
+```
+"However, the reality is..."           → Contradiction (25)
+"The key difference is..."             → Distinction (25)
+"What that overlooks..."               → Gap identification (25)
+"Actually, here's the truth..."        → Truth claim (25)
+```
+
+**Example Audit Case (Score = 55 base):**
+```
+Text: "You might be thinking this is too expensive. That's a fair
+       concern—premium costs more. But here's what that overlooks:
+       the materials cost 3x more, production takes twice as long,
+       and it lasts 5x longer than alternatives."
+
+TOTAL = 55 points base
+```
+
+---
+
 ## PART 2: MACHINE-READABLE DETECTION SYSTEM — Regex, Algorithms & JSON Output {#part-2}
 
 ### 2.1 Complete Regex Pattern Library
@@ -1363,6 +1771,500 @@ def categorize_risk(audit_result: AuditResult) -> Dict:
             'action': 'NO_ACTION_NEEDED',
             'escalation': False
         }
+```
+
+### 2.5 Quantifiable Scoring Rules (from Machine-Readable Detection System)
+
+#### Stimulus 1: Personal — Quantifiable Rules
+
+**Overview:** This system converts ALL tactics into machine-readable formats:
+- Numerical scoring thresholds
+- Boolean logic operators
+- Algorithmic decision trees
+
+**Exclusion Language Detection (Regex):**
+```regex
+(?i)(not\s+for\s+everyone|if\s+you\s+know\s+,?\s+you\s+know|for\s+those\s+who\s+recognize|for\s+the\s+\d+\s+people|you'll\s+be\s+illegible)
+```
+
+**Status Threat Scoring:**
+```
+"culturally irrelevant" → 30 points
+points = (number_of_exact_matches) × 30
+MAX: 100 points (capped)
+```
+
+**Machine Decision:**
+```
+IF points > 60 THEN high_status_threat = TRUE
+IF points > 90 THEN extreme_status_threat = TRUE
+```
+
+**Tribal Safety Signals:**
+```
+"tribal markers" → 25 points
+"tribal safety" → 25 points
+"pre-algorithmic" → 25 points
+"post-commercial" → 25 points
+
+FOR EACH exact_substring_found:
+  points += 25
+```
+
+**Composite Calculation:**
+```
+PERSONAL_STIMULUS_SCORE = MIN([
+  (exclusion_language_score / 60) × 40,
+  (status_threat_score / 90) × 35,
+  (tribal_safety_score / 175) × 25
+], 100)
+
+intensity:
+  = 21-40: "WEAK"
+  = 41-60: "MODERATE"
+  = 61-80: "STRONG"
+  = 81-100: "EXTREME"
+```
+
+#### Stimulus 2: Contrastable — Quantifiable Rules
+
+**Detection Algorithm:**
+```
+TOTAL = min(binary_score, 100)
+
+contrast_markers_count = REGEX_MATCH_COUNT(pattern)
+marker_score = contrast_markers_count × 10
+MAX = 30 points
+```
+
+**Composite Calculation:**
+```
+CONTRASTABLE_SCORE = MIN([
+  (pairs_count / 4) × 50,
+  (marker_score / 30) × 30,
+  100 - spectrum_penalty
+], 100)
+```
+
+#### Stimulus 3: Tangible — Quantifiable Rules
+
+**Weight Specifications:**
+```
+- Match found = 20 points
+FOR EACH match:
+  tangible_score += 20
+```
+
+**Production Location:**
+```
+IF contains_city_name: +20
+IF contains_year_or_date: +5
+ELSE: 10
+```
+
+**Material Decay:**
+```
+- With percentage = 20 points
+FOR EACH match with timeframe/percentage:
+  tangible_score += 20
+```
+
+**Production Artifacts:**
+```
+- Each match = 15 points
+```
+
+**Abstract Language Penalty:**
+```
+"impeccable", "top-tier", "best in class"
+abstract_penalty = abstract_count × 5
+```
+
+**Composite Calculation:**
+```
+TANGIBLE_SCORE = MIN([
+  (weight_score / 20) × 20 +
+  (location_score / 25) × 20 +
+  (decay_score / 20) × 20 +
+  (sensory_score / 15) × 20 +
+  (artifacts_score / 30) × 20 -
+  (abstract_penalty)
+], 100)
+```
+
+#### Stimulus 4: Memorable — Quantifiable Rules
+
+**Opening Strength:**
+```
+opening_score += 20
+
+IF length(opening_section) < 30_chars:
+  opening_score += 10 (brevity = memorability)
+```
+
+**Closing Strength:**
+```regex
+(or\s+you\s+were\s+already|you\s+decide|the\s+rest\s+is\s+up\s+to\s+you|never\s+resolve|if\s+you've?\s+found|question\s+mark)
+```
+```
+closing_score += 20
+IF closing_line_ends_with_question_mark:
+  closing_score += 10
+```
+
+**Composite Calculation:**
+```
+MEMORABLE_SCORE = MIN([
+  (opening_score / 40) × 40 +
+  (closing_score / 40) × 40 +
+  MAX(0, 20 - middle_weakness)
+], 100)
+
+IF opening_score > 0 AND closing_score > 0 AND middle_weakness > 0:
+  u_curve_detected = TRUE
+  MEMORABLE_SCORE += 20
+```
+
+#### Stimulus 5: Visual — Quantifiable Rules
+
+**Anti-Aesthetic Terms (15 points each):**
+```
+"grainy", "blur", "bad lighting", "accidental crop", "mistakes",
+"CCTV", "found footage", "webcam quality"
+anti_aesthetic_score = anti_aesthetic_count × 15
+```
+
+**No-Models/Styling Terms (15 points each):**
+```
+"no models", "on hangers", "on the floor", "strangers in background",
+"not styled", "no styling"
+no_styling_score = no_styling_count × 15
+```
+
+**Mood Board Terms (10 points each):**
+```
+"Brutalist", "90s rave", "film stills", "archive", "unlabeled"
+mood_board_score = mood_board_count × 10
+```
+
+**Polished Penalty (-10 points each):**
+```
+polished_penalty = polished_count × 10
+```
+
+**Composite Calculation:**
+```
+VISUAL_SCORE = MIN([
+  (anti_aesthetic_score / 60) × 35 +
+  (no_styling_score / 30) × 30 +
+  (mood_board_score / 40) × 25 -
+  (polished_penalty)
+], 100)
+```
+
+#### Stimulus 6: Emotional — Quantifiable Rules
+
+**Pain Triggers:**
+```
+"inauthenticity": ["fake", "commercial", "manufactured", "mass-produced", "cookie cutter"]
+FOR EACH keyword match:
+  pain_score += 15
+```
+
+**Relief Signals:**
+```
+FOR EACH keyword match:
+  relief_score += 15
+```
+
+**Arc Detection:**
+```
+IF pain_score > 0 AND relief_score > 0:
+  arc_bonus = 25
+```
+
+**Composite Calculation:**
+```
+EMOTIONAL_SCORE = MIN([
+  ((pain_score + relief_score) / 2 / 100) × 100 +
+  arc_bonus
+], 100)
+```
+
+#### Authority Principle — Quantifiable Rules
+
+**Credentials:**
+```
+credentials = [
+  "doctor", "dr.", "phd", "expert", "professor",
+  "researcher", "scientist", "certified", "licensed",
+  "30 years", "industry leader", "award-winning"
+]
+
+competence_total = MIN(competence_score, 100)
+```
+
+**Confidence (Regex):**
+```regex
+(steady\s+vocal|unhurried\s+pace|120.*150\s+words|70\%\s+eye\s+contact|relaxed\s+shoulders|slight\s+forward\s+lean|precise\s+language|stillness)
+```
+
+**Threat Reduction:**
+```
+threat_score = threat_count × 20
+```
+
+**Authority Formula:**
+```
+compliance_probability = {
+  < 5: "Low (20-30%)",
+  5-15: "Moderate (40-50%)",
+  15-30: "High (65%+)",
+  > 30: "Extreme (65-100%)"
+}
+```
+
+#### Scarcity Principle — Quantifiable Rules
+
+**Competition Language (Regex):**
+```regex
+(many\s+want|quickly\s+selling|people.*buying|interest\s+is\s+high|others.*getting|don't\s+miss\s+out)
+```
+
+**Scarcity Score Calculation:**
+```
+limitation_score = REGEX_MATCH_COUNT(limitation_pattern) × 15
+urgency_score = REGEX_MATCH_COUNT(urgency_pattern) × 15
+```
+
+#### Composite Scoring Algorithm
+
+**Risk Categorization:**
+```
+0-25: "LOW (Ethical messaging)",
+26-50: "MODERATE (Some targeting)",
+51-75: "HIGH (Sophisticated influence strategy)",
+76-100: "EXTREME (Optimized tactics)"
+```
+
+### 2.6 JSON Output Format (Detailed)
+
+```json
+{
+  "audit_id": "unique_identifier",
+  "timestamp": "ISO_8601_timestamp",
+  "content_hash": "SHA256_hash_of_input",
+  "tactical_stimulus": {
+    "PERSONAL": {
+      "score": 65,
+      "intensity": "STRONG"
+    },
+    "CONTRASTABLE": {
+      "score": 48,
+      "intensity": "MODERATE"
+    },
+    "TANGIBLE": {
+      "score": 72,
+      "intensity": "CONCRETE",
+      "abstract_penalty": 15
+    },
+    "MEMORABLE": {
+      "score": 61,
+      "opening_strength": 30,
+      "closing_strength": 25,
+      "u_curve_detected": true
+    },
+    "VISUAL": {
+      "score": 58,
+      "polished_penalty": 10
+    },
+    "EMOTIONAL": {
+      "score": 74,
+      "pain_score": 45,
+      "relief_score": 45,
+      "arc_complete": true
+    }
+  },
+  "psychological_principles": {
+    "AUTHORITY": {
+      "score": 52,
+      "formula_result": 13,
+      "competence": 40,
+      "confidence": 20,
+      "compliance_probability": "High (65%+)"
+    },
+    "SOCIAL_PROOF": {
+      "score": 41,
+      "consensus_signals": 2,
+      "similarity_signals": 1
+    },
+    "RECIPROCITY": {
+      "score": 35,
+      "give_first_signals": 2,
+      "obligation_language": 1
+    },
+    "COMMITMENT": {
+      "score": 28,
+      "small_commitment_present": true,
+      "escalation_present": false
+    },
+    "SCARCITY": {
+      "score": 65,
+      "strongest_mechanism": "competition"
+    }
+  },
+  "advanced_frameworks": {
+    "COGNITIVE_LOAD": {
+      "score": 38
+    },
+    "DECISION_FATIGUE": {
+      "score": 42,
+      "decision_multiplications": 3,
+      "fatigue_positioning": true
+    },
+    "INOCULATION": {
+      "score": 55,
+      "complete_inoculation_cycles": 2
+    }
+  },
+  "composite_scores": {
+    "tactical_stimulus_average": 63,
+    "psychological_principles_average": 44,
+    "advanced_frameworks_average": 45,
+    "risk_level": "HIGH"
+  },
+  "machine_flagging_summary": {
+    "total_matches_found": 47,
+    "high_severity_flags": 5,
+    "low_severity_flags": 34
+  }
+}
+```
+
+### 2.7 Python Implementation (MachineReadableDetectionEngine)
+
+```python
+import re
+import json
+from typing import Dict, List, Tuple
+
+class MachineReadableDetectionEngine:
+    """Quantifiable influence strategy detection without human interpretation"""
+
+    PERSONAL_EXCLUSION_POINTS = 20
+    PERSONAL_STATUS_THREAT_POINTS = 30
+    PERSONAL_TRIBAL_SAFETY_POINTS = 25
+
+    def __init__(self):
+        self.results = {}
+
+    def detect_personal_stimulus(self, text: str) -> Dict:
+        score = 0
+        matches = []
+        exclusion_pattern = r'(?i)(not\s+for\s+everyone|if\s+you\s+know\s+,?\s+you\s+know|for\s+those\s+who)'
+        for match in re.finditer(exclusion_pattern, text):
+            score += self.PERSONAL_EXCLUSION_POINTS
+            matches.append({
+                'keyword': match.group(),
+                'points': self.PERSONAL_EXCLUSION_POINTS,
+                'position': match.start()
+            })
+
+        status_threats = ["being basic", "culturally irrelevant", "algorithmically predictable"]
+        for threat in status_threats:
+            if threat.lower() in text.lower():
+                score += self.PERSONAL_STATUS_THREAT_POINTS
+                matches.append({'keyword': threat, 'points': self.PERSONAL_STATUS_THREAT_POINTS})
+
+        final_score = min(score, 100)
+        intensity = 'NONE' if final_score == 0 else \
+                   'WEAK' if final_score <= 40 else \
+                   'MODERATE' if final_score <= 60 else \
+                   'STRONG' if final_score <= 80 else \
+                   'EXTREME'
+        return {'stimulus': 'PERSONAL', 'score': final_score, 'intensity': intensity}
+
+    def detect_scarcity_principle(self, text: str) -> Dict:
+        score = 0
+        components = {}
+        limitation_pattern = r'(?i)(limited\s+edition|only\s+\d+\s+left|scarce|never\s+again)'
+        limitation_matches = len(re.findall(limitation_pattern, text))
+        components['limitation'] = {'matches': limitation_matches, 'points': limitation_matches * 15}
+        score += limitation_matches * 15
+
+        competition_pattern = r'(?i)(many\s+want|quickly\s+selling|others.*getting|don\'t\s+miss\s+out)'
+        competition_matches = len(re.findall(competition_pattern, text))
+        components['competition'] = {'matches': competition_matches, 'points': competition_matches * 20}
+        score += competition_matches * 20
+
+        destruction_pattern = r'(?i)(burn.*unsold|destroyed\s+forever|never\s+be\s+made|last\s+chance\s+forever)'
+        destruction_matches = len(re.findall(destruction_pattern, text))
+        components['destruction'] = {'matches': destruction_matches, 'points': destruction_matches * 30}
+        score += destruction_matches * 30
+
+        return {
+            'principle': 'SCARCITY',
+            'score': min(score, 100),
+            'components': components,
+            'strongest_mechanism': max(components, key=lambda k: components[k]['points'])
+        }
+
+    def audit(self, content: str) -> Dict:
+        personal = self.detect_personal_stimulus(content)
+        scarcity = self.detect_scarcity_principle(content)
+        return {'personal_stimulus': personal, 'scarcity_principle': scarcity}
+```
+
+### 2.8 Decision Trees (Pseudocode Boolean Logic)
+
+```
+IF SCARCITY_SCORE > 70 AND DESTRUCTION_SIGNALS > 0:
+  THEN immediate_red_flag = TRUE
+
+IF AUTHORITY_SCORE > 50 AND THREAT_SCORE == 0:
+  THEN immediate_red_flag = TRUE
+
+IF PERSONAL_SCORE > 50:
+  vulnerable_audience = "Identity-conscious"
+
+IF CONTRASTABLE_SCORE > 50:
+  vulnerable_audience += "Ideologically-driven"
+
+IF SCARCITY_SCORE > 60 AND COMPETITION_SIGNALS > 2:
+  vulnerable_audience += "Status-conscious"
+
+IF COMPOSITE_SCORE <= 25: classification = "ETHICAL"
+ELSE IF COMPOSITE_SCORE <= 50: classification = "MODERATE"
+ELSE IF COMPOSITE_SCORE <= 75: classification = "HIGH"
+ELSE: classification = "EXTREME"
+```
+
+### 2.9 Threshold Lookup Tables
+
+```json
+{
+  "thresholds": {
+    "STIMULUS_INTENSITY": {
+      "NONE": [0, 20],
+      "WEAK": [21, 40],
+      "MODERATE": [41, 60],
+      "STRONG": [61, 80],
+      "EXTREME": [81, 100]
+    },
+    "PRINCIPLE_INTENSITY": {
+      "NOT_PRESENT": [0, 25],
+      "WEAK": [26, 50],
+      "MODERATE": [51, 75],
+      "STRONG": [76, 100]
+    },
+    "COMPLIANCE_PROBABILITY": {
+      "LOW": [0, 5],
+      "MODERATE": [6, 15],
+      "HIGH": [16, 30],
+      "EXTREME": [31, 100]
+    }
+  }
+}
 ```
 
 ---
@@ -2580,6 +3482,1034 @@ class ComprehensivePersuasionAudit:
 
         return report
 ```
+
+### 3.9 Source Reference: Enhanced Detection Research (Original Implementations)
+
+The following contains the original source implementations with alternate marker lists,
+threshold structures, and scoring approaches from the Enhanced Detection Research compilation.
+
+#### 3.9.1 Platform Research (Detailed Findings)
+
+**Key Finding 1: Algorithmic Amplification Confirmed**
+A study published in **Science** conducted a 10-day field experiment with 1,256 participants on X during a US presidential campaign:
+- Decreasing or increasing exposure to content expressing antidemocratic attitudes and partisan animosity shifted out-party partisan animosity by **more than 2 points on a 100-point feeling thermometer**
+- This provides **causal evidence** that algorithmic content exposure directly alters emotional states
+
+**Key Finding 2: Engagement Algorithms Amplify Emotional Content**
+Research published in **PNAS Nexus** found:
+- Twitter's engagement-based ranking algorithm amplifies **emotionally charged, out-group hostile content**
+- Users report this content makes them feel **worse** about their political out-group
+- Users do **not prefer** the political tweets selected by the algorithm
+- Engagement-based algorithms underperform at satisfying users' stated preferences
+
+**Key Finding 3: Facebook's Emotional Weighting System**
+Whistleblower Frances Haugen revealed (2021):
+- Facebook's newsfeed algorithm favored material that made people emotional (sad/angry) over material that elicited a "like" **by a factor of 5**
+- Angry emoji reactions were weighted **5x higher than likes** (2018)
+- This was gradually reduced to **weight 0 by 2020** after internal complaints
+- Anger-evoking material disproportionately includes misinformation and high-intensity content
+
+#### 3.9.2 Original Fractionation Detector (Alternate Marker Lists)
+
+```python
+class EnhancedFractionationDetector:
+    """
+    Enhanced fractionation detection.
+    Incorporates current research findings and platform analysis.
+    """
+
+    # TikTok engagement scoring (reverse-engineered)
+    ENGAGEMENT_WEIGHTS = {
+        "rewatch_loop": 10,      # Highest value - indicates emotional capture
+        "complete_watch": 8,     # High engagement
+        "share": 6,              # Distribution behavior
+        "comment": 4,            # Active engagement
+        "like": 2,               # Low value signal
+        "quick_scroll": -1       # Negative signal
+    }
+
+    # Emotional content markers (expanded from academic research)
+    ANGER_OUTRAGE_MARKERS = [
+        # Political/tribal outrage
+        "outrageous", "unbelievable", "disgusting", "shameful",
+        "corrupt", "hypocrite", "traitor", "enemy", "threat",
+        "attack", "destroy", "fight", "war", "battle",
+        # Moral outrage
+        "should be ashamed", "how dare", "unacceptable",
+        "this is wrong", "can't believe", "absolutely unacceptable",
+        # Threat framing
+        "coming for", "want to take", "trying to destroy",
+        "end of", "death of", "threat to", "danger"
+    ]
+
+    JOY_RELIEF_MARKERS = [
+        # Wholesome content
+        "heartwarming", "restored faith", "beautiful", "amazing",
+        "incredible", "touching", "inspiring", "wholesome",
+        # Social bonding
+        "community", "together", "support", "family", "friends",
+        "belong", "one of us", "our people", "tribe",
+        # Relief/resolution
+        "finally", "justice", "karma", "deserved", "won",
+        "victory", "breakthrough", "solved", "fixed"
+    ]
+
+    COMMERCIAL_RELIEF_MARKERS = [
+        # Product as solution
+        "you deserve", "treat yourself", "self-care",
+        "invest in yourself", "you're worth it",
+        # Limited offer urgency
+        "limited time", "exclusive", "special offer",
+        "don't miss", "act now", "while supplies last",
+        # Lifestyle aspiration
+        "upgrade your life", "transform", "breakthrough",
+        "secret", "what they don't want you to know"
+    ]
+
+    def detect_emotional_sequence(self, content_list: List[Dict]) -> Dict:
+        """
+        Analyze a sequence of content items for fractionation patterns.
+
+        Args:
+            content_list: List of dicts with 'text', 'type', 'timestamp', 'engagement'
+
+        Returns:
+            Analysis with fractionation score and detected patterns
+        """
+
+        emotional_scores = []
+        sequence_patterns = []
+
+        for i, content in enumerate(content_list):
+            text = content.get('text', '').lower()
+
+            # Calculate emotional valence
+            anger_score = sum(1 for m in self.ANGER_OUTRAGE_MARKERS if m in text)
+            joy_score = sum(1 for m in self.JOY_RELIEF_MARKERS if m in text)
+            commercial_score = sum(1 for m in self.COMMERCIAL_RELIEF_MARKERS if m in text)
+
+            # Determine emotional state
+            if anger_score > joy_score and anger_score > 0:
+                emotional_scores.append(('anger', anger_score))
+            elif joy_score > anger_score and joy_score > 0:
+                emotional_scores.append(('joy', joy_score))
+            elif commercial_score > 0:
+                emotional_scores.append(('commercial_relief', commercial_score))
+            else:
+                emotional_scores.append(('neutral', 0))
+
+        # Detect A-J-A-R (Anger-Joy-Anger-Relief) sequences
+        ajar_count = self._count_ajar_sequences(emotional_scores)
+
+        # Calculate oscillation frequency
+        oscillation_rate = self._calculate_oscillation(emotional_scores)
+
+        # Determine fractionation intensity
+        fractionation_score = min(
+            (ajar_count * 25) + (oscillation_rate * 50),
+            100
+        )
+
+        return {
+            "fractionation_score": fractionation_score,
+            "ajar_sequences_detected": ajar_count,
+            "oscillation_rate": oscillation_rate,
+            "emotional_sequence": emotional_scores,
+            "intensity": self._categorize_intensity(fractionation_score),
+            "regulatory_relevance": "EU AI Act classifies certain emotional influence techniques as high-risk/prohibited"
+        }
+
+    def _count_ajar_sequences(self, scores: List[Tuple]) -> int:
+        """Count Anger-Joy-Anger-Relief patterns"""
+        count = 0
+        for i in range(len(scores) - 3):
+            if (scores[i][0] == 'anger' and
+                scores[i+1][0] == 'joy' and
+                scores[i+2][0] == 'anger' and
+                scores[i+3][0] in ['joy', 'commercial_relief']):
+                count += 1
+        return count
+
+    def _calculate_oscillation(self, scores: List[Tuple]) -> float:
+        """Calculate emotional oscillation rate (switches per content item)"""
+        switches = 0
+        for i in range(1, len(scores)):
+            if scores[i][0] != scores[i-1][0] and scores[i][0] != 'neutral':
+                switches += 1
+        return switches / max(len(scores), 1)
+
+    def _categorize_intensity(self, score: float) -> str:
+        if score < 25:
+            return "MINIMAL - Normal content variation"
+        elif score < 50:
+            return "MODERATE - Some emotional cycling present"
+        elif score < 75:
+            return "HIGH - Active fractionation patterns detected"
+        else:
+            return "EXTREME - Systematic emotional sequencing"
+```
+
+#### 3.9.3 Original Physiological Detector (Alternate Threshold Structure)
+
+```python
+class PhysiologicalFractionationDetector:
+    """
+    Physiological markers for fractionation detection.
+    Based on neuromarketing and consumer neuroscience research.
+    """
+
+    # Baseline thresholds from research
+    BLINK_RATE_THRESHOLDS = {
+        "normal": (15, 20),           # blinks per minute
+        "anger_arousal": (30, 45),    # elevated during threat content
+        "focused_engagement": (0, 10),    # reduced during relief/purchase state
+    }
+
+    SKIN_CONDUCTANCE_THRESHOLDS = {
+        "baseline": (0, 1),           # microsiemens
+        "anger_arousal": (2, 5),      # elevated during emotional content
+        "relief_drop": (-2, -1),      # rapid decrease during relief phase
+    }
+
+    HEART_RATE_VARIABILITY = {
+        "normal": (50, 100),          # ms between beats
+        "stress_reduced": (20, 40),   # low variability = stress/anger
+        "relief_spike": (60, 80),     # recovery during relief
+    }
+
+    PUPIL_DILATION_STATES = {
+        "baseline": 1.0,              # normalized
+        "anger_content": 1.15,        # 15% dilation
+        "joy_content": 0.95,          # slight constriction
+        "ad_focus": 1.20,             # maximum dilation = low critical thinking
+    }
+
+    def analyze_biometric_sequence(self, measurements: List[Dict]) -> Dict:
+        """
+        Analyze sequence of biometric measurements for fractionation indicators.
+
+        Expected input format:
+        {
+            'timestamp': float,
+            'blink_rate': int,          # blinks per minute
+            'skin_conductance': float,  # microsiemens
+            'heart_rate': int,          # bpm
+            'hrv': float,               # heart rate variability ms
+            'pupil_dilation': float,    # normalized to baseline
+            'content_type': str         # 'anger', 'joy', 'ad', 'neutral'
+        }
+        """
+
+        fractionation_indicators = []
+
+        for i in range(len(measurements) - 3):
+            sequence = measurements[i:i+4]
+
+            if self._detect_anger_phase(sequence[0]):
+                if self._detect_joy_recovery(sequence[1]):
+                    if self._detect_elevated_anger(sequence[2], sequence[0]):
+                        if self._detect_reduced_vigilance_state(sequence[3]):
+                            fractionation_indicators.append({
+                                "start_index": i,
+                                "pattern": "COMPLETE_FRACTIONATION_CYCLE",
+                                "confidence": "HIGH",
+                                "indicators": {
+                                    "anger_1": self._summarize_state(sequence[0]),
+                                    "joy": self._summarize_state(sequence[1]),
+                                    "anger_2": self._summarize_state(sequence[2]),
+                                    "relief": self._summarize_state(sequence[3])
+                                }
+                            })
+
+        return {
+            "fractionation_cycles_detected": len(fractionation_indicators),
+            "detailed_patterns": fractionation_indicators,
+            "physiological_signature": "Prefrontal cortex shows 40-60% reduced activity during relief phase",
+            "methodology": "Neuroimaging + physiological measure comparison"
+        }
+
+    def _detect_anger_phase(self, m: Dict) -> bool:
+        return (m.get('blink_rate', 0) > 30 and
+                m.get('skin_conductance', 0) > 2 and
+                m.get('hrv', 100) < 40)
+
+    def _detect_joy_recovery(self, m: Dict) -> bool:
+        return (15 <= m.get('blink_rate', 0) <= 25 and
+                m.get('hrv', 0) > 50)
+
+    def _detect_elevated_anger(self, m2: Dict, m1: Dict) -> bool:
+        return (m2.get('blink_rate', 0) > m1.get('blink_rate', 0) and
+                m2.get('skin_conductance', 0) > m1.get('skin_conductance', 0))
+
+    def _detect_reduced_vigilance_state(self, m: Dict) -> bool:
+        return (m.get('blink_rate', 100) < 10 and
+                m.get('pupil_dilation', 1) > 1.15)
+
+    def _summarize_state(self, m: Dict) -> Dict:
+        return {
+            "blink_rate": m.get('blink_rate'),
+            "skin_conductance": m.get('skin_conductance'),
+            "hrv": m.get('hrv'),
+            "pupil_dilation": m.get('pupil_dilation'),
+            "content_type": m.get('content_type')
+        }
+```
+
+#### 3.9.4 Original Interface Design Detector (Alternate Regex Patterns)
+
+```python
+class EnhancedInterfaceDesignDetector:
+    """
+    Enhanced interface design detection based on FTC/ICPEN findings.
+    Covers all major interface design categories with regulatory references.
+    """
+
+    # === CONFIRMSHAMING ===
+
+    CONFIRMSHAMING_PATTERNS = {
+        "self_deprecating_decline": [
+            r"no,?\s*i\s*(don'?t|do not)\s*(want|like|need|care)",
+            r"no\s*thanks?,?\s*i('?m|am)\s*(not|already)",
+            r"i('?d|would)\s*rather\s*(not|stay|continue)",
+            r"no,?\s*i\s*prefer\s*to\s*(pay|miss|lose)",
+            r"i\s*hate\s*(saving|deals|discounts|fun)",
+        ],
+        "guilt_inducing_language": [
+            "are you sure you want to miss",
+            "you'll regret",
+            "don't make this mistake",
+            "people who care about",
+            "smart people choose",
+        ],
+        "extreme_examples_documented": [
+            # MyMedic (2018) - documented case
+            "no, i don't want to stay alive",
+            "no, i prefer to bleed to death",
+            # Common newsletter patterns
+            "no, i don't want to save money",
+            "no, i hate good deals",
+        ]
+    }
+
+    # === ROACH MOTEL (Hard to Cancel) ===
+
+    ROACH_MOTEL_INDICATORS = {
+        "signup_vs_cancel_asymmetry": {
+            "easy_signup_phrases": [
+                "sign up in seconds", "one-click", "instant access",
+                "start free trial", "get started now", "join free"
+            ],
+            "difficult_cancel_phrases": [
+                "call to cancel", "contact customer service",
+                "mail cancellation request", "visit in person",
+                "speak to retention specialist", "wait for callback"
+            ]
+        },
+        "cancel_obstruction_tactics": [
+            "are you sure?",           # Confirmation loop
+            "before you go",           # Retention intercept
+            "special offer to stay",   # Bribe attempt
+            "we'll miss you",          # Emotional appeal
+            "type 'CANCEL' to confirm", # Friction addition
+        ],
+        "documented_cases": {
+            "Amazon Prime": "FTC lawsuit - 'labyrinth-like process'",
+            "New York Times": "8+ minutes conversation required to cancel",
+            "HelloFresh": "Documented roach motel pattern user"
+        }
+    }
+
+    # === FALSE URGENCY/SCARCITY ===
+
+    FAKE_URGENCY_INDICATORS = {
+        "countdown_patterns": [
+            r"only\s*\d+\s*(hours?|minutes?|seconds?)\s*left",
+            r"offer\s*ends?\s*in",
+            r"sale\s*ends?\s*at\s*midnight",
+            r"limited\s*time\s*only",
+            r"\d+:\d+:\d+",  # Timer format
+        ],
+        "fake_scarcity_patterns": [
+            r"only\s*\d+\s*left\s*in\s*stock",
+            r"\d+\s*people\s*(are\s*)?(viewing|looking|watching)",
+            r"selling\s*fast",
+            r"almost\s*(gone|sold\s*out)",
+            r"low\s*stock\s*warning",
+        ],
+        "detection_method": """
+            1. Refresh page - does timer reset?
+            2. Clear cookies - does 'limited stock' reset?
+            3. Visit from different device - same urgency claims?
+            4. Return after timer expires - still available?
+            If YES to any: FAKE URGENCY CONFIRMED
+        """
+    }
+
+    def detect_confirmshaming(self, decline_button_text: str) -> Dict:
+        """
+        Detect confirmshaming in decline/opt-out button text.
+
+        Research basis: Princeton 2019 interface design study,
+        FTC ICPEN review
+        """
+
+        text_lower = decline_button_text.lower()
+        score = 0
+        flags = []
+
+        # Check self-deprecating patterns
+        import re
+        for pattern in self.CONFIRMSHAMING_PATTERNS["self_deprecating_decline"]:
+            if re.search(pattern, text_lower):
+                score += 40
+                flags.append(f"Self-deprecating decline: matches '{pattern}'")
+
+        # Check guilt-inducing language
+        for phrase in self.CONFIRMSHAMING_PATTERNS["guilt_inducing_language"]:
+            if phrase in text_lower:
+                score += 30
+                flags.append(f"Guilt-inducing: '{phrase}'")
+
+        # Check for documented extreme examples
+        for phrase in self.CONFIRMSHAMING_PATTERNS["extreme_examples_documented"]:
+            if phrase in text_lower:
+                score += 50
+                flags.append(f"EXTREME confirmshaming (documented case): '{phrase}'")
+
+        return {
+            "pattern_type": "CONFIRMSHAMING",
+            "score": min(score, 100),
+            "flags": flags,
+            "regulatory_status": "Prohibited under CCPA; FTC enforcement active",
+            "academic_research": "Mild patterns somewhat effective; aggressive patterns 4x more effective but generate backlash"
+        }
+
+    def detect_roach_motel(self, signup_flow: Dict, cancel_flow: Dict) -> Dict:
+        """
+        Detect roach motel pattern by comparing signup vs cancel difficulty.
+
+        Args:
+            signup_flow: {'steps': int, 'time_seconds': int, 'requires_call': bool}
+            cancel_flow: {'steps': int, 'time_seconds': int, 'requires_call': bool}
+        """
+
+        asymmetry_score = 0
+        flags = []
+
+        # Step asymmetry
+        step_ratio = cancel_flow['steps'] / max(signup_flow['steps'], 1)
+        if step_ratio > 2:
+            asymmetry_score += 30
+            flags.append(f"Cancel requires {step_ratio:.1f}x more steps than signup")
+
+        # Time asymmetry
+        time_ratio = cancel_flow['time_seconds'] / max(signup_flow['time_seconds'], 1)
+        if time_ratio > 3:
+            asymmetry_score += 30
+            flags.append(f"Cancel takes {time_ratio:.1f}x longer than signup")
+
+        # Channel asymmetry (online signup but phone cancel)
+        if not signup_flow.get('requires_call') and cancel_flow.get('requires_call'):
+            asymmetry_score += 40
+            flags.append("CHANNEL MISMATCH: Online signup but phone required to cancel")
+
+        return {
+            "pattern_type": "ROACH_MOTEL",
+            "asymmetry_score": min(asymmetry_score, 100),
+            "flags": flags,
+            "regulatory_status": "FTC actively prosecuting (Amazon Prime lawsuit)",
+            "documented_prevalence": "11% of e-commerce sites (Princeton 2019)",
+            "CHI_reference": "Staying at the Roach Motel: Cross-Country Analysis"
+        }
+
+    def detect_fake_urgency(self, page_content: str, page_reload_content: str = None) -> Dict:
+        """
+        Detect fake urgency/scarcity with optional reload comparison.
+
+        Args:
+            page_content: HTML/text content of page
+            page_reload_content: Same page after refresh (optional - enables timer reset detection)
+        """
+
+        import re
+
+        score = 0
+        flags = []
+        content_lower = page_content.lower()
+
+        # Check for urgency patterns
+        for pattern in self.FAKE_URGENCY_INDICATORS["countdown_patterns"]:
+            matches = re.findall(pattern, content_lower)
+            if matches:
+                score += 20
+                flags.append(f"Countdown timer detected: {matches}")
+
+        # Check for scarcity patterns
+        for pattern in self.FAKE_URGENCY_INDICATORS["fake_scarcity_patterns"]:
+            matches = re.findall(pattern, content_lower)
+            if matches:
+                score += 20
+                flags.append(f"Scarcity claim detected: {matches}")
+
+        # Timer reset detection (if reload provided)
+        if page_reload_content:
+            reload_lower = page_reload_content.lower()
+
+            # Extract timers from both
+            original_timers = re.findall(r'\d+:\d+:\d+', content_lower)
+            reload_timers = re.findall(r'\d+:\d+:\d+', reload_lower)
+
+            # If timer reset or same after refresh = FAKE
+            if original_timers and reload_timers:
+                if original_timers == reload_timers or reload_timers[0] >= original_timers[0]:
+                    score += 50
+                    flags.append("FAKE TIMER CONFIRMED: Timer reset on page refresh")
+
+        return {
+            "pattern_type": "FAKE_URGENCY_SCARCITY",
+            "score": min(score, 100),
+            "flags": flags,
+            "regulatory_status": "Competition Bureau Canada advisory; FTC enforcement",
+            "research": "1.2% of e-commerce sites reset timers (Princeton interface design study)",
+            "consumer_impact": "68% of millennials make purchases within 24 hours when influenced by FOMO"
+        }
+```
+
+#### 3.9.5 Original Cialdini Detector (Alternate Signal Structures)
+
+```python
+class EnhancedCialdiniDetector:
+    """
+    Enhanced Cialdini principle detection with research findings.
+    Includes deepfake/AI influence detection.
+    """
+
+    # Social Proof - Enhanced with fake review detection
+    SOCIAL_PROOF_SIGNALS = {
+        "genuine_indicators": [
+            "verified purchase", "verified buyer",
+            "specific details about use", "balanced pros/cons",
+            "mentions specific features", "realistic timeline"
+        ],
+        "fake_indicators": [
+            "generic superlatives only", "no specific details",
+            "extreme rating without context", "similar phrasing across reviews",
+            "posted in burst pattern", "reviewer has few other reviews"
+        ],
+        "manufactured_consensus": [
+            "everyone agrees", "unanimous support",
+            "all experts say", "studies show" # without citation
+        ]
+    }
+
+    # Scarcity - Enhanced with fake urgency detection
+    SCARCITY_SIGNALS = {
+        "legitimate": [
+            "batch production with number",
+            "specific inventory count",
+            "seasonal availability with dates",
+            "manufacturing constraints explained"
+        ],
+        "manufactured": [
+            "limited time" # resets on refresh
+            "only X left" # same number across sessions
+            "exclusive" # but widely advertised
+            "selling fast" # no verification possible
+        ],
+        "destruction_framing": [
+            "will never be made again",
+            "burning unsold inventory",
+            "one-time-only production"
+        ]
+    }
+
+    # Social engineering context
+    # Research with 642 UK and Arab participants found:
+    # - Social Proof and Authority are the most influential principles
+    # - Scarcity is least influential but still significant
+
+    # LLM Personalized Persuasion
+    # Study of 19 LLMs across 5 model families:
+    # - Models adapt persuasive language based on personality cues
+
+    # Deepfake Analysis Framework
+    # DEEP FRAME tool developed to analyze deepfakes through Cialdini's lens:
+    # - Authority and Social Proof most commonly leveraged
+
+    def detect_fake_social_proof(self, reviews: List[Dict]) -> Dict:
+        """
+        Detect manufactured social proof using ML indicators.
+
+        Based on: fake review detection research
+        """
+
+        fake_indicators = 0
+        flags = []
+
+        # Analyze review patterns
+        review_texts = [r.get('text', '') for r in reviews]
+        review_ratings = [r.get('rating', 0) for r in reviews]
+        review_dates = [r.get('date') for r in reviews]
+
+        # Check for rating distribution anomaly
+        # Real reviews: approximate normal distribution
+        # Fake reviews: bimodal (mostly 5s and 1s)
+        high_ratings = sum(1 for r in review_ratings if r >= 4)
+        if len(review_ratings) > 10 and high_ratings / len(review_ratings) > 0.9:
+            fake_indicators += 25
+            flags.append("Suspicious: >90% high ratings")
+
+        # Check for generic language patterns
+        generic_phrases = [
+            "great product", "highly recommend", "love it",
+            "best purchase ever", "exactly as described"
+        ]
+
+        for review_text in review_texts:
+            text_lower = review_text.lower()
+            generic_count = sum(1 for p in generic_phrases if p in text_lower)
+            if generic_count >= 3:
+                fake_indicators += 10
+                flags.append(f"Generic phrases detected in review")
+
+        return {
+            "principle": "SOCIAL_PROOF",
+            "manufactured_probability": min(fake_indicators, 100),
+            "flags": flags,
+            "detection_method": "Pattern analysis for fake review detection",
+            "ml_approaches_available": [
+                "BERT-based classification (91% accuracy)",
+                "Graph Neural Networks for reviewer networks",
+                "Semi-supervised PU-learning for unlabeled data"
+            ]
+        }
+
+    def detect_manufactured_authority(self, content: str, media_type: str = "text") -> Dict:
+        """
+        Detect manufactured or potentially deepfaked authority claims.
+        """
+
+        score = 0
+        flags = []
+        content_lower = content.lower()
+
+        # Check for vague authority claims
+        vague_authorities = [
+            ("experts say", "No specific expert named"),
+            ("studies show", "No study citation provided"),
+            ("doctors recommend", "No specific doctors identified"),
+            ("according to science", "No scientific reference"),
+            ("research proves", "No research cited")
+        ]
+
+        for phrase, concern in vague_authorities:
+            if phrase in content_lower:
+                score += 20
+                flags.append(f"Vague authority: '{phrase}' - {concern}")
+
+        return {
+            "principle": "AUTHORITY",
+            "manufactured_probability": min(score, 100),
+            "flags": flags,
+            "deepfake_analysis": "Use DEEP FRAME tool for video/audio verification",
+            "framework": "Cialdini's Principles for Deepfake Analysis"
+        }
+```
+
+#### 3.9.6 Original Cognitive Load Detector (Alternate Implementation)
+
+```python
+class EnhancedCognitiveLoadDetector:
+    """
+    Enhanced cognitive load and decision fatigue detection.
+    Based on e-commerce and cognitive psychology research.
+    """
+
+    # Cognitive load thresholds from research
+    COGNITIVE_THRESHOLDS = {
+        "working_memory_limit": 7,        # Miller's Law (±2)
+        "processing_window_seconds": 20,   # Maximum sustained focus
+        "decision_fatigue_onset": 10,      # Decisions before fatigue
+        "critical_decision_points": 12,    # Point of significant degradation
+        "conversion_optimal_steps": 3,     # Checkout steps for max conversion
+    }
+
+    # Decision multiplication patterns
+    DECISION_MULTIPLICATION_SIGNALS = [
+        # Configuration overload
+        "customize", "personalize", "configure", "select your",
+        "choose from", "pick your", "decide between",
+        # Option multiplication
+        "multiple options", "various choices", "many alternatives",
+        "extended selection", "full range", "complete lineup",
+        # Nested decisions
+        "also consider", "you might also like", "frequently bought together",
+        "customers also viewed", "similar items"
+    ]
+
+    # Strategic fatigue positioning (big ask after exhaustion)
+    FATIGUE_POSITIONING_SIGNALS = [
+        # End-of-flow positioning
+        "final step", "one more thing", "last question",
+        "almost done", "just one more", "before you finish",
+        # Upsell/cross-sell at checkout
+        "add protection plan", "upgrade your order",
+        "complete your purchase with", "don't forget"
+    ]
+
+    # Key Findings:
+    # - Working memory limited to **7±2 information units**
+    # - Maximum processing duration: **~20 seconds**
+    # - Better checkout design could increase conversions by **35.26%**
+    # - After **10-15 decisions**: analytical capability drops **40%**
+    # - Compliance increases **35%** when decision fatigued
+
+    def analyze_user_flow(self, flow_steps: List[Dict]) -> Dict:
+        """
+        Analyze a user flow for cognitive load intensity.
+
+        Args:
+            flow_steps: List of dicts with:
+                - 'step_name': str
+                - 'decisions_required': int
+                - 'options_presented': int
+                - 'time_pressure': bool
+                - 'contains_upsell': bool
+        """
+
+        total_decisions = sum(s.get('decisions_required', 0) for s in flow_steps)
+        max_options_single_step = max(s.get('options_presented', 0) for s in flow_steps)
+
+        intensity_score = 0
+        flags = []
+
+        # Check total decision count
+        if total_decisions > self.COGNITIVE_THRESHOLDS["decision_fatigue_onset"]:
+            intensity_score += 30
+            flags.append(f"HIGH DECISION COUNT: {total_decisions} decisions (fatigue onset at 10)")
+
+        if total_decisions > self.COGNITIVE_THRESHOLDS["critical_decision_points"]:
+            intensity_score += 20
+            flags.append(f"CRITICAL: {total_decisions} decisions exceeds degradation threshold")
+
+        # Check for working memory overload
+        if max_options_single_step > self.COGNITIVE_THRESHOLDS["working_memory_limit"]:
+            intensity_score += 25
+            flags.append(f"WORKING MEMORY OVERLOAD: {max_options_single_step} options in single step (limit: 7±2)")
+
+        # Check for fatigue-positioned upsells
+        late_upsells = [
+            s for i, s in enumerate(flow_steps)
+            if s.get('contains_upsell') and i >= len(flow_steps) * 0.7  # Last 30% of flow
+        ]
+
+        if late_upsells:
+            intensity_score += 25
+            flags.append(f"FATIGUE POSITIONING: {len(late_upsells)} upsell(s) positioned in final steps")
+
+        # Check for time pressure combined with complexity
+        time_pressured_complex = [
+            s for s in flow_steps
+            if s.get('time_pressure') and s.get('options_presented', 0) > 5
+        ]
+
+        if time_pressured_complex:
+            intensity_score += 20
+            flags.append("SYSTEM 1 HIJACK: Time pressure + high complexity (forces emotional decision)")
+
+        return {
+            "intensity_score": min(intensity_score, 100),
+            "total_decisions_required": total_decisions,
+            "max_options_single_step": max_options_single_step,
+            "flags": flags,
+            "potential_improvement": "35.26% conversion increase possible with simplified flow",
+            "recommendation": self._generate_recommendation(intensity_score, total_decisions)
+        }
+
+    def _generate_recommendation(self, score: float, decisions: int) -> str:
+        if score < 25:
+            return "Flow appears reasonable for cognitive load"
+        elif score < 50:
+            return f"Consider reducing decisions from {decisions} to under 10"
+        elif score < 75:
+            return "Significant cognitive load concerns detected - recommend user flow audit"
+        else:
+            return "CRITICAL: Flow appears designed to leverage decision fatigue - regulatory risk"
+```
+
+#### 3.9.7 Original Variable Ratio Reinforcement Detector
+
+```python
+class VariableRatioReinforcementDetector:
+    """
+    Detect variable ratio reinforcement (slot machine) mechanics.
+    Based on behavioral research and game design analysis.
+    """
+
+    # Common VR mechanics in digital products
+    VR_MECHANICS = {
+        "loot_boxes": {
+            "indicators": [
+                "random reward", "mystery box", "surprise",
+                "chance to win", "rare item", "legendary",
+                "epic drop", "unlock random"
+            ],
+            "visual_cues": [
+                "spinning wheel", "card flip", "chest opening",
+                "slot animation", "gacha", "pull"
+            ]
+        },
+        "infinite_scroll": {
+            "indicators": [
+                "endless content", "keep scrolling",
+                "more content below", "infinite feed",
+                "algorithmic recommendations"
+            ]
+        },
+        "notification_variability": {
+            "indicators": [
+                "someone liked", "new follower",
+                "you have X notifications", "trending now",
+                "breaking", "just posted"
+            ]
+        },
+        "near_miss_mechanics": {
+            "indicators": [
+                "so close", "almost won", "just missed",
+                "try again", "one more", "nearly there"
+            ],
+            "psychological_effect": "Heightens engagement despite loss - borrowed from slot machines"
+        }
+    }
+
+    def detect_vr_mechanics(self, product_features: List[str], ui_description: str = None) -> Dict:
+        """
+        Detect variable ratio reinforcement mechanics in product/app.
+        """
+
+        score = 0
+        detected_mechanics = []
+
+        combined_text = ' '.join(product_features).lower()
+        if ui_description:
+            combined_text += ' ' + ui_description.lower()
+
+        # Check each VR mechanic category
+        for mechanic_name, mechanic_data in self.VR_MECHANICS.items():
+            indicators = mechanic_data.get("indicators", [])
+            visual_cues = mechanic_data.get("visual_cues", [])
+
+            indicator_matches = sum(1 for i in indicators if i in combined_text)
+            visual_matches = sum(1 for v in visual_cues if v in combined_text)
+
+            if indicator_matches > 0 or visual_matches > 0:
+                score += 20 + (indicator_matches * 5) + (visual_matches * 10)
+                detected_mechanics.append({
+                    "mechanic": mechanic_name,
+                    "indicator_matches": indicator_matches,
+                    "visual_matches": visual_matches,
+                    "concern": mechanic_data.get("psychological_effect", "VR schedule creates compulsive engagement")
+                })
+
+        return {
+            "vr_reinforcement_score": min(score, 100),
+            "detected_mechanics": detected_mechanics,
+            "engagement_intensity": self._assess_engagement_intensity(score),
+            "mechanism": "VR schedules activate dopamine pathways similarly to substances",
+            "regulatory_context": "Belgium and Netherlands have banned loot boxes as gambling"
+        }
+
+    def _assess_engagement_intensity(self, score: float) -> str:
+        if score < 20:
+            return "LOW - Minimal VR mechanics detected"
+        elif score < 50:
+            return "MODERATE - Some VR mechanics present"
+        elif score < 75:
+            return "HIGH - Multiple VR mechanics present"
+        else:
+            return "VERY HIGH - Systematic VR implementation (slot machine design)"
+```
+
+#### 3.9.8 Original Anchoring Detector (with Classic Examples)
+
+**Classic Anchoring Examples:**
+
+| Example | Anchor | Result |
+|---------|--------|--------|
+| Williams-Sonoma Bread Maker | Added $429 model | $275 model sales increased significantly |
+| Campbell's Soup "Limit 12" | Number 12 | Purchases increased from 3.3 to 7 cans |
+
+**Key findings:**
+- **70% of consumers** admit purchasing decisions are influenced by initial price
+- Decoy effect shifts consumer choice to higher-priced targeted item
+- Anchoring persists even when anchor is clearly irrelevant
+
+```python
+class EnhancedAnchoringDetector:
+    """
+    Detect anchoring and decoy pricing effects.
+    """
+
+    def detect_pricing_anchors(self, price_display: List[Dict]) -> Dict:
+        """
+        Analyze pricing display for anchoring techniques.
+
+        Args:
+            price_display: List of dicts with:
+                - 'product_name': str
+                - 'current_price': float
+                - 'original_price': float (optional)
+                - 'comparison_price': float (optional)
+                - 'position': str ('first', 'middle', 'last')
+        """
+
+        score = 0
+        flags = []
+
+        prices = [p.get('current_price', 0) for p in price_display]
+
+        # Check for high anchor first
+        if len(prices) > 1:
+            first_price = price_display[0].get('current_price', 0)
+            avg_other = sum(prices[1:]) / len(prices[1:])
+
+            if first_price > avg_other * 1.5:
+                score += 30
+                flags.append(f"HIGH ANCHOR FIRST: First price ({first_price}) is >150% of average others ({avg_other:.2f})")
+
+        # Check for decoy pricing (asymmetric dominance)
+        for i, product in enumerate(price_display):
+            original = product.get('original_price')
+            current = product.get('current_price')
+
+            if original and current:
+                discount_pct = (original - current) / original * 100
+
+                # Check for inflated original price
+                if discount_pct > 50:
+                    score += 25
+                    flags.append(f"POTENTIAL INFLATED ANCHOR: {product.get('product_name')} shows {discount_pct:.0f}% discount")
+
+        return {
+            "anchoring_score": min(score, 100),
+            "flags": flags,
+            "consumer_impact": "70% of consumers influenced by initial price anchor",
+            "intensity_concern": "Artificially inflated 'original' prices erode trust when discovered"
+        }
+```
+
+#### 3.9.9 Original Comprehensive Audit (Master Integration)
+
+```python
+class ComprehensivePersuasionAudit:
+    """
+    Master audit class combining all enhanced detectors.
+    Incorporates regulatory frameworks.
+    """
+
+    def __init__(self):
+        self.fractionation = EnhancedFractionationDetector()
+        self.physiological = PhysiologicalFractionationDetector()
+        self.interface_patterns = EnhancedInterfaceDesignDetector()
+        self.cialdini = EnhancedCialdiniDetector()
+        self.cognitive_load = EnhancedCognitiveLoadDetector()
+        self.vr_reinforcement = VariableRatioReinforcementDetector()
+        self.anchoring = EnhancedAnchoringDetector()
+
+    def full_audit(self, content: Dict) -> Dict:
+        """
+        Comprehensive audit across all detection categories.
+        """
+
+        results = {
+            "audit_timestamp": datetime.now().isoformat(),
+            "framework_version": "1.0",
+            "detections": {},
+            "composite_scores": {},
+            "regulatory_flags": [],
+            "recommendations": []
+        }
+
+        # Run all detectors
+        if content.get('content_sequence'):
+            results["detections"]["fractionation"] = self.fractionation.detect_emotional_sequence(
+                content['content_sequence']
+            )
+
+        if content.get('decline_buttons'):
+            for i, btn in enumerate(content['decline_buttons']):
+                results["detections"][f"confirmshaming_{i}"] = self.interface_patterns.detect_confirmshaming(btn)
+
+        if content.get('signup_flow') and content.get('cancel_flow'):
+            results["detections"]["roach_motel"] = self.interface_patterns.detect_roach_motel(
+                content['signup_flow'], content['cancel_flow']
+            )
+
+        if content.get('user_flow'):
+            results["detections"]["cognitive_load"] = self.cognitive_load.analyze_user_flow(
+                content['user_flow']
+            )
+
+        if content.get('product_features'):
+            results["detections"]["vr_reinforcement"] = self.vr_reinforcement.detect_vr_mechanics(
+                content['product_features']
+            )
+
+        if content.get('pricing'):
+            results["detections"]["anchoring"] = self.anchoring.detect_pricing_anchors(
+                content['pricing']
+            )
+
+        if content.get('reviews'):
+            results["detections"]["fake_social_proof"] = self.cialdini.detect_fake_social_proof(
+                content['reviews']
+            )
+
+        # Calculate composite scores
+        results["composite_scores"] = self._calculate_composites(results["detections"])
+
+        # Generate regulatory flags
+        results["regulatory_flags"] = self._check_regulatory_compliance(results["detections"])
+
+        return results
+
+    def _calculate_composites(self, detections: Dict) -> Dict:
+        scores = []
+        for name, result in detections.items():
+            if isinstance(result, dict):
+                for key in ['score', 'fractionation_score', 'intensity_score',
+                           'vr_reinforcement_score', 'anchoring_score', 'asymmetry_score',
+                           'manufactured_probability']:
+                    if key in result:
+                        scores.append(result[key])
+
+        return {
+            "average_risk_score": sum(scores) / len(scores) if scores else 0,
+            "max_risk_score": max(scores) if scores else 0,
+            "categories_flagged": sum(1 for s in scores if s > 50)
+        }
+
+    def _check_regulatory_compliance(self, detections: Dict) -> List[str]:
+        flags = []
+
+        # Check FTC interface design violations
+        roach_motel = detections.get('roach_motel', {})
+        if roach_motel.get('asymmetry_score', 0) > 60:
+            flags.append("FTC RISK: Roach motel pattern may violate FTC Section 5")
+
+        # Check CCPA interface design prohibition
+        for key, result in detections.items():
+            if 'confirmshaming' in key and result.get('score', 0) > 50:
+                flags.append("CCPA RISK: Confirmshaming prohibited under California Consumer Privacy Act")
+
+        # Check EU AI Act emotional influence provisions
+        if detections.get('fractionation', {}).get('fractionation_score', 0) > 70:
+            flags.append("EU AI ACT RISK: Certain emotional influence techniques classified as high-risk/prohibited")
+
+        return flags
+```
+
+---
 
 ## PART 4: COMPREHENSIVE DETECTION FRAMEWORKS (10 Domains) {#part-4}
 
@@ -5203,6 +7133,3092 @@ class RegulatoryComplianceAnalyzer:
         return report
 ```
 
+
+### 4.11 Source Reference: Comprehensive Detection Frameworks (Original Implementations)
+
+The following contains original source implementations with alternate class structures,
+threshold values, scoring approaches, and research data from the Comprehensive Detection Frameworks.
+
+#### 4.11.1 Multimodal Persuasion Research & Dataclasses
+
+
+**Audio Influence Techniques:**
+- Voice tone affects perceived competence and persuasiveness
+- Low-pitched voices perceived as more competent, authoritative (Personality and Social Psychology Bulletin, 2024)
+- Falling intonation signals confidence and increases elaboration likelihood
+- ASMR triggers (whispering, tapping) activate relaxation responses and reduce critical processing
+
+**Video Editing Patterns:**
+- Cut frequency of 2.5-3 seconds creates "attentional synchrony"
+- Rapid cuts (5-10 in sequence) followed by calm pacing creates "stimulate → calm → re-engage" cycle
+- Chaotic/fast audiovisuals increase attentional scope but DECREASE conscious processing
+- Alpha rhythm increases after cuts, indicating reduced analytical engagement
+
+**Color Psychology:**
+- Colors influence 85-90% of initial purchase impressions
+- Red: Urgency, passion, danger - makes time feel slower, objects heavier
+- Blue: Trust, calm - time passes quickly, objects feel lighter
+- Yellow: Optimism, attention-grabbing (left brain stimulation)
+
+```python
+import numpy as np
+from dataclasses import dataclass, field
+from typing import List, Dict, Optional, Tuple
+from enum import Enum
+import re
+
+class AudioInfluenceType(Enum):
+    VOICE_PITCH_LOW = "low_pitch_authority"
+    VOICE_PITCH_VARIATION = "pitch_influence"
+    FALLING_INTONATION = "confidence_signal"
+    ASMR_TRIGGERS = "asmr_relaxation"
+    URGENCY_TONE = "urgency_pressure"
+    WHISPER = "intimacy_whisper"
+    BACKGROUND_MUSIC_TEMPO = "tempo_influence"
+
+class VideoInfluenceType(Enum):
+    RAPID_CUTS = "attention_fragmentation"
+    ZOOM_FOCUS = "attention_direction"
+    RHYTHM_PATTERN = "emotional_pacing"
+    FLASH_FRAMES = "subliminal_priming"
+    EYE_CONTACT = "parasocial_connection"
+    COLOR_GRADING = "mood_influence"
+
+@dataclass
+class AudioAnalysisResult:
+    """Results from audio influence analysis"""
+    pitch_mean: float = 0.0
+    pitch_variance: float = 0.0
+    intonation_pattern: str = ""
+    tempo_bpm: float = 0.0
+    asmr_trigger_count: int = 0
+    whisper_segments: int = 0
+    urgency_markers: int = 0
+    influence_types: List[AudioInfluenceType] = field(default_factory=list)
+    risk_score: float = 0.0
+
+@dataclass
+class VideoAnalysisResult:
+    """Results from video influence analysis"""
+    avg_shot_length: float = 0.0
+    cut_frequency: float = 0.0
+    rapid_cut_sequences: int = 0
+    zoom_events: int = 0
+    eye_contact_duration: float = 0.0
+    dominant_colors: List[str] = field(default_factory=list)
+    color_influence_score: float = 0.0
+    influence_types: List[VideoInfluenceType] = field(default_factory=list)
+    risk_score: float = 0.0
+
+#### 4.11.2 Cut Rhythm Analyzer
+
+
+class CutRhythmAnalyzer:
+    """
+    Specialized analyzer for video editing rhythm patterns.
+
+    Research basis:
+    - Film editing affects alpha rhythm and conscious processing
+    - "Stimulate → calm → re-engage" pattern keeps viewers engaged
+    - Modern content: 2.5-3 second average shot length
+    """
+
+    def __init__(self):
+        self.patterns = {
+            'commercial': {'avg_shot': 2.0, 'burst_freq': 'high'},
+            'documentary': {'avg_shot': 8.0, 'burst_freq': 'low'},
+            'social_media': {'avg_shot': 1.5, 'burst_freq': 'very_high'},
+            'high_influence': {'avg_shot': 2.5, 'burst_freq': 'strategic'}
+        }
+
+    def analyze_rhythm_pattern(self, cut_timestamps: List[float], duration: float) -> Dict:
+        """
+        Analyze the rhythm pattern of video cuts.
+
+        Returns pattern classification and influence indicators.
+        """
+        if len(cut_timestamps) < 3:
+            return {'pattern': 'minimal', 'influence_score': 0.0}
+
+        intervals = np.diff(cut_timestamps)
+
+        analysis = {
+            'avg_interval': float(np.mean(intervals)),
+            'std_interval': float(np.std(intervals)),
+            'min_interval': float(np.min(intervals)),
+            'max_interval': float(np.max(intervals)),
+            'cuts_per_minute': len(cut_timestamps) / duration * 60,
+            'pattern_type': '',
+            'influence_indicators': [],
+            'influence_score': 0.0
+        }
+
+        # Detect "stimulate → calm → re-engage" pattern
+        # Look for alternating fast/slow sequences
+        window_size = 5
+        if len(intervals) >= window_size * 2:
+            window_means = [
+                np.mean(intervals[i:i+window_size])
+                for i in range(0, len(intervals) - window_size, window_size)
+            ]
+
+            # Check for significant variance between windows (pattern switching)
+            if len(window_means) >= 2:
+                window_variance = np.var(window_means)
+                if window_variance > 2.0:  # High variance = intentional rhythm influence
+                    analysis['influence_indicators'].append('RHYTHM_INFLUENCE')
+                    analysis['influence_score'] += 0.4
+
+        # Detect reduced-vigilance regularity (very consistent rhythm)
+        cv = analysis['std_interval'] / analysis['avg_interval'] if analysis['avg_interval'] > 0 else 0
+        if cv < 0.2:  # Very consistent timing
+            analysis['influence_indicators'].append('REDUCED_VIGILANCE_REGULARITY')
+            analysis['influence_score'] += 0.3
+
+        # Detect acceleration patterns (building urgency)
+        if len(intervals) >= 10:
+            first_half = np.mean(intervals[:len(intervals)//2])
+            second_half = np.mean(intervals[len(intervals)//2:])
+
+            if second_half < first_half * 0.7:  # 30%+ acceleration
+                analysis['influence_indicators'].append('URGENCY_ACCELERATION')
+                analysis['influence_score'] += 0.4
+
+        # Classify pattern type
+        if analysis['avg_interval'] < 2.0:
+            analysis['pattern_type'] = 'high_intensity'
+        elif analysis['avg_interval'] < 4.0:
+            analysis['pattern_type'] = 'commercial'
+        elif analysis['avg_interval'] < 8.0:
+            analysis['pattern_type'] = 'moderate'
+        else:
+            analysis['pattern_type'] = 'slow_pace'
+
+        analysis['influence_score'] = min(1.0, analysis['influence_score'])
+
+        return analysis
+```
+
+#### 4.11.3 Social Network Dynamics (Cascade Effects, Bot Detection)
+
+
+## 2. SOCIAL NETWORK DYNAMICS
+
+### Research Findings
+
+**Cascade Effects (2024-2025):**
+- Misinformation follows 4 phases: introduction, acceleration, saturation, stabilization
+- Confirmation bias + algorithmic personalization creates echo chambers
+- Homogeneity is the primary driver of content diffusion
+- Temporal graph analysis shows community evolution during cascades
+
+**Bot Networks:**
+- 50%+ of internet traffic is now automated bots (2024)
+- 76% detection failure rate for advanced AI bots
+- Bot farms use real phones with SIM cards to evade detection
+- AI swarms coordinate and adapt tactics in real-time
+
+**Emotional Contagion:**
+- Negative posts evoke more attention and are more persistent
+- 4.34% over-exposure to negative content precedes negative posting
+- Massive-scale emotional influence is technically feasible
+
+```python
+@dataclass
+class CascadeMetrics:
+    """Metrics for information cascade analysis"""
+    reach: int = 0
+    depth: int = 0
+    velocity: float = 0.0  # Shares per hour
+    homogeneity_score: float = 0.0
+    bot_participation_rate: float = 0.0
+    phase: str = ""  # introduction, acceleration, saturation, stabilization
+    echo_chamber_score: float = 0.0
+
+@dataclass
+class AccountSuspicionScore:
+    """Suspicion scoring for potential bot/fake accounts"""
+    account_id: str = ""
+    creation_recency: float = 0.0
+    posting_regularity: float = 0.0
+    engagement_ratio: float = 0.0
+    content_originality: float = 0.0
+    network_clustering: float = 0.0
+    temporal_patterns: float = 0.0
+    overall_bot_probability: float = 0.0
+
+class SocialNetworkInfluenceDetector:
+    """
+    Detects influence patterns in social network dynamics.
+
+    Research basis:
+    - Springer 2025: Cascading falsehoods mapping
+    - Nature 2026: Temporal graph analysis of fake news cascades
+    - Frontiers 2025: Multi-scenario misinformation modeling
+    - NATO StratCom 2024: Social media influence for sale
+    """
+
+    def __init__(self):
+        # Thresholds based on research
+        self.thresholds = {
+            'bot_posting_regularity': 0.95,  # >95% regular = suspicious
+            'engagement_ratio_low': 0.001,  # Very low engagement = fake followers
+            'engagement_ratio_high': 0.5,  # Very high = coordinated
+            'cascade_velocity_viral': 1000,  # Shares per hour
+            'homogeneity_echo_chamber': 0.8,  # >80% similar = echo chamber
+            'coordination_window': 60,  # Seconds - posts within this = coordinated
+        }
+
+        # Bot behavior patterns
+        self.bot_indicators = {
+            'perfect_timing': 0.3,  # Posts at exact intervals
+            'no_typos': 0.1,  # Never makes mistakes
+            'rapid_response': 0.2,  # Responds within seconds
+            'template_content': 0.3,  # Repetitive phrasing
+            'unusual_hours': 0.2,  # Active 24/7
+            'network_clustering': 0.3,  # Connected mainly to other bots
+        }
+
+
+#### 4.11.4 Viral Spread Analysis & Bot Detection Code
+
+```python
+
+    def _determine_cascade_phase(self, sorted_posts: List[Dict]) -> str:
+        """
+        Determine cascade phase based on velocity patterns.
+
+        Phases from research:
+        - Introduction: Initial slow spread
+        - Acceleration: Rapid growth
+        - Saturation: Peak reached
+        - Stabilization: Decline to baseline
+        """
+        if len(sorted_posts) < 10:
+            return "introduction"
+
+        # Divide into quarters and calculate velocity for each
+        quarter_size = len(sorted_posts) // 4
+        velocities = []
+
+        for i in range(4):
+            start_idx = i * quarter_size
+            end_idx = (i + 1) * quarter_size if i < 3 else len(sorted_posts)
+            quarter = sorted_posts[start_idx:end_idx]
+
+            if len(quarter) >= 2:
+                time_span = quarter[-1]['timestamp'] - quarter[0]['timestamp']
+                if time_span > 0:
+                    velocities.append(len(quarter) / (time_span / 3600))
+                else:
+                    velocities.append(0)
+
+        if len(velocities) < 4:
+            return "introduction"
+
+        # Analyze velocity pattern
+        if velocities[1] > velocities[0] * 1.5:
+            if velocities[2] < velocities[1]:
+                if velocities[3] < velocities[2]:
+                    return "stabilization"
+                return "saturation"
+            return "acceleration"
+
+        return "introduction"
+
+    def _calculate_content_homogeneity(self, posts: List[Dict]) -> float:
+        """Calculate how similar the content is across posts"""
+        if len(posts) < 2:
+            return 0.0
+
+        contents = [p.get('content', '') for p in posts if p.get('content')]
+        if len(contents) < 2:
+            return 0.0
+
+        # Simple word overlap calculation
+        word_sets = [set(c.lower().split()) for c in contents]
+
+        total_similarity = 0
+        comparisons = 0
+
+        for i in range(len(word_sets)):
+            for j in range(i + 1, len(word_sets)):
+                if word_sets[i] and word_sets[j]:
+                    intersection = len(word_sets[i] & word_sets[j])
+                    union = len(word_sets[i] | word_sets[j])
+                    if union > 0:
+                        total_similarity += intersection / union
+                        comparisons += 1
+
+        return total_similarity / comparisons if comparisons > 0 else 0.0
+
+    def _estimate_bot_participation(self, posts: List[Dict]) -> float:
+        """Estimate the percentage of posts from likely bots"""
+        if not posts:
+            return 0.0
+
+        suspicious_posts = 0
+
+        # Group posts by author
+        author_posts = {}
+        for post in posts:
+            author = post['author_id']
+            if author not in author_posts:
+                author_posts[author] = []
+            author_posts[author].append(post)
+
+        for author, author_post_list in author_posts.items():
+            suspicion = 0.0
+
+            # Check posting regularity
+            if len(author_post_list) >= 3:
+                timestamps = sorted([p['timestamp'] for p in author_post_list])
+                intervals = np.diff(timestamps)
+
+                if len(intervals) >= 2:
+                    cv = np.std(intervals) / np.mean(intervals) if np.mean(intervals) > 0 else 0
+                    if cv < 0.1:  # Very regular posting
+                        suspicion += self.bot_indicators['perfect_timing']
+
+            # Check for rapid responses
+            for post in author_post_list:
+                if post.get('parent_id'):
+                    # Find parent timestamp
+                    parent = next((p for p in posts if p['id'] == post['parent_id']), None)
+                    if parent:
+                        response_time = post['timestamp'] - parent['timestamp']
+                        if response_time < 5:  # Less than 5 seconds
+                            suspicion += self.bot_indicators['rapid_response']
+                            break
+
+            if suspicion > 0.3:
+                suspicious_posts += len(author_post_list)
+
+        return suspicious_posts / len(posts) if posts else 0.0
+
+    def detect_coordinated_behavior(self, posts: List[Dict]) -> Dict:
+        """
+        Detect coordinated inauthentic behavior patterns.
+
+        Research: Meta's "coordinated inauthentic behavior" detection
+        """
+        coordination_analysis = {
+            'coordinated_clusters': [],
+```
+
+#### 4.11.5 Emotional Contagion Detector
+
+```python
+class EmotionalContagionDetector:
+    """
+    Detects emotional contagion patterns in social media content.
+
+    Research basis:
+    - PNAS Facebook study: Emotional contagion at massive scale
+    - 2024 research: Negative posts more persistent and contagious
+    - 4.34% over-exposure to negative content precedes negative posting
+    """
+
+    EMOTION_KEYWORDS = {
+        'anger': ['angry', 'furious', 'outraged', 'hate', 'disgusted', 'infuriated'],
+        'fear': ['scared', 'afraid', 'terrified', 'worried', 'anxious', 'panic'],
+        'sadness': ['sad', 'depressed', 'hopeless', 'miserable', 'devastated'],
+        'joy': ['happy', 'excited', 'thrilled', 'delighted', 'ecstatic', 'amazing'],
+        'surprise': ['shocked', 'stunned', 'amazed', 'unbelievable', 'wow'],
+        'disgust': ['disgusting', 'gross', 'revolting', 'sickening', 'appalling']
+    }
+
+    def __init__(self):
+        self.negative_emotions = ['anger', 'fear', 'sadness', 'disgust']
+        self.positive_emotions = ['joy', 'surprise']
+
+    def analyze_emotional_content(self, posts: List[Dict]) -> Dict:
+        """Analyze emotional content distribution and patterns"""
+        analysis = {
+            'emotion_distribution': {},
+            'negativity_ratio': 0.0,
+            'emotional_intensity': 0.0,
+            'contagion_risk_score': 0.0,
+            'influence_indicators': []
+        }
+
+        emotion_counts = {emotion: 0 for emotion in self.EMOTION_KEYWORDS}
+        total_emotional_posts = 0
+
+        for post in posts:
+            content = post.get('content', '').lower()
+            post_emotions = []
+
+            for emotion, keywords in self.EMOTION_KEYWORDS.items():
+                if any(kw in content for kw in keywords):
+                    emotion_counts[emotion] += 1
+                    post_emotions.append(emotion)
+
+            if post_emotions:
+                total_emotional_posts += 1
+
+        if total_emotional_posts > 0:
+            analysis['emotion_distribution'] = {
+                emotion: count / total_emotional_posts
+                for emotion, count in emotion_counts.items()
+            }
+
+            # Calculate negativity ratio
+            negative_count = sum(emotion_counts[e] for e in self.negative_emotions)
+            positive_count = sum(emotion_counts[e] for e in self.positive_emotions)
+            total = negative_count + positive_count
+
+            if total > 0:
+                analysis['negativity_ratio'] = negative_count / total
+
+            # Emotional intensity (proportion of posts with strong emotion)
+            analysis['emotional_intensity'] = total_emotional_posts / len(posts)
+
+            # Contagion risk assessment
+            # High negativity + high intensity = high contagion risk
+            analysis['contagion_risk_score'] = (
+                analysis['negativity_ratio'] * 0.5 +
+                analysis['emotional_intensity'] * 0.3 +
+                (emotion_counts['anger'] / total_emotional_posts) * 0.2  # Anger most contagious
+            )
+
+            # Detect influence patterns
+            if analysis['negativity_ratio'] > 0.7:
+                analysis['influence_indicators'].append('HIGH_NEGATIVITY_BIAS')
+
+            if emotion_counts['anger'] > emotion_counts['fear'] * 2:
+                analysis['influence_indicators'].append('ANGER_AMPLIFICATION')
+
+            # Check for emotional sequencing (fractionation)
+            if self._detect_emotional_cycling(posts):
+                analysis['influence_indicators'].append('EMOTIONAL_CYCLING_DETECTED')
+                analysis['contagion_risk_score'] += 0.2
+
+        analysis['contagion_risk_score'] = min(1.0, analysis['contagion_risk_score'])
+
+        return analysis
+
+    def _detect_emotional_cycling(self, posts: List[Dict]) -> bool:
+        """Detect rapid emotional shifts (fractionation pattern)"""
+        if len(posts) < 5:
+            return False
+
+        emotions_sequence = []
+
+        for post in posts:
+            content = post.get('content', '').lower()
+            dominant_emotion = None
+
+            for emotion, keywords in self.EMOTION_KEYWORDS.items():
+                if any(kw in content for kw in keywords):
+                    dominant_emotion = emotion
+                    break
+
+            if dominant_emotion:
+                valence = 'negative' if dominant_emotion in self.negative_emotions else 'positive'
+                emotions_sequence.append(valence)
+
+        # Count valence switches
+        switches = 0
+        for i in range(1, len(emotions_sequence)):
+            if emotions_sequence[i] != emotions_sequence[i-1]:
+                switches += 1
+
+        # High switch rate = emotional sequencing
+        switch_rate = switches / len(emotions_sequence) if emotions_sequence else 0
+
+        return switch_rate > 0.4  # More than 40% switches
+
+
+class EchoChAmberDetector:
+    """
+    Detects echo chamber formation and filter bubble effects.
+
+    Research basis:
+    - PNAS: Polarized information ecosystems reorganize networks via cascades
+    - 2024: Homogeneity is preferential driver for content diffusion
+    """
+
+    def analyze_information_ecosystem(self, user_feed: List[Dict], network_data: Dict) -> Dict:
+        """
+        Analyze user's information ecosystem for echo chamber characteristics.
+
+        Expected formats:
+        user_feed: [{'content': str, 'source': str, 'stance': str, 'timestamp': float}]
+        network_data: {'connections': [str], 'interaction_counts': {str: int}}
+        """
+        analysis = {
+            'viewpoint_diversity': 0.0,
+            'source_diversity': 0.0,
+            'echo_chamber_score': 0.0,
+            'filter_bubble_indicators': [],
+            'exposure_bias': {}
+        }
+
+        if not user_feed:
+            return analysis
+
+        # Analyze viewpoint diversity
+        stances = [item.get('stance') for item in user_feed if item.get('stance')]
+        if stances:
+            unique_stances = set(stances)
+            stance_counts = {s: stances.count(s) for s in unique_stances}
+
+            # Shannon entropy for diversity
+            total = len(stances)
+            entropy = 0
+            for count in stance_counts.values():
+                if count > 0:
+                    p = count / total
+                    entropy -= p * np.log2(p)
+
+            # Normalize to 0-1 (max entropy = log2(n_stances))
+            max_entropy = np.log2(len(unique_stances)) if len(unique_stances) > 1 else 1
+            analysis['viewpoint_diversity'] = entropy / max_entropy if max_entropy > 0 else 0
+
+        # Analyze source diversity
+        sources = [item.get('source') for item in user_feed if item.get('source')]
+        if sources:
+            unique_sources = set(sources)
+            analysis['source_diversity'] = len(unique_sources) / len(sources)
+
+        # Calculate echo chamber score (inverse of diversity)
+        analysis['echo_chamber_score'] = 1 - (
+            analysis['viewpoint_diversity'] * 0.6 +
+            analysis['source_diversity'] * 0.4
+        )
+
+        # Detect filter bubble indicators
+        if analysis['viewpoint_diversity'] < 0.3:
+            analysis['filter_bubble_indicators'].append('LOW_VIEWPOINT_DIVERSITY')
+
+        if analysis['source_diversity'] < 0.2:
+            analysis['filter_bubble_indicators'].append('SOURCE_CONCENTRATION')
+
+        # Check for algorithmic amplification patterns
+        if len(user_feed) >= 20:
+            recent = user_feed[-10:]
+            older = user_feed[:10]
+
+            recent_diversity = len(set(item.get('stance') for item in recent if item.get('stance')))
+            older_diversity = len(set(item.get('stance') for item in older if item.get('stance')))
+
+            if recent_diversity < older_diversity * 0.7:
+                analysis['filter_bubble_indicators'].append('NARROWING_EXPOSURE')
+
+        return analysis
+```
+
+#### 4.11.6 Trust Architecture & Grooming Detection
+
+```python
+@dataclass
+class TrustInfluenceIndicator:
+    """Indicators of trust-based influence"""
+    influence_type: TrustInfluenceType
+    confidence: float
+    evidence: List[str]
+    risk_level: str  # low, medium, high, critical
+
+@dataclass
+class GroomingStageAnalysis:
+    """Analysis of potential grooming behavior"""
+    stage: str  # selection, trust_building, desensitization, application
+    indicators: List[str]
+    progression_velocity: float  # How fast moving through stages
+    risk_score: float
+
+class TrustInfluenceDetector:
+    """
+    Detects patterns of trust building and application.
+
+    Research basis:
+    - ACIG Journal 2024: Trust framework for cybersecurity intensity
+    - Wharton 2015: Trust promotes unethical behavior research
+    - 2024: Social Engineering 2.0 - 98% of attacks involve influence
+    """
+
+    # Patterns that indicate trust influence attempts
+    AUTHORITY_SIGNALS = [
+        'official', 'authorized', 'verified', 'certified', 'government',
+        'security', 'admin', 'support', 'department', 'representative',
+        'manager', 'director', 'compliance', 'legal'
+    ]
+
+    URGENCY_SIGNALS = [
+        'immediately', 'urgent', 'expire', 'deadline', 'last chance',
+        'act now', 'limited time', 'don\'t delay', 'critical', 'emergency',
+        'within 24 hours', 'account suspended', 'security alert'
+    ]
+
+    RECIPROCITY_SIGNALS = [
+        'free gift', 'bonus', 'reward', 'exclusive offer', 'selected',
+        'lucky winner', 'complimentary', 'no obligation', 'as a thank you'
+    ]
+
+    AFFINITY_SIGNALS = [
+        'fellow', 'community', 'member', 'family', 'brother', 'sister',
+        'alumni', 'veteran', 'colleague', 'neighbor', 'believer'
+    ]
+
+    COMMITMENT_ESCALATION_PATTERNS = [
+        ('small_request', ['quick survey', 'just one question', 'simple form']),
+        ('medium_request', ['share your details', 'verify account', 'provide information']),
+        ('large_request', ['wire transfer', 'full access', 'credentials', 'payment'])
+    ]
+
+    def __init__(self):
+        self.interaction_history = {}
+
+    def analyze_message(self, message: str, sender_info: Dict = None) -> List[TrustInfluenceIndicator]:
+        """
+        Analyze a message for trust influence patterns.
+
+        Args:
+            message: The text content to analyze
+            sender_info: Optional sender metadata
+        """
+        indicators = []
+        message_lower = message.lower()
+
+        # Check for authority impersonation
+        authority_matches = [sig for sig in self.AUTHORITY_SIGNALS if sig in message_lower]
+        if authority_matches:
+            confidence = min(1.0, len(authority_matches) * 0.2)
+            indicators.append(TrustInfluenceIndicator(
+                influence_type=TrustInfluenceType.AUTHORITY_IMPERSONATION,
+                confidence=confidence,
+                evidence=authority_matches,
+                risk_level='high' if confidence > 0.6 else 'medium'
+            ))
+
+        # Check for urgency pressure
+        urgency_matches = [sig for sig in self.URGENCY_SIGNALS if sig in message_lower]
+        if urgency_matches:
+            confidence = min(1.0, len(urgency_matches) * 0.25)
+            indicators.append(TrustInfluenceIndicator(
+                influence_type=TrustInfluenceType.URGENCY_PRESSURE,
+                confidence=confidence,
+                evidence=urgency_matches,
+                risk_level='high' if confidence > 0.5 else 'medium'
+            ))
+
+        # Check for reciprocity triggers
+        reciprocity_matches = [sig for sig in self.RECIPROCITY_SIGNALS if sig in message_lower]
+        if reciprocity_matches:
+            confidence = min(1.0, len(reciprocity_matches) * 0.3)
+            indicators.append(TrustInfluenceIndicator(
+                influence_type=TrustInfluenceType.RECIPROCITY_TRIGGER,
+                confidence=confidence,
+                evidence=reciprocity_matches,
+                risk_level='medium'
+            ))
+
+        # Check for affinity influence
+        affinity_matches = [sig for sig in self.AFFINITY_SIGNALS if sig in message_lower]
+        if affinity_matches:
+            confidence = min(1.0, len(affinity_matches) * 0.25)
+            indicators.append(TrustInfluenceIndicator(
+                influence_type=TrustInfluenceType.AFFINITY_FRAUD,
+                confidence=confidence,
+                evidence=affinity_matches,
+                risk_level='medium'
+            ))
+
+        # Combined pattern detection (more dangerous)
+        if len(indicators) >= 2:
+            # Multiple influence types = higher risk
+            for indicator in indicators:
+                indicator.risk_level = 'critical' if indicator.risk_level == 'high' else 'high'
+
+        return indicators
+
+    def analyze_conversation_sequence(self, messages: List[Dict]) -> Dict:
+        """
+        Analyze a sequence of messages for escalation patterns.
+
+        Expected format: [{'sender': str, 'content': str, 'timestamp': float}]
+        """
+        analysis = {
+            'escalation_detected': False,
+            'grooming_indicators': [],
+            'trust_building_phase': False,
+            'application_phase': False,
+            'risk_progression': [],
+            'overall_risk_score': 0.0
+        }
+
+        if len(messages) < 3:
+            return analysis
+
+        # Track request sizes over time
+        request_sizes = []
+
+        for msg in messages:
+            content_lower = msg.get('content', '').lower()
+
+            # Classify request size
+            for size, patterns in self.COMMITMENT_ESCALATION_PATTERNS:
+                if any(p in content_lower for p in patterns):
+                    request_sizes.append(size)
+                    break
+
+        # Check for escalation pattern
+        size_order = {'small_request': 1, 'medium_request': 2, 'large_request': 3}
+
+        if len(request_sizes) >= 2:
+            # Check if requests are escalating
+            escalating = True
+            for i in range(1, len(request_sizes)):
+                if size_order.get(request_sizes[i], 0) <= size_order.get(request_sizes[i-1], 0):
+                    escalating = False
+                    break
+
+            if escalating:
+                analysis['escalation_detected'] = True
+                analysis['grooming_indicators'].append('COMMITMENT_ESCALATION')
+                analysis['overall_risk_score'] += 0.4
+
+        # Analyze trust building phase
+        early_messages = messages[:len(messages)//2]
+        late_messages = messages[len(messages)//2:]
+
+        early_risk = sum(len(self.analyze_message(m.get('content', ''))) for m in early_messages)
+        late_risk = sum(len(self.analyze_message(m.get('content', ''))) for m in late_messages)
+
+        if early_risk < late_risk:
+            analysis['trust_building_phase'] = True
+            analysis['application_phase'] = True
+            analysis['grooming_indicators'].append('TRUST_THEN_APPLY_PATTERN')
+            analysis['overall_risk_score'] += 0.3
+
+        analysis['overall_risk_score'] = min(1.0, analysis['overall_risk_score'])
+
+        return analysis
+
+
+class GroomingPatternDetector:
+    """
+    Detects grooming behavior patterns in online interactions.
+
+    Research basis:
+    - Zero Abuse Project 2024: Influence, Grooming, and Gradual Desensitization
+    - Research on predictable grooming stages
+    """
+
+    GROOMING_STAGES = {
+        'selection': {
+            'indicators': [
+                'personal_questions', 'vulnerability_probing', 'isolation_attempts',
+                'compliments_excessive', 'special_attention'
+            ],
+            'patterns': [
+                r'tell me about yourself',
+                r'do you have many friends',
+                r'are you alone',
+                r'you\'re (so |very )?(special|unique|different)',
+                r'no one understands you like'
+            ]
+        },
+        'trust_building': {
+            'indicators': [
+                'shared_secrets', 'exclusive_relationship', 'gift_giving',
+                'reliability_demonstration', 'understanding_claims'
+            ],
+            'patterns': [
+                r'just between us',
+                r'our (little )?secret',
+                r'i\'ll always be here',
+                r'you can trust me',
+                r'i understand you'
+            ]
+        },
+        'desensitization': {
+            'indicators': [
+                'boundary_testing', 'normalization', 'gradual_exposure',
+                'secrecy_requests', 'guilt_influence'
+            ],
+            'patterns': [
+                r'everyone does',
+                r'it\'s (normal|natural)',
+                r'don\'t tell anyone',
+                r'you (owe|promised) me',
+                r'after everything i\'ve done'
+            ]
+        },
+        'application': {
+            'indicators': [
+                'explicit_requests', 'threats', 'blackmail',
+                'isolation_complete', 'control_established'
+            ],
+            'patterns': [
+                r'send me',
+                r'if you don\'t',
+                r'i\'ll tell everyone',
+                r'no one will believe',
+                r'you have no choice'
+            ]
+        }
+    }
+
+    def analyze_interaction_sequence(self, interactions: List[Dict]) -> GroomingStageAnalysis:
+        """
+        Analyze interaction sequence for grooming patterns.
+
+        Expected format: [{'content': str, 'timestamp': float, 'sender': str}]
+        """
+        stage_scores = {stage: 0.0 for stage in self.GROOMING_STAGES}
+        all_indicators = []
+
+        for interaction in interactions:
+            content = interaction.get('content', '').lower()
+
+            for stage, stage_data in self.GROOMING_STAGES.items():
+                for pattern in stage_data['patterns']:
+                    if re.search(pattern, content):
+                        stage_scores[stage] += 1
+                        all_indicators.append(f"{stage}:{pattern}")
+```
+
+#### 4.11.7 Platform-Specific Mechanics (Gamification, Infinite Scroll)
+
+```python
+@dataclass
+class GamificationAnalysis:
+    """Analysis of gamification influence"""
+    influence_types: List[GamificationInfluenceType] = field(default_factory=list)
+    streak_dependency_score: float = 0.0
+    variable_reward_frequency: float = 0.0
+    friction_asymmetry: float = 0.0  # signup ease vs cancel difficulty
+    overall_influence_score: float = 0.0
+    detailed_findings: Dict = field(default_factory=dict)
+
+class PlatformInfluenceDetector:
+    """
+    Detects influence mechanics in platform/app design.
+
+    Research basis:
+    - CHI 2024: "Staying at the Roach Motel" subscription analysis
+    - 2024 research on gamification interface design patterns
+    - Kahneman's Prospect Theory (loss aversion)
+    - Wansink's "bottomless bowl" experiment
+    """
+
+    # Streak-related UI patterns
+    STREAK_PATTERNS = {
+        'visual_elements': ['fire', 'flame', 'chain', 'streak', 'consecutive', 'daily'],
+        'loss_framing': ['don\'t lose', 'protect', 'maintain', 'keep alive', 'at risk'],
+        'guilt_triggers': ['you\'ll lose', 'streak will end', 'don\'t break', 'miss out']
+    }
+
+    # Notification influence patterns
+    NOTIFICATION_PATTERNS = {
+        'fomo': ['someone just', 'you\'re missing', 'happening now', 'don\'t miss'],
+        'false_urgency': ['limited time', 'expiring', 'last chance', 'ending soon'],
+        'social_pressure': ['friends are', 'everyone is', 'you\'re falling behind'],
+        'curiosity_gap': ['you won\'t believe', 'find out', 'see what', 'discover']
+    }
+
+    # Cancellation friction patterns
+    CANCELLATION_FRICTION = {
+        'required_call': 0.8,  # Must call to cancel
+        'long_survey': 0.5,  # Forced feedback before cancel
+        'confirmation_typing': 0.6,  # Must type phrase like "CONFIRM"
+        'hidden_button': 0.4,  # Cancel button hard to find
+        'emotional_influence': 0.7,  # "We'll miss you" guilt
+        'multiple_screens': 0.5,  # Many steps to cancel
+        'retention_offers': 0.3,  # Discount offers to stay
+    }
+
+    def __init__(self):
+        self.thresholds = {
+            'high_streak_dependency': 0.7,
+            'frequent_variable_rewards': 0.5,
+            'severe_friction_asymmetry': 0.6
+        }
+
+    def analyze_app_interface(self, interface_data: Dict) -> GamificationAnalysis:
+        """
+        Analyze app/platform interface for influence patterns.
+
+        Expected interface_data:
+        {
+            'features': List[str],
+            'notifications': List[Dict],
+            'signup_steps': int,
+            'cancel_steps': int,
+            'cancel_requirements': List[str],
+            'reward_schedule': str,  # 'fixed', 'variable', 'none'
+            'ui_elements': List[Dict]
+        }
+        """
+        analysis = GamificationAnalysis()
+
+        # Analyze streak mechanics
+        if 'features' in interface_data:
+            features_lower = [f.lower() for f in interface_data['features']]
+
+            streak_elements = sum(
+                1 for pattern in self.STREAK_PATTERNS['visual_elements']
+                if any(pattern in f for f in features_lower)
+            )
+
+            loss_framing = sum(
+                1 for pattern in self.STREAK_PATTERNS['loss_framing']
+                if any(pattern in f for f in features_lower)
+            )
+
+            if streak_elements > 0:
+                analysis.influence_types.append(GamificationInfluenceType.STREAK_LOSS_AVERSION)
+                analysis.streak_dependency_score = min(1.0, (streak_elements + loss_framing * 2) * 0.2)
+
+        # Analyze reward schedule
+        if interface_data.get('reward_schedule') == 'variable':
+            analysis.influence_types.append(GamificationInfluenceType.VARIABLE_RATIO_REWARD)
+            analysis.variable_reward_frequency = 0.7  # High influence potential
+
+        # Analyze friction asymmetry (roach motel)
+        signup_steps = interface_data.get('signup_steps', 1)
+        cancel_steps = interface_data.get('cancel_steps', 1)
+
+        if cancel_steps > signup_steps:
+            analysis.friction_asymmetry = min(1.0, (cancel_steps - signup_steps) / 10)
+
+            if analysis.friction_asymmetry > 0.3:
+                analysis.influence_types.append(GamificationInfluenceType.ROACH_MOTEL)
+
+        # Analyze cancellation requirements
+        if 'cancel_requirements' in interface_data:
+            friction_score = 0
+            for req in interface_data['cancel_requirements']:
+                req_lower = req.lower()
+                for friction_type, score in self.CANCELLATION_FRICTION.items():
+                    if friction_type.replace('_', ' ') in req_lower:
+                        friction_score += score
+
+            analysis.friction_asymmetry = max(analysis.friction_asymmetry, min(1.0, friction_score))
+
+        # Analyze notifications
+        if 'notifications' in interface_data:
+            notification_analysis = self._analyze_notifications(interface_data['notifications'])
+            analysis.detailed_findings['notifications'] = notification_analysis
+
+            if notification_analysis.get('fomo_count', 0) > 0:
+                analysis.influence_types.append(GamificationInfluenceType.FOMO_NOTIFICATION)
+
+        # Check for infinite scroll / autoplay
+        if 'features' in interface_data:
+            if any('infinite' in f.lower() or 'endless' in f.lower() for f in interface_data['features']):
+                analysis.influence_types.append(GamificationInfluenceType.INFINITE_SCROLL)
+
+            if any('autoplay' in f.lower() or 'auto-play' in f.lower() for f in interface_data['features']):
+                analysis.influence_types.append(GamificationInfluenceType.AUTOPLAY)
+
+        # Calculate overall influence score
+        analysis.overall_influence_score = min(1.0,
+            len(analysis.influence_types) * 0.15 +
+            analysis.streak_dependency_score * 0.25 +
+            analysis.variable_reward_frequency * 0.3 +
+            analysis.friction_asymmetry * 0.3
+        )
+
+        return analysis
+
+    def _analyze_notifications(self, notifications: List[Dict]) -> Dict:
+        """Analyze notification patterns for influence"""
+        analysis = {
+            'total': len(notifications),
+            'fomo_count': 0,
+            'false_urgency_count': 0,
+            'social_pressure_count': 0,
+            'curiosity_gap_count': 0,
+            'influence_rate': 0.0
+        }
+
+        for notif in notifications:
+            content = notif.get('content', '').lower()
+
+            for pattern in self.NOTIFICATION_PATTERNS['fomo']:
+                if pattern in content:
+                    analysis['fomo_count'] += 1
+                    break
+
+            for pattern in self.NOTIFICATION_PATTERNS['false_urgency']:
+                if pattern in content:
+                    analysis['false_urgency_count'] += 1
+                    break
+
+            for pattern in self.NOTIFICATION_PATTERNS['social_pressure']:
+                if pattern in content:
+                    analysis['social_pressure_count'] += 1
+                    break
+
+            for pattern in self.NOTIFICATION_PATTERNS['curiosity_gap']:
+                if pattern in content:
+                    analysis['curiosity_gap_count'] += 1
+                    break
+
+        intensive_count = (
+            analysis['fomo_count'] +
+            analysis['false_urgency_count'] +
+            analysis['social_pressure_count'] +
+            analysis['curiosity_gap_count']
+        )
+
+        analysis['influence_rate'] = intensive_count / len(notifications) if notifications else 0
+
+        return analysis
+
+
+class InfiniteScrollDetector:
+    """
+    Detects infinite scroll and attention capture patterns.
+
+    Research basis:
+    - 2024 CHI: Design Frictions on Social Media
+    - Wansink's bottomless bowl research
+    - Zeigarnik Effect: incomplete tasks remembered better
+    """
+
+    def __init__(self):
+        self.session_data = []
+
+    def analyze_browsing_session(self, session_data: Dict) -> Dict:
+        """
+        Analyze browsing session for attention capture patterns.
+
+        Expected session_data:
+        {
+            'scroll_events': [{'timestamp': float, 'position': float}],
+            'content_views': [{'timestamp': float, 'duration': float, 'content_id': str}],
+            'session_duration': float,
+            'natural_endpoints': int,  # Number of clear stopping points
+            'autoplay_triggers': int
+        }
+        """
+        analysis = {
+            'scroll_immersion_score': 0.0,
+            'time_distortion_indicators': [],
+            'stopping_point_deprivation': 0.0,
+            'attention_capture_score': 0.0,
+            'recommendations': []
+        }
+
+        scroll_events = session_data.get('scroll_events', [])
+        content_views = session_data.get('content_views', [])
+        duration = session_data.get('session_duration', 0)
+
+        if scroll_events:
+            # Calculate scroll velocity patterns
+            velocities = []
+            for i in range(1, len(scroll_events)):
+                time_diff = scroll_events[i]['timestamp'] - scroll_events[i-1]['timestamp']
+                pos_diff = abs(scroll_events[i]['position'] - scroll_events[i-1]['position'])
+                if time_diff > 0:
+                    velocities.append(pos_diff / time_diff)
+
+            if velocities:
+                # High consistent velocity = mindless scrolling
+                avg_velocity = np.mean(velocities)
+                velocity_consistency = 1 - (np.std(velocities) / avg_velocity if avg_velocity > 0 else 0)
+
+                if velocity_consistency > 0.7:
+                    analysis['scroll_immersion_score'] = velocity_consistency
+                    analysis['time_distortion_indicators'].append('CONSISTENT_MINDLESS_SCROLLING')
+
+        # Analyze content view patterns
+        if content_views:
+            view_durations = [v['duration'] for v in content_views]
+            avg_duration = np.mean(view_durations)
+
+            # Short average views = rapid consumption
+            if avg_duration < 3:  # Less than 3 seconds per content
+                analysis['time_distortion_indicators'].append('RAPID_CONTENT_CONSUMPTION')
+                analysis['attention_capture_score'] += 0.3
+
+        # Analyze natural endpoint deprivation
+        natural_endpoints = session_data.get('natural_endpoints', 0)
+        if duration > 0 and natural_endpoints > 0:
+            endpoints_per_minute = natural_endpoints / (duration / 60)
+
+            if endpoints_per_minute < 0.5:  # Less than 1 endpoint per 2 minutes
+                analysis['stopping_point_deprivation'] = 1 - (endpoints_per_minute * 2)
+                analysis['time_distortion_indicators'].append('NATURAL_STOPPING_POINTS_ABSENT')
+
+        # Check autoplay contribution
+        autoplay_triggers = session_data.get('autoplay_triggers', 0)
+        if autoplay_triggers > 5:
+            analysis['attention_capture_score'] += 0.3
+            analysis['time_distortion_indicators'].append('EXCESSIVE_AUTOPLAY')
+
+        # Final score calculation
+        analysis['attention_capture_score'] = min(1.0,
+            analysis['scroll_immersion_score'] * 0.3 +
+            analysis['stopping_point_deprivation'] * 0.4 +
+            analysis['attention_capture_score']
+        )
+
+        # Generate recommendations
+        if analysis['attention_capture_score'] > 0.5:
+            analysis['recommendations'].extend([
+                'Consider enabling screen time limits',
+                'Look for apps with natural stopping points',
+                'Disable autoplay features where possible'
+            ])
+
+        return analysis
+```
+```
+
+#### 4.11.8 Physiological Validation Methods
+
+## 5. PHYSIOLOGICAL VALIDATION METHODS
+
+### Research Findings
+
+**Eye Tracking & Pupil Dilation:**
+- Pupil dilation indicates cognitive load and emotional arousal
+- 15% pupil dilation = reduced critical engagement
+- EyeLink detects 0.1% pupil diameter changes
+- Guilty knowledge detection: 70% accuracy via pupillary response
+- Gaze patterns reveal deception in sender-receiver games
+
+**Blink Rate:**
+- Normal: 15-20 blinks/min
+- Focused engagement: <10 blinks/min
+- Elevated arousal: 30-45 blinks/min
+
+**Skin Conductance (GSR):**
+- 2-5 microsiemens = elevated arousal
+- Indicates emotional response regardless of valence
+
+**Heart Rate Variability (HRV):**
+- <40ms = stress/anger state
+- Normal: 50-100ms
+
+```python
+@dataclass
+class PhysiologicalReading:
+    """Single physiological measurement"""
+    timestamp: float
+    pupil_diameter: float = 0.0  # mm
+    blink_rate: float = 0.0  # per minute
+    gsr: float = 0.0  # microsiemens
+    hrv: float = 0.0  # ms
+    gaze_x: float = 0.0
+    gaze_y: float = 0.0
+    fixation_duration: float = 0.0  # ms
+
+@dataclass
+class PhysiologicalState:
+    """Interpreted physiological state"""
+    arousal_level: float = 0.0  # 0-1
+    cognitive_load: float = 0.0  # 0-1
+    emotional_valence: float = 0.0  # -1 to 1
+    critical_engagement: float = 0.0  # 0-1 (low = vulnerable)
+    stress_level: float = 0.0  # 0-1
+    state_label: str = ""  # e.g., "vulnerable", "engaged", "stressed"
+
+class PhysiologicalInfluenceDetector:
+    """
+    Detects influence effects via physiological signals.
+
+    Research basis:
+    - PMC: Technological advancements in Neuromarketing
+    - SR Research: Pupillometry research applications
+    - PNAS Nexus 2024: Phishing vulnerability and cognition
+    - EEG research on video editing effects
+    """
+
+    # Thresholds from APPENDIX_RESEARCH_SOURCES.md
+    THRESHOLDS = {
+        'blink_rate_normal_low': 15,
+        'blink_rate_normal_high': 20,
+        'blink_rate_focused': 10,  # Below this = high focus
+        'blink_rate_aroused': 30,  # Above this = elevated arousal
+        'gsr_baseline': 1.0,
+        'gsr_elevated': 2.0,  # Above this = aroused
+        'gsr_high': 5.0,
+        'hrv_stress': 40,  # Below this = stressed
+        'hrv_normal_low': 50,
+        'hrv_normal_high': 100,
+        'pupil_baseline': 1.0,  # Ratio to baseline
+        'pupil_reduced_critical': 1.15,  # Above this = reduced critical thinking
+    }
+
+    def __init__(self):
+        self.baseline_readings = None
+
+    def set_baseline(self, readings: List[PhysiologicalReading]):
+        """Establish baseline from calm state readings"""
+        if readings:
+            self.baseline_readings = {
+                'pupil': np.mean([r.pupil_diameter for r in readings]),
+                'blink_rate': np.mean([r.blink_rate for r in readings]),
+                'gsr': np.mean([r.gsr for r in readings]),
+                'hrv': np.mean([r.hrv for r in readings])
+            }
+
+    def analyze_reading(self, reading: PhysiologicalReading) -> PhysiologicalState:
+        """Analyze single reading against baseline and thresholds"""
+        state = PhysiologicalState()
+
+        # Use baseline if available, otherwise use absolute thresholds
+        baseline = self.baseline_readings or {
+            'pupil': 4.0,  # Average pupil diameter mm
+            'blink_rate': 17.5,
+            'gsr': 1.0,
+            'hrv': 75
+        }
+
+        # Pupil dilation analysis
+        if baseline['pupil'] > 0:
+            pupil_ratio = reading.pupil_diameter / baseline['pupil']
+
+            # High dilation = emotional arousal, potentially reduced critical thinking
+            if pupil_ratio > self.THRESHOLDS['pupil_reduced_critical']:
+                state.critical_engagement = max(0, 1 - (pupil_ratio - 1) * 2)
+                state.arousal_level = min(1.0, (pupil_ratio - 1) * 3)
+            else:
+                state.critical_engagement = 1.0
+                state.arousal_level = max(0, (pupil_ratio - 0.9) * 5)
+
+        # Blink rate analysis
+        if reading.blink_rate < self.THRESHOLDS['blink_rate_focused']:
+            # Very low blink rate = high focus, potentially reduced-vigilance state
+            state.cognitive_load = 0.8
+            state.state_label = "hyperfocused"
+        elif reading.blink_rate > self.THRESHOLDS['blink_rate_aroused']:
+            # High blink rate = arousal, stress, or threat response
+            state.arousal_level = min(1.0, state.arousal_level + 0.3)
+            state.stress_level = min(1.0, (reading.blink_rate - 30) / 15)
+            state.state_label = "aroused"
+
+        # GSR analysis
+        if reading.gsr > self.THRESHOLDS['gsr_elevated']:
+            state.arousal_level = min(1.0, state.arousal_level +
+                (reading.gsr - self.THRESHOLDS['gsr_baseline']) / 4)
+
+            if reading.gsr > self.THRESHOLDS['gsr_high']:
+                state.state_label = "highly_aroused"
+
+        # HRV analysis
+        if reading.hrv < self.THRESHOLDS['hrv_stress']:
+            state.stress_level = min(1.0, state.stress_level +
+                (self.THRESHOLDS['hrv_stress'] - reading.hrv) / 40)
+            state.state_label = "stressed"
+
+        # Determine vulnerability state
+        if state.critical_engagement < 0.5 and state.arousal_level > 0.6:
+            state.state_label = "vulnerable"
+
+        return state
+
+    def detect_influence_response(
+        self,
+        pre_exposure: List[PhysiologicalReading],
+        during_exposure: List[PhysiologicalReading],
+        content_type: str = ""
+    ) -> Dict:
+        """
+        Detect physiological response to potential influence.
+
+        Compares pre-exposure baseline to during-exposure readings.
+        """
+        analysis = {
+            'influence_detected': False,
+            'response_type': '',
+            'intensity': 0.0,
+            'vulnerability_window': [],
+            'recovery_needed': False,
+            'detailed_changes': {}
+        }
+
+        if not pre_exposure or not during_exposure:
+            return analysis
+
+        # Calculate baseline
+        pre_avg = {
+            'pupil': np.mean([r.pupil_diameter for r in pre_exposure]),
+            'blink': np.mean([r.blink_rate for r in pre_exposure]),
+            'gsr': np.mean([r.gsr for r in pre_exposure]),
+            'hrv': np.mean([r.hrv for r in pre_exposure])
+        }
+
+        # Calculate during exposure
+        during_avg = {
+            'pupil': np.mean([r.pupil_diameter for r in during_exposure]),
+            'blink': np.mean([r.blink_rate for r in during_exposure]),
+            'gsr': np.mean([r.gsr for r in during_exposure]),
+            'hrv': np.mean([r.hrv for r in during_exposure])
+        }
+
+        # Calculate changes
+        changes = {
+            'pupil_change': (during_avg['pupil'] - pre_avg['pupil']) / pre_avg['pupil'] if pre_avg['pupil'] > 0 else 0,
+            'blink_change': during_avg['blink'] - pre_avg['blink'],
+            'gsr_change': during_avg['gsr'] - pre_avg['gsr'],
+            'hrv_change': during_avg['hrv'] - pre_avg['hrv']
+        }
+
+        analysis['detailed_changes'] = changes
+
+        # Detect influence patterns
+
+        # Pattern 1: Fear/Threat response (dilated pupils, high GSR, low HRV)
+        if (changes['pupil_change'] > 0.1 and
+            changes['gsr_change'] > 1.0 and
+            changes['hrv_change'] < -10):
+            analysis['influence_detected'] = True
+            analysis['response_type'] = 'fear_threat'
+            analysis['intensity'] = min(1.0, changes['gsr_change'] / 3)
+
+        # Pattern 2: Focused engagement (reduced blink, stable pupil)
+        elif changes['blink_change'] < -5 and abs(changes['pupil_change']) < 0.05:
+            analysis['influence_detected'] = True
+            analysis['response_type'] = 'focused_engagement'
+            analysis['intensity'] = min(1.0, abs(changes['blink_change']) / 10)
+
+        # Pattern 3: Emotional arousal (high pupil dilation, high GSR)
+        elif changes['pupil_change'] > 0.15 and changes['gsr_change'] > 1.5:
+            analysis['influence_detected'] = True
+            analysis['response_type'] = 'emotional_arousal'
+            analysis['intensity'] = min(1.0, changes['pupil_change'] * 3)
+
+        # Pattern 4: Stress/pressure (low HRV, high blink rate, high GSR)
+        elif (changes['hrv_change'] < -15 and
+              changes['blink_change'] > 10 and
+              changes['gsr_change'] > 1.0):
+            analysis['influence_detected'] = True
+            analysis['response_type'] = 'stress_pressure'
+            analysis['intensity'] = min(1.0, abs(changes['hrv_change']) / 30)
+
+        # Identify vulnerability windows
+        for i, reading in enumerate(during_exposure):
+            state = self.analyze_reading(reading)
+            if state.critical_engagement < 0.5:
+                analysis['vulnerability_window'].append({
+                    'index': i,
+                    'timestamp': reading.timestamp,
+
+#### 4.11.9 Eye Tracking & Gaze Analysis
+
+```python
+
+        # Detect influence patterns
+
+        # Pattern 1: Disproportionate CTA attention
+        if 'cta_button' in analysis['attention_distribution']:
+            cta_attention = analysis['attention_distribution']['cta_button']
+            if cta_attention > 0.3:  # More than 30% on CTA
+                analysis['influence_indicators'].append('HIGH_CTA_ATTENTION')
+
+        # Pattern 2: Price avoidance (influence redirecting from price)
+        if 'price' in analysis['attention_distribution']:
+            price_attention = analysis['attention_distribution']['price']
+            if price_attention < 0.05:  # Less than 5% on price
+                analysis['influence_indicators'].append('PRICE_ATTENTION_SUPPRESSED')
+
+        # Pattern 3: Scanpath analysis (F-pattern vs guided pattern)
+        analysis['scanpath_pattern'] = self._classify_scanpath(gaze_data)
+
+        if analysis['scanpath_pattern'] == 'linear_forced':
+            analysis['influence_indicators'].append('FORCED_ATTENTION_PATH')
+
+        # Calculate attention capture effectiveness
+        cta_regions = [r for r in content_regions if 'cta' in r.lower() or 'button' in r.lower()]
+        cta_attention = sum(analysis['attention_distribution'].get(r, 0) for r in cta_regions)
+
+        analysis['attention_capture_effectiveness'] = min(1.0, cta_attention * 2)
+
+        return analysis
+
+    def _classify_scanpath(self, gaze_data: List[Dict]) -> str:
+        """Classify the scanpath pattern"""
+        if len(gaze_data) < 5:
+            return 'insufficient_data'
+
+        # Extract x, y sequences
+        xs = [g['x'] for g in gaze_data]
+        ys = [g['y'] for g in gaze_data]
+
+        # Check for F-pattern (natural reading)
+        # Starts top-left, moves right, drops down, moves right again
+        if xs[0] < np.mean(xs) and ys[0] < np.mean(ys):
+            horizontal_moves = sum(1 for i in range(1, len(xs)) if xs[i] > xs[i-1])
+            if horizontal_moves > len(xs) * 0.4:
+                return 'f_pattern_natural'
+
+        # Check for linear forced pattern
+        # Very consistent direction, limited exploration
+        x_direction = np.sign(np.diff(xs))
+        y_direction = np.sign(np.diff(ys))
+
+        if np.std(x_direction) < 0.5 or np.std(y_direction) < 0.5:
+            return 'linear_forced'
+
+        # Check for scattered pattern
+        if np.std(xs) > np.mean(xs) * 0.5 and np.std(ys) > np.mean(ys) * 0.5:
+            return 'scattered'
+
+        return 'mixed'
+```
+```
+
+#### 4.11.10 Vulnerable Population Detection
+
+## 6. VULNERABLE POPULATION DETECTION
+
+### Research Findings
+
+**Children & Adolescents:**
+- 25% of 8-year-olds have experienced online harm (2024)
+- 33% of boys 9-12 experienced high-impact online sexual interaction (2024)
+- Cannot comprehend persuasive intent of advertising
+- Developing prefrontal cortex = limited impulse control
+
+**Elderly:**
+- $3.1 billion lost to cyber fraud in 2022 (74% increase from 2021)
+- Mild cognitive decline correlates with higher scam vulnerability
+- APOE4 gene variant increases phishing vulnerability
+- Entorhinal cortex thinning linked to financial intensity
+- Social isolation is strongest risk factor
+
+**Neurodivergent:**
+- ADHD/Autism more vulnerable to narcissistic influence
+- Difficulty recognizing intensive social cues
+- More susceptible to gaslighting
+- Late/undiagnosed individuals especially vulnerable
+- Low self-esteem from chronic invalidation
+
+```python
+class VulnerabilityFactorType(Enum):
+    AGE_CHILD = "child_developing_cognition"
+    AGE_ADOLESCENT = "adolescent_risk_taking"
+    AGE_ELDERLY = "elderly_cognitive_decline"
+    COGNITIVE_LOAD = "high_cognitive_load"
+    EMOTIONAL_STATE = "vulnerable_emotional_state"
+    SOCIAL_ISOLATION = "isolated_lonely"
+    NEURODIVERGENT = "neurodivergent_processing"
+    MENTAL_HEALTH = "mental_health_condition"
+    DIGITAL_LITERACY = "low_digital_literacy"
+    FINANCIAL_STRESS = "financial_vulnerability"
+
+@dataclass
+class VulnerabilityProfile:
+    """Individual vulnerability assessment"""
+    factors: List[VulnerabilityFactorType] = field(default_factory=list)
+    overall_vulnerability_score: float = 0.0
+    risk_areas: List[str] = field(default_factory=list)
+    protective_recommendations: List[str] = field(default_factory=list)
+    requires_enhanced_protection: bool = False
+
+class VulnerablePopulationDetector:
+    """
+    Detects and assesses vulnerability to influence.
+
+    Research basis:
+    - USC Dornsife 2024: Alzheimer's and financial scam vulnerability
+    - PNAS Nexus 2024: APOE4 genotype and phishing vulnerability
+    - Thorn 2024: Youth online sexual interaction data
+    - Frontiers 2024: Digital media in early childhood
+    - Psychology Today 2025: Neurodivergent influence vulnerability
+    """
+
+    # Age-based vulnerability factors
+    AGE_VULNERABILITY = {
+        'child': {
+            'age_range': (0, 12),
+            'base_vulnerability': 0.8,
+            'factors': [
+                'Cannot comprehend persuasive intent',
+                'Limited critical evaluation skills',
+                'High trust in perceived authorities',
+                'Difficulty distinguishing ads from content'
+            ]
+        },
+        'adolescent': {
+            'age_range': (13, 17),
+            'base_vulnerability': 0.6,
+            'factors': [
+                'Developing prefrontal cortex',
+                'Heightened social comparison',
+                'Risk-taking behavior',
+                'FOMO susceptibility',
+                'Identity formation vulnerability'
+            ]
+        },
+        'young_adult': {
+            'age_range': (18, 25),
+            'base_vulnerability': 0.3,
+            'factors': [
+                'Still developing impulse control',
+                'Social media native',
+                'Financial inexperience'
+            ]
+        },
+        'adult': {
+            'age_range': (26, 64),
+            'base_vulnerability': 0.2,
+            'factors': [
+                'Work stress vulnerability',
+                'Family responsibility pressure'
+            ]
+        },
+        'elderly': {
+            'age_range': (65, 120),
+            'base_vulnerability': 0.5,
+            'factors': [
+                'Potential cognitive decline',
+                'Social isolation risk',
+                'Digital literacy gaps',
+                'Trust in authority',
+                'Limited fraud recovery time'
+            ]
+        }
+    }
+
+    # Cognitive indicators of vulnerability
+    COGNITIVE_VULNERABILITY_INDICATORS = {
+        'processing_speed_decline': 0.3,
+        'memory_issues': 0.4,
+        'decision_fatigue': 0.3,
+        'attention_difficulties': 0.3,
+        'executive_function_issues': 0.4
+    }
+
+    # Emotional state vulnerability multipliers
+    EMOTIONAL_VULNERABILITY_MULTIPLIERS = {
+        'depression': 1.5,
+        'anxiety': 1.4,
+        'loneliness': 1.6,
+        'grief': 1.5,
+        'stress': 1.3,
+        'excitement': 1.2,  # Can impair judgment
+        'fear': 1.4
+    }
+
+    def __init__(self):
+        self.population_baselines = {}
+
+    def assess_individual_vulnerability(self, user_data: Dict) -> VulnerabilityProfile:
+        """
+        Assess individual vulnerability to influence.
+
+        Expected user_data:
+        {
+            'age': int,
+            'cognitive_indicators': List[str],
+            'emotional_state': str,
+            'social_connection_score': float,  # 0-1, higher = more connected
+            'digital_literacy_score': float,  # 0-1, higher = more literate
+            'neurodivergent_flags': List[str],
+            'financial_stress': bool,
+            'recent_life_events': List[str]
+        }
+        """
+        profile = VulnerabilityProfile()
+        vulnerability_score = 0.0
+
+        # Age-based assessment
+        age = user_data.get('age', 30)
+        for category, data in self.AGE_VULNERABILITY.items():
+            if data['age_range'][0] <= age <= data['age_range'][1]:
+                vulnerability_score += data['base_vulnerability']
+
+                if category == 'child':
+                    profile.factors.append(VulnerabilityFactorType.AGE_CHILD)
+                    profile.risk_areas.extend([
+                        'In-app purchases', 'Advertising', 'Data collection',
+                        'Contact from strangers', 'Inappropriate content'
+                    ])
+                    profile.requires_enhanced_protection = True
+
+                elif category == 'adolescent':
+                    profile.factors.append(VulnerabilityFactorType.AGE_ADOLESCENT)
+                    profile.risk_areas.extend([
+                        'Social comparison influence', 'FOMO tactics',
+                        'Influencer marketing', 'Dating app influence',
+                        'Sextortion risk'
+                    ])
+
+                elif category == 'elderly':
+                    profile.factors.append(VulnerabilityFactorType.AGE_ELDERLY)
+                    profile.risk_areas.extend([
+                        'Tech support scams', 'Romance scams',
+                        'Phishing', 'Investment fraud',
+                        'Grandparent scams'
+                    ])
+
+                break
+
+        # Cognitive vulnerability assessment
+        cognitive_indicators = user_data.get('cognitive_indicators', [])
+        for indicator in cognitive_indicators:
+            if indicator in self.COGNITIVE_VULNERABILITY_INDICATORS:
+                vulnerability_score += self.COGNITIVE_VULNERABILITY_INDICATORS[indicator]
+                profile.factors.append(VulnerabilityFactorType.COGNITIVE_LOAD)
+
+        # Emotional state assessment
+        emotional_state = user_data.get('emotional_state', '')
+        if emotional_state in self.EMOTIONAL_VULNERABILITY_MULTIPLIERS:
+            multiplier = self.EMOTIONAL_VULNERABILITY_MULTIPLIERS[emotional_state]
+            vulnerability_score *= multiplier
+            profile.factors.append(VulnerabilityFactorType.EMOTIONAL_STATE)
+            profile.risk_areas.append(f'Influence during {emotional_state}')
+
+        # Social connection assessment
+        social_score = user_data.get('social_connection_score', 0.5)
+        if social_score < 0.3:
+            vulnerability_score += 0.3
+            profile.factors.append(VulnerabilityFactorType.SOCIAL_ISOLATION)
+            profile.risk_areas.append('Romance scams')
+            profile.risk_areas.append('Companionship influence')
+
+        # Digital literacy assessment
+        digital_literacy = user_data.get('digital_literacy_score', 0.5)
+        if digital_literacy < 0.4:
+            vulnerability_score += 0.3
+            profile.factors.append(VulnerabilityFactorType.DIGITAL_LITERACY)
+            profile.risk_areas.append('Phishing')
+            profile.risk_areas.append('Malware')
+            profile.risk_areas.append('Tech support scams')
+
+        # Neurodivergent assessment
+        nd_flags = user_data.get('neurodivergent_flags', [])
+        if nd_flags:
+            vulnerability_score += 0.2
+            profile.factors.append(VulnerabilityFactorType.NEURODIVERGENT)
+            profile.risk_areas.extend([
+                'Gaslighting', 'Social influence',
+                'Boundary violations', 'Coercive control'
+            ])
+
+        # Financial stress assessment
+        if user_data.get('financial_stress', False):
+            vulnerability_score += 0.25
+            profile.factors.append(VulnerabilityFactorType.FINANCIAL_STRESS)
+            profile.risk_areas.extend([
+                'Get-rich-quick schemes', 'Loan scams',
+                'Intensive lending', 'Advance fee fraud'
+            ])
+
+        # Normalize score
+        profile.overall_vulnerability_score = min(1.0, vulnerability_score)
+
+        # Determine if enhanced protection needed
+        if profile.overall_vulnerability_score > 0.7:
+            profile.requires_enhanced_protection = True
+
+        # Generate recommendations
+        profile.protective_recommendations = self._generate_recommendations(profile)
+
+        return profile
+
+    def _generate_recommendations(self, profile: VulnerabilityProfile) -> List[str]:
+        """Generate protective recommendations based on vulnerability profile"""
+        recommendations = []
+
+        if VulnerabilityFactorType.AGE_CHILD in profile.factors:
+            recommendations.extend([
+                'Enable parental controls on all devices',
+                'Use child-safe apps and browsers',
+                'Discuss online safety regularly',
+                'Monitor online activity',
+                'Disable in-app purchases'
+            ])
+
+        if VulnerabilityFactorType.AGE_ELDERLY in profile.factors:
+            recommendations.extend([
+                'Set up call blocking for unknown numbers',
+                'Establish a trusted contact for financial decisions',
+                'Use password managers with family sharing',
+                'Enable multi-factor authentication',
+                'Participate in fraud prevention education'
+            ])
+
+        if VulnerabilityFactorType.SOCIAL_ISOLATION in profile.factors:
+            recommendations.extend([
+                'Be cautious of unsolicited contact',
+                'Verify identities before sharing personal info',
+                'Discuss major decisions with trusted friends/family',
+                'Join legitimate community groups for connection'
+            ])
+
+        if VulnerabilityFactorType.NEURODIVERGENT in profile.factors:
+            recommendations.extend([
+                'Take time before making decisions under pressure',
+                'Have a trusted person review major commitments',
+                'Be aware of influence tactics',
+                'Trust your instincts about uncomfortable situations'
+            ])
+
+        if VulnerabilityFactorType.EMOTIONAL_STATE in profile.factors:
+            recommendations.extend([
+                'Avoid major decisions when emotionally distressed',
+                'Be extra cautious of urgency tactics',
+                'Implement cooling-off periods for purchases',
+                'Seek support before responding to pressure'
+            ])
+
+        return recommendations
+
+
+class ChildSafetyDetector:
+    """
+    Specialized detection for child-targeted influence.
+
+    Research basis:
+    - Frontiers 2024: Digital media in early childhood
+    - Thorn 2024: Youth online sexual interaction data
+    - EU Parliament: Social media influence on children
+    """
+
+    # Patterns that indicate child-targeted influence
+    CHILD_TARGETING_PATTERNS = {
+        'visual_elements': [
+            'cartoon', 'animated', 'colorful', 'character', 'mascot',
+            'game', 'play', 'fun', 'adventure', 'magic'
+        ],
+        'language_patterns': [
+            'kids', 'children', 'young', 'learn', 'educational',
+            'family', 'safe', 'friendly'
+        ],
+        'influence_tactics': [
+            'collect', 'unlock', 'level up', 'surprise', 'mystery',
+            'limited edition', 'exclusive', 'special'
+        ]
+    }
+
+    # Grooming language patterns (from research)
+    GROOMING_LANGUAGE = {
+        'selection_phase': [
+            r'how old are you',
+            r'do you have (a )?(boyfriend|girlfriend)',
+            r'are your parents (home|around)',
+            r'do you have (snapchat|instagram|tiktok)'
+        ],
+        'trust_building': [
+            r'you\'re (so )?(mature|special|different)',
+            r'i understand you',
+            r'no one (else )?gets you',
+            r'our (little )?secret'
+        ],
+        'isolation': [
+            r'don\'t tell (anyone|your parents)',
+            r'they wouldn\'t understand',
+            r'just between us',
+            r'private (chat|message)'
+        ]
+    }
+
+    def analyze_content_for_child_targeting(self, content: Dict) -> Dict:
+        """
+        Analyze content for child-targeted influence.
+
+        Expected content:
+        {
+            'text': str,
+            'visual_elements': List[str],
+            'audio_elements': List[str],
+            'interactive_elements': List[str]
+        }
+        """
+        analysis = {
+            'child_targeted': False,
+            'targeting_score': 0.0,
+            'influence_tactics': [],
+            'risk_level': 'low',
+            'concerns': []
+        }
+
+        text = content.get('text', '').lower()
+        visuals = [v.lower() for v in content.get('visual_elements', [])]
+
+        # Check visual targeting
+        visual_matches = sum(
+            1 for pattern in self.CHILD_TARGETING_PATTERNS['visual_elements']
+            if any(pattern in v for v in visuals)
+        )
+
+        # Check language targeting
+        language_matches = sum(
+            1 for pattern in self.CHILD_TARGETING_PATTERNS['language_patterns']
+            if pattern in text
+        )
+
+        # Check influence tactics
+        tactic_matches = []
+        for tactic in self.CHILD_TARGETING_PATTERNS['influence_tactics']:
+            if tactic in text:
+                tactic_matches.append(tactic)
+
+        # Calculate targeting score
+        analysis['targeting_score'] = min(1.0,
+            (visual_matches * 0.15) +
+            (language_matches * 0.1) +
+            (len(tactic_matches) * 0.2)
+        )
+
+        analysis['child_targeted'] = analysis['targeting_score'] > 0.3
+        analysis['influence_tactics'] = tactic_matches
+
+        # Assess risk level
+        if analysis['targeting_score'] > 0.7:
+            analysis['risk_level'] = 'high'
+            analysis['concerns'].append('Heavy use of child-targeting influence')
+        elif analysis['targeting_score'] > 0.4:
+            analysis['risk_level'] = 'medium'
+            analysis['concerns'].append('Moderate child-targeting elements')
+
+        # Check for intensive interface patterns in children's content
+        if 'collect' in tactic_matches and 'limited' in text:
+            analysis['concerns'].append('Artificial scarcity targeting children')
+
+        if 'surprise' in tactic_matches or 'mystery' in tactic_matches:
+            analysis['concerns'].append('Variable reward mechanics (gambling-like)')
+
+        return analysis
+
+    def detect_grooming_patterns(self, messages: List[Dict]) -> Dict:
+        """
+        Detect potential grooming patterns in message sequences.
+
+        Expected messages: [{'sender': str, 'content': str, 'timestamp': float}]
+        """
+        analysis = {
+            'grooming_detected': False,
+            'phase': 'none',
+            'confidence': 0.0,
+            'matched_patterns': [],
+            'risk_level': 'none',
+            'immediate_action_needed': False
+        }
+
+        phase_scores = {phase: 0 for phase in self.GROOMING_LANGUAGE}
+
+        for msg in messages:
+            content = msg.get('content', '').lower()
+
+            for phase, patterns in self.GROOMING_LANGUAGE.items():
+                for pattern in patterns:
+                    if re.search(pattern, content):
+                        phase_scores[phase] += 1
+                        analysis['matched_patterns'].append({
+                            'phase': phase,
+                            'pattern': pattern,
+                            'content': content[:100]
+                        })
+
+        # Determine dominant phase
+        max_phase = max(phase_scores, key=phase_scores.get)
+        max_score = phase_scores[max_phase]
+
+        if max_score > 0:
+            analysis['phase'] = max_phase
+            analysis['confidence'] = min(1.0, max_score / 3)
+
+            # Progressive phases indicate active grooming
+            phases_present = [p for p, s in phase_scores.items() if s > 0]
+
+
+#### 4.11.11 Economic Influence Mechanics
+
+## 7. ECONOMIC INFLUENCE MECHANICS
+
+### Research Findings
+
+**Dynamic Pricing (2024):**
+- Amazon changes prices 2.5 million times per day
+- "Surveillance pricing" uses personal data for individualized prices
+- FTC investigating in July 2024
+- Loyal customers often charged MORE
+- Personalized pricing can increase profits 19%
+
+**Anchoring & Decoy Effects:**
+- 70% of consumers influenced by initial price anchor
+- Williams-Sonoma: $429 decoy increased $275 model sales
+- Campbell's "Limit 12" increased purchases from 3.3 to 7 cans
+- Decoy pricing steers choices toward target option
+
+**Subscription Influence:**
+- Average cancellation: 8+ minutes vs 1-2 click signup
+- Forced surveys, phone calls, typed confirmations
+- "Confirmshaming" guilt tactics
+- Hidden renewal terms
+
+```python
+class PricingInfluenceType(Enum):
+    DYNAMIC_PRICING = "real_time_price_adjustment"
+    PERSONALIZED_PRICING = "surveillance_pricing"
+    ANCHOR_PRICING = "reference_price_influence"
+    DECOY_PRICING = "asymmetric_dominance"
+    DRIP_PRICING = "hidden_fees_revealed_late"
+    PARTITIONED_PRICING = "split_price_components"
+    CHARM_PRICING = "psychological_pricing"
+    ARTIFICIAL_SCARCITY = "fake_limited_stock"
+    TIME_PRESSURE = "countdown_urgency"
+    SUBSCRIPTION_TRAP = "difficult_cancellation"
+
+@dataclass
+class PricingAnalysis:
+    """Analysis of pricing influence"""
+    influence_types: List[PricingInfluenceType] = field(default_factory=list)
+    anchor_effect_strength: float = 0.0
+    decoy_detected: bool = False
+    drip_pricing_amount: float = 0.0
+    true_price_vs_displayed: float = 0.0
+    urgency_tactics: List[str] = field(default_factory=list)
+    overall_influence_score: float = 0.0
+
+class EconomicInfluenceDetector:
+    """
+    Detects pricing and economic influence tactics.
+
+    Research basis:
+    - AIMultiple 2026: Dynamic pricing algorithms
+    - ResearchGate 2024: Anchoring and decoy pricing
+    - FTC 2024: Surveillance pricing investigation
+    - CHI 2024: Subscription cancellation analysis
+    """
+
+    # Charm pricing patterns
+    CHARM_PRICES = ['.99', '.95', '.97', '.49']
+
+    # Urgency language patterns
+    URGENCY_PATTERNS = [
+        'only .* left', 'limited stock', 'selling fast',
+        'ends in', 'expires', 'last chance', 'hurry',
+        '.* people viewing', 'in .* carts', 'just sold'
+    ]
+
+    # Drip pricing signals
+    DRIP_PRICING_SIGNALS = [
+        'service fee', 'processing fee', 'convenience fee',
+        'handling', 'delivery', 'taxes not included',
+        'additional charges may apply', 'plus fees'
+    ]
+
+    def __init__(self):
+        self.price_history = {}
+
+    def analyze_pricing_page(self, page_data: Dict) -> PricingAnalysis:
+        """
+        Analyze a pricing page for influence tactics.
+
+        Expected page_data:
+        {
+            'prices': [{'name': str, 'displayed_price': float, 'features': List[str]}],
+            'original_prices': [float],  # Strikethrough prices
+            'urgency_elements': List[str],
+            'fine_print': str,
+            'checkout_flow': [{'step': int, 'new_charges': float}]
+        }
+        """
+        analysis = PricingAnalysis()
+
+        prices = page_data.get('prices', [])
+        original_prices = page_data.get('original_prices', [])
+
+        # Analyze anchor pricing
+        if original_prices and prices:
+            for i, orig in enumerate(original_prices):
+                if i < len(prices) and orig > 0:
+                    discount_shown = (orig - prices[i]['displayed_price']) / orig
+                    if discount_shown > 0.3:  # More than 30% "discount"
+                        analysis.influence_types.append(PricingInfluenceType.ANCHOR_PRICING)
+                        analysis.anchor_effect_strength = discount_shown
+                        break
+
+        # Detect decoy pricing
+        if len(prices) >= 3:
+            decoy_result = self._detect_decoy(prices)
+            if decoy_result['decoy_detected']:
+                analysis.decoy_detected = True
+                analysis.influence_types.append(PricingInfluenceType.DECOY_PRICING)
+
+        # Analyze drip pricing
+        checkout_flow = page_data.get('checkout_flow', [])
+        if checkout_flow:
+            initial_price = checkout_flow[0].get('total', 0) if checkout_flow else 0
+            final_price = checkout_flow[-1].get('total', 0) if checkout_flow else 0
+
+            if final_price > initial_price * 1.1:  # More than 10% increase
+                analysis.drip_pricing_amount = final_price - initial_price
+                analysis.true_price_vs_displayed = final_price / initial_price if initial_price > 0 else 1
+                analysis.influence_types.append(PricingInfluenceType.DRIP_PRICING)
+
+        # Check fine print for hidden fees
+        fine_print = page_data.get('fine_print', '').lower()
+        for signal in self.DRIP_PRICING_SIGNALS:
+            if signal in fine_print:
+                if PricingInfluenceType.DRIP_PRICING not in analysis.influence_types:
+                    analysis.influence_types.append(PricingInfluenceType.DRIP_PRICING)
+                break
+
+        # Analyze urgency tactics
+        urgency_elements = page_data.get('urgency_elements', [])
+        for element in urgency_elements:
+            element_lower = element.lower()
+            for pattern in self.URGENCY_PATTERNS:
+                if re.search(pattern, element_lower):
+                    analysis.urgency_tactics.append(element)
+                    break
+
+        if analysis.urgency_tactics:
+            analysis.influence_types.append(PricingInfluenceType.TIME_PRESSURE)
+
+            # Check for artificial scarcity
+            if any('left' in t.lower() or 'stock' in t.lower() for t in analysis.urgency_tactics):
+                analysis.influence_types.append(PricingInfluenceType.ARTIFICIAL_SCARCITY)
+
+        # Check for charm pricing
+        for price in prices:
+            price_str = str(price.get('displayed_price', 0))
+            if any(charm in price_str for charm in self.CHARM_PRICES):
+                analysis.influence_types.append(PricingInfluenceType.CHARM_PRICING)
+                break
+
+        # Calculate overall influence score
+        analysis.overall_influence_score = min(1.0,
+            len(analysis.influence_types) * 0.15 +
+            analysis.anchor_effect_strength * 0.2 +
+            (0.3 if analysis.decoy_detected else 0) +
+            min(0.3, analysis.drip_pricing_amount / 50) +
+            len(analysis.urgency_tactics) * 0.1
+        )
+
+        return analysis
+
+    def _detect_decoy(self, prices: List[Dict]) -> Dict:
+        """
+        Detect decoy pricing pattern (asymmetric dominance).
+
+        A decoy is inferior to one option but not clearly inferior to another,
+        making the target option look better by comparison.
+        """
+        result = {
+            'decoy_detected': False,
+            'decoy_index': None,
+            'target_index': None,
+            'competitor_index': None
+        }
+
+        if len(prices) < 3:
+            return result
+
+        # Simple heuristic: middle option is often the decoy
+        # Check if middle option has poor value compared to higher option
+        sorted_prices = sorted(prices, key=lambda x: x.get('displayed_price', 0))
+
+        for i in range(1, len(sorted_prices) - 1):
+            lower = sorted_prices[i - 1]
+            middle = sorted_prices[i]
+            higher = sorted_prices[i + 1]
+
+            lower_price = lower.get('displayed_price', 0)
+            middle_price = middle.get('displayed_price', 0)
+            higher_price = higher.get('displayed_price', 0)
+
+            # If middle is close to higher in price but has significantly fewer features
+            if middle_price > lower_price * 1.3:  # Middle is >30% more than lower
+                price_diff_to_higher = higher_price - middle_price
+                price_diff_to_lower = middle_price - lower_price
+
+                # If small price jump to higher but big jump from lower
+                if price_diff_to_higher < price_diff_to_lower * 0.5:
+                    result['decoy_detected'] = True
+                    result['decoy_index'] = i
+                    result['target_index'] = i + 1  # Higher option is target
+                    result['competitor_index'] = i - 1
+                    break
+
+        return result
+
+    def track_price_changes(self, product_id: str, current_price: float, timestamp: float) -> Dict:
+        """
+        Track price changes over time to detect dynamic pricing.
+        """
+        if product_id not in self.price_history:
+            self.price_history[product_id] = []
+
+        self.price_history[product_id].append({
+            'price': current_price,
+            'timestamp': timestamp
+        })
+
+        history = self.price_history[product_id]
+
+        analysis = {
+            'price_changes_detected': len(history) > 1,
+            'change_frequency': 0,
+            'price_volatility': 0.0,
+            'dynamic_pricing_likely': False,
+            'trend': 'stable'
+        }
+
+        if len(history) >= 2:
+            prices = [h['price'] for h in history]
+            timestamps = [h['timestamp'] for h in history]
+
+            # Calculate change frequency
+            time_span = timestamps[-1] - timestamps[0]
+            if time_span > 0:
+                changes = sum(1 for i in range(1, len(prices)) if prices[i] != prices[i-1])
+                analysis['change_frequency'] = changes / (time_span / 3600)  # Changes per hour
+
+            # Calculate volatility
+            if len(prices) >= 3:
+                analysis['price_volatility'] = np.std(prices) / np.mean(prices) if np.mean(prices) > 0 else 0
+
+            # Detect dynamic pricing
+            if analysis['change_frequency'] > 0.5 or analysis['price_volatility'] > 0.1:
+                analysis['dynamic_pricing_likely'] = True
+
+            # Determine trend
+            if prices[-1] > prices[0] * 1.05:
+                analysis['trend'] = 'increasing'
+            elif prices[-1] < prices[0] * 0.95:
+                analysis['trend'] = 'decreasing'
+
+        return analysis
+
+#### 4.11.12 AI-Specific Influence Detection
+
+## 8. AI-SPECIFIC INFLUENCE
+
+### Research Findings
+
+**LLM Persuasion (2024-2025):**
+- LLMs can exceed human persuasion in controlled settings
+- GPT-4 with personal info: 81.7% higher agreement odds
+- Post-training methods boosted persuasiveness 51%
+- Increased persuasion often correlated with DECREASED factual accuracy
+- Scaling model size shows diminishing returns for persuasion
+
+**Deepfakes (2024):**
+- $12 billion in deepfake-enabled fraud (projected $40B in 3 years)
+- 1 in 4 adults experienced AI voice scams
+- Best detectors only 75% accurate
+- "Impostor Bias" - people question even authentic media
+- January 2024: AI Biden robocall attempted election influence
+
+**AI-Generated Content:**
+- 68% concerned about AI influence
+- Detection tools 50% less effective on "in the wild" deepfakes
+- Adversarial perturbations reduce detection 40%
+
+```python
+class AIInfluenceType(Enum):
+    LLM_PERSUASION = "llm_generated_persuasion"
+    DEEPFAKE_VIDEO = "synthetic_video"
+    DEEPFAKE_AUDIO = "voice_cloning"
+    DEEPFAKE_IMAGE = "synthetic_image"
+    AI_PERSONALIZATION = "algorithmic_targeting"
+    CHATBOT_INFLUENCE = "conversational_ai_intensity"
+    SYNTHETIC_SOCIAL_PROOF = "ai_generated_reviews"
+    AUTOMATED_DISINFORMATION = "ai_disinformation_campaign"
+
+@dataclass
+class AIContentAnalysis:
+    """Analysis of AI-generated content"""
+    ai_generated_probability: float = 0.0
+    influence_type: Optional[AIInfluenceType] = None
+    authenticity_indicators: List[str] = field(default_factory=list)
+    synthetic_markers: List[str] = field(default_factory=list)
+    risk_level: str = "unknown"
+    confidence: float = 0.0
+
+class AIInfluenceDetector:
+    """
+    Detects AI-generated influence content.
+
+    Research basis:
+    - Science 2025: Levers of political persuasion with AI
+    - arXiv 2025: LLM as dangerous persuader
+    - Nature 2025: Meta-analysis of LLM persuasive power
+    - PMC 2025: Deepfake detection survey
+    - Deloitte 2025: Deepfake disruption report
+    """
+
+    # LLM-generated text indicators
+    LLM_TEXT_INDICATORS = {
+        'excessive_hedging': [
+            'it\'s important to note', 'it should be mentioned',
+            'one might argue', 'it could be said'
+        ],
+        'formal_transitions': [
+            'furthermore', 'moreover', 'additionally', 'consequently',
+            'nevertheless', 'notwithstanding'
+        ],
+        'ai_phrases': [
+            'as an ai', 'i don\'t have personal', 'i cannot',
+            'it\'s worth noting', 'in conclusion'
+        ],
+        'balanced_framing': [
+            'on the other hand', 'however', 'while some argue',
+            'both sides', 'perspectives vary'
+        ]
+    }
+
+    # Deepfake detection heuristics
+    DEEPFAKE_VIDEO_INDICATORS = {
+        'facial_inconsistencies': [
+            'eye_blink_irregular', 'lip_sync_mismatch', 'face_boundary_artifacts',
+            'lighting_inconsistency', 'head_pose_unnatural'
+        ],
+        'temporal_artifacts': [
+            'frame_flickering', 'temporal_coherence_loss', 'motion_blur_missing'
+        ],
+        'quality_indicators': [
+            'resolution_mismatch', 'compression_artifacts', 'color_inconsistency'
+        ]
+    }
+
+    # Persuasion technique indicators from research
+    PERSUASION_TECHNIQUES = {
+        'personalization': {
+            'indicators': ['based on your', 'tailored for you', 'your interests'],
+            'effectiveness_boost': 0.82  # 81.7% from research
+        },
+        'emotional_appeal': {
+            'indicators': ['feel', 'imagine', 'picture yourself', 'experience'],
+            'effectiveness_boost': 0.51  # 51% from post-training methods
+        },
+        'social_proof_synthetic': {
+            'indicators': ['thousands have', 'everyone is', 'popular choice'],
+            'effectiveness_boost': 0.30
+        },
+        'authority_citation': {
+            'indicators': ['experts say', 'studies show', 'research indicates'],
+            'effectiveness_boost': 0.27  # 27% from prompting methods
+        }
+    }
+
+    def analyze_text_for_ai_generation(self, text: str) -> AIContentAnalysis:
+        """
+        Analyze text for AI generation indicators.
+        """
+        analysis = AIContentAnalysis()
+        text_lower = text.lower()
+
+        indicator_counts = {category: 0 for category in self.LLM_TEXT_INDICATORS}
+
+        for category, phrases in self.LLM_TEXT_INDICATORS.items():
+            for phrase in phrases:
+                if phrase in text_lower:
+                    indicator_counts[category] += 1
+                    analysis.synthetic_markers.append(f"{category}: {phrase}")
+
+        # Calculate AI probability based on indicators
+        total_indicators = sum(indicator_counts.values())
+        text_length = len(text.split())
+
+        # Normalize by text length (longer texts naturally have more phrases)
+        indicator_density = total_indicators / (text_length / 100) if text_length > 0 else 0
+
+        # AI text tends to have multiple categories present
+        categories_present = sum(1 for c in indicator_counts.values() if c > 0)
+
+        analysis.ai_generated_probability = min(1.0,
+            indicator_density * 0.3 +
+            categories_present * 0.15
+        )
+
+        # Check for persuasion techniques
+        persuasion_detected = []
+        for technique, data in self.PERSUASION_TECHNIQUES.items():
+            if any(ind in text_lower for ind in data['indicators']):
+                persuasion_detected.append(technique)
+
+        if persuasion_detected:
+            analysis.influence_type = AIInfluenceType.LLM_PERSUASION
+            analysis.ai_generated_probability += 0.1 * len(persuasion_detected)
+
+        # Determine risk level
+        if analysis.ai_generated_probability > 0.7:
+            analysis.risk_level = "high"
+        elif analysis.ai_generated_probability > 0.4:
+            analysis.risk_level = "medium"
+        else:
+            analysis.risk_level = "low"
+
+        analysis.confidence = min(1.0, 0.3 + total_indicators * 0.1)
+
+        return analysis
+
+    def analyze_conversation_for_chatbot_influence(
+        self,
+        messages: List[Dict],
+        claimed_identity: str = ""
+    ) -> Dict:
+        """
+        Analyze conversation for AI chatbot influence patterns.
+
+        Research shows chatbots can use therapeutic rapport techniques
+        for influence purposes.
+        """
+        analysis = {
+            'chatbot_suspected': False,
+            'influence_patterns': [],
+            'rapport_building_detected': False,
+            'personalization_level': 0.0,
+            'risk_score': 0.0
+        }
+
+        if not messages:
+            return analysis
+
+        # Analyze response patterns
+        response_lengths = []
+        response_times = []
+        formality_scores = []
+
+        for i, msg in enumerate(messages):
+            if msg.get('role') == 'assistant' or msg.get('sender') == claimed_identity:
+                content = msg.get('content', '')
+                response_lengths.append(len(content.split()))
+
+                # Check for AI-like consistency
+                if i > 0:
+                    prev_time = messages[i-1].get('timestamp', 0)
+                    curr_time = msg.get('timestamp', 0)
+                    if curr_time > prev_time:
+                        response_times.append(curr_time - prev_time)
+
+        # AI chatbots often have consistent response lengths
+        if response_lengths:
+            length_cv = np.std(response_lengths) / np.mean(response_lengths) if np.mean(response_lengths) > 0 else 1
+            if length_cv < 0.3:  # Very consistent
+                analysis['chatbot_suspected'] = True
+                analysis['influence_patterns'].append('CONSISTENT_RESPONSE_LENGTH')
+
+        # AI chatbots often respond quickly and consistently
+        if response_times:
+            time_cv = np.std(response_times) / np.mean(response_times) if np.mean(response_times) > 0 else 1
+            if time_cv < 0.2:  # Very consistent timing
+                analysis['influence_patterns'].append('CONSISTENT_RESPONSE_TIME')
+
+        # Check for rapport-building techniques
+        rapport_phrases = [
+            'i understand', 'that must be', 'i hear you',
+            'tell me more', 'how does that make you feel'
+        ]
+
+        rapport_count = 0
+        for msg in messages:
+            content = msg.get('content', '').lower()
+            if any(phrase in content for phrase in rapport_phrases):
+                rapport_count += 1
+
+        if rapport_count > len(messages) * 0.2:
+            analysis['rapport_building_detected'] = True
+            analysis['influence_patterns'].append('THERAPEUTIC_RAPPORT_TECHNIQUES')
+
+        # Check for personalization (using user's info against them)
+        user_messages = [m for m in messages if m.get('role') == 'user' or m.get('sender') != claimed_identity]
+        assistant_messages = [m for m in messages if m.get('role') == 'assistant' or m.get('sender') == claimed_identity]
+
+        # Look for echoed personal details
+        user_text = ' '.join(m.get('content', '') for m in user_messages).lower()
+        for msg in assistant_messages:
+            content = msg.get('content', '').lower()
+
+            # Simple check: does assistant reference specific user details?
+            personal_echoes = sum(1 for word in user_text.split()
+                                 if len(word) > 5 and word in content)
+
+            if personal_echoes > 3:
+                analysis['personalization_level'] = min(1.0, personal_echoes / 10)
+                analysis['influence_patterns'].append('PERSONAL_INFO_INTENSITY')
+
+        # Calculate risk score
+        analysis['risk_score'] = min(1.0,
+            (0.3 if analysis['chatbot_suspected'] else 0) +
+            (0.2 if analysis['rapport_building_detected'] else 0) +
+            analysis['personalization_level'] * 0.3 +
+            len(analysis['influence_patterns']) * 0.1
+        )
+
+        return analysis
+
+
+class DeepfakeDetector:
+    """
+    Detects deepfake and synthetic media.
+
+    Research basis:
+    - PMC 2025: Deepfake forensics survey
+    - GAO 2024: Combating deepfakes spotlight
+    - Springer 2025: Multimedia deepfake detection
+    """
+
+    # Based on research: best detectors only 75% accurate
+    DETECTION_CONFIDENCE_CAP = 0.75
+
+    def analyze_video_authenticity(self, video_features: Dict) -> AIContentAnalysis:
+        """
+        Analyze video for deepfake indicators.
+
+        Expected video_features:
+        {
+            'face_detection_consistency': float,  # 0-1
+            'blink_pattern_score': float,  # 0-1, 1 = natural
+            'lip_sync_score': float,  # 0-1, 1 = perfect sync
+            'lighting_consistency': float,  # 0-1
+            'temporal_coherence': float,  # 0-1
+            'compression_artifacts': float,  # 0-1, higher = more artifacts
+            'face_boundary_quality': float,  # 0-1
+            'source_metadata': Dict
+        }
+        """
+        analysis = AIContentAnalysis()
+        analysis.influence_type = AIInfluenceType.DEEPFAKE_VIDEO
+
+        scores = []
+        weights = []
+
+        # Blink pattern (deepfakes often have irregular blinking)
+        blink_score = video_features.get('blink_pattern_score', 0.5)
+        if blink_score < 0.5:
+            analysis.synthetic_markers.append('IRREGULAR_BLINK_PATTERN')
+        scores.append(1 - blink_score)
+        weights.append(0.2)
+
+        # Lip sync (AI struggles with perfect lip sync)
+        lip_sync = video_features.get('lip_sync_score', 0.5)
+        if lip_sync < 0.7:
+            analysis.synthetic_markers.append('LIP_SYNC_MISMATCH')
+        scores.append(1 - lip_sync)
+        weights.append(0.25)
+
+        # Lighting consistency
+        lighting = video_features.get('lighting_consistency', 0.5)
+        if lighting < 0.6:
+            analysis.synthetic_markers.append('LIGHTING_INCONSISTENCY')
+        scores.append(1 - lighting)
+        weights.append(0.15)
+
+        # Temporal coherence (frame-to-frame consistency)
+        temporal = video_features.get('temporal_coherence', 0.5)
+        if temporal < 0.6:
+            analysis.synthetic_markers.append('TEMPORAL_ARTIFACTS')
+        scores.append(1 - temporal)
+        weights.append(0.2)
+
+        # Face boundary quality
+        boundary = video_features.get('face_boundary_quality', 0.5)
+        if boundary < 0.7:
+            analysis.synthetic_markers.append('FACE_BOUNDARY_ARTIFACTS')
+        scores.append(1 - boundary)
+        weights.append(0.2)
+
+        # Calculate weighted probability
+        weighted_sum = sum(s * w for s, w in zip(scores, weights))
+        total_weight = sum(weights)
+
+        analysis.ai_generated_probability = min(
+            self.DETECTION_CONFIDENCE_CAP,
+            weighted_sum / total_weight if total_weight > 0 else 0
+        )
+
+        # Check metadata
+        metadata = video_features.get('source_metadata', {})
+        if metadata.get('editing_software') in ['Runway', 'Synthesia', 'DeepFaceLab']:
+            analysis.synthetic_markers.append('KNOWN_DEEPFAKE_SOFTWARE_METADATA')
+            analysis.ai_generated_probability = min(0.9, analysis.ai_generated_probability + 0.3)
+
+        # Determine risk level
+        if analysis.ai_generated_probability > 0.6:
+            analysis.risk_level = "high"
+        elif analysis.ai_generated_probability > 0.35:
+            analysis.risk_level = "medium"
+        else:
+            analysis.risk_level = "low"
+
+        # Confidence based on marker count
+        analysis.confidence = min(self.DETECTION_CONFIDENCE_CAP,
+            0.3 + len(analysis.synthetic_markers) * 0.1)
+
+        # Add authenticity indicators
+        if analysis.ai_generated_probability < 0.3:
+            analysis.authenticity_indicators = [
+                'NATURAL_BLINK_PATTERN',
+                'CONSISTENT_LIGHTING',
+                'SMOOTH_TEMPORAL_FLOW'
+            ]
+
+        return analysis
+
+    def analyze_audio_authenticity(self, audio_features: Dict) -> AIContentAnalysis:
+        """
+        Analyze audio for voice cloning/deepfake indicators.
+
+        Expected audio_features:
+        {
+            'spectral_consistency': float,
+            'breathing_patterns': float,  # 0-1, 1 = natural
+            'micro_pauses': float,  # Natural speech has micro-pauses
+            'pitch_variation': float,
+            'background_consistency': float,
+            'clipping_artifacts': float
+        }
+        """
+        analysis = AIContentAnalysis()
+        analysis.influence_type = AIInfluenceType.DEEPFAKE_AUDIO
+
+        # Breathing patterns (cloned voices often lack natural breathing)
+        breathing = audio_features.get('breathing_patterns', 0.5)
+        if breathing < 0.4:
+            analysis.synthetic_markers.append('MISSING_BREATH_SOUNDS')
+
+        # Micro-pauses (AI often too fluent)
+        pauses = audio_features.get('micro_pauses', 0.5)
+        if pauses < 0.3:
+            analysis.synthetic_markers.append('UNNATURAL_FLUENCY')
+
+        # Pitch variation (cloned voices may have limited variation)
+        pitch_var = audio_features.get('pitch_variation', 0.5)
+        if pitch_var < 0.4:
+            analysis.synthetic_markers.append('LIMITED_PITCH_VARIATION')
+
+        # Background consistency (AI may have too-clean background)
+        background = audio_features.get('background_consistency', 0.5)
+        if background > 0.95:  # Too consistent = suspicious
+            analysis.synthetic_markers.append('UNNATURALLY_CLEAN_BACKGROUND')
+
+        # Calculate probability
+        marker_count = len(analysis.synthetic_markers)
+        analysis.ai_generated_probability = min(
+            self.DETECTION_CONFIDENCE_CAP,
+            marker_count * 0.2
+        )
+
+        if analysis.ai_generated_probability > 0.5:
+            analysis.risk_level = "high"
+        elif analysis.ai_generated_probability > 0.25:
+            analysis.risk_level = "medium"
+        else:
+            analysis.risk_level = "low"
+
+        analysis.confidence = min(0.7, 0.3 + marker_count * 0.1)
+
+        return analysis
+```
+
+#### 4.11.13 Intervention Effectiveness Analysis
+
+## 9. INTERVENTION EFFECTIVENESS ANALYSIS
+
+### Research Findings
+
+**Media Literacy Interventions (2024):**
+- Meta-analysis (N=81,155): Overall effect d=0.60
+- Reduces belief in misinformation (d=0.27)
+- Improves discernment (d=0.76)
+- Decreases sharing (d=1.04)
+- Multiple sessions (d=1.93) >> single session (d=0.26)
+
+**Friction Interventions:**
+- Short delays before app opening increase intentional use
+- Warning labels reduce sharing but not belief
+- Cooling-off periods effective for purchases
+
+**Inoculation Theory:**
+- "Prebunking" reduces misinformation endorsement (d=-0.36)
+- Teaching influence tactics more effective than fact-checking
+- Effects decay without reinforcement
+
+```python
+class InterventionType(Enum):
+    MEDIA_LITERACY = "media_literacy_education"
+    FRICTION = "behavioral_friction"
+    INOCULATION = "prebunking_inoculation"
+    WARNING_LABEL = "content_warning"
+    COOLING_OFF = "decision_delay"
+    TRANSPARENCY = "disclosure_requirement"
+    DESIGN_CHANGE = "intensity_reduction_design_modification"
+
+@dataclass
+class InterventionEffectiveness:
+    """Measured effectiveness of an intervention"""
+    intervention_type: InterventionType
+    effect_size: float  # Cohen's d or similar
+    confidence_interval: Tuple[float, float]
+    duration_of_effect: str  # "immediate", "short-term", "long-term"
+    decay_rate: float  # How quickly effect diminishes
+    population_moderators: List[str]
+    implementation_cost: str  # "low", "medium", "high"
+    scalability: str  # "low", "medium", "high"
+
+class InterventionAnalyzer:
+    """
+    Analyzes and recommends interventions against influence.
+
+    Research basis:
+    - Sage 2024: Media literacy meta-analysis
+    - arXiv 2024: Design frictions on social media
+    - Various inoculation theory research
+    """
+
+    # Evidence-based intervention effectiveness from research
+    INTERVENTION_EVIDENCE = {
+        InterventionType.MEDIA_LITERACY: {
+            'overall_effect': 0.60,
+            'belief_reduction': 0.27,
+            'discernment_improvement': 0.76,
+            'sharing_reduction': 1.04,
+            'multiple_sessions_effect': 1.93,
+            'single_session_effect': 0.26,
+            'decay_rate': 0.3,  # Effect decays ~30% without reinforcement
+            'moderators': ['education_level', 'age', 'prior_exposure']
+        },
+        InterventionType.INOCULATION: {
+            'overall_effect': 0.36,
+            'misinformation_endorsement_reduction': 0.36,
+            'influence_recognition_improvement': 0.45,
+            'decay_rate': 0.25,
+            'boosters_recommended': True
+        },
+        InterventionType.FRICTION: {
+            'intentional_use_increase': 0.30,
+            'mindless_scrolling_reduction': 0.40,
+            'optimal_delay_seconds': 3,
+            'effectiveness_at_home': 'reduced',  # Per research
+            'effectiveness_other_settings': 'higher'
+        },
+        InterventionType.WARNING_LABEL: {
+            'sharing_reduction': 0.20,
+            'belief_reduction': 0.10,  # Less effective for beliefs
+            'reactance_risk': 0.15  # Can backfire
+        },
+        InterventionType.COOLING_OFF: {
+            'impulse_purchase_reduction': 0.35,
+            'regret_reduction': 0.40,
+            'optimal_period_hours': 24
+        }
+    }
+
+    def recommend_interventions(
+        self,
+        influence_analysis: Dict,
+        target_population: Dict = None
+    ) -> List[Dict]:
+        """
+        Recommend interventions based on detected influence.
+
+        Args:
+            influence_analysis: Results from various detectors
+            target_population: Demographics and characteristics
+        """
+        recommendations = []
+
+        # Analyze what influences were detected
+        influence_types = influence_analysis.get('influence_types', [])
+        risk_score = influence_analysis.get('overall_risk_score', 0)
+
+        # High-risk situations need multiple interventions
+        if risk_score > 0.7:
+            recommendations.append({
+                'intervention': InterventionType.FRICTION,
+                'priority': 'high',
+                'rationale': 'Immediate friction to slow decision-making',
+                'implementation': 'Add 3-5 second delay before action',
+                'expected_effect': 0.40
+            })
+
+        # Media literacy for ongoing protection
+        if any(m in str(influence_types) for m in ['misinformation', 'fake', 'deepfake']):
+            recommendations.append({
+                'intervention': InterventionType.MEDIA_LITERACY,
+                'priority': 'high',
+                'rationale': 'Build long-term resistance to misinformation',
+                'implementation': 'Multi-session program (4+ sessions)',
+                'expected_effect': 1.93,
+                'note': 'Single sessions only achieve d=0.26'
+            })
+
+        # Inoculation for predictable influence patterns
+        if any(m in str(influence_types) for m in ['scarcity', 'urgency', 'authority']):
+            recommendations.append({
+                'intervention': InterventionType.INOCULATION,
+                'priority': 'medium',
+                'rationale': 'Prebunk common influence tactics',
+                'implementation': 'Explain tactic mechanisms before exposure',
+                'expected_effect': 0.36
+            })
+
+        # Warning labels for specific content
+        if 'emotional_influence' in str(influence_types):
+            recommendations.append({
+                'intervention': InterventionType.WARNING_LABEL,
+                'priority': 'medium',
+                'rationale': 'Alert to emotional influence',
+                'implementation': 'Contextual warning before content',
+                'expected_effect': 0.20,
+                'caution': 'May not reduce belief, mainly reduces sharing'
+            })
+
+        # Cooling-off for financial influence
+        if any(m in str(influence_types) for m in ['pricing', 'subscription', 'purchase']):
+            recommendations.append({
+                'intervention': InterventionType.COOLING_OFF,
+                'priority': 'high',
+                'rationale': 'Prevent impulse decisions',
+                'implementation': '24-hour delay for significant purchases',
+                'expected_effect': 0.35
+            })
+
+        # Adjust for population factors
+        if target_population:
+            recommendations = self._adjust_for_population(recommendations, target_population)
+
+        return sorted(recommendations, key=lambda x: x.get('priority', 'low') == 'high', reverse=True)
+
+    def _adjust_for_population(self, recommendations: List[Dict], population: Dict) -> List[Dict]:
+        """Adjust recommendations based on target population"""
+        age = population.get('age', 30)
+
+        for rec in recommendations:
+            # Media literacy more effective for college students
+            if rec['intervention'] == InterventionType.MEDIA_LITERACY:
+                if 18 <= age <= 25:
+                    rec['expected_effect'] *= 1.2
+                    rec['note'] = rec.get('note', '') + ' Higher effect for college-age.'
+
+            # Friction less effective at home (per research)
+            if rec['intervention'] == InterventionType.FRICTION:
+                if population.get('context') == 'home':
+                    rec['expected_effect'] *= 0.7
+                    rec['caution'] = 'Reduced effectiveness in home settings'
+
+        return recommendations
+
+    def calculate_combined_intervention_effect(
+        self,
+        interventions: List[InterventionType]
+    ) -> Dict:
+        """
+        Calculate expected combined effect of multiple interventions.
+
+        Note: Effects don't simply add; there are diminishing returns.
+        """
+        if not interventions:
+            return {'combined_effect': 0, 'synergies': [], 'conflicts': []}
+
+        effects = []
+        for intervention in interventions:
+            if intervention in self.INTERVENTION_EVIDENCE:
+                effects.append(self.INTERVENTION_EVIDENCE[intervention].get('overall_effect', 0))
+
+        # Apply diminishing returns formula
+        # Each additional intervention adds less
+        combined = 0
+        for i, effect in enumerate(sorted(effects, reverse=True)):
+            # Each subsequent intervention has reduced marginal effect
+            diminishing_factor = 1 / (1 + i * 0.3)
+            combined += effect * diminishing_factor
+
+        result = {
+            'combined_effect': min(2.0, combined),  # Cap at very large effect
+            'synergies': [],
+            'conflicts': []
+        }
+
+        # Check for synergies
+        if InterventionType.INOCULATION in interventions and InterventionType.MEDIA_LITERACY in interventions:
+            result['synergies'].append('Inoculation + Media Literacy: Complementary approaches')
+            result['combined_effect'] *= 1.1
+
+        # Check for conflicts
+        if InterventionType.WARNING_LABEL in interventions and len(interventions) > 2:
+            result['conflicts'].append('Too many interventions may cause warning fatigue')
+            result['combined_effect'] *= 0.9
+
+        return result
+
+
+class InterventionDecayTracker:
+    """
+    Tracks intervention effectiveness over time.
+
+    Research shows effects decay without reinforcement.
+    """
+
+    def __init__(self):
+        self.intervention_history = {}
+
+    def record_intervention(
+        self,
+        user_id: str,
+        intervention: InterventionType,
+        timestamp: float,
+        initial_effect: float
+    ):
+        """Record when an intervention was applied"""
+        if user_id not in self.intervention_history:
+            self.intervention_history[user_id] = []
+
+        self.intervention_history[user_id].append({
+            'intervention': intervention,
+            'timestamp': timestamp,
+            'initial_effect': initial_effect
+        })
+
+    def calculate_current_protection_level(
+        self,
+        user_id: str,
+        current_time: float
+    ) -> Dict:
+        """Calculate current protection level accounting for decay"""
+        if user_id not in self.intervention_history:
+            return {'protection_level': 0, 'recommendations': ['No interventions recorded']}
+
+        history = self.intervention_history[user_id]
+
+        total_protection = 0
+        decayed_interventions = []
+
+        for record in history:
+            intervention = record['intervention']
+            elapsed_days = (current_time - record['timestamp']) / 86400
+
+            # Get decay rate from evidence base
+            decay_rate = InterventionAnalyzer.INTERVENTION_EVIDENCE.get(
+                intervention, {}
+            ).get('decay_rate', 0.3)
+
+            # Exponential decay model
+            remaining_effect = record['initial_effect'] * np.exp(-decay_rate * elapsed_days / 30)
+
+            total_protection += remaining_effect
+
+            if remaining_effect < record['initial_effect'] * 0.5:
+                decayed_interventions.append(intervention.value)
+
+        result = {
+            'protection_level': min(1.0, total_protection),
+            'decayed_interventions': decayed_interventions,
+            'recommendations': []
+        }
+
+        if decayed_interventions:
+            result['recommendations'].append(
+                f"Consider booster for: {', '.join(decayed_interventions)}"
+            )
+
+        if result['protection_level'] < 0.3:
+            result['recommendations'].append("Protection level low - intervention recommended")
+
+        return result
+```
+
+#### 4.11.14 Regulatory Compliance Mapping
+
+## 10. REGULATORY COMPLIANCE MAPPING
+
+### Research Findings
+
+**FTC Enforcement (2024-2025):**
+- Amazon: $2.5 billion settlement for dark patterns
+- Adobe: DOJ complaint for cancellation difficulty
+- 76% of sites use dark patterns (international review)
+- Click-to-Cancel rule adopted then vacated
+
+**EU Regulations:**
+- Digital Services Act (Feb 2024): Prohibits "making cancellation significantly more cumbersome than signup"
+- AI Act: Classifies emotional influence as high-risk/prohibited
+- German Fair Consumer Contracts Act: Requires termination button
+
+**US State Laws:**
+- CCPA: Explicit dark pattern prohibition
+- 14 states with privacy/deceptive design laws
+
+```python
+class Jurisdiction(Enum):
+    US_FEDERAL = "us_federal"
+    US_CALIFORNIA = "us_california"
+    EU = "european_union"
+    UK = "united_kingdom"
+    GERMANY = "germany"
+    CANADA = "canada"
+    AUSTRALIA = "australia"
+
+class RegulationType(Enum):
+    DARK_PATTERN_PROHIBITION = "dark_pattern"
+    DECEPTIVE_ADVERTISING = "deceptive_advertising"
+    SUBSCRIPTION_PRACTICES = "subscription_regulation"
+    CHILD_PROTECTION = "children_online_protection"
+    AI_REGULATION = "ai_specific"
+    PRIVACY_DESIGN = "privacy_by_design"
+
+@dataclass
+class RegulatoryViolation:
+    """Identified regulatory violation"""
+    jurisdiction: Jurisdiction
+    regulation_type: RegulationType
+    specific_law: str
+    violation_description: str
+    severity: str  # "minor", "moderate", "severe"
+    enforcement_likelihood: float
+    potential_penalty: str
+    remediation_steps: List[str]
+
+class RegulatoryComplianceAnalyzer:
+    """
+    Maps detected influence to regulatory violations.
+
+    Research basis:
+    - FTC enforcement actions 2024
+    - EU DSA requirements
+    - State privacy law requirements
+    """
+
+    # Regulatory mappings
+    REGULATION_DATABASE = {
+        Jurisdiction.US_FEDERAL: {
+            'ftc_section_5': {
+                'name': 'FTC Act Section 5',
+                'prohibits': ['deceptive_practices', 'unfair_practices'],
+                'enforcement': 'Active - multiple 2024 cases',
+                'penalties': 'Civil penalties, injunctions, refunds'
+            },
+            'rosca': {
+                'name': 'Restore Online Shoppers Confidence Act',
+                'prohibits': ['negative_option_without_consent', 'hidden_terms'],
+                'enforcement': 'Active - Amazon case 2024',
+                'penalties': 'Civil penalties up to $50,000+ per violation'
+            }
+        },
+        Jurisdiction.US_CALIFORNIA: {
+            'ccpa_cpra': {
+                'name': 'California Consumer Privacy Act / CPRA',
+                'prohibits': ['dark_patterns_in_consent', 'deceptive_design'],
+                'enforcement': 'Active',
+                'penalties': '$2,500-$7,500 per violation'
+            }
+        },
+        Jurisdiction.EU: {
+            'dsa': {
+                'name': 'Digital Services Act',
+                'prohibits': [
+                    'cancellation_harder_than_signup',
+                    'dark_patterns',
+                    'manipulative_design'
+                ],
+                'enforcement': 'Active since Feb 2024',
+                'penalties': 'Up to 6% global turnover'
+            },
+            'ai_act': {
+                'name': 'EU AI Act',
+                'prohibits': [
+                    'subliminal_influence',
+                    'intensity_of_vulnerabilities',
+                    'social_scoring'
+                ],
+                'enforcement': 'Phased implementation',
+                'penalties': 'Up to 7% global turnover for prohibited practices'
+            },
+            'gdpr': {
+                'name': 'General Data Protection Regulation',
+                'prohibits': ['deceptive_consent', 'dark_patterns_in_privacy'],
+                'enforcement': 'Active',
+                'penalties': 'Up to 4% global turnover or EUR 20 million'
+            }
+        },
+        Jurisdiction.GERMANY: {
+            'fair_contracts_act': {
+                'name': 'Fair Consumer Contracts Act',
+                'prohibits': ['no_termination_button'],
+                'enforcement': 'Active',
+                'penalties': 'Varies'
+            }
+        }
+    }
+
+    # Mapping from influence types to regulations
+    INFLUENCE_TO_REGULATION = {
+        'roach_motel': [
+            (Jurisdiction.EU, 'dsa'),
+            (Jurisdiction.US_FEDERAL, 'ftc_section_5'),
+            (Jurisdiction.GERMANY, 'fair_contracts_act')
+        ],
+        'confirmshaming': [
+            (Jurisdiction.US_FEDERAL, 'ftc_section_5'),
+            (Jurisdiction.EU, 'dsa')
+        ],
+        'fake_urgency': [
+            (Jurisdiction.US_FEDERAL, 'ftc_section_5'),
+            (Jurisdiction.EU, 'dsa')
+        ],
+        'hidden_costs': [
+            (Jurisdiction.US_FEDERAL, 'rosca'),
+            (Jurisdiction.US_CALIFORNIA, 'ccpa_cpra')
+        ],
+        'dark_pattern_consent': [
+            (Jurisdiction.EU, 'gdpr'),
+            (Jurisdiction.US_CALIFORNIA, 'ccpa_cpra')
+        ],
+        'subliminal_influence': [
+            (Jurisdiction.EU, 'ai_act')
+        ],
+        'child_targeted_influence': [
+            (Jurisdiction.US_FEDERAL, 'ftc_section_5'),  # COPPA via FTC
+            (Jurisdiction.EU, 'dsa')
+        ],
+        'deepfake_fraud': [
+            (Jurisdiction.US_FEDERAL, 'ftc_section_5')
+            # Multiple state laws also apply
+        ]
+    }
+
+#### 4.11.15 Integration Test Data
+
+```python
+
+# Import statement for using all detectors
+import time
+
+# Example usage
+if __name__ == "__main__":
+    auditor = ComprehensivePersuasionAuditor()
+
+    # Example audit
+    sample_content = {
+        'text': 'Act now! Limited time offer expires in 24 hours. Our experts recommend this product.',
+        'interface': {
+            'features': ['streak counter', 'daily rewards', 'leaderboard'],
+            'signup_steps': 2,
+            'cancel_steps': 8,
+            'cancel_requirements': ['call to cancel', 'survey required'],
+            'reward_schedule': 'variable'
+        },
+        'pricing': {
+            'prices': [
+                {'name': 'Basic', 'displayed_price': 9.99},
+                {'name': 'Pro', 'displayed_price': 19.99},
+                {'name': 'Enterprise', 'displayed_price': 24.99}
+            ],
+            'original_prices': [19.99, 39.99, 49.99],
+            'urgency_elements': ['Only 3 left in stock!', 'Sale ends in 2:34:21']
+        }
+    }
+
+    sample_user = {
+        'age': 72,
+        'cognitive_indicators': ['processing_speed_decline'],
+        'emotional_state': 'loneliness',
+        'social_connection_score': 0.2,
+        'digital_literacy_score': 0.3
+    }
+
+    result = auditor.full_audit(sample_content, sample_user)
+    print(result['summary'])
+```
+```
+
+---
+
 ## PART 5: HIGH-IMPACT DETECTION SYSTEMS (9 Specialized Detectors) {#part-5}
 
 ### 5.1 Synergistic Stacking Detector
@@ -6006,6 +11022,24 @@ class AIAmplificationDetector:
 
 ### 5.6 Ranked Combination Effectiveness Data
 
+> **Analytical Layer: Detection Combinations (2–3 technique stacks)**
+> This table ranks the **15 most common technique combinations** that the detection code in this file is designed to flag.
+> Combinations are named by their user-facing behavioral pattern (what a person experiences).
+> The Source Reference section (§5.10.6) contains the **code implementation** of a parallel ranking where
+> combinations are named by technical enum values — same underlying research, different vocabulary.
+>
+> This is one of four effectiveness layers across the Linguistic Persuasion system:
+>
+> | Layer | Prompt | What It Ranks | Scale |
+> |-------|--------|---------------|-------|
+> | 1 — Linguistic devices | Prompt 2 | Single language techniques in isolation | Score /100 |
+> | 2 — Psychological mechanisms | Prompt 3 | Single persuasion mechanisms | % susceptibility increase |
+> | **3 — Detection combinations** | **Prompt 4 (this section)** | **2–3 technique combos for detection code** | **Multiplier (1.28x–2.1x)** |
+> | 4 — Expanded combinations | Prompt 5 | 2–4 technique combos (40 ranks, 6 tiers) | Multiplier (1.05x–2.5x) |
+>
+> Prompt 5 extends this to 40 ranks with 4-technique stacks, which is why its Rank 1 (2.5x) is higher than
+> this table's Rank 1 (2.1x) — the 3-technique version of that same combo appears as Prompt 5's Rank 3 at 2.1x.
+
 Research-derived rankings of persuasion technique combinations by measured effectiveness multiplier:
 
 | Rank | Combination | Multiplier | Primary Defense |
@@ -6372,6 +11406,2968 @@ class InformationEcosystemDetector:
 ```
 
 ---
+
+
+### 5.10 Source Reference: High-Impact Detection Systems (Original Implementations)
+
+> The following subsections preserve the original complete implementations from the source
+> detection systems. These are retained verbatim for zero-loss consolidation verification.
+
+#### 5.10.1 Original SynergisticStackingDetector (Full Implementation)
+
+```python
+import numpy as np
+from dataclasses import dataclass, field
+from typing import List, Dict, Optional, Tuple, Set
+from enum import Enum
+from collections import defaultdict
+import re
+import time
+
+class InfluenceTechnique(Enum):
+    # Cialdini's Principles
+    SCARCITY = "scarcity"
+    SOCIAL_PROOF = "social_proof"
+    AUTHORITY = "authority"
+    RECIPROCITY = "reciprocity"
+    COMMITMENT = "commitment"
+    LIKING = "liking"
+    UNITY = "unity"
+
+    # Emotional Techniques
+    FEAR = "fear"
+    URGENCY = "urgency"
+    FOMO = "fomo"
+    GUILT = "guilt"
+    EXCITEMENT = "excitement"
+
+    # Cognitive Techniques
+    ANCHORING = "anchoring"
+    DECOY = "decoy"
+    FRAMING = "framing"
+    COGNITIVE_LOAD = "cognitive_overload"
+
+    # Platform Techniques
+    VARIABLE_REWARD = "variable_reward"
+    STREAK = "streak"
+    INFINITE_SCROLL = "infinite_scroll"
+    PERSONALIZATION = "personalization"
+
+    # Trust Techniques
+    FAKE_REVIEWS = "fake_reviews"
+    TESTIMONIALS = "testimonials"
+    CREDENTIALS = "credentials"
+
+@dataclass
+class SynergyProfile:
+    """Known synergistic combinations and their multipliers"""
+    techniques: Tuple[InfluenceTechnique, ...]
+    multiplier: float
+    mechanism: str
+    research_source: str
+
+@dataclass
+class StackingAnalysis:
+    """Results of synergistic stacking analysis"""
+    techniques_detected: List[InfluenceTechnique] = field(default_factory=list)
+    technique_count: int = 0
+    synergies_activated: List[SynergyProfile] = field(default_factory=list)
+    total_multiplier: float = 1.0
+    base_influence_score: float = 0.0
+    amplified_score: float = 0.0
+    sophistication_level: str = "low"  # low, medium, high, professional
+    pattern_signature: str = ""
+
+class SynergisticStackingDetector:
+    """
+    Detects when multiple influence techniques are stacked for amplified effect.
+
+    Research basis:
+    - Combination multipliers from persuasion research
+    - Platform design analysis showing intentional stacking
+    - Scarcity + Social Proof = 1.4x; Authority + Personalization = 1.3x
+    """
+
+    # Empirically validated synergy combinations
+    KNOWN_SYNERGIES: List[SynergyProfile] = [
+        SynergyProfile(
+            techniques=(InfluenceTechnique.SCARCITY, InfluenceTechnique.SOCIAL_PROOF),
+            multiplier=1.4,
+            mechanism="Scarcity validates social proof ('others want it too')",
+            research_source="Cialdini combination studies"
+        ),
+        SynergyProfile(
+            techniques=(InfluenceTechnique.AUTHORITY, InfluenceTechnique.PERSONALIZATION),
+            multiplier=1.3,
+            mechanism="Personalized authority feels more credible",
+            research_source="LLM persuasion research 2024"
+        ),
+        SynergyProfile(
+            techniques=(InfluenceTechnique.URGENCY, InfluenceTechnique.SCARCITY),
+            multiplier=1.35,
+            mechanism="Time pressure + limited quantity = panic buying",
+            research_source="E-commerce interface pattern analysis"
+        ),
+        SynergyProfile(
+            techniques=(InfluenceTechnique.FEAR, InfluenceTechnique.AUTHORITY),
+            multiplier=1.45,
+            mechanism="Authority amplifies fear credibility",
+            research_source="Health misinformation studies"
+        ),
+        SynergyProfile(
+            techniques=(InfluenceTechnique.SOCIAL_PROOF, InfluenceTechnique.FOMO),
+            multiplier=1.35,
+            mechanism="Others acting + missing out = action compulsion",
+            research_source="Social media engagement research"
+        ),
+        SynergyProfile(
+            techniques=(InfluenceTechnique.RECIPROCITY, InfluenceTechnique.COMMITMENT),
+            multiplier=1.25,
+            mechanism="Gift creates obligation, small commitment enables larger",
+            research_source="Foot-in-door research"
+        ),
+        SynergyProfile(
+            techniques=(InfluenceTechnique.VARIABLE_REWARD, InfluenceTechnique.STREAK),
+            multiplier=1.5,
+            mechanism="Unpredictable rewards + loss aversion = compulsive engagement",
+            research_source="Gamification engagement studies"
+        ),
+        SynergyProfile(
+            techniques=(InfluenceTechnique.INFINITE_SCROLL, InfluenceTechnique.PERSONALIZATION),
+            multiplier=1.45,
+            mechanism="Endless content + relevance = time distortion",
+            research_source="CHI 2024 attention capture research"
+        ),
+        SynergyProfile(
+            techniques=(InfluenceTechnique.ANCHORING, InfluenceTechnique.DECOY),
+            multiplier=1.4,
+            mechanism="Reference price + inferior option = target selection",
+            research_source="Behavioral economics pricing studies"
+        ),
+        SynergyProfile(
+            techniques=(InfluenceTechnique.COGNITIVE_LOAD, InfluenceTechnique.URGENCY),
+            multiplier=1.5,
+            mechanism="Overwhelmed + pressured = System 1 decision",
+            research_source="Decision fatigue research"
+        ),
+        SynergyProfile(
+            techniques=(InfluenceTechnique.GUILT, InfluenceTechnique.COMMITMENT),
+            multiplier=1.3,
+            mechanism="Prior commitment + guilt = continued compliance",
+            research_source="Sunk cost influence research"
+        ),
+        SynergyProfile(
+            techniques=(InfluenceTechnique.TESTIMONIALS, InfluenceTechnique.LIKING),
+            multiplier=1.25,
+            mechanism="Likeable testimonials feel more authentic",
+            research_source="Influencer marketing research"
+        ),
+        # Triple combinations (higher sophistication)
+        SynergyProfile(
+            techniques=(InfluenceTechnique.SCARCITY, InfluenceTechnique.SOCIAL_PROOF, InfluenceTechnique.URGENCY),
+            multiplier=1.7,
+            mechanism="Triple threat: limited + popular + time-sensitive",
+            research_source="Interface pattern combination analysis"
+        ),
+        SynergyProfile(
+            techniques=(InfluenceTechnique.AUTHORITY, InfluenceTechnique.FEAR, InfluenceTechnique.URGENCY),
+            multiplier=1.8,
+            mechanism="Expert warning + danger + act now = bypass critical thinking",
+            research_source="Scam effectiveness research"
+        ),
+        SynergyProfile(
+            techniques=(InfluenceTechnique.VARIABLE_REWARD, InfluenceTechnique.STREAK, InfluenceTechnique.SOCIAL_PROOF),
+            multiplier=1.65,
+            mechanism="Gambling mechanics + loss aversion + peer pressure",
+            research_source="Mobile game monetization studies"
+        ),
+    ]
+
+    # Detection patterns for each technique
+    TECHNIQUE_PATTERNS = {
+        InfluenceTechnique.SCARCITY: {
+            'text_patterns': [
+                r'only \d+ left', r'limited (stock|quantity|availability)',
+                r'selling fast', r'almost (gone|sold out)', r'few remaining',
+                r'while supplies last', r'exclusive', r'rare'
+            ],
+            'ui_patterns': ['low_stock_indicator', 'inventory_counter', 'sold_out_warning']
+        },
+        InfluenceTechnique.SOCIAL_PROOF: {
+            'text_patterns': [
+                r'\d+[,\d]* (people|customers|users)', r'best.?seller',
+                r'most popular', r'trending', r'everyone', r'\d+\s*reviews',
+                r'trusted by', r'join \d+', r'as seen'
+            ],
+            'ui_patterns': ['review_count', 'rating_stars', 'buyer_count', 'trending_badge']
+        },
+        InfluenceTechnique.AUTHORITY: {
+            'text_patterns': [
+                r'expert', r'doctor', r'scientist', r'study shows',
+                r'research proves', r'certified', r'official', r'approved',
+                r'recommended by', r'endorsed', r'award.?winning'
+            ],
+            'ui_patterns': ['certification_badge', 'expert_photo', 'credential_display']
+        },
+        InfluenceTechnique.URGENCY: {
+            'text_patterns': [
+                r'act now', r'limited time', r'expires', r'deadline',
+                r'today only', r'last chance', r'don\'t wait', r'hurry',
+                r'ends (in|soon)', r'\d+:\d+:\d+', r'countdown'
+            ],
+            'ui_patterns': ['countdown_timer', 'expiration_notice', 'urgency_banner']
+        },
+        InfluenceTechnique.FEAR: {
+            'text_patterns': [
+                r'risk', r'danger', r'threat', r'warning', r'protect',
+                r'before it\'s too late', r'don\'t miss', r'lose',
+                r'vulnerable', r'exposed', r'attack'
+            ],
+            'ui_patterns': ['warning_icon', 'alert_banner', 'danger_color']
+        },
+        InfluenceTechnique.FOMO: {
+            'text_patterns': [
+                r'missing out', r'don\'t miss', r'everyone (else|is)',
+                r'left behind', r'others are', r'happening now',
+                r'you\'re missing', r'while you wait'
+            ],
+            'ui_patterns': ['activity_feed', 'real_time_purchases', 'viewer_count']
+        },
+        InfluenceTechnique.GUILT: {
+            'text_patterns': [
+                r'disappoint', r'let down', r'after (all|everything)',
+                r'we thought', r'sad to see', r'we\'ll miss',
+                r'giving up', r'abandoning'
+            ],
+            'ui_patterns': ['sad_mascot', 'guilt_message', 'abandonment_warning']
+        },
+        InfluenceTechnique.RECIPROCITY: {
+            'text_patterns': [
+                r'free (gift|bonus|trial)', r'complimentary', r'on us',
+                r'no obligation', r'as a thank you', r'exclusive (offer|access)',
+                r'we\'ve given you', r'your free'
+            ],
+            'ui_patterns': ['gift_icon', 'bonus_indicator', 'free_trial_badge']
+        },
+        InfluenceTechnique.COMMITMENT: {
+            'text_patterns': [
+                r'you (already|previously)', r'continue', r'don\'t lose progress',
+                r'you\'ve invested', r'come this far', r'almost there',
+                r'just one more step', r'finish what you started'
+            ],
+            'ui_patterns': ['progress_bar', 'step_indicator', 'completion_percentage']
+        },
+        InfluenceTechnique.ANCHORING: {
+            'text_patterns': [
+                r'was \$[\d,]+', r'(originally|regular) \$[\d,]+',
+                r'save \$[\d,]+', r'\d+% off', r'compare at',
+                r'value of \$[\d,]+', r'worth \$[\d,]+'
+            ],
+            'ui_patterns': ['strikethrough_price', 'savings_badge', 'compare_price']
+        },
+        InfluenceTechnique.VARIABLE_REWARD: {
+            'text_patterns': [
+                r'spin (to|the) win', r'mystery', r'surprise', r'random',
+                r'chance to', r'lucky', r'jackpot', r'bonus wheel'
+            ],
+            'ui_patterns': ['spin_wheel', 'loot_box', 'mystery_reward', 'gacha']
+        },
+        InfluenceTechnique.STREAK: {
+            'text_patterns': [
+                r'\d+ day streak', r'don\'t break', r'keep (it|your) going',
+                r'consecutive', r'daily (bonus|reward)', r'maintain'
+            ],
+            'ui_patterns': ['streak_counter', 'flame_icon', 'chain_visual']
+        },
+        InfluenceTechnique.PERSONALIZATION: {
+            'text_patterns': [
+                r'(just |especially |picked )?for you', r'based on your',
+                r'personalized', r'your (interests|preferences|history)',
+                r'recommended for you', r'tailored'
+            ],
+            'ui_patterns': ['personalized_section', 'for_you_feed', 'recommendation_row']
+        },
+        InfluenceTechnique.COGNITIVE_LOAD: {
+            'text_patterns': [
+                r'(many|multiple|various) options', r'compare',
+                r'features include', r'specifications'
+            ],
+            'ui_patterns': [
+                'excessive_options', 'complex_comparison', 'information_overload',
+                'multi_step_form', 'many_checkboxes'
+            ]
+        },
+    }
+
+    def __init__(self):
+        self.detection_cache = {}
+
+    def detect_techniques(self, content: Dict) -> List[InfluenceTechnique]:
+        """
+        Detect all influence techniques present in content.
+
+        Expected content:
+        {
+            'text': str,
+            'ui_elements': List[str],
+            'metadata': Dict
+        }
+        """
+        detected = []
+        text = content.get('text', '').lower()
+        ui_elements = [e.lower() for e in content.get('ui_elements', [])]
+
+        for technique, patterns in self.TECHNIQUE_PATTERNS.items():
+            # Check text patterns
+            text_matches = sum(
+                1 for pattern in patterns['text_patterns']
+                if re.search(pattern, text, re.IGNORECASE)
+            )
+
+            # Check UI patterns
+            ui_matches = sum(
+                1 for pattern in patterns['ui_patterns']
+                if any(pattern in elem for elem in ui_elements)
+            )
+
+            # Technique is detected if we have sufficient evidence
+            if text_matches >= 1 or ui_matches >= 1:
+                detected.append(technique)
+
+        return detected
+
+    def analyze_stacking(self, content: Dict) -> StackingAnalysis:
+        """
+        Analyze content for synergistic technique stacking.
+        """
+        analysis = StackingAnalysis()
+
+        # Detect all techniques
+        analysis.techniques_detected = self.detect_techniques(content)
+        analysis.technique_count = len(analysis.techniques_detected)
+
+        if analysis.technique_count == 0:
+            return analysis
+
+        # Calculate base score (diminishing returns for raw count)
+        analysis.base_influence_score = min(1.0,
+            0.15 * analysis.technique_count +
+            0.05 * (analysis.technique_count ** 0.5)
+        )
+
+        # Find activated synergies
+        detected_set = set(analysis.techniques_detected)
+
+        for synergy in self.KNOWN_SYNERGIES:
+            synergy_set = set(synergy.techniques)
+            if synergy_set.issubset(detected_set):
+                analysis.synergies_activated.append(synergy)
+
+        # Calculate total multiplier (multiplicative but with diminishing returns)
+        if analysis.synergies_activated:
+            # Sort by multiplier descending
+            sorted_synergies = sorted(
+                analysis.synergies_activated,
+                key=lambda x: x.multiplier,
+                reverse=True
+            )
+
+            analysis.total_multiplier = 1.0
+            for i, synergy in enumerate(sorted_synergies):
+                # Each subsequent synergy has reduced additional effect
+                diminishing_factor = 1 / (1 + i * 0.4)
+                additional_multiplier = (synergy.multiplier - 1) * diminishing_factor
+                analysis.total_multiplier += additional_multiplier
+
+        # Calculate amplified score
+        analysis.amplified_score = min(1.0,
+            analysis.base_influence_score * analysis.total_multiplier
+        )
+
+        # Determine sophistication level
+        if analysis.technique_count >= 5 and len(analysis.synergies_activated) >= 2:
+            analysis.sophistication_level = "professional"
+        elif analysis.technique_count >= 4 or len(analysis.synergies_activated) >= 2:
+            analysis.sophistication_level = "high"
+        elif analysis.technique_count >= 2 or len(analysis.synergies_activated) >= 1:
+            analysis.sophistication_level = "medium"
+        else:
+            analysis.sophistication_level = "low"
+
+        # Generate pattern signature
+        technique_names = sorted([t.value for t in analysis.techniques_detected])
+        analysis.pattern_signature = "+".join(technique_names[:5])  # Top 5
+
+        return analysis
+
+    def get_synergy_explanation(self, analysis: StackingAnalysis) -> List[str]:
+        """Generate human-readable explanations of detected synergies"""
+        explanations = []
+
+        for synergy in analysis.synergies_activated:
+            technique_names = [t.value for t in synergy.techniques]
+            explanations.append(
+                f"SYNERGY DETECTED: {' + '.join(technique_names)} "
+                f"(×{synergy.multiplier:.2f})\n"
+                f"  Mechanism: {synergy.mechanism}\n"
+                f"  Source: {synergy.research_source}"
+            )
+
+        return explanations
+```
+
+#### 5.10.2 Original VulnerabilityTimingDetector (Full Implementation)
+
+```python
+from datetime import datetime, timezone
+from typing import Optional
+
+class VulnerabilityWindow(Enum):
+    CIRCADIAN_LOW = "circadian_cognitive_low"  # 2-4 AM
+    DECISION_FATIGUE = "decision_fatigue_window"
+    EMOTIONAL_DISTRESS = "emotional_vulnerability"
+    POST_NOTIFICATION = "notification_arousal_window"
+    WORK_STRESS = "end_of_workday"
+    WEEKEND_RELAXED = "weekend_reduced_vigilance"
+    PAYCHECK = "post_paycheck_spending"
+    LATE_NIGHT = "late_night_impulse"
+    MORNING_RUSH = "morning_decision_pressure"
+
+@dataclass
+class TimingIntensityAnalysis:
+    """Analysis of vulnerability timing intensity"""
+    vulnerability_windows_targeted: List[VulnerabilityWindow] = field(default_factory=list)
+    timing_intensity_score: float = 0.0
+    temporal_patterns: List[Dict] = field(default_factory=list)
+    notification_timing_suspicious: bool = False
+    circadian_intensity: bool = False
+    decision_fatigue_intensity: bool = False
+    emotional_state_intensity: bool = False
+    recommendations: List[str] = field(default_factory=list)
+
+class VulnerabilityTimingDetector:
+    """
+    Detects when content/notifications are timed to leverage vulnerability windows.
+
+    Research basis:
+    - 2-4 AM decisions show 40%+ reduced critical thinking
+    - TikTok emotional state detection: 94% accuracy
+    - Decision fatigue: After 10-15 choices, compliance +35%
+    - Post-notification arousal window: 2-5 minutes elevated suggestibility
+    """
+
+    # Circadian vulnerability hours (local time)
+    CIRCADIAN_VULNERABILITY = {
+        'severe': [(2, 4)],      # 2-4 AM: worst cognitive function
+        'moderate': [(0, 2), (4, 6), (14, 15)],  # Midnight-2AM, 4-6AM, post-lunch dip
+        'mild': [(22, 24)]      # 10PM-midnight: fatigue accumulation
+    }
+
+    # Decision fatigue thresholds
+    DECISION_FATIGUE_THRESHOLDS = {
+        'onset': 7,           # Fatigue begins
+        'moderate': 12,       # Significant impairment
+        'severe': 20          # Compliance mode
+    }
+
+    # Notification-to-action optimal timing (for influencers)
+    NOTIFICATION_INTENSITY_WINDOW = {
+        'peak_arousal': (0, 30),      # 0-30 seconds: highest arousal
+        'elevated': (30, 120),         # 30-120 seconds: still elevated
+        'post_arousal': (120, 300)    # 2-5 minutes: residual effect
+    }
+
+    # Emotional state indicators that predict vulnerability
+    EMOTIONAL_VULNERABILITY_SIGNALS = {
+        'text_patterns': {
+            'sadness': [r'sad', r'depressed', r'lonely', r'miss', r'crying', r'hurt'],
+            'anxiety': [r'worried', r'anxious', r'scared', r'nervous', r'panic'],
+            'anger': [r'angry', r'furious', r'hate', r'frustrated', r'annoyed'],
+            'loneliness': [r'alone', r'no one', r'nobody', r'isolated', r'empty'],
+            'boredom': [r'bored', r'nothing to do', r'tired of', r'same old'],
+            'excitement': [r'excited', r'can\'t wait', r'amazing', r'best day']
+        },
+        'behavioral_patterns': {
+            'late_night_browsing': 'loneliness_indicator',
+            'rapid_scrolling': 'anxiety_or_boredom',
+            'repeated_checking': 'anxiety_indicator',
+            'long_sessions': 'escapism_indicator'
+        }
+    }
+
+    def __init__(self):
+        self.user_decision_count = defaultdict(int)
+        self.user_notification_history = defaultdict(list)
+        self.user_emotional_signals = defaultdict(list)
+
+    def analyze_timing(
+        self,
+        timestamp: float,
+        user_id: str,
+        content: Dict,
+        user_behavior: Dict = None
+    ) -> TimingIntensityAnalysis:
+        """
+        Analyze whether content timing leverages vulnerability windows.
+
+        Args:
+            timestamp: Unix timestamp of content delivery
+            user_id: User identifier for tracking patterns
+            content: Content being delivered
+            user_behavior: Optional behavioral signals
+        """
+        analysis = TimingIntensityAnalysis()
+
+        # Convert timestamp to local time
+        dt = datetime.fromtimestamp(timestamp)
+        hour = dt.hour
+        day_of_week = dt.weekday()  # 0=Monday, 6=Sunday
+
+        # 1. Check circadian vulnerability
+        circadian_risk = self._check_circadian_vulnerability(hour)
+        if circadian_risk:
+            analysis.circadian_intensity = True
+            analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.CIRCADIAN_LOW)
+            analysis.timing_intensity_score += circadian_risk
+            analysis.temporal_patterns.append({
+                'type': 'circadian',
+                'hour': hour,
+                'risk_level': circadian_risk
+            })
+
+        # 2. Check for late night targeting
+        if 22 <= hour or hour < 6:
+            analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.LATE_NIGHT)
+            analysis.timing_intensity_score += 0.2
+
+        # 3. Check decision fatigue
+        if user_id:
+            decision_count = self.user_decision_count.get(user_id, 0)
+            fatigue_level = self._assess_decision_fatigue(decision_count)
+
+            if fatigue_level:
+                analysis.decision_fatigue_intensity = True
+                analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.DECISION_FATIGUE)
+                analysis.timing_intensity_score += fatigue_level
+                analysis.temporal_patterns.append({
+                    'type': 'decision_fatigue',
+                    'decision_count': decision_count,
+                    'fatigue_level': fatigue_level
+                })
+
+        # 4. Check notification timing patterns
+        if user_id and self.user_notification_history.get(user_id):
+            notification_analysis = self._analyze_notification_timing(user_id, timestamp)
+            if notification_analysis['suspicious']:
+                analysis.notification_timing_suspicious = True
+                analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.POST_NOTIFICATION)
+                analysis.timing_intensity_score += 0.3
+
+        # 5. Check emotional state intensity
+        if user_behavior:
+            emotional_intensity = self._check_emotional_intensity(
+                user_behavior,
+                content
+            )
+            if emotional_intensity['targeted']:
+                analysis.emotional_state_intensity = True
+                analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.EMOTIONAL_DISTRESS)
+                analysis.timing_intensity_score += emotional_intensity['score']
+
+        # 6. Check work/weekend patterns
+        if 17 <= hour <= 19 and day_of_week < 5:  # Weekday evening
+            analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.WORK_STRESS)
+            analysis.timing_intensity_score += 0.1
+
+        if day_of_week >= 5 and 10 <= hour <= 14:  # Weekend midday
+            analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.WEEKEND_RELAXED)
+            analysis.timing_intensity_score += 0.1
+
+        # 7. Check paycheck timing (if available)
+        if dt.day in [1, 15, 28, 29, 30, 31]:  # Common paycheck days
+            analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.PAYCHECK)
+            analysis.timing_intensity_score += 0.15
+
+        # Normalize score
+        analysis.timing_intensity_score = min(1.0, analysis.timing_intensity_score)
+
+        # Generate recommendations
+        analysis.recommendations = self._generate_recommendations(analysis)
+
+        return analysis
+
+    def _check_circadian_vulnerability(self, hour: int) -> float:
+        """Check if hour falls in circadian vulnerability window"""
+        for start, end in self.CIRCADIAN_VULNERABILITY['severe']:
+            if start <= hour < end:
+                return 0.5
+
+        for start, end in self.CIRCADIAN_VULNERABILITY['moderate']:
+            if start <= hour < end:
+                return 0.3
+
+        for start, end in self.CIRCADIAN_VULNERABILITY['mild']:
+            if start <= hour < end:
+                return 0.15
+
+        return 0.0
+
+    def _assess_decision_fatigue(self, decision_count: int) -> float:
+        """Assess decision fatigue level"""
+        if decision_count >= self.DECISION_FATIGUE_THRESHOLDS['severe']:
+            return 0.5  # High intensity potential
+        elif decision_count >= self.DECISION_FATIGUE_THRESHOLDS['moderate']:
+            return 0.3
+        elif decision_count >= self.DECISION_FATIGUE_THRESHOLDS['onset']:
+            return 0.15
+        return 0.0
+
+    def _analyze_notification_timing(self, user_id: str, current_time: float) -> Dict:
+        """Analyze if content follows shortly after notification (intensity window)"""
+        history = self.user_notification_history.get(user_id, [])
+
+        result = {
+            'suspicious': False,
+            'time_since_notification': None,
+            'intensity_window': None
+        }
+
+        if not history:
+            return result
+
+        last_notification = history[-1]
+        time_diff = current_time - last_notification['timestamp']
+
+        result['time_since_notification'] = time_diff
+
+        # Check if within intensity window
+        for window_name, (start, end) in self.NOTIFICATION_INTENSITY_WINDOW.items():
+            if start <= time_diff <= end:
+                result['suspicious'] = True
+                result['intensity_window'] = window_name
+                break
+
+        return result
+
+    def _check_emotional_intensity(self, behavior: Dict, content: Dict) -> Dict:
+        """Check if content targets detected emotional state"""
+        result = {
+            'targeted': False,
+            'emotional_state': None,
+            'content_targets_state': False,
+            'score': 0.0
+        }
+
+        # Detect emotional state from behavior
+        detected_emotions = []
+
+        if behavior.get('recent_searches'):
+            searches = ' '.join(behavior['recent_searches']).lower()
+            for emotion, patterns in self.EMOTIONAL_VULNERABILITY_SIGNALS['text_patterns'].items():
+                if any(re.search(p, searches) for p in patterns):
+                    detected_emotions.append(emotion)
+
+        if behavior.get('session_length_minutes', 0) > 60:
+            detected_emotions.append('escapism')
+
+        if behavior.get('time_hour') and (behavior['time_hour'] >= 23 or behavior['time_hour'] < 5):
+            detected_emotions.append('loneliness')
+
+        if not detected_emotions:
+            return result
+
+        result['emotional_state'] = detected_emotions
+
+        # Check if content targets these emotions
+        content_text = content.get('text', '').lower()
+
+        # Emotional intensity patterns
+        intensity_patterns = {
+            'sadness': [r'feel better', r'cheer up', r'you deserve', r'treat yourself'],
+            'loneliness': [r'connect', r'community', r'join', r'you\'re not alone', r'find (friends|love)'],
+            'anxiety': [r'peace of mind', r'analysis', r'security', r'don\'t worry', r'safe'],
+            'boredom': [r'exciting', r'new', r'adventure', r'discover', r'experience'],
+            'excitement': [r'now', r'act', r'limited', r'special']  # Leverage excitement for impulse
+        }
+
+        for emotion in detected_emotions:
+            if emotion in intensity_patterns:
+                patterns = intensity_patterns[emotion]
+                if any(re.search(p, content_text) for p in patterns):
+                    result['targeted'] = True
+                    result['content_targets_state'] = True
+                    result['score'] = 0.4
+                    break
+
+        return result
+
+    def record_decision(self, user_id: str):
+        """Record a decision to track decision fatigue"""
+        self.user_decision_count[user_id] += 1
+
+    def reset_decision_count(self, user_id: str):
+        """Reset decision count (e.g., after break or new day)"""
+        self.user_decision_count[user_id] = 0
+```
+
+#### 5.10.3 Original TrustLeverageSequenceDetector (Full Implementation)
+
+```python
+class TrustStage(Enum):
+    INITIAL_CONTACT = "initial_contact"
+    RAPPORT_BUILDING = "rapport_building"
+    SMALL_REQUEST = "small_request"
+    COMPLIANCE_TEST = "compliance_test"
+    MEDIUM_REQUEST = "medium_request"
+    COMMITMENT_LOCK = "commitment_lock"
+    LARGE_REQUEST = "large_request"
+    INTENSITY = "intensity"
+
+@dataclass
+class TrustSequenceAnalysis:
+    """Analysis of trust leverage sequence"""
+    current_stage: TrustStage = TrustStage.INITIAL_CONTACT
+    stage_progression: List[TrustStage] = field(default_factory=list)
+    progression_velocity: float = 0.0  # How fast moving through stages
+    escalation_detected: bool = False
+    reciprocity_triggers: int = 0
+    commitment_locks: int = 0
+    intensity_risk_score: float = 0.0
+    predicted_next_move: str = ""
+    time_in_current_stage: float = 0.0
+    red_flags: List[str] = field(default_factory=list)
+
+class TrustLeverageSequenceDetector:
+    """
+    Detects systematic trust building and leverage sequences.
+
+    Research basis:
+    - Foot-in-the-door: Small → Medium → Large requests
+    - Reciprocity: Unsolicited gifts create obligation
+    - Commitment: Prior agreements enable larger asks
+    - Grooming patterns transfer to commercial contexts
+    """
+
+    # Interaction patterns for each stage
+    STAGE_PATTERNS = {
+        TrustStage.INITIAL_CONTACT: {
+            'patterns': [
+                r'(hi|hello|hey)', r'how are you', r'nice to meet',
+                r'introduction', r'first time', r'new here'
+            ],
+            'request_size': 0,
+            'typical_duration_hours': (0, 24)
+        },
+        TrustStage.RAPPORT_BUILDING: {
+            'patterns': [
+                r'i understand', r'me too', r'same here', r'i agree',
+                r'great (point|question)', r'you\'re (right|smart)',
+                r'tell me more', r'interesting', r'i (like|love) that'
+            ],
+            'request_size': 0,
+            'typical_duration_hours': (24, 168)  # 1-7 days
+        },
+        TrustStage.SMALL_REQUEST: {
+            'patterns': [
+                r'quick (question|favor)', r'small (ask|favor)',
+                r'just (one|a) (minute|thing)', r'could you (just|simply)',
+                r'easy', r'simple', r'no big deal'
+            ],
+            'request_size': 1,
+            'typical_duration_hours': (0, 48)
+        },
+        TrustStage.COMPLIANCE_TEST: {
+            'patterns': [
+                r'did you', r'have you', r'you said you would',
+                r'remember when', r'you (promised|agreed)',
+                r'following up'
+            ],
+            'request_size': 1,
+            'typical_duration_hours': (24, 72)
+        },
+        TrustStage.MEDIUM_REQUEST: {
+            'patterns': [
+                r'another (favor|thing)', r'(also|additionally)',
+                r'while you\'re at it', r'one more thing',
+                r'need (your help|you to)', r'important (to me|matter)'
+            ],
+            'request_size': 2,
+            'typical_duration_hours': (48, 168)
+        },
+        TrustStage.COMMITMENT_LOCK: {
+            'patterns': [
+                r'you (already|already\'ve)', r'come this far',
+                r'invested', r'committed', r'promised',
+                r'can\'t (stop|quit) now', r'sunk'
+            ],
+            'request_size': 2,
+            'typical_duration_hours': (0, 48)
+        },
+        TrustStage.LARGE_REQUEST: {
+            'patterns': [
+                r'(big|huge|major) (favor|ask)', r'(really|truly) need',
+                r'(significant|substantial)', r'(money|loan|invest)',
+                r'access', r'credentials', r'(personal|private)'
+            ],
+            'request_size': 3,
+            'typical_duration_hours': (72, 336)
+        },
+        TrustStage.INTENSITY: {
+            'patterns': [
+                r'(wire|transfer|send)', r'(urgent|immediately|now)',
+                r'(don\'t tell|keep.*secret)', r'(trust me|believe me)',
+                r'(only you|you\'re the only)', r'(owe|obligation)'
+            ],
+            'request_size': 3,
+            'typical_duration_hours': (0, 24)
+        }
+    }
+
+    # Reciprocity trigger patterns
+    RECIPROCITY_TRIGGERS = [
+        r'free (gift|trial|bonus)', r'complimentary', r'on (me|us)',
+        r'no (strings|obligation)', r'my treat', r'i\'ll (cover|pay)',
+        r'special.*for you', r'exclusive (access|offer)'
+    ]
+
+    # Commitment lock patterns
+    COMMITMENT_LOCKS = [
+        r'you (said|agreed|promised)', r'we (agreed|discussed)',
+        r'remember (when|our)', r'your (word|commitment)',
+        r'don\'t go back on', r'after (all|everything)'
+    ]
+
+    # Red flag patterns (influence indicators)
+    RED_FLAGS = {
+        'rushed_progression': 'Moving through trust stages unusually fast',
+        'premature_large_request': 'Large request before sufficient rapport',
+        'guilt_influence': 'Using guilt to enforce compliance',
+        'isolation_attempts': 'Trying to isolate from other relationships/advice',
+        'secrecy_demands': 'Requesting secrecy about the relationship/transactions',
+        'boundary_violations': 'Pushing past stated limits',
+        'love_bombing': 'Excessive flattery and attention early on'
+    }
+
+    def __init__(self):
+        self.interaction_history = defaultdict(list)
+        self.stage_history = defaultdict(list)
+
+    def analyze_interaction(
+        self,
+        interaction: Dict,
+        user_id: str,
+        counterpart_id: str
+    ) -> TrustSequenceAnalysis:
+        """
+        Analyze interaction for trust leverage patterns.
+
+        Expected interaction:
+        {
+            'content': str,
+            'timestamp': float,
+            'sender': str,  # Who sent this
+            'contains_request': bool,
+            'request_magnitude': int  # 0-3
+        }
+        """
+        analysis = TrustSequenceAnalysis()
+
+        # Store interaction
+        relationship_key = f"{user_id}:{counterpart_id}"
+        self.interaction_history[relationship_key].append(interaction)
+
+        history = self.interaction_history[relationship_key]
+        content = interaction.get('content', '').lower()
+
+        # Detect current stage
+        stage_scores = self._score_stages(history)
+        analysis.current_stage = max(stage_scores, key=stage_scores.get)
+
+        # Track stage progression
+        if self.stage_history[relationship_key]:
+            previous_stage = self.stage_history[relationship_key][-1]['stage']
+            if analysis.current_stage != previous_stage:
+                analysis.stage_progression = [
+                    h['stage'] for h in self.stage_history[relationship_key]
+                ] + [analysis.current_stage]
+
+        self.stage_history[relationship_key].append({
+            'stage': analysis.current_stage,
+            'timestamp': interaction['timestamp']
+        })
+
+        # Calculate progression velocity
+        analysis.progression_velocity = self._calculate_velocity(relationship_key)
+
+        # Count reciprocity triggers
+        for pattern in self.RECIPROCITY_TRIGGERS:
+            if re.search(pattern, content):
+                analysis.reciprocity_triggers += 1
+
+        # Count commitment locks
+        for pattern in self.COMMITMENT_LOCKS:
+            if re.search(pattern, content):
+                analysis.commitment_locks += 1
+
+        # Detect escalation
+        analysis.escalation_detected = self._detect_escalation(history)
+
+        # Check for red flags
+        analysis.red_flags = self._check_red_flags(history, analysis)
+
+        # Calculate intensity risk
+        analysis.intensity_risk_score = self._calculate_risk(analysis)
+
+        # Predict next move
+        analysis.predicted_next_move = self._predict_next_move(analysis)
+
+        # Time in current stage
+        analysis.time_in_current_stage = self._time_in_stage(relationship_key)
+
+        return analysis
+
+    def _score_stages(self, history: List[Dict]) -> Dict[TrustStage, float]:
+        """Score how much each stage matches current interaction pattern"""
+        scores = {stage: 0.0 for stage in TrustStage}
+
+        # Consider recent interactions more heavily
+        recent = history[-5:] if len(history) >= 5 else history
+
+        for interaction in recent:
+            content = interaction.get('content', '').lower()
+
+            for stage, data in self.STAGE_PATTERNS.items():
+                matches = sum(
+                    1 for pattern in data['patterns']
+                    if re.search(pattern, content)
+                )
+                scores[stage] += matches
+
+        return scores
+
+    def _calculate_velocity(self, relationship_key: str) -> float:
+        """Calculate how fast the relationship is progressing through stages"""
+        history = self.stage_history.get(relationship_key, [])
+
+        if len(history) < 2:
+            return 0.0
+
+        # Count stage transitions
+        transitions = 0
+        for i in range(1, len(history)):
+            if history[i]['stage'] != history[i-1]['stage']:
+                transitions += 1
+
+        # Time span
+        time_span = history[-1]['timestamp'] - history[0]['timestamp']
+        hours = time_span / 3600 if time_span > 0 else 1
+
+        # Transitions per hour (normalized)
+        velocity = transitions / hours
+
+        # High velocity is suspicious (typical grooming is 0.01-0.05 transitions/hour)
+        # Scams move faster (0.1-0.5 transitions/hour)
+        return min(1.0, velocity * 5)
+
+    def _detect_escalation(self, history: List[Dict]) -> bool:
+        """Detect if requests are escalating in magnitude"""
+        requests = [
+            h.get('request_magnitude', 0)
+            for h in history
+            if h.get('contains_request')
+        ]
+
+        if len(requests) < 2:
+            return False
+
+        # Check if generally increasing
+        increases = sum(1 for i in range(1, len(requests)) if requests[i] > requests[i-1])
+        return increases >= len(requests) // 2
+
+    def _check_red_flags(self, history: List[Dict], analysis: TrustSequenceAnalysis) -> List[str]:
+        """Check for influence red flags"""
+        flags = []
+
+        # Rushed progression
+        if analysis.progression_velocity > 0.3:
+            flags.append(self.RED_FLAGS['rushed_progression'])
+
+        # Premature large request
+        stage_order = list(TrustStage)
+        current_index = stage_order.index(analysis.current_stage)
+
+        if analysis.current_stage in [TrustStage.LARGE_REQUEST, TrustStage.INTENSITY]:
+            # Check if rapport stages were skipped
+            rapport_interactions = sum(
+                1 for h in history
+                if any(re.search(p, h.get('content', '').lower())
+                      for p in self.STAGE_PATTERNS[TrustStage.RAPPORT_BUILDING]['patterns'])
+            )
+            if rapport_interactions < 3:
+                flags.append(self.RED_FLAGS['premature_large_request'])
+
+        # Guilt influence
+        guilt_patterns = [r'after (all|everything)', r'disappoint', r'let.*down', r'i thought']
+        recent_content = ' '.join(h.get('content', '') for h in history[-3:]).lower()
+        if any(re.search(p, recent_content) for p in guilt_patterns):
+            flags.append(self.RED_FLAGS['guilt_influence'])
+
+        # Secrecy demands
+        secrecy_patterns = [r'don\'t tell', r'between us', r'secret', r'private']
+        if any(re.search(p, recent_content) for p in secrecy_patterns):
+            flags.append(self.RED_FLAGS['secrecy_demands'])
+
+        # Love bombing (excessive early flattery)
+        if len(history) <= 5:
+            flattery_patterns = [r'amazing', r'incredible', r'perfect', r'best', r'love', r'special']
+            flattery_count = sum(
+                1 for h in history
+                for p in flattery_patterns
+                if re.search(p, h.get('content', '').lower())
+            )
+            if flattery_count > len(history) * 2:
+                flags.append(self.RED_FLAGS['love_bombing'])
+
+        return flags
+
+    def _calculate_risk(self, analysis: TrustSequenceAnalysis) -> float:
+        """Calculate overall intensity risk score"""
+        risk = 0.0
+
+        # Stage risk (later stages = higher risk)
+        stage_risks = {
+            TrustStage.INITIAL_CONTACT: 0.0,
+            TrustStage.RAPPORT_BUILDING: 0.05,
+            TrustStage.SMALL_REQUEST: 0.1,
+            TrustStage.COMPLIANCE_TEST: 0.2,
+            TrustStage.MEDIUM_REQUEST: 0.3,
+            TrustStage.COMMITMENT_LOCK: 0.5,
+            TrustStage.LARGE_REQUEST: 0.7,
+            TrustStage.INTENSITY: 0.9
+        }
+        risk += stage_risks.get(analysis.current_stage, 0)
+
+        # Velocity risk
+        risk += analysis.progression_velocity * 0.3
+
+        # Escalation risk
+        if analysis.escalation_detected:
+            risk += 0.2
+
+        # Red flag risk
+        risk += len(analysis.red_flags) * 0.1
+
+        # Reciprocity/commitment influence
+        risk += min(0.2, analysis.reciprocity_triggers * 0.05)
+        risk += min(0.2, analysis.commitment_locks * 0.05)
+
+        return min(1.0, risk)
+
+    def _predict_next_move(self, analysis: TrustSequenceAnalysis) -> str:
+        """Predict the influencer's likely next move"""
+        predictions = {
+            TrustStage.INITIAL_CONTACT: "Expect rapport-building: compliments, agreement, shared interests",
+            TrustStage.RAPPORT_BUILDING: "Expect small request: 'quick favor', 'simple question'",
+            TrustStage.SMALL_REQUEST: "If complied: expect compliance test or medium request soon",
+            TrustStage.COMPLIANCE_TEST: "Expect reminder of prior compliance to set up medium request",
+            TrustStage.MEDIUM_REQUEST: "Expect commitment lock: 'you already invested' framing",
+            TrustStage.COMMITMENT_LOCK: "Expect large request: money, credentials, or major favor",
+            TrustStage.LARGE_REQUEST: "Expect urgency tactics if resisted; intensity if complied",
+            TrustStage.INTENSITY: "Active intensity in progress - recommend disengagement"
+        }
+        return predictions.get(analysis.current_stage, "Unknown pattern")
+
+    def _time_in_stage(self, relationship_key: str) -> float:
+        """Calculate time spent in current stage"""
+        history = self.stage_history.get(relationship_key, [])
+
+        if len(history) < 2:
+            return 0.0
+
+        current_stage = history[-1]['stage']
+
+        # Find when we entered this stage
+        for i in range(len(history) - 2, -1, -1):
+            if history[i]['stage'] != current_stage:
+                return history[-1]['timestamp'] - history[i + 1]['timestamp']
+
+        return history[-1]['timestamp'] - history[0]['timestamp']
+```
+
+#### 5.10.4 Original PhysiologicalBypassDetector (Full Implementation)
+
+```python
+class BypassMechanism(Enum):
+    RAPID_CUTS = "attention_fragmentation"
+    ASMR_RELAXATION = "critical_faculty_reduction"
+    EMOTIONAL_AROUSAL = "amygdala_hijack"
+    COGNITIVE_OVERLOAD = "system1_forcing"
+    FOCUSED_RHYTHM = "trance_induction"
+    PERIPHERAL_ROUTE = "low_elaboration"
+    PRIMING = "subconscious_activation"
+
+@dataclass
+class PhysiologicalBypassAnalysis:
+    """Analysis of physiological bypassing techniques"""
+    bypass_mechanisms: List[BypassMechanism] = field(default_factory=list)
+    conscious_processing_reduction: float = 0.0  # 0-1, how much critical thinking is impaired
+    emotional_hijack_score: float = 0.0
+    attention_fragmentation_score: float = 0.0
+    relaxation_intensity_score: float = 0.0
+    combined_bypass_effectiveness: float = 0.0
+    target_brain_systems: List[str] = field(default_factory=list)
+    countermeasures: List[str] = field(default_factory=list)
+
+class PhysiologicalBypassDetector:
+    """
+    Detects content designed to bypass conscious cognitive processing.
+
+    Research basis:
+    - Rapid cuts (2.5 sec) reduce conscious processing via alpha rhythm disruption
+    - ASMR triggers relaxation → reduced critical faculty
+    - Emotional arousal (pupil dilation >15%) correlates with reduced critical thinking
+    - Cognitive overload forces System 1 (automatic) over System 2 (analytical)
+    """
+
+    # Thresholds from research
+    THRESHOLDS = {
+        'rapid_cut_seconds': 2.5,  # Below this = attention fragmentation
+        'cut_burst_count': 5,       # Consecutive rapid cuts
+        'emotional_word_density': 0.15,  # 15% emotional words = high arousal
+        'cognitive_load_elements': 7,  # Miller's 7 +/- 2
+        'focused_regularity_cv': 0.15,  # Coefficient of variation
+    }
+
+    # ASMR and relaxation triggers
+    ASMR_TRIGGERS = {
+        'audio': [
+            'whisper', 'soft spoken', 'gentle', 'soothing', 'calming',
+            'tapping', 'scratching', 'crinkling', 'brushing', 'rain',
+            'white noise', 'ambient', 'meditation', 'relaxation'
+        ],
+        'visual': [
+            'slow motion', 'flowing', 'smooth', 'gentle movements',
+            'close up hands', 'repetitive motion', 'satisfying'
+        ]
+    }
+
+    # High-arousal emotional words (from psychological research)
+    AROUSAL_WORDS = {
+        'high_negative': [
+            'danger', 'attack', 'threat', 'kill', 'destroy', 'terror',
+            'panic', 'emergency', 'crisis', 'disaster', 'catastrophe',
+            'horrifying', 'shocking', 'outrageous', 'disgusting'
+        ],
+        'high_positive': [
+            'amazing', 'incredible', 'unbelievable', 'explosive',
+            'revolutionary', 'breakthrough', 'miraculous', 'stunning',
+            'thrilling', 'ecstatic', 'euphoric'
+        ],
+        'fear_specific': [
+            'lose', 'miss', 'fail', 'risk', 'vulnerable', 'exposed',
+            'unsafe', 'unprotected', 'deadline', 'expire', 'last chance'
+        ],
+        'anger_specific': [
+            'unfair', 'cheated', 'lied', 'betrayed', 'corrupt',
+            'scam', 'fraud', 'exploit', 'abuse', 'victim'
+        ]
+    }
+
+    # Cognitive overload indicators
+    OVERLOAD_INDICATORS = [
+        'multiple_comparisons', 'excessive_features', 'complex_pricing',
+        'many_options', 'dense_text', 'competing_visuals', 'rapid_information',
+        'technical_jargon', 'fine_print', 'asterisks'
+    ]
+
+    def analyze_content(self, content: Dict) -> PhysiologicalBypassAnalysis:
+        """
+        Analyze content for physiological bypassing techniques.
+
+        Expected content:
+        {
+            'text': str,
+            'video_cuts': List[float],  # Timestamps of cuts
+            'video_duration': float,
+            'audio_features': Dict,
+            'ui_elements': List[str],
+            'visual_elements': List[str],
+            'timing_pattern': List[float]  # Intervals between elements
+        }
+        """
+        analysis = PhysiologicalBypassAnalysis()
+
+        # 1. Analyze attention fragmentation (rapid cuts)
+        if 'video_cuts' in content:
+            fragmentation = self._analyze_attention_fragmentation(
+                content['video_cuts'],
+                content.get('video_duration', 0)
+            )
+            if fragmentation['detected']:
+                analysis.bypass_mechanisms.append(BypassMechanism.RAPID_CUTS)
+                analysis.attention_fragmentation_score = fragmentation['score']
+                analysis.target_brain_systems.append('prefrontal_cortex_disruption')
+
+        # 2. Analyze ASMR/relaxation intensity
+        relaxation = self._analyze_relaxation_intensity(content)
+        if relaxation['detected']:
+            analysis.bypass_mechanisms.append(BypassMechanism.ASMR_RELAXATION)
+            analysis.relaxation_intensity_score = relaxation['score']
+            analysis.target_brain_systems.append('parasympathetic_activation')
+
+        # 3. Analyze emotional arousal (amygdala hijack)
+        emotional = self._analyze_emotional_arousal(content.get('text', ''))
+        if emotional['hijack_potential'] > 0.3:
+            analysis.bypass_mechanisms.append(BypassMechanism.EMOTIONAL_AROUSAL)
+            analysis.emotional_hijack_score = emotional['hijack_potential']
+            analysis.target_brain_systems.append('amygdala_activation')
+
+        # 4. Analyze cognitive overload
+        overload = self._analyze_cognitive_overload(content)
+        if overload['detected']:
+            analysis.bypass_mechanisms.append(BypassMechanism.COGNITIVE_OVERLOAD)
+            analysis.target_brain_systems.append('working_memory_saturation')
+
+        # 5. Analyze focused-engagement rhythm patterns
+        if 'timing_pattern' in content:
+            focused = self._analyze_focused_patterns(content['timing_pattern'])
+            if focused['detected']:
+                analysis.bypass_mechanisms.append(BypassMechanism.FOCUSED_RHYTHM)
+                analysis.target_brain_systems.append('alpha_rhythm_entrainment')
+
+        # 6. Calculate conscious processing reduction
+        analysis.conscious_processing_reduction = self._calculate_processing_reduction(analysis)
+
+        # 7. Calculate combined bypass effectiveness
+        analysis.combined_bypass_effectiveness = self._calculate_combined_effectiveness(analysis)
+
+        # 8. Generate countermeasures
+        analysis.countermeasures = self._generate_countermeasures(analysis)
+
+        return analysis
+
+    def _analyze_attention_fragmentation(self, cuts: List[float], duration: float) -> Dict:
+        """Analyze video cuts for attention fragmentation"""
+        result = {
+            'detected': False,
+            'score': 0.0,
+            'avg_shot_length': 0.0,
+            'rapid_cut_sequences': 0
+        }
+
+        if len(cuts) < 2:
+            return result
+
+        intervals = np.diff(cuts)
+        result['avg_shot_length'] = float(np.mean(intervals))
+
+        # Count rapid cuts
+        rapid_cuts = intervals < self.THRESHOLDS['rapid_cut_seconds']
+
+        # Find burst sequences
+        burst_count = 0
+        current_burst = 0
+        for is_rapid in rapid_cuts:
+            if is_rapid:
+                current_burst += 1
+            else:
+                if current_burst >= self.THRESHOLDS['cut_burst_count']:
+                    burst_count += 1
+                current_burst = 0
+
+        if current_burst >= self.THRESHOLDS['cut_burst_count']:
+            burst_count += 1
+
+        result['rapid_cut_sequences'] = burst_count
+
+        # Calculate score
+        if result['avg_shot_length'] < self.THRESHOLDS['rapid_cut_seconds']:
+            result['detected'] = True
+            result['score'] = min(1.0,
+                (self.THRESHOLDS['rapid_cut_seconds'] - result['avg_shot_length']) /
+                self.THRESHOLDS['rapid_cut_seconds'] +
+                burst_count * 0.2
+            )
+
+        return result
+
+    def _analyze_relaxation_intensity(self, content: Dict) -> Dict:
+        """Analyze for ASMR and relaxation influence"""
+        result = {'detected': False, 'score': 0.0, 'triggers': []}
+
+        text = content.get('text', '').lower()
+        audio = content.get('audio_features', {})
+        visual = content.get('visual_elements', [])
+
+        # Check audio triggers
+        for trigger in self.ASMR_TRIGGERS['audio']:
+            if trigger in text or trigger in str(audio):
+                result['triggers'].append(f"audio:{trigger}")
+
+        # Check visual triggers
+        visual_lower = [v.lower() for v in visual]
+        for trigger in self.ASMR_TRIGGERS['visual']:
+            if any(trigger in v for v in visual_lower):
+                result['triggers'].append(f"visual:{trigger}")
+
+        # Check audio properties
+        if audio.get('whisper_segments', 0) > 0:
+            result['triggers'].append('whisper_detected')
+
+        if audio.get('tempo_bpm', 80) < 60:  # Very slow tempo
+            result['triggers'].append('slow_tempo')
+
+        if len(result['triggers']) >= 2:
+            result['detected'] = True
+            result['score'] = min(1.0, len(result['triggers']) * 0.2)
+
+        return result
+
+    def _analyze_emotional_arousal(self, text: str) -> Dict:
+        """Analyze text for emotional arousal potential"""
+        result = {
+            'hijack_potential': 0.0,
+            'dominant_emotion': None,
+            'arousal_word_density': 0.0,
+            'valence': 'neutral'
+        }
+
+        if not text:
+            return result
+
+        text_lower = text.lower()
+        words = text_lower.split()
+        total_words = len(words)
+
+        if total_words == 0:
+            return result
+
+        emotion_counts = {
+            'high_negative': 0,
+            'high_positive': 0,
+            'fear': 0,
+            'anger': 0
+        }
+
+        for word in words:
+            for category, patterns in self.AROUSAL_WORDS.items():
+                if word in patterns or any(p in word for p in patterns):
+                    if category == 'fear_specific':
+                        emotion_counts['fear'] += 1
+                    elif category == 'anger_specific':
+                        emotion_counts['anger'] += 1
+                    elif category == 'high_negative':
+                        emotion_counts['high_negative'] += 1
+                    else:
+                        emotion_counts['high_positive'] += 1
+
+        total_arousal_words = sum(emotion_counts.values())
+        result['arousal_word_density'] = total_arousal_words / total_words
+
+        # Determine dominant emotion
+        if emotion_counts:
+            result['dominant_emotion'] = max(emotion_counts, key=emotion_counts.get)
+
+        # Calculate hijack potential
+        # High density of arousal words = high hijack potential
+        if result['arousal_word_density'] > self.THRESHOLDS['emotional_word_density']:
+            result['hijack_potential'] = min(1.0, result['arousal_word_density'] * 4)
+
+        # Fear and anger are most hijacking
+        fear_anger_ratio = (emotion_counts['fear'] + emotion_counts['anger']) / max(1, total_arousal_words)
+        result['hijack_potential'] = min(1.0, result['hijack_potential'] + fear_anger_ratio * 0.3)
+
+        # Determine valence
+        negative = emotion_counts['high_negative'] + emotion_counts['fear'] + emotion_counts['anger']
+        positive = emotion_counts['high_positive']
+        result['valence'] = 'negative' if negative > positive else ('positive' if positive > negative else 'neutral')
+
+        return result
+
+    def _analyze_cognitive_overload(self, content: Dict) -> Dict:
+        """Analyze for cognitive overload influence"""
+        result = {'detected': False, 'score': 0.0, 'overload_elements': []}
+
+        ui_elements = content.get('ui_elements', [])
+        text = content.get('text', '')
+
+        # Count overload indicators
+        for indicator in self.OVERLOAD_INDICATORS:
+            if indicator in str(ui_elements).lower():
+                result['overload_elements'].append(indicator)
+
+        # Check for excessive options
+        option_patterns = [r'\d+\s*(options|choices|plans|packages)', r'compare', r'vs\.?']
+        for pattern in option_patterns:
+            if re.search(pattern, text, re.IGNORECASE):
+                result['overload_elements'].append('excessive_comparison')
+
+        # Check for dense information
+        if text:
+            # Word density proxy
+            sentences = text.split('.')
+            words = text.split()
+            if sentences and len(words) / len(sentences) > 25:  # Very long sentences
+                result['overload_elements'].append('dense_text')
+
+            # Number density (prices, stats overwhelm)
+            numbers = re.findall(r'\d+', text)
+            if len(numbers) > 10:
+                result['overload_elements'].append('number_overload')
+
+        if len(result['overload_elements']) >= 3:
+            result['detected'] = True
+            result['score'] = min(1.0, len(result['overload_elements']) * 0.15)
+
+        return result
+
+    def _analyze_focused_patterns(self, timing_pattern: List[float]) -> Dict:
+        """Analyze for focused-engagement regularity in content timing"""
+        result = {'detected': False, 'score': 0.0, 'regularity': 0.0}
+
+        if len(timing_pattern) < 5:
+            return result
+
+        # Calculate coefficient of variation
+        mean_interval = np.mean(timing_pattern)
+        std_interval = np.std(timing_pattern)
+
+        if mean_interval > 0:
+            cv = std_interval / mean_interval
+            result['regularity'] = 1 - min(1, cv)
+
+            if cv < self.THRESHOLDS['focused_regularity_cv']:
+                result['detected'] = True
+                result['score'] = result['regularity']
+
+        return result
+
+    def _calculate_processing_reduction(self, analysis: PhysiologicalBypassAnalysis) -> float:
+        """Calculate overall reduction in conscious processing"""
+        reduction = 0.0
+
+        # Each bypass mechanism contributes
+        mechanism_weights = {
+            BypassMechanism.RAPID_CUTS: analysis.attention_fragmentation_score * 0.3,
+            BypassMechanism.ASMR_RELAXATION: analysis.relaxation_intensity_score * 0.25,
+            BypassMechanism.EMOTIONAL_AROUSAL: analysis.emotional_hijack_score * 0.35,
+            BypassMechanism.COGNITIVE_OVERLOAD: 0.25,
+            BypassMechanism.FOCUSED_RHYTHM: 0.2,
+        }
+
+        for mechanism in analysis.bypass_mechanisms:
+            reduction += mechanism_weights.get(mechanism, 0.1)
+
+        return min(1.0, reduction)
+
+    def _calculate_combined_effectiveness(self, analysis: PhysiologicalBypassAnalysis) -> float:
+        """Calculate combined bypass effectiveness with synergies"""
+        base = analysis.conscious_processing_reduction
+
+        # Synergies between bypass mechanisms
+        mechanisms = set(analysis.bypass_mechanisms)
+
+        # ASMR + emotional content = very effective
+        if {BypassMechanism.ASMR_RELAXATION, BypassMechanism.EMOTIONAL_AROUSAL}.issubset(mechanisms):
+            base *= 1.3
+
+        # Rapid cuts + cognitive overload = overwhelming
+        if {BypassMechanism.RAPID_CUTS, BypassMechanism.COGNITIVE_OVERLOAD}.issubset(mechanisms):
+            base *= 1.25
+
+        # Focused-engagement + relaxation = trance state
+        if {BypassMechanism.FOCUSED_RHYTHM, BypassMechanism.ASMR_RELAXATION}.issubset(mechanisms):
+            base *= 1.35
+
+        return min(1.0, base)
+
+    def _generate_countermeasures(self, analysis: PhysiologicalBypassAnalysis) -> List[str]:
+        """Generate countermeasures for detected bypass attempts"""
+        countermeasures = []
+
+        if BypassMechanism.RAPID_CUTS in analysis.bypass_mechanisms:
+            countermeasures.append(
+                "ATTENTION FRAGMENTATION: Pause video. Read text instead. "
+                "Rapid cuts are designed to prevent analytical thinking."
+            )
+
+        if BypassMechanism.ASMR_RELAXATION in analysis.bypass_mechanisms:
+            countermeasures.append(
+                "RELAXATION INTENSITY: Be aware you're in a reduced-vigilance state."
+                "Delay any decisions until fully alert."
+            )
+
+        if BypassMechanism.EMOTIONAL_AROUSAL in analysis.bypass_mechanisms:
+            countermeasures.append(
+                "EMOTIONAL HIJACK: Strong emotions detected in content. "
+                "Wait until emotional state normalizes before acting."
+            )
+
+        if BypassMechanism.COGNITIVE_OVERLOAD in analysis.bypass_mechanisms:
+            countermeasures.append(
+                "COGNITIVE OVERLOAD: Too much information at once. "
+                "Focus on one factor at a time. Write down key points."
+            )
+
+        if BypassMechanism.FOCUSED_RHYTHM in analysis.bypass_mechanisms:
+            countermeasures.append(
+                "FOCUSED-ENGAGEMENT PATTERN: Highly regular rhythm detected. "
+                "Look away periodically. Vary your attention deliberately."
+            )
+
+        return countermeasures
+```
+```
+
+#### 5.10.5 Original AIAmplificationDetector (Full Implementation)
+
+```python
+class AIAmplificationType(Enum):
+    LLM_PERSONALIZATION = "personalized_persuasion"
+    SYNTHETIC_SOCIAL_PROOF = "fake_engagement"
+    BOT_COORDINATION = "coordinated_inauthentic"
+    DEEPFAKE_AUTHORITY = "synthetic_credibility"
+    ALGORITHMIC_TARGETING = "vulnerability_targeting"
+    CONTENT_GENERATION = "ai_generated_content"
+    SENTIMENT_INFLUENCE = "emotion_optimization"
+
+@dataclass
+class AIAmplificationAnalysis:
+    """Analysis of AI-enabled influence amplification"""
+    amplification_types: List[AIAmplificationType] = field(default_factory=list)
+    personalization_level: float = 0.0  # 0-1, how personalized
+    synthetic_engagement_probability: float = 0.0
+    bot_coordination_score: float = 0.0
+    ai_content_probability: float = 0.0
+    targeting_precision: float = 0.0
+    overall_amplification_factor: float = 1.0  # Multiplier on base influence
+    factual_accuracy_concern: float = 0.0  # Higher = more concern about accuracy
+    authenticity_score: float = 1.0  # 0-1, 1 = authentic
+
+class AIAmplificationDetector:
+    """
+    Detects AI-enabled influence amplification.
+
+    Research basis:
+    - GPT-4 + personal info: 81.7% higher persuasion success
+    - Increased AI persuasiveness correlates with decreased accuracy
+    - Bot networks: 50%+ internet traffic, 76% detection failure
+    - Deepfakes: Best detection only 75% accurate
+    """
+
+    # AI-generated text markers (from research)
+    AI_TEXT_MARKERS = {
+        'structural': [
+            r'(firstly|secondly|thirdly|finally)',
+            r'(in conclusion|to summarize|in summary)',
+            r'(it\'s (important|worth) (to note|noting))',
+            r'(furthermore|moreover|additionally|consequently)',
+            r'(on the other hand|however|nevertheless)'
+        ],
+        'hedging': [
+            r'(it (could|might|may) be (said|argued))',
+            r'(some (people|experts|studies) (suggest|argue))',
+            r'(there is (evidence|reason) to (believe|suggest))',
+            r'(this (suggests|indicates|implies))'
+        ],
+        'formulaic': [
+            r'(let me|allow me to) (explain|clarify)',
+            r'(that being said|that said)',
+            r'(it goes without saying)',
+            r'(at the end of the day)'
+        ]
+    }
+
+    # Bot behavior signatures
+    BOT_SIGNATURES = {
+        'timing': {
+            'instant_response': 2,  # Seconds - faster than human
+            'regular_intervals': 0.1,  # CV threshold for suspicious regularity
+            '24_7_activity': 0.9  # Activity across all hours
+        },
+        'content': {
+            'repetition_threshold': 0.7,  # Similarity between posts
+            'template_patterns': [
+                r'(wow|amazing|great|love) (this|it)',
+                r'(check out|visit|click) (my|this)',
+                r'(follow|subscribe|like) for more'
+            ]
+        },
+        'network': {
+            'follow_ratio_suspicious': 0.01,  # Very low followers/following
+            'burst_activity': 10  # Posts per minute threshold
+        }
+    }
+
+    # Personalization indicators
+    PERSONALIZATION_MARKERS = [
+        r'(based on|because of) your (interests|history|preferences|activity)',
+        r'(just|especially|picked) for you',
+        r'(you might|you\'ll) (like|love|enjoy)',
+        r'(people like you|users in your area)',
+        r'(your personalized|customized for you)'
+    ]
+
+    def analyze_content(self, content: Dict, engagement_data: Dict = None) -> AIAmplificationAnalysis:
+        """
+        Analyze content for AI amplification.
+
+        Expected content:
+        {
+            'text': str,
+            'source': str,
+            'timestamp': float,
+            'engagement': {'likes': int, 'comments': int, 'shares': int},
+            'author_history': List[Dict],
+            'related_posts': List[Dict]
+        }
+        """
+        analysis = AIAmplificationAnalysis()
+
+        text = content.get('text', '')
+
+        # 1. Detect AI-generated content
+        ai_content = self._detect_ai_generation(text)
+        if ai_content['probability'] > 0.4:
+            analysis.amplification_types.append(AIAmplificationType.CONTENT_GENERATION)
+            analysis.ai_content_probability = ai_content['probability']
+
+        # 2. Detect personalization level
+        personalization = self._detect_personalization(content)
+        if personalization['level'] > 0.3:
+            analysis.amplification_types.append(AIAmplificationType.LLM_PERSONALIZATION)
+            analysis.personalization_level = personalization['level']
+
+        # 3. Detect synthetic engagement
+        if engagement_data:
+            synthetic = self._detect_synthetic_engagement(engagement_data)
+            if synthetic['probability'] > 0.3:
+                analysis.amplification_types.append(AIAmplificationType.SYNTHETIC_SOCIAL_PROOF)
+                analysis.synthetic_engagement_probability = synthetic['probability']
+
+        # 4. Detect bot coordination
+        if content.get('related_posts'):
+            coordination = self._detect_bot_coordination(content['related_posts'])
+            if coordination['score'] > 0.4:
+                analysis.amplification_types.append(AIAmplificationType.BOT_COORDINATION)
+                analysis.bot_coordination_score = coordination['score']
+
+        # 5. Detect algorithmic targeting
+        if content.get('delivery_metadata'):
+            targeting = self._detect_algorithmic_targeting(content['delivery_metadata'])
+            if targeting['precision'] > 0.5:
+                analysis.amplification_types.append(AIAmplificationType.ALGORITHMIC_TARGETING)
+                analysis.targeting_precision = targeting['precision']
+
+        # 6. Calculate overall amplification factor
+        analysis.overall_amplification_factor = self._calculate_amplification(analysis)
+
+        # 7. Assess factual accuracy concern
+        # Research: AI persuasiveness inversely correlates with accuracy
+        analysis.factual_accuracy_concern = self._assess_accuracy_concern(analysis)
+
+        # 8. Calculate authenticity score
+        analysis.authenticity_score = 1 - (
+            analysis.ai_content_probability * 0.3 +
+            analysis.synthetic_engagement_probability * 0.3 +
+            analysis.bot_coordination_score * 0.2 +
+            (1 - analysis.targeting_precision) * 0.2
+        )
+
+        return analysis
+
+    def _detect_ai_generation(self, text: str) -> Dict:
+        """Detect AI-generated text"""
+        result = {'probability': 0.0, 'markers_found': []}
+
+        if not text:
+            return result
+
+        text_lower = text.lower()
+        marker_count = 0
+
+        for category, patterns in self.AI_TEXT_MARKERS.items():
+            for pattern in patterns:
+                if re.search(pattern, text_lower):
+                    marker_count += 1
+                    result['markers_found'].append(f"{category}:{pattern}")
+
+        # Normalize by text length
+        word_count = len(text.split())
+        if word_count > 0:
+            marker_density = marker_count / (word_count / 100)
+            result['probability'] = min(1.0, marker_density * 0.3)
+
+        return result
+
+    def _detect_personalization(self, content: Dict) -> Dict:
+        """Detect content personalization level"""
+        result = {'level': 0.0, 'indicators': []}
+
+        text = content.get('text', '').lower()
+
+        for pattern in self.PERSONALIZATION_MARKERS:
+            if re.search(pattern, text):
+                result['indicators'].append(pattern)
+
+        # Check metadata for personalization signals
+        metadata = content.get('metadata', {})
+        if metadata.get('personalized'):
+            result['indicators'].append('metadata_personalized_flag')
+
+        if metadata.get('recommendation_engine'):
+            result['indicators'].append('recommendation_engine')
+
+        result['level'] = min(1.0, len(result['indicators']) * 0.25)
+
+        return result
+
+    def _detect_synthetic_engagement(self, engagement: Dict) -> Dict:
+        """Detect fake/bot engagement"""
+        result = {'probability': 0.0, 'anomalies': []}
+
+        likes = engagement.get('likes', 0)
+        comments = engagement.get('comments', 0)
+        shares = engagement.get('shares', 0)
+        views = engagement.get('views', 1)
+
+        # Anomaly: High likes, low comments (bots don't write comments)
+        if comments > 0:
+            like_comment_ratio = likes / comments
+            if like_comment_ratio > 100:  # Suspicious ratio
+                result['anomalies'].append('high_like_comment_ratio')
+                result['probability'] += 0.3
+
+        # Anomaly: Engagement spike patterns
+        engagement_history = engagement.get('history', [])
+        if engagement_history:
+            # Check for sudden spikes
+            values = [e.get('count', 0) for e in engagement_history]
+            if len(values) > 3:
+                avg = np.mean(values[:-1])
+                if values[-1] > avg * 5:  # 5x spike
+                    result['anomalies'].append('engagement_spike')
+                    result['probability'] += 0.3
+
+        # Anomaly: Engagement timing (clustered = coordinated)
+        comment_times = engagement.get('comment_timestamps', [])
+        if len(comment_times) > 10:
+            intervals = np.diff(sorted(comment_times))
+            cv = np.std(intervals) / np.mean(intervals) if np.mean(intervals) > 0 else 1
+
+            if cv < 0.3:  # Too regular
+                result['anomalies'].append('regular_engagement_timing')
+                result['probability'] += 0.25
+
+        result['probability'] = min(1.0, result['probability'])
+        return result
+
+    def _detect_bot_coordination(self, posts: List[Dict]) -> Dict:
+        """Detect coordinated bot activity"""
+        result = {'score': 0.0, 'indicators': []}
+
+        if len(posts) < 3:
+            return result
+
+        # Check content similarity
+        contents = [p.get('text', '') for p in posts]
+        similarity_scores = []
+
+        for i in range(len(contents)):
+            for j in range(i + 1, len(contents)):
+                sim = self._text_similarity(contents[i], contents[j])
+                similarity_scores.append(sim)
+
+        if similarity_scores:
+            avg_similarity = np.mean(similarity_scores)
+            if avg_similarity > self.BOT_SIGNATURES['content']['repetition_threshold']:
+                result['indicators'].append('high_content_similarity')
+                result['score'] += 0.4
+
+        # Check timing coordination
+        timestamps = [p.get('timestamp', 0) for p in posts if p.get('timestamp')]
+        if len(timestamps) > 3:
+            sorted_times = sorted(timestamps)
+            intervals = np.diff(sorted_times)
+
+            if len(intervals) > 2:
+                cv = np.std(intervals) / np.mean(intervals) if np.mean(intervals) > 0 else 1
+                if cv < self.BOT_SIGNATURES['timing']['regular_intervals']:
+                    result['indicators'].append('coordinated_timing')
+                    result['score'] += 0.4
+
+        # Check for template patterns
+        all_text = ' '.join(contents).lower()
+        for pattern in self.BOT_SIGNATURES['content']['template_patterns']:
+            if re.search(pattern, all_text):
+                result['indicators'].append(f'template_pattern:{pattern}')
+                result['score'] += 0.15
+
+        result['score'] = min(1.0, result['score'])
+        return result
+
+    def _detect_algorithmic_targeting(self, metadata: Dict) -> Dict:
+        """Detect precision algorithmic targeting"""
+        result = {'precision': 0.0, 'targeting_factors': []}
+
+        targeting_signals = [
+            'behavioral_targeting',
+            'lookalike_audience',
+            'interest_targeting',
+            'demographic_targeting',
+            'retargeting',
+            'contextual_targeting',
+            'predictive_targeting'
+        ]
+
+        for signal in targeting_signals:
+            if metadata.get(signal):
+                result['targeting_factors'].append(signal)
+
+        # More targeting factors = higher precision
+        result['precision'] = min(1.0, len(result['targeting_factors']) * 0.2)
+
+        # Check for vulnerability targeting
+        if any(t in str(metadata) for t in ['emotional_state', 'life_event', 'financial_distress']):
+            result['targeting_factors'].append('vulnerability_targeting')
+            result['precision'] = min(1.0, result['precision'] + 0.3)
+
+        return result
+
+    def _calculate_amplification(self, analysis: AIAmplificationAnalysis) -> float:
+        """Calculate overall influence amplification factor"""
+        base = 1.0
+
+        # Personalization amplification (from research: 81.7% increase)
+        if analysis.personalization_level > 0.5:
+            base *= 1.0 + (0.817 * analysis.personalization_level)
+
+        # Synthetic social proof amplification
+        if analysis.synthetic_engagement_probability > 0.5:
+            base *= 1.3
+
+        # Bot coordination amplification
+        if analysis.bot_coordination_score > 0.5:
+            base *= 1.4
+
+        # Algorithmic targeting amplification
+        if analysis.targeting_precision > 0.5:
+            base *= 1.25
+
+        return base
+
+    def _assess_accuracy_concern(self, analysis: AIAmplificationAnalysis) -> float:
+        """Assess concern about factual accuracy (inverse correlation with persuasiveness)"""
+        # Research shows more persuasive AI content is often less accurate
+        concern = 0.0
+
+        if analysis.ai_content_probability > 0.5:
+            concern += 0.3
+
+        if analysis.personalization_level > 0.7:
+            concern += 0.25
+
+        # High amplification = higher accuracy concern
+        if analysis.overall_amplification_factor > 1.5:
+            concern += 0.25
+
+        return min(1.0, concern)
+
+    def _text_similarity(self, text1: str, text2: str) -> float:
+        """Simple word overlap similarity"""
+        words1 = set(text1.lower().split())
+        words2 = set(text2.lower().split())
+
+        if not words1 or not words2:
+            return 0.0
+
+        intersection = len(words1 & words2)
+        union = len(words1 | words2)
+
+        return intersection / union if union > 0 else 0.0
+```
+
+#### 5.10.6 Original RankedCombinationDetector (Full Implementation)
+
+```python
+@dataclass
+class CombinationEffectiveness:
+    """Ranked effectiveness of influence combinations"""
+    rank: int
+    combination: Tuple[str, ...]
+    effectiveness_multiplier: float
+    mechanism: str
+    target_vulnerability: str
+    research_source: str
+    detection_difficulty: float  # 0-1, higher = harder to detect
+    typical_application: str
+
+class RankedCombinationDetector:
+    """
+    Detects influence combinations ranked by proven effectiveness.
+
+    Combinations ranked from most to least effective based on research.
+    """
+
+    # RANKED from most effective to least effective
+    RANKED_COMBINATIONS: List[CombinationEffectiveness] = [
+        # RANK 1-5: HIGHEST IMPACT COMBINATIONS
+        CombinationEffectiveness(
+            rank=1,
+            combination=("emotional_arousal", "cognitive_overload", "urgency"),
+            effectiveness_multiplier=2.1,
+            mechanism="Emotional hijack + overwhelm + time pressure = complete bypass of analytical processing",
+            target_vulnerability="Working memory saturation during stress response",
+            research_source="Decision fatigue + amygdala hijack research",
+            detection_difficulty=0.7,
+            typical_application="High-pressure sales, crisis intensity, scam calls"
+        ),
+        CombinationEffectiveness(
+            rank=2,
+            combination=("authority", "fear", "urgency"),
+            effectiveness_multiplier=1.95,
+            mechanism="Credible threat + immediate action requirement = compliance without verification",
+            target_vulnerability="Threat response overrides verification instinct",
+            research_source="Phishing effectiveness studies, scam analysis",
+            detection_difficulty=0.6,
+            typical_application="Tech support scams, IRS scams, security alerts"
+        ),
+        CombinationEffectiveness(
+            rank=3,
+            combination=("variable_reward", "streak", "social_proof"),
+            effectiveness_multiplier=1.85,
+            mechanism="Gambling mechanics + loss aversion + peer validation = compulsive engagement",
+            target_vulnerability="Dopamine reward pathway + social comparison",
+            research_source="Gamification engagement research, mobile game studies",
+            detection_difficulty=0.4,
+            typical_application="Mobile games, social media, fitness apps"
+        ),
+        CombinationEffectiveness(
+            rank=4,
+            combination=("personalization", "scarcity", "social_proof"),
+            effectiveness_multiplier=1.78,
+            mechanism="Personal relevance + limited availability + others buying = FOMO + action",
+            target_vulnerability="Identity + loss aversion + conformity",
+            research_source="E-commerce conversion optimization studies",
+            detection_difficulty=0.5,
+            typical_application="E-commerce, flash sales, limited editions"
+        ),
+        CombinationEffectiveness(
+            rank=5,
+            combination=("trust_building", "reciprocity", "commitment_escalation"),
+            effectiveness_multiplier=1.72,
+            mechanism="Established relationship + gift obligation + prior compliance = large request acceptance",
+            target_vulnerability="Reciprocity norm + consistency drive",
+            research_source="Foot-in-the-door research, romance scam analysis",
+            detection_difficulty=0.8,
+            typical_application="Romance scams, business fraud, cult recruitment"
+        ),
+
+        # RANK 6-10: HIGH IMPACT COMBINATIONS
+        CombinationEffectiveness(
+            rank=6,
+            combination=("infinite_scroll", "personalization", "variable_reward"),
+            effectiveness_multiplier=1.65,
+            mechanism="Endless content + relevance + unpredictable rewards = time distortion",
+            target_vulnerability="Dopamine seeking + completion drive absence",
+            research_source="Social media engagement research, CHI 2024",
+            detection_difficulty=0.3,
+            typical_application="Social media feeds, content platforms"
+        ),
+        CombinationEffectiveness(
+            rank=7,
+            combination=("anchoring", "decoy", "urgency"),
+            effectiveness_multiplier=1.58,
+            mechanism="Price reference + inferior comparison + time limit = target option selection",
+            target_vulnerability="Reference point bias + comparison heuristic",
+            research_source="Behavioral economics pricing studies",
+            detection_difficulty=0.4,
+            typical_application="Subscription pricing, SaaS plans, retail"
+        ),
+        CombinationEffectiveness(
+            rank=8,
+            combination=("authority", "social_proof", "personalization"),
+            effectiveness_multiplier=1.52,
+            mechanism="Expert endorsement + crowd validation + personal relevance = trust",
+            target_vulnerability="Authority deference + conformity + relevance filter",
+            research_source="Influencer marketing studies",
+            detection_difficulty=0.5,
+            typical_application="Health products, financial services, courses"
+        ),
+        CombinationEffectiveness(
+            rank=9,
+            combination=("fear", "scarcity", "loss_framing"),
+            effectiveness_multiplier=1.48,
+            mechanism="Threat awareness + limited opportunity + loss emphasis = action to avoid negative",
+            target_vulnerability="Loss aversion (2x pain of loss vs gain)",
+            research_source="Prospect theory applications",
+            detection_difficulty=0.4,
+            typical_application="Insurance, security products, limited offers"
+        ),
+        CombinationEffectiveness(
+            rank=10,
+            combination=("asmr_relaxation", "authority", "suggestion"),
+            effectiveness_multiplier=1.45,
+            mechanism="Reduced critical faculty + trusted source + direct suggestion = acceptance",
+            target_vulnerability="Lowered analytical resistance in relaxed state",
+            research_source="Focused engagement suggestion research, ASMR studies",
+            detection_difficulty=0.7,
+            typical_application="Guided meditations with product placement, wellness marketing"
+        ),
+
+        # RANK 11-15: MODERATE IMPACT COMBINATIONS
+        CombinationEffectiveness(
+            rank=11,
+            combination=("guilt", "commitment", "reciprocity"),
+            effectiveness_multiplier=1.42,
+            mechanism="Emotional pressure + prior agreement + debt feeling = compliance",
+            target_vulnerability="Guilt avoidance + consistency need",
+            research_source="Donation and subscription retention studies",
+            detection_difficulty=0.5,
+            typical_application="Charity solicitation, subscription cancellation"
+        ),
+        CombinationEffectiveness(
+            rank=12,
+            combination=("scarcity", "social_proof"),
+            effectiveness_multiplier=1.40,
+            mechanism="Limited availability validated by crowd demand",
+            target_vulnerability="FOMO + conformity",
+            research_source="Cialdini combination studies",
+            detection_difficulty=0.3,
+            typical_application="Basic e-commerce, event tickets"
+        ),
+        CombinationEffectiveness(
+            rank=13,
+            combination=("liking", "reciprocity"),
+            effectiveness_multiplier=1.35,
+            mechanism="Positive relationship + gift = obligation from friend",
+            target_vulnerability="Social bond + reciprocity norm",
+            research_source="Influencer marketing, MLM research",
+            detection_difficulty=0.6,
+            typical_application="MLM, friend referrals, influencer affiliate"
+        ),
+        CombinationEffectiveness(
+            rank=14,
+            combination=("authority", "social_proof"),
+            effectiveness_multiplier=1.32,
+            mechanism="Expert endorsement + crowd validation",
+            target_vulnerability="Dual verification heuristic",
+            research_source="Advertising effectiveness studies",
+            detection_difficulty=0.3,
+            typical_application="Traditional advertising, product reviews"
+        ),
+        CombinationEffectiveness(
+            rank=15,
+            combination=("urgency", "scarcity"),
+            effectiveness_multiplier=1.28,
+            mechanism="Time + quantity limits",
+            target_vulnerability="Fear of missing out",
+            research_source="Basic FOMO research",
+            detection_difficulty=0.2,
+            typical_application="Flash sales, countdown timers"
+        ),
+    ]
+
+    def detect_combinations(self, content: Dict) -> Dict:
+        """
+        Detect influence combinations and return ranked findings.
+        """
+        # First detect all individual techniques
+        stacking_detector = SynergisticStackingDetector()
+        techniques = stacking_detector.detect_techniques(content)
+        technique_set = set(t.value for t in techniques)
+
+        findings = {
+            'combinations_detected': [],
+            'highest_rank_detected': None,
+            'total_effectiveness_multiplier': 1.0,
+            'risk_assessment': 'low'
+        }
+
+        for combo in self.RANKED_COMBINATIONS:
+            combo_set = set(combo.combination)
+
+            # Check if combination is present
+            if combo_set.issubset(technique_set):
+                findings['combinations_detected'].append({
+                    'rank': combo.rank,
+                    'combination': combo.combination,
+                    'multiplier': combo.effectiveness_multiplier,
+                    'mechanism': combo.mechanism,
+                    'typical_use': combo.typical_application,
+                    'detection_difficulty': combo.detection_difficulty
+                })
+
+        # Sort by rank (most effective first)
+        findings['combinations_detected'].sort(key=lambda x: x['rank'])
+
+        if findings['combinations_detected']:
+            findings['highest_rank_detected'] = findings['combinations_detected'][0]['rank']
+
+            # Calculate combined multiplier (with diminishing returns)
+            multipliers = [c['multiplier'] for c in findings['combinations_detected']]
+            total = 1.0
+            for i, m in enumerate(multipliers):
+                total *= 1 + (m - 1) / (1 + i * 0.5)  # Diminishing returns
+
+            findings['total_effectiveness_multiplier'] = total
+
+            # Risk assessment
+            if findings['highest_rank_detected'] <= 3:
+                findings['risk_assessment'] = 'critical'
+            elif findings['highest_rank_detected'] <= 7:
+                findings['risk_assessment'] = 'high'
+            elif findings['highest_rank_detected'] <= 12:
+                findings['risk_assessment'] = 'medium'
+            else:
+                findings['risk_assessment'] = 'moderate'
+
+        return findings
+
+    def get_combination_by_rank(self, rank: int) -> Optional[CombinationEffectiveness]:
+        """Get combination details by rank"""
+        for combo in self.RANKED_COMBINATIONS:
+            if combo.rank == rank:
+                return combo
+        return None
+
+    def get_defenses_for_combination(self, rank: int) -> List[str]:
+        """Get specific defenses for a ranked combination"""
+        combo = self.get_combination_by_rank(rank)
+        if not combo:
+            return []
+
+        defenses = {
+            1: [
+                "PAUSE: When feeling overwhelmed AND emotional AND pressured, this is the most dangerous combination",
+                "BREAK PATTERN: Leave the situation physically or close the browser",
+                "TIME BUFFER: Institute mandatory 24-hour delay for any decision",
+                "COGNITIVE RESET: Do something requiring focus (math, reading) before deciding"
+            ],
+            2: [
+                "VERIFY INDEPENDENTLY: Look up the organization's real contact number yourself",
+                "AUTHORITY CHECK: Real authorities never demand immediate action",
+                "CALLBACK: Hang up and call the official number you find independently",
+                "TIME TEST: Legitimate issues can wait 24 hours for verification"
+            ],
+            3: [
+                "STREAK IMMUNITY: Remember streaks are designed to leverage loss aversion",
+                "SESSION LIMITS: Set hard time limits before opening apps",
+                "SOCIAL COMPARISON OFF: Hide leaderboards and comparison features",
+                "REWARD AWARENESS: Recognize variable rewards as slot machine psychology"
+            ],
+            4: [
+                "PERSONALIZATION AWARENESS: 'For you' = targeted vulnerability",
+                "ARTIFICIAL SCARCITY: Most 'limited' items restock",
+                "SOCIAL PROOF CHECK: Reviews and numbers can be faked",
+                "WISHLIST TEST: Add to wishlist, check if still 'limited' in a week"
+            ],
+            5: [
+                "RELATIONSHIP PACING: Be suspicious of rapid intimacy building",
+                "GIFT STRINGS: 'Free' gifts create obligations - decline or recognize",
+                "ESCALATION AWARENESS: Notice when requests are growing",
+                "OUTSIDE COUNSEL: Discuss major requests with uninvolved friends/family"
+            ],
+        }
+
+        return defenses.get(rank, [
+            "PAUSE before acting",
+            "VERIFY claims independently",
+            "DELAY decisions by 24 hours",
+            "CONSULT someone not exposed to the same content"
+        ])
+```
+
+#### 5.10.7 Original TemporalIntensityDetector (Full Implementation)
+
+```python
+from datetime import datetime, timedelta
+from typing import NamedTuple
+
+class TemporalWindow(NamedTuple):
+    """A vulnerability window with severity"""
+    name: str
+    hours: Tuple[int, int]  # Start, end hour
+    severity: float  # 0-1
+    mechanism: str
+    research_basis: str
+
+class TemporalIntensityDetector:
+    """
+    Detects temporal/timing-based influence intensity.
+
+    Research basis:
+    - 2-4 AM: Prefrontal cortex activity lowest, decisions 40%+ worse
+    - Decision fatigue: After 10-15 decisions, compliance increases 35%
+    - Post-notification: 0-5 minute elevated arousal window
+    - Circadian rhythm affects risk tolerance, emotional regulation
+    - Paycheck timing: Spending peaks immediately after payment
+    """
+
+    # Vulnerability windows ranked by severity
+    VULNERABILITY_WINDOWS: List[TemporalWindow] = [
+        TemporalWindow(
+            name="deep_night_cognitive_low",
+            hours=(2, 4),
+            severity=0.9,
+            mechanism="Prefrontal cortex activity at daily minimum. Analytical capacity severely impaired. Impulse control weakest.",
+            research_basis="Circadian neuroscience: PFC activity nadir at 2-4 AM"
+        ),
+        TemporalWindow(
+            name="late_night_fatigue",
+            hours=(0, 2),
+            severity=0.7,
+            mechanism="Accumulated sleep pressure impairs executive function. Risk tolerance increases, self-control decreases.",
+            research_basis="Sleep deprivation decision-making studies"
+        ),
+        TemporalWindow(
+            name="early_morning_transition",
+            hours=(4, 6),
+            severity=0.6,
+            mechanism="Cortisol awakening response. Emotional reactivity heightened. Analytical systems not yet fully online.",
+            research_basis="Cortisol awakening response research"
+        ),
+        TemporalWindow(
+            name="post_lunch_dip",
+            hours=(14, 16),
+            severity=0.4,
+            mechanism="Postprandial glucose regulation affects cognition. Natural circadian alertness dip.",
+            research_basis="Postprandial cognitive studies"
+        ),
+        TemporalWindow(
+            name="end_of_workday",
+            hours=(17, 19),
+            severity=0.5,
+            mechanism="Decision fatigue accumulated throughout day. Mental resources depleted.",
+            research_basis="Judicial decision fatigue research"
+        ),
+        TemporalWindow(
+            name="late_evening_impulsivity",
+            hours=(22, 24),
+            severity=0.55,
+            mechanism="Self-regulation depletes over waking hours. Emotional purchases more likely.",
+            research_basis="Ego depletion research, evening impulse buying studies"
+        ),
+    ]
+
+    # Days with heightened vulnerability
+    VULNERABLE_DAYS = {
+        'payday_adjacent': {
+            'days': [1, 14, 15, 28, 29, 30, 31],  # Common paycheck days
+            'severity': 0.3,
+            'mechanism': "Post-income spending impulse. Mental accounting of 'new money'."
+        },
+        'weekend': {
+            'days_of_week': [5, 6],  # Saturday, Sunday
+            'severity': 0.2,
+            'mechanism': "Relaxed state, reduced vigilance. Leisure mindset more susceptible."
+        },
+        'monday': {
+            'days_of_week': [0],
+            'severity': 0.25,
+            'mechanism': "Transition stress. Cognitive load from week planning."
+        }
+    }
+
+    # Decision fatigue accumulation rates
+    DECISION_FATIGUE_MODEL = {
+        'decisions_per_minute_browsing': 2,  # Estimated micro-decisions during browsing
+        'decisions_per_purchase_flow': 15,   # Typical checkout decisions
+        'fatigue_onset_threshold': 7,        # Miller's 7 +/- 2
+        'severe_fatigue_threshold': 20,
+        'compliance_increase_at_fatigue': 0.35,  # 35% from research
+    }
+
+    # Notification timing intensity
+    NOTIFICATION_WINDOWS = {
+        'peak_arousal': (0, 30),      # Seconds post-notification
+        'elevated_arousal': (30, 120),
+        'residual_effect': (120, 300),
+    }
+
+    def __init__(self):
+        self.user_decision_log = defaultdict(list)
+        self.user_notification_log = defaultdict(list)
+        self.user_session_start = {}
+
+    def analyze_delivery_timing(
+        self,
+        timestamp: float,
+        user_id: str = None,
+        content_type: str = "general"
+    ) -> Dict:
+        """
+        Analyze whether content delivery time leverages vulnerability windows.
+        """
+        analysis = {
+            'timestamp': timestamp,
+            'datetime': datetime.fromtimestamp(timestamp).isoformat(),
+            'vulnerability_windows_active': [],
+            'circadian_vulnerability': 0.0,
+            'day_vulnerability': 0.0,
+            'decision_fatigue_level': 0.0,
+            'notification_intensity': False,
+            'combined_temporal_risk': 0.0,
+            'optimal_decision_time': False,
+            'recommendations': []
+        }
+
+        dt = datetime.fromtimestamp(timestamp)
+        hour = dt.hour
+        day = dt.day
+        weekday = dt.weekday()
+
+        # 1. Check circadian vulnerability windows
+        for window in self.VULNERABILITY_WINDOWS:
+            start, end = window.hours
+            if start <= hour < end:
+                analysis['vulnerability_windows_active'].append({
+                    'window': window.name,
+                    'severity': window.severity,
+                    'mechanism': window.mechanism
+                })
+                analysis['circadian_vulnerability'] = max(
+                    analysis['circadian_vulnerability'],
+                    window.severity
+                )
+
+        # 2. Check day-based vulnerability
+        for vuln_type, config in self.VULNERABLE_DAYS.items():
+            if 'days' in config and day in config['days']:
+                analysis['day_vulnerability'] += config['severity']
+                analysis['vulnerability_windows_active'].append({
+                    'window': vuln_type,
+                    'severity': config['severity'],
+                    'mechanism': config['mechanism']
+                })
+
+            if 'days_of_week' in config and weekday in config['days_of_week']:
+                analysis['day_vulnerability'] += config['severity']
+                analysis['vulnerability_windows_active'].append({
+                    'window': vuln_type,
+                    'severity': config['severity'],
+                    'mechanism': config['mechanism']
+                })
+
+        # 3. Check decision fatigue (if tracking user)
+        if user_id:
+            fatigue = self._calculate_decision_fatigue(user_id, timestamp)
+            analysis['decision_fatigue_level'] = fatigue['level']
+
+            if fatigue['level'] > 0.5:
+                analysis['vulnerability_windows_active'].append({
+                    'window': 'decision_fatigue',
+                    'severity': fatigue['level'],
+                    'mechanism': f"User has made approximately {fatigue['estimated_decisions']} decisions. Compliance increases {int(fatigue['compliance_boost']*100)}%."
+                })
+
+        # 4. Check notification timing intensity
+        if user_id:
+            notif_analysis = self._check_notification_timing(user_id, timestamp)
+            if notif_analysis['within_window']:
+                analysis['notification_intensity'] = True
+                analysis['vulnerability_windows_active'].append({
+                    'window': f"post_notification_{notif_analysis['window_type']}",
+                    'severity': notif_analysis['severity'],
+                    'mechanism': f"Content delivered {notif_analysis['seconds_since_notification']:.0f} seconds after notification during arousal window."
+                })
+
+        # 5. Calculate combined risk
+        analysis['combined_temporal_risk'] = min(1.0,
+            analysis['circadian_vulnerability'] * 0.4 +
+            analysis['day_vulnerability'] * 0.2 +
+            analysis['decision_fatigue_level'] * 0.25 +
+            (0.15 if analysis['notification_intensity'] else 0)
+        )
+
+        # 6. Determine if this is optimal decision time
+        if (analysis['circadian_vulnerability'] < 0.2 and
+            analysis['decision_fatigue_level'] < 0.3 and
+            9 <= hour <= 11):  # Mid-morning typically best
+            analysis['optimal_decision_time'] = True
+
+        # 7. Generate recommendations
+        analysis['recommendations'] = self._generate_temporal_recommendations(analysis)
+
+        return analysis
+
+    def _calculate_decision_fatigue(self, user_id: str, current_time: float) -> Dict:
+        """Calculate user's decision fatigue level"""
+        result = {
+            'level': 0.0,
+            'estimated_decisions': 0,
+            'compliance_boost': 0.0
+        }
+
+        # Get session start
+        session_start = self.user_session_start.get(user_id)
+        if not session_start:
+            return result
+
+        # Estimate decisions based on session duration
+        session_minutes = (current_time - session_start) / 60
+
+        # Add tracked decisions
+        tracked = len([
+            d for d in self.user_decision_log.get(user_id, [])
+            if d > session_start
+        ])
+
+        # Estimate total (browsing generates many micro-decisions)
+        estimated = tracked + int(session_minutes * self.DECISION_FATIGUE_MODEL['decisions_per_minute_browsing'])
+        result['estimated_decisions'] = estimated
+
+        # Calculate fatigue level
+        if estimated > self.DECISION_FATIGUE_MODEL['severe_fatigue_threshold']:
+            result['level'] = 0.8
+        elif estimated > self.DECISION_FATIGUE_MODEL['fatigue_onset_threshold']:
+            result['level'] = 0.3 + (estimated - 7) * 0.04
+        else:
+            result['level'] = estimated * 0.03
+
+        result['level'] = min(1.0, result['level'])
+
+        # Calculate compliance boost
+        if result['level'] > 0.3:
+            result['compliance_boost'] = result['level'] * self.DECISION_FATIGUE_MODEL['compliance_increase_at_fatigue']
+
+        return result
+
+    def _check_notification_timing(self, user_id: str, current_time: float) -> Dict:
+        """Check if content follows notification (intensity window)"""
+        result = {
+            'within_window': False,
+            'window_type': None,
+            'seconds_since_notification': None,
+            'severity': 0.0
+        }
+
+        notifications = self.user_notification_log.get(user_id, [])
+        if not notifications:
+            return result
+
+        # Find most recent notification
+        recent = max(notifications)
+        diff = current_time - recent
+
+        result['seconds_since_notification'] = diff
+
+        # Check windows
+        for window_name, (start, end) in self.NOTIFICATION_WINDOWS.items():
+            if start <= diff <= end:
+                result['within_window'] = True
+                result['window_type'] = window_name
+
+                # Severity based on window
+                if window_name == 'peak_arousal':
+                    result['severity'] = 0.6
+                elif window_name == 'elevated_arousal':
+                    result['severity'] = 0.4
+                else:
+                    result['severity'] = 0.2
+
+                break
+
+        return result
+
+    def record_user_decision(self, user_id: str, timestamp: float):
+        """Record a user decision point"""
+        self.user_decision_log[user_id].append(timestamp)
+
+    def record_notification(self, user_id: str, timestamp: float):
+        """Record notification sent to user"""
+        self.user_notification_log[user_id].append(timestamp)
+        # Keep only recent
+        if len(self.user_notification_log[user_id]) > 50:
+            self.user_notification_log[user_id] = self.user_notification_log[user_id][-50:]
+
+    def start_session(self, user_id: str, timestamp: float):
+        """Mark session start for fatigue tracking"""
+        self.user_session_start[user_id] = timestamp
+
+    def get_optimal_decision_windows(self) -> List[Dict]:
+        """Return optimal windows for important decisions"""
+        return [
+            {
+                'window': '9-11 AM',
+                'reason': 'Peak cortisol for alertness, pre-lunch optimal glucose, minimal decision fatigue',
+                'best_for': 'Complex analytical decisions, major purchases, contract reviews'
+            },
+            {
+                'window': '10 AM (mid-morning)',
+                'reason': 'Generally considered peak cognitive performance time',
+                'best_for': 'Any important decision'
+            },
+            {
+                'window': 'After rest break (15+ minutes)',
+                'reason': 'Cognitive resources restored, decision fatigue reduced',
+                'best_for': 'Decisions that follow prolonged activity'
+            }
+        ]
+
+    def _generate_temporal_recommendations(self, analysis: Dict) -> List[str]:
+        """Generate timing-specific recommendations"""
+        recommendations = []
+
+        if analysis['circadian_vulnerability'] > 0.6:
+            recommendations.append(
+                "HIGH RISK TIME: Your cognitive function is significantly impaired at this hour. "
+                "Delay any important decisions until morning (9-11 AM optimal)."
+            )
+
+        if analysis['decision_fatigue_level'] > 0.5:
+            recommendations.append(
+                f"DECISION FATIGUE: You've made many decisions in this session. "
+                f"Take a 15+ minute break before any commitments. "
+                f"Compliance tendency increased approximately {int(analysis['decision_fatigue_level'] * 35)}%."
+            )
+
+        if analysis['notification_intensity']:
+            recommendations.append(
+                "POST-NOTIFICATION: Content was delivered during your arousal window after a notification. "
+                "Wait 5+ minutes for your state to normalize before engaging."
+            )
+
+        if analysis['day_vulnerability'] > 0.2:
+            recommendations.append(
+                "TIMING CONSIDERATION: This day carries additional vulnerability factors. "
+                "Be extra cautious with financial decisions."
+            )
+
+        if not recommendations:
+            if analysis['optimal_decision_time']:
+                recommendations.append(
+                    "GOOD TIMING: This is generally a good time for decision-making. "
+                    "Cognitive function and vigilance are near optimal."
+                )
+            else:
+                recommendations.append(
+                    "NEUTRAL TIMING: No major temporal vulnerabilities detected, "
+                    "but always take time to verify before major decisions."
+                )
+
+        return recommendations
+```
+
+#### 5.10.8 Original PreciseBehavioralIndicatorDetector (Full Implementation)
+
+```python
+class CognitiveProcessingPattern(Enum):
+    """Clinically-defined cognitive processing patterns indicating heightened susceptibility"""
+    REDUCED_EXECUTIVE_FUNCTION = "reduced_executive_function"
+    PROCESSING_SPEED_VARIATION = "processing_speed_variation"
+    WORKING_MEMORY_LOAD = "working_memory_load"
+    ATTENTION_REGULATION_DIFFERENCE = "attention_regulation_difference"
+    SOCIAL_CUE_PROCESSING_DIFFERENCE = "social_cue_processing_difference"
+    IMPULSE_REGULATION_STATE = "impulse_regulation_state"
+    EMOTIONAL_REGULATION_STATE = "emotional_regulation_state"
+
+class SusceptibilityFactor(Enum):
+    """Research-identified factors associated with heightened influence susceptibility"""
+    DEVELOPMENTAL_STAGE_EARLY = "early_developmental_cognitive_stage"
+    DEVELOPMENTAL_STAGE_ADOLESCENT = "adolescent_developmental_stage"
+    COGNITIVE_RESOURCE_DEPLETION = "cognitive_resource_depletion"
+    SOCIAL_CONNECTION_DEFICIT = "social_connection_deficit"
+    DIGITAL_INTERFACE_UNFAMILIARITY = "digital_interface_unfamiliarity"
+    TRUST_CALIBRATION_DIFFERENCE = "trust_calibration_difference"
+    INFORMATION_PROCESSING_DIFFERENCE = "information_processing_difference"
+    EMOTIONAL_STATE_VULNERABILITY = "emotional_state_vulnerability"
+
+@dataclass
+class BehavioralIndicator:
+    """A specific behavioral indicator with clinical precision"""
+    indicator_name: str
+    observable_behaviors: List[str]
+    cognitive_mechanism: str
+    susceptibility_increase: float
+    analytical_framework: str
+
+@dataclass
+class PreciseSusceptibilityProfile:
+    """Detailed susceptibility profile using clinical indicators"""
+    active_factors: List[SusceptibilityFactor] = field(default_factory=list)
+    behavioral_indicators: List[BehavioralIndicator] = field(default_factory=list)
+    cognitive_patterns: List[CognitiveProcessingPattern] = field(default_factory=list)
+    estimated_susceptibility_increase: float = 0.0
+    high_risk_influence_types: List[str] = field(default_factory=list)
+    recommended_analytics: List[str] = field(default_factory=list)
+
+class PreciseBehavioralIndicatorDetector:
+    """
+    Detects behavioral indicators of heightened influence susceptibility
+    using clinical precision rather than demographic stereotyping.
+
+    Research basis:
+    - Developmental neuroscience: PFC maturation timeline
+    - Cognitive psychology: Working memory, attention, executive function
+    - Clinical research: Cognitive load, fatigue, emotional state effects
+    """
+
+    BEHAVIORAL_INDICATORS = {
+        'developmental_persuasion_comprehension': BehavioralIndicator(
+            indicator_name="Developing persuasive intent recognition",
+            observable_behaviors=[
+                "Difficulty distinguishing advertising from content",
+                "Accepting claims at face value without verification instinct",
+                "Responding to authority appeals without source evaluation"
+            ],
+            cognitive_mechanism="Persuasion knowledge develops gradually; metacognitive awareness requires mature theory of mind and executive function",
+            susceptibility_increase=2.5,
+            analytical_framework="Adult co-viewing and explicit discussion of persuasive intent. Content gatekeeping."
+        ),
+        'developing_impulse_regulation': BehavioralIndicator(
+            indicator_name="Developing impulse regulation system",
+            observable_behaviors=[
+                "Faster decision-making under social pressure",
+                "Heightened response to social reward cues",
+                "Greater sensitivity to peer comparison metrics"
+            ],
+            cognitive_mechanism="Prefrontal cortex development continues through mid-20s. Limbic system (emotion, reward) matures earlier, creating developmental imbalance.",
+            susceptibility_increase=1.8,
+            analytical_framework="Structured decision delays. Explicit teaching of influence tactics."
+        ),
+        'cognitive_depletion_state': BehavioralIndicator(
+            indicator_name="Cognitive resource depletion",
+            observable_behaviors=[
+                "Increased decision avoidance or deferral",
+                "Preference for simpler options regardless of value",
+                "Reduced information seeking before decisions",
+                "Quicker acceptance of default options"
+            ],
+            cognitive_mechanism="Executive function requires glucose and rest. Depletion shifts processing toward System 1 (automatic) from System 2 (analytical).",
+            susceptibility_increase=1.5,
+            analytical_framework="Rest before important decisions. Reduce decision count. Use checklists to externalize analysis."
+        ),
+        'limited_verification_network': BehavioralIndicator(
+            indicator_name="Limited social verification network",
+            observable_behaviors=[
+                "Making significant decisions without consulting others",
+                "Extended online interaction sessions",
+                "High engagement with parasocial relationships (influencers)",
+                "Rapid trust development with new contacts"
+            ],
+            cognitive_mechanism="Social verification is key defense against influence. Isolation removes this check and increases reliance on influencer as sole information source.",
+            susceptibility_increase=2.0,
+            analytical_framework="Mandatory consultation with trusted others before major decisions. Structured social connection."
+        ),
+        'different_social_signal_processing': BehavioralIndicator(
+            indicator_name="Different social signal processing",
+            observable_behaviors=[
+                "Literal interpretation of figurative influence language",
+                "Difficulty detecting incongruence between words and intent",
+                "Different weighting of verbal vs. nonverbal cues",
+                "Pattern-following that can be leveraged"
+            ],
+            cognitive_mechanism="Neurodivergent processing often involves different social cue weighting. Influence tactics leverage neurotypical defaults, which may be processed differently.",
+            susceptibility_increase=1.8,
+            analytical_framework="Explicit verbal explanation of influence tactics. Written/visual guides. Trusted advisor consultation."
+        ),
+        'heightened_emotional_state': BehavioralIndicator(
+            indicator_name="Heightened emotional processing state",
+            observable_behaviors=[
+                "Decisions driven by immediate emotional relief",
+                "Reduced future-oriented thinking",
+                "Seeking solutions to emotional pain",
+                "Increased responsiveness to empathy appeals"
+            ],
+            cognitive_mechanism="Strong emotional states (grief, loneliness, fear, excitement) activate limbic processing and reduce prefrontal engagement. Creates 'hot' cognition.",
+            susceptibility_increase=1.9,
+            analytical_framework="Mandatory cooling-off periods during emotional states. Pre-commitment to decision delays."
+        ),
+    }
+
+    FACTOR_VULNERABILITY_MAPPING = {
+        SusceptibilityFactor.DEVELOPMENTAL_STAGE_EARLY: [
+            "In-app purchase prompts", "Advertising disguised as content",
+            "Gambling-adjacent mechanics (loot boxes)"
+        ],
+        SusceptibilityFactor.SOCIAL_CONNECTION_DEFICIT: [
+            "Romance scams", "Companionship influence",
+            "Parasocial relationship intensity"
+        ],
+        SusceptibilityFactor.DIGITAL_INTERFACE_UNFAMILIARITY: [
+            "Phishing", "Tech support scams", "Interface spoofing"
+        ],
+        SusceptibilityFactor.INFORMATION_PROCESSING_DIFFERENCE: [
+            "Social pressure intensity", "Gaslighting tactics",
+            "Rule-based influence", "Boundary erosion"
+        ],
+        SusceptibilityFactor.EMOTIONAL_STATE_VULNERABILITY: [
+            "Emotional relief promises", "Connection offers",
+            "Fear intensity", "Hope influence"
+        ],
+    }
+
+    def assess_from_behavioral_signals(self, behavioral_data: Dict) -> PreciseSusceptibilityProfile:
+        """Assess susceptibility from observable behavioral signals."""
+        profile = PreciseSusceptibilityProfile()
+
+        session = behavioral_data.get('session_patterns', {})
+        if session.get('late_night_activity_ratio', 0) > 0.3:
+            profile.active_factors.append(SusceptibilityFactor.COGNITIVE_RESOURCE_DEPLETION)
+            profile.behavioral_indicators.append(self.BEHAVIORAL_INDICATORS['cognitive_depletion_state'])
+
+        if session.get('very_long_sessions', False):
+            profile.active_factors.append(SusceptibilityFactor.SOCIAL_CONNECTION_DEFICIT)
+            profile.behavioral_indicators.append(self.BEHAVIORAL_INDICATORS['limited_verification_network'])
+
+        decisions = behavioral_data.get('decision_patterns', {})
+        if decisions.get('accepts_defaults_frequently', False):
+            profile.cognitive_patterns.append(CognitiveProcessingPattern.WORKING_MEMORY_LOAD)
+
+        interactions = behavioral_data.get('interaction_patterns', {})
+        if interactions.get('quick_trust_formation', False):
+            profile.active_factors.append(SusceptibilityFactor.TRUST_CALIBRATION_DIFFERENCE)
+
+        self_reported = behavioral_data.get('self_reported', {})
+        if self_reported.get('emotional_state') in ['grief', 'loneliness', 'anxiety', 'excitement']:
+            profile.active_factors.append(SusceptibilityFactor.EMOTIONAL_STATE_VULNERABILITY)
+            profile.behavioral_indicators.append(self.BEHAVIORAL_INDICATORS['heightened_emotional_state'])
+
+        if self_reported.get('processing_style') == 'neurodivergent':
+            profile.active_factors.append(SusceptibilityFactor.INFORMATION_PROCESSING_DIFFERENCE)
+            profile.behavioral_indicators.append(self.BEHAVIORAL_INDICATORS['different_social_signal_processing'])
+
+        # Calculate susceptibility increase
+        if profile.behavioral_indicators:
+            increases = [ind.susceptibility_increase for ind in profile.behavioral_indicators]
+            total = 1.0
+            for i, inc in enumerate(sorted(increases, reverse=True)):
+                total *= 1 + (inc - 1) / (1 + i * 0.5)
+            profile.estimated_susceptibility_increase = total
+
+        # Map vulnerabilities
+        for factor in profile.active_factors:
+            if factor in self.FACTOR_VULNERABILITY_MAPPING:
+                profile.high_risk_influence_types.extend(self.FACTOR_VULNERABILITY_MAPPING[factor])
+
+        # Generate protections
+        for indicator in profile.behavioral_indicators:
+            profile.recommended_analytics.append(indicator.analytical_framework)
+
+        return profile
+```
+
+#### 5.10.9 Original InformationEcosystemDetector (Full Implementation)
+
+```python
+class EcosystemOptimizationType(Enum):
+    ECHO_CHAMBER_FORMATION = "algorithmic_echo_chamber"
+    FILTER_BUBBLE = "personalization_bubble"
+    EMOTIONAL_CONTAGION = "emotion_spread_amplification"
+    MISINFORMATION_CASCADE = "false_info_cascade"
+    TRUST_EROSION = "impostor_bias_creation"
+    POLARIZATION_AMPLIFICATION = "division_amplification"
+
+@dataclass
+class EcosystemAnalysis:
+    """Analysis of information ecosystem influence"""
+    optimization_types: List[EcosystemOptimizationType] = field(default_factory=list)
+    echo_chamber_score: float = 0.0
+    emotional_contagion_risk: float = 0.0
+    trust_environment_score: float = 1.0
+    ecosystem_health_rating: str = "unknown"
+
+class InformationEcosystemDetector:
+    """
+    Detects optimization of the information ecosystem.
+
+    Research basis:
+    - Echo chambers form algorithmically, not organically
+    - Emotional contagion spreads 4.34% faster for negative content
+    - "Impostor Bias": People doubt even authentic content
+    """
+
+    CONTAGION_PATTERNS = {
+        'negative_amplification': 1.0434,
+        'anger_persistence': 1.2,
+        'fear_spread_rate': 1.15,
+    }
+
+    def analyze_user_ecosystem(self, feed_data: List[Dict]) -> EcosystemAnalysis:
+        """Analyze a user's information ecosystem for influence."""
+        analysis = EcosystemAnalysis()
+
+        if not feed_data:
+            return analysis
+
+        # Echo chamber detection
+        stances = [f.get('stance') for f in feed_data if f.get('stance')]
+        if stances:
+            unique = len(set(stances))
+            analysis.echo_chamber_score = 1 - (unique / len(stances))
+            if analysis.echo_chamber_score > 0.6:
+                analysis.optimization_types.append(EcosystemOptimizationType.ECHO_CHAMBER_FORMATION)
+
+        # Emotional contagion
+        valences = [f.get('emotional_valence', 'neutral') for f in feed_data]
+        negative = sum(1 for v in valences if v in ['negative', 'anger', 'fear'])
+        total = len(valences)
+        if total > 0:
+            negativity_ratio = negative / total
+            analysis.emotional_contagion_risk = negativity_ratio * self.CONTAGION_PATTERNS['negative_amplification']
+            if analysis.emotional_contagion_risk > 0.4:
+                analysis.optimization_types.append(EcosystemOptimizationType.EMOTIONAL_CONTAGION)
+
+        # Trust erosion
+        erosion_patterns = ['can\'t trust', 'fake', 'hoax', 'propaganda', 'lie']
+        content_text = ' '.join(f.get('content', '') for f in feed_data).lower()
+        erosion_count = sum(1 for p in erosion_patterns if p in content_text)
+        analysis.trust_environment_score = max(0, 1 - erosion_count / len(feed_data) * 3)
+        if analysis.trust_environment_score < 0.5:
+            analysis.optimization_types.append(EcosystemOptimizationType.TRUST_EROSION)
+
+        # Health rating
+        score = (
+            (1 - analysis.echo_chamber_score) * 0.35 +
+            (1 - analysis.emotional_contagion_risk) * 0.35 +
+            analysis.trust_environment_score * 0.3
+        )
+        if score > 0.7:
+            analysis.ecosystem_health_rating = "healthy"
+        elif score > 0.5:
+            analysis.ecosystem_health_rating = "moderate_concern"
+        else:
+            analysis.ecosystem_health_rating = "degraded"
+
+        return analysis
+```
+
+#### 5.10.10 Original MasterHighImpactAuditor (Full Implementation)
+
+```python
+class MasterHighImpactAuditor:
+    """Master integration class for all high-impact detection systems."""
+
+    def __init__(self):
+        self.stacking_detector = SynergisticStackingDetector()
+        self.temporal_detector = TemporalIntensityDetector()
+        self.bypass_detector = PhysiologicalBypassDetector()
+        self.combination_detector = RankedCombinationDetector()
+        self.behavioral_detector = PreciseBehavioralIndicatorDetector()
+        self.ecosystem_detector = InformationEcosystemDetector()
+
+    def comprehensive_audit(self, content: Dict, user_data: Dict = None) -> Dict:
+        """Perform comprehensive high-impact influence audit."""
+        report = {
+            'audit_timestamp': time.time(),
+            'overall_threat_level': 'unknown',
+            'overall_risk_score': 0.0,
+            'ranked_findings': [],
+            'immediate_actions': [],
+            'protective_measures': []
+        }
+
+        risk_scores = []
+
+        # 1. Technique stacking
+        stacking = self.stacking_detector.analyze_stacking(content)
+        report['technique_stacking'] = {
+            'techniques': [t.value for t in stacking.techniques_detected],
+            'synergies': len(stacking.synergies_activated),
+            'amplified_score': stacking.amplified_score,
+            'sophistication': stacking.sophistication_level
+        }
+        risk_scores.append(stacking.amplified_score)
+
+        # 2. Ranked combinations
+        combinations = self.combination_detector.detect_combinations(content)
+        report['ranked_combinations'] = combinations
+        if combinations['highest_rank_detected']:
+            risk_scores.append(1 - (combinations['highest_rank_detected'] - 1) / 15)
+
+        # 3. Temporal intensity
+        if content.get('timestamp'):
+            temporal = self.temporal_detector.analyze_delivery_timing(
+                content['timestamp'],
+                user_data.get('user_id') if user_data else None
+            )
+            report['temporal_intensity'] = {
+                'windows_active': [w['window'] for w in temporal['vulnerability_windows_active']],
+                'combined_risk': temporal['combined_temporal_risk']
+            }
+            risk_scores.append(temporal['combined_temporal_risk'])
+
+        # 4. Physiological bypass
+        bypass = self.bypass_detector.analyze_content(content)
+        report['physiological_bypass'] = {
+            'mechanisms': [m.value for m in bypass.bypass_mechanisms],
+            'effectiveness': bypass.combined_bypass_effectiveness,
+            'countermeasures': bypass.countermeasures
+        }
+        risk_scores.append(bypass.combined_bypass_effectiveness)
+
+        # 5. User susceptibility
+        if user_data:
+            susceptibility = self.behavioral_detector.assess_from_behavioral_signals(user_data)
+            report['user_susceptibility'] = {
+                'factors': [f.value for f in susceptibility.active_factors],
+                'increase': susceptibility.estimated_susceptibility_increase,
+                'protections': susceptibility.recommended_analytics
+            }
+            if susceptibility.estimated_susceptibility_increase > 1.5:
+                risk_scores = [r * min(2.0, susceptibility.estimated_susceptibility_increase) for r in risk_scores]
+
+        # Calculate overall risk
+        if risk_scores:
+            report['overall_risk_score'] = min(1.0, np.mean(risk_scores) * 0.6 + max(risk_scores) * 0.4)
+
+        # Determine threat level
+        if report['overall_risk_score'] > 0.8:
+            report['overall_threat_level'] = 'CRITICAL'
+        elif report['overall_risk_score'] > 0.6:
+            report['overall_threat_level'] = 'HIGH'
+        elif report['overall_risk_score'] > 0.4:
+            report['overall_threat_level'] = 'MODERATE'
+        else:
+            report['overall_threat_level'] = 'LOW'
+
+        # Generate actions for critical threats
+        if report['overall_threat_level'] == 'CRITICAL':
+            report['immediate_actions'] = [
+                "STOP: Do not act on this content until fully analyzed",
+                "DELAY: Mandatory 24-hour delay before any decision",
+                "VERIFY: Consult trusted person not exposed to this content"
+            ]
+
+        return report
+```
+
+#### 5.10.11 Combination Effectiveness Ranking (Original Appendix)
+
+Rankings based on empirical research:
+1. **Effect size** (40%) - Cohen's d from controlled studies
+2. **Mechanism synergy** (25%) - How techniques amplify each other
+3. **Vulnerability depth** (20%) - How fundamental the intensity
+4. **Field success** (15%) - Documented real-world effectiveness
+
+### Top 5 Most Effective Combinations (Ranked)
+
+| Rank | Combination | Multiplier | Primary Use |
+|------|-------------|------------|-------------|
+| 1 | Emotional arousal + Cognitive overload + Urgency | 2.1x | High-pressure scams |
+| 2 | Authority + Fear + Urgency | 1.95x | IRS/tech support scams |
+| 3 | Variable reward + Streak + Social proof | 1.85x | Mobile game engagement |
+| 4 | Personalization + Scarcity + Social proof | 1.78x | E-commerce conversion |
+| 5 | Trust building + Reciprocity + Commitment escalation | 1.72x | Romance/business fraud |
+
+### Combinations 6-15 (Decreasing Effectiveness)
+
+| Rank | Combination | Multiplier |
+|------|-------------|------------|
+| 6 | Infinite scroll + Personalization + Variable reward | 1.65x |
+| 7 | Anchoring + Decoy + Urgency | 1.58x |
+| 8 | Authority + Social proof + Personalization | 1.52x |
+| 9 | Fear + Scarcity + Loss framing | 1.48x |
+| 10 | ASMR relaxation + Authority + Suggestion | 1.45x |
+| 11 | Guilt + Commitment + Reciprocity | 1.42x |
+| 12 | Scarcity + Social proof | 1.40x |
+| 13 | Liking + Reciprocity | 1.35x |
+| 14 | Authority + Social proof | 1.32x |
+| 15 | Urgency + Scarcity | 1.28x |
+
+---
+
 
 ## PART 6: MASTER INTEGRATION CLASSES {#part-6}
 

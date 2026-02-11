@@ -156,6 +156,8 @@ Cialdini took Bernays/Goebbels insights and subjected them to rigorous experimen
 - **Modern tech:** "5 people viewing now" on Booking.com, countdown timers, limited edition drops, "Seller may not have more inventory"
 
 #### 2. Reciprocity (Obligation Creation)
+- Freud: Superego internalizes social rules
+- Bernays: Free samples create obligation
 - Unexpected Coca-Cola → subjects bought 2x more raffle tickets
 - Works at subconscious level—obligation feels automatic, not like choice
 - **Modern tech:** Free tier software (creates obligation to upgrade), free trial requiring payment info (sunk cost + reciprocity)
@@ -171,6 +173,7 @@ Cialdini took Bernays/Goebbels insights and subjected them to rigorous experimen
 - **Modern tech:** Fake reviews, astroturfing, bot armies, algorithmic amplification, "Most people are doing X" notifications
 
 #### 5. Liking (Similarity + Flattery)
+- Bernays: Salespeople trained to compliment customers
 - "Reputation to live up to" compliments work better than past flattery
 - Not praising who they are; programming who they become
 - **Modern tech:** Personalization algorithms ("for you"), influencer "relatable" personas, identity assignment through micro-interactions
@@ -181,6 +184,7 @@ Cialdini took Bernays/Goebbels insights and subjected them to rigorous experimen
 - **Modern tech:** Small yes → bigger yes escalation, public commitments, social media "take a side" posts, cancel culture punishing inconsistency
 
 #### 7. Unity (In-Group/Tribe)
+- Bernays: Segmented narratives per audience
 - Minimal Group Paradigm: random assignment to group = instant loyalty. Coin flip = people immediately give money to "their" people
 - Tribe doesn't need history/culture/values; assignment ALONE creates loyalty
 - **Modern tech:** Gaming clans, political tribalism, sports fandom, cryptocurrency communities, brand loyalty cults
@@ -246,6 +250,7 @@ Platforms don't just use persuasion principles—they have built persuasion into
 - Worse than Goebbels: not intentional (just profit-seeking) but equally destructive, AND personalized per user
 
 #### 4. Manufactured Loneliness (Fake Belonging)
+- Bernays understood desire for belonging
 - Platforms offer performance (likes, followers) without genuine connection
 - Neurologically registers as no genuine connection
 - You feel more alone, scroll more, buy more
@@ -254,6 +259,7 @@ Platforms don't just use persuasion principles—they have built persuasion into
 #### 5. Algorithmic Amplification of Insecurity
 - Insecurity drives engagement (seeking validation, comparison, FOMO)
 - Algorithms AMPLIFY insecurity content
+- Users isolated from real-world feedback = only curated feed defines reality
 - You're comparing to algorithmic curation of most-attractive people, not local peers
 
 #### 6. Behavioral Prediction & Pre-Commitment
@@ -382,7 +388,15 @@ AI: "Predict what repetition creates strongest compulsion, optimize real-time"
 
 **Phase 3 - Goebbels:** Controlled who could be authority. Removed competing authorities through humiliation. Forced credentialed experts to recite lies publicly. Installed party-aligned "experts". By eliminating competing epistemic sources, only party authority remains.
 
+**Mechanism Upgrade (Phase 2→3):**
+- Bernays hid that he created authority
+- Goebbels openly destroyed old authorities
+
 **Phase 4 - Platforms:** Influencer authority (no actual expertise). Blue checkmark = status symbol (not competence marker). Algorithm amplifies authority voices. Removes competing authorities through demonetization/deplatforming.
+
+**Mechanism Upgrade (Phase 3→4):**
+- Bernays had to invent per campaign
+- Platforms scale authority creation: "suggest" certain users as authorities
 
 **Phase 5 - AI:** Deepfake videos of real authorities saying things they never said. AI-generated fake experts that sound perfect. Or real authorities with AI editing words. Perfect credibility signal with no actual authority.
 
@@ -1496,6 +1510,8 @@ IF shocking/emotional_content_gets_coverage:
 
 ## PART 4: ACADEMIC SOURCES & CITATIONS
 
+Last verified: February 2025
+
 ### 4.1 Peer-Reviewed Academic Sources (15)
 
 **Algorithmic Influence & Polarization:**
@@ -2000,8 +2016,19 @@ At each stage, the mechanism remained the same (leveraging human psychology). Wh
 
 ### For Further Research
 
-- **Academic sources:** Cialdini's books, Kahneman's "Thinking, Fast and Slow," Sunstein's "Nudge"
-- **Journalism:** Cambridge Analytica case studies, Myanmar genocide (Facebook's role), COVID vaccine hesitancy (algorithmic radicalization)
+**Academic sources:**
+- Cialdini: "Influence: The Psychology of Persuasion"
+- Kahneman: "Thinking, Fast and Slow"
+- Sunstein: "Nudge"
+- Bernays: "Propaganda" (read critically)
+- Bernays: "Crystallizing Public Opinion"
+
+**Journalistic investigations:**
+- Cambridge Analytica (data + influence)
+- Myanmar genocide (algorithmic radicalization)
+- COVID vaccine hesitancy (information ecosystem)
+- Jan 6 (radicalization pipeline)
+
 - **Primary sources:** Bernays' own writings, Goebbels' diaries, platform transparency reports
 - **Critical analysis:** Books on attention economy, algorithm auditing, computational propaganda
 

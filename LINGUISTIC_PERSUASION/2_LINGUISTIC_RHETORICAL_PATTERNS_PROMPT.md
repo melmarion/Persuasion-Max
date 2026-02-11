@@ -35,6 +35,21 @@ Linguistic techniques often operate below conscious awareness. Listeners evaluat
 
 ## EFFECTIVENESS SUMMARY: LINGUISTIC TECHNIQUES RANKED
 
+> **Analytical Layer: Individual Linguistic Devices**
+> This table ranks **individual language techniques** by their standalone effectiveness (score out of 100).
+> This is one of four effectiveness layers across the Linguistic Persuasion system:
+>
+> | Layer | Prompt | What It Ranks | Scale | Example |
+> |-------|--------|---------------|-------|---------|
+> | **1 — Linguistic devices** | **Prompt 2 (this file)** | **Single language techniques in isolation** | **Score /100** | **Loss Framing = 95/100** |
+> | 2 — Psychological mechanisms | Prompt 3 | Single persuasion mechanisms | % susceptibility increase | Fractionation = 200%+ |
+> | 3 — Detection combinations | Prompt 4 (§5.6) | 2–3 technique combos for detection code | Multiplier (1.28x–2.1x) | Scarcity + social proof + urgency = 1.95x |
+> | 4 — Expanded combinations | Prompt 5 | 2–4 technique combos (40 ranks, 6 tiers) | Multiplier (1.05x–2.5x) | Arousal + overload + urgency + authority = 2.5x |
+>
+> These layers are complementary: a linguistic device (Layer 1) can be a component within a mechanism (Layer 2),
+> which can be combined with other mechanisms (Layers 3–4). Different ranks at the same number across layers
+> are expected — they measure different things.
+
 ### Overall Effectiveness Ranking (Research-Based)
 
 | Technique | Effectiveness Score | Awareness Level | Primary Mechanism | Key Research |

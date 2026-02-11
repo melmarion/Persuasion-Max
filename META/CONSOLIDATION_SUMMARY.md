@@ -163,13 +163,11 @@ SENSORY_CONTEXT_RECOMMENDATIONS   // By pattern type
 
 ## Backward Compatibility
 
-All original markdown documentation files remain:
-- `ENGAGEMENT_PATTERNS_P1_P12.md` (reference)
-- `SESSION_ARCHITECTURE.md` (reference)
-- `NEURO_AESTHETIC_PARAMETERS.md` (reference)
-- `CROSS_PATTERN_INTERACTION_MAPS.md` (reference)
-
-These can be deprecated once teams migrate to JavaScript imports.
+Original markdown documentation files have been deleted from disk after full content extraction into the 7 UX prompts. They remain recoverable from git history:
+- `ENGAGEMENT_PATTERNS_P1_P12.md` → git show HEAD~N:UX_UI_ENGAGEMENT/...
+- `SESSION_ARCHITECTURE.md` → git show HEAD~N:UX_UI_ENGAGEMENT/...
+- `NEURO_AESTHETIC_PARAMETERS.md` → git show HEAD~N:UX_UI_ENGAGEMENT/...
+- `CROSS_PATTERN_INTERACTION_MAPS.md` → git show HEAD~N:UX_UI_ENGAGEMENT/...
 
 ---
 

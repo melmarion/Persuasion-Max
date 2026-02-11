@@ -7,6 +7,22 @@
 
 ## SECTION 1: RANKED INFLUENCE COMBINATIONS
 
+> **Analytical Layer: Expanded Combinations (2–4 technique stacks, 40 ranks, 6 tiers)**
+> This is the most granular effectiveness ranking in the system, covering 40 combinations including
+> 4-technique stacks not present in shorter rankings.
+> This is one of four effectiveness layers across the Linguistic Persuasion system:
+>
+> | Layer | Prompt | What It Ranks | Scale |
+> |-------|--------|---------------|-------|
+> | 1 — Linguistic devices | Prompt 2 | Single language techniques in isolation | Score /100 |
+> | 2 — Psychological mechanisms | Prompt 3 | Single persuasion mechanisms | % susceptibility increase |
+> | 3 — Detection combinations | Prompt 4 (§5.6) | 2–3 technique combos for detection code | Multiplier (1.28x–2.1x) |
+> | **4 — Expanded combinations** | **Prompt 5 (this file)** | **2–4 technique combos (40 ranks, 6 tiers)** | **Multiplier (1.05x–2.5x)** |
+>
+> Prompt 4's Rank 1 (2.1x, 3-technique combo) corresponds to this file's Rank 3 (2.1x).
+> This file's Rank 1 (2.5x) adds Authority as a 4th technique to create the highest-impact stack.
+> Individual mechanisms ranked in Prompts 2–3 are the building blocks that combine into these stacks.
+
 ### Methodology
 
 Rankings are based on:
@@ -459,7 +475,7 @@ RANK_15_COMBINATION = {
 
 ---
 
-### TIER 4: STANDARD COMBINATIONS (Multiplier 1.25x - 1.39x)
+### TIER 4: STANDARD COMBINATIONS (Multiplier 1.30x - 1.40x)
 
 #### Rank 16: Scarcity + Social Proof
 **Effectiveness Multiplier:** 1.40x
@@ -533,7 +549,7 @@ RANK_20_COMBINATION = {
 
 ---
 
-### TIER 5: FOUNDATIONAL COMBINATIONS (Multiplier 1.15x - 1.24x)
+### TIER 5: FOUNDATIONAL COMBINATIONS (Multiplier 1.19x - 1.28x)
 
 #### Ranks 21-30
 
@@ -2442,6 +2458,23 @@ class ExpandedRankedCombinationDetector:
             if combo.rank == rank:
                 return combo.defenses
         return ["General: Pause, verify independently, consult trusted others"]
+
+# Example usage
+if __name__ == "__main__":
+    detector = ExpandedRankedCombinationDetector()
+
+    sample = {
+        'text': '''
+            URGENT WARNING: Your account will be suspended!
+            Official Security Department notice.
+            Only 24 hours to verify your identity.
+            Over 50,000 accounts already compromised this month.
+            Click here immediately to protect yourself.
+        ''',
+        'ui_elements': ['countdown_timer', 'official_badge', 'warning_icon']
+    }
+
+    result = detector.analyze(sample)
 ```
 ---
 
@@ -2540,7 +2573,7 @@ class PrecisionInfluenceAuditor:
         'critical': 20,
         'high': 15,
         'medium': 10,
-        'onset': 7
+        'onset': 7         # Beginning: +5% compliance
     }
 
     # Detection patterns with weights
@@ -2948,7 +2981,9 @@ class PrecisionInfluenceAuditor:
     def _estimate_false_positive_risk(self, result: PrecisionAuditResult) -> float:
         low_confidence_count = sum(1 for m in result.metrics if m.confidence < 0.6)
         active_techniques = sum(1 for m in result.metrics if 'intensity' in m.name and m.value > 0.3)
-        risk = 0.1 + low_confidence_count * 0.05 - active_techniques * 0.03
+        risk = 0.1  # Base risk
+        risk += low_confidence_count * 0.05
+        risk -= active_techniques * 0.03
         return max(0.05, min(0.5, risk))
 
     def _generate_audit_summary(self, result: PrecisionAuditResult) -> Dict:
@@ -2995,6 +3030,63 @@ class PrecisionInfluenceAuditor:
             'historical_max': max(historical_scores),
             'percentile': sum(1 for s in historical_scores if s < current.overall_intensity_score) / len(historical_scores)
         }
+
+
+# Example usage and output format
+if __name__ == "__main__":
+    auditor = PrecisionInfluenceAuditor()
+
+    sample_content = {
+        'id': 'test_001',
+        'text': '''
+            ⚠️ URGENT: Only 3 left in stock!
+            Was $199.99 - NOW $49.99 (75% OFF!)
+            Over 50,000 customers have purchased this product.
+            Dr. Smith recommends this for everyone.
+            Don't miss out - sale ends in 2:30:45!
+            You've already added items to your cart - finish checkout now!
+        ''',
+        'prices': {
+            'original': 199.99,
+            'current': 49.99
+        }
+    }
+
+    context = {
+        'user_decisions_in_session': 15,
+        'local_hour': 2,  # 2 AM
+        'session_duration_minutes': 45
+    }
+
+    result = auditor.audit_content(sample_content, context)
+
+    print("=" * 60)
+    print("PRECISION AUDIT RESULTS")
+    print("=" * 60)
+    print(f"\nOverall Intensity Score: {result.overall_intensity_score:.3f}")
+    print(f"Combination Rank: {result.combination_rank}")
+    print(f"Tier: {result.tier.upper()}")
+    print(f"Detection Confidence: {result.detection_confidence:.0%}")
+    print(f"False Positive Risk: {result.false_positive_risk:.0%}")
+
+    print("\n" + "-" * 40)
+    print("DETAILED METRICS:")
+    print("-" * 40)
+
+    for metric in result.metrics:
+        if metric.value >= 0:
+            print(f"\n{metric.name}:")
+            print(f"  Value: {metric.value} {metric.unit}")
+            print(f"  Severity: {metric.severity}")
+            print(f"  Confidence: {metric.confidence:.0%}")
+            if metric.evidence:
+                print(f"  Evidence: {', '.join(metric.evidence[:3])}")
+
+    print("\n" + "-" * 40)
+    print("AUDIT SUMMARY:")
+    print("-" * 40)
+    for key, value in result.audit_summary.items():
+        print(f"  {key}: {value}")
 ```
 
 ---
