@@ -549,9 +549,9 @@ class ProtocolLibrary:
         ]
     )
 
-    psychological_vulnerability_protocol = MeasurementProtocol(
+    psychological_susceptibility_protocol = MeasurementProtocol(
         domain="Psychology",
-        measurement_name="Trait Vulnerability Assessment",
+        measurement_name="Trait Susceptibility Assessment",
         procedure="""
         1. Trait Anxiety Questionnaire (STAI) - 5 items, 2 minutes
            Items: "I worry about things," "I feel nervous," "I get tense easily," etc.
@@ -566,7 +566,7 @@ class ProtocolLibrary:
            Scoring: 1-5 scale
 
         Total time: 6 minutes
-        Output: Three vulnerability scores (0-10 scale each)
+        Output: Three susceptibility scores (0-10 scale each)
         """,
         equipment="Online survey platform or paper questionnaire",
         duration="6 minutes",
@@ -574,7 +574,7 @@ class ProtocolLibrary:
         reliability_threshold=0.75,  # Cronbach's alpha
         research_citations=[
             "Spielberger et al. (1983) - STAI validation",
-            "Compilation.txt: Vulnerability factor identification"
+            "Compilation.txt: Susceptibility factor identification"
         ]
     )
 
@@ -729,7 +729,7 @@ class ResearchDesignTemplates:
             'hypothesis': 'Main effect of fractionation + main effect of neuroticism + interaction',
             'interpretation_of_interaction': (
                 "If significant: Fractionation effect is stronger for high-neuroticism participants. "
-                "This validates personality-based vulnerability prediction."
+                "This validates personality-based susceptibility prediction."
             ),
             'sample_allocation': '30 participants per condition (2 x 3 = 6 groups, 180 total)'
         }
@@ -793,8 +793,8 @@ class CrossDomainAnalyzer:
     """Analyze correlations across all three domains"""
 
     @staticmethod
-    def compute_vulnerability_index(datapoint: IntegratedDatapoint) -> float:
-        """Composite vulnerability score (0-100)
+    def compute_susceptibility_index(datapoint: IntegratedDatapoint) -> float:
+        """Composite susceptibility score (0-100)
 
         Integrates all three domains:
         - Psychology (40%): Blink response + trait anxiety
@@ -818,13 +818,13 @@ class CrossDomainAnalyzer:
         economics_score = (econ_purchase * 0.7 + econ_amount * 0.3)
 
         # Weighted composite
-        vulnerability_index = (
+        susceptibility_index = (
             psychology_score * 0.40 +
             neuroscience_score * 0.40 +
             economics_score * 0.20
         )
 
-        return min(max(vulnerability_index, 0), 100)  # Clamp to 0-100
+        return min(max(susceptibility_index, 0), 100)  # Clamp to 0-100
 
     @staticmethod
     def create_dataset_for_analysis(datapoints: List[IntegratedDatapoint]) -> pd.DataFrame:
@@ -842,7 +842,7 @@ class CrossDomainAnalyzer:
             'trait_anxiety': [],
             'neuroticism': [],
             'belongingness': [],
-            'vulnerability_index': []
+            'susceptibility_index': []
         }
 
         for dp in datapoints:
@@ -857,8 +857,8 @@ class CrossDomainAnalyzer:
             data_dict['trait_anxiety'].append(dp.trait_anxiety_score)
             data_dict['neuroticism'].append(dp.neuroticism_score)
             data_dict['belongingness'].append(dp.belongingness_score)
-            data_dict['vulnerability_index'].append(
-                CrossDomainAnalyzer.compute_vulnerability_index(dp)
+            data_dict['susceptibility_index'].append(
+                CrossDomainAnalyzer.compute_susceptibility_index(dp)
             )
 
         return pd.DataFrame(data_dict)
@@ -902,7 +902,7 @@ class DigitalInfluenceSyndromeLevel(Enum):
     MILD = "Mild"
     MODERATE = "Moderate"
     SEVERE = "Severe"
-    CRISIS = "Crisis (Immediate Intervention Needed)"
+    CRISIS = "Crisis (Immediate Response Needed)"
 
 @dataclass
 class DigitalEngagementDiagnosis:
@@ -1073,9 +1073,9 @@ class DigitalEngagementAssessmentEngine:
             return DigitalInfluenceSyndromeLevel.MINIMAL
 
 class TreatmentPlanner:
-    """Generate personalized treatment recommendations based on vulnerability profile"""
+    """Generate personalized treatment recommendations based on susceptibility profile"""
 
-    INTERVENTIONS = {
+    STRATEGIES = {
         'cognitive_behavioral_therapy': {
             'description': 'Identify automatic thoughts ("I MUST check now"), challenge them, develop alternatives',
             'duration_weeks': 12,
@@ -1141,55 +1141,55 @@ class TreatmentPlanner:
 
         if diagnosis.fractionation_susceptibility > 75:
             selected.append({
-                'intervention': 'cognitive_behavioral_therapy',
+                'strategy': 'cognitive_behavioral_therapy',
                 'weeks': 12,
                 'rationale': 'High fractionation susceptibility requires attention-control retraining'
             })
 
         if diagnosis.trait_anxiety_score > 16 or diagnosis.depression_screening_score > 15:
             selected.append({
-                'intervention': 'physiological_biofeedback',
+                'strategy': 'physiological_biofeedback',
                 'weeks': 8,
                 'rationale': 'Elevated anxiety/mood symptoms benefit from autonomic regulation training'
             })
 
         if diagnosis.impulse_control_deficit > 70:
             selected.append({
-                'intervention': 'cognitive_flexibility_training',
+                'strategy': 'cognitive_flexibility_training',
                 'weeks': 12,
                 'rationale': 'Poor impulse control improved through prefrontal cortex exercises'
             })
 
         if diagnosis.daily_social_media_minutes > 300:
             selected.append({
-                'intervention': 'family_engagement_strategies',
+                'strategy': 'family_engagement_strategies',
                 'weeks': 10,
                 'rationale': 'Severe use requires family system restructuring'
             })
 
         if criteria_met.get('escape_motivation'):
             selected.append({
-                'intervention': 'meaning_purpose_work',
+                'strategy': 'meaning_purpose_work',
                 'weeks': 16,
                 'rationale': 'Using platforms for emotional escape requires meaning development'
             })
 
         # Calculate total time commitment
-        for intervention_dict in selected:
-            intervention_name = intervention_dict['intervention']
-            weeks = intervention_dict['weeks']
+        for strategy_dict in selected:
+            strategy_name = strategy_dict['strategy']
+            weeks = strategy_dict['weeks']
 
-            intervention_details = TreatmentPlanner.INTERVENTIONS[intervention_name]
-            freq_match = intervention_details['frequency'].split()[0]
+            strategy_details = TreatmentPlanner.STRATEGIES[strategy_name]
+            freq_match = strategy_details['frequency'].split()[0]
             hours_per_week = int(freq_match.split('x')[0]) if 'x' in freq_match else 1
-            hours_per_session = float(intervention_details['frequency'].split()[-2].split('-')[0]) / 60
+            hours_per_session = float(strategy_details['frequency'].split()[-2].split('-')[0]) / 60
 
             treatment_plan['recommended_strategies'].append({
-                'intervention': intervention_name,
-                'details': intervention_details,
+                'strategy': strategy_name,
+                'details': strategy_details,
                 'weeks': weeks,
                 'estimated_hours': weeks * hours_per_week * (hours_per_session),
-                'rationale': intervention_dict['rationale']
+                'rationale': strategy_dict['rationale']
             })
 
             treatment_plan['duration_weeks'] = max(treatment_plan['duration_weeks'], weeks)
@@ -1309,7 +1309,7 @@ YOUR SUSCEPTIBILITY: The gap between 15ms (emotions) and 500ms (logic)
                 },
                 'assessment': [
                     'What is the speed difference between amygdala and prefrontal cortex?',
-                    'Why is this speed difference a vulnerability?',
+                    'Why is this speed difference a susceptibility?',
                     'Give an example from your own life where emotions moved faster than thinking'
                 ]
             },
@@ -1398,9 +1398,9 @@ YOUR EXPERIENCE: "I couldn't put my phone down" = your brain is in engagement lo
         ]
     }
 
-    # Unit 2: Recognizing Your Vulnerability
+    # Unit 2: Recognizing Your Susceptibility
     UNIT_2_SELF_ASSESSMENT = {
-        'title': 'What Makes YOU Vulnerable?',
+        'title': 'What Makes YOU Susceptible?',
         'duration_weeks': 1.5,
         'key_concept': """
 You are NOT weak for being susceptible. Everyone has different susceptibilities.
@@ -1410,14 +1410,14 @@ The goal: Know YOUR susceptibilities so you can address them analytically.
         'lessons': [
             {
                 'lesson_number': 3,
-                'title': 'The Vulnerability Quiz: Know Yourself',
+                'title': 'The Susceptibility Quiz: Know Yourself',
                 'learning_objectives': [
-                    'Assess your own psychological vulnerability factors',
+                    'Assess your own psychological susceptibility factors',
                     'Understand neuroscience markers of susceptibility',
                     'Create personalized response strategy'
                 ],
                 'hands_on_exercise': {
-                    'name': 'Three-Domain Vulnerability Assessment',
+                    'name': 'Three-Domain Susceptibility Assessment',
                     'instructions': """
 PSYCHOLOGY DOMAIN: Personality Factors
 (Rate each 1-5: Strongly Disagree to Strongly Agree)
@@ -1429,12 +1429,12 @@ PSYCHOLOGY DOMAIN: Personality Factors
 5. I'm more affected by emotions than facts
 
 SCORING: Add your answers.
-- 5-10 = Low psychological vulnerability
-- 11-15 = Moderate vulnerability
-- 16-20 = High vulnerability (be careful with emotional content)
+- 5-10 = Low psychological susceptibility
+- 11-15 = Moderate susceptibility
+- 16-20 = High susceptibility (be careful with emotional content)
 
 INTERPRETATION: This scores how susceptible you are to EMOTIONAL influence.
-Algorithms will emphasize emotional content around YOUR vulnerabilities.
+Algorithms will emphasize emotional content around YOUR susceptibilities.
 
 
 NEUROSCIENCE DOMAIN: Physiological Stress Response
@@ -1466,19 +1466,19 @@ ECONOMICS DOMAIN: Decision-Making Patterns
 
 SCORING: Add your answers
 - 5-10 = Thoughtful decision-maker (harder to influence)
-- 11-15 = Sometimes impulsive (moderate financial vulnerability)
+- 11-15 = Sometimes impulsive (moderate financial susceptibility)
 - 16-20 = Very impulsive (algorithms know how to make you spend)
 
-INTERPRETATION: This scores your ECONOMIC VULNERABILITY.
+INTERPRETATION: This scores your ECONOMIC SUSCEPTIBILITY.
 Higher scores = algorithms' product suggestions will be effective on you.
 
 
-YOUR VULNERABILITY PROFILE:
+YOUR SUSCEPTIBILITY PROFILE:
 - Psychology: ___/20
 - Neuroscience: ___/5
 - Economics: ___/20
 
-COMPOSITE VULNERABILITY (0-100): ___
+COMPOSITE SUSCEPTIBILITY (0-100): ___
 
 What does this mean for YOUR response strategies?
                     """
@@ -1487,8 +1487,8 @@ What does this mean for YOUR response strategies?
         ]
     }
 
-    # Unit 3: Building Defenses
-    UNIT_3_ACTIVE_DEFENSES = {
+    # Unit 3: Building Countermeasures
+    UNIT_3_ACTIVE_COUNTERMEASURES = {
         'title': 'Your Defense Toolkit',
         'duration_weeks': 2,
         'introduction': """
@@ -1710,7 +1710,7 @@ class PlatformAuditReport:
     emotional_intensity_average: float  # 0-100 (how emotionally charged is typical feed?)
     rapid_mood_shift_frequency: float  # How often users experience A-J-A-R cycling?
 
-    # Vulnerable population targeting
+    # Susceptible population targeting
     percentage_high_susceptibility_audience: float  # Estimated % high-anxiety users targeted
     aggressive_targeting_of_minors: bool  # Are algorithms differently aggressive with teens?
 
@@ -1739,7 +1739,7 @@ class RegulatoryComplianceAnalyzer:
 
     # Regulatory thresholds
     INDUSTRY_AVERAGE_INTENSITY_INDEX = 55
-    BEST_PRACTICE_THRESHOLD = 30  # Below this = "ethical"
+    BEST_PRACTICE_THRESHOLD = 30  # Below this = "low-intensity"
     HEAVY_INTENSITY_THRESHOLD = 60
     EXTREME_INTENSITY_THRESHOLD = 80
 
@@ -1853,7 +1853,7 @@ class RegulatoryComplianceAnalyzer:
             }
         }
 
-        # 3. VULNERABLE POPULATION TARGETING
+        # 3. SUSCEPTIBLE POPULATION TARGETING
         findings['targeting_analysis'] = {
             'inferred_percentage_high_anxiety_users_targeted': (
                 sum(1 for post in sample_posts if post.get('targets_anxiety') is True) / len(sample_posts) * 100
@@ -1901,7 +1901,7 @@ class RegulatoryComplianceAnalyzer:
         - High-intensity posts: {audit_findings['emotional_analysis']['high_intensity_percentage']:.1f}%
         - Emotional distribution: A({audit_findings['emotional_analysis']['emotional_distribution']['anger']:.1f}%) J({audit_findings['emotional_analysis']['emotional_distribution']['joy']:.1f}%) R({audit_findings['emotional_analysis']['emotional_distribution']['relief']:.1f}%) N({audit_findings['emotional_analysis']['emotional_distribution']['neutral']:.1f}%)
 
-        VULNERABLE POPULATION TARGETING:
+        SUSCEPTIBLE POPULATION TARGETING:
         - Estimated % high-anxiety users targeted: {audit_findings['targeting_analysis']['inferred_percentage_high_anxiety_users_targeted']:.1f}%
         - Estimated % minors targeted with influence: {audit_findings['targeting_analysis']['inferred_percentage_minors_targeted']:.1f}%
 

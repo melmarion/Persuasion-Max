@@ -71,15 +71,15 @@ git push -u origin main
 
 ## THIS WEEK (48-72 Hours Total)
 
-### Deploy Tool 2: Vulnerability Scanner
+### Deploy Tool 2: Susceptibility Scanner
 **Reference:** 04_PRODUCTION_CODE_BASE.md (Tool 2 section)
 
-- [ ] Copy VulnerabilityScorer class
-- [ ] Create FastAPI endpoint: `/assess-vulnerability`
-- [ ] Create HTML form (`frontend/vulnerability_form.html`)
+- [ ] Copy SusceptibilityScorer class
+- [ ] Create FastAPI endpoint: `/assess-susceptibility`
+- [ ] Create HTML form (`frontend/susceptibility_form.html`)
 - [ ] Connect form to API
-- [ ] Test end-to-end: Form → API → Vulnerability Score
-- [ ] Commit: "Tool 2: Vulnerability Scanner"
+- [ ] Test end-to-end: Form → API → Susceptibility Score
+- [ ] Commit: "Tool 2: Susceptibility Scanner"
 
 ### Academic Positioning
 - [ ] Write first blog post: "Why Fractionation Works: A Three-Domain Explanation"
@@ -152,7 +152,7 @@ git push -u origin main
 **Reference:** 05_TOOLS_4_TO_8_CODE.md
 
 - [ ] Tool 6: Real-Time Influence Detector
-- [ ] Tool 7: Organizational Vulnerability Assessment
+- [ ] Tool 7: Organizational Susceptibility Assessment
 - [ ] Tool 8: Cross-Domain Data Integration
 
 ### Deploy First MVP

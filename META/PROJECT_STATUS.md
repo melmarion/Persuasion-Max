@@ -9,10 +9,9 @@
 ## SYSTEM SUMMARY
 
 ### Deliverables
-- **Documents:** 60+ comprehensive files (150,000+ words across both domains)
+- **Documents:** 34 project files
 - **Tools:** 12 complete tool specifications with production Python code
-- **Frameworks:** 8 specialized detection frameworks
-- **UX Domain:** Fully consolidated into 7 numbered prompts
+- **Frameworks:** 6 consolidated detection/research prompts
 - **Linguistic Domain:** Fully consolidated into 6 numbered prompts (from 26 source files)
 
 ### Market Analysis
@@ -25,69 +24,50 @@
 ## FOLDER STRUCTURE
 
 ```
-UX & Persuasion/                       # Project root
+Persuasion-Max/
+├── ROOT (11 files)
+│   ├── 00_CORE_THESIS.md
+│   ├── 01_TOOLS_YOU_CAN_BUILD.md
+│   ├── 03_DEVELOPER_QUICKSTART.md
+│   ├── EXECUTIVE_SUMMARY.md
+│   ├── TERMINOLOGY_AND_DEFINITIONS.md
+│   ├── ENGAGEMENT_ARCHITECTURE.js
+│   ├── PROMPT_PERSUASION_GRAMMARLY.md
+│   ├── CLAUDE.md
+│   ├── README.md
+│   ├── FILE_DIRECTORY_GUIDE.md
+│   └── LICENSE
 │
-├── UX/ (9 files)                      # Domain 1: UX/UI Engagement (CONSOLIDATED)
-│   ├── README_7_PROMPTS.md
-│   ├── 1_DESIGN_SYSTEM_PROMPT.md
-│   ├── 2_NEUROCHEMICAL_MECHANICS_PROMPT.md
-│   ├── 3_PSYCHOLOGY_INTERACTION_PROMPT.md
-│   ├── 4_ENGAGEMENT_RETENTION_PROMPT.md
-│   ├── 5_SENSORY_DESIGN_PROMPT.md
-│   ├── 6_MOBILE_PREMIUM_PROMPT.md
-│   ├── 7_IMPLEMENTATION_LIFECYCLE_PROMPT.md
-│   └── ENGAGEMENT_PATTERN_DETECTION.py
+├── LINGUISTIC_PERSUASION/ (10 files — CONSOLIDATED)
+│   ├── README_LINGUISTIC_PERSUASION.md
+│   ├── 1_DETECTION_FRAMEWORKS_PROMPT.md
+│   ├── 2_LINGUISTIC_RHETORICAL_PATTERNS_PROMPT.md
+│   ├── 3_FRACTIONATION_INTEGRITY_VIOLATIONS_PROMPT.md
+│   ├── 4_DETECTION_CODE_SCORING_PROMPT.md
+│   ├── 5_RANKINGS_EFFECTIVENESS_DATA_PROMPT.md
+│   ├── 6_CASE_STUDIES_RESEARCH_PROMPT.md
+│   ├── BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md
+│   ├── verify_consolidation.js
+│   └── verify_consolidation.py
 │
-├── Persuasion Max/                    # Domain 2: Linguistic Persuasion + Core Framework
-│   ├── ROOT (12 files)
-│   │   ├── 00_CORE_THESIS.md
-│   │   ├── 01_TOOLS_YOU_CAN_BUILD.md
-│   │   ├── 02_TOOL_SPECIFICATIONS.md
-│   │   ├── 03_DEVELOPER_QUICKSTART.md
-│   │   ├── EXECUTIVE_SUMMARY.md
-│   │   ├── TERMINOLOGY_AND_DEFINITIONS.md
-│   │   ├── CLAUDE.md
-│   │   ├── README.md
-│   │   ├── LICENSE
-│   │   ├── PROMPT_PERSUASION_GRAMMARLY.md
-│   │   ├── ENGAGEMENT_ARCHITECTURE.js
-│   │   └── UX_DESIGN_SYSTEM.js
-│   │
-│   ├── LINGUISTIC_PERSUASION/ (10 files — CONSOLIDATED)
-│   │   ├── README_LINGUISTIC_PERSUASION.md
-│   │   ├── 1_DETECTION_FRAMEWORKS_PROMPT.md
-│   │   ├── 2_LINGUISTIC_RHETORICAL_PATTERNS_PROMPT.md
-│   │   ├── 3_FRACTIONATION_INTEGRITY_VIOLATIONS_PROMPT.md
-│   │   ├── 4_DETECTION_CODE_SCORING_PROMPT.md
-│   │   ├── 5_RANKINGS_EFFECTIVENESS_DATA_PROMPT.md
-│   │   ├── 6_CASE_STUDIES_RESEARCH_PROMPT.md
-│   │   ├── BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md
-│   │   ├── verify_consolidation.js
-│   │   └── verify_consolidation.py
-│   │
-│   ├── CODE/ (6 files)
-│   │   ├── 04_PRODUCTION_CODE_BASE.md
-│   │   ├── 05_TOOLS_4_TO_8_CODE.md
-│   │   ├── 06_TOOLS_9_TO_12_CODE.md
-│   │   ├── UNIFIED_AUDITOR.py
-│   │   ├── UNIFIED_GENERATOR.py
-│   │   └── INTEGRITY_VIOLATION_DETECTOR.py
-│   │
-│   ├── EXECUTION/ (3 files)
-│   │   ├── 07_COMPLETE_IMPLEMENTATION_ROADMAP.md
-│   │   ├── 08_QUICK_START_CHECKLIST.md
-│   │   └── 22_IMPLEMENTATION_SPECIFICATION.md
-│   │
-│   └── META/ (5 files)
-│       ├── PROJECT_STATUS.md
-│       ├── 20_COMPREHENSIVE_GAP_ANALYSIS.md
-│       ├── CONSOLIDATION_SUMMARY.md
-│       ├── CONSOLIDATION_PROMPT.md
-│       └── GIT_SETUP_COMPLETE.md
+├── CODE/ (6 files)
+│   ├── 04_PRODUCTION_CODE_BASE.md
+│   ├── 05_TOOLS_4_TO_8_CODE.md
+│   ├── 06_TOOLS_9_TO_12_CODE.md
+│   ├── UNIFIED_AUDITOR.py
+│   ├── UNIFIED_GENERATOR.py
+│   └── INTEGRITY_VIOLATION_DETECTOR.py
 │
-└── TOOLS/ (2 files)
-    ├── Journal.tsx
-    └── reality-distortion-trainer.html
+├── EXECUTION/ (3 files)
+│   ├── 07_COMPLETE_IMPLEMENTATION_ROADMAP.md
+│   ├── 08_QUICK_START_CHECKLIST.md
+│   └── 22_IMPLEMENTATION_SPECIFICATION.md
+│
+└── META/ (4 files)
+    ├── PROJECT_STATUS.md
+    ├── 20_COMPREHENSIVE_GAP_ANALYSIS.md
+    ├── CONSOLIDATION_SUMMARY.md
+    └── GIT_SETUP_COMPLETE.md
 ```
 
 ---
@@ -100,7 +80,7 @@ UX & Persuasion/                       # Project root
 3. **Identify 20+ principles** deployed
 4. **Detect advanced architectures** (cognitive load, decision fatigue, etc.)
 5. **Generate professional reports** (JSON format)
-6. **Assess audience vulnerability** (who is most at risk?)
+6. **Assess audience susceptibility** (who shows highest response patterns?)
 7. **Flag high-intensity persuasion** immediately
 8. **Provide remediation** (how to fix the content)
 9. **Track historical precedent** (which Bernays campaign does this match?)
@@ -140,14 +120,14 @@ UX & Persuasion/                       # Project root
 3. `EXECUTION/08_QUICK_START_CHECKLIST.md` - 48-hour setup
 
 ### For Researchers
-1. `LINGUISTIC_PERSUASION/RESEARCH/FRACTIONATION_BEHAVIORAL_SCIENCE.md` - Core mechanism
-2. `LINGUISTIC_PERSUASION/RESEARCH/FRACTIONATION_DETECTION_METHODS.md` - Measurement methods
-3. `LINGUISTIC_PERSUASION/RESEARCH/RESEARCH_SUMMARY_AND_NEXT_STEPS.md` - Research trajectory
+1. `LINGUISTIC_PERSUASION/6_CASE_STUDIES_RESEARCH_PROMPT.md` - Case studies & research foundation
+2. `LINGUISTIC_PERSUASION/3_FRACTIONATION_INTEGRITY_VIOLATIONS_PROMPT.md` - Fractionation science
+3. `LINGUISTIC_PERSUASION/BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md` - Research execution plan
 
 ### For Auditors
-1. `LINGUISTIC_PERSUASION/DETECTION/15_PROFESSIONAL_AUDITOR_MANUAL.md` - Audit protocols
-2. `LINGUISTIC_PERSUASION/DETECTION/11_TACTICAL_DETECTION_FRAMEWORK.md` - Detection rules
-3. `LINGUISTIC_PERSUASION/DETECTION/17_MACHINE_READABLE_DETECTION_SYSTEM.md` - Automation
+1. `LINGUISTIC_PERSUASION/1_DETECTION_FRAMEWORKS_PROMPT.md` - Detection frameworks
+2. `LINGUISTIC_PERSUASION/4_DETECTION_CODE_SCORING_PROMPT.md` - Machine-readable detection
+3. `CODE/UNIFIED_AUDITOR.py` - Ready-to-run auditing tool
 
 ---
 
@@ -171,9 +151,10 @@ All documents use neutral professional terminology:
 | Feb 2026 | Folder reorganization (46 - 40 files) |
 | Feb 2026 | ETHICS folder consolidated (content extracted, folder removed) |
 | Feb 2026 | META folder consolidated (9 - 2 files) |
-| Feb 2026 | UX domain fully consolidated into 7 prompts (UX/ folder) |
-| Feb 2026 | Project reorganization: TOOLS/ folder created, META/ expanded, docs updated |
 | Feb 2026 | Linguistic Persuasion domain fully consolidated into 6 prompts (26 source files → 6 prompts) |
+| Feb 2026 | Removed duplicate files (02_TOOL_SPECIFICATIONS.md, META/CONSOLIDATION_PROMPT.md) |
+| Feb 2026 | Fixed stale file references across README.md, FILE_DIRECTORY_GUIDE.md, PROJECT_STATUS.md |
+| Feb 2026 | Terminology alignment pass (CLAUDE.md compliance across all files) |
 
 ---
 

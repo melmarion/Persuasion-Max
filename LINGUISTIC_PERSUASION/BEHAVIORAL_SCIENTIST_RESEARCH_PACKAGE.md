@@ -53,7 +53,7 @@ A comprehensive research package on **fractionation** (emotional cycling as an i
 3. **High effect size**: 200%+ suggestibility increase is extraordinary
 4. **Unintentional discovery**: Algorithms found it through optimization, not design
 5. **Invisible to users**: No awareness, no detection, minimal conscious recognition for most people
-6. **Universal vulnerability**: Works across cultures, ages, education levels
+6. **Universal susceptibility**: Works across cultures, ages, education levels
 7. **Measurable in real-time**: Blink rate, skin conductance, heart rate, pupil dilation all show the effect
 
 ### Why It's Understudied
@@ -165,7 +165,7 @@ A comprehensive research package on **fractionation** (emotional cycling as an i
 ---
 
 ### Research Question 3: INDIVIDUAL DIFFERENCES
-**"Which people are most vulnerable to fractionation?"**
+**"Which people are most susceptible to fractionation?"**
 
 **What you'd measure:**
 - Baseline suggestibility (reduced-vigilance susceptibility scale)
@@ -205,7 +205,7 @@ A comprehensive research package on **fractionation** (emotional cycling as an i
 - Purchase patterns per person
 - Individual psychological profiles
 
-**Expected finding:** Same person gets different fractionation based on their vulnerabilities
+**Expected finding:** Same person gets different fractionation based on their susceptibilities
 
 **Why it matters:** Proves personalized influence; enables targeted policy
 
@@ -341,7 +341,7 @@ A comprehensive research package on **fractionation** (emotional cycling as an i
 - Main finding: Specific physiological markers identify fractionation state
 - Timeline: 12 months from data collection
 
-### Paper 3 (Individual Differences): "Vulnerability Markers for Emotional Influence"
+### Paper 3 (Individual Differences): "Susceptibility Markers for Emotional Influence"
 - Submit to: Personality and Individual Differences
 - Main finding: Personality/physiological traits predict susceptibility
 - Timeline: 18 months from data collection

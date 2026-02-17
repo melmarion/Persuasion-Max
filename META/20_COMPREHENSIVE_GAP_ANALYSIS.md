@@ -139,9 +139,9 @@ Created **Document 19: REAL-WORLD CASE STUDIES & FAMOUS EXAMPLES** (1,151 lines)
 | Immediate Red Flag | PERSONAL > 60 + EMOTIONAL > 70 | Bernays' Torches of Freedom (female identity + liberation emotion) | 85/100 |
 | Immediate Red Flag | SCARCITY > 70 + DESTRUCTION > 0 | Portrait photographers "burn in 7 days" | 90/100 |
 | Immediate Red Flag | AUTHORITY > 50 + THREAT = 0 | Goebbels' unchallenged monopoly | 95/100 |
-| Vulnerability: Identity-Conscious | PERSONAL > 50 | Luxury fashion buyers ("fear of being basic") | 65/100 |
-| Vulnerability: Status-Conscious | SCARCITY > 60 + COMPETITION > 2 | Apple iPhone launches (pre-order sellouts) | 70/100 |
-| Vulnerability: Emotionally-Responsive | EMOTIONAL_ARC_COMPLETE = TRUE + SCORE > 60 | Netflix cliffhangers + auto-play | 75/100 |
+| Susceptibility: Identity-Conscious | PERSONAL > 50 | Luxury fashion buyers ("fear of being basic") | 65/100 |
+| Susceptibility: Status-Conscious | SCARCITY > 60 + COMPETITION > 2 | Apple iPhone launches (pre-order sellouts) | 70/100 |
+| Susceptibility: Emotionally-Responsive | EMOTIONAL_ARC_COMPLETE = TRUE + SCORE > 60 | Netflix cliffhangers + auto-play | 75/100 |
 | Classification: HIGH | COMPOSITE 51-75 | Booking.com scarcity tactics | 68/100 |
 | Classification: EXTREME | COMPOSITE 76-100 | Goebbels' propaganda system | 92/100 |
 
@@ -368,7 +368,7 @@ Pattern library with real usage:
 
 Real cases that trigger each tree:
 - RED FLAG TREE: Goebbels unchecked authority (95/100)
-- VULNERABILITY TREE: Luxury fashion identity targeting (65/100)
+- SUSCEPTIBILITY TREE: Luxury fashion identity targeting (65/100)
 - CLASSIFICATION TREE: Netflix high influence strategy (75/100)
 
 ---

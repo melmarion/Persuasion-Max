@@ -185,7 +185,7 @@ class BehavioralResponsePredictor:
         feature_names = [
             'trait_anxiety', 'neuroticism', 'belonging_need',
             'fractionation_index', 'feed_intensity', 'cycles_completed',
-            'blink_rate_vulnerability', 'hrv_resilience', 'cortisol_stress'
+            'blink_rate_susceptibility', 'hrv_resilience', 'cortisol_stress'
         ]
 
         importance_dict = {
@@ -202,9 +202,9 @@ class BehavioralResponsePredictor:
         if purchase_probability > 0.8:
             return "Very high purchase likelihood (80%+). Strong fractionation effect."
         elif purchase_probability > 0.6:
-            return "High purchase likelihood (60-80%). Significant vulnerability detected."
+            return "High purchase likelihood (60-80%). Significant susceptibility detected."
         elif purchase_probability > 0.4:
-            return "Moderate purchase likelihood (40-60%). Some vulnerability present."
+            return "Moderate purchase likelihood (40-60%). Some susceptibility present."
         elif purchase_probability > 0.2:
             return "Low purchase likelihood (20-40%). Minimal fractionation effect."
         else:
@@ -226,15 +226,15 @@ class BehavioralResponsePredictor:
 ---
 
 ## TOOL 5: INTERVENTION EFFECTIVENESS SIMULATOR
-### Personalized Defense Recommendations
+### Personalized Countermeasure Recommendations
 
-**File: `src/models/intervention_simulator.py`**
+**File: `src/models/strategy_simulator.py`**
 
 ```python
 """
-Intervention Effectiveness Simulator
+Strategy Effectiveness Simulator
 
-From Compilation.txt defenses:
+From Compilation.txt countermeasures:
 1. Awareness training: "Maybe" thinking
 2. Prefrontal activation: Math problems
 3. Cognitive flexibility: Observer mode
@@ -247,14 +247,14 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-class InterventionSimulator:
+class StrategySimulator:
     """
-    Simulate effectiveness of different interventions
+    Simulate effectiveness of different strategys
     """
 
     def __init__(self):
         # Effectiveness data from research
-        self.interventions = {
+        self.strategys = {
             'awareness_training': {
                 'description': 'Teach recognition of fractionation patterns',
                 'base_effectiveness': 0.18,  # 18% reduction
@@ -305,97 +305,97 @@ class InterventionSimulator:
             }
         }
 
-    def calculate_intervention_effectiveness(self,
-                                            intervention_name: str,
+    def calculate_strategy_effectiveness(self,
+                                            strategy_name: str,
                                             user_personality: Dict,
-                                            current_vulnerability: float) -> Dict:
+                                            current_susceptibility: float) -> Dict:
         """
         Calculate effectiveness for specific user
 
         Factors:
-        - Base effectiveness of intervention
-        - User personality (some interventions work better for certain people)
-        - Current vulnerability level
+        - Base effectiveness of strategy
+        - User personality (some strategys work better for certain people)
+        - Current susceptibility level
         """
 
-        if intervention_name not in self.interventions:
-            return {'error': 'Unknown intervention'}
+        if strategy_name not in self.strategys:
+            return {'error': 'Unknown strategy'}
 
-        intervention = self.interventions[intervention_name]
+        strategy = self.strategys[strategy_name]
 
         # Adjust for personality
         personality_factor = self._get_personality_factor(
-            intervention_name,
+            strategy_name,
             user_personality
         )
 
-        # Adjust for vulnerability level
-        # High vulnerability = interventions more effective (more room to improve)
-        vulnerability_factor = current_vulnerability / 10
+        # Adjust for susceptibility level
+        # High susceptibility = strategys more effective (more room to improve)
+        susceptibility_factor = current_susceptibility / 10
 
         # Calculate adjusted effectiveness
         adjusted_effectiveness = (
-            intervention['base_effectiveness'] *
+            strategy['base_effectiveness'] *
             (1 + personality_factor) *
-            (1 + vulnerability_factor * 0.5)
+            (1 + susceptibility_factor * 0.5)
         )
 
         # Cap at 1.0 (100%)
         adjusted_effectiveness = min(1.0, adjusted_effectiveness)
 
         # Calculate reduction in purchase probability
-        vulnerability_reduction = current_vulnerability * adjusted_effectiveness
+        susceptibility_reduction = current_susceptibility * adjusted_effectiveness
 
         return {
-            'intervention': intervention_name,
-            'description': intervention['description'],
-            'base_effectiveness': intervention['base_effectiveness'],
+            'strategy': strategy_name,
+            'description': strategy['description'],
+            'base_effectiveness': strategy['base_effectiveness'],
             'adjusted_effectiveness': adjusted_effectiveness,
-            'vulnerability_reduction': vulnerability_reduction,
-            'new_vulnerability_score': max(0, current_vulnerability - vulnerability_reduction),
-            'cost': intervention['cost'],
-            'time_investment': intervention['time_investment']
+            'susceptibility_reduction': susceptibility_reduction,
+            'new_susceptibility_score': max(0, current_susceptibility - susceptibility_reduction),
+            'cost': strategy['cost'],
+            'time_investment': strategy['time_investment']
         }
 
-    def simulate_combined_interventions(self,
-                                       intervention_names: List[str],
+    def simulate_combined_strategys(self,
+                                       strategy_names: List[str],
                                        user_personality: Dict,
-                                       current_vulnerability: float) -> Dict:
+                                       current_susceptibility: float) -> Dict:
         """
-        Simulate combined effectiveness of multiple interventions
+        Simulate combined effectiveness of multiple strategys
 
-        From Compilation.txt: "Combined interventions reduce susceptibility 40-60%"
+        From Compilation.txt: "Combined strategys reduce susceptibility 40-60%"
         """
 
         individual_effects = [
-            self.calculate_intervention_effectiveness(
-                name, user_personality, current_vulnerability
+            self.calculate_strategy_effectiveness(
+                name, user_personality, current_susceptibility
             )
-            for name in intervention_names
+            for name in strategy_names
         ]
 
         # Combined effect (not just sum - diminishing returns)
-        individual_reductions = [e['vulnerability_reduction'] for e in individual_effects]
+        individual_reductions = [e['susceptibility_reduction'] for e in individual_effects]
 
         # Diminishing returns formula
         combined_reduction = sum(individual_reductions) * 0.85  # 85% of sum
 
-        combined_effectiveness = combined_reduction / current_vulnerability
+        combined_effectiveness = combined_reduction / current_susceptibility
 
         return {
-            'interventions': intervention_names,
+            'strategys': strategy_names,
             'individual_effects': individual_effects,
-            'combined_vulnerability_reduction': combined_reduction,
+            'combined_susceptibility_reduction': combined_reduction,
             'combined_effectiveness': min(1.0, combined_effectiveness),
-            'new_vulnerability_score': max(0, current_vulnerability - combined_reduction),
+            'new_susceptibility_score': max(0, current_susceptibility - combined_reduction),
             'recommendation': self._generate_recommendation(
-                intervention_names,
+                strategy_names,
                 combined_effectiveness
             )
         }
 
     def _get_personality_factor(self,
-                               intervention_name: str,
+                               strategy_name: str,
                                personality: Dict) -> float:
         """
         Adjust effectiveness based on personality match
@@ -435,35 +435,35 @@ class InterventionSimulator:
             )
         }
 
-        return factors.get(intervention_name, 0.0)
+        return factors.get(strategy_name, 0.0)
 
     def _generate_recommendation(self,
-                               interventions: List[str],
+                               strategys: List[str],
                                effectiveness: float) -> str:
         """Generate human-readable recommendation"""
 
         if effectiveness > 0.50:
-            return f"Highly effective combination. Expected 50%+ reduction in vulnerability."
+            return f"Highly effective combination. Expected 50%+ reduction in susceptibility."
         elif effectiveness > 0.30:
             return f"Moderately effective combination. Expected 30-50% reduction."
         else:
-            return f"Consider additional interventions. Current combination provides <30% reduction."
+            return f"Consider additional strategys. Current combination provides <30% reduction."
 
-    def recommend_intervention_plan(self,
+    def recommend_strategy_plan(self,
                                    user_personality: Dict,
-                                   current_vulnerability: float) -> List[Dict]:
+                                   current_susceptibility: float) -> List[Dict]:
         """
-        Recommend personalized intervention plan
+        Recommend personalized strategy plan
         """
 
-        # Rank interventions by adjusted effectiveness
+        # Rank strategys by adjusted effectiveness
         rankings = []
 
-        for intervention_name in self.interventions.keys():
-            result = self.calculate_intervention_effectiveness(
-                intervention_name,
+        for strategy_name in self.strategys.keys():
+            result = self.calculate_strategy_effectiveness(
+                strategy_name,
                 user_personality,
-                current_vulnerability
+                current_susceptibility
             )
             rankings.append(result)
 
@@ -616,14 +616,14 @@ class RealtimeDetectorManager:
 
 ---
 
-## TOOL 7: ORGANIZATIONAL VULNERABILITY ASSESSMENT
+## TOOL 7: ORGANIZATIONAL SUSCEPTIBILITY ASSESSMENT
 ### Platform Audit System
 
 **File: `src/models/org_assessment.py`**
 
 ```python
 """
-Organizational Vulnerability Assessment
+Organizational Susceptibility Assessment
 
 Audit platform algorithms for influence intensity
 """
@@ -752,7 +752,7 @@ class OrganizationAssessment:
         Weights:
         - Fractionation intensity: 40%
         - Personalization depth: 30%
-        - Vulnerable targeting: 20%
+        - Susceptibility targeting: 20%
         - Predictability: 10%
         """
 

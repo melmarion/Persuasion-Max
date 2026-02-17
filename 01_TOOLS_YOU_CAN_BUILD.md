@@ -8,7 +8,7 @@
 | # | Tool | Purpose | Complexity | Build Time | Revenue Model |
 |---|------|---------|------------|------------|---------------|
 | 1 | Fractionation Detection Algorithm | Detect A-J-A-R emotional sequences in feeds | Low | 2-4 weeks | B2B License |
-| 2 | Personal Vulnerability Scanner | Measure individual susceptibility (3 domains) | Medium | 4-6 weeks | Freemium/B2B |
+| 2 | Personal Susceptibility Scanner | Measure individual susceptibility (3 domains) | Medium | 4-6 weeks | Freemium/B2B |
 | 3 | Algorithmic Influence Index | Score algorithms 0-100 for influence intensity | Low-Medium | 3-5 weeks | Regulatory |
 | 4 | Behavioral Response Predictor | Predict impulse purchase probability | High | 8-12 weeks | Research |
 | 5 | Strategy Effectiveness Simulator | Match response strategies to personality profiles | Medium-High | 6-10 weeks | Clinical |
@@ -38,7 +38,7 @@ Pick ONE tool and complete Week 1:
 |-------|--------|-------|-------|
 | 1 | 1-6 | Diagnostic | #1, #2, #3 |
 | 2 | 6-12 | Prediction | #4, #5, #7 |
-| 3 | 12-18 | Defense | #8, #9 |
+| 3 | 12-18 | Analysis | #8, #9 |
 | 4 | 18-24 | Infrastructure | #6, #10, #11, #12 |
 
 **Time investment:** Start with 2-3 hours/week. Scale to 5-8 hours/week as tools mature.
@@ -121,7 +121,7 @@ OUTPUT: "Feed contains X% fractionation sequences (p < .001, effect size = Y)"
 
 ---
 
-### Tool 2: Personal Vulnerability Scanner
+### Tool 2: Personal Susceptibility Scanner
 
 **Purpose:** Measure individual susceptibility to fractionation across psychology, neuroscience, and physiology domains.
 

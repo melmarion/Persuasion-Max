@@ -53,21 +53,16 @@ Emotional sequencing refers to the deliberate ordering of content designed to ev
 
 ---
 
-### Vulnerability vs. Susceptibility
+### Susceptibility
 
-**Vulnerability (Technical/Code Context):**
-Used in software development, code variables, class names, and technical specifications.
-- Example: VulnerabilityScorer class
-- Example: "vulnerability assessment module"
-- Indicates: Technical implementation of measurement systems
+**Use "susceptibility" in all contexts** — code, research, behavioral analysis, clinical assessment, and technical specifications.
 
-**Susceptibility (Research/Behavioral Context):**
-Used in research, behavioral analysis, clinical assessment, and empirical documentation.
+- Example: `SusceptibilityScorer` class
+- Example: "susceptibility assessment module"
 - Example: "Patients with high susceptibility to fractionation..."
 - Example: "Susceptibility factors include trait anxiety..."
-- Indicates: Behavioral/psychological characteristics and research findings
 
-**Usage Rule:** Choose based on context, not content. If writing code or technical specs → "vulnerability". If writing research, behavioral analysis, or clinical content → "susceptibility".
+**Usage Rule:** Always use "susceptibility" regardless of context. Do not use "vulnerability" or "vulnerable" in any form. See CLAUDE.md for the complete terminology guidelines.
 
 ---
 
@@ -103,8 +98,7 @@ Used in research, behavioral analysis, clinical assessment, and empirical docume
 |---------|----------|----------|
 | The 4-cycle emotional pattern | A-J-A-R | A-J-A-R, anger→joy→anger→relief |
 | Emotional state ordering | emotional sequencing | emotional cycling |
-| Code/technical context | vulnerability | susceptibility |
-| Research/behavioral context | susceptibility | vulnerability |
+| All contexts (code, research, behavioral) | susceptibility | vulnerability |
 | Measurement notation | "15-20 blinks/min" | "15-20", "15-20/minute" |
 | Pattern notation (first mention) | "A-J-A-R (anger-joy-anger-relief)" | "A-J-A-R", arrow notation |
 | Pattern notation (subsequent) | "A-J-A-R" | Full spelling |
@@ -121,13 +115,13 @@ Used in research, behavioral analysis, clinical assessment, and empirical docume
 
 ### When Updating Existing Content:
 1. Replace non-canonical terms with approved versions
-2. Check context to ensure "vulnerability" vs "susceptibility" distinction is correct
+2. Ensure "susceptibility" is used consistently (never "vulnerability")
 3. Standardize notation to "A-J-A-R" format
 4. Add units to all blink rate measurements
 
 ### When Ambiguous:
-1. Refer to this document for guidance
-2. When term usage is context-dependent, choose based on domain (code vs research)
+1. Refer to this document and CLAUDE.md for guidance
+2. Always use "susceptibility" — see CLAUDE.md for complete terminology rules
 3. Document any deviations with clear rationale
 
 ---
@@ -140,10 +134,11 @@ Used in research, behavioral analysis, clinical assessment, and empirical docume
 ### Why "A-J-A-R" hyphenated notation?
 Hyphenation creates clear visual separation between components and prevents confusion with acronyms (A-J-A-R appears to be a word). Consistency with hyphenated notation is standard in technical documentation.
 
-### Why Separate "Vulnerability" and "Susceptibility"?
-- **Vulnerability** historically appears in software security and technical contexts
-- **Susceptibility** aligns with psychological/behavioral research terminology
-- This distinction prevents confusion between technical measurement systems and behavioral characteristics
+### Why "Susceptibility" Everywhere?
+- **Susceptibility** is the standard term across all project contexts per CLAUDE.md
+- Aligns with psychological/behavioral research terminology
+- Avoids the protective framing implied by "vulnerability"
+- Maintains consistent, neutral measurement language throughout the project
 
 ### Why Explicit Units for Blink Rate?
 Blink rate measurements are quantitative and appear in multiple formats across literature. Explicit units ("blinks/min") prevent interpretation errors when data is cited or referenced outside original context.

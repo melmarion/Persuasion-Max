@@ -155,7 +155,7 @@ git push -u origin --all
 - 11 Detection framework documents
 - 14 Research foundation documents
 - 3 Implementation roadmaps
-- 1 Ethical framework
+- 1 Intensity threshold framework
 - Complete tool specifications
 
 ### Key Documents

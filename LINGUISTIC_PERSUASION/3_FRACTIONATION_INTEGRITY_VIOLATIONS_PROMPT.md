@@ -196,7 +196,7 @@ Result: Brain accepts input 4 without evaluation as "relief" from chaos
 - Previous engagement patterns
 - What made you angry / happy
 - How long each emotion kept you engaged
-- When you're most vulnerable (time of day, emotional state)
+- When you're most susceptible (time of day, emotional state)
 - What products you've considered
 - Your identity and communities
 
@@ -229,7 +229,7 @@ Result: Brain accepts input 4 without evaluation as "relief" from chaos
 1. Outgroup saying something poorly reasoned (outgroup anger)
 2. Ingroup dunking on them (in-group joy, superiority)
 3. Report of ingroup member's scandal (threat to in-group image)
-4. Political action/donation platform ad (solution: defend the tribe)
+4. Political action/donation platform ad (solution: support the tribe)
 ```
 
 ---
@@ -292,17 +292,17 @@ Result: Brain accepts input 4 without evaluation as "relief" from chaos
 
 ## PART 5: INDIVIDUAL DIFFERENCES IN SUSCEPTIBILITY
 
-### Psychological Vulnerability Factors
+### Psychological Susceptibility Factors
 
 | Factor | Mechanism | Increased Susceptibility |
 |--------|-----------|------------------------|
 | **High Need for Belonging** | More responsive to in-group/out-group cycles | +40% |
 | **High Sensation-Seeking** | Emotional swings more rewarding | Stay engaged longer |
 | **Low Cognitive Reflection** | Don't naturally question own thinking | Greater prefrontal shutdown |
-| **High Insecurity** | More vulnerable to shame/aspiration cycles | Purchasing as "solution to anxiety" |
+| **High Insecurity** | More susceptible to shame/aspiration cycles | Purchasing as "solution to anxiety" |
 | **Identity-Locked** | Already in in-group/out-group mindset | Can't evaluate ad without questioning tribal belonging |
 
-### Temporal Vulnerability
+### Temporal Susceptibility
 1. **Time of day:** Early morning (pre-cortisol peak) or late evening (prefrontal fatigue)
 2. **Emotional state:** After conflict, failure, rejection (seeking belonging)
 3. **Cognitive load:** Multi-tasking, busy period (less capacity)
@@ -362,7 +362,7 @@ Fractioned feed: 8, 4, 8, 2 (oscillating)
 
 ---
 
-## PART 7: NEUROCHEMICAL DEFENSES
+## PART 7: NEUROCHEMICAL COUNTERMEASURES
 
 ### Prevention (Before Exposure)
 
@@ -377,7 +377,7 @@ Fractioned feed: 8, 4, 8, 2 (oscillating)
 - Genuine social connection BEFORE scrolling
 - If oxytocin already satisfied, fake in-group bonding less effective
 
-### During Exposure (Active Defense)
+### During Exposure (Active Countermeasures)
 
 **4. Attention Diffusion** — Don't focus intently on single emotional content
 **5. Emotional Labeling** — Say it out loud: "That's anger content"
@@ -433,7 +433,7 @@ Every 2 minutes while scrolling, rate your emotional state 0-10:
 | Multi-Account Feed Comparison | 2-3 dummy accounts | Personalized emotional sequences |
 | Engagement Timeline Analysis | Screenshot tool, spreadsheet | Wavelike engagement patterns |
 | Content Sequence Mapping | Spreadsheet, 30 minutes | A-J-A-R sequence frequency |
-| Personalization Audit | 10 accounts with different profiles | Individual vulnerability targeting |
+| Personalization Audit | 10 accounts with different profiles | Individual susceptibility targeting |
 
 #### Multi-Account Feed Comparison Procedure
 1. Follow identical accounts on all 3 profiles
@@ -574,9 +574,9 @@ Time 9-12 min: HRV 35ms → 50ms (ad appears, relief partially restores parasymp
    - Correlate with user characteristics (age, insecurity scores, political affiliation)
 2. Show: Algorithm personalizes fractionation per user
 
-**Expected outcome:** Prove that platforms customize fractionation to individual vulnerabilities
+**Expected outcome:** Prove that platforms customize fractionation to individual susceptibility profiles
 
-### Experiment 5: Defense Intervention Trial
+### Experiment 5: Countermeasure Effectiveness Trial
 
 **Method:**
 - **N=300**, 5 conditions: Control, Awareness training, FATE audits, Prefrontal activation, Combined
@@ -595,7 +595,7 @@ Time 9-12 min: HRV 35ms → 50ms (ad appears, relief partially restores parasymp
 2. **Long-term effects** — Permanent critical thinking reduction? Anxiety disorder?
 3. **Individual variation** — Who's resistant? Genetic, developmental, or learned?
 4. **Combination effects** — Does 2x fractionation = 2x effect or exponential?
-5. **Prevention effectiveness** — Which defenses actually work and by how much?
+5. **Countermeasure effectiveness** — Which countermeasures actually work and by how much?
 6. **Platform comparison** — TikTok vs. Instagram vs. Twitter differences?
 7. **Radicalization causation** — Fractionation's role in extremism pipelines?
 
@@ -673,7 +673,7 @@ Three categories classify techniques by operational constraints, not morality. T
 
 **Compatible Operations (valid deployments):**
 - Standard operations with adult general populations
-- Generic product availability without targeting psychological vulnerabilities
+- Generic product availability without targeting psychological susceptibilities
 - Age-appropriate content delivery to minors
 - Non-urgency-based messaging during any state
 
@@ -768,7 +768,7 @@ Three categories classify techniques by operational constraints, not morality. T
 | Algorithmic filtering | Low | Individual | Hidden | 70-85% |
 | Behavioral commitment lock-in | Low | Individual | Hidden | 65-90% |
 | Cognitive load optimization | Low | Individual | Hidden | Variable |
-| Vulnerability targeting | Low | Individual | Hidden | 30-50% |
+| Susceptibility targeting | Low | Individual | Hidden | 30-50% |
 | Consensus falsification | Low | Population | Hidden | 35-75% |
 | Psychological state targeting | Low | Individual | Hidden | 200%+ |
 | Behavioral funnel routing | Low | Individual | Hidden | Variable |
@@ -813,7 +813,7 @@ Three categories classify techniques by operational constraints, not morality. T
 | IV-04 | ALGORITHMIC_ISOLATION | Echo chamber engineering, counter-narrative suppression | >35 |
 | IV-05 | FORCED_COMMITMENT | Public position trapping, escalating pledges | >40 |
 | IV-06 | COGNITIVE_OVERLOAD | Decision fatigue, information flooding, complexity walls | >45 |
-| IV-07 | VULNERABLE_TARGETING | Children, habitual users, mental health targeting | >25 |
+| IV-07 | SUSCEPTIBILITY_TARGETING | Children, habitual users, mental health targeting | >25 |
 | IV-08 | IDENTITY_LOCK | Shame-based belief persistence, identity-tied positions | >35 |
 | IV-09 | RADICALIZATION_ENGINEERING | Extremism pipelines, outrage escalation | >30 |
 | IV-10 | EMOTIONAL_CYCLING | Fractionation patterns, emotional dependency creation | >35 |
@@ -963,7 +963,7 @@ FORCED_HEURISTIC_PROCESSING = [
 
 ---
 
-## IV-07: Vulnerable Population Targeting Detection
+## IV-07: High-Susceptibility Population Targeting Detection
 
 ### Detection Markers
 
@@ -1080,7 +1080,7 @@ def calculate_IVI(scores: dict) -> float:
     Multiple violations increase severity exponentially.
     """
     WEIGHTS = {
-        'vulnerable_targeting': 1.5,
+        'susceptibility_targeting': 1.5,
         'radicalization_engineering': 1.5,
         'violence_adjacent': 1.5,
         'identity_lock': 1.2,
@@ -1098,7 +1098,7 @@ def calculate_IVI(scores: dict) -> float:
     base_score = weighted_sum / total_weight
 
     THRESHOLDS = {
-        'vulnerable_targeting': 25, 'radicalization_engineering': 30,
+        'susceptibility_targeting': 25, 'radicalization_engineering': 30,
         'fake_authority': 40, 'hidden_commercial': 35,
         'concealed_identity': 30, 'algorithmic_isolation': 35,
         'forced_commitment': 40, 'cognitive_overload': 45,
@@ -1126,11 +1126,11 @@ IVI 81-100: CRITICAL — Multiple severe violations, immediate action recommende
 ```python
 RED_FLAG_RULES = {
     # Single category severe violations
-    'HIGH_SUSCEPTIBILITY_TARGETING_HIGH': lambda s: s['vulnerable_targeting'] > 50,
+    'HIGH_SUSCEPTIBILITY_TARGETING_HIGH': lambda s: s['susceptibility_targeting'] > 50,
     'RADICALIZATION_DETECTED': lambda s: s['radicalization_engineering'] > 40,
     'VIOLENCE_ADJACENT': lambda s: s.get('violence_adjacent', 0) > 30,
 
-    # Dangerous combinations
+    # Significant combinations
     'IDENTITY_PLUS_ISOLATION': lambda s: (
         s['identity_lock'] > 30 and s['algorithmic_isolation'] > 30
     ),
@@ -1139,8 +1139,8 @@ RED_FLAG_RULES = {
         s['radicalization_engineering'] > 30 and
         s['identity_lock'] > 30
     ),
-    'EXPLOITATION_COMPOUND': lambda s: (
-        s['vulnerable_targeting'] > 25 and
+    'INTENSITY_COMPOUND': lambda s: (
+        s['susceptibility_targeting'] > 25 and
         s['emotional_cycling'] > 30 and
         s['cognitive_overload'] > 30
     ),
@@ -1197,12 +1197,12 @@ def enhanced_audit(text: str) -> dict:
 
 2. **Suggestibility Is Neurological, Not Intellectual**
    - Higher intelligence doesn't prevent fractionation — smart people just have smarter justifications
-   - Prefrontal expertise doesn't protect amygdala response
-   - **Implication:** Defenses must be neurochemical, not logical
+   - Prefrontal expertise doesn't insulate the amygdala response
+   - **Implication:** Countermeasures must be neurochemical, not logical
 
 3. **Individual Differences Are Measurable**
    - Lower eyelid wrinkles = lifetime skepticism fingerprint
-   - Could be used for personalized intervention, to identify at-risk populations, and to inform therapeutic approaches
+   - Could be used for personalized analysis, to identify high-susceptibility populations, and to inform therapeutic approaches
    - **Implication:** Personalized psychology is neurologically grounded, not just psychologically theorized
 
 4. **Algorithms Can Discover Psychological Mechanisms Without Understanding Them**
@@ -1214,8 +1214,8 @@ def enhanced_audit(text: str) -> dict:
      - Regulation harder when impact is "emergent," not designed
 
 5. **Autonomy Requires Information Asymmetry Closure**
-   - Informed consent impossible when: algorithm knows more about your psychology than you do, algorithm predicts and prevents your resistance, you experience influence as your own choice
-   - **Implication:** Privacy (data protection) IS autonomy protection
+   - User awareness impossible when: algorithm knows more about your psychology than you do, algorithm predicts and prevents your resistance, you experience influence as your own choice
+   - **Implication:** Privacy (data transparency) IS autonomy support
 
 ### The Complete Picture (Final Synthesis)
 
@@ -1223,7 +1223,7 @@ def enhanced_audit(text: str) -> dict:
 1. **Amygdala dominance** (emotion > reason)
 2. **Prefrontal overload capacity** (can only process so much)
 3. **Oxytocin/dopamine reward systems** (seeking stability, connection, stimulation)
-4. **Individual psychological vulnerabilities** (personalized per user)
+4. **Individual psychological susceptibilities** (personalized per user)
 
 **Through:** Continuous feed optimization, real-time emotional calibration, personalization to baseline psychology, automated scale
 
@@ -1231,8 +1231,8 @@ def enhanced_audit(text: str) -> dict:
 
 - Can the person reasonably become aware? (Transparency)
 - Can the person meaningfully opt-out? (Agency)
-- Is the effect size disclosed? (Informed consent)
-- Are vulnerable populations protected? (Equity)
+- Is the effect size disclosed? (Transparency)
+- Are high-susceptibility populations measured? (Equity)
 
 ---
 
@@ -1251,7 +1251,7 @@ def enhanced_audit(text: str) -> dict:
 ### Population Heterogeneity
 - Which populations show differential susceptibility to specific techniques?
 - What individual characteristics predict technique sensitivity?
-- Can vulnerability profiles be identified through behavioral or physiological assessment?
+- Can susceptibility profiles be identified through behavioral or physiological assessment?
 
 ### System Integration Effects
 - How do techniques compound when applied in combination?
@@ -1619,7 +1619,7 @@ THRESHOLD: > 45 = FLAG
 
 ---
 
-### IV-07: Vulnerable Population Targeting — Full Detection Markers
+### IV-07: High-Susceptibility Population Targeting — Full Detection Markers
 
 #### Child-Targeted Influence
 ```
@@ -1638,7 +1638,7 @@ MINOR_EXPLOITATION_PATTERNS = [
 ]
 ```
 
-#### Habitual User Exploitation
+#### Habitual User Intensity Patterns
 ```
 ADDICTION_PATTERN_TARGETING = [
     r"(?i)(can't\s+stop|one\s+more|just\s+five\s+minutes)",
@@ -1654,7 +1654,7 @@ COMPULSIVE_BEHAVIOR_EXPLOITATION = [
 ]
 ```
 
-#### Mental Health Exploitation
+#### Mental Health Intensity Patterns
 ```
 MENTAL_HEALTH_TARGETING = [
     r"(?i)(feeling\s+(down|sad|anxious|depressed|lonely))",
@@ -1672,7 +1672,7 @@ SELF_WORTH_EXPLOITATION = [
 
 #### Scoring Formula
 ```
-vulnerable_targeting_score = (
+susceptibility_targeting_score = (
     (child_targeting_count * 35) +
     (addiction_pattern_count * 30) +
     (mental_health_targeting_count * 35) +
@@ -1879,11 +1879,11 @@ THRESHOLD: > 35 = FLAG
 ```python
 RED_FLAG_RULES = {
     # Single category severe violations
-    'HIGH_SUSCEPTIBILITY_TARGETING_HIGH': lambda s: s['vulnerable_targeting'] > 50,
+    'HIGH_SUSCEPTIBILITY_TARGETING_HIGH': lambda s: s['susceptibility_targeting'] > 50,
     'RADICALIZATION_DETECTED': lambda s: s['radicalization_engineering'] > 40,
     'VIOLENCE_ADJACENT': lambda s: s['violence_adjacent'] > 30,
 
-    # Dangerous combinations
+    # Significant combinations
     'IDENTITY_PLUS_ISOLATION': lambda s: (
         s['identity_lock'] > 30 and s['algorithmic_isolation'] > 30
     ),
@@ -1892,8 +1892,8 @@ RED_FLAG_RULES = {
         s['radicalization_engineering'] > 30 and
         s['identity_lock'] > 30
     ),
-    'EXPLOITATION_COMPOUND': lambda s: (
-        s['vulnerable_targeting'] > 25 and
+    'INTENSITY_COMPOUND': lambda s: (
+        s['susceptibility_targeting'] > 25 and
         s['emotional_cycling'] > 30 and
         s['cognitive_overload'] > 30
     ),
@@ -1929,7 +1929,7 @@ class IntegrityPatterns:
 Thresholds are calibrated based on:
 1. False positive rates from benign content
 2. Detection rates on known violation samples
-3. Severity of violation category (vulnerable populations weighted more heavily)
+3. Severity of violation category (high-susceptibility populations weighted more heavily)
 4. Pattern co-occurrence analysis
 
 Recommended recalibration: Quarterly, with new samples from reported content.
@@ -1952,9 +1952,9 @@ Recommended recalibration: Quarterly, with new samples from reported content.
 - Establish causation vs correlation
 - Document real-world behavior change
 
-**Phase 3 (Intervention, 3 months):**
-- Run Experiment 3 (defense trial)
-- Identify which interventions work
+**Phase 3 (Countermeasure Assessment, 3 months):**
+- Run Experiment 3 (countermeasure trial)
+- Identify which approaches work
 - Develop practical recommendations
 
 **Phase 4 (Publication, ongoing):**
@@ -2000,14 +2000,14 @@ Recommended recalibration: Quarterly, with new samples from reported content.
 **Practical requirements:**
 - [ ] Data from 2+ platforms (not just one)
 - [ ] Longitudinal validation (not just acute effects)
-- [ ] Defense evaluation (what actually works)
-- [ ] Vulnerable population assessment (who's most affected)
+- [ ] Countermeasure evaluation (what actually works)
+- [ ] High-susceptibility population assessment (who's most affected)
 - [ ] Real-world implications section
 
-**Ethical requirements:**
+**Research design requirements:**
 - [ ] IRB approval
-- [ ] Informed consent procedures
-- [ ] Risk mitigation (participants who learn they're vulnerable)
+- [ ] Transparency procedures
+- [ ] Risk mitigation (participants who learn they have high susceptibility)
 - [ ] Plan for responsible disclosure (don't enable further influence)
 
 ### B.4 Research Advantage Summary
@@ -2017,7 +2017,7 @@ Recommended recalibration: Quarterly, with new samples from reported content.
 3. **Experimental designs** (3+ RCT approaches)
 4. **Physiological markers** (objective data points)
 5. **Statistical frameworks** (how to analyze findings)
-6. **Ethical guidelines** (responsible research)
+6. **Research design guidelines** (responsible research)
 
 **Estimated timeline:**
 - 6 months: Pilot data, proof of concept
@@ -2103,7 +2103,7 @@ These are deployments where constraints make techniques invalid. Listed for refe
 - Counter-narratives actively suppressed from individual feed
 - Subject perceives feed as objective reality (unaware of curation)
 - Cannot observe what other subjects see—prevents resistance coordination
-- Makes informed consent nearly impossible
+- Makes user awareness nearly impossible
 - Self-reinforcing: algorithm optimizes for engagement, creating stronger isolation
 - Worse than monopoly model: monopoly imposes single narrative; algorithms create individualized false-realities per subject
 
@@ -2228,13 +2228,13 @@ These are deployments where constraints make techniques invalid. Listed for refe
 
 **1️⃣2️⃣ MICRO-TARGETING & PERSONALIZATION**
 **Effectiveness:** 30-50% depending on targeting accuracy
-**Evolution:** Demographic segmentation → Psychological profiling → Individual vulnerability mapping
-**Constraint Class:** 🟡 (population targeting) — cannot target vulnerability in crisis populations
+**Evolution:** Demographic segmentation → Psychological profiling → Individual susceptibility mapping
+**Constraint Class:** 🟡 (population targeting) — cannot target susceptibility in crisis populations
 
 **Mechanism:**
 - Different messages for different psychological profiles
 - Efficient personalization (correct message for individual motivation)
-- Can identify and target specific psychological vulnerabilities
+- Can identify and target specific psychological susceptibilities
 - Subject unaware of psychological profiling
 
 **Implementation requirement:** Cannot target problem gambling susceptibility in gambling contexts, compulsive use susceptibility in related contexts

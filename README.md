@@ -13,7 +13,7 @@ See **[03_DEVELOPER_QUICKSTART.md](03_DEVELOPER_QUICKSTART.md)** for Week 1-2 im
 See **[PROMPT_PERSUASION_GRAMMARLY.md](PROMPT_PERSUASION_GRAMMARLY.md)** to build a "Grammarly for Persuasion" tool.
 
 ### For Researchers
-See **[RESEARCH/BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md](RESEARCH/BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md)** for research execution plans.
+See **[LINGUISTIC_PERSUASION/BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md](LINGUISTIC_PERSUASION/BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md)** for research execution plans.
 
 ---
 
@@ -26,17 +26,12 @@ See **[RESEARCH/BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md](RESEARCH/BEHAVIORAL_SC
 - **[CODE/UNIFIED_GENERATOR.py](CODE/UNIFIED_GENERATOR.py)** (2,945 lines)
   Content enhancement tool for applying persuasion techniques with LLM integration
 
-### Detection Frameworks (10 documents)
-- 6 Tactical Stimulus patterns (Personal, Contrastable, Tangible, Memorable, Visual, Emotional)
-- 8 Psychological Principles (Cialdini + cognitive biases)
-- 8 Linguistic Patterns (rhetorical devices, syntactic patterns, framing)
+### Linguistic Persuasion (6 consolidated prompts)
+- Detection frameworks: tactical stimulus, psychological principles, linguistic patterns
 - 265 Classical rhetorical techniques
-
-### Research Foundation (14 documents)
-- Fractionation behavioral science & detection methods
-- Historical evolution analysis (Bernays → Platforms → AI)
-- Real-world case studies with detection rules
-- Cross-domain measurement frameworks
+- Fractionation science & integrity violation detection
+- Machine-readable detection code & scoring systems
+- Case studies, research synthesis, evolution analysis
 
 ### Implementation Guides
 - **[01_TOOLS_YOU_CAN_BUILD.md](01_TOOLS_YOU_CAN_BUILD.md)** - 12 tool specifications
@@ -127,62 +122,48 @@ print(suggestions['synergy_multiplier'])  # 1.35
 ## 📚 Documentation Structure
 
 ```
-Persuasion Max/
+Persuasion-Max/
 ├── README.md (you are here)
 ├── CLAUDE.md (language guidelines - neutral professional terminology)
 ├── PROMPT_PERSUASION_GRAMMARLY.md (build a Grammarly-style tool)
 │
-├── ROOT DOCUMENTS (7 files)
+├── ROOT DOCUMENTS
 │   ├── 00_CORE_THESIS.md (research positioning)
 │   ├── 01_TOOLS_YOU_CAN_BUILD.md (12 tool specifications)
-│   ├── 02_TOOL_SPECIFICATIONS.md (technical specs)
 │   ├── 03_DEVELOPER_QUICKSTART.md (implementation guide)
 │   ├── EXECUTIVE_SUMMARY.md (project overview)
+│   ├── ENGAGEMENT_ARCHITECTURE.js (engagement system specification)
 │   ├── FILE_DIRECTORY_GUIDE.md (navigation)
 │   └── TERMINOLOGY_AND_DEFINITIONS.md (standardized terms)
 │
 ├── CODE/ (Production code + specifications)
-│   ├── UNIFIED_AUDITOR.py ⭐
-│   ├── UNIFIED_GENERATOR.py ⭐
+│   ├── UNIFIED_AUDITOR.py
+│   ├── UNIFIED_GENERATOR.py
+│   ├── INTEGRITY_VIOLATION_DETECTOR.py
 │   ├── 04_PRODUCTION_CODE_BASE.md
 │   ├── 05_TOOLS_4_TO_8_CODE.md
 │   └── 06_TOOLS_9_TO_12_CODE.md
 │
-├── DETECTION/ (10 framework documents)
-│   ├── 11_TACTICAL_DETECTION_FRAMEWORK.md
-│   ├── 12_PSYCHOLOGICAL_PRINCIPLES_DETECTION_FRAMEWORK.md
-│   ├── 13_ADVANCED_FRAMEWORKS.md
-│   ├── LINGUISTIC_DETECTION_FRAMEWORK.md
-│   └── ... (6 more)
-│
-├── RESEARCH/ (14 research documents)
-│   ├── FRACTIONATION_BEHAVIORAL_SCIENCE.md
-│   ├── FRACTIONATION_DETECTION_METHODS.md
-│   ├── BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md
-│   ├── EVOLUTION_ANALYSIS.md
-│   ├── CLASSICAL_RHETORICAL_TECHNIQUES.md
-│   └── ... (9 more)
+├── LINGUISTIC_PERSUASION/ (Consolidated: 26 files → 6 prompts)
+│   ├── README_LINGUISTIC_PERSUASION.md
+│   ├── 1_DETECTION_FRAMEWORKS_PROMPT.md
+│   ├── 2_LINGUISTIC_RHETORICAL_PATTERNS_PROMPT.md
+│   ├── 3_FRACTIONATION_INTEGRITY_VIOLATIONS_PROMPT.md
+│   ├── 4_DETECTION_CODE_SCORING_PROMPT.md
+│   ├── 5_RANKINGS_EFFECTIVENESS_DATA_PROMPT.md
+│   ├── 6_CASE_STUDIES_RESEARCH_PROMPT.md
+│   └── BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md
 │
 ├── EXECUTION/ (Implementation roadmaps)
 │   ├── 07_COMPLETE_IMPLEMENTATION_ROADMAP.md
 │   ├── 08_QUICK_START_CHECKLIST.md
 │   └── 22_IMPLEMENTATION_SPECIFICATION.md
 │
-├── ETHICS/ (Intensity framework)
-│   └── ETHICAL_FRAMEWORK.md
-│
-├── META/ (Project status & analysis)
-│   ├── PROJECT_STATUS.md
-│   └── 20_COMPREHENSIVE_GAP_ANALYSIS.md
-│
-├── UX_UI_ENGAGEMENT/ (Interface patterns)
-│   ├── CROSS_PATTERN_INTERACTION_MAPS.md
-│   ├── ENGAGEMENT_PATTERNS_P1_P12.md
-│   ├── USER_VULNERABILITY_PROFILES.md
-│   └── ... (5 more)
-│
-└── LINGUISTIC_PERSUASION/ (Linguistic resources)
-    └── (Additional linguistic research)
+└── META/ (Project status & analysis)
+    ├── PROJECT_STATUS.md
+    ├── 20_COMPREHENSIVE_GAP_ANALYSIS.md
+    ├── CONSOLIDATION_SUMMARY.md
+    └── GIT_SETUP_COMPLETE.md
 ```
 
 ---
@@ -215,9 +196,8 @@ Persuasion Max/
 | [03_DEVELOPER_QUICKSTART.md](03_DEVELOPER_QUICKSTART.md) | Week 1-2 implementation guide | Developers |
 | [01_TOOLS_YOU_CAN_BUILD.md](01_TOOLS_YOU_CAN_BUILD.md) | 12 complete tool specifications | All |
 | [00_CORE_THESIS.md](00_CORE_THESIS.md) | Research positioning & unique value | Researchers |
-| [DETECTION/14_DETECTION_FRAMEWORKS_MASTER_INDEX.md](DETECTION/14_DETECTION_FRAMEWORKS_MASTER_INDEX.md) | Index to all detection frameworks | Technical |
-| [RESEARCH/RESEARCH_INDEX.md](RESEARCH/RESEARCH_INDEX.md) | Research quick reference | Researchers |
-| [ETHICS/ETHICAL_FRAMEWORK.md](ETHICS/ETHICAL_FRAMEWORK.md) | Intensity boundaries & constraints | All |
+| [LINGUISTIC_PERSUASION/1_DETECTION_FRAMEWORKS_PROMPT.md](LINGUISTIC_PERSUASION/1_DETECTION_FRAMEWORKS_PROMPT.md) | Detection frameworks & pattern indices | Technical |
+| [LINGUISTIC_PERSUASION/6_CASE_STUDIES_RESEARCH_PROMPT.md](LINGUISTIC_PERSUASION/6_CASE_STUDIES_RESEARCH_PROMPT.md) | Case studies & research foundation | Researchers |
 
 ---
 
@@ -365,11 +345,10 @@ This project uses **neutral professional language** to describe behavioral influ
 
 **Completion Status:**
 - ✅ 2 production Python modules (5,250+ lines)
-- ✅ 10 detection framework documents
-- ✅ 14 research foundation documents
+- ✅ 6 consolidated linguistic persuasion prompts
 - ✅ 3 implementation roadmaps
 - ✅ Complete intensity threshold framework
-- ✅ 40+ total documentation files
+- ✅ 34 total project files
 
 See [META/PROJECT_STATUS.md](META/PROJECT_STATUS.md) for detailed status.
 
@@ -379,8 +358,8 @@ See [META/PROJECT_STATUS.md](META/PROJECT_STATUS.md) for detailed status.
 
 For questions about:
 - **Implementation**: See [03_DEVELOPER_QUICKSTART.md](03_DEVELOPER_QUICKSTART.md)
-- **Research**: See [RESEARCH/RESEARCH_INDEX.md](RESEARCH/RESEARCH_INDEX.md)
-- **Detection Frameworks**: See [DETECTION/14_DETECTION_FRAMEWORKS_MASTER_INDEX.md](DETECTION/14_DETECTION_FRAMEWORKS_MASTER_INDEX.md)
+- **Research**: See [LINGUISTIC_PERSUASION/6_CASE_STUDIES_RESEARCH_PROMPT.md](LINGUISTIC_PERSUASION/6_CASE_STUDIES_RESEARCH_PROMPT.md)
+- **Detection Frameworks**: See [LINGUISTIC_PERSUASION/1_DETECTION_FRAMEWORKS_PROMPT.md](LINGUISTIC_PERSUASION/1_DETECTION_FRAMEWORKS_PROMPT.md)
 - **File Navigation**: See [FILE_DIRECTORY_GUIDE.md](FILE_DIRECTORY_GUIDE.md)
 
 ---
@@ -397,7 +376,7 @@ This is proprietary software. See [LICENSE](LICENSE) for details.
 
 1. **For Developers**: Start with [03_DEVELOPER_QUICKSTART.md](03_DEVELOPER_QUICKSTART.md)
 2. **For Product**: Build the Grammarly tool using [PROMPT_PERSUASION_GRAMMARLY.md](PROMPT_PERSUASION_GRAMMARLY.md)
-3. **For Research**: Follow [RESEARCH/BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md](RESEARCH/BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md)
+3. **For Research**: Follow [LINGUISTIC_PERSUASION/BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md](LINGUISTIC_PERSUASION/BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md)
 4. **For Analysis**: Run `python CODE/UNIFIED_AUDITOR.py` with demo text
 
 ---

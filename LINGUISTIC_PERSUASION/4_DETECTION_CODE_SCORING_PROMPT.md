@@ -159,7 +159,7 @@ The six stimuli that bypass analytical processing and trigger instinctive respon
 - 0-10: Standard visual language
 - 11-25: Elevated visual engagement
 - 26-50: High visual activation (deliberate sensory strategy)
-- 51+: Intensive visual manipulation
+- 51+: Intensive visual influence
 
 **Detection regex:**
 ```
@@ -189,7 +189,7 @@ The six stimuli that bypass analytical processing and trigger instinctive respon
 - 0-10: Minimal emotional appeal (informational)
 - 11-25: Moderate emotional appeal (standard persuasion)
 - 26-50: High emotional appeal (deliberate emotional targeting)
-- 51+: Intensive emotional appeal (emotional manipulation pattern)
+- 51+: Intensive emotional appeal (emotional influence pattern)
 
 **Special rule — Emotional cycling (fractionation):**
 If you detect ALTERNATING emotional tones (fear → relief → fear → hope), add +15 per complete cycle. This pattern (A-J-A-R: anger-joy-anger-relief) reduces critical thinking by 200%+ per cycle.
@@ -378,7 +378,7 @@ If you detect ALTERNATING emotional tones (fear → relief → fear → hope), a
 (?i)(you might (be thinking|wonder|ask)|some (people|might) say|I (know|understand) (what you're|you might)|that's a (fair|valid|good) (point|concern|question)|but (here's|what|the (truth|reality|fact)))
 ```
 
-**Why it matters:** Pre-emptive objection handling disarms skepticism before it forms. When done transparently it's legitimate argumentation; when manipulative, it creates false sense of having "already considered" alternatives.
+**Why it matters:** Pre-emptive objection handling disarms skepticism before it forms. When done transparently it's legitimate argumentation; when used as an influence technique, it creates false sense of having "already considered" alternatives.
 
 ---
 
@@ -397,14 +397,14 @@ COMPOSITE = (TACTICAL_SCORE × 0.35) + (PSYCHOLOGICAL_SCORE × 0.35) + (ADVANCED
 - 0-20: LOW — Standard communication techniques
 - 21-45: MODERATE — Intentional persuasion, within normal range
 - 46-70: HIGH — Systematic influence, multiple techniques stacked
-- 71-90: VERY HIGH — Aggressive influence campaign, multiple manipulation vectors
-- 91-100: CRITICAL — Full-spectrum manipulation, likely coordinated
+- 71-90: VERY HIGH — Aggressive influence campaign, multiple influence vectors
+- 91-100: CRITICAL — Full-spectrum influence, likely coordinated
 
 **Red flag triggers (regardless of composite score):**
 - Any single stimulus > 80 points
 - Emotional cycling detected (fractionation)
 - Fake scarcity or fake social proof confirmed
-- Vulnerability targeting detected (children, elderly, distressed)
+- Susceptibility targeting detected (children, elderly, distressed)
 - 4+ principles active simultaneously at HIGH+ levels
 
 ---
@@ -424,10 +424,10 @@ COMPOSITE = (TACTICAL_SCORE × 0.35) + (PSYCHOLOGICAL_SCORE × 0.35) + (ADVANCED
 - [ ] Score Cognitive Biases (Decision Fatigue, Anchoring)
 - [ ] Check for Inoculation patterns
 - [ ] Check for emotional cycling / fractionation
-- [ ] Check for dark patterns (confirmshaming, roach motel, fake urgency)
+- [ ] Check for interface design patterns (confirmshaming, roach motel, fake urgency)
 - [ ] Check interface design (if applicable): signup vs. cancel friction
 - [ ] Check pricing patterns (anchoring, decoys, drip pricing)
-- [ ] Assess vulnerability targeting
+- [ ] Assess susceptibility targeting
 
 #### Post-Audit Assessment
 - [ ] Calculate composite score
@@ -440,16 +440,16 @@ COMPOSITE = (TACTICAL_SCORE × 0.35) + (PSYCHOLOGICAL_SCORE × 0.35) + (ADVANCED
 #### Common Audit Scenarios & Decision Rules
 
 **Scenario 1: High emotional + low tangible**
-→ Content relies on affect rather than substance. Elevated risk of manipulation.
+→ Content relies on affect rather than substance. Elevated intensity of influence.
 
 **Scenario 2: High authority + low verifiability**
 → Manufactured authority pattern. Flag for investigation.
 
 **Scenario 3: High scarcity + resets detected**
-→ Fake scarcity confirmed. Score as manipulation regardless of other factors.
+→ Fake scarcity confirmed. Score as high-intensity influence regardless of other factors.
 
 **Scenario 4: Progressive commitment + late-stage cost reveal**
-→ Classic foot-in-the-door with decision fatigue exploitation. Flag as dark pattern.
+→ Classic foot-in-the-door with decision fatigue intensity. Flag as interface design pattern.
 
 ---
 
@@ -1564,7 +1564,7 @@ class MachineReadableDetectionEngine:
         if high_principles >= 4:
             flags.append(f"MULTI_VECTOR_STACK: {high_principles} categories at HIGH+ intensity")
 
-        # Check for vulnerability targeting
+        # Check for susceptibility targeting
         vuln_patterns = [
             r'(?i)(senior|elderly|retired|pension|medicare|social security)',
             r'(?i)(kids?|children|teens?|young people|students?)',
@@ -1572,7 +1572,7 @@ class MachineReadableDetectionEngine:
         ]
         for pattern in vuln_patterns:
             if re.search(pattern, text):
-                flags.append("VULNERABILITY_TARGETING: Content may target vulnerable populations")
+                flags.append("SUSCEPTIBILITY_TARGETING: Content may target high-susceptibility populations")
                 break
 
         return flags
@@ -1709,10 +1709,10 @@ def categorize_risk(audit_result: AuditResult) -> Dict:
     scores = {**audit_result.tactical_scores, **audit_result.psychological_scores, **audit_result.advanced_scores}
 
     # CRITICAL PATH: Any red flag escalates
-    if any("VULNERABILITY_TARGETING" in f for f in flags):
+    if any("SUSCEPTIBILITY_TARGETING" in f for f in flags):
         return {
             'risk_level': 'CRITICAL',
-            'primary_concern': 'Potential targeting of vulnerable populations',
+            'primary_concern': 'Potential targeting of high-susceptibility populations',
             'action': 'IMMEDIATE_REVIEW',
             'escalation': True
         }
@@ -2041,7 +2041,7 @@ urgency_score = REGEX_MATCH_COUNT(urgency_pattern) × 15
 
 **Risk Categorization:**
 ```
-0-25: "LOW (Ethical messaging)",
+0-25: "LOW (Standard messaging)",
 26-50: "MODERATE (Some targeting)",
 51-75: "HIGH (Sophisticated influence strategy)",
 76-100: "EXTREME (Optimized tactics)"
@@ -2225,15 +2225,15 @@ IF AUTHORITY_SCORE > 50 AND THREAT_SCORE == 0:
   THEN immediate_red_flag = TRUE
 
 IF PERSONAL_SCORE > 50:
-  vulnerable_audience = "Identity-conscious"
+  susceptible_audience = "Identity-conscious"
 
 IF CONTRASTABLE_SCORE > 50:
-  vulnerable_audience += "Ideologically-driven"
+  susceptible_audience += "Ideologically-driven"
 
 IF SCARCITY_SCORE > 60 AND COMPETITION_SIGNALS > 2:
-  vulnerable_audience += "Status-conscious"
+  susceptible_audience += "Status-conscious"
 
-IF COMPOSITE_SCORE <= 25: classification = "ETHICAL"
+IF COMPOSITE_SCORE <= 25: classification = "LOW_INTENSITY"
 ELSE IF COMPOSITE_SCORE <= 50: classification = "MODERATE"
 ELSE IF COMPOSITE_SCORE <= 75: classification = "HIGH"
 ELSE: classification = "EXTREME"
@@ -2290,9 +2290,9 @@ These findings from peer-reviewed research and regulatory investigations inform 
 - Removal of reshared content reduced exposure to untrustworthy news by 57%
 
 **FTC Enforcement Data (2024-2025):**
-- Amazon: $2.5 billion settlement for dark patterns in Prime enrollment/cancellation
+- Amazon: $2.5 billion settlement for interface design patterns in Prime enrollment/cancellation
 - Adobe: DOJ complaint for cancellation difficulty (roach motel pattern)
-- International review: 76% of examined sites use at least one dark pattern
+- International review: 76% of examined sites use at least one UX pattern
 - Click-to-Cancel rule adopted then vacated
 
 ### 3.2 Enhanced Fractionation Detector
@@ -2637,10 +2637,10 @@ class PhysiologicalFractionationDetector:
 ```python
 class EnhancedInterfaceDesignDetector:
     """
-    Detects dark patterns and manipulative interface design.
+    Detects UX patterns and high-intensity interface design.
 
     Based on FTC enforcement data (2024-2025) and academic
-    dark pattern taxonomies.
+    interface design pattern taxonomies.
     """
 
     CONFIRMSHAMING_PATTERNS = [
@@ -2686,7 +2686,7 @@ class EnhancedInterfaceDesignDetector:
 
     def analyze_interface(self, interface_data: Dict) -> Dict:
         """
-        Analyze interface for dark patterns.
+        Analyze interface for design patterns.
 
         Args:
             interface_data: Dict containing:
@@ -3225,7 +3225,7 @@ class VariableRatioReinforcementDetector:
 ```python
 class EnhancedAnchoringDetector:
     """
-    Detects anchoring bias exploitation in pricing and framing.
+    Detects anchoring bias leveraging in pricing and framing.
 
     Research basis: Tversky & Kahneman (1974) — anchoring pull
     of 40-60% toward initial value presented.
@@ -5323,14 +5323,14 @@ class TrustInfluenceDetector:
     """
     Detects trust-based influence patterns in conversations and content.
 
-    Covers: authority exploitation, rapport building for manipulation,
+    Covers: authority leveraging, rapport building for influence,
     trust escalation, grooming patterns.
     """
 
     class TrustInfluenceType(Enum):
         AUTHORITY_CLAIM = "authority_claim"
         RAPPORT_BUILDING = "rapport_building"
-        VULNERABILITY_SHARING = "vulnerability_sharing"
+        SUSCEPTIBILITY_SHARING = "susceptibility_sharing"
         RECIPROCITY_CREATION = "reciprocity_creation"
         COMMITMENT_ESCALATION = "commitment_escalation"
         ISOLATION_ATTEMPT = "isolation_attempt"
@@ -5346,7 +5346,7 @@ class TrustInfluenceDetector:
             r'(?i)(I (completely|totally|absolutely) (understand|get it|feel you)|me too|same here|I\'ve been (there|through that))',
             r'(?i)(we\'re (alike|similar|the same)|you remind me of|I see (myself|a lot of me) in you)'
         ],
-        'vulnerability_sharing': [
+        'susceptibility_sharing': [
             r'(?i)(I\'m (going to|gonna) (share|tell you) something (personal|private|I don\'t usually))',
             r'(?i)(between (you and me|us)|just between|I trust you (enough|with))',
             r'(?i)(I (rarely|never|don\'t usually) (tell|share|open up) (about|to) (anyone|people))'
@@ -5422,7 +5422,7 @@ class TrustInfluenceDetector:
         severity_order = [
             'rapport_building',
             'identity_mirroring',
-            'vulnerability_sharing',
+            'susceptibility_sharing',
             'reciprocity_creation',
             'authority_claim',
             'commitment_escalation',
@@ -5843,9 +5843,9 @@ class PhysiologicalState:
     arousal_level: float = 0.0        # 0-1
     cognitive_load: float = 0.0       # 0-1
     emotional_valence: float = 0.0    # -1 to 1
-    critical_engagement: float = 0.0  # 0-1 (low = vulnerable)
+    critical_engagement: float = 0.0  # 0-1 (low = susceptible)
     stress_level: float = 0.0        # 0-1
-    state_label: str = ""             # e.g., "vulnerable", "engaged", "stressed"
+    state_label: str = ""             # e.g., "susceptible", "engaged", "stressed"
 
 class PhysiologicalInfluenceDetector:
     """
@@ -6006,39 +6006,39 @@ class GazePatternAnalyzer:
 
 ---
 
-### 4.6 Vulnerable Population Detection
+### 4.6 High-Susceptibility Population Detection
 
 ```python
-class VulnerabilityFactorType(Enum):
+class SusceptibilityFactorType(Enum):
     AGE_CHILD = "child_developing_cognition"
     AGE_ADOLESCENT = "adolescent_risk_taking"
     AGE_ELDERLY = "elderly_cognitive_decline"
     COGNITIVE_LOAD = "high_cognitive_load"
-    EMOTIONAL_STATE = "vulnerable_emotional_state"
+    EMOTIONAL_STATE = "susceptible_emotional_state"
     SOCIAL_ISOLATION = "isolated_lonely"
     NEURODIVERGENT = "neurodivergent_processing"
     MENTAL_HEALTH = "mental_health_condition"
     DIGITAL_LITERACY = "low_digital_literacy"
-    FINANCIAL_STRESS = "financial_vulnerability"
+    FINANCIAL_STRESS = "financial_susceptibility"
 
 @dataclass
-class VulnerabilityProfile:
-    """Individual vulnerability assessment"""
-    factors: List[VulnerabilityFactorType] = field(default_factory=list)
-    overall_vulnerability_score: float = 0.0
+class SusceptibilityProfile:
+    """Individual susceptibility assessment"""
+    factors: List[SusceptibilityFactorType] = field(default_factory=list)
+    overall_susceptibility_score: float = 0.0
     risk_areas: List[str] = field(default_factory=list)
     protective_recommendations: List[str] = field(default_factory=list)
     requires_enhanced_protection: bool = False
 
-class VulnerablePopulationDetector:
+class SusceptiblePopulationDetector:
     """
-    Detects content/design targeting vulnerable populations.
+    Detects content/design targeting susceptible populations.
 
     Covers: children, elderly, neurodivergent individuals,
-    those in emotional distress, financially vulnerable.
+    those in emotional distress, financially susceptible.
     """
 
-    VULNERABILITY_PROFILES = {
+    SUSCEPTIBILITY_PROFILES = {
         'children': {
             'age_range': (0, 17),
             'indicators': [
@@ -6053,7 +6053,7 @@ class VulnerablePopulationDetector:
                 'limited_impulse_control',
                 'developing_critical_thinking',
                 'susceptible_to_authority',
-                'peer_pressure_vulnerability',
+                'peer_pressure_susceptibility',
                 'difficulty_distinguishing_ad_content'
             ],
             'multiplier': 2.0  # 2x risk weighting for children
@@ -6073,7 +6073,7 @@ class VulnerablePopulationDetector:
                 'working_memory_reduction',
                 'increased_trust_tendency',
                 'reduced_digital_literacy',
-                'social_isolation_vulnerability'
+                'social_isolation_susceptibility'
             ],
             'multiplier': 1.8
         },
@@ -6113,9 +6113,9 @@ class VulnerablePopulationDetector:
         }
     }
 
-    def assess_individual_vulnerability(self, user_profile: Dict) -> Dict:
+    def assess_individual_susceptibility(self, user_profile: Dict) -> Dict:
         """
-        Assess individual vulnerability based on profile.
+        Assess individual susceptibility based on profile.
 
         Args:
             user_profile: Dict with 'age', 'cognitive_indicators',
@@ -6126,14 +6126,14 @@ class VulnerablePopulationDetector:
         factors = []
         overall_score = 0.0
 
-        # Age-based vulnerability
+        # Age-based susceptibility
         if age <= 17:
             factors.append('child')
             overall_score += 0.4
         elif age >= 65:
             factors.append('elderly')
             overall_score += 0.3
-            # Additional: USC Dornsife 2024 — APOE4 carriers 2x scam vulnerability
+            # Additional: USC Dornsife 2024 — APOE4 carriers 2x scam susceptibility
             if user_profile.get('apoe4_carrier', False):
                 overall_score += 0.2
 
@@ -6169,7 +6169,7 @@ class VulnerablePopulationDetector:
         recommendations = self._generate_protective_recommendations(factors)
 
         return {
-            'overall_vulnerability_score': round(overall_score, 2),
+            'overall_susceptibility_score': round(overall_score, 2),
             'factors': factors,
             'risk_areas': self._identify_risk_areas(factors),
             'protective_recommendations': recommendations,
@@ -6177,7 +6177,7 @@ class VulnerablePopulationDetector:
         }
 
     def _identify_risk_areas(self, factors: List[str]) -> List[str]:
-        """Identify specific risk areas based on vulnerability factors"""
+        """Identify specific risk areas based on susceptibility factors"""
         risk_map = {
             'child': ['loot boxes', 'social pressure', 'influencer marketing', 'data collection'],
             'elderly': ['phone scams', 'tech support scams', 'romance scams', 'health fraud'],
@@ -6211,7 +6211,7 @@ class VulnerablePopulationDetector:
         """Calculate risk multiplier based on factors"""
         multiplier = 1.0
         for factor in factors:
-            for profile_name, profile in self.VULNERABILITY_PROFILES.items():
+            for profile_name, profile in self.SUSCEPTIBILITY_PROFILES.items():
                 if factor in profile_name or factor in str(profile.get('indicators', [])):
                     multiplier = max(multiplier, profile.get('multiplier', 1.0))
         return multiplier
@@ -6897,10 +6897,10 @@ class RegulatoryViolation:
 |---|---|---|---|---|
 | US Federal | FTC Act Section 5 | Deceptive & unfair practices | Active — multiple 2024 cases | Civil penalties, injunctions, refunds |
 | US Federal | ROSCA | Negative option without consent, hidden terms | Active — Amazon case 2024 ($2.5B) | Up to $50,000+ per violation |
-| California | CCPA/CPRA | Dark patterns in consent, deceptive design | Active | $2,500-$7,500 per violation |
-| EU | Digital Services Act | Cancellation harder than signup, dark patterns, manipulative design | Active since Feb 2024 | Up to 6% global turnover |
-| EU | AI Act | Subliminal influence, exploitation of vulnerabilities, social scoring | Phased implementation | Up to 7% global turnover (prohibited practices) |
-| EU | GDPR | Deceptive consent, dark patterns in privacy | Active | Up to 4% global turnover or EUR 20 million |
+| California | CCPA/CPRA | Interface design patterns in consent, deceptive design | Active | $2,500-$7,500 per violation |
+| EU | Digital Services Act | Cancellation harder than signup, interface design patterns, high-intensity design | Active since Feb 2024 | Up to 6% global turnover |
+| EU | AI Act | Subliminal influence, leveraging of susceptibilities, social scoring | Phased implementation | Up to 7% global turnover (prohibited practices) |
+| EU | GDPR | Deceptive consent, interface design patterns in privacy | Active | Up to 4% global turnover or EUR 20 million |
 | Germany | Fair Consumer Contracts Act | No termination button | Active | Varies |
 
 **Influence-to-Regulation Mapping:**
@@ -6911,7 +6911,7 @@ class RegulatoryViolation:
 | Confirmshaming | FTC Section 5, EU DSA |
 | Fake urgency | FTC Section 5, EU DSA |
 | Hidden costs | ROSCA, CCPA |
-| Dark pattern consent | GDPR, CCPA |
+| Interface design pattern consent | GDPR, CCPA |
 | Subliminal influence | EU AI Act |
 | Child-targeted influence | FTC/COPPA, EU DSA |
 | Deepfake fraud | FTC Section 5, multiple state laws |
@@ -6957,7 +6957,7 @@ class RegulatoryComplianceAnalyzer:
             },
             'ai_act': {
                 'name': 'EU AI Act',
-                'prohibits': ['subliminal_influence', 'exploitation_of_vulnerabilities', 'social_scoring'],
+                'prohibits': ['subliminal_influence', 'exploitation_of_susceptibilities', 'social_scoring'],
                 'enforcement': 'Phased implementation',
                 'penalties': 'Up to 7% global turnover for prohibited practices'
             },
@@ -7825,7 +7825,7 @@ class TrustInfluenceDetector:
                 risk_level='medium'
             ))
 
-        # Combined pattern detection (more dangerous)
+        # Combined pattern detection (more significant)
         if len(indicators) >= 2:
             # Multiple influence types = higher risk
             for indicator in indicators:
@@ -7909,7 +7909,7 @@ class GroomingPatternDetector:
     GROOMING_STAGES = {
         'selection': {
             'indicators': [
-                'personal_questions', 'vulnerability_probing', 'isolation_attempts',
+                'personal_questions', 'susceptibility_probing', 'isolation_attempts',
                 'compliments_excessive', 'special_attention'
             ],
             'patterns': [
@@ -8315,9 +8315,9 @@ class PhysiologicalState:
     arousal_level: float = 0.0  # 0-1
     cognitive_load: float = 0.0  # 0-1
     emotional_valence: float = 0.0  # -1 to 1
-    critical_engagement: float = 0.0  # 0-1 (low = vulnerable)
+    critical_engagement: float = 0.0  # 0-1 (low = susceptible)
     stress_level: float = 0.0  # 0-1
-    state_label: str = ""  # e.g., "vulnerable", "engaged", "stressed"
+    state_label: str = ""  # e.g., "susceptible", "engaged", "stressed"
 
 class PhysiologicalInfluenceDetector:
     """
@@ -8326,7 +8326,7 @@ class PhysiologicalInfluenceDetector:
     Research basis:
     - PMC: Technological advancements in Neuromarketing
     - SR Research: Pupillometry research applications
-    - PNAS Nexus 2024: Phishing vulnerability and cognition
+    - PNAS Nexus 2024: Phishing susceptibility and cognition
     - EEG research on video editing effects
     """
 
@@ -8408,9 +8408,9 @@ class PhysiologicalInfluenceDetector:
                 (self.THRESHOLDS['hrv_stress'] - reading.hrv) / 40)
             state.state_label = "stressed"
 
-        # Determine vulnerability state
+        # Determine susceptibility state
         if state.critical_engagement < 0.5 and state.arousal_level > 0.6:
-            state.state_label = "vulnerable"
+            state.state_label = "susceptible"
 
         return state
 
@@ -8429,7 +8429,7 @@ class PhysiologicalInfluenceDetector:
             'influence_detected': False,
             'response_type': '',
             'intensity': 0.0,
-            'vulnerability_window': [],
+            'susceptibility_window': [],
             'recovery_needed': False,
             'detailed_changes': {}
         }
@@ -8493,11 +8493,11 @@ class PhysiologicalInfluenceDetector:
             analysis['response_type'] = 'stress_pressure'
             analysis['intensity'] = min(1.0, abs(changes['hrv_change']) / 30)
 
-        # Identify vulnerability windows
+        # Identify susceptibility windows
         for i, reading in enumerate(during_exposure):
             state = self.analyze_reading(reading)
             if state.critical_engagement < 0.5:
-                analysis['vulnerability_window'].append({
+                analysis['susceptibility_window'].append({
                     'index': i,
                     'timestamp': reading.timestamp,
 
@@ -8565,9 +8565,9 @@ class PhysiologicalInfluenceDetector:
 ```
 ```
 
-#### 4.11.10 Vulnerable Population Detection
+#### 4.11.10 High-Susceptibility Population Detection
 
-## 6. VULNERABLE POPULATION DETECTION
+## 6. HIGH-SUSCEPTIBILITY POPULATION DETECTION
 
 ### Research Findings
 
@@ -8579,57 +8579,57 @@ class PhysiologicalInfluenceDetector:
 
 **Elderly:**
 - $3.1 billion lost to cyber fraud in 2022 (74% increase from 2021)
-- Mild cognitive decline correlates with higher scam vulnerability
-- APOE4 gene variant increases phishing vulnerability
+- Mild cognitive decline correlates with higher scam susceptibility
+- APOE4 gene variant increases phishing susceptibility
 - Entorhinal cortex thinning linked to financial intensity
 - Social isolation is strongest risk factor
 
 **Neurodivergent:**
-- ADHD/Autism more vulnerable to narcissistic influence
+- ADHD/Autism more susceptible to narcissistic influence
 - Difficulty recognizing intensive social cues
 - More susceptible to gaslighting
-- Late/undiagnosed individuals especially vulnerable
+- Late/undiagnosed individuals especially susceptible
 - Low self-esteem from chronic invalidation
 
 ```python
-class VulnerabilityFactorType(Enum):
+class SusceptibilityFactorType(Enum):
     AGE_CHILD = "child_developing_cognition"
     AGE_ADOLESCENT = "adolescent_risk_taking"
     AGE_ELDERLY = "elderly_cognitive_decline"
     COGNITIVE_LOAD = "high_cognitive_load"
-    EMOTIONAL_STATE = "vulnerable_emotional_state"
+    EMOTIONAL_STATE = "susceptible_emotional_state"
     SOCIAL_ISOLATION = "isolated_lonely"
     NEURODIVERGENT = "neurodivergent_processing"
     MENTAL_HEALTH = "mental_health_condition"
     DIGITAL_LITERACY = "low_digital_literacy"
-    FINANCIAL_STRESS = "financial_vulnerability"
+    FINANCIAL_STRESS = "financial_susceptibility"
 
 @dataclass
-class VulnerabilityProfile:
-    """Individual vulnerability assessment"""
-    factors: List[VulnerabilityFactorType] = field(default_factory=list)
-    overall_vulnerability_score: float = 0.0
+class SusceptibilityProfile:
+    """Individual susceptibility assessment"""
+    factors: List[SusceptibilityFactorType] = field(default_factory=list)
+    overall_susceptibility_score: float = 0.0
     risk_areas: List[str] = field(default_factory=list)
     protective_recommendations: List[str] = field(default_factory=list)
     requires_enhanced_protection: bool = False
 
-class VulnerablePopulationDetector:
+class SusceptiblePopulationDetector:
     """
-    Detects and assesses vulnerability to influence.
+    Detects and assesses susceptibility to influence.
 
     Research basis:
-    - USC Dornsife 2024: Alzheimer's and financial scam vulnerability
-    - PNAS Nexus 2024: APOE4 genotype and phishing vulnerability
+    - USC Dornsife 2024: Alzheimer's and financial scam susceptibility
+    - PNAS Nexus 2024: APOE4 genotype and phishing susceptibility
     - Thorn 2024: Youth online sexual interaction data
     - Frontiers 2024: Digital media in early childhood
-    - Psychology Today 2025: Neurodivergent influence vulnerability
+    - Psychology Today 2025: Neurodivergent influence susceptibility
     """
 
-    # Age-based vulnerability factors
-    AGE_VULNERABILITY = {
+    # Age-based susceptibility factors
+    AGE_SUSCEPTIBILITY = {
         'child': {
             'age_range': (0, 12),
-            'base_vulnerability': 0.8,
+            'base_susceptibility': 0.8,
             'factors': [
                 'Cannot comprehend persuasive intent',
                 'Limited critical evaluation skills',
@@ -8639,18 +8639,18 @@ class VulnerablePopulationDetector:
         },
         'adolescent': {
             'age_range': (13, 17),
-            'base_vulnerability': 0.6,
+            'base_susceptibility': 0.6,
             'factors': [
                 'Developing prefrontal cortex',
                 'Heightened social comparison',
                 'Risk-taking behavior',
                 'FOMO susceptibility',
-                'Identity formation vulnerability'
+                'Identity formation susceptibility'
             ]
         },
         'young_adult': {
             'age_range': (18, 25),
-            'base_vulnerability': 0.3,
+            'base_susceptibility': 0.3,
             'factors': [
                 'Still developing impulse control',
                 'Social media native',
@@ -8659,15 +8659,15 @@ class VulnerablePopulationDetector:
         },
         'adult': {
             'age_range': (26, 64),
-            'base_vulnerability': 0.2,
+            'base_susceptibility': 0.2,
             'factors': [
-                'Work stress vulnerability',
+                'Work stress susceptibility',
                 'Family responsibility pressure'
             ]
         },
         'elderly': {
             'age_range': (65, 120),
-            'base_vulnerability': 0.5,
+            'base_susceptibility': 0.5,
             'factors': [
                 'Potential cognitive decline',
                 'Social isolation risk',
@@ -8678,8 +8678,8 @@ class VulnerablePopulationDetector:
         }
     }
 
-    # Cognitive indicators of vulnerability
-    COGNITIVE_VULNERABILITY_INDICATORS = {
+    # Cognitive indicators of susceptibility
+    COGNITIVE_SUSCEPTIBILITY_INDICATORS = {
         'processing_speed_decline': 0.3,
         'memory_issues': 0.4,
         'decision_fatigue': 0.3,
@@ -8687,8 +8687,8 @@ class VulnerablePopulationDetector:
         'executive_function_issues': 0.4
     }
 
-    # Emotional state vulnerability multipliers
-    EMOTIONAL_VULNERABILITY_MULTIPLIERS = {
+    # Emotional state susceptibility multipliers
+    EMOTIONAL_SUSCEPTIBILITY_MULTIPLIERS = {
         'depression': 1.5,
         'anxiety': 1.4,
         'loneliness': 1.6,
@@ -8701,9 +8701,9 @@ class VulnerablePopulationDetector:
     def __init__(self):
         self.population_baselines = {}
 
-    def assess_individual_vulnerability(self, user_data: Dict) -> VulnerabilityProfile:
+    def assess_individual_susceptibility(self, user_data: Dict) -> SusceptibilityProfile:
         """
-        Assess individual vulnerability to influence.
+        Assess individual susceptibility to influence.
 
         Expected user_data:
         {
@@ -8717,17 +8717,17 @@ class VulnerablePopulationDetector:
             'recent_life_events': List[str]
         }
         """
-        profile = VulnerabilityProfile()
-        vulnerability_score = 0.0
+        profile = SusceptibilityProfile()
+        susceptibility_score = 0.0
 
         # Age-based assessment
         age = user_data.get('age', 30)
-        for category, data in self.AGE_VULNERABILITY.items():
+        for category, data in self.AGE_SUSCEPTIBILITY.items():
             if data['age_range'][0] <= age <= data['age_range'][1]:
-                vulnerability_score += data['base_vulnerability']
+                susceptibility_score += data['base_susceptibility']
 
                 if category == 'child':
-                    profile.factors.append(VulnerabilityFactorType.AGE_CHILD)
+                    profile.factors.append(SusceptibilityFactorType.AGE_CHILD)
                     profile.risk_areas.extend([
                         'In-app purchases', 'Advertising', 'Data collection',
                         'Contact from strangers', 'Inappropriate content'
@@ -8735,7 +8735,7 @@ class VulnerablePopulationDetector:
                     profile.requires_enhanced_protection = True
 
                 elif category == 'adolescent':
-                    profile.factors.append(VulnerabilityFactorType.AGE_ADOLESCENT)
+                    profile.factors.append(SusceptibilityFactorType.AGE_ADOLESCENT)
                     profile.risk_areas.extend([
                         'Social comparison influence', 'FOMO tactics',
                         'Influencer marketing', 'Dating app influence',
@@ -8743,7 +8743,7 @@ class VulnerablePopulationDetector:
                     ])
 
                 elif category == 'elderly':
-                    profile.factors.append(VulnerabilityFactorType.AGE_ELDERLY)
+                    profile.factors.append(SusceptibilityFactorType.AGE_ELDERLY)
                     profile.risk_areas.extend([
                         'Tech support scams', 'Romance scams',
                         'Phishing', 'Investment fraud',
@@ -8752,34 +8752,34 @@ class VulnerablePopulationDetector:
 
                 break
 
-        # Cognitive vulnerability assessment
+        # Cognitive susceptibility assessment
         cognitive_indicators = user_data.get('cognitive_indicators', [])
         for indicator in cognitive_indicators:
-            if indicator in self.COGNITIVE_VULNERABILITY_INDICATORS:
-                vulnerability_score += self.COGNITIVE_VULNERABILITY_INDICATORS[indicator]
-                profile.factors.append(VulnerabilityFactorType.COGNITIVE_LOAD)
+            if indicator in self.COGNITIVE_SUSCEPTIBILITY_INDICATORS:
+                susceptibility_score += self.COGNITIVE_SUSCEPTIBILITY_INDICATORS[indicator]
+                profile.factors.append(SusceptibilityFactorType.COGNITIVE_LOAD)
 
         # Emotional state assessment
         emotional_state = user_data.get('emotional_state', '')
-        if emotional_state in self.EMOTIONAL_VULNERABILITY_MULTIPLIERS:
-            multiplier = self.EMOTIONAL_VULNERABILITY_MULTIPLIERS[emotional_state]
-            vulnerability_score *= multiplier
-            profile.factors.append(VulnerabilityFactorType.EMOTIONAL_STATE)
+        if emotional_state in self.EMOTIONAL_SUSCEPTIBILITY_MULTIPLIERS:
+            multiplier = self.EMOTIONAL_SUSCEPTIBILITY_MULTIPLIERS[emotional_state]
+            susceptibility_score *= multiplier
+            profile.factors.append(SusceptibilityFactorType.EMOTIONAL_STATE)
             profile.risk_areas.append(f'Influence during {emotional_state}')
 
         # Social connection assessment
         social_score = user_data.get('social_connection_score', 0.5)
         if social_score < 0.3:
-            vulnerability_score += 0.3
-            profile.factors.append(VulnerabilityFactorType.SOCIAL_ISOLATION)
+            susceptibility_score += 0.3
+            profile.factors.append(SusceptibilityFactorType.SOCIAL_ISOLATION)
             profile.risk_areas.append('Romance scams')
             profile.risk_areas.append('Companionship influence')
 
         # Digital literacy assessment
         digital_literacy = user_data.get('digital_literacy_score', 0.5)
         if digital_literacy < 0.4:
-            vulnerability_score += 0.3
-            profile.factors.append(VulnerabilityFactorType.DIGITAL_LITERACY)
+            susceptibility_score += 0.3
+            profile.factors.append(SusceptibilityFactorType.DIGITAL_LITERACY)
             profile.risk_areas.append('Phishing')
             profile.risk_areas.append('Malware')
             profile.risk_areas.append('Tech support scams')
@@ -8787,8 +8787,8 @@ class VulnerablePopulationDetector:
         # Neurodivergent assessment
         nd_flags = user_data.get('neurodivergent_flags', [])
         if nd_flags:
-            vulnerability_score += 0.2
-            profile.factors.append(VulnerabilityFactorType.NEURODIVERGENT)
+            susceptibility_score += 0.2
+            profile.factors.append(SusceptibilityFactorType.NEURODIVERGENT)
             profile.risk_areas.extend([
                 'Gaslighting', 'Social influence',
                 'Boundary violations', 'Coercive control'
@@ -8796,18 +8796,18 @@ class VulnerablePopulationDetector:
 
         # Financial stress assessment
         if user_data.get('financial_stress', False):
-            vulnerability_score += 0.25
-            profile.factors.append(VulnerabilityFactorType.FINANCIAL_STRESS)
+            susceptibility_score += 0.25
+            profile.factors.append(SusceptibilityFactorType.FINANCIAL_STRESS)
             profile.risk_areas.extend([
                 'Get-rich-quick schemes', 'Loan scams',
                 'Intensive lending', 'Advance fee fraud'
             ])
 
         # Normalize score
-        profile.overall_vulnerability_score = min(1.0, vulnerability_score)
+        profile.overall_susceptibility_score = min(1.0, susceptibility_score)
 
         # Determine if enhanced protection needed
-        if profile.overall_vulnerability_score > 0.7:
+        if profile.overall_susceptibility_score > 0.7:
             profile.requires_enhanced_protection = True
 
         # Generate recommendations
@@ -8815,11 +8815,11 @@ class VulnerablePopulationDetector:
 
         return profile
 
-    def _generate_recommendations(self, profile: VulnerabilityProfile) -> List[str]:
-        """Generate protective recommendations based on vulnerability profile"""
+    def _generate_recommendations(self, profile: SusceptibilityProfile) -> List[str]:
+        """Generate protective recommendations based on susceptibility profile"""
         recommendations = []
 
-        if VulnerabilityFactorType.AGE_CHILD in profile.factors:
+        if SusceptibilityFactorType.AGE_CHILD in profile.factors:
             recommendations.extend([
                 'Enable parental controls on all devices',
                 'Use child-safe apps and browsers',
@@ -8828,7 +8828,7 @@ class VulnerablePopulationDetector:
                 'Disable in-app purchases'
             ])
 
-        if VulnerabilityFactorType.AGE_ELDERLY in profile.factors:
+        if SusceptibilityFactorType.AGE_ELDERLY in profile.factors:
             recommendations.extend([
                 'Set up call blocking for unknown numbers',
                 'Establish a trusted contact for financial decisions',
@@ -8837,7 +8837,7 @@ class VulnerablePopulationDetector:
                 'Participate in fraud prevention education'
             ])
 
-        if VulnerabilityFactorType.SOCIAL_ISOLATION in profile.factors:
+        if SusceptibilityFactorType.SOCIAL_ISOLATION in profile.factors:
             recommendations.extend([
                 'Be cautious of unsolicited contact',
                 'Verify identities before sharing personal info',
@@ -8845,7 +8845,7 @@ class VulnerablePopulationDetector:
                 'Join legitimate community groups for connection'
             ])
 
-        if VulnerabilityFactorType.NEURODIVERGENT in profile.factors:
+        if SusceptibilityFactorType.NEURODIVERGENT in profile.factors:
             recommendations.extend([
                 'Take time before making decisions under pressure',
                 'Have a trusted person review major commitments',
@@ -8853,7 +8853,7 @@ class VulnerablePopulationDetector:
                 'Trust your instincts about uncomfortable situations'
             ])
 
-        if VulnerabilityFactorType.EMOTIONAL_STATE in profile.factors:
+        if SusceptibilityFactorType.EMOTIONAL_STATE in profile.factors:
             recommendations.extend([
                 'Avoid major decisions when emotionally distressed',
                 'Be extra cautious of urgency tactics',
@@ -9335,7 +9335,7 @@ class AIInfluenceDetector:
 
     Research basis:
     - Science 2025: Levers of political persuasion with AI
-    - arXiv 2025: LLM as dangerous persuader
+    - arXiv 2025: LLM as notable persuader
     - Nature 2025: Meta-analysis of LLM persuasive power
     - PMC 2025: Deepfake detection survey
     - Deloitte 2025: Deepfake disruption report
@@ -10020,9 +10020,9 @@ class InterventionDecayTracker:
 ### Research Findings
 
 **FTC Enforcement (2024-2025):**
-- Amazon: $2.5 billion settlement for dark patterns
+- Amazon: $2.5 billion settlement for interface design patterns
 - Adobe: DOJ complaint for cancellation difficulty
-- 76% of sites use dark patterns (international review)
+- 76% of sites use interface design patterns (international review)
 - Click-to-Cancel rule adopted then vacated
 
 **EU Regulations:**
@@ -10031,7 +10031,7 @@ class InterventionDecayTracker:
 - German Fair Consumer Contracts Act: Requires termination button
 
 **US State Laws:**
-- CCPA: Explicit dark pattern prohibition
+- CCPA: Explicit interface design pattern prohibition
 - 14 states with privacy/deceptive design laws
 
 ```python
@@ -10113,7 +10113,7 @@ class RegulatoryComplianceAnalyzer:
                 'name': 'EU AI Act',
                 'prohibits': [
                     'subliminal_influence',
-                    'intensity_of_vulnerabilities',
+                    'intensity_of_susceptibilities',
                     'social_scoring'
                 ],
                 'enforcement': 'Phased implementation',
@@ -10301,10 +10301,10 @@ class SynergisticStackingDetector:
             'mechanism': 'Accumulated points/streaks → can\'t leave without losing them',
             'example': '"You have 47,000 points! Don\'t lose them by cancelling"'
         },
-        'personalization_vulnerability': {
-            'techniques': ['personalization', 'vulnerability_timing'],
+        'personalization_susceptibility': {
+            'techniques': ['personalization', 'susceptibility_timing'],
             'multiplier': 1.7,
-            'mechanism': 'Personalized content delivered at vulnerable moments',
+            'mechanism': 'Personalized content delivered at susceptible moments',
             'example': 'Late-night targeted ad based on browsing behavior'
         },
         'social_comparison_shame': {
@@ -10349,7 +10349,7 @@ class SynergisticStackingDetector:
             'ui': ['progress_bar', 'step_indicator', 'streak_display']
         },
         'emotional_fear': {
-            'text': [r'(?i)(danger|risk|threat|warning|protect|afraid|worried|vulnerable)'],
+            'text': [r'(?i)(danger|risk|threat|warning|protect|afraid|worried|susceptible)'],
             'ui': ['warning_icon', 'red_alert', 'danger_banner']
         },
         'emotional_relief': {
@@ -10450,51 +10450,51 @@ class SynergisticStackingDetector:
 
 ---
 
-### 5.2 Vulnerability Timing Detector
+### 5.2 Susceptibility Timing Detector
 
 ```python
-class VulnerabilityTimingDetector:
+class SusceptibilityTimingDetector:
     """
-    Detects exploitation of temporal vulnerability windows.
+    Detects leveraging of temporal susceptibility windows.
 
     Research: Decision quality varies with time of day, emotional state,
     and cognitive depletion.
     """
 
-    CIRCADIAN_VULNERABILITY = {
+    CIRCADIAN_SUSCEPTIBILITY = {
         'early_morning': {
             'hours': (5, 7),
-            'vulnerability': 'moderate',
+            'susceptibility': 'moderate',
             'factor': 'cortisol_spike',
             'description': 'Cortisol awakening response — heightened anxiety, reactive decisions'
         },
         'mid_morning': {
             'hours': (9, 11),
-            'vulnerability': 'low',
+            'susceptibility': 'low',
             'factor': 'peak_cognition',
             'description': 'Peak cognitive function — best analytical processing'
         },
         'post_lunch': {
             'hours': (13, 15),
-            'vulnerability': 'moderate',
+            'susceptibility': 'moderate',
             'factor': 'postprandial_dip',
             'description': 'Post-meal cognitive dip — reduced analytical capacity'
         },
         'late_afternoon': {
             'hours': (16, 18),
-            'vulnerability': 'moderate',
+            'susceptibility': 'moderate',
             'factor': 'decision_fatigue_accumulation',
             'description': 'Accumulated decision fatigue — defaults more attractive'
         },
         'evening': {
             'hours': (20, 22),
-            'vulnerability': 'high',
+            'susceptibility': 'high',
             'factor': 'ego_depletion',
             'description': 'Ego depletion + relaxation — reduced self-control'
         },
         'late_night': {
             'hours': (23, 4),
-            'vulnerability': 'very_high',
+            'susceptibility': 'very_high',
             'factor': 'circadian_low',
             'description': 'Circadian low point — impaired judgment, emotional reactivity'
         }
@@ -10511,24 +10511,24 @@ class VulnerabilityTimingDetector:
         'quality_reduction_per_10_decisions': 0.08  # 8% per 10 decisions
     }
 
-    EMOTIONAL_VULNERABILITY_SIGNALS = [
+    EMOTIONAL_SUSCEPTIBILITY_SIGNALS = [
         r'(?i)(just (lost|broke up|got fired|received bad news|diagnosed))',
         r'(?i)(feeling (down|sad|angry|lonely|overwhelmed|stressed|anxious))',
         r'(?i)(can\'t (sleep|stop thinking|cope|handle))',
         r'(?i)(need (help|comfort|support|relief|escape))'
     ]
 
-    VULNERABLE_DAYS = {
-        'post_payday': {'day_offset': (0, 3), 'vulnerability': 'spending_impulse'},
-        'friday_evening': {'vulnerability': 'reward_seeking'},
-        'sunday_evening': {'vulnerability': 'anxiety_anticipation'},
-        'month_end': {'day_offset': (28, 31), 'vulnerability': 'financial_stress'},
-        'holidays': {'vulnerability': 'loneliness_or_social_pressure'}
+    SUSCEPTIBLE_DAYS = {
+        'post_payday': {'day_offset': (0, 3), 'susceptibility': 'spending_impulse'},
+        'friday_evening': {'susceptibility': 'reward_seeking'},
+        'sunday_evening': {'susceptibility': 'anxiety_anticipation'},
+        'month_end': {'day_offset': (28, 31), 'susceptibility': 'financial_stress'},
+        'holidays': {'susceptibility': 'loneliness_or_social_pressure'}
     }
 
-    def assess_timing_vulnerability(self, timestamp: Dict, user_context: Dict = None) -> Dict:
+    def assess_timing_susceptibility(self, timestamp: Dict, user_context: Dict = None) -> Dict:
         """
-        Assess vulnerability based on timing context.
+        Assess susceptibility based on timing context.
 
         Args:
             timestamp: Dict with 'hour', 'day_of_week', 'day_of_month'
@@ -10539,29 +10539,29 @@ class VulnerabilityTimingDetector:
         day_of_week = timestamp.get('day_of_week', 'monday')
         day_of_month = timestamp.get('day_of_month', 15)
 
-        vulnerabilities = []
+        susceptibilities = []
         risk_score = 0.0
 
         # Circadian check
-        for window_name, window in self.CIRCADIAN_VULNERABILITY.items():
+        for window_name, window in self.CIRCADIAN_SUSCEPTIBILITY.items():
             h_start, h_end = window['hours']
             if h_start <= hour <= h_end or (h_start > h_end and (hour >= h_start or hour <= h_end)):
-                vulnerabilities.append({
+                susceptibilities.append({
                     'type': 'circadian',
                     'window': window_name,
-                    'vulnerability': window['vulnerability'],
+                    'susceptibility': window['susceptibility'],
                     'factor': window['factor'],
                     'description': window['description']
                 })
                 risk_addition = {'low': 0.1, 'moderate': 0.2, 'high': 0.3, 'very_high': 0.4}
-                risk_score += risk_addition.get(window['vulnerability'], 0)
+                risk_score += risk_addition.get(window['susceptibility'], 0)
 
         # Decision fatigue
         if user_context:
             decisions = user_context.get('decisions_today', 0)
             fatigue_reduction = decisions * self.DECISION_FATIGUE_THRESHOLDS['quality_reduction_per_10_decisions'] / 10
             if fatigue_reduction > 0.1:
-                vulnerabilities.append({
+                susceptibilities.append({
                     'type': 'decision_fatigue',
                     'decisions_today': decisions,
                     'estimated_quality_reduction': f"{fatigue_reduction * 100:.0f}%"
@@ -10571,39 +10571,39 @@ class VulnerabilityTimingDetector:
             # Emotional signals
             emotional_text = user_context.get('emotional_signals', '')
             if emotional_text:
-                for pattern in self.EMOTIONAL_VULNERABILITY_SIGNALS:
+                for pattern in self.EMOTIONAL_SUSCEPTIBILITY_SIGNALS:
                     if re.search(pattern, emotional_text):
-                        vulnerabilities.append({
-                            'type': 'emotional_vulnerability',
+                        susceptibilities.append({
+                            'type': 'emotional_susceptibility',
                             'signal': emotional_text[:100]
                         })
                         risk_score += 0.3
                         break
 
-        # Day-based vulnerability
+        # Day-based susceptibility
         if day_of_week.lower() == 'friday' and hour >= 17:
-            vulnerabilities.append({'type': 'temporal', 'window': 'friday_evening'})
+            susceptibilities.append({'type': 'temporal', 'window': 'friday_evening'})
             risk_score += 0.1
         if day_of_week.lower() == 'sunday' and hour >= 18:
-            vulnerabilities.append({'type': 'temporal', 'window': 'sunday_evening'})
+            susceptibilities.append({'type': 'temporal', 'window': 'sunday_evening'})
             risk_score += 0.1
         if day_of_month <= 3:
-            vulnerabilities.append({'type': 'temporal', 'window': 'post_payday'})
+            susceptibilities.append({'type': 'temporal', 'window': 'post_payday'})
             risk_score += 0.15
 
         return {
-            'vulnerabilities': vulnerabilities,
-            'vulnerability_count': len(vulnerabilities),
+            'susceptibilities': susceptibilities,
+            'susceptibility_count': len(susceptibilities),
             'risk_score': min(1.0, risk_score),
             'recommendation': self._recommend_action(risk_score)
         }
 
     def _recommend_action(self, risk_score: float) -> str:
         if risk_score > 0.6:
-            return 'DELAY_DECISION: High vulnerability — implement cooling-off period'
+            return 'DELAY_DECISION: High susceptibility — implement cooling-off period'
         elif risk_score > 0.3:
-            return 'CAUTION: Moderate vulnerability — add friction before irreversible actions'
-        return 'STANDARD: Normal vulnerability level'
+            return 'CAUTION: Moderate susceptibility — add friction before irreversible actions'
+        return 'STANDARD: Normal susceptibility level'
 ```
 
 ---
@@ -10614,7 +10614,7 @@ class VulnerabilityTimingDetector:
 class TrustLeverageSequenceDetector:
     """
     Detects structured trust-building sequences designed
-    to exploit trust for persuasion.
+    to leverage trust for persuasion.
 
     8 stages of trust leverage identified.
     """
@@ -10623,7 +10623,7 @@ class TrustLeverageSequenceDetector:
         INITIAL_CONTACT = "initial_contact"
         VALUE_DELIVERY = "value_delivery"
         RAPPORT_BUILDING = "rapport_building"
-        VULNERABILITY_EXCHANGE = "vulnerability_exchange"
+        SUSCEPTIBILITY_EXCHANGE = "susceptibility_exchange"
         COMMITMENT_SECURING = "commitment_securing"
         TRUST_TESTING = "trust_testing"
         LEVERAGE_APPLICATION = "leverage_application"
@@ -10642,9 +10642,9 @@ class TrustLeverageSequenceDetector:
             r'(?i)(we have (so much|a lot) in common|I (totally|completely) (get|understand))',
             r'(?i)(same here|me too|I feel the same|great minds)'
         ],
-        'vulnerability_exchange': [
+        'susceptibility_exchange': [
             r'(?i)(I\'ll be honest|between you and me|I don\'t usually share)',
-            r'(?i)(can I be (real|honest|vulnerable)|I trust you (enough|with))'
+            r'(?i)(can I be (real|honest|susceptible)|I trust you (enough|with))'
         ],
         'commitment_securing': [
             r'(?i)(would you be (open|willing)|can I (count on|rely on) you)',
@@ -10666,7 +10666,7 @@ class TrustLeverageSequenceDetector:
 
     RED_FLAGS = {
         'too_fast_progression': 'Moving through trust stages unusually quickly',
-        'asymmetric_vulnerability': 'One party shares much more than the other',
+        'asymmetric_susceptibility': 'One party shares much more than the other',
         'premature_commitment_request': 'Asking for commitment before trust is established',
         'isolation_from_others': 'Discouraging consultation with others',
         'urgency_at_leverage': 'Adding time pressure when applying leverage',
@@ -11042,33 +11042,33 @@ class AIAmplificationDetector:
 
 Research-derived rankings of persuasion technique combinations by measured effectiveness multiplier:
 
-| Rank | Combination | Multiplier | Primary Defense |
+| Rank | Combination | Multiplier | Primary Countermeasure |
 |------|------------|-----------|-----------------|
 | 1 | Emotional fractionation + commercial relief | **2.1x** | Awareness of cycling pattern; pause before purchase |
 | 2 | Scarcity + social proof + urgency | **1.95x** | Verify scarcity claims; check if offer returns |
 | 3 | Authority + fear + solution product | **1.85x** | Verify authority credentials; seek second opinion |
-| 4 | Personalization + vulnerability timing | **1.82x** | Be aware of timing; avoid decisions when depleted |
+| 4 | Personalization + susceptibility timing | **1.82x** | Be aware of timing; avoid decisions when depleted |
 | 5 | Identity lock-in + sunk cost + social proof | **1.78x** | Calculate actual value; ignore sunk costs |
 | 6 | Anchoring + decoy + scarcity | **1.72x** | Research market prices independently |
 | 7 | Reciprocity + commitment escalation | **1.68x** | Recognize gift ≠ obligation; evaluate each ask independently |
 | 8 | Trust building + isolation + urgency | **1.65x** | Maintain outside counsel; impose cooling-off periods |
 | 9 | Gamification + variable reward + sunk cost | **1.62x** | Set time/money limits; track actual utility vs. engagement |
-| 10 | Social comparison + shame + solution | **1.58x** | Recognize comparison manipulation; define own metrics |
+| 10 | Social comparison + shame + solution | **1.58x** | Recognize comparison influence; define own metrics |
 | 11 | Curiosity gap + information asymmetry + authority | **1.52x** | Recognize clickbait structure; verify claims |
 | 12 | Default bias + friction asymmetry + commitment | **1.48x** | Actively review defaults; question pre-selections |
 | 13 | Nostalgia + identity + community | **1.42x** | Recognize emotional appeal; evaluate offer objectively |
 | 14 | Pain agitation + urgency + social proof | **1.35x** | Acknowledge pain without panic; research solutions |
 | 15 | Repetition + familiarity + mere exposure | **1.28x** | Recognize familiarity ≠ quality; compare alternatives |
 
-**Defenses for Top 5 Combinations:**
+**Countermeasures for Top 5 Combinations:**
 
-1. **Fractionation + commercial relief (2.1x):** Recognize when content alternates fear/anger with joy/relief. The product/service appearing during the "relief" phase is exploiting reduced critical thinking. Countermeasure: pause, leave the environment, return later.
+1. **Fractionation + commercial relief (2.1x):** Recognize when content alternates fear/anger with joy/relief. The product/service appearing during the "relief" phase is leveraging reduced critical thinking. Countermeasure: pause, leave the environment, return later.
 
 2. **Scarcity + social proof + urgency (1.95x):** "Only 3 left, 47 people viewing, offer expires in 2 hours." Countermeasure: close the page, check if the offer returns tomorrow (it usually does).
 
-3. **Authority + fear + solution (1.85x):** "Experts warn of X danger → but our product protects you." Countermeasure: verify the authority independently, check if the fear is proportionate.
+3. **Authority + fear + solution (1.85x):** "Experts warn of X → but our product addresses it." Countermeasure: verify the authority independently, check if the concern is proportionate.
 
-4. **Personalization + vulnerability timing (1.82x):** Targeted content delivered when you're depleted/emotional. Countermeasure: avoid major decisions late at night or when stressed.
+4. **Personalization + susceptibility timing (1.82x):** Targeted content delivered when you're depleted/emotional. Countermeasure: avoid major decisions late at night or when stressed.
 
 5. **Identity lock-in + sunk cost + social proof (1.78x):** "You've invested 200 hours, your friends are here, this is who you are." Countermeasure: evaluate current value, not past investment.
 
@@ -11082,7 +11082,7 @@ class TemporalIntensityDetector:
     Detects temporal patterns in persuasion intensity.
     """
 
-    VULNERABILITY_WINDOWS = {
+    SUSCEPTIBILITY_WINDOWS = {
         'late_night': {'hours': (22, 4), 'multiplier': 1.4, 'factor': 'reduced_inhibition'},
         'early_morning': {'hours': (5, 7), 'multiplier': 1.2, 'factor': 'cortisol_spike'},
         'post_lunch': {'hours': (13, 15), 'multiplier': 1.15, 'factor': 'cognitive_dip'},
@@ -11101,7 +11101,7 @@ class TemporalIntensityDetector:
             'high_stakes': 50    # "Medical/legal decisions"
         },
         'recovery_per_hour_rest': 10,
-        'critical_threshold': 30,     # Below this = highly vulnerable
+        'critical_threshold': 30,     # Below this = highly susceptible
         'default_acceptance_threshold': 20  # Below this = accepts defaults
     }
 
@@ -11114,7 +11114,7 @@ class TemporalIntensityDetector:
 
     def analyze_temporal_pattern(self, content_timeline: List[Dict]) -> Dict:
         """
-        Analyze temporal pattern of content delivery for exploitation.
+        Analyze temporal pattern of content delivery for intensity.
 
         Args:
             content_timeline: List of {'timestamp': datetime_str, 'type': str,
@@ -11123,29 +11123,29 @@ class TemporalIntensityDetector:
         if not content_timeline:
             return {'analyzed': False}
 
-        # Check if high-intensity content clusters at vulnerable times
-        vulnerable_delivery = 0
+        # Check if high-intensity content clusters at susceptible times
+        susceptible_delivery = 0
         total_items = len(content_timeline)
 
         for item in content_timeline:
             hour = item.get('hour', 12)
             intensity = item.get('persuasion_score', 0)
 
-            for window_name, window in self.VULNERABILITY_WINDOWS.items():
+            for window_name, window in self.SUSCEPTIBILITY_WINDOWS.items():
                 h_start, h_end = window['hours']
                 in_window = (h_start <= hour <= h_end) if h_start < h_end else (hour >= h_start or hour <= h_end)
 
                 if in_window and intensity > 0.5:
-                    vulnerable_delivery += 1
+                    susceptible_delivery += 1
 
-        exploitation_ratio = vulnerable_delivery / total_items if total_items > 0 else 0
+        intensity_ratio = susceptible_delivery / total_items if total_items > 0 else 0
 
         return {
             'total_items': total_items,
-            'vulnerable_time_delivery': vulnerable_delivery,
-            'exploitation_ratio': round(exploitation_ratio, 2),
-            'deliberate_timing': exploitation_ratio > 0.5,
-            'risk_score': min(1.0, exploitation_ratio * 1.5)
+            'susceptible_time_delivery': susceptible_delivery,
+            'intensity_ratio': round(intensity_ratio, 2),
+            'deliberate_timing': intensity_ratio > 0.5,
+            'risk_score': min(1.0, intensity_ratio * 1.5)
         }
 
     def model_decision_capacity(self, decision_log: List[Dict]) -> Dict:
@@ -11164,7 +11164,7 @@ class TemporalIntensityDetector:
 
         return {
             'remaining_capacity': max(0, capacity),
-            'vulnerability_level': 'critical' if capacity < self.DECISION_FATIGUE_MODEL['critical_threshold']
+            'susceptibility_level': 'critical' if capacity < self.DECISION_FATIGUE_MODEL['critical_threshold']
                 else 'high' if capacity < 50
                 else 'moderate' if capacity < 70
                 else 'low',
@@ -11187,7 +11187,7 @@ class PreciseBehavioralIndicatorDetector:
     """
 
     BEHAVIORAL_INDICATORS = {
-        'developmental_vulnerability': {
+        'developmental_susceptibility': {
             'description': 'Age-appropriate development indicators',
             'markers': [
                 'impulse_control_developing',      # Age < 25 (prefrontal cortex maturation)
@@ -11242,7 +11242,7 @@ class PreciseBehavioralIndicatorDetector:
             ],
             'risk_multiplier': 1.3
         },
-        'emotional_state_vulnerability': {
+        'emotional_state_susceptibility': {
             'description': 'Current emotional state reducing rational evaluation',
             'markers': [
                 'grief_recent',                     # Within 6 months
@@ -11255,9 +11255,9 @@ class PreciseBehavioralIndicatorDetector:
         }
     }
 
-    def assess_vulnerability(self, behavioral_data: Dict) -> Dict:
+    def assess_susceptibility(self, behavioral_data: Dict) -> Dict:
         """
-        Assess vulnerability using precise behavioral indicators.
+        Assess susceptibility using precise behavioral indicators.
 
         Args:
             behavioral_data: Dict mapping indicator names to values
@@ -11287,7 +11287,7 @@ class PreciseBehavioralIndicatorDetector:
         return {
             'active_indicators': active_indicators,
             'active_category_count': len(active_indicators),
-            'overall_vulnerability': round(overall_risk, 2),
+            'overall_susceptibility': round(overall_risk, 2),
             'risk_level': 'critical' if overall_risk > 0.7 else 'high' if overall_risk > 0.5 else 'moderate' if overall_risk > 0.3 else 'low',
             'protective_actions': self._recommend_protections(active_indicators)
         }
@@ -11295,7 +11295,7 @@ class PreciseBehavioralIndicatorDetector:
     def _recommend_protections(self, indicators: Dict) -> List[str]:
         """Generate protective action recommendations"""
         protections = []
-        if 'developmental_vulnerability' in indicators:
+        if 'developmental_susceptibility' in indicators:
             protections.append('Apply age-appropriate content restrictions')
         if 'impulse_control_deficit' in indicators:
             protections.append('Implement mandatory cooling-off period before purchases')
@@ -11303,8 +11303,8 @@ class PreciseBehavioralIndicatorDetector:
             protections.append('Delay important decisions until cognitive capacity restored')
         if 'limited_social_network' in indicators:
             protections.append('Seek external input before major decisions')
-        if 'emotional_state_vulnerability' in indicators:
-            protections.append('Increase decision friction during emotional vulnerability periods')
+        if 'emotional_state_susceptibility' in indicators:
+            protections.append('Increase decision friction during emotional susceptibility periods')
         return protections
 ```
 
@@ -11621,7 +11621,7 @@ class SynergisticStackingDetector:
             'text_patterns': [
                 r'risk', r'danger', r'threat', r'warning', r'protect',
                 r'before it\'s too late', r'don\'t miss', r'lose',
-                r'vulnerable', r'exposed', r'attack'
+                r'susceptible', r'exposed', r'attack'
             ],
             'ui_patterns': ['warning_icon', 'alert_banner', 'danger_color']
         },
@@ -11816,16 +11816,16 @@ class SynergisticStackingDetector:
         return explanations
 ```
 
-#### 5.10.2 Original VulnerabilityTimingDetector (Full Implementation)
+#### 5.10.2 Original SusceptibilityTimingDetector (Full Implementation)
 
 ```python
 from datetime import datetime, timezone
 from typing import Optional
 
-class VulnerabilityWindow(Enum):
+class SusceptibilityWindow(Enum):
     CIRCADIAN_LOW = "circadian_cognitive_low"  # 2-4 AM
     DECISION_FATIGUE = "decision_fatigue_window"
-    EMOTIONAL_DISTRESS = "emotional_vulnerability"
+    EMOTIONAL_DISTRESS = "emotional_susceptibility"
     POST_NOTIFICATION = "notification_arousal_window"
     WORK_STRESS = "end_of_workday"
     WEEKEND_RELAXED = "weekend_reduced_vigilance"
@@ -11835,8 +11835,8 @@ class VulnerabilityWindow(Enum):
 
 @dataclass
 class TimingIntensityAnalysis:
-    """Analysis of vulnerability timing intensity"""
-    vulnerability_windows_targeted: List[VulnerabilityWindow] = field(default_factory=list)
+    """Analysis of susceptibility timing intensity"""
+    susceptibility_windows_targeted: List[SusceptibilityWindow] = field(default_factory=list)
     timing_intensity_score: float = 0.0
     temporal_patterns: List[Dict] = field(default_factory=list)
     notification_timing_suspicious: bool = False
@@ -11845,9 +11845,9 @@ class TimingIntensityAnalysis:
     emotional_state_intensity: bool = False
     recommendations: List[str] = field(default_factory=list)
 
-class VulnerabilityTimingDetector:
+class SusceptibilityTimingDetector:
     """
-    Detects when content/notifications are timed to leverage vulnerability windows.
+    Detects when content/notifications are timed to leverage susceptibility windows.
 
     Research basis:
     - 2-4 AM decisions show 40%+ reduced critical thinking
@@ -11856,8 +11856,8 @@ class VulnerabilityTimingDetector:
     - Post-notification arousal window: 2-5 minutes elevated suggestibility
     """
 
-    # Circadian vulnerability hours (local time)
-    CIRCADIAN_VULNERABILITY = {
+    # Circadian susceptibility hours (local time)
+    CIRCADIAN_SUSCEPTIBILITY = {
         'severe': [(2, 4)],      # 2-4 AM: worst cognitive function
         'moderate': [(0, 2), (4, 6), (14, 15)],  # Midnight-2AM, 4-6AM, post-lunch dip
         'mild': [(22, 24)]      # 10PM-midnight: fatigue accumulation
@@ -11877,8 +11877,8 @@ class VulnerabilityTimingDetector:
         'post_arousal': (120, 300)    # 2-5 minutes: residual effect
     }
 
-    # Emotional state indicators that predict vulnerability
-    EMOTIONAL_VULNERABILITY_SIGNALS = {
+    # Emotional state indicators that predict susceptibility
+    EMOTIONAL_SUSCEPTIBILITY_SIGNALS = {
         'text_patterns': {
             'sadness': [r'sad', r'depressed', r'lonely', r'miss', r'crying', r'hurt'],
             'anxiety': [r'worried', r'anxious', r'scared', r'nervous', r'panic'],
@@ -11908,7 +11908,7 @@ class VulnerabilityTimingDetector:
         user_behavior: Dict = None
     ) -> TimingIntensityAnalysis:
         """
-        Analyze whether content timing leverages vulnerability windows.
+        Analyze whether content timing leverages susceptibility windows.
 
         Args:
             timestamp: Unix timestamp of content delivery
@@ -11923,11 +11923,11 @@ class VulnerabilityTimingDetector:
         hour = dt.hour
         day_of_week = dt.weekday()  # 0=Monday, 6=Sunday
 
-        # 1. Check circadian vulnerability
-        circadian_risk = self._check_circadian_vulnerability(hour)
+        # 1. Check circadian susceptibility
+        circadian_risk = self._check_circadian_susceptibility(hour)
         if circadian_risk:
             analysis.circadian_intensity = True
-            analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.CIRCADIAN_LOW)
+            analysis.susceptibility_windows_targeted.append(SusceptibilityWindow.CIRCADIAN_LOW)
             analysis.timing_intensity_score += circadian_risk
             analysis.temporal_patterns.append({
                 'type': 'circadian',
@@ -11937,7 +11937,7 @@ class VulnerabilityTimingDetector:
 
         # 2. Check for late night targeting
         if 22 <= hour or hour < 6:
-            analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.LATE_NIGHT)
+            analysis.susceptibility_windows_targeted.append(SusceptibilityWindow.LATE_NIGHT)
             analysis.timing_intensity_score += 0.2
 
         # 3. Check decision fatigue
@@ -11947,7 +11947,7 @@ class VulnerabilityTimingDetector:
 
             if fatigue_level:
                 analysis.decision_fatigue_intensity = True
-                analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.DECISION_FATIGUE)
+                analysis.susceptibility_windows_targeted.append(SusceptibilityWindow.DECISION_FATIGUE)
                 analysis.timing_intensity_score += fatigue_level
                 analysis.temporal_patterns.append({
                     'type': 'decision_fatigue',
@@ -11960,7 +11960,7 @@ class VulnerabilityTimingDetector:
             notification_analysis = self._analyze_notification_timing(user_id, timestamp)
             if notification_analysis['suspicious']:
                 analysis.notification_timing_suspicious = True
-                analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.POST_NOTIFICATION)
+                analysis.susceptibility_windows_targeted.append(SusceptibilityWindow.POST_NOTIFICATION)
                 analysis.timing_intensity_score += 0.3
 
         # 5. Check emotional state intensity
@@ -11971,21 +11971,21 @@ class VulnerabilityTimingDetector:
             )
             if emotional_intensity['targeted']:
                 analysis.emotional_state_intensity = True
-                analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.EMOTIONAL_DISTRESS)
+                analysis.susceptibility_windows_targeted.append(SusceptibilityWindow.EMOTIONAL_DISTRESS)
                 analysis.timing_intensity_score += emotional_intensity['score']
 
         # 6. Check work/weekend patterns
         if 17 <= hour <= 19 and day_of_week < 5:  # Weekday evening
-            analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.WORK_STRESS)
+            analysis.susceptibility_windows_targeted.append(SusceptibilityWindow.WORK_STRESS)
             analysis.timing_intensity_score += 0.1
 
         if day_of_week >= 5 and 10 <= hour <= 14:  # Weekend midday
-            analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.WEEKEND_RELAXED)
+            analysis.susceptibility_windows_targeted.append(SusceptibilityWindow.WEEKEND_RELAXED)
             analysis.timing_intensity_score += 0.1
 
         # 7. Check paycheck timing (if available)
         if dt.day in [1, 15, 28, 29, 30, 31]:  # Common paycheck days
-            analysis.vulnerability_windows_targeted.append(VulnerabilityWindow.PAYCHECK)
+            analysis.susceptibility_windows_targeted.append(SusceptibilityWindow.PAYCHECK)
             analysis.timing_intensity_score += 0.15
 
         # Normalize score
@@ -11996,17 +11996,17 @@ class VulnerabilityTimingDetector:
 
         return analysis
 
-    def _check_circadian_vulnerability(self, hour: int) -> float:
-        """Check if hour falls in circadian vulnerability window"""
-        for start, end in self.CIRCADIAN_VULNERABILITY['severe']:
+    def _check_circadian_susceptibility(self, hour: int) -> float:
+        """Check if hour falls in circadian susceptibility window"""
+        for start, end in self.CIRCADIAN_SUSCEPTIBILITY['severe']:
             if start <= hour < end:
                 return 0.5
 
-        for start, end in self.CIRCADIAN_VULNERABILITY['moderate']:
+        for start, end in self.CIRCADIAN_SUSCEPTIBILITY['moderate']:
             if start <= hour < end:
                 return 0.3
 
-        for start, end in self.CIRCADIAN_VULNERABILITY['mild']:
+        for start, end in self.CIRCADIAN_SUSCEPTIBILITY['mild']:
             if start <= hour < end:
                 return 0.15
 
@@ -12063,7 +12063,7 @@ class VulnerabilityTimingDetector:
 
         if behavior.get('recent_searches'):
             searches = ' '.join(behavior['recent_searches']).lower()
-            for emotion, patterns in self.EMOTIONAL_VULNERABILITY_SIGNALS['text_patterns'].items():
+            for emotion, patterns in self.EMOTIONAL_SUSCEPTIBILITY_SIGNALS['text_patterns'].items():
                 if any(re.search(p, searches) for p in patterns):
                     detected_emotions.append(emotion)
 
@@ -12564,7 +12564,7 @@ class PhysiologicalBypassDetector:
             'thrilling', 'ecstatic', 'euphoric'
         ],
         'fear_specific': [
-            'lose', 'miss', 'fail', 'risk', 'vulnerable', 'exposed',
+            'lose', 'miss', 'fail', 'risk', 'susceptible', 'exposed',
             'unsafe', 'unprotected', 'deadline', 'expire', 'last chance'
         ],
         'anger_specific': [
@@ -12927,7 +12927,7 @@ class AIAmplificationType(Enum):
     SYNTHETIC_SOCIAL_PROOF = "fake_engagement"
     BOT_COORDINATION = "coordinated_inauthentic"
     DEEPFAKE_AUTHORITY = "synthetic_credibility"
-    ALGORITHMIC_TARGETING = "vulnerability_targeting"
+    ALGORITHMIC_TARGETING = "susceptibility_targeting"
     CONTENT_GENERATION = "ai_generated_content"
     SENTIMENT_INFLUENCE = "emotion_optimization"
 
@@ -13227,9 +13227,9 @@ class AIAmplificationDetector:
         # More targeting factors = higher precision
         result['precision'] = min(1.0, len(result['targeting_factors']) * 0.2)
 
-        # Check for vulnerability targeting
+        # Check for susceptibility targeting
         if any(t in str(metadata) for t in ['emotional_state', 'life_event', 'financial_distress']):
-            result['targeting_factors'].append('vulnerability_targeting')
+            result['targeting_factors'].append('susceptibility_targeting')
             result['precision'] = min(1.0, result['precision'] + 0.3)
 
         return result
@@ -13297,7 +13297,7 @@ class CombinationEffectiveness:
     combination: Tuple[str, ...]
     effectiveness_multiplier: float
     mechanism: str
-    target_vulnerability: str
+    target_susceptibility: str
     research_source: str
     detection_difficulty: float  # 0-1, higher = harder to detect
     typical_application: str
@@ -13317,7 +13317,7 @@ class RankedCombinationDetector:
             combination=("emotional_arousal", "cognitive_overload", "urgency"),
             effectiveness_multiplier=2.1,
             mechanism="Emotional hijack + overwhelm + time pressure = complete bypass of analytical processing",
-            target_vulnerability="Working memory saturation during stress response",
+            target_susceptibility="Working memory saturation during stress response",
             research_source="Decision fatigue + amygdala hijack research",
             detection_difficulty=0.7,
             typical_application="High-pressure sales, crisis intensity, scam calls"
@@ -13327,7 +13327,7 @@ class RankedCombinationDetector:
             combination=("authority", "fear", "urgency"),
             effectiveness_multiplier=1.95,
             mechanism="Credible threat + immediate action requirement = compliance without verification",
-            target_vulnerability="Threat response overrides verification instinct",
+            target_susceptibility="Threat response overrides verification instinct",
             research_source="Phishing effectiveness studies, scam analysis",
             detection_difficulty=0.6,
             typical_application="Tech support scams, IRS scams, security alerts"
@@ -13337,7 +13337,7 @@ class RankedCombinationDetector:
             combination=("variable_reward", "streak", "social_proof"),
             effectiveness_multiplier=1.85,
             mechanism="Gambling mechanics + loss aversion + peer validation = compulsive engagement",
-            target_vulnerability="Dopamine reward pathway + social comparison",
+            target_susceptibility="Dopamine reward pathway + social comparison",
             research_source="Gamification engagement research, mobile game studies",
             detection_difficulty=0.4,
             typical_application="Mobile games, social media, fitness apps"
@@ -13347,7 +13347,7 @@ class RankedCombinationDetector:
             combination=("personalization", "scarcity", "social_proof"),
             effectiveness_multiplier=1.78,
             mechanism="Personal relevance + limited availability + others buying = FOMO + action",
-            target_vulnerability="Identity + loss aversion + conformity",
+            target_susceptibility="Identity + loss aversion + conformity",
             research_source="E-commerce conversion optimization studies",
             detection_difficulty=0.5,
             typical_application="E-commerce, flash sales, limited editions"
@@ -13357,7 +13357,7 @@ class RankedCombinationDetector:
             combination=("trust_building", "reciprocity", "commitment_escalation"),
             effectiveness_multiplier=1.72,
             mechanism="Established relationship + gift obligation + prior compliance = large request acceptance",
-            target_vulnerability="Reciprocity norm + consistency drive",
+            target_susceptibility="Reciprocity norm + consistency drive",
             research_source="Foot-in-the-door research, romance scam analysis",
             detection_difficulty=0.8,
             typical_application="Romance scams, business fraud, cult recruitment"
@@ -13369,7 +13369,7 @@ class RankedCombinationDetector:
             combination=("infinite_scroll", "personalization", "variable_reward"),
             effectiveness_multiplier=1.65,
             mechanism="Endless content + relevance + unpredictable rewards = time distortion",
-            target_vulnerability="Dopamine seeking + completion drive absence",
+            target_susceptibility="Dopamine seeking + completion drive absence",
             research_source="Social media engagement research, CHI 2024",
             detection_difficulty=0.3,
             typical_application="Social media feeds, content platforms"
@@ -13379,7 +13379,7 @@ class RankedCombinationDetector:
             combination=("anchoring", "decoy", "urgency"),
             effectiveness_multiplier=1.58,
             mechanism="Price reference + inferior comparison + time limit = target option selection",
-            target_vulnerability="Reference point bias + comparison heuristic",
+            target_susceptibility="Reference point bias + comparison heuristic",
             research_source="Behavioral economics pricing studies",
             detection_difficulty=0.4,
             typical_application="Subscription pricing, SaaS plans, retail"
@@ -13389,7 +13389,7 @@ class RankedCombinationDetector:
             combination=("authority", "social_proof", "personalization"),
             effectiveness_multiplier=1.52,
             mechanism="Expert endorsement + crowd validation + personal relevance = trust",
-            target_vulnerability="Authority deference + conformity + relevance filter",
+            target_susceptibility="Authority deference + conformity + relevance filter",
             research_source="Influencer marketing studies",
             detection_difficulty=0.5,
             typical_application="Health products, financial services, courses"
@@ -13399,7 +13399,7 @@ class RankedCombinationDetector:
             combination=("fear", "scarcity", "loss_framing"),
             effectiveness_multiplier=1.48,
             mechanism="Threat awareness + limited opportunity + loss emphasis = action to avoid negative",
-            target_vulnerability="Loss aversion (2x pain of loss vs gain)",
+            target_susceptibility="Loss aversion (2x pain of loss vs gain)",
             research_source="Prospect theory applications",
             detection_difficulty=0.4,
             typical_application="Insurance, security products, limited offers"
@@ -13409,7 +13409,7 @@ class RankedCombinationDetector:
             combination=("asmr_relaxation", "authority", "suggestion"),
             effectiveness_multiplier=1.45,
             mechanism="Reduced critical faculty + trusted source + direct suggestion = acceptance",
-            target_vulnerability="Lowered analytical resistance in relaxed state",
+            target_susceptibility="Lowered analytical resistance in relaxed state",
             research_source="Focused engagement suggestion research, ASMR studies",
             detection_difficulty=0.7,
             typical_application="Guided meditations with product placement, wellness marketing"
@@ -13421,7 +13421,7 @@ class RankedCombinationDetector:
             combination=("guilt", "commitment", "reciprocity"),
             effectiveness_multiplier=1.42,
             mechanism="Emotional pressure + prior agreement + debt feeling = compliance",
-            target_vulnerability="Guilt avoidance + consistency need",
+            target_susceptibility="Guilt avoidance + consistency need",
             research_source="Donation and subscription retention studies",
             detection_difficulty=0.5,
             typical_application="Charity solicitation, subscription cancellation"
@@ -13431,7 +13431,7 @@ class RankedCombinationDetector:
             combination=("scarcity", "social_proof"),
             effectiveness_multiplier=1.40,
             mechanism="Limited availability validated by crowd demand",
-            target_vulnerability="FOMO + conformity",
+            target_susceptibility="FOMO + conformity",
             research_source="Cialdini combination studies",
             detection_difficulty=0.3,
             typical_application="Basic e-commerce, event tickets"
@@ -13441,7 +13441,7 @@ class RankedCombinationDetector:
             combination=("liking", "reciprocity"),
             effectiveness_multiplier=1.35,
             mechanism="Positive relationship + gift = obligation from friend",
-            target_vulnerability="Social bond + reciprocity norm",
+            target_susceptibility="Social bond + reciprocity norm",
             research_source="Influencer marketing, MLM research",
             detection_difficulty=0.6,
             typical_application="MLM, friend referrals, influencer affiliate"
@@ -13451,7 +13451,7 @@ class RankedCombinationDetector:
             combination=("authority", "social_proof"),
             effectiveness_multiplier=1.32,
             mechanism="Expert endorsement + crowd validation",
-            target_vulnerability="Dual verification heuristic",
+            target_susceptibility="Dual verification heuristic",
             research_source="Advertising effectiveness studies",
             detection_difficulty=0.3,
             typical_application="Traditional advertising, product reviews"
@@ -13461,7 +13461,7 @@ class RankedCombinationDetector:
             combination=("urgency", "scarcity"),
             effectiveness_multiplier=1.28,
             mechanism="Time + quantity limits",
-            target_vulnerability="Fear of missing out",
+            target_susceptibility="Fear of missing out",
             research_source="Basic FOMO research",
             detection_difficulty=0.2,
             typical_application="Flash sales, countdown timers"
@@ -13539,7 +13539,7 @@ class RankedCombinationDetector:
 
         defenses = {
             1: [
-                "PAUSE: When feeling overwhelmed AND emotional AND pressured, this is the most dangerous combination",
+                "PAUSE: When feeling overwhelmed AND emotional AND pressured, this is the most significant combination",
                 "BREAK PATTERN: Leave the situation physically or close the browser",
                 "TIME BUFFER: Institute mandatory 24-hour delay for any decision",
                 "COGNITIVE RESET: Do something requiring focus (math, reading) before deciding"
@@ -13557,7 +13557,7 @@ class RankedCombinationDetector:
                 "REWARD AWARENESS: Recognize variable rewards as slot machine psychology"
             ],
             4: [
-                "PERSONALIZATION AWARENESS: 'For you' = targeted vulnerability",
+                "PERSONALIZATION AWARENESS: 'For you' = targeted susceptibility",
                 "ARTIFICIAL SCARCITY: Most 'limited' items restock",
                 "SOCIAL PROOF CHECK: Reviews and numbers can be faked",
                 "WISHLIST TEST: Add to wishlist, check if still 'limited' in a week"
@@ -13585,7 +13585,7 @@ from datetime import datetime, timedelta
 from typing import NamedTuple
 
 class TemporalWindow(NamedTuple):
-    """A vulnerability window with severity"""
+    """A susceptibility window with severity"""
     name: str
     hours: Tuple[int, int]  # Start, end hour
     severity: float  # 0-1
@@ -13604,8 +13604,8 @@ class TemporalIntensityDetector:
     - Paycheck timing: Spending peaks immediately after payment
     """
 
-    # Vulnerability windows ranked by severity
-    VULNERABILITY_WINDOWS: List[TemporalWindow] = [
+    # Susceptibility windows ranked by severity
+    SUSCEPTIBILITY_WINDOWS: List[TemporalWindow] = [
         TemporalWindow(
             name="deep_night_cognitive_low",
             hours=(2, 4),
@@ -13650,8 +13650,8 @@ class TemporalIntensityDetector:
         ),
     ]
 
-    # Days with heightened vulnerability
-    VULNERABLE_DAYS = {
+    # Days with heightened susceptibility
+    SUSCEPTIBLE_DAYS = {
         'payday_adjacent': {
             'days': [1, 14, 15, 28, 29, 30, 31],  # Common paycheck days
             'severity': 0.3,
@@ -13697,14 +13697,14 @@ class TemporalIntensityDetector:
         content_type: str = "general"
     ) -> Dict:
         """
-        Analyze whether content delivery time leverages vulnerability windows.
+        Analyze whether content delivery time leverages susceptibility windows.
         """
         analysis = {
             'timestamp': timestamp,
             'datetime': datetime.fromtimestamp(timestamp).isoformat(),
-            'vulnerability_windows_active': [],
-            'circadian_vulnerability': 0.0,
-            'day_vulnerability': 0.0,
+            'susceptibility_windows_active': [],
+            'circadian_susceptibility': 0.0,
+            'day_susceptibility': 0.0,
             'decision_fatigue_level': 0.0,
             'notification_intensity': False,
             'combined_temporal_risk': 0.0,
@@ -13717,33 +13717,33 @@ class TemporalIntensityDetector:
         day = dt.day
         weekday = dt.weekday()
 
-        # 1. Check circadian vulnerability windows
-        for window in self.VULNERABILITY_WINDOWS:
+        # 1. Check circadian susceptibility windows
+        for window in self.SUSCEPTIBILITY_WINDOWS:
             start, end = window.hours
             if start <= hour < end:
-                analysis['vulnerability_windows_active'].append({
+                analysis['susceptibility_windows_active'].append({
                     'window': window.name,
                     'severity': window.severity,
                     'mechanism': window.mechanism
                 })
-                analysis['circadian_vulnerability'] = max(
-                    analysis['circadian_vulnerability'],
+                analysis['circadian_susceptibility'] = max(
+                    analysis['circadian_susceptibility'],
                     window.severity
                 )
 
-        # 2. Check day-based vulnerability
-        for vuln_type, config in self.VULNERABLE_DAYS.items():
+        # 2. Check day-based susceptibility
+        for vuln_type, config in self.SUSCEPTIBLE_DAYS.items():
             if 'days' in config and day in config['days']:
-                analysis['day_vulnerability'] += config['severity']
-                analysis['vulnerability_windows_active'].append({
+                analysis['day_susceptibility'] += config['severity']
+                analysis['susceptibility_windows_active'].append({
                     'window': vuln_type,
                     'severity': config['severity'],
                     'mechanism': config['mechanism']
                 })
 
             if 'days_of_week' in config and weekday in config['days_of_week']:
-                analysis['day_vulnerability'] += config['severity']
-                analysis['vulnerability_windows_active'].append({
+                analysis['day_susceptibility'] += config['severity']
+                analysis['susceptibility_windows_active'].append({
                     'window': vuln_type,
                     'severity': config['severity'],
                     'mechanism': config['mechanism']
@@ -13755,7 +13755,7 @@ class TemporalIntensityDetector:
             analysis['decision_fatigue_level'] = fatigue['level']
 
             if fatigue['level'] > 0.5:
-                analysis['vulnerability_windows_active'].append({
+                analysis['susceptibility_windows_active'].append({
                     'window': 'decision_fatigue',
                     'severity': fatigue['level'],
                     'mechanism': f"User has made approximately {fatigue['estimated_decisions']} decisions. Compliance increases {int(fatigue['compliance_boost']*100)}%."
@@ -13766,7 +13766,7 @@ class TemporalIntensityDetector:
             notif_analysis = self._check_notification_timing(user_id, timestamp)
             if notif_analysis['within_window']:
                 analysis['notification_intensity'] = True
-                analysis['vulnerability_windows_active'].append({
+                analysis['susceptibility_windows_active'].append({
                     'window': f"post_notification_{notif_analysis['window_type']}",
                     'severity': notif_analysis['severity'],
                     'mechanism': f"Content delivered {notif_analysis['seconds_since_notification']:.0f} seconds after notification during arousal window."
@@ -13774,14 +13774,14 @@ class TemporalIntensityDetector:
 
         # 5. Calculate combined risk
         analysis['combined_temporal_risk'] = min(1.0,
-            analysis['circadian_vulnerability'] * 0.4 +
-            analysis['day_vulnerability'] * 0.2 +
+            analysis['circadian_susceptibility'] * 0.4 +
+            analysis['day_susceptibility'] * 0.2 +
             analysis['decision_fatigue_level'] * 0.25 +
             (0.15 if analysis['notification_intensity'] else 0)
         )
 
         # 6. Determine if this is optimal decision time
-        if (analysis['circadian_vulnerability'] < 0.2 and
+        if (analysis['circadian_susceptibility'] < 0.2 and
             analysis['decision_fatigue_level'] < 0.3 and
             9 <= hour <= 11):  # Mid-morning typically best
             analysis['optimal_decision_time'] = True
@@ -13909,7 +13909,7 @@ class TemporalIntensityDetector:
         """Generate timing-specific recommendations"""
         recommendations = []
 
-        if analysis['circadian_vulnerability'] > 0.6:
+        if analysis['circadian_susceptibility'] > 0.6:
             recommendations.append(
                 "HIGH RISK TIME: Your cognitive function is significantly impaired at this hour. "
                 "Delay any important decisions until morning (9-11 AM optimal)."
@@ -13928,9 +13928,9 @@ class TemporalIntensityDetector:
                 "Wait 5+ minutes for your state to normalize before engaging."
             )
 
-        if analysis['day_vulnerability'] > 0.2:
+        if analysis['day_susceptibility'] > 0.2:
             recommendations.append(
-                "TIMING CONSIDERATION: This day carries additional vulnerability factors. "
+                "TIMING CONSIDERATION: This day carries additional susceptibility factors. "
                 "Be extra cautious with financial decisions."
             )
 
@@ -13942,7 +13942,7 @@ class TemporalIntensityDetector:
                 )
             else:
                 recommendations.append(
-                    "NEUTRAL TIMING: No major temporal vulnerabilities detected, "
+                    "NEUTRAL TIMING: No major temporal susceptibilities detected, "
                     "but always take time to verify before major decisions."
                 )
 
@@ -13971,7 +13971,7 @@ class SusceptibilityFactor(Enum):
     DIGITAL_INTERFACE_UNFAMILIARITY = "digital_interface_unfamiliarity"
     TRUST_CALIBRATION_DIFFERENCE = "trust_calibration_difference"
     INFORMATION_PROCESSING_DIFFERENCE = "information_processing_difference"
-    EMOTIONAL_STATE_VULNERABILITY = "emotional_state_vulnerability"
+    EMOTIONAL_STATE_SUSCEPTIBILITY = "emotional_state_susceptibility"
 
 @dataclass
 class BehavioralIndicator:
@@ -14076,7 +14076,7 @@ class PreciseBehavioralIndicatorDetector:
         ),
     }
 
-    FACTOR_VULNERABILITY_MAPPING = {
+    FACTOR_SUSCEPTIBILITY_MAPPING = {
         SusceptibilityFactor.DEVELOPMENTAL_STAGE_EARLY: [
             "In-app purchase prompts", "Advertising disguised as content",
             "Gambling-adjacent mechanics (loot boxes)"
@@ -14092,7 +14092,7 @@ class PreciseBehavioralIndicatorDetector:
             "Social pressure intensity", "Gaslighting tactics",
             "Rule-based influence", "Boundary erosion"
         ],
-        SusceptibilityFactor.EMOTIONAL_STATE_VULNERABILITY: [
+        SusceptibilityFactor.EMOTIONAL_STATE_SUSCEPTIBILITY: [
             "Emotional relief promises", "Connection offers",
             "Fear intensity", "Hope influence"
         ],
@@ -14121,7 +14121,7 @@ class PreciseBehavioralIndicatorDetector:
 
         self_reported = behavioral_data.get('self_reported', {})
         if self_reported.get('emotional_state') in ['grief', 'loneliness', 'anxiety', 'excitement']:
-            profile.active_factors.append(SusceptibilityFactor.EMOTIONAL_STATE_VULNERABILITY)
+            profile.active_factors.append(SusceptibilityFactor.EMOTIONAL_STATE_SUSCEPTIBILITY)
             profile.behavioral_indicators.append(self.BEHAVIORAL_INDICATORS['heightened_emotional_state'])
 
         if self_reported.get('processing_style') == 'neurodivergent':
@@ -14136,10 +14136,10 @@ class PreciseBehavioralIndicatorDetector:
                 total *= 1 + (inc - 1) / (1 + i * 0.5)
             profile.estimated_susceptibility_increase = total
 
-        # Map vulnerabilities
+        # Map susceptibilities
         for factor in profile.active_factors:
-            if factor in self.FACTOR_VULNERABILITY_MAPPING:
-                profile.high_risk_influence_types.extend(self.FACTOR_VULNERABILITY_MAPPING[factor])
+            if factor in self.FACTOR_SUSCEPTIBILITY_MAPPING:
+                profile.high_risk_influence_types.extend(self.FACTOR_SUSCEPTIBILITY_MAPPING[factor])
 
         # Generate protections
         for indicator in profile.behavioral_indicators:
@@ -14283,7 +14283,7 @@ class MasterHighImpactAuditor:
                 user_data.get('user_id') if user_data else None
             )
             report['temporal_intensity'] = {
-                'windows_active': [w['window'] for w in temporal['vulnerability_windows_active']],
+                'windows_active': [w['window'] for w in temporal['susceptibility_windows_active']],
                 'combined_risk': temporal['combined_temporal_risk']
             }
             risk_scores.append(temporal['combined_temporal_risk'])
@@ -14338,7 +14338,7 @@ class MasterHighImpactAuditor:
 Rankings based on empirical research:
 1. **Effect size** (40%) - Cohen's d from controlled studies
 2. **Mechanism synergy** (25%) - How techniques amplify each other
-3. **Vulnerability depth** (20%) - How fundamental the intensity
+3. **Susceptibility depth** (20%) - How fundamental the intensity
 4. **Field success** (15%) - Documented real-world effectiveness
 
 ### Top 5 Most Effective Combinations (Ranked)
@@ -14383,7 +14383,7 @@ class MasterHighImpactAuditor:
 
     def __init__(self):
         self.stacking_detector = SynergisticStackingDetector()
-        self.timing_detector = VulnerabilityTimingDetector()
+        self.timing_detector = SusceptibilityTimingDetector()
         self.trust_detector = TrustLeverageSequenceDetector()
         self.bypass_detector = PhysiologicalBypassDetector()
         self.ai_detector = AIAmplificationDetector()
@@ -14403,12 +14403,12 @@ class MasterHighImpactAuditor:
         """
         report = {
             'synergistic_stacking': None,
-            'vulnerability_timing': None,
+            'susceptibility_timing': None,
             'trust_leverage': None,
             'physiological_bypass': None,
             'ai_amplification': None,
             'temporal_intensity': None,
-            'behavioral_vulnerability': None,
+            'behavioral_susceptibility': None,
             'information_ecosystem': None,
             'overall_risk': 0.0,
             'critical_findings': [],
@@ -14431,17 +14431,17 @@ class MasterHighImpactAuditor:
                     f"(combined multiplier: {stacking['combined_multiplier']}x)"
                 )
 
-        # 2. Vulnerability timing
+        # 2. Susceptibility timing
         if context and 'timestamp' in context:
-            timing = self.timing_detector.assess_timing_vulnerability(
+            timing = self.timing_detector.assess_timing_susceptibility(
                 context['timestamp'],
                 context.get('user_context')
             )
-            report['vulnerability_timing'] = timing
+            report['susceptibility_timing'] = timing
             risk_scores.append(timing['risk_score'])
             if timing['risk_score'] > 0.5:
                 report['critical_findings'].append(
-                    f"TIMING: Content delivered during vulnerability window "
+                    f"TIMING: Content delivered during susceptibility window "
                     f"(risk: {timing['risk_score']:.2f})"
                 )
 
@@ -14487,16 +14487,16 @@ class MasterHighImpactAuditor:
             report['temporal_intensity'] = temporal
             if temporal.get('deliberate_timing'):
                 risk_scores.append(temporal['risk_score'])
-                report['critical_findings'].append("TEMPORAL: Deliberate high-intensity delivery at vulnerable times")
+                report['critical_findings'].append("TEMPORAL: Deliberate high-intensity delivery at susceptible times")
 
-        # 7. Behavioral vulnerability
+        # 7. Behavioral susceptibility
         if context and 'behavioral_data' in context:
-            behavioral = self.behavioral_detector.assess_vulnerability(context['behavioral_data'])
-            report['behavioral_vulnerability'] = behavioral
-            risk_scores.append(behavioral['overall_vulnerability'])
+            behavioral = self.behavioral_detector.assess_susceptibility(context['behavioral_data'])
+            report['behavioral_susceptibility'] = behavioral
+            risk_scores.append(behavioral['overall_susceptibility'])
             if behavioral['risk_level'] in ['critical', 'high']:
                 report['critical_findings'].append(
-                    f"VULNERABILITY: {behavioral['risk_level']} behavioral vulnerability "
+                    f"SUSCEPTIBILITY: {behavioral['risk_level']} behavioral susceptibility "
                     f"({behavioral['active_category_count']} categories active)"
                 )
 
@@ -14532,8 +14532,8 @@ class MasterHighImpactAuditor:
         if report.get('synergistic_stacking', {}).get('synergy_count', 0) >= 2:
             actions.append('Decompose stacked techniques and evaluate each independently')
 
-        if report.get('vulnerability_timing', {}).get('risk_score', 0) > 0.5:
-            actions.append('Implement cooling-off periods for decisions during vulnerable windows')
+        if report.get('susceptibility_timing', {}).get('risk_score', 0) > 0.5:
+            actions.append('Implement cooling-off periods for decisions during susceptible windows')
 
         if report.get('physiological_bypass', {}).get('bypass_mechanisms_detected', 0) >= 2:
             actions.append('Add friction/breaks to counter physiological bypass mechanisms')
@@ -14545,7 +14545,7 @@ class MasterHighImpactAuditor:
         if 'countermeasures' in bypass:
             actions.extend(bypass['countermeasures'])
 
-        behavioral = report.get('behavioral_vulnerability', {})
+        behavioral = report.get('behavioral_susceptibility', {})
         if 'protective_actions' in behavioral:
             actions.extend(behavioral['protective_actions'])
 
@@ -14582,7 +14582,7 @@ class ComprehensivePersuasionAuditor:
         self.infinite_scroll_detector = InfiniteScrollDetector()
         self.physiological_detector = PhysiologicalInfluenceDetector()
         self.gaze_analyzer = GazePatternAnalyzer()
-        self.vulnerability_detector = VulnerablePopulationDetector()
+        self.susceptibility_detector = SusceptiblePopulationDetector()
         self.child_safety_detector = ChildSafetyDetector()
         self.economic_detector = EconomicInfluenceDetector()
         self.subscription_detector = SubscriptionTrapDetector()
@@ -14601,7 +14601,7 @@ class ComprehensivePersuasionAuditor:
 
         Args:
             content_data: All available content information
-            user_profile: Optional user vulnerability profile
+            user_profile: Optional user susceptibility profile
             context: Optional timing/behavioral context
 
         Returns:
@@ -14613,7 +14613,7 @@ class ComprehensivePersuasionAuditor:
             'overall_risk_score': 0.0,
             'influence_categories': {},
             'specific_findings': [],
-            'vulnerability_assessment': None,
+            'susceptibility_assessment': None,
             'regulatory_concerns': [],
             'recommended_interventions': [],
             'high_impact_analysis': None,
@@ -14699,16 +14699,16 @@ class ComprehensivePersuasionAuditor:
                 }
                 risk_scores.append(ai_result['ai_generated_probability'] * 0.5)
 
-        # === VULNERABILITY ASSESSMENT ===
+        # === SUSCEPTIBILITY ASSESSMENT ===
         if user_profile:
-            vuln_profile = self.vulnerability_detector.assess_individual_vulnerability(user_profile)
-            report['vulnerability_assessment'] = {
-                'score': vuln_profile['overall_vulnerability_score'],
+            vuln_profile = self.susceptibility_detector.assess_individual_susceptibility(user_profile)
+            report['susceptibility_assessment'] = {
+                'score': vuln_profile['overall_susceptibility_score'],
                 'factors': vuln_profile['factors'],
                 'risk_areas': vuln_profile['risk_areas'],
                 'recommendations': vuln_profile['protective_recommendations']
             }
-            if vuln_profile['overall_vulnerability_score'] > 0.5:
+            if vuln_profile['overall_susceptibility_score'] > 0.5:
                 risk_scores = [r * 1.3 for r in risk_scores]
 
         # === HIGH-IMPACT ANALYSIS ===
@@ -14804,11 +14804,11 @@ class ComprehensivePersuasionAuditor:
 - CHI 2025: Design frictions on social media
 - ScienceDirect 2025: Scroll immersion research
 
-### Vulnerable Populations
-- USC Dornsife 2024: Alzheimer's and scam vulnerability
+### High-Susceptibility Populations
+- USC Dornsife 2024: Alzheimer's and scam susceptibility
 - PNAS Nexus 2024: APOE4 and phishing
 - Thorn 2024: Youth online safety data
-- Psychology Today 2025: Neurodivergent vulnerability
+- Psychology Today 2025: Neurodivergent susceptibility
 
 ### AI & Deepfakes
 - Science 2025: Political persuasion with AI
@@ -14816,9 +14816,9 @@ class ComprehensivePersuasionAuditor:
 - PMC 2025: Deepfake forensics survey
 - Deloitte 2025: Deepfake disruption report
 
-### Interventions
+### Countermeasure Research
 - Sage 2024: Media literacy meta-analysis (N=81,155, d=0.60)
-- Taiwan 2024: Adolescent media literacy intervention
+- Taiwan 2024: Adolescent media literacy study
 - Compton & Pfau: Inoculation theory (d=0.36)
 - CHI 2025: Design friction studies (d=0.45)
 
@@ -14826,7 +14826,7 @@ class ComprehensivePersuasionAuditor:
 - FTC 2024: Amazon, Adobe enforcement actions
 - EU DSA 2024: Implementation and enforcement
 - EU AI Act: Phased implementation
-- CCPA/CPRA: California dark pattern prohibitions
+- CCPA/CPRA: California interface design pattern prohibitions
 - German Fair Consumer Contracts Act
 
 ---
@@ -15087,7 +15087,7 @@ MODERATE CONCERN (Score 26-50):
 _________________________________
 
 ─────────────────────────────────────────────────────────────
-VULNERABLE AUDIENCES
+HIGH-SUSCEPTIBILITY AUDIENCES
 ─────────────────────────────────────────────────────────────
 
 This messaging is most effective for:
@@ -15135,7 +15135,7 @@ Auditor Signature: _________________ Date: _________
 
 **Answer:** No. There's a spectrum:
 
-- **0-25 (Ethical):** Clear value proposition, no exclusion tactics, transparent about benefits
+- **0-25 (Low-Intensity):** Clear value proposition, no exclusion tactics, transparent about benefits
   - Example: "Quality water bottles. Durable design. Made in the USA."
 
 - **26-50 (Some Targeting):** Audience-specific messaging without exclusion
@@ -15144,7 +15144,7 @@ Auditor Signature: _________________ Date: _________
 - **51-75 (Sophisticated):** Multiple primal stimuli, psychological principles, but not misleading
   - Example: Uses PERSONAL + EMOTIONAL but with truthful claims
 
-- **76-100 (Optimized):** Combines multiple frameworks, leverages vulnerabilities, obscures truth
+- **76-100 (Optimized):** Combines multiple frameworks, leverages susceptibilities, obscures truth
   - Example: Uses all tactics, creates false scarcity, manufactures objections
 
 ---
@@ -15194,7 +15194,7 @@ Before submitting your audit, verify:
 - [ ] I counted each flagged item with its point value
 - [ ] I documented my scoring with evidence
 - [ ] I distinguished between legitimate specificity and exclusionary detail
-- [ ] I assessed audience vulnerability accurately
+- [ ] I assessed audience susceptibility accurately
 - [ ] I identified which tactical combinations are being used
 - [ ] I provided specific recommendations for reduction
 - [ ] I completed the audit report template fully

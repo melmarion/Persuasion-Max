@@ -27,7 +27,7 @@
    - Difficulty: Medium
    - Deliverable: Python script + API endpoint
 
-2. **Personal Vulnerability Scanner** (Week 2)
+2. **Personal Susceptibility Scanner** (Week 2)
    - Why second: Needed for individual-level research
    - Difficulty: Medium
    - Deliverable: Web form + scoring algorithm
@@ -39,11 +39,11 @@
 
 ### Phase 2: Core Tools (Weeks 4-8)
 4. Behavioral Response Predictor
-5. Intervention Effectiveness Simulator
+5. Strategy Effectiveness Simulator
 6. Real-Time Influence Detector
 
 ### Phase 3: Enterprise Tools (Weeks 9-12)
-7. Organizational Vulnerability Assessment
+7. Organizational Susceptibility Assessment
 8. Cross-Domain Data Platform
 
 ### Phase 4: Impact Tools (Months 4-6)
@@ -425,7 +425,7 @@ curl -X POST "http://localhost:8000/api/v1/analyze/feed" \
 
 ---
 
-## TOOL 2: PERSONAL VULNERABILITY SCANNER
+## TOOL 2: PERSONAL SUSCEPTIBILITY SCANNER
 ### Week 2 Implementation
 
 ### Step 1: Blink Rate Detection
@@ -501,18 +501,18 @@ class BlinkDetector:
         return np.random.random()  # Placeholder
 ```
 
-### Step 2: Vulnerability Scoring Algorithm
+### Step 2: Susceptibility Scoring Algorithm
 
-**File: `src/scanners/vulnerability_scorer.py`**
+**File: `src/scanners/susceptibility_scorer.py`**
 
 ```python
-class VulnerabilityScorer:
-    """Score vulnerability across all three domains"""
+class SusceptibilityScorer:
+    """Score susceptibility across all three domains"""
 
     def score_blink_rate(self, baseline_bpm, minimum_bpm_during_exposure):
         """
-        Score blink-rate vulnerability (0-10)
-        Lower blink rate during exposure = higher vulnerability
+        Score blink-rate susceptibility (0-10)
+        Lower blink rate during exposure = higher susceptibility
         """
         if baseline_bpm == 0:
             return 0
@@ -529,11 +529,11 @@ class VulnerabilityScorer:
 
     def score_physiological(self, hrv_milliseconds):
         """
-        Score physiological vulnerability based on HRV
-        Low HRV = high vulnerability
+        Score physiological susceptibility based on HRV
+        Low HRV = high susceptibility
         """
         if hrv_milliseconds > 70:
-            return 2  # Low vulnerability
+            return 2  # Low susceptibility
         elif hrv_milliseconds > 50:
             return 4  # Low-moderate
         elif hrv_milliseconds > 35:
@@ -549,7 +549,7 @@ class VulnerabilityScorer:
         """
         return (trait_anxiety + neuroticism + belonging_need) / 3
 
-    def calculate_overall_vulnerability(self, domain_scores):
+    def calculate_overall_susceptibility(self, domain_scores):
         """
         Combine domain scores with weights
         domain_scores: {'blink_rate': X, 'physiological': Y, 'personality': Z}
@@ -571,17 +571,17 @@ class VulnerabilityScorer:
 
 ### Step 3: Web Interface
 
-**File: `src/web/vulnerability_scanner.html`**
+**File: `src/web/susceptibility_scanner.html`**
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Vulnerability Scanner</title>
+    <title>Susceptibility Scanner</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>Personal Vulnerability Scanner</h1>
+    <h1>Personal Susceptibility Scanner</h1>
 
     <div id="blink-test">
         <h2>Test 1: Blink Rate</h2>
@@ -609,8 +609,8 @@ class VulnerabilityScorer:
     </div>
 
     <div id="results">
-        <h2>Your Vulnerability Profile</h2>
-        <canvas id="vulnerabilityChart"></canvas>
+        <h2>Your Susceptibility Profile</h2>
+        <canvas id="susceptibilityChart"></canvas>
         <p id="interpretation"></p>
     </div>
 

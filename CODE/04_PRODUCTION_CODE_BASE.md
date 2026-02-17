@@ -17,7 +17,7 @@ fractionation-detector/
 │   │   ├── __init__.py
 │   │   ├── content_classifier.py
 │   │   ├── sequence_detector.py
-│   │   ├── vulnerability_scorer.py
+│   │   ├── susceptibility_scorer.py
 │   │   ├── behavioral_predictor.py
 │   │   └── response_strategy_simulator.py
 │   ├── api/
@@ -35,7 +35,7 @@ fractionation-detector/
 │   ├── __init__.py
 │   ├── test_classifier.py
 │   ├── test_detector.py
-│   ├── test_vulnerability.py
+│   ├── test_susceptibility.py
 │   └── test_predictions.py
 ├── requirements.txt
 ├── setup.py
@@ -620,14 +620,14 @@ if __name__ == "__main__":
 
 ---
 
-## TOOL 2: PERSONAL VULNERABILITY SCANNER
+## TOOL 2: PERSONAL SUSCEPTIBILITY SCANNER
 ### Implementation Code
 
-**File: `src/models/vulnerability_scorer.py`**
+**File: `src/models/susceptibility_scorer.py`**
 
 ```python
 """
-Vulnerability Scorer - Measure individual susceptibility to fractionation
+Susceptibility Scorer - Measure individual susceptibility to fractionation
 
 From Compilation.txt research:
 - Blink rate drops below 10/min = reduced-vigilance state
@@ -643,8 +643,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 @dataclass
-class VulnerabilityProfile:
-    """Individual vulnerability assessment"""
+class SusceptibilityProfile:
+    """Individual susceptibility assessment"""
     user_id: str
     overall_score: float  # 0-10
     psychology_score: float  # Blink rate
@@ -655,7 +655,7 @@ class VulnerabilityProfile:
     recommendations: List[str]
 
 
-class VulnerabilityScorer:
+class SusceptibilityScorer:
     """
     Score individual susceptibility across three domains
     """
@@ -667,17 +667,17 @@ class VulnerabilityScorer:
             'personality': 0.34
         }
 
-    def score_blink_rate_vulnerability(self,
+    def score_blink_rate_susceptibility(self,
                                       baseline_bpm: float,
                                       minimum_bpm_during_exposure: float) -> float:
         """
-        Score blink-rate vulnerability (0-10)
+        Score blink-rate susceptibility (0-10)
 
         From Compilation.txt:
         "Blink rate drops below 10/min during reduced-vigilance state"
 
         Logic:
-        - Larger drop = higher vulnerability
+        - Larger drop = higher susceptibility
         - Drop below 10/min = reduced-vigilance state achieved
         """
 
@@ -690,11 +690,11 @@ class VulnerabilityScorer:
         score = drop_percentage * 10
         return min(10.0, max(0.0, score))
 
-    def score_physiological_vulnerability(self,
+    def score_physiological_susceptibility(self,
                                          hrv_milliseconds: float,
                                          cortisol_nmol_l: float = None) -> float:
         """
-        Score physiological vulnerability based on HRV and cortisol
+        Score physiological susceptibility based on HRV and cortisol
 
         From Compilation.txt:
         - Low HRV (<30ms) = highly susceptible
@@ -705,7 +705,7 @@ class VulnerabilityScorer:
 
         # HRV scoring (primary marker)
         if hrv_milliseconds > 70:
-            hrv_score = 2.0  # Low vulnerability
+            hrv_score = 2.0  # Low susceptibility
         elif hrv_milliseconds > 50:
             hrv_score = 4.0  # Low-moderate
         elif hrv_milliseconds > 35:
@@ -722,12 +722,12 @@ class VulnerabilityScorer:
 
         return hrv_score
 
-    def score_personality_vulnerability(self,
+    def score_personality_susceptibility(self,
                                        trait_anxiety: float,
                                        neuroticism: float,
                                        need_for_belonging: float) -> float:
         """
-        Score personality-based vulnerability
+        Score personality-based susceptibility
 
         From Compilation.txt:
         "High trait anxiety + high neuroticism + high belonging need = 3x more susceptible"
@@ -758,7 +758,7 @@ class VulnerabilityScorer:
         susceptibility = 10 - lower_eyelid_wrinkles
         return max(0, min(10, susceptibility))
 
-    def calculate_overall_vulnerability(self,
+    def calculate_overall_susceptibility(self,
                                        psychology_score: float,
                                        neuroscience_score: float,
                                        personality_score: float) -> float:
@@ -774,23 +774,23 @@ class VulnerabilityScorer:
 
         return round(weighted_sum, 2)
 
-    def categorize_vulnerability(self, overall_score: float) -> str:
-        """Categorize vulnerability level"""
+    def categorize_susceptibility(self, overall_score: float) -> str:
+        """Categorize susceptibility level"""
 
         if overall_score < 3:
-            return 'low_vulnerability'
+            return 'low_susceptibility'
         elif overall_score < 5:
-            return 'moderate_vulnerability'
+            return 'moderate_susceptibility'
         elif overall_score < 7:
-            return 'high_vulnerability'
+            return 'high_susceptibility'
         else:
-            return 'very_high_vulnerability'
+            return 'very_high_susceptibility'
 
     def identify_dominant_factors(self,
                                  psychology_score: float,
                                  neuroscience_score: float,
                                  personality_score: float) -> List[str]:
-        """Identify which factors drive vulnerability"""
+        """Identify which factors drive susceptibility"""
 
         factors = []
         scores = [
@@ -811,55 +811,55 @@ class VulnerabilityScorer:
         return factors
 
     def generate_recommendations(self,
-                               vulnerability_category: str,
+                               susceptibility_category: str,
                                dominant_factors: List[str]) -> List[str]:
-        """Generate personalized defense recommendations"""
+        """Generate personalized response recommendations"""
 
         base_recommendations = {
-            'low_vulnerability': [
+            'low_susceptibility': [
                 'Maintain current awareness practices',
                 'Continue mindfulness/meditation if beneficial',
                 'Monitor for environmental stress increases'
             ],
-            'moderate_vulnerability': [
+            'moderate_susceptibility': [
                 'Practice daily FATE audit (Focus/Authority/Tribe/Emotion)',
                 'Implement prefrontal activation exercises (math problems)',
                 'Build cognitive flexibility through "maybe" thinking'
             ],
-            'high_vulnerability': [
+            'high_susceptibility': [
                 'Strong recommendation: Cognitive flexibility training',
                 'Implement real-time blink rate monitoring',
                 'Reduce social media exposure during high-stress periods',
                 'Build genuine (not algorithmic) community connections'
             ],
-            'very_high_vulnerability': [
+            'very_high_susceptibility': [
                 'Consider digital wellness counseling',
                 'Temporary social media breaks recommended',
                 'Use influence detector tools (browser extension)',
-                'Combined interventions: awareness + prefrontal + community'
+                'Combined approaches: awareness + prefrontal + community'
             ]
         }
 
-        return base_recommendations.get(vulnerability_category, [])
+        return base_recommendations.get(susceptibility_category, [])
 
-    def create_vulnerability_profile(self,
+    def create_susceptibility_profile(self,
                                     user_id: str,
                                     psychology_score: float,
                                     neuroscience_score: float,
-                                    personality_score: float) -> VulnerabilityProfile:
-        """Create complete vulnerability profile"""
+                                    personality_score: float) -> SusceptibilityProfile:
+        """Create complete susceptibility profile"""
 
-        overall_score = self.calculate_overall_vulnerability(
+        overall_score = self.calculate_overall_susceptibility(
             psychology_score, neuroscience_score, personality_score
         )
 
-        category = self.categorize_vulnerability(overall_score)
+        category = self.categorize_susceptibility(overall_score)
         dominant_factors = self.identify_dominant_factors(
             psychology_score, neuroscience_score, personality_score
         )
         recommendations = self.generate_recommendations(category, dominant_factors)
 
-        return VulnerabilityProfile(
+        return SusceptibilityProfile(
             user_id=user_id,
             overall_score=overall_score,
             psychology_score=psychology_score,
@@ -919,9 +919,9 @@ class FeedExposure(Base):
     fractionation_index = Column(Float)
     created_at = Column(DateTime, default=datetime.utcnow)
 
-class VulnerabilityScan(Base):
-    """Stored vulnerability assessments"""
-    __tablename__ = "vulnerability_scans"
+class SusceptibilityScan(Base):
+    """Stored susceptibility assessments"""
+    __tablename__ = "susceptibility_scans"
 
     id = Column(Integer, primary_key=True)
     user_id = Column(String, index=True)

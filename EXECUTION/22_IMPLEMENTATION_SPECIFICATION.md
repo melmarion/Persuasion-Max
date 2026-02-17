@@ -1164,12 +1164,12 @@ COMPOSITE.Overall_Influence strategy_Index (Scoring Algorithm):
 │  ├─ 51-75: HIGH (Significant influence strategy, requires scrutiny)
 │  └─ 76-100: EXTREME (High-intensity influence strategy)
 │
-├─ VULNERABILITY_ASSESSMENT: based on which_principles_score_highest
+├─ SUSCEPTIBILITY_ASSESSMENT: based on which_principles_score_highest
 │  ├─ if PERSONAL > 50: susceptibility_profile = "identity-conscious"
 │  ├─ if EMOTIONAL > 60: susceptibility_profile = "emotionally_responsive"
 │  ├─ if SCARCITY > 60 AND COMPETITION_SIGNALS > 2: susceptibility_profile = "status_conscious_FOMO"
 │  ├─ if AUTHORITY > 50 AND THREAT = 0: susceptibility_profile = "deference_to_authority"
-│  └─ return all_vulnerable_dimensions
+│  └─ return all_susceptible_dimensions
 │
 ├─ MEASUREMENT_OUTPUT: return {
 │   overall_influence strategy_index (0-100),
@@ -1179,7 +1179,7 @@ COMPOSITE.Overall_Influence strategy_Index (Scoring Algorithm):
 │   risk_category (LOW/MODERATE/HIGH/EXTREME),
 │   interaction_bonus (multiplier applied),
 │   components_used (list of detected frameworks),
-│   vulnerability_profile (list of vulnerable dimensions),
+│   susceptibility_profile (list of susceptible dimensions),
 │   red_flags (list of EXTREME detections),
 │   confidence_level (0.75-0.95)
 │  }
@@ -1211,7 +1211,7 @@ DECISION_TREE_1.Immediate_Red_Flag_Detection (Boolean Logic):
 │  ├─ BRANCH 1: PERSONAL + EMOTIONAL EXTREME COMBINATION
 │  │  ├─ condition: personal_score > 60 AND emotional_score > 70
 │  │  ├─ logic: (personal > 60) ∧ (emotional > 70) = TRUE
-│  │  ├─ reasoning: strong identity targeting + complete fear-relief arc = high vulnerability
+│  │  ├─ reasoning: strong identity targeting + complete fear-relief arc = high susceptibility
 │  │  └─ action: IF TRUE → red_flag_severity = "HIGH"
 │  │
 │  ├─ BRANCH 2: SCARCITY + DESTRUCTION SIGNALS
@@ -1245,59 +1245,59 @@ DECISION_TREE_1.Immediate_Red_Flag_Detection (Boolean Logic):
 └─ LATENCY: <5ms (simple boolean comparisons)
 ```
 
-## DECISION_TREE 2: Audience Vulnerability Assessment
+## DECISION_TREE 2: Audience Susceptibility Assessment
 
 ```
-DECISION_TREE_2.Audience_Vulnerability_Assessment (Categorical Assignment):
-├─ condition: identify_which_dimensions_vulnerable()
-├─ implementation: vulnerability_profile = assign_dimensions()
+DECISION_TREE_2.Audience_Susceptibility_Assessment (Categorical Assignment):
+├─ condition: identify_which_dimensions_susceptible()
+├─ implementation: susceptibility_profile = assign_dimensions()
 │
-│  ├─ DIMENSION 1: IDENTITY-CONSCIOUS VULNERABILITY
+│  ├─ DIMENSION 1: IDENTITY-CONSCIOUS SUSCEPTIBILITY
 │  │  ├─ condition: personal_score > 50 OR emotional_score > 55
 │  │  ├─ logic: (personal > 50) ∨ (emotional > 55) = TRUE
 │  │  ├─ rationale: identity targeting activates status anxiety, fear of being basic
-│  │  └─ vulnerability_type = "identity_conscious"
+│  │  └─ susceptibility_type = "identity_conscious"
 │  │
-│  ├─ DIMENSION 2: IDEOLOGICALLY-DRIVEN VULNERABILITY
+│  ├─ DIMENSION 2: IDEOLOGICALLY-DRIVEN SUSCEPTIBILITY
 │  │  ├─ condition: contrastable_score > 50
 │  │  ├─ logic: (contrastable > 50) = TRUE
 │  │  ├─ rationale: binary thinkers more susceptible to polarized framing
-│  │  └─ vulnerability_type = "ideologically_driven"
+│  │  └─ susceptibility_type = "ideologically_driven"
 │  │
-│  ├─ DIMENSION 3: EMOTIONALLY-RESPONSIVE VULNERABILITY
+│  ├─ DIMENSION 3: EMOTIONALLY-RESPONSIVE SUSCEPTIBILITY
 │  │  ├─ condition: emotional_arc_complete = TRUE AND emotional_score > 60
 │  │  ├─ logic: (arc_complete) ∧ (emotional > 60) = TRUE
 │  │  ├─ rationale: complete fear→relief cycles trigger subconscious compliance
-│  │  └─ vulnerability_type = "emotionally_responsive"
+│  │  └─ susceptibility_type = "emotionally_responsive"
 │  │
-│  ├─ DIMENSION 4: STATUS-CONSCIOUS / FOMO VULNERABILITY
+│  ├─ DIMENSION 4: STATUS-CONSCIOUS / FOMO SUSCEPTIBILITY
 │  │  ├─ condition: scarcity_score > 60 AND competition_signals > 2
 │  │  ├─ logic: (scarcity > 60) ∧ (competition_signals > 2) = TRUE
 │  │  ├─ rationale: FOMO drives status-conscious behavior
-│  │  └─ vulnerability_type = "status_conscious_FOMO"
+│  │  └─ susceptibility_type = "status_conscious_FOMO"
 │  │
-│  ├─ DIMENSION 5: AUTHORITY-DEFERENCE VULNERABILITY
+│  ├─ DIMENSION 5: AUTHORITY-DEFERENCE SUSCEPTIBILITY
 │  │  ├─ condition: authority_score > 50 AND skepticism_level_low
 │  │  ├─ logic: (authority > 50) ∧ (objection_count < 2) = TRUE
 │  │  ├─ rationale: low objection addressing = high deference risk
-│  │  └─ vulnerability_type = "authority_deference"
+│  │  └─ susceptibility_type = "authority_deference"
 │  │
-│  ├─ DIMENSION 6: COGNITIVE_LOAD VULNERABILITY
+│  ├─ DIMENSION 6: COGNITIVE_LOAD SUSCEPTIBILITY
 │  │  ├─ condition: cognitive_load_score > 60 OR decision_fatigue_score > 60
 │  │  ├─ logic: (cognitive_load > 60) ∨ (decision_fatigue > 60) = TRUE
 │  │  ├─ rationale: analytical thinking suppressed = system 1 (emotional) dominates
-│  │  └─ vulnerability_type = "cognitive_overload"
+│  │  └─ susceptibility_type = "cognitive_overload"
 │  │
-│  └─ TOTAL_VULNERABILITY_DIMENSIONS: count(dimensions_where_condition_true)
+│  └─ TOTAL_SUSCEPTIBILITY_DIMENSIONS: count(dimensions_where_condition_true)
 │
-├─ VULNERABILITY_SEVERITY: based on dimension_count
-│  ├─ 0 dimensions: low_vulnerability_risk
-│  ├─ 1-2 dimensions: moderate_vulnerability_risk
-│  ├─ 3-4 dimensions: high_vulnerability_risk
-│  └─ 5+ dimensions: extreme_vulnerability_risk
+├─ SUSCEPTIBILITY_SEVERITY: based on dimension_count
+│  ├─ 0 dimensions: low_susceptibility_level
+│  ├─ 1-2 dimensions: moderate_susceptibility_level
+│  ├─ 3-4 dimensions: high_susceptibility_level
+│  └─ 5+ dimensions: extreme_susceptibility_level
 │
 ├─ OUTPUT: {
-│   vulnerability_dimensions (list of types triggered),
+│   susceptibility_dimensions (list of types triggered),
 │   total_dimension_count (0-6),
 │   severity_level (LOW/MODERATE/HIGH/EXTREME),
 │   target_demographic (inferred from dimensions)
@@ -1351,7 +1351,7 @@ DECISION_TREE_3.Influence strategy_Intensity_Classification (Action Assignment):
 │  └─ IMMEDIATE_REMEDIATION: Block content; require significant revision
 │
 ├─ OUTPUT: {
-│   classification (ETHICAL/MODERATE/HIGH/EXTREME),
+│   classification (LOW_INTENSITY/MODERATE/HIGH/EXTREME),
 │   action_required (NONE/MONITOR/REVIEW_REQUIRED/IMMEDIATE_REMEDIATION),
 │   recommendation (text summary),
 │   appeal_threshold (if < 25: auto-approve; if 26-50: auto-approve with flag; if 51-75: require review; if 76+: require approval)
@@ -1528,13 +1528,13 @@ DECISION_TREE_3.Influence strategy_Intensity_Classification (Action Assignment):
     "frameworks_detected_count": 0-30
   },
 
-  "vulnerability_profile": {
-    "vulnerable_dimensions": [
+  "susceptibility_profile": {
+    "susceptible_dimensions": [
       "identity_conscious" | "ideologically_driven" | "emotionally_responsive" |
       "status_conscious_FOMO" | "authority_deference" | "cognitive_overload"
     ],
-    "total_vulnerability_dimensions": 0-6,
-    "vulnerability_severity": "LOW" | "MODERATE" | "HIGH" | "EXTREME",
+    "total_susceptibility_dimensions": 0-6,
+    "susceptibility_severity": "LOW" | "MODERATE" | "HIGH" | "EXTREME",
     "target_demographic": "inferred_description"
   },
 
@@ -1554,7 +1554,7 @@ DECISION_TREE_3.Influence strategy_Intensity_Classification (Action Assignment):
       "branches_triggered": ["BRANCH_1", "BRANCH_2"]
     },
     "influence strategy_intensity": {
-      "classification": "ETHICAL" | "MODERATE" | "HIGH" | "EXTREME",
+      "classification": "LOW_INTENSITY" | "MODERATE" | "HIGH" | "EXTREME",
       "action_required": "NONE" | "MONITOR" | "REVIEW_REQUIRED" | "IMMEDIATE_REMEDIATION",
       "recommendation": "text_summary"
     }

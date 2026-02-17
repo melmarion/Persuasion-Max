@@ -120,7 +120,7 @@
 - You measure psychological impact (connecting engagement to psychology)
 
 **Question 2 (Bridge Psychology + Neuroscience):**
-"Do psychological vulnerabilities identified in lab translate to algorithmic influence strategies in the wild?"
+"Do psychological susceptibility patterns identified in lab translate to algorithmic influence strategies in the wild?"
 - Neuroscientists identified the mechanisms (in labs)
 - You prove they matter at scale (in real algorithms)
 
@@ -155,7 +155,7 @@ This creates publication opportunities across diverse venues.
 ### Advantage 1: You Understand Psychology
 - Can measure emotional states (blink rate, skin conductance, heart rate)
 - Can identify psychological mechanisms (prefrontal overload, amygdala dominance)
-- Can assess individual differences in vulnerability
+- Can assess individual differences in susceptibility
 - Can design psychological analysiss
 
 **Tech researchers lack this entirely.**
@@ -248,7 +248,7 @@ This creates publication opportunities across diverse venues.
 - Timeline: 24 months
 - Audience: Everyone + policy-makers
 
-**Paper 5 (Applied):** "Evidence-Based Interventions for Algorithmic Emotional Influence: A Comparative Effectiveness Study"
+**Paper 5 (Applied):** "Evidence-Based Strategies for Algorithmic Emotional Influence: A Comparative Effectiveness Study"
 - Journal: Applied Psychology + health/policy journals
 - Timeline: 30 months
 - Audience: Practitioners + policy-makers
@@ -321,7 +321,7 @@ This research package gives you:
 - Neurochemical cascade descriptions
 - Why awareness doesn't prevent effect
 - Individual difference profiles
-- Intervention mechanisms
+- Countermeasure mechanisms
 
 **Everything you need is in the documents.**
 

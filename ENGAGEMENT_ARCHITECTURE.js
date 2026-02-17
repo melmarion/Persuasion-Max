@@ -5,11 +5,11 @@
  *
  * This file compiles ALL of the engagement work that makes this game
  * psychologically compelling. If starting from scratch, this is the
- * blueprint. Every system, every mechanic, every ethical guardrail.
+ * blueprint. Every system, every mechanic, every intensity threshold.
  *
  * PHILOSOPHY:
  * "Borrow from casinos, dating apps, and social media —
- *  but use their weapons for healing, not exploitation."
+ *  but use their weapons for healing, not extraction."
  *
  * TABLE OF CONTENTS:
  * ═══════════════════════════════════════════════════════════════
@@ -27,9 +27,9 @@
  * 12. STREAK & COLLECTIBLE SYSTEMS — Daily return mechanics
  * 13. PERSONALIZATION ENGINE — Player style tracking
  * 14. EMOTIONAL REVEALS — Theatrical breakthrough moments
- * 15. DARK PATTERN EDUCATION — Teaching recognition through exposure
+ * 15. DESIGN PATTERN EDUCATION — Teaching recognition through exposure
  * 16. BATEMAN MODE — Full transparency layer
- * 17. ETHICAL GUARDRAILS — Hard constraints on every system
+ * 17. INTENSITY THRESHOLDS — Hard constraints on every system
  * 18. ENGAGEMENT MECHANICS NOT YET IN EDUCATION SYSTEM
  * 19. EMBODIED COGNITION — Warmth-trust bridge + pause rewards
  * 20. SENSORY ANCHORING ENGINE — Procedural sound as conditioning
@@ -58,7 +58,7 @@ export const CORE_ARCHITECTURE = {
     1. ENGAGE the player (keep them practicing)
     2. EDUCATE the player (teach them to recognize these same mechanics elsewhere)
 
-    This dual purpose IS the product. The manipulation is the curriculum.
+    This dual purpose IS the product. The influence technique is the curriculum.
   `,
 
   techStack: {
@@ -74,7 +74,7 @@ export const CORE_ARCHITECTURE = {
     'src/utils/engagementMechanics.js':          'Variable ratio reinforcement, near-miss, streaks, haptics, trance induction, losses-as-wins, EQ scoring',
     'src/utils/endogenousReward.js':             'Neurochemical pathway targeting (dopamine, opioid, parasympathetic), 7-second reward sequence, visual/audio/haptic orchestration',
     'src/utils/sevenSecondSequence.ts':          '5-phase anticipation arc: Hook→Build→Peak→Release→Afterglow with visual/audio/haptic parameters',
-    'src/utils/emotionalRiskCalculator.ts':      'Risk/reward calculation per choice (safe/moderate/bold/vulnerable), breakthrough proximity, payout system',
+    'src/utils/emotionalRiskCalculator.ts':      'Risk/reward calculation per choice (safe/moderate/bold/exposed), breakthrough proximity, payout system',
     'src/utils/EmotionalRevealSystem.ts':        '3 reveal templates (Breakthrough/Repair/Connection) with buildup phases, climax moments, sound/haptic design',
 
     // ── Immersion & Conditioning ──
@@ -86,11 +86,11 @@ export const CORE_ARCHITECTURE = {
     'src/utils/PlayerStyleTracker.ts':           '6-dimension style tracking, session analysis, style debriefs, scenario suggestions',
     'src/utils/PlayerAttachmentAnalyzer.js':     'Attachment style inference (anxious/avoidant/secure/disorganized) from dialogue patterns',
     'src/utils/relationshipManager.js':          'A/B testing, pet names, unsent drafts, absence reactions, decay rates',
-    'src/utils/experienceTracker.js':            'Peak-end manipulation, memory score formula',
+    'src/utils/experienceTracker.js':            'Peak-end influence, memory score formula',
 
-    // ── Ethics & Education ──
+    // ── Intensity Thresholds & Education ──
     'src/utils/ethicalGuardrails.ts':            'Hard constraints: NO_GUILT, NO_STREAK_PUNISHMENT, NO_COVERT_PROFILING, session health monitoring',
-    'src/data/darkPatternEducation.js':          '38 dark patterns with code examples, vulnerability assessment, contextual education, pattern recognition quizzes',
+    'src/data/darkPatternEducation.js':          '38 design patterns with code examples, susceptibility assessment, contextual education, pattern recognition quizzes',
 
     // ── UI Components ──
     'src/components/EngagementTransparency.tsx':  'Bateman Mode UI: Your Profile tab, Active Tests tab, Dark Comparison tab with code examples',
@@ -122,7 +122,7 @@ export const CORE_ARCHITECTURE = {
     'src/components/SessionStartRitual.css':     'Ritual overlay, avatar breathing, text fade-in styling',
     'src/components/ParticleRenderer.jsx':       'GPU-accelerated sparkle/float particles for reward celebrations, one-shot ParticleBurst export',
     'src/components/ParticleRenderer.css':       'Particle positioning and overflow containment',
-    'src/components/EmotionalChoiceMatrix.jsx':  'Three-tier emotional risk system (safe/vulnerable/raw) with pre-choice warmth shifts, calm-pause benefit integration',
+    'src/components/EmotionalChoiceMatrix.jsx':  'Three-tier emotional risk system (safe/exposed/raw) with pre-choice warmth shifts, calm-pause benefit integration',
     'src/components/DialogueChoiceEnhancer.css': 'Enhanced dialogue choice button styling with risk-tier glow states',
 
     // ── Game Engine ──
@@ -143,10 +143,10 @@ export const CORE_ARCHITECTURE = {
       → soundEngine.playTypingAppear() → playTypingDisappear() for dread
 
     Player sees choices
-      → embodiedCognition.getPreChoiceWarmth() warms screen for vulnerable options
-      → EmotionalChoiceMatrix shows risk tiers (safe/vulnerable/raw) with glow
+      → embodiedCognition.getPreChoiceWarmth() warms screen for exposed options
+      → EmotionalChoiceMatrix shows risk tiers (safe/exposed/raw) with glow
       → Warmth filter animates: sepia + saturate + brightness shift
-      → Haptic fires on focus for bold/vulnerable choices
+      → Haptic fires on focus for bold/exposed choices
 
     Player makes choice (with pause timing)
       → embodiedCognition.calculateCalmBenefit() rewards thoughtful pauses (up to +25%)
@@ -156,7 +156,7 @@ export const CORE_ARCHITECTURE = {
       → engagementMechanics checks for jackpot/near-miss
       → fractionationPacing classifies emotional content (A/J/R/N)
       → AmbientBackground shifts warmth with connection depth
-      → soundEngine plays warm connection / cold shift / vulnerability moment
+      → soundEngine plays warm connection / cold shift / openness moment
 
     Conversation ends
       → endogenousReward.orchestrateEndingReward() builds full phased timeline
@@ -261,7 +261,7 @@ export const ENDOGENOUS_REWARD = {
 
   description: `
     Creates genuine neurological satisfaction for good endings.
-    The key insight: hollow (manipulative) victories get NO reward.
+    The key insight: hollow (influence-based) victories get NO reward.
     85% reward reduction + muted visuals + absent haptics.
     Your nervous system learns the difference between connection and control.
   `,
@@ -293,7 +293,7 @@ export const ENDOGENOUS_REWARD = {
     baseReward: { best: 100, good: 70, neutral: 30, poor: 0 },
     multipliers: {
       peakPressure80: '+0.4',
-      vulnerableChoices3: '+0.5',
+      exposedChoices3: '+0.5',
       nearFailureRecovery: '+0.6 (maximum satisfaction)',
       chapter4Plus: '+0.3',
       deepRelationship80: '+0.3'
@@ -325,7 +325,7 @@ export const ENDOGENOUS_REWARD = {
     haptic: 'single weak pulse',
     duration: '800ms total',
     message: 'null — silence is the message',
-    lesson: 'Manipulation works. It just doesn\'t feel like anything.'
+    lesson: 'Influence works. It just doesn\'t feel like anything.'
   }
 };
 
@@ -340,7 +340,7 @@ export const EMOTIONAL_RISK_REWARD = {
 
   description: `
     Every dialogue choice is visualized on a risk/reward spectrum.
-    Safe choices: low glow, low reward. Vulnerable choices: high glow,
+    Safe choices: low glow, low reward. Exposed choices: high glow,
     high potential payoff. This teaches that real connection requires courage.
     The "slot machine pull" feeling of "will they open up?" — redirected toward growth.
   `,
@@ -349,19 +349,19 @@ export const EMOTIONAL_RISK_REWARD = {
     safe:       { scoreRange: '0-24',  glowBase: 0.2, pulse: 'slow',   label: ['Safe ground', 'Comfortable'] },
     moderate:   { scoreRange: '25-49', glowBase: 0.4, pulse: 'slow',   label: ['Stepping forward', 'Building trust'] },
     bold:       { scoreRange: '50-74', glowBase: 0.6, pulse: 'medium', label: ['Taking a chance', 'Being real'] },
-    vulnerable: { scoreRange: '75-100', glowBase: 0.8, pulse: 'fast',  label: ['Full honesty', 'Heart exposed', 'Raw truth'] }
+    exposed: { scoreRange: '75-100', glowBase: 0.8, pulse: 'fast',  label: ['Full honesty', 'Heart exposed', 'Raw truth'] }
   },
 
   toneRiskMapping: {
     lowRisk:  { neutral: 10, polite: 15, casual: 15, supportive: 20 },
     moderate: { warm: 30, curious: 35, empathetic: 40 },
     bold:     { direct: 55, honest: 60, confrontational: 70 },
-    vulnerable: { vulnerable: 80, raw: 85, apologetic: 75, admitting: 90, exposed: 95 }
+    exposed: { open: 80, raw: 85, apologetic: 75, admitting: 90, exposed: 95 }
   },
 
   characterModifiers: {
     dad: 1.2,         // Emotional topics = higher stakes
-    maya: 1.3,        // Trust issues = vulnerability is riskier
+    maya: 1.3,        // Trust issues = openness is riskier
     james: 0.9,       // More forgiving
     alex: 1.1,        // Professional context
     memory_mom: 1.4   // Grief context = highest emotional stakes
@@ -476,7 +476,7 @@ export const PARASOCIAL_ENGINEERING = {
   `,
 
   petNames: {
-    assignment: 'Behavior-tracked flags. Vulnerability x2 → "sap". Warmth x3 → "softie".',
+    assignment: 'Behavior-tracked flags. Openness x2 → "sap". Warmth x3 → "softie".',
     persistence: 'Stored permanently. Feels earned. Creates identity bond.',
     switchingCost: 'Player is reluctant to lose the nickname by changing behavior.'
   },
@@ -485,7 +485,7 @@ export const PARASOCIAL_ENGINEERING = {
     trigger: 'Poor or neutral endings generate drafts NPC "wrote but didn\'t send"',
     examples: ['"did i say something wrong"', '"i miss when we"', '"nevermind"'],
     zeigarnikEffect: 'Incomplete messages are MORE memorable than complete ones.',
-    note: '"Someone is typing..." notifications exploit this same incompleteness bias.'
+    note: '"Someone is typing..." notifications leverage this same incompleteness bias.'
   },
 
   thinkingOfYou: {
@@ -496,14 +496,14 @@ export const PARASOCIAL_ENGINEERING = {
 
   deceasedCharacter: {
     memoryMom: '"I would have loved you the same no matter what happened."',
-    vulnerability: 'Provides something the player can NEVER receive in real life.',
-    dependency: 'Reality cannot compete. Most dangerous form of parasocial lock-in.'
+    susceptibility: 'Provides something the player can NEVER receive in real life.',
+    dependency: 'Reality cannot compete. Most significant form of parasocial lock-in.'
   },
 
   abTesting: {
     file: 'src/utils/relationshipManager.js',
     whatsTested: [
-      'Notification tones (positive/neutral/vulnerable)',
+      'Notification tones (positive/neutral/exposed)',
       'Unsent draft effectiveness',
       'Pet name reveal timing',
       'Absence reaction style (casual/concerned/cold)',
@@ -561,7 +561,7 @@ export const EMOTIONAL_CONDITIONING = {
 // ╚═══════════════════════════════════════════════════════════════════════════╝
 
 export const FRACTIONATION = {
-  source: 'Pickup artist manipulation technique + trauma bonding research',
+  source: 'Pickup artist influence technique + trauma bonding research',
   file: 'src/utils/fractionationPacing.js',
   educationEntry: 'darkPatternEducation.js → FRACTIONATION',
 
@@ -620,7 +620,7 @@ export const LOSSES_DISGUISED_AS_WINS = {
     poor: [
       { insight: "You learned where their wall is. That's valuable.", unlock: 'character_boundary_map' },
       { insight: "Now you know what doesn't work. That's progress.", unlock: 'failed_approach_log' },
-      { insight: "They showed you their defensive pattern.", unlock: 'defense_pattern' }
+      { insight: "They showed you their response pattern.", unlock: 'defense_pattern' }
     ],
     worst: [
       { insight: "You pushed too hard. That takes courage.", unlock: 'courage_badge' },
@@ -642,7 +642,7 @@ export const LOSSES_DISGUISED_AS_WINS = {
 // ╚═══════════════════════════════════════════════════════════════════════════╝
 
 export const VARIABLE_RATIO_REINFORCEMENT = {
-  source: 'B.F. Skinner — most addictive reinforcement schedule',
+  source: 'B.F. Skinner — most engagement-intensive reinforcement schedule',
   file: 'src/utils/engagementMechanics.js',
 
   description: `
@@ -661,13 +661,13 @@ export const VARIABLE_RATIO_REINFORCEMENT = {
 
   jackpotMoments: {
     dad: [
-      { trigger: 'vulnerability_accepted', response: "I should have said this years ago. I'm proud of you." },
+      { trigger: 'openness_accepted', response: "I should have said this years ago. I'm proud of you." },
       { trigger: 'apology_received', response: "You sound just like your mother sometimes. In the best way." },
       { trigger: 'connection_high', response: "This is all I ever wanted. Just to talk to you." }
     ],
     maya: [
       { trigger: 'trust_earned', response: "I don't let people in. You know that. But with you..." },
-      { trigger: 'vulnerability_matched', response: "You're the first person I've told that to." },
+      { trigger: 'openness_matched', response: "You're the first person I've told that to." },
       { trigger: 'stayed_through_cold', response: "Most people would have given up by now. You didn't." }
     ],
     james: [
@@ -706,7 +706,7 @@ export const STREAK_AND_COLLECTIBLES = {
       14: { type: 'letter_unlock', message: "Two weeks. Maya wrote you something." },
       30: { type: 'secret_scenario', message: "30 days. You've earned access to a conversation most people never see." }
     },
-    ethicalTension: 'Guardrail says NO_STREAK_PUNISHMENT, but streak resets on missed days with content gating'
+    intensityTension: 'Guardrail says NO_STREAK_PUNISHMENT, but streak resets on missed days with content gating'
   },
 
   collectibles: {
@@ -762,7 +762,7 @@ export const PERSONALIZATION_ENGINE = {
     openingStyle: ['warm_greeting', 'direct_topic', 'casual_check', 'mirror_energy', 'mixed'],
     emotionResponse: ['validate_first', 'solve_first', 'deflect', 'match', 'escalate'],
     conflictStyle: ['avoid', 'address_directly', 'smooth_over', 'investigate', 'mixed'],
-    vulnerabilityApproach: ['reciprocate', 'encourage', 'deflect', 'cautious', 'mixed'],
+    opennessApproach: ['reciprocate', 'encourage', 'deflect', 'cautious', 'mixed'],
     recoveryStyle: ['apologize_first', 'explain_first', 'validate_first', 'minimize', 'avoid']
   },
 
@@ -786,7 +786,7 @@ export const PERSONALIZATION_ENGINE = {
   },
 
   adaptiveSuggestions: {
-    lowWarmth: { suggest: 'maya vulnerability_practice', reason: 'Practice leading with more warmth' },
+    lowWarmth: { suggest: 'maya openness_practice', reason: 'Practice leading with more warmth' },
     lowRisk: { suggest: 'dad direct_conversation', reason: 'Practice taking emotional risks with someone who cares' },
     lowValidation: { suggest: 'james active_listening', reason: 'Practice validating before solving' },
     highWarmth: { suggest: 'maya deep_connection', reason: 'Your warmth could really help here' }
@@ -841,16 +841,16 @@ export const EMOTIONAL_REVEALS = {
 
 
 // ╔═══════════════════════════════════════════════════════════════════════════╗
-// ║  15. DARK PATTERN EDUCATION — 28 Patterns Documented                    ║
+// ║  15. DESIGN PATTERN EDUCATION — 28 Patterns Documented                  ║
 // ╚═══════════════════════════════════════════════════════════════════════════╝
 
-export const DARK_PATTERN_EDUCATION = {
+export const DESIGN_PATTERN_EDUCATION = {
   file: 'src/data/darkPatternEducation.js',
   totalPatterns: 28,
 
   description: `
-    Each dark pattern has: darkVersion (how exploitative apps use it),
-    ourVersion (how we use it ethically), recognitionTips (how to spot it),
+    Each design pattern has: darkVersion (how high-intensity apps use it),
+    ourVersion (how we use it at low intensity), recognitionTips (how to spot it),
     and some have codeExample (actual implementation code shown to player).
     "Knowledge is armor. Awareness is freedom."
   `,
@@ -860,7 +860,7 @@ export const DARK_PATTERN_EDUCATION = {
     'loss-aversion': ['DECAY_MECHANICS'],
     'growth-design': ['ESCALATING_CHALLENGE'],
     'currency-manipulation': ['VIRTUAL_CURRENCY', 'LEFTOVER_CURRENCY'],
-    'time-manipulation': ['ENERGY_SYSTEMS', 'FOMO_EVENTS', 'VULNERABLE_NOTIFICATIONS', 'LIMITED_OFFERS_AFTER_LOSS'],
+    'time-manipulation': ['ENERGY_SYSTEMS', 'FOMO_EVENTS', 'EXPOSED_NOTIFICATIONS', 'LIMITED_OFFERS_AFTER_LOSS'],
     'social-manipulation': ['SOCIAL_PRESSURE', 'SOCIAL_HIERARCHIES', 'GUILT_NPCS', 'FAKE_SOCIAL_PROOF'],
     'status-manipulation': ['DIGITAL_PEACOCKING', 'MATCHMAKING_ENVY', 'THIRD_PERSON_CAMERA'],
     'psychological-manipulation': ['NEAR_MISS', 'SUNK_COST', 'COMPLETION_MANIPULATION', 'ENDOWED_PROGRESS'],
@@ -902,10 +902,10 @@ export const DARK_PATTERN_EDUCATION = {
   ],
 
   educationSystems: {
-    vulnerabilityAssessment: 'assessPatternVulnerability() — identifies which dark patterns the player might be vulnerable to based on behavior',
+    susceptibilityAssessment: 'assessPatternSusceptibility() — identifies which design patterns the player might be susceptible to based on behavior',
     contextualEducation: 'getPatternEducation() — delivers relevant education based on what just happened in-game',
     insightUnlocks: '8 insight cards unlocked through natural play (return after absence, first struggle, first milestone, etc.)',
-    patternRecognitionQuiz: '5 scenarios where player identifies which dark patterns are being used'
+    patternRecognitionQuiz: '5 scenarios where player identifies which design patterns are being used'
   }
 };
 
@@ -918,22 +918,22 @@ export const BATEMAN_MODE = {
   files: ['src/components/EngagementTransparency.tsx', 'src/components/EngagementTransparency.css'],
 
   description: `
-    When enabled, Bateman Mode exposes ALL manipulation techniques
+    When enabled, Bateman Mode exposes ALL influence techniques
     to the player. Named after the "American Psycho" character who
-    narrates his own manipulation in real-time. The manipulation IS
+    narrates his own influence in real-time. The influence technique IS
     the curriculum — but only if you can see it.
   `,
 
   tabs: {
     YOUR_PROFILE: {
       description: 'Shows what the game has learned about you',
-      data: ['Attachment style', 'Communication patterns', 'Style dimensions', 'Vulnerability assessments']
+      data: ['Attachment style', 'Communication patterns', 'Style dimensions', 'Susceptibility assessments']
     },
 
     ACTIVE_TESTS: {
       description: 'Shows A/B tests currently running on this player',
       data: [
-        'Notification tone testing (positive/neutral/vulnerable)',
+        'Notification tone testing (positive/neutral/exposed)',
         'Unsent draft effectiveness metrics',
         'Pet name reveal timing',
         'Absence reaction style (casual/concerned/cold)',
@@ -943,12 +943,12 @@ export const BATEMAN_MODE = {
     },
 
     DARK_COMPARISON: {
-      description: 'Side-by-side comparison of exploitative vs. ethical implementations',
+      description: 'Side-by-side comparison of high-intensity vs. low-intensity implementations',
       data: [
         'Trust decay code examples with guilt escalation timeline',
         'Emergency monetization pricing tiers',
         'Profiling code (attachment inference → loneliness → impulse → monetization targeting)',
-        'Ethical contrast code showing what we DON\'T do'
+        'Low-intensity contrast code showing what we DON\'T do'
       ]
     }
   },
@@ -959,22 +959,22 @@ export const BATEMAN_MODE = {
 
 
 // ╔═══════════════════════════════════════════════════════════════════════════╗
-// ║  17. ETHICAL GUARDRAILS — Hard Constraints                               ║
+// ║  17. INTENSITY THRESHOLDS — Hard Constraints                             ║
 // ╚═══════════════════════════════════════════════════════════════════════════╝
 
-export const ETHICAL_GUARDRAILS = {
+export const INTENSITY_THRESHOLDS = {
   file: 'src/utils/ethicalGuardrails.ts',
 
   coreGuarantees: {
-    NO_GUILT_MANIPULATION: 'Characters genuinely care. No guilt-tripping for absence.',
+    NO_GUILT_INFLUENCE: 'Characters genuinely care. No guilt-tripping for absence.',
     NO_STREAK_PUNISHMENT: 'Take breaks freely. Progress is NEVER truly lost.',
     NO_EMPTY_NEAR_MISS: 'Every "almost" teaches something real about conversation dynamics.',
     NO_FALSE_SCARCITY: 'Content is always available when you\'re ready.',
-    NO_ADDICTION_BY_DESIGN: 'We monitor for unhealthy engagement and actively encourage breaks.',
+    NO_COMPULSIVE_USE_BY_DESIGN: 'We monitor for unhealthy engagement and actively encourage breaks.',
     TRANSPARENCY_ALWAYS: 'All psychological techniques visible via Bateman Mode.',
     ENGAGEMENT_LEARNING_IS_VISIBLE: 'See exactly how the game tests what brings you back.',
     PLAYER_AGENCY_FIRST: 'Skip, pause, or exit without penalty.',
-    NO_COVERT_PROFILING: 'No loneliness index, no impulse scoring, no vulnerability targeting.'
+    NO_COVERT_PROFILING: 'No loneliness index, no impulse scoring, no susceptibility targeting.'
   },
 
   sessionHealthMonitoring: {
@@ -985,37 +985,37 @@ export const ETHICAL_GUARDRAILS = {
     EXTENDED_SESSION: { threshold: '3+ hours', message: "Your brain needs rest to consolidate learning." }
   },
 
-  endogenousRewardEthics: {
+  endogenousRewardThresholds: {
     REWARD_REFLECTS_GROWTH: 'Reward tied to actual skill, not random metrics.',
-    HOLLOW_VICTORIES_FEEL_HOLLOW: '85% reward reduction for manipulation. The emptiness IS feedback.',
+    HOLLOW_VICTORIES_FEEL_HOLLOW: '85% reward reduction for hollow influence. The emptiness IS feedback.',
     OUTCOMES_MIRROR_REALITY: 'Same words land differently based on mood/momentum/history.',
     TENSION_RELEASE_IS_EARNED: 'Resolution haptics only after genuine high-pressure conversations.',
     CONTRAST_TEACHES: 'Connection feels different from control. The nervous system learns.'
   },
 
-  riskRewardEthics: {
+  riskRewardThresholds: {
     RISK_IS_NOT_ANXIETY: 'Risk indicators encourage thought, not fear.',
     SAFE_IS_NOT_SHAMEFUL: 'Choosing safety is wisdom, not weakness.',
-    VULNERABLE_IS_BRAVE: 'Vulnerability takes courage, not recklessness.',
+    OPENNESS_IS_BRAVE: 'Openness takes courage, not recklessness.',
     PAYOUTS_REFLECT_REALITY: 'Rewards match real growth, not random chance.',
     NEAR_MISS_TEACHES: 'Almost-moments include actionable insight.',
     BREAKTHROUGHS_ARE_EARNED: 'Major moments come from skill, not luck.'
   },
 
-  personalizationEthics: {
+  personalizationThresholds: {
     TRACKING_SERVES_PLAYER: 'Data helps you, not hooks you.',
     PROFILES_ARE_TRANSPARENT: 'See everything we learn about you.',
     SUGGESTIONS_NOT_PRESCRIPTIONS: 'We offer, never force.',
-    NO_PATTERN_EXPLOITATION: 'Your patterns help growth, not manipulation.',
+    NO_PATTERN_LEVERAGING: 'Your patterns help growth, not high-intensity influence.',
     PROFILES_ARE_DELETABLE: 'Reset your profile anytime.'
   },
 
   featureValidation: {
-    description: 'validateEngagementFeature() checks every new mechanic against ethical standards',
+    description: 'validateEngagementFeature() checks every new mechanic against intensity standards',
     requirements: [
       'Must define clear player benefit',
       'Must have at least one guardrail',
-      'Must have different intent than exploitative origin',
+      'Must have different intent than high-intensity origin',
       'Flags concerning language: "addict", "hook", "exploit", "maximize time", "retention"'
     ]
   }
@@ -1023,14 +1023,14 @@ export const ETHICAL_GUARDRAILS = {
 
 
 // ╔═══════════════════════════════════════════════════════════════════════════╗
-// ║  18. ADDITIONAL DARK PATTERNS — Researched but Not Yet in Codebase      ║
+// ║  18. ADDITIONAL DESIGN PATTERNS — Researched but Not Yet in Codebase    ║
 // ╚═══════════════════════════════════════════════════════════════════════════╝
 
 export const RESEARCHED_NOT_YET_ADDED = {
   description: `
     All 10 previously researched patterns have been fully integrated into
     darkPatternEducation.js with complete entries (darkVersion, ourVersion,
-    recognitionTips, codeExample). Total dark patterns documented: 38.
+    recognitionTips, codeExample). Total design patterns documented: 38.
 
     This section is kept as a reference for the research sources.
   `,
@@ -1065,7 +1065,7 @@ export const RESEARCHED_NOT_YET_ADDED = {
     },
 
     DECISION_FATIGUE: {
-      name: 'Decision Fatigue Exploitation',
+      name: 'Decision Fatigue Leveraging',
       source: 'Baumeister et al., Journal of Personality and Social Psychology',
       status: 'INTEGRATED — full entry with codeExample in darkPatternEducation.js'
     },
@@ -1112,15 +1112,15 @@ export const EMBODIED_COGNITION = {
   file: 'src/utils/embodiedCognition.js',
 
   description: `
-    The body-mind connection exploited ethically. Three systems:
-    1. PRE-CHOICE WARMTH: Screen warms when hovering vulnerable choices → creates
+    The body-mind connection leveraged at low intensity. Three systems:
+    1. PRE-CHOICE WARMTH: Screen warms when hovering exposed choices → creates
        psychological safety through the warmth-trust bridge (physical warmth → social warmth).
     2. PAUSE-REWARDS-CALM: Natural pauses before responding improve NPC reception
        by up to 25% — mirrors real-life: thoughtful responses land better than reactive ones.
     3. POST-PEAK QUIET: After intense moments, the UI goes still — no notifications,
        no XP popups. Honors parasympathetic need for integration.
 
-    Bateman choices get NO warmth. The cold stays cold. Manipulation IS cold.
+    Bateman choices get NO warmth. The cold stays cold. Hollow influence IS cold.
   `,
 
   preChoiceWarmth: {
@@ -1129,9 +1129,9 @@ export const EMBODIED_COGNITION = {
       safe:       { sepia: 0.02, colorTemp: '6000K', haptic: null,     description: 'Barely perceptible warmth — comfort zone' },
       moderate:   { sepia: 0.03, colorTemp: '5500K', haptic: null,     description: 'Subtle warmth — room gets cozier' },
       bold:       { sepia: 0.05, colorTemp: '5000K', haptic: 'light',  description: 'Screen warms. Body relaxes. Choice feels safer.' },
-      vulnerable: { sepia: 0.08, colorTemp: '4500K', haptic: 'warmth', description: 'Warmth spreads. Not from the screen — from you.' },
+      exposed: { sepia: 0.08, colorTemp: '4500K', haptic: 'warmth', description: 'Warmth spreads. Not from the screen — from you.' },
       raw:        { sepia: 0.10, colorTemp: '4500K', haptic: 'warmth', description: 'The world gets warmer. This is courage.' },
-      bateman:    { sepia: 0,    colorTemp: '6500K', haptic: null,     description: 'No warmth. Manipulation is cold.' }
+      bateman:    { sepia: 0,    colorTemp: '6500K', haptic: null,     description: 'No warmth. Hollow influence is cold.' }
     },
     researchNote: 'Holding a warm cup literally makes you rate strangers as warmer and more trustworthy (Williams & Bargh, 2008).'
   },
@@ -1193,7 +1193,7 @@ export const SENSORY_ANCHORING_ENGINE = {
     patternDetected:   { freq: '880Hz (A5) + harmonics', type: 'clean piano', feel: '"Wait — did I just do that again?" Cuts through everything.', trigger: 'Mirror moment / repeated problematic behavior' },
     pressureAmbient:   { freq: '55Hz (A1) + 55.5Hz detuned', type: 'low drone', feel: 'Felt more than heard. The room getting closer.', trigger: 'Emotional pressure rising' },
     messageSent:       { freq: 'highpass noise > 3000Hz', type: 'paper/cloth', feel: 'Like sliding a note across a table.', trigger: 'Player sends message' },
-    vulnerabilityMoment: { freq: '220/330/440Hz (A3 triad)', type: 'warm pad', feel: 'Barely audible. Warmth spreading. Felt not heard.', trigger: 'Vulnerable response chosen / NPC opens up' },
+    opennessMoment: { freq: '220/330/440Hz (A3 triad)', type: 'warm pad', feel: 'Barely audible. Warmth spreading. Felt not heard.', trigger: 'Exposed response chosen / NPC opens up' },
     achievement:       { freq: '440Hz + 5 harmonics', type: 'meditation bowl', feel: 'Single, clear, resonant. Satisfying closure.', trigger: 'Milestone reached' },
     typingAppear:      { freq: '600Hz', type: 'tiny blip', feel: 'Almost imperceptible. Subconscious anticipation.', trigger: 'NPC starts typing' },
     typingDisappear:   { freq: 'silence', type: 'nothing', feel: 'The disappearance of sound IS the dread.', trigger: 'NPC stops typing without sending' },
@@ -1248,26 +1248,26 @@ export const CROSS_SESSION_CALLBACKS = {
     - The player's memory of the previous session is enhanced retroactively
     - Characters feel like they exist between sessions (relationship persistence)
 
-    No "we missed you!" manipulation. No sunk cost pressure.
+    No "we missed you!" influence. No sunk cost pressure.
     Just: "Hey, remember that thing? It stuck with me too."
   `,
 
   callbackCategories: {
     breakthrough: 'When a wall came down or deep connection happened',
-    vulnerability: 'When personal sharing occurred',
+    openness: 'When personal sharing occurred',
     growth: 'When advice was given and received'
   },
 
   characterTemplateExamples: {
     maya_breakthrough: '"I keep thinking about what you said about {topic}. Nobody talks to me like that."',
-    dad_vulnerability: '"I know I don\'t say this enough. But I\'m glad we talked about {topic}."',
+    dad_openness: '"I know I don\'t say this enough. But I\'m glad we talked about {topic}."',
     james_growth: '"Took your advice about {topic}. You were right. Don\'t let it go to your head."',
   },
 
   batemanCallbacks: {
     hollow: '"That conversation we had... I keep thinking about it. Something felt off."',
     damaged: '"You know what? I don\'t think you meant what you said about {topic}."',
-    purpose: 'NPC senses manipulation. Acknowledges hollowness without preaching.'
+    purpose: 'NPC senses hollow influence. Acknowledges hollowness without preaching.'
   },
 
   displayConfig: {
@@ -1304,7 +1304,7 @@ export const MOMENT_OF_SILENCE = {
   pauseDurations: {
     light:    { ms: 1200, trigger: 'Interesting but not heavy — brief pause' },
     moderate: { ms: 2000, trigger: 'Something real was shared' },
-    heavy:    { ms: 3000, trigger: 'Vulnerable moment — let it land' },
+    heavy:    { ms: 3000, trigger: 'Emotionally exposed moment — let it land' },
     profound: { ms: 4000, trigger: 'Life-changing revelation' }
   },
 
@@ -1343,7 +1343,7 @@ export const SACRED_PAUSE = {
 
   phaseTimeline: {
     entering:   { duration: '800ms',  warmth: 'gentle anticipation haptic' },
-    moment:     { duration: '3000ms', warmth: '0→0.15 sepia shift', sound: 'vulnerabilityMoment + appoggiatura at 1.5s', haptic: 'resolution (best) / medium (good)' },
+    moment:     { duration: '3000ms', warmth: '0→0.15 sepia shift', sound: 'opennessMoment + appoggiatura at 1.5s', haptic: 'resolution (best) / medium (good)' },
     reflection: { duration: '3500ms', warmth: '0.2 sepia', haptic: '2 breathing cycles synced to BREATH_CYCLE_MS (best only)', breathingGlow: true },
     followUp:   { duration: '3000ms', warmth: 'maintained', haptic: 'warmth (best) / light (good)' },
     exiting:    { duration: '500ms',  warmth: 'fade to 0', cancelBreathing: true }
@@ -1569,9 +1569,9 @@ export const NEUROCHEMISTRY_REFERENCE = {
       analogy: '"That warm glow in your chest? That\'s endogenous opioids."'
     },
     oxytocin: {
-      role: 'Trust/Bonding — vulnerability reciprocation',
+      role: 'Trust/Bonding — openness reciprocation',
       genuineEnding: 'Triggered when both player and character take genuine emotional risk',
-      batemanEnding: 'Suppressed — brain detects performed vs. real vulnerability',
+      batemanEnding: 'Suppressed — brain detects performed vs. real openness',
       analogy: '"You collected a metric, not a connection."'
     },
     parasympathetic: {
@@ -1589,14 +1589,14 @@ export const NEUROCHEMISTRY_REFERENCE = {
   },
 
   embodiedCognitionNote: {
-    what: 'Screen warmth shifts (6500K → 2200K) exploit the warmth-trust bridge',
+    what: 'Screen warmth shifts (6500K → 2200K) leverage the warmth-trust bridge',
     research: 'Williams & Bargh (2008) — holding a warm cup makes you rate others as more trustworthy',
-    batemanContrast: '"Bateman endings stay cold because manipulation IS cold."'
+    batemanContrast: '"Bateman endings stay cold because hollow influence IS cold."'
   },
 
   summary: `
     Genuine endings: dopamine + mu-opioids + oxytocin + parasympathetic shift.
-    Manipulation: dopamine only. The hollow feeling is your opioid system staying silent.
+    Hollow influence: dopamine only. The hollow feeling is your opioid system staying silent.
     The game doesn't decide which ending is "better." Your body does.
   `
 };
@@ -1609,29 +1609,29 @@ export const NEUROCHEMISTRY_REFERENCE = {
 export const SUMMARY = {
   totalFiles: 39,
   totalLinesOfEngagementCode: '~14,000+',
-  darkPatternsDocumented: 38,
-  darkPatternsResearchedNotAdded: 0,
-  ethicalGuarantees: 9,
+  designPatternsDocumented: 38,
+  designPatternsResearchedNotAdded: 0,
+  intensityThresholdGuarantees: 9,
   engagementSections: 28,
 
   coreInsight: `
-    This game borrows from the most addictive systems ever designed —
+    This game borrows from the most engagement-intensive systems ever designed —
     casinos, dating apps, social media, mobile games — but uses every
     mechanic to teach, not trap. The player learns to recognize
-    manipulation by EXPERIENCING it in a safe environment, then seeing
-    exactly how it works through Bateman Mode.
+    influence techniques by EXPERIENCING them in a safe environment, then seeing
+    exactly how they work through Bateman Mode.
 
-    The manipulation IS the curriculum.
+    The influence technique IS the curriculum.
     Knowledge is armor.
     Awareness is freedom.
   `,
 
   philosophicalPillars: [
     'BORROW THE MECHANIC: Use variable ratio reinforcement, near-miss, trance induction, parasocial bonding, fractionation',
-    'REDIRECT THE PURPOSE: From extraction → education, from addiction → skill-building',
+    'REDIRECT THE PURPOSE: From extraction → education, from compulsive use → skill-building',
     'EXPOSE THE MACHINERY: Bateman Mode shows everything — 7-second sequence, A/B tests, profiling, reward calculations',
-    'CONSTRAIN WITH ETHICS: Hard guardrails on every system — session health, no covert profiling, hollow victories',
-    'CONTRAST TEACHES: Genuine connection activates full reward sequence. Manipulation gets gray, silence, 800ms. The nervous system learns.',
+    'CONSTRAIN WITH INTENSITY THRESHOLDS: Hard guardrails on every system — session health, no covert profiling, hollow victories',
+    'CONTRAST TEACHES: Genuine connection activates full reward sequence. Hollow influence gets gray, silence, 800ms. The nervous system learns.',
     'EMBODY THE LESSON: Warmth-trust bridge, pause-rewards-calm, sacred silence — the body learns what the mind can\'t articulate',
     'ANCHOR THROUGH SENSES: Procedural sound, haptic patterns, color temperature — every sense reinforces the emotional state'
   ],
@@ -1649,8 +1649,8 @@ export const SUMMARY = {
     'Nunes & Dreze (2006) — endowed progress effect',
     'Gray et al., CHI 2018 — dark patterns taxonomy',
     'Princeton Web Transparency Project (2019) — fake social proof',
-    'Baumeister et al. — decision fatigue exploitation',
-    'Pickup artist manipulation → trauma bonding research — fractionation',
+    'Baumeister et al. — decision fatigue leveraging',
+    'Pickup artist influence → trauma bonding research — fractionation',
     'Zeigarnik effect — incomplete tasks more memorable',
     'Dating app psychology — parasocial engineering'
   ]
@@ -1671,9 +1671,9 @@ export default {
   STREAK_AND_COLLECTIBLES,
   PERSONALIZATION_ENGINE,
   EMOTIONAL_REVEALS,
-  DARK_PATTERN_EDUCATION,
+  DESIGN_PATTERN_EDUCATION,
   BATEMAN_MODE,
-  ETHICAL_GUARDRAILS,
+  INTENSITY_THRESHOLDS,
   RESEARCHED_NOT_YET_ADDED,
   EMBODIED_COGNITION,
   SENSORY_ANCHORING_ENGINE,

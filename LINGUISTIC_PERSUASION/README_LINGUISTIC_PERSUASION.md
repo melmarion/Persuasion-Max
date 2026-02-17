@@ -102,14 +102,14 @@
   3. Trust architecture (grooming, escalation)
   4. Platform mechanics (gamification, streaks, infinite scroll)
   5. Physiological validation (pupil, blink, skin conductance, HRV)
-  6. Vulnerable populations (children, elderly, neurodivergent)
+  6. High-susceptibility populations (children, elderly, neurodivergent)
   7. Economic influence (pricing, decoys, subscription traps)
   8. AI-specific (LLM detection, deepfake, personalization)
-  9. Intervention effectiveness (media literacy, inoculation, friction)
+  9. Strategy effectiveness (media literacy, inoculation, friction)
   10. Regulatory compliance (FTC, EU DSA, AI Act, GDPR)
 - 9 high-impact specialized detectors:
   1. Synergistic stacking (15+ known synergies)
-  2. Vulnerability timing (circadian windows)
+  2. Susceptibility timing (circadian windows)
   3. Trust leverage sequence (8 stages)
   4. Physiological bypassing (5 mechanisms)
   5. AI amplification

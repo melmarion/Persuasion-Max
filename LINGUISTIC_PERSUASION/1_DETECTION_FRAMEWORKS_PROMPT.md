@@ -749,7 +749,7 @@ class ComprehensivePersuasionAudit:
             "content_analyzed": text[:100] + "..." if len(text) > 100 else text,
             "stimuli_scores": {},
             "composite_score": 0,
-            "vulnerability_profile": {},
+            "susceptibility_profile": {},
             "risk_assessment": {}
         }
 

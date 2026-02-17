@@ -1989,7 +1989,7 @@ class CompositeScorer:
 
     def _get_description(self, classification: str) -> str:
         descriptions = {
-            "LOW": "Ethical messaging with minimal influence tactics",
+            "LOW": "Low-intensity messaging with minimal influence tactics",
             "MODERATE": "Some targeting present, standard marketing",
             "HIGH": "Sophisticated influence strategy detected",
             "EXTREME": "Intensive influence tactics deployed"

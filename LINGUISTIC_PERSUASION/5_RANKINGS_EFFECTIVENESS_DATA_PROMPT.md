@@ -28,7 +28,7 @@
 Rankings are based on:
 1. **Effect Size from Research** (40%) - Cohen's d, percentage increases, meta-analysis findings
 2. **Mechanism Synergy** (25%) - How well techniques amplify each other neurologically/psychologically
-3. **Target Vulnerability Depth** (20%) - How fundamental the leveraged cognitive mechanism
+3. **Target Susceptibility Depth** (20%) - How fundamental the leveraged cognitive mechanism
 4. **Real-World Application Success** (15%) - Documented effectiveness in field studies, regulatory cases
 
 ---
@@ -424,14 +424,14 @@ RANK_13_COMBINATION = {
 
 ```python
 RANK_14_COMBINATION = {
-    'name': 'Vulnerability Targeting',
+    'name': 'Susceptibility Targeting',
     'techniques': ['emotional_state_detection', 'algorithmic_targeting', 'personalization'],
     'multiplier': 1.50,
     'mechanism': '''
-        1. Algorithm detects vulnerable emotional state
+        1. Algorithm detects susceptible emotional state
         2. Targets content specifically during that window
-        3. Personalization ensures relevance to vulnerability
-        Result: Message arrives precisely when defenses are lowest
+        3. Personalization ensures relevance to susceptibility
+        Result: Message arrives precisely when resistance is lowest
     ''',
     'research_basis': [
         'TikTok emotional detection: 94% accuracy claimed',
@@ -670,10 +670,10 @@ AI_AMPLIFICATION_FACTORS = {
         'detection_failure_rate': 0.76,  # 76% of advanced bots undetected
         'note': 'Fake engagement can make any social proof claim seem valid'
     },
-    'algorithmic_vulnerability_targeting': {
+    'algorithmic_susceptibility_targeting': {
         'base_boost': 1.50,
         'emotional_state_accuracy': 0.94,  # TikTok claim
-        'note': 'Content delivered precisely during vulnerability windows'
+        'note': 'Content delivered precisely during susceptibility windows'
     },
     'deepfake_authority': {
         'base_boost': 1.35,
@@ -695,7 +695,7 @@ AI_ENHANCED_RANK_1 = {
     'ai_enhancements': {
         'deepfake_authority': 1.35,  # Synthetic expert
         'personalization': 1.27,     # Tailored message
-        'vulnerability_targeting': 1.50  # Delivered at optimal time
+        'susceptibility_targeting': 1.50  # Delivered at optimal time
     },
     'total_potential_multiplier': 2.5 * 1.35 * 1.27 * 1.50,  # = 6.43x
     'warning': 'This represents near-maximum influence potential'
@@ -946,7 +946,7 @@ Personalization dimensions that compound:
 |-------------|--------|
 | Morning (6-10am) | High cognitive resources; peak rationality |
 | Afternoon (2-6pm) | Risk tolerance peak; variety-seeking elevated |
-| Evening (6pm-12am) | Decision fatigue; impulse vulnerability 3.2x higher |
+| Evening (6pm-12am) | Decision fatigue; impulse susceptibility 3.2x higher |
 | Late night (10pm-3am) | Temporal disorientation; highest susceptibility to flow |
 
 #### Time-of-Day Modifiers (Empirically Supported)
@@ -1069,7 +1069,7 @@ Cross-cultural variance explained by:
 
 | Demographic | Responsiveness |
 |-------------|----------------|
-| Adolescents (13-19) | 4.2x engagement to VRS; elevated vulnerability |
+| Adolescents (13-19) | 4.2x engagement to VRS; elevated susceptibility |
 | Young Adults (20-30) | Peak FOMO responsiveness (beta=0.783) |
 | Adults (30+) | Cognitive moderation effects; lower pattern responsiveness |
 | Older Adults (50+) | Lowest overall responsiveness; intrinsic motivation primary |
@@ -1142,7 +1142,7 @@ Cross-cultural variance explained by:
 | Social proof then Scarcity | Validated urgency | MEDIUM |
 | Threat prime then Loss frame | Receptivity boost | MEDIUM |
 | Near-miss then Offer | Emotional leverage | MEDIUM |
-| Identity then Loss frame | Amplified protection | LOW |
+| Identity then Loss frame | Amplified response | LOW |
 | Priming effect size | d = 0.29-0.41 | MEDIUM |
 
 #### Optimal Deployment Sequences
@@ -1157,7 +1157,7 @@ Cross-cultural variance explained by:
 - **Unexpected frames:** Force more extensive cognitive processing
 - **Frame sequence determines emotional state:**
   - Gain-frames lead to Positive emotion (elicit approach)
-  - Loss-frames lead to Negative emotion (elicit avoidance-then-protection)
+  - Loss-frames lead to Negative emotion (elicit avoidance-then-action)
 - **Content order variation:** Non-identical sequences extend engagement
 - **Priming effects:** Supraliminal (d=0.29) < Subliminal (d=0.41)
 - **Source credibility must precede claims for amplification**
@@ -1279,7 +1279,7 @@ Standard statistical power considerations apply. Effect sizes from meta-analyses
 - All multi-pattern interaction multipliers
 - Pattern-specific fatigue half-lives
 - Cross-pattern immunity effects
-- Adolescent vulnerability moderators
+- Adolescent susceptibility moderators
 
 #### Summary: Evidence Strength by Research Question
 
@@ -1549,35 +1549,35 @@ Three distinct profiles identified:
 - **Low NFC**: Equally persuaded by weak and strong arguments
 - High NFC attitudes show **greater persistence** and **resistance to counterpersuasion**
 
-#### Detection Framework: Vulnerability Profiling
+#### Detection Framework: Susceptibility Profiling
 
 ```python
 class IndividualDifferenceProfiler:
     """
-    Profile vulnerability based on individual difference factors.
+    Profile susceptibility based on individual difference factors.
     Research basis: Big Five, NFC, age, and personality profile research.
     """
 
-    PERSONALITY_VULNERABILITY_MAP = {
+    PERSONALITY_SUSCEPTIBILITY_MAP = {
         "high_neuroticism": {
-            "vulnerable_to": ["social_proof", "social_learning", "fear_appeals"],
+            "susceptible_to": ["social_proof", "social_learning", "fear_appeals"],
             "multiplier": 1.3
         },
         "high_openness": {
-            "vulnerable_to": ["all_strategies"],
+            "susceptible_to": ["all_strategies"],
             "multiplier": 1.2
         },
         "low_conscientiousness": {
-            "vulnerable_to": ["social_proof", "social_learning", "impulse_appeals"],
+            "susceptible_to": ["social_proof", "social_learning", "impulse_appeals"],
             "multiplier": 1.25
         },
         "high_agreeableness": {
-            "vulnerable_to": ["liking", "reciprocity"],
+            "susceptible_to": ["liking", "reciprocity"],
             "multiplier": 1.3
         }
     }
 
-    AGE_VULNERABILITY_PATTERNS = {
+    AGE_SUSCEPTIBILITY_PATTERNS = {
         "older_adults": {
             "increased_susceptibility": ["impulsive_influence", "stereotype_effects"],
             "decreased_susceptibility": ["complex_arguments"],
@@ -1603,30 +1603,30 @@ class IndividualDifferenceProfiler:
         }
     }
 
-    def generate_vulnerability_profile(self,
+    def generate_susceptibility_profile(self,
                                        personality_indicators: Dict = None,
                                        age_group: str = None,
                                        cognitive_indicators: Dict = None) -> Dict:
-        """Generate a vulnerability profile based on available indicators."""
+        """Generate a susceptibility profile based on available indicators."""
 
         profile = {
-            "vulnerability_factors": [],
+            "susceptibility_factors": [],
             "response_factors": [],
             "susceptible_techniques": [],
             "resistance_patterns": [],
-            "overall_vulnerability_score": 50
+            "overall_susceptibility_score": 50
         }
 
         if personality_indicators:
             for trait, level in personality_indicators.items():
-                if trait in self.PERSONALITY_VULNERABILITY_MAP:
-                    pattern = self.PERSONALITY_VULNERABILITY_MAP[trait]
-                    profile["susceptible_techniques"].extend(pattern["vulnerable_to"])
-                    profile["overall_vulnerability_score"] *= pattern["multiplier"]
-                    profile["vulnerability_factors"].append(f"{trait}: +{(pattern['multiplier']-1)*100:.0f}% susceptibility")
+                if trait in self.PERSONALITY_SUSCEPTIBILITY_MAP:
+                    pattern = self.PERSONALITY_SUSCEPTIBILITY_MAP[trait]
+                    profile["susceptible_techniques"].extend(pattern["susceptible_to"])
+                    profile["overall_susceptibility_score"] *= pattern["multiplier"]
+                    profile["susceptibility_factors"].append(f"{trait}: +{(pattern['multiplier']-1)*100:.0f}% susceptibility")
 
-        if age_group and age_group in self.AGE_VULNERABILITY_PATTERNS:
-            age_pattern = self.AGE_VULNERABILITY_PATTERNS[age_group]
+        if age_group and age_group in self.AGE_SUSCEPTIBILITY_PATTERNS:
+            age_pattern = self.AGE_SUSCEPTIBILITY_PATTERNS[age_group]
             profile["susceptible_techniques"].extend(age_pattern.get("increased_susceptibility", []))
             profile["response_factors"].extend(age_pattern.get("response_factors", []))
 
@@ -1635,13 +1635,13 @@ class IndividualDifferenceProfiler:
             if nfc_level == "high":
                 profile["resistance_patterns"].append("Resistant to weak arguments")
                 profile["resistance_patterns"].append("High attitude persistence")
-                profile["overall_vulnerability_score"] *= 0.7
+                profile["overall_susceptibility_score"] *= 0.7
             elif nfc_level == "low":
                 nfc_pattern = self.COGNITIVE_STYLE_FACTORS["low_need_for_cognition"]
                 profile["susceptible_techniques"].extend(nfc_pattern["susceptible_to"])
-                profile["overall_vulnerability_score"] *= 1.3
+                profile["overall_susceptibility_score"] *= 1.3
 
-        profile["overall_vulnerability_score"] = min(profile["overall_vulnerability_score"], 100)
+        profile["overall_susceptibility_score"] = min(profile["overall_susceptibility_score"], 100)
         return profile
 ```
 ---
@@ -1652,8 +1652,8 @@ class IndividualDifferenceProfiler:
 
 **Meta-Analytic Evidence:**
 - Inoculation treatments reduce endorsement of misinformation: **d = −0.36** (Lu et al., 2023)
-- Provides "umbrella protection" against attacks not specifically addressed
-- Both refutational-same and refutational-different treatments confer protection
+- Provides "umbrella coverage" against approaches not specifically addressed
+- Both refutational-same and refutational-different treatments confer resistance
 
 **Source:** Countering misinformation through psychological inoculation (ScienceDirect, 2023)
 
@@ -1802,42 +1802,42 @@ class ResistanceAnalyzer:
 
 **Critical Note:** Effect may depend on **beliefs about willpower**. People who believe willpower is unlimited don't show depletion effects. Meta-analytic evidence is mixed.
 
-#### Detection Framework: Temporal Vulnerability
+#### Detection Framework: Temporal Susceptibility
 
 ```python
-class TemporalVulnerabilityAnalyzer:
+class TemporalSusceptibilityAnalyzer:
     """
-    Analyze temporal and state-based vulnerability factors.
+    Analyze temporal and state-based susceptibility factors.
     """
 
-    TIME_VULNERABILITY = {
+    TIME_SUSCEPTIBILITY = {
         "early_morning": {
             "hours": (5, 8),
-            "vulnerability_factors": ["pre-cortisol peak", "reduced vigilance"],
+            "susceptibility_factors": ["pre-cortisol peak", "reduced vigilance"],
             "decision_quality": "Lower accuracy, slower processing",
             "persuasion_susceptibility": "ELEVATED for peripheral cues"
         },
         "mid_morning": {
             "hours": (9, 12),
-            "vulnerability_factors": ["optimal for morning types"],
+            "susceptibility_factors": ["optimal for morning types"],
             "decision_quality": "Peak for morning chronotypes",
             "persuasion_susceptibility": "BASELINE"
         },
         "afternoon": {
             "hours": (13, 17),
-            "vulnerability_factors": ["post-lunch dip", "decision fatigue accumulation"],
+            "susceptibility_factors": ["post-lunch dip", "decision fatigue accumulation"],
             "decision_quality": "Declining accuracy",
             "persuasion_susceptibility": "MODERATE elevation"
         },
         "evening": {
             "hours": (18, 22),
-            "vulnerability_factors": ["prefrontal fatigue", "accumulated stress"],
+            "susceptibility_factors": ["prefrontal fatigue", "accumulated stress"],
             "decision_quality": "Faster but less accurate for morning types",
             "persuasion_susceptibility": "ELEVATED"
         },
         "late_night": {
             "hours": (22, 5),
-            "vulnerability_factors": ["sleep pressure", "reduced executive function"],
+            "susceptibility_factors": ["sleep pressure", "reduced executive function"],
             "decision_quality": "Impaired decision-making",
             "persuasion_susceptibility": "HIGH"
         }
@@ -1847,72 +1847,72 @@ class TemporalVulnerabilityAnalyzer:
         "happy": {
             "processing_depth": "SHALLOW (peripheral route)",
             "argument_scrutiny": "LOW - equally persuaded by weak/strong arguments",
-            "vulnerability_pattern": "Susceptible to heuristics and source cues"
+            "susceptibility_pattern": "Susceptible to heuristics and source cues"
         },
         "sad": {
             "processing_depth": "DEEP (central route)",
             "argument_scrutiny": "HIGH - only persuaded by strong arguments",
-            "vulnerability_pattern": "Resistant to weak arguments but vulnerable to strong ones"
+            "susceptibility_pattern": "Resistant to weak arguments but susceptible to strong ones"
         },
         "anxious": {
             "processing_depth": "VARIABLE",
             "argument_scrutiny": "Reduced capacity for elaboration",
-            "vulnerability_pattern": "Susceptible to fear appeals and urgency"
+            "susceptibility_pattern": "Susceptible to fear appeals and urgency"
         },
         "depleted": {
             "processing_depth": "SHALLOW",
             "argument_scrutiny": "LOW - agreement increases but behavior change limited",
-            "vulnerability_pattern": "Likely to agree; may fall back on habits"
+            "susceptibility_pattern": "Likely to agree; may fall back on habits"
         }
     }
 
-    def analyze_temporal_vulnerability(self,
+    def analyze_temporal_susceptibility(self,
                                        hour_of_day: int = None,
                                        mood_state: str = None,
                                        prior_decision_count: int = None,
                                        chronotype: str = None) -> Dict:
-        """Analyze vulnerability based on temporal and state factors."""
+        """Analyze susceptibility based on temporal and state factors."""
 
-        vulnerability_score = 50
+        susceptibility_score = 50
         factors = []
         recommendations = []
 
         if hour_of_day is not None:
-            for period, data in self.TIME_VULNERABILITY.items():
+            for period, data in self.TIME_SUSCEPTIBILITY.items():
                 start, end = data["hours"]
                 if start <= hour_of_day < end or (end < start and (hour_of_day >= start or hour_of_day < end)):
-                    factors.extend(data["vulnerability_factors"])
+                    factors.extend(data["susceptibility_factors"])
                     if data["persuasion_susceptibility"] == "HIGH":
-                        vulnerability_score += 25
+                        susceptibility_score += 25
                         recommendations.append("HIGH-RISK TIME: Delay important decisions if possible")
                     elif data["persuasion_susceptibility"] == "ELEVATED":
-                        vulnerability_score += 15
+                        susceptibility_score += 15
 
                     if chronotype:
                         if chronotype == "morning" and hour_of_day >= 18:
-                            vulnerability_score += 20
+                            susceptibility_score += 20
                             factors.append("CIRCADIAN MISMATCH: Morning type in evening")
                         elif chronotype == "evening" and hour_of_day < 12:
-                            vulnerability_score += 20
+                            susceptibility_score += 20
                             factors.append("CIRCADIAN MISMATCH: Evening type in morning")
 
         if mood_state and mood_state in self.MOOD_PROCESSING_PATTERNS:
             pattern = self.MOOD_PROCESSING_PATTERNS[mood_state]
             if mood_state in ["happy", "depleted"]:
-                vulnerability_score += 15
-                factors.append(f"{mood_state.upper()} state: {pattern['vulnerability_pattern']}")
+                susceptibility_score += 15
+                factors.append(f"{mood_state.upper()} state: {pattern['susceptibility_pattern']}")
 
         if prior_decision_count:
             if prior_decision_count > 15:
-                vulnerability_score += 25
+                susceptibility_score += 25
                 factors.append(f"DECISION FATIGUE: {prior_decision_count} prior decisions (threshold: 10-15)")
             elif prior_decision_count > 10:
-                vulnerability_score += 15
+                susceptibility_score += 15
                 factors.append(f"Moderate decision load: {prior_decision_count} decisions")
 
         return {
-            "temporal_vulnerability_score": min(vulnerability_score, 100),
-            "vulnerability_factors": factors,
+            "temporal_susceptibility_score": min(susceptibility_score, 100),
+            "susceptibility_factors": factors,
             "recommendations": recommendations,
             "mood_processing_pattern": self.MOOD_PROCESSING_PATTERNS.get(mood_state, {}),
             "research_basis": [
@@ -2176,7 +2176,7 @@ class PersistenceAnalyzer:
 | **Combination optimization** | Studies examine 1-2 features | Test specific multi-principle combinations |
 | **Saturation thresholds** | General patterns known | Platform-specific optimal frequencies |
 | **Personality × Technique** | Some correlations found | Predictive models for targeting |
-| **Circadian × Persuasion** | Limited direct research | Time-based vulnerability mapping |
+| **Circadian × Persuasion** | Limited direct research | Time-based susceptibility mapping |
 | **Cultural × Digital** | Theoretical frameworks exist | Cross-platform cultural analysis |
 | **Resistance training efficacy** | Inoculation works | Long-term retention of resistance |
 | **Sleeper effect in digital** | Classic studies in mass media | Social media specific patterns |
@@ -2185,7 +2185,7 @@ class PersistenceAnalyzer:
 #### Recommended Research Directions
 
 1. **Combination Effect Studies** - Test specific Cialdini principle combinations; measure synergy/antagonism effects quantitatively
-2. **Individual Difference Validation** - Validate personality-susceptibility mappings across platforms; develop practical vulnerability assessment tools
+2. **Individual Difference Validation** - Validate personality-susceptibility mappings across platforms; develop practical susceptibility assessment tools
 3. **Temporal Optimization Analysis** - Map persuasion effectiveness by time of day; test circadian mismatch effects on ad conversion
 4. **Saturation/Fatigue Modeling** - Establish platform-specific optimal frequency curves; test recovery rates after saturation
 5. **Resistance Intervention Efficacy** - Test prebunking durability over time; compare intervention modalities
@@ -2326,9 +2326,9 @@ class ExpandedRankedCombinationDetector:
             techniques=("social_proof", "fomo", "social_comparison"), multiplier=1.52, tier="moderate",
             mechanism="Action to match peers", detection_difficulty=0.3,
             typical_applications=["Course launches", "Social media"], defenses=["Your situation is unique"]),
-        RankedCombination(rank=14, name="Vulnerability Targeting",
+        RankedCombination(rank=14, name="Susceptibility Targeting",
             techniques=("emotional_state_detection", "algorithmic_targeting", "personalization"), multiplier=1.50, tier="moderate",
-            mechanism="Message arrives when defenses lowest", detection_difficulty=0.8,
+            mechanism="Message arrives when resistance lowest", detection_difficulty=0.8,
             typical_applications=["Targeted advertising"], defenses=["Delay decisions when emotional"]),
         RankedCombination(rank=15, name="Checkout Influence Stack",
             techniques=("cognitive_load", "default_application", "drip_pricing"), multiplier=1.48, tier="moderate",
@@ -2373,7 +2373,7 @@ class ExpandedRankedCombinationDetector:
         'commitment': [r'you already', r'you\'ve invested', r'come this far'],
         'guilt': [r'disappoint', r'let down', r'sad to see', r'we\'ll miss'],
         'anchoring': [r'was \$[\d,]+', r'save \$[\d,]+', r'\d+% off', r'compare at'],
-        'fear': [r'warning', r'danger', r'protect', r'risk', r'vulnerable'],
+        'fear': [r'warning', r'danger', r'protect', r'risk', r'susceptible'],
         'liking': [r'friend', r'community', r'family', r'together'],
         'fomo': [r'missing out', r'everyone', r'don\'t miss', r'happening now'],
         'infinite_scroll': ['infinite_scroll', 'endless_feed'],
@@ -2532,7 +2532,7 @@ class PrecisionInfluenceAuditor:
     All metrics are research-backed with specific thresholds:
     - Intensity scores: 0-1 scale, calibrated against research baselines
     - Frequency counts: Per-page/per-session measurements
-    - Timing metrics: Vulnerability window alignment in seconds/minutes
+    - Timing metrics: Susceptibility window alignment in seconds/minutes
     - Economic metrics: Discount percentages, price anchor ratios
     """
 
@@ -2625,7 +2625,7 @@ class PrecisionInfluenceAuditor:
         'fear': {
             'patterns': [
                 (r'(danger|warning|alert|threat)', 0.85, 'threat_words'),
-                (r'(risk|vulnerable|exposed)', 0.75, 'vulnerability'),
+                (r'(risk|susceptible|exposed)', 0.75, 'susceptibility'),
                 (r'(protect|security|safe)', 0.5, 'protection_appeal'),
                 (r'before\s*it\'?s?\s*too\s*late', 0.8, 'finality_fear'),
                 (r'(attack|breach|compromised)', 0.9, 'security_threat'),
@@ -2730,9 +2730,9 @@ class PrecisionInfluenceAuditor:
         if context:
             result.metrics.append(self._measure_decision_fatigue(context))
 
-        # 7. CIRCADIAN VULNERABILITY
+        # 7. CIRCADIAN SUSCEPTIBILITY
         if context and 'local_hour' in context:
-            result.metrics.append(self._measure_circadian_vulnerability(context['local_hour']))
+            result.metrics.append(self._measure_circadian_susceptibility(context['local_hour']))
 
         # 8. STACKING DEPTH
         active_techniques = [t for t, s in technique_scores.items() if s > 0.3]
@@ -2923,22 +2923,22 @@ class PrecisionInfluenceAuditor:
             metric.severity = "normal"
         return metric
 
-    def _measure_circadian_vulnerability(self, hour: int) -> AuditMetric:
-        hour_vulnerability = {
+    def _measure_circadian_susceptibility(self, hour: int) -> AuditMetric:
+        hour_susceptibility = {
             0: 0.6, 1: 0.7, 2: 0.9, 3: 0.9, 4: 0.8, 5: 0.6,
             6: 0.4, 7: 0.2, 8: 0.1, 9: 0.1, 10: 0.1, 11: 0.1,
             12: 0.2, 13: 0.3, 14: 0.4, 15: 0.3, 16: 0.2, 17: 0.2,
             18: 0.2, 19: 0.2, 20: 0.3, 21: 0.4, 22: 0.5, 23: 0.6
         }
-        vulnerability = hour_vulnerability.get(hour, 0.3)
+        susceptibility = hour_susceptibility.get(hour, 0.3)
         metric = AuditMetric(
-            name="circadian_vulnerability", value=vulnerability, unit="vulnerability_score",
+            name="circadian_susceptibility", value=susceptibility, unit="susceptibility_score",
             threshold_low=0.3, threshold_medium=0.5, threshold_high=0.7,
             confidence=0.75, evidence=[f"Local hour: {hour}:00"]
         )
         if 2 <= hour <= 4:
             metric.severity = "critical"
-            metric.evidence.append("Peak vulnerability: 2-4 AM cognitive low")
+            metric.evidence.append("Peak susceptibility: 2-4 AM cognitive low")
         elif hour <= 1 or hour >= 22:
             metric.severity = "high"
             metric.evidence.append("Late night: reduced critical thinking")

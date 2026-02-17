@@ -18,7 +18,7 @@ This positions you to own an entire market that doesn't yet exist.
 
 ## YOUR RESEARCH THESIS
 
-**Question:** How do algorithms leverage psychological vulnerabilities through emotional sequencing to override rational decision-making?
+**Question:** How do algorithms leverage psychological susceptibility patterns through emotional sequencing to override rational decision-making?
 
 **Why only you can answer it:**
 - Tech researchers optimize algorithms without understanding the psychology (you explain WHY)
@@ -80,8 +80,8 @@ Using your research data to build predictive systems:
    - Given: Their personality, feed sequence, physiological state
    - Use: Identify susceptible moments for analytical feedback
 
-5. **Intervention Effectiveness Simulator**
-   - Shows which defenses work best for which person
+5. **Strategy Effectiveness Simulator**
+   - Shows which countermeasures work best for which person
    - Personalizes treatment plans
    - Use: Evidence-based digital engagement treatment
 
@@ -154,7 +154,7 @@ Making your methods standard in the field:
 - Result: Established as expert; tools in use by researchers
 
 ### Year 2: Scale & Commercialize
-- Months 12-18: Intervention research + Tier 3 tools
+- Months 12-18: Strategy research + Tier 3 tools
 - Months 18-24: Clinical/educational partnerships + Tier 4 tools
 - Papers: 3-5 more publications
 - Tools: Real-time detector launched (freemium)
@@ -205,7 +205,7 @@ Every system you design has more power because it's validated by research.
 
 ### Step 3: Start Building Tools (Month 1)
 - Fractionation Detection Algorithm (simplest, highest research utility)
-- Personal Vulnerability Scanner (define what you're measuring)
+- Personal Susceptibility Scanner (define what you're measuring)
 - Physiological Measurement Suite (data pipeline)
 
 ### Step 4: Collect Data & Iterate (Months 2-6)

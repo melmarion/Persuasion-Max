@@ -1069,7 +1069,7 @@ THRESHOLDS:
 ### 1. The Three-Voice Modulation Protocol
 **Technique:** Operate with three vocal registers simultaneously: gravis (low, authoritative baseline), acutus (sharp, accusatory spikes), and inflexus (trembling, pathos-inducing vibrato). Switch between them mid-sentence.
 
-**Mechanism:** The low voice activates submission responses, the tremor triggers protective instincts, and the sharp spikes create startle responses. The audience's nervous system cannot process three intensity levels simultaneously, defaulting to emotional compliance.
+**Mechanism:** The low voice activates submission responses, the tremor triggers caregiving instincts, and the sharp spikes create startle responses. The audience's nervous system cannot process three intensity levels simultaneously, defaulting to emotional compliance.
 
 **Detection Markers:**
 - Pitch variance >50Hz within single sentence
@@ -1081,7 +1081,7 @@ THRESHOLDS:
 ### 2. The "Careful Negligence" Camouflage
 **Technique:** Deliberately create hiatus (vowel clashes) and avoid elegant word-joining 30% of the time. Use simple vocabulary for 60% of speech, but place a single powerful metaphor in the middle.
 
-**Mechanism:** When technique is invisible, opponents cannot address it. The apparent "flaws" create perceived authenticity, while the single embedded metaphor carries the persuasive payload. Makes listeners think "I could do that," reducing psychological defenses.
+**Mechanism:** When technique is invisible, opponents cannot address it. The apparent "flaws" create perceived authenticity, while the single embedded metaphor carries the persuasive payload. Makes listeners think "I could do that," reducing psychological resistance.
 
 **Detection Markers:**
 - Deliberate grammatical roughness ratio
@@ -1231,7 +1231,7 @@ THRESHOLDS:
 
 **Detection Markers:**
 - Suffering → Flaw → Performance sequence
-- Pre-emptive vulnerability disclosure
+- Pre-emptive candor disclosure
 - Skill display following disadvantage narrative
 
 ---
@@ -2784,7 +2784,7 @@ Language is not merely a vehicle for psychological content — it is itself a pe
 6. **Discourse markers** that guide reasoning (+34% compliance with "because")
 7. **Hedging patterns** that calibrate certainty strategically (85/100 effectiveness)
 8. **Register choices** that signal authority or intimacy (78/100 effectiveness)
-9. **Personality matching** that targets individual vulnerabilities (+24-31% effectiveness)
+9. **Personality matching** that targets individual susceptibilities (+24-31% effectiveness)
 
 **Key Insight:** Many linguistic influence techniques operate below conscious awareness. Listeners focus on *what* is said while the *how* shapes their response. The most effective techniques combine LOW AWARENESS with HIGH EFFECTIVENESS.
 

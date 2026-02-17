@@ -25,7 +25,7 @@
 - **Ego** provides socially acceptable justifications for unconscious desires
 - **Group Psychology**: Individuals in crowds regress to shared archetypal patterns (father, hero, rebel)
 
-**Vulnerabilities Identified:**
+**Susceptibilities Identified:**
 - People cannot accurately report their own motivations
 - Symbolic substitutes can satisfy repressed wishes
 - Group membership activates unconscious conformity
@@ -211,7 +211,7 @@ Cialdini proved the principles work. Kahneman showed WHY—by mapping cognitive 
 - **Modern application:** Terrorism amplified by news = overestimated danger; FOMO via Instagram
 
 #### 4. Sunk Cost Fallacy
-- Money already spent irrationally drives future behavior. Drive through dangerous snow for expensive ticket but not free
+- Money already spent irrationally drives future behavior. Drive through significant snow for expensive ticket but not free
 - **Modern application:** Free trial + setup time = sunk cost = less likely to cancel
 
 #### 5. Endowment Effect
@@ -275,8 +275,8 @@ Everything before used averaged principles. AI uses individual prediction.
 
 **4 Emerging Capabilities:**
 
-#### 1. Hyper-Personalized Persuasion (Individual Vulnerability Mapping)
-- Hundreds of data points per user; ML identifies YOUR specific vulnerabilities
+#### 1. Hyper-Personalized Persuasion (Individual Susceptibility Mapping)
+- Hundreds of data points per user; ML identifies YOUR specific susceptibilities
 - Identity-locked to outgroup hostility? Algorithm shows more outgroup. Susceptible to scarcity? Shows "limited" content. Crave validation? Shows engagement metrics.
 
 #### 2. Real-Time Emotional Calibration
@@ -317,7 +317,7 @@ PLATFORMS (2010-2020) → "Automate into technical architecture"
     ✓ Monetize through engagement (making isolation/insecurity profitable)
     ↓
 AI (2020-2026) → "Predict and optimize in real-time"
-    ✓ Individual vulnerability mapping, synthetic authority, perfect persuasion
+    ✓ Individual susceptibility mapping, synthetic authority, perfect persuasion
     ↓
 End State: Persuasion at scale becomes indistinguishable from reality
 ```
@@ -326,7 +326,7 @@ End State: Persuasion at scale becomes indistinguishable from reality
 
 **Technological Enablers:**
 1. **Media multiplication** (radio, TV, internet) = repetition at scale
-2. **Data collection** = individual vulnerability mapping
+2. **Data collection** = individual susceptibility mapping
 3. **Real-time feedback** = behavioral optimization
 4. **Automation** = 24/7 operation
 
@@ -549,7 +549,7 @@ Why: Brain craves stability. Ad becomes "stable ground"
 | Freud | Psychology theory | Understanding unconscious motivation |
 | Bernays | Mass media (radio, print) | Repetition at scale + authority invention |
 | Goebbels | Media monopoly + coordination | Inescapable propaganda + forced compliance |
-| Platforms | Data collection + algorithms | Individual vulnerability mapping |
+| Platforms | Data collection + algorithms | Individual susceptibility mapping |
 | AI | Machine learning + prediction | Real-time emotional optimization |
 
 
@@ -712,7 +712,7 @@ def detect_engineering_of_consent(content):
 ---
 
 #### CAMPAIGN 5: OVERTHROW OF GUATEMALAN GOVERNMENT (1954)
-**Goal:** Protect United Fruit's land holdings through propaganda.
+**Goal:** Preserve United Fruit's land holdings through propaganda.
 
 **What He Did:**
 - Created pseudo-event: planted stories that elected government is "Soviet-backed" (CIA cables showed no evidence)
@@ -759,7 +759,7 @@ Journalists check each other, not sources. Cross-platform saturation creates fal
 
 **What He Did:**
 - Invented "Committee for the Study and Promotion of the Sanitary Dispensing of Food and Drink" (Bernays as chair, client funds)
-- Mailed 5,000 "laboratory reports" to editors claiming communal glasses harbor 135 dangerous bacteria/cm³ (no data attached; numbers look official)
+- Mailed 5,000 "laboratory reports" to editors claiming communal glasses harbor 135 notable bacteria/cm³ (no data attached; numbers look official)
 - Ran parallel ads showing lipstick-stained glass morphing into diseased mouth (subliminal sexual contamination cue)
 - Lobbied state health boards to adopt committee's model ordinance → regulation locks in demand
 
@@ -831,7 +831,7 @@ IF visual_proof_features_high_status_individuals:
 ```
 
 **Why It Worked:**
-Men have identity threat (wristwatch = feminine). Solution: Move context from fashion to military function. Identity threat resolved = purchase feels like identity protection, not consumption.
+Men have identity threat (wristwatch = feminine). Solution: Move context from fashion to military function. Identity threat resolved = purchase feels like identity reinforcement, not consumption.
 
 ---
 
@@ -1534,7 +1534,7 @@ Last verified: February 2025
    - https://link.springer.com/chapter/10.1007/978-3-031-59465-6_17
    - N=642 UK and Arab participants. Finding: Social Proof and Authority most influential; effects persist even when influence is knowingly possible.
 
-5. **arXiv (2024)** — "The Dark Patterns of Personalized Persuasion in Large Language Models"
+5. **arXiv (2024)** — "The Design Patterns of Personalized Persuasion in Large Language Models"
    - https://arxiv.org/html/2411.06008v2
    - Finding: LLMs adapt persuasive language based on personality cues; potential for mass-scale personalized influence.
 
@@ -1556,11 +1556,11 @@ Last verified: February 2025
 
 **Interface Design Patterns:**
 
-9. **ACM CHI (2024)** — "Staying at the Roach Motel: Cross-Country Analysis of Manipulative Subscription and Cancellation Flows"
+9. **ACM CHI (2024)** — "Staying at the Roach Motel: Cross-Country Analysis of High-Intensity Subscription and Cancellation Flows"
    - https://dl.acm.org/doi/10.1145/3613904.3642881
    - Finding: Systematic analysis of signup vs cancel asymmetry across platforms.
 
-10. **Princeton (2019)** — Dark Patterns Study
+10. **Princeton (2019)** — Interface Design Patterns Study
     - Finding: 11% of e-commerce sites employ roach motel patterns; 1.2% reset urgency timers.
 
 **Cognitive Load & Decision Fatigue:**
@@ -1593,7 +1593,7 @@ Last verified: February 2025
 
 ### 4.2 Regulatory Sources (9)
 
-1. **FTC ICPEN GPEN Review (2024)** — "Results of Review of Use of Dark Patterns"
+1. **FTC ICPEN GPEN Review (2024)** — "Results of Review of Use of Interface Design Patterns"
    - https://www.ftc.gov/news-events/news/press-releases/2024/07/ftc-icpen-gpen-announce-results-review-use-dark-patterns-affecting-subscription-services-privacy
    - Finding: 76% of 642 sites employed at least one deceptive design pattern; 97% of privacy flows contained deceptive patterns.
 
@@ -1601,7 +1601,7 @@ Last verified: February 2025
 
 3. **Amazon Prime Lawsuit (2024)** — FTC v. Amazon. Documented "labyrinth-like" cancellation process as roach motel pattern.
 
-4. **CCPA (California)** — California Consumer Privacy Act. Explicit prohibition on dark patterns/deceptive design.
+4. **CCPA (California)** — California Consumer Privacy Act. Explicit prohibition on interface design patterns/deceptive design.
 
 5. **14 State Privacy Laws** — Various. Multiple states have enacted deceptive design prohibitions.
 
@@ -1611,7 +1611,7 @@ Last verified: February 2025
    - https://competition-bureau.canada.ca/en/deceptive-marketing-practices/types-deceptive-marketing-practices/fake-urgency-cues
    - Advisory on fake urgency cues.
 
-8. **Congress.gov** — "What Hides in the Shadows: Deceptive Design of Dark Patterns"
+8. **Congress.gov** — "What Hides in the Shadows: Deceptive Design of Interface Patterns"
    - https://www.congress.gov/crs-product/IF12246
    - Congressional Research Service report.
 
@@ -1692,14 +1692,14 @@ Persuasion has evolved not through new psychology, but through:
 3. **Removing restraint that Goebbels faced** (limited by technical capacity)
 4. **Proving what Cialdini measured** (universal principles)
 5. **Leveraging what Kahneman identified** (cognitive biases)
-6. **Personalizing at what platforms enabled** (individual vulnerability mapping)
+6. **Personalizing at what platforms enabled** (individual susceptibility mapping)
 7. **Optimizing what AI discovered** (emotional engagement at scale)
 
 ### 3 Critical Shift Points
 
 **1. Bernays → Goebbels (1920s-1930s):** Commercial to totalitarian. New: monopoly control (no counter-narrative possible). Effect: reality engineering.
 
-**2. Goebbels → Platforms (1940s-2010s):** Centralized to decentralized (but algorithmic). New: personal data (can target individual vulnerabilities). Difference: different users see different realities, not all same reality. Effect: more significant than single narrative because harder to recognize.
+**2. Goebbels → Platforms (1940s-2010s):** Centralized to decentralized (but algorithmic). New: personal data (can target individual susceptibilities). Difference: different users see different realities, not all same reality. Effect: more significant than single narrative because harder to recognize.
 
 **3. Platforms → AI (2010-2026):** Reactive to predictive. New: real-time emotional calibration + synthetic authority. Result: indistinguishable from reality.
 
@@ -1721,7 +1721,7 @@ The most under-recognized escalation is the discovery and optimization of **frac
 **Research:** RCTs comparing techniques; isolate variables; measure behavioral outcomes (not just engagement); long-term follow-up.
 
 #### 2. Individual Susceptibility Variation
-**What we don't know:** Who is most vulnerable to what? Can susceptibility be measured/predicted? Do certain people resist certain techniques entirely? Is susceptibility stable or learned?
+**What we don't know:** Who is most susceptible to what? Can susceptibility be measured/predicted? Do certain people resist certain techniques entirely? Is susceptibility stable or learned?
 **Research:** Personality/cognitive profiling + technique effectiveness; eye-tracking + neural imaging during influence exposure; longitudinal tracking; cross-cultural variation.
 
 #### 3. Awareness & Inoculation Effectiveness
@@ -1736,11 +1736,11 @@ The most under-recognized escalation is the discovery and optimization of **frac
 **Known:** Myanmar genocide, Jan 6, COVID hesitancy, eating disorders. **Unknown:** exact causal role, counterfactual, effect size, reversibility.
 **Research:** Quasi-experimental designs (comparing platforms/features); natural experiments (policy changes, deplatforming); longitudinal harm tracking; recovery studies.
 
-#### 6. Systemic Vulnerability Mapping
+#### 6. Systemic Susceptibility Mapping
 **What we don't know:** Which populations most susceptible? What's the psychological profile of extreme-ified individuals?
 **Research:** Cohort studies following people from normal → extreme; psychological profiling at each stage; identify inflection points; test interventions.
 
-#### 7. Defense Mechanisms & Counter-Techniques
+#### 7. Countermeasure Mechanisms & Counter-Techniques
 **What we don't know:** What actually prevents influence? Is it knowledge, practice, personality, cognitive ability?
 **Research:** Test different media literacy curricula; measure what actually changes behavior; practice effects; personality factors.
 
@@ -1753,7 +1753,7 @@ The most under-recognized escalation is the discovery and optimization of **frac
 
 2. **Individual Difference Questions**
    - Minimal discussion of who's susceptible vs. resistant
-   - No personality profiling of vulnerable individuals
+   - No personality profiling of high-susceptibility individuals
    - Can't infer individual variation from aggregate techniques
 
 3. **Temporal Questions**
@@ -1827,7 +1827,7 @@ The most under-recognized escalation is the discovery and optimization of **frac
    - Influence (hiding true motives, leveraging biases) = high-intensity?
    - Where's the boundary?
 
-4. **What defenses are effective?**
+4. **What countermeasures are effective?**
    - Media literacy (teaching people to recognize influence)
    - Cognitive flexibility (inoculating against identity lock-in)
    - Information architecture changes (different default choices)
@@ -1836,21 +1836,21 @@ The most under-recognized escalation is the discovery and optimization of **frac
 5. **Can evolution be reversed?**
    - Once techniques are known, do they lose effectiveness?
    - Can awareness inoculate against influence?
-   - Or do people ignore knowledge of their own vulnerabilities?
+   - Or do people ignore knowledge of their own susceptibilities?
 
 ### Recommended 5-Phase Research Trajectory
 
 **Phase 1: Mapping (Current)** — Understand evolution, identify techniques, map boundaries
 **Phase 2: Measurement** — Choose 2-3 techniques, design experiments, identify effect sizes
-**Phase 3: Vulnerability** — Profile susceptible individuals, map radicalization pathways
-**Phase 4: Intervention** — Test defenses, measure effectiveness
+**Phase 3: Susceptibility** — Profile susceptible individuals, map radicalization pathways
+**Phase 4: Countermeasures** — Test countermeasures, measure effectiveness
 **Phase 5: Policy** — Bright-line rules, regulatory recommendations
 
 ### Writing Research Guidance
 
 **If Writing Academic Paper:**
 1. Historical context (evolution of techniques)
-2. Theoretical framework (informed consent as boundary)
+2. Theoretical framework (user awareness as boundary)
 3. Empirical analysis (new research)
 4. Implications (regulation/design)
 5. Limitations (what you don't know)
@@ -1863,7 +1863,7 @@ The most under-recognized escalation is the discovery and optimization of **frac
 
 **If Advising Policy:**
 - Not all techniques are significant (persuasion OK, intensive influence not)
-- Informed consent requires closing information asymmetry
+- User awareness requires closing information asymmetry
 - Bright lines prevent ambiguous cases
 - Transparency + user control ≥ regulation
 
@@ -1904,7 +1904,7 @@ COMPOSITE = (Tactical × 0.35) + (Psychological × 0.35) + (Advanced × 0.30)
 0-25: Minimal influence (low-intensity persuasion)
 26-50: Moderate (industry standard)
 51-75: High (requires scrutiny)
-76-100: Extreme (likely exploitative)
+76-100: Extreme (likely high-intensity)
 ```
 
 ---
@@ -2034,11 +2034,11 @@ At each stage, the mechanism remained the same (leveraging human psychology). Wh
 
 **Key questions for research:**
 1. Where exactly does persuasion become intensive influence?
-2. What defenses actually work?
+2. What countermeasures actually work?
 3. How do we design systems that resist intensive application?
-4. What's the cost of protecting against influence?
+4. What's the cost of measuring and analyzing influence?
 
-**Your research contributes to defense by:**
+**Your research contributes to understanding by:**
 1. Making invisible mechanisms visible
 
 ---
