@@ -24,6 +24,10 @@ Persuasion-Max/                        # Project root
 │   ├── EXECUTIVE_SUMMARY.md           # Project overview + research roadmap
 │   ├── TERMINOLOGY_AND_DEFINITIONS.md # Standard language definitions
 │   ├── ENGAGEMENT_ARCHITECTURE.js     # Complete engagement system specification
+│   ├── UX_DESIGN_SYSTEM.js            # UX design tokens, patterns P1-P12, neuro-aesthetics
+│   ├── UX_DESIGN_SYSTEM.md            # UX design system module overview
+│   ├── UX_LAW_CONTRADICTIONS.md       # UX law trade-offs & contradiction analysis
+│   ├── UX_LAYOUT_DESCRIPTION.md       # Component layout specifications
 │   ├── PROMPT_PERSUASION_GRAMMARLY.md # Grammarly-style product spec
 │   ├── CLAUDE.md                      # Project language guidelines
 │   ├── README.md                      # Project README
@@ -55,6 +59,17 @@ Persuasion-Max/                        # Project root
 │   ├── verify_consolidation.js                # Consolidation verification (Node.js)
 │   └── verify_consolidation.py                # Consolidation verification (Python)
 │
+├── UX_UI_ENGAGEMENT/                  # UX engagement research & detection (8 files)
+│   ├── CROSS_PATTERN_INTERACTION_MAPS.md     # Cross-pattern interaction analysis
+│   ├── ENGAGEMENT_PATTERNS_P1_P12.md         # 12 engagement patterns documented
+│   ├── EXPERIMENTAL_MEASUREMENT_FRAMEWORK.md # Experimental measurement design
+│   ├── NEURO_AESTHETIC_PARAMETERS.md         # Neuro-aesthetic parameter specs
+│   ├── RESEARCH_GAPS.md                      # Research gap identification
+│   ├── SESSION_ARCHITECTURE.md               # Session design architecture
+│   ├── USER_SUSCEPTIBILITY_PROFILES.md       # User susceptibility profiling
+│   └── DETECTION/
+│       └── ENGAGEMENT_PATTERN_DETECTION.py   # Engagement pattern detection code
+│
 └── META/                              # Project status & archives (4 files)
     ├── PROJECT_STATUS.md              # Current project status
     ├── 20_COMPREHENSIVE_GAP_ANALYSIS.md # Gap analysis
@@ -77,6 +92,16 @@ Persuasion-Max/                        # Project root
 3. `LINGUISTIC_PERSUASION/3_FRACTIONATION_INTEGRITY_VIOLATIONS_PROMPT.md` — Fractionation patterns
 4. `ENGAGEMENT_ARCHITECTURE.js` — Complete engagement system specification
 
+### I want to understand UX ENGAGEMENT PATTERNS
+1. `UX_DESIGN_SYSTEM.js` — Design tokens, engagement patterns P1-P12, session design, neuro-aesthetics
+2. `UX_DESIGN_SYSTEM.md` — Module overview & architecture
+3. `UX_UI_ENGAGEMENT/ENGAGEMENT_PATTERNS_P1_P12.md` — Detailed engagement pattern documentation
+4. `UX_UI_ENGAGEMENT/NEURO_AESTHETIC_PARAMETERS.md` — Neuro-aesthetic specifications
+5. `UX_UI_ENGAGEMENT/SESSION_ARCHITECTURE.md` — Session design architecture
+6. `UX_UI_ENGAGEMENT/DETECTION/ENGAGEMENT_PATTERN_DETECTION.py` — Detection code for engagement patterns
+7. `UX_LAW_CONTRADICTIONS.md` — UX law trade-offs analysis
+8. `UX_LAYOUT_DESCRIPTION.md` — Component layout specifications
+
 ### I want to see the RESEARCH foundation
 1. `LINGUISTIC_PERSUASION/6_CASE_STUDIES_RESEARCH_PROMPT.md` — Case studies & research
 2. `LINGUISTIC_PERSUASION/BEHAVIORAL_SCIENTIST_RESEARCH_PACKAGE.md` — Research execution plan
@@ -98,12 +123,13 @@ Persuasion-Max/                        # Project root
 
 | Folder | Files | Purpose |
 |--------|-------|---------|
-| Root | 11 | Core docs, entry points, engagement spec |
+| Root | 15 | Core docs, entry points, engagement & UX specs |
 | CODE | 6 | Production Python code + tool specs |
 | EXECUTION | 3 | Implementation roadmaps |
 | LINGUISTIC_PERSUASION | 10 | Consolidated linguistic persuasion prompts |
+| UX_UI_ENGAGEMENT | 8 | UX engagement research, patterns & detection |
 | META | 4 | Project status & archives |
-| **TOTAL** | **34** | (+ 3 config files) |
+| **TOTAL** | **46** | (+ 3 config files) |
 
 ---
 
@@ -152,6 +178,7 @@ Persuasion-Max/                        # Project root
 | Domain | Status | Details |
 |--------|--------|---------|
 | Linguistic Persuasion | COMPLETE | 26 files consolidated into 6 prompts in `LINGUISTIC_PERSUASION/` |
+| UX & Engagement | COMPLETE | 4 root files + 8 files in `UX_UI_ENGAGEMENT/` |
 | Core Docs | COMPLETE | Organized in project root |
 | CODE | COMPLETE | 3 markdown specs + 3 Python tools |
 | EXECUTION | COMPLETE | 3 implementation roadmaps |
