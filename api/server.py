@@ -109,6 +109,28 @@ def get_patterns(
     ]
 
 
+class OptimizeRequest(BaseModel):
+    goal: str
+    context: str = "general"
+    audience: str = "general web user"
+    iterations: int = 3
+    candidates_per_round: int = 5
+
+@app.post("/optimize")
+def optimize_copy(req: OptimizeRequest):
+    """Generate maximally persuasive copy via iterative scoring."""
+    from core.optimization_engine import OptimizationEngine
+    engine = OptimizationEngine(extraction_mode="heuristic")
+    result = engine.optimize(
+        goal=req.goal,
+        context=req.context,
+        audience=req.audience,
+        iterations=req.iterations,
+        candidates_per_round=req.candidates_per_round,
+    )
+    return result.to_dict()
+
+
 @app.get("/techniques")
 def get_technique_impacts():
     """Get all technique-to-appraisal mappings."""
