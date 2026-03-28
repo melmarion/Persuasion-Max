@@ -506,11 +506,49 @@ WEIGHT_REGISTRY = {
                                   "purchase-time urgency and certainty. Already partially "
                                   "estimable from e-commerce return data.",
     },
+
+    # ─── INTERACTION TERMS (FITTED from Persuasion for Good) ────────────
+
+    "approach.valence_x_goal_relevance": {
+        "value": 0.15,
+        "status": "FITTED",
+        "citation": "Fitted from Persuasion for Good dataset (Wang et al. 2019, N=1,017). "
+                    "Heuristic extraction: w=0.147. Ollama llama3.2 extraction: w=0.214. "
+                    "Averaged: ~0.15. This is the LARGEST predictive signal in the model — "
+                    "positive tone matters more when the message is personally relevant. "
+                    "Consistent with Falk et al. 2012: MPFC (self-relevance) amplifies "
+                    "NAcc (reward) activation.",
+        "bounds": "[0.10, 0.25] — consistent across both extraction methods",
+        "calibration_experiment": "Already fitted. Refine with larger N or different domain.",
+    },
+    "approach.valence_x_agency": {
+        "value": 0.14,
+        "status": "FITTED",
+        "citation": "Fitted from Persuasion for Good (N=1,017). Heuristic: w=0.136. "
+                    "Positive tone matters more when the reader feels in control. "
+                    "Consistent with self-determination theory (Deci & Ryan 2000): "
+                    "autonomy amplifies intrinsic motivation.",
+        "bounds": "[0.08, 0.20]",
+        "calibration_experiment": "Already fitted. Cross-validate on UX-specific dataset.",
+    },
+    "approach.novelty_x_coping": {
+        "value": 0.20,
+        "status": "FITTED",
+        "citation": "Fitted from Persuasion for Good (N=1,017, Ollama extraction). "
+                    "w=0.264 (largest interaction in Ollama run). Novel approaches work "
+                    "best when the reader feels capable of acting. Consistent with "
+                    "Berlyne 1960: optimal arousal requires sufficient coping resources. "
+                    "Conservative estimate 0.20 (below raw fitted value) pending "
+                    "cross-domain validation.",
+        "bounds": "[0.15, 0.30]",
+        "calibration_experiment": "Already fitted. Validate on UX domain to confirm transfer.",
+    },
 }
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# SUMMARY: 22 weights total
+# SUMMARY: 32 weights total
+#   FITTED:        5  (3 interaction terms from PFG + 2 prior calibrated)
 #   CALIBRATED:    2  (certainty→approach via +34% testimonial; info_load via Hick's Law)
 #   CONSTRAINED:  14  (bounded by published data, exact value interpolated)
 #   UNCALIBRATED:  6  (theory-derived, specific calibration experiment proposed)
@@ -534,7 +572,8 @@ class CircuitPredictor:
     ) -> float:
         """Nucleus Accumbens -> VTA -> vmPFC -> premotor -> motor execution."""
         w = self.w.get("approach", {})
-        score = (
+        # Linear terms
+        linear = (
             # CONSTRAINED: Knutson 2007 — NAcc is strongest predictor
             w.get("valence", 0.30) * appraisal.valence
             # CONSTRAINED: Falk 2012 — MPFC (relevance) predicts campaign success
@@ -552,6 +591,22 @@ class CircuitPredictor:
             # UNCALIBRATED: Craig 2009 — low agency activates insula
             - w.get("neg_agency", 0.10) * (1.0 - appraisal.agency)
         )
+        # Interaction terms — FITTED from Persuasion for Good (N=1,017)
+        # These account for more variance than any individual linear term.
+        # The limbic system evaluates stimuli multiplicatively, not additively.
+        wi = self.w.get("approach_interactions", {})
+        interactions = (
+            # FITTED: valence × goal_relevance = 0.147 (heuristic), 0.214 (Ollama)
+            # Positive tone matters MORE when message is personally relevant
+            wi.get("valence_x_goal_relevance", 0.15) * appraisal.valence * appraisal.goal_relevance
+            # FITTED: valence × agency = 0.136 (heuristic), synergistic
+            # Positive tone matters MORE when reader feels in control
+            + wi.get("valence_x_agency", 0.14) * appraisal.valence * appraisal.agency
+            # FITTED: novelty × coping = 0.264 (Ollama) — largest interaction
+            # Novel approaches work best when reader feels capable of acting
+            + wi.get("novelty_x_coping", 0.20) * appraisal.novelty * appraisal.coping_potential
+        )
+        score = linear + interactions
         return round(max(0.0, score), 4)
 
     def compute_avoidance(

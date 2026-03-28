@@ -1,0 +1,93 @@
+{
+  "n_features": 28,
+  "base_weights": {
+    "novelty": 0.3808,
+    "valence": -0.037,
+    "goal_relevance": -0.0803,
+    "coping_potential": 0.0562,
+    "agency": -0.1171,
+    "certainty": 0.0531,
+    "temporal_proximity": -0.0888
+  },
+  "significant_interactions": [
+    {
+      "dim_a": "novelty",
+      "dim_b": "coping_potential",
+      "weight": 0.2637,
+      "sign": "synergistic",
+      "interpretation": "novelty x coping_potential: positive synergy \u2014 both high amplifies outcome interaction (w=0.264)"
+    },
+    {
+      "dim_a": "novelty",
+      "dim_b": "valence",
+      "weight": 0.2142,
+      "sign": "synergistic",
+      "interpretation": "novelty x valence: positive synergy \u2014 both high amplifies outcome interaction (w=0.214)"
+    },
+    {
+      "dim_a": "novelty",
+      "dim_b": "certainty",
+      "weight": 0.2117,
+      "sign": "synergistic",
+      "interpretation": "novelty x certainty: positive synergy \u2014 both high amplifies outcome interaction (w=0.212)"
+    },
+    {
+      "dim_a": "agency",
+      "dim_b": "temporal_proximity",
+      "weight": -0.1224,
+      "sign": "antagonistic",
+      "interpretation": "agency x temporal_proximity: negative \u2014 high on both suppresses outcome interaction (w=-0.122)"
+    },
+    {
+      "dim_a": "coping_potential",
+      "dim_b": "certainty",
+      "weight": 0.0945,
+      "sign": "synergistic",
+      "interpretation": "coping_potential x certainty: positive synergy \u2014 both high amplifies outcome interaction (w=0.095)"
+    },
+    {
+      "dim_a": "novelty",
+      "dim_b": "temporal_proximity",
+      "weight": 0.0828,
+      "sign": "synergistic",
+      "interpretation": "novelty x temporal_proximity: positive synergy \u2014 both high amplifies outcome interaction (w=0.083)"
+    },
+    {
+      "dim_a": "goal_relevance",
+      "dim_b": "temporal_proximity",
+      "weight": -0.0741,
+      "sign": "antagonistic",
+      "interpretation": "goal_relevance x temporal_proximity: negative \u2014 high on both suppresses outcome interaction (w=-0.074)"
+    },
+    {
+      "dim_a": "novelty",
+      "dim_b": "goal_relevance",
+      "weight": 0.0729,
+      "sign": "synergistic",
+      "interpretation": "novelty x goal_relevance: positive synergy \u2014 both high amplifies outcome interaction (w=0.073)"
+    },
+    {
+      "dim_a": "goal_relevance",
+      "dim_b": "certainty",
+      "weight": 0.0622,
+      "sign": "synergistic",
+      "interpretation": "goal_relevance x certainty: positive synergy \u2014 both high amplifies outcome interaction (w=0.062)"
+    },
+    {
+      "dim_a": "goal_relevance",
+      "dim_b": "agency",
+      "weight": -0.06,
+      "sign": "antagonistic",
+      "interpretation": "goal_relevance x agency: negative \u2014 high on both suppresses outcome interaction (w=-0.060)"
+    },
+    {
+      "dim_a": "agency",
+      "dim_b": "certainty",
+      "weight": 0.058,
+      "sign": "synergistic",
+      "interpretation": "agency x certainty: positive synergy \u2014 both high amplifies outcome interaction (w=0.058)"
+    }
+  ],
+  "n_significant": 11,
+  "interpretation": "11 of 21 pairwise interactions have notable weights (|w| > 0.05). Positive interactions mean both dimensions being high amplifies the behavioral outcome. Negative interactions mean the combination suppresses it."
+}
