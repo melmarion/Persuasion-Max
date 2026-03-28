@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Technique-to-Appraisal Bridge
 ==============================

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Limbic Cascade — 6-Stage Pipeline Orchestrator
 ================================================

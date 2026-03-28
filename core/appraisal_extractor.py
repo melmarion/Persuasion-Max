@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Appraisal Extractor — 7 Cognitive Appraisal Dimensions
 =======================================================
@@ -64,78 +65,78 @@ class AppraisalScores:
 # ─── Heuristic signals ─────────────────────────────────────────────────────
 
 _NOVELTY_HIGH = re.compile(
-    r"(?i)\b(introducing|unveiled?|never[- ]before|first[- ]ever|breakthrough|"
+    r"(?i)(introducing|unveiled?|never[- ]before|first[- ]ever|breakthrough|"
     r"revolutionary|reimagined?|reinvent|disrupt|unprecedented|surprise|"
-    r"exclusive|secret|hidden|shocking|unexpected)\b"
+    r"exclusive|secret|hidden|shocking|unexpected)"
 )
 _NOVELTY_LOW = re.compile(
-    r"(?i)\b(standard|traditional|classic|conventional|usual|typical|"
-    r"familiar|normal|regular|default|basic|simple)\b"
+    r"(?i)(standard|traditional|classic|conventional|usual|typical|"
+    r"familiar|normal|regular|default|basic|simple)"
 )
 
 _VALENCE_POS = re.compile(
-    r"(?i)\b(free|love|beautiful|celebrate|reward|bonus|gift|win|"
+    r"(?i)(free|love|beautiful|celebrate|reward|bonus|gift|win|"
     r"congrats|welcome|thank|enjoy|delight|happy|success|perfect|"
-    r"amazing|incredible|wonderful|brilliant|excellent)\b"
+    r"amazing|incredible|wonderful|brilliant|excellent)"
 )
 _VALENCE_NEG = re.compile(
-    r"(?i)\b(error|fail|invalid|wrong|denied|rejected|expired|"
+    r"(?i)(error|fail|invalid|wrong|denied|rejected|expired|"
     r"warning|danger|risk|threat|problem|issue|broken|lost|miss|"
-    r"unfortunately|sorry|mistake)\b"
+    r"unfortunately|sorry|mistake)"
 )
 
 _GOAL_RELEVANCE_HIGH = re.compile(
-    r"(?i)\b(you|your|my|personali[sz]ed|for you|tailored|custom|"
+    r"(?i)(you|your|my|personali[sz]ed|for you|tailored|custom|"
     r"based on your|recommended for|matches? your|fits? your|"
-    r"goals?|needs?|what you (want|need|care)|matters? to you)\b"
+    r"goals?|needs?|what you (want|need|care)|matters? to you)"
 )
 
 _COPING_HIGH = re.compile(
-    r"(?i)\b(easy|simple|one[- ]click|instant|automatic|no[- ]setup|"
+    r"(?i)(easy|simple|one[- ]click|instant|automatic|no[- ]setup|"
     r"takes? \d+\s*(seconds?|minutes?|min)|step[- ]by[- ]step|guided|"
-    r"pre[- ]?filled|template|ready[- ]made|just|done|quick)\b"
+    r"pre[- ]?filled|template|ready[- ]made|just|done|quick)"
 )
 _COPING_LOW = re.compile(
-    r"(?i)\b(complex|difficult|advanced|requires?|mandatory|must|"
+    r"(?i)(complex|difficult|advanced|requires?|mandatory|must|"
     r"multi[- ]step|extensive|comprehensive|complete all|fill out|"
-    r"submit .{0,20} documents?|upload .{0,20} files?)\b"
+    r"submit .{0,20} documents?|upload .{0,20} files?)"
 )
 
 _AGENCY_HIGH = re.compile(
-    r"(?i)\b(choose|option|prefer|skip|later|no thanks|decline|"
+    r"(?i)(choose|option|prefer|skip|later|no thanks|decline|"
     r"your choice|you decide|opt[- ]?(in|out)|customize|control|"
-    r"manage|cancel anytime|no commitment)\b"
+    r"manage|cancel anytime|no commitment)"
 )
 _AGENCY_LOW = re.compile(
-    r"(?i)\b(required|mandatory|must|forced?|cannot skip|"
+    r"(?i)(required|mandatory|must|forced?|cannot skip|"
     r"no option|only way|you (have|need) to|non[- ]?negotiable|"
-    r"are you sure|don.t miss|last chance)\b"
+    r"are you sure|don.t miss|last chance)"
 )
 
 _CERTAINTY_HIGH = re.compile(
-    r"(?i)\b(guaranteed?|money[- ]back|refund|proven|verified|"
+    r"(?i)(guaranteed?|money[- ]back|refund|proven|verified|"
     r"trusted by \d|rated \d|\d+\s*stars?|100%|risk[- ]free|"
-    r"no[- ]risk|case stud|testimonial|specific|exactly)\b"
+    r"no[- ]risk|case stud|testimonial|specific|exactly)"
 )
 _CERTAINTY_LOW = re.compile(
-    r"(?i)\b(maybe|might|could|possibly|results may vary|"
+    r"(?i)(maybe|might|could|possibly|results may vary|"
     r"no guarantee|subject to|terms apply|conditions|"
-    r"estimated|approximately|uncertain)\b"
+    r"estimated|approximately|uncertain)"
 )
 
 _TEMPORAL_HIGH = re.compile(
-    r"(?i)\b(now|today|instant|immediate|right away|starts? (now|today)|"
+    r"(?i)(now|today|instant|immediate|right away|starts? (now|today)|"
     r"already|live|real[- ]time|currently|this (second|moment)|"
-    r"just (happened|finished|completed))\b"
+    r"just (happened|finished|completed))"
 )
 _TEMPORAL_LOW = re.compile(
-    r"(?i)\b(eventually|over time|long[- ]term|in the (future|coming)|"
-    r"weeks?|months?|years?|someday|gradually|soon|later|upcoming)\b"
+    r"(?i)(eventually|over time|long[- ]term|in the (future|coming)|"
+    r"weeks?|months?|years?|someday|gradually|soon|later|upcoming)"
 )
 
 
 _NEGATION_WINDOW = re.compile(
-    r"(?i)\b(no|not|don.?t|won.?t|can.?t|never|without|neither|nor|lack|"
+    r"(?i)(no|not|don.?t|won.?t|can.?t|never|without|neither|nor|lack|"
     r"fail(?:ed|ure)?|miss(?:ing|ed)?|zero|none)\s+\w*\s*"
 )
 

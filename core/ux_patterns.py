@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 UX Pattern Library — Circuit-Level Success/Failure Mappings
 ============================================================

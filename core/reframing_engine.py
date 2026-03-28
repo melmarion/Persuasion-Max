@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Reframing Engine — Targeted Fix Suggestions
 ============================================
