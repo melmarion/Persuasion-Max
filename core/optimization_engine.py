@@ -171,7 +171,7 @@ class OptimizationEngine:
 
             pred_obj = self.predictor.predict(appraisal)
             suggestions = self.reframer.diagnose(appraisal, pred_obj)
-            reframe_text = suggestions[0].specific_fix if suggestions else "improve the weakest dimension"
+            reframe_text = suggestions[0].net_assessment if suggestions else "improve the weakest dimension"
 
             weakness_instruction = REFINEMENT_INSTRUCTION.format(
                 effectiveness=best_effectiveness,
