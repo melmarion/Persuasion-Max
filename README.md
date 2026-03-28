@@ -1,141 +1,269 @@
-# Limbic Circuit Activation Modeling
+# Persuasion-Max: A Multi-Layer Mechanistic Predictor of Persuasive Effectiveness
 
-**A computational framework translating cognitive appraisal theory into testable predictions, with 2 fitted parameters, 19 constrained parameters, and 8 explicitly uncalibrated parameters with proposed calibration experiments for each.**
+**5-layer architecture grounded in limbic neuroscience. 302 parameters (62.6% empirically grounded). Calibrated on 126K interactions across 2 corpora. 297 tests passing.**
 
 ## Abstract
 
-Predicting persuasion effectiveness currently requires expensive brain imaging (fMRI at ~$1,500/hr) or large-scale A/B testing (weeks of traffic). We present a lightweight framework that models the competition between approach (nucleus accumbens), avoidance (amygdala), and deliberation (ACC/dlPFC) circuits as a function of 7 cognitive appraisal dimensions extracted from text. The framework achieves 56% circuit classification accuracy using heuristic extraction (vs. 33% chance), with 10.5 percentage point separation between known high-converting and low-converting UX stimuli. The 7-dimension appraisal model outperforms a 2-dimension valence-arousal baseline by 10 percentage points, demonstrating that cognitive appraisal theory adds predictive value beyond simple sentiment analysis. The **SequenceAnalyzer** component — modeling persuasion as a trajectory through appraisal space with transition-level prediction error computation — represents a novel contribution with no existing equivalent in the computational persuasion literature.
+Existing computational persuasion tools predict *whether* a message persuades but not *why* it succeeds or *how to improve it*. We present a 5-layer mechanistic framework that models the competition between approach (nucleus accumbens), avoidance (amygdala), and deliberation (ACC/dlPFC) circuits as a function of cognitive appraisal dimensions, linguistic surface features, persuasion technique detection, recipient personality modulation, and domain-specific weight registries. Calibrated on N=126,288 samples from DailyPersuasion (78K multi-domain dialogues) and HumanChoicePrediction (48K real human binary decisions), the model achieves AUC 0.638-0.652 within-corpus via 5-fold cross-validation. We find that (1) linguistic surface features contribute +8.3-9.3pp AUC over appraisal-only, while technique binary detection adds zero incremental signal — and actually *hurts* by 0.2-0.6pp; (2) cross-domain transfer drops AUC by 10-13pp, confirming the need for domain-specific weight registries; (3) the 400-cell technique x personality interaction matrix reveals persona-sensitive techniques with 21.8pp compliance spread across recipients; (4) moral reframing (Feinberg & Willer 2015) produces +8.4pp compliance lift when correctly matched. A full weight registry audit documents all 302 parameters with provenance labels. The ablation report identifies 6 dead recipient traits and confirms that technique binary detection is the only layer that adds no marginal signal.
 
-**Honest status:** This is a partially validated framework, not a calibrated model. The circuit weights were derived from published neuroscience literature where data exists and from first principles where it doesn't. Without behavioral ground truth data (conversion rates, click-through rates), the weights remain plausible estimates, not empirical coefficients. A regression harness is included for fitting weights when data becomes available.
-
-## What's Novel vs. What's Repackaged
-
-**Novel (no existing equivalent):**
-- SequenceAnalyzer: models multi-step UX flows as trajectories through 7D appraisal space with dopamine prediction error chains, conflict spikes, momentum, and somatic marker accumulation at each transition
-- The calibration experiment table: 8 proposed experiments ranked by information gain per dollar, each with sample size estimates and proxy measurements
-
-**Translational (existing theory made computable):**
-- 7-dimension appraisal extraction from text (Smith & Ellsworth 1985 / Scherer 2001 operationalized as code)
-- 3-circuit competition model (approach/avoidance/deliberation as weighted functions of appraisal dimensions)
-- Somatic marker store (Damasio 1994 as a persistent key-value store with temporal decay)
-
-**Repackaged (existing knowledge in new format):**
-- UX pattern library (Duolingo, Stripe, Notion examples reorganized by circuit/dimension)
-- Training technique library (26 techniques from 3 repos consolidated)
-
-## Calibration Status
-
-29 weights total across 3 circuit formulas + master formula + durability:
-
-| Status | Count | % | Meaning |
-|--------|-------|---|---------|
-| CALIBRATED | 2 | 7% | Derived from published effect sizes |
-| CONSTRAINED | 19 | 66% | Bounded by published data, exact value interpolated |
-| UNCALIBRATED | 8 | 28% | Theory-derived, specific calibration experiment proposed |
-
-**72% empirically grounded.** But "CONSTRAINED" honestly means "I read a paper that discusses this concept and picked a number that doesn't contradict the paper." The citation creates an illusion of empirical grounding. We're transparent about this because a FAIR researcher will see through it in 30 seconds. They won't see through someone who already identified their own weaknesses.
-
-See `get_weight_registry()` in `core/circuit_predictor.py` for every weight with its citation, bounds, and proposed calibration experiment.
-
-## Validation Results (Heuristic Mode)
-
-| Metric | Value | Interpretation |
-|--------|-------|----------------|
-| Circuit classification accuracy | 56% (vs 33% chance) | Better than random but not better than intuition |
-| Weak dimension accuracy | 26% | Poor — heuristic can't detect uncertainty/cognitive load |
-| Effectiveness-conversion correlation | r=0.474 | Moderate — signal exists but diluted |
-| Mean effectiveness (high-converting) | 77.9% | — |
-| Mean effectiveness (low-converting) | 67.4% | — |
-| Separation | 10.5 pp | Thin for maximally different stimuli |
-| 7D vs 2D advantage | +10 pp | Appraisal theory adds value beyond sentiment |
-| TRIBE v2 alignment | r=0.776 | Internal consistency, NOT external validation |
-
-**Confusion matrix reveals the core problem:** deliberation is never predicted. The heuristic extractor produces ~0.5 for most dimensions on short text, so the circuit formulas never get inputs extreme enough to shift dominance away from approach. The Claude API extractor (built, requires API key) is expected to fix this.
-
-## What Would Make This a Calibrated Model
-
-**Priority 1: Behavioral ground truth.** The [Persuasion for Good](https://convokit.cornell.edu/documentation/persuasionforgood.html) dataset (1,017 dialogues with donation success/failure labels) is freely available. Running the extractor on persuader turns and regressing circuit scores against outcomes would produce the first empirically fitted weights. A regression harness is built and waiting for data in `validation/ground_truth.py`.
-
-**Priority 2: Human rater validation of the extractor.** 10 raters scoring 50 UX stimuli on 7 dimensions. Inter-rater reliability establishes the ceiling. LLM-vs-human correlation establishes extraction accuracy.
-
-**Priority 3: The experiment table.** 8 uncalibrated parameters, each with a designed calibration experiment:
-
-| Rank | Parameter | Sensitivity | Cost | Has Proxy? |
-|------|-----------|-------------|------|------------|
-| 1 | master.deliberation_weight | VERY HIGH | $50K (fMRI) / $0 (proxy) | Yes |
-| 2 | avoidance.novelty_threat | HIGH | $2,400 | Yes |
-| 3 | approach.novelty_penalty | HIGH | $2,000 | Yes |
-| 4 | master.interoceptive_weight | HIGH (personalized) | $4,000 | No |
-| 5 | approach.neg_agency_suppress | MEDIUM | $3,200 | Yes |
-| 6 | deliberation.goal_uncertainty | MEDIUM | $1,600 | Yes |
-| 7 | deliberation.circuit_conflict | LOW | $1,600 | Yes |
-| 8 | deliberation.contradictory_signals | LOW | $1,200 | Yes |
-
-Total for full calibration: ~$66,000. With proxies only: $0 (existing analytics).
+**Honest status:** 62.6% of parameters are empirically grounded (FITTED + CALIBRATED + CONSTRAINED). The remaining 37.4% are theory-derived with proposed calibration experiments. No real behavioral validation exists — all outcomes are proxies (donation decisions, game choices, synthetic acceptance labels). The heuristic extraction mode (regex keyword matching) imposes a ceiling that LLM extraction would likely raise by 5-15pp.
 
 ## Architecture
 
 ```
-Text Stimulus + Context Label
-     │
-     ▼
-AppraisalExtractor (heuristic | claude | ollama)
-     │ 7 dimension scores [0.0-1.0]
-     ▼
-CircuitPredictor (29 weights, each cited)
-     │ approach / avoidance / deliberation activations
-     ▼
-Softmax → compliance / rejection / delay probabilities
-     │
-     ▼
-ReframingEngine (weakest dimension → specific fix with product example)
+Text Stimulus
+    │
+    ├─── L1: Linguistic Surface (12 features, $0)
+    │         word_count, emotionality, concreteness, analytical_thinking,
+    │         lexical_diversity, hedge_density, certainty_markers,
+    │         self_reference, other_reference, reading_difficulty, sentiment
+    │
+    ├─── L2: Cognitive Appraisal (7 dimensions)
+    │         novelty, valence, goal_relevance, coping_potential,
+    │         agency, certainty, temporal_proximity
+    │         Extraction: heuristic ($0) | Ollama (local) | Claude API
+    │
+    ├─── L3: Technique Detection (54 techniques)
+    │         40 Zeng taxonomy + 14 practitioner techniques
+    │         Each triggers appraisal shifts + circuit modifier multipliers
+    │
+    ├─── L4: Recipient Modulation (16-dimension profile)
+    │         Big Five (5) + Moral Foundations (6) + Political (2) + Situational (3)
+    │         10 preset personas: impulse_buyer → issue_activist
+    │
+    └─── L5: Domain-Specific Weights
+              ecommerce | campaign | crisis_pr registries
+              Domain-specific outcome metrics (purchase_prob, trust_recovery, etc.)
+              │
+              ▼
+    OUTPUT: approach / avoidance / deliberation activations
+            → softmax → compliance / rejection / delay probabilities
+            → 3 time horizons: immediate, repeat, retaliation
+            → domain-specific outcomes
 ```
 
-For multi-step flows:
-```
-SequenceAnalyzer
-     │ Scores each step → computes transitions
-     │ Momentum, conflict spikes, dopamine prediction error chain
-     │ Identifies weakest transition → suggests reframe
-     ▼
-Trajectory through 7D appraisal space (PCA projection for visualization)
-```
+## Key Empirical Results
+
+### Multi-Domain Calibration (N=126,288)
+
+| Feature Set | DailyPersuasion (5-fold CV) | HCP (5-fold CV) |
+|-------------|---------------------------|-----------------|
+| L2: Appraisal only (7 dims) | 0.558 | 0.556 |
+| L1+L2: + Linguistic (19 dims) | **0.652** | **0.638** |
+| L1+L2+L3: + Technique binary (59 dims) | 0.650 | 0.632 |
+
+**Finding:** Linguistic surface features provide +8-9pp AUC lift. Technique binary detection adds zero — it actually *reduces* AUC by 0.2-0.6pp (adds noise, not signal).
+
+### Cross-Domain Transfer
+
+| Train \ Test | DailyPersuasion | HCP |
+|-------------|----------------|-----|
+| DailyPersuasion | **0.682** | 0.547 |
+| HCP | 0.521 | **0.648** |
+
+**Finding:** 10-13pp transfer penalty. Weights fitted on persuasion dialogues do not predict hotel booking decisions. Domain-specific registries are mandatory.
+
+### Technique × Personality Matrix (400 cells)
+
+| Combination | Compliance |
+|-------------|-----------|
+| emotional_appeal_positive × social_shopper | **74.7%** |
+| emotional_appeal_positive × liberal_base | 73.1% |
+| empathy_appeal × social_shopper | 68.0% |
+| bandwagon_pressure × impulse_buyer | 67.3% |
+
+- Most susceptible persona: impulse_buyer (56.8% avg compliance)
+- Most resistant persona: disengaged_voter (49.5%)
+- Highest persona sensitivity: emotional_appeal_positive (21.8pp spread)
+- Highest retaliation: emotional_manipulation × impulse_buyer (30.3%)
+
+### Crisis PR Simulation
+
+| Approach | Trust Recovery | Retaliation |
+|----------|---------------|------------|
+| Transparent | 50-52% | 0% |
+| Defensive | 24-26% | **46.5%** |
+
+### Weight Registry (302 parameters)
+
+| Provenance | Count | % |
+|-----------|-------|---|
+| FITTED | 3 | 1.0% |
+| CALIBRATED | 2 | 0.7% |
+| CONSTRAINED | 184 | 60.9% |
+| UNCALIBRATED | 113 | 37.4% |
+
+62.6% empirically grounded. Full registry: `results/weight_registry.csv`.
+
+### Ablation: What's Dead
+
+**Dead recipient traits** (< 1pp impact when ablated): openness, liberty_oppression, fairness_cheating, authority_subversion, sanctity_degradation, prior_belief.
+
+**Dead layer:** Technique binary detection (L3) — zero marginal AUC, confirmed across both corpora.
+
+**Active layers:** L1 Linguistic (+8-9pp), L2 Appraisal (base), L4 Recipient (4.7pp max trait impact), L5 Domain (12.9pp ecommerce lift).
+
+## Related Work
+
+- **PersuGPT** (Li et al., 2024) — 13K multi-domain persuasion scenarios. Our DailyPersuasion calibration corpus.
+- **HumanChoicePrediction** (Shapira et al., 2025) — Binary persuasion decisions in strategic games. Our strongest ground truth.
+- **Zeng et al.** (ACL 2024) — 40-technique persuasion taxonomy. Our L3 technique detector.
+- **Matz et al.** (Scientific Reports 2024) — LLM personalized persuasion at scale. Our L4 recipient modulation.
+- **Feinberg & Willer** (PSPB 2015) — Moral reframing across political spectrum. Our MFT interaction matrix.
+- **Knutson et al.** (Neuron 2007) — NAcc/insula predict purchase decisions at ~60%. Our circuit model foundation.
+- **Smith & Ellsworth** (JPSP 1985) — Cognitive appraisal dimensions of emotion. Our L2 appraisal model.
+- **Petty & Cacioppo** (1986) — Elaboration Likelihood Model. Our EL modulation in L4.
+- **Graham, Haidt & Nosek** (JPSP 2009) — Moral Foundations Theory. Our 6-foundation MFT profiles.
+- **Damasio** (1994) — Somatic marker hypothesis. Our somatic marker store.
+- **Berns & Moore** (JCP 2012) — NAcc predicts cultural popularity, self-report doesn't.
+- **Brady et al.** (PNAS 2017) — +20% diffusion per moral-emotional word.
+- **Transsuasion** (Deng et al., 2023) — Persuasive paraphrase generation.
+- **TRIBE v2** (Meta FAIR, 2026) — Brain encoding model for language.
+- **MoralBERT** (Preniqi et al., 2022) — Moral foundations classification in text.
+- **Cialdini** (2001, 2016) — Influence principles, Pre-Suasion, Unity.
 
 ## Running
 
 ```bash
-# Analyze
+# Single stimulus analysis
 python analyze.py "Get Notion free"
 python analyze.py compare "Submit" "Get Notion free"
-python analyze.py patterns --weak agency
 
-# API (14 endpoints, CORS)
-pip install fastapi uvicorn && uvicorn api.server:app --port 8100
+# Domain-specific prediction
+python -c "
+from core.domain_predictor import DomainPredictor
+dp = DomainPredictor()
+r = dp.predict('50% off today only!', domain='ecommerce')
+print(r.to_dict())
+"
 
-# MCP (12 tools, Claude Desktop / OpenClaw compatible)
-python mcp/server.py
+# API server (15 endpoints, CORS enabled)
+pip install fastapi uvicorn
+uvicorn api.server:app --port 8100
 
-# Evaluation (50 labeled stimuli, ablation, 7D vs 2D, TRIBE alignment)
-python validation/evaluate.py --mode heuristic
-ANTHROPIC_API_KEY=sk-... python validation/evaluate.py --mode claude
+# Full calibration pipeline
+python calibration/download_datasets.py      # parse corpora
+python calibration/fit_domain_weights.py     # fit weights per domain
+python calibration/discover_interactions.py  # cross-layer interactions
+python calibration/compare_domains.py        # weight stability analysis
 
-# Tests (63 passing)
-python tests/test_pipeline.py
+# Validation
+python validation/full_audit.py              # layer ablation × corpus
+python validation/weight_registry_audit.py   # parameter inventory
+python validation/ablation_report.py         # dead feature identification
+
+# Tests (297 passing)
+python tests/test_pipeline.py      # 70 tests
+python tests/test_recipient.py     # 71 tests
+python tests/test_domain.py        # 87 tests
+python tests/test_calibration.py   # 41 tests
+python tests/test_research.py      # 28 tests
 ```
+
+## Honest Limitations
+
+1. **Heuristic extraction ceiling.** All calibration uses regex keyword matching. The Claude API extractor would likely raise AUC by 5-15pp but hasn't been tested at scale. The moral reframing conservative-side lift (+0.8pp) is suppressed because the heuristic extractor can't differentiate care vs loyalty language at the appraisal level.
+
+2. **No real behavioral validation.** Neither corpus provides actual conversion rates, click-through rates, or measured attitude change. DailyPersuasion outcomes are inferred from GPT-generated persuadee responses. HCP outcomes are real human decisions but confounded by game context.
+
+3. **Technique binary = noise.** The heuristic regex detector is too crude to reliably classify 54 techniques from short text. Technique binary detection *reduces* AUC by 0.2-0.6pp. The technique × personality matrix (21.8pp spread) reflects the model's modulation rules, not independently validated behavioral data.
+
+4. **Interaction instability.** All top 7 cross-layer interactions are domain-unstable — they hold in one corpus but not the other. The +1.9pp interaction stacking lift is likely optimistic.
+
+5. **UNCALIBRATED majority in key modules.** 37.4% of parameters (113/302) are theory-derived guesses. All crisis PR, campaign moral reframing, and stakeholder-type weights have no empirical grounding.
+
+6. **Overfit risk.** 297 tests may encode specific weight values rather than structural truths. The test suite validates the architecture's internal consistency, not its external predictive validity.
+
+## Project Structure
+
+```
+core/                          # Pipeline modules
+  circuit_predictor.py         # 32 weights, 3 circuits, 3 time horizons
+  appraisal_extractor.py       # 7-dim extraction (heuristic/ollama/claude)
+  technique_detector.py        # 54-technique Zeng + practitioner taxonomy
+  technique_to_circuit.py      # Technique → appraisal shift + circuit modifier maps
+  recipient_profile.py         # 16-dimension RecipientProfile dataclass
+  recipient_modulator.py       # Trait-specific circuit weight modulations
+  preset_personas.py           # 10 archetypes (5 ecommerce + 5 politics)
+  domain_registry.py           # Domain-specific weight registries
+  domain_predictor.py          # Domain-aware prediction wrapper
+  linguistic_surface.py        # 12 zero-cost text features
+  influence_detector.py        # Influence operation detection
+  stealth_optimizer.py         # Maximize persuasion while passing organic detection
+  optimization_engine.py       # Iterative persuasive content generation
+  sequence_analyzer.py         # Multi-step flow trajectory analysis
+
+calibration/                   # Multi-corpus weight fitting
+  download_datasets.py         # Parse DailyPersuasion + HCP into unified JSONL
+  fit_domain_weights.py        # Logistic regression per domain with bootstrap CIs
+  discover_interactions.py     # 844 cross-layer interaction pairs tested
+  compare_domains.py           # Weight stability: universal vs domain-specific
+
+validation/                    # Audit and validation
+  full_audit.py                # Layer ablation × corpus with 5-fold CV
+  weight_registry_audit.py     # 302-parameter inventory with provenance
+  ablation_report.py           # Dead feature identification
+  run_pfg_calibration.py       # Persuasion for Good baseline calibration
+
+research/                      # Analysis scripts
+  technique_x_personality.py   # 400-cell technique × persona matrix
+  technique_x_mft.py           # 480-cell technique × MFT matrix
+  interaction_analysis.py      # Interaction shape classification
+  campaign_scenario_test.py    # 4 real-world scenario simulations
+
+results/                       # Generated reports
+  multi_domain_calibration.md  # Session 4 calibration report
+  interaction_paper.md         # Paper draft with 8 findings
+  weight_registry.csv          # Full parameter inventory
+  weight_audit_summary.md      # Audit summary
+  ablation_report.md           # Dead feature report
+  full_audit_results.json      # Layer ablation AUC tables
+
+tests/                         # 297 passing tests
+  test_pipeline.py             # Core pipeline (70)
+  test_recipient.py            # Recipient system (71)
+  test_domain.py               # Domain registries (87)
+  test_calibration.py          # Calibration pipeline (41)
+  test_research.py             # Research analyses (28)
+
+api/server.py                  # FastAPI server (15 endpoints)
+```
+
+## Discussion
+
+The central empirical finding across Sessions 4-6 is that **linguistic surface features dominate** the predictive signal. Twelve dictionary-based features extracted in under 1ms contribute more AUC lift (+8-9pp) than the entire 54-technique detection layer, which actually hurts prediction when added. This implies that *how something is written* — reading difficulty, emotionality density, self-reference patterns — carries more predictive signal than *which persuasion techniques are deployed*. The practical implication: invest in linguistic analysis, not technique classification.
+
+The technique × personality interaction matrix (400 cells) demonstrates that while technique *presence* is uninformative, technique × *context* interactions produce meaningful variation. The 21.8pp compliance spread for emotional_appeal_positive across personas shows that the same technique can be highly effective or completely neutral depending on who receives it. This validates the core architectural decision: multi-layer interaction modeling adds value that no single layer provides alone.
+
+The domain transfer penalty (10-13pp) confirms that persuasion mechanics are not universal. A model fitted on charity persuasion dialogues fails to predict hotel booking decisions. Domain-specific weight registries are not an optional enhancement — they are a structural requirement for any computational persuasion system that operates across contexts.
+
+## What Would Make This Better
+
+1. **Claude API extraction at scale** — expected AUC jump to 0.70+ and moral reframing symmetry
+2. **Real A/B test data** — conversion rates from actual product CTAs, email subject lines
+3. **Biosignal alignment** — fMRI/GSR correlation with circuit predictions
+4. **Cross-cultural MFT calibration** — non-WEIRD populations
+5. **Technique confidence scores** — replace binary with continuous technique deployment quality
 
 ## References
 
-1. Smith & Ellsworth (1985). Patterns of cognitive appraisal in emotion. JPSP 48(4).
-2. Scherer (2001). Appraisal considered as a process of multilevel sequential checking.
-3. Knutson et al. (2007). Neural predictors of purchases. Neuron 53(1). — NAcc/insula predict buying at ~60%.
-4. Damasio (1994). Descartes' Error. — Somatic marker hypothesis.
-5. Bechara et al. (1997). Deciding advantageously before knowing. Science 275. — Gut feelings at trial 10-50.
-6. Brady et al. (2017). Emotion shapes diffusion of moral content. PNAS. — +20% per moral-emotional word.
-7. Berns & Moore (2012). A neural predictor of cultural popularity. — NAcc predicts downloads, self-report doesn't.
-8. Hick (1952). On the rate of gain of information. — RT = a + b*log2(n+1).
-9. Wang et al. (2019). Persuasion for Good. ACL. — 1,017 labeled persuasion dialogues.
-10. d'Ascoli et al. (2026). TRIBE v2. Meta FAIR. — 1B-param brain encoding, open source.
-
-## Contact
-
-If you have A/B test data with measured conversion outcomes and want to collaborate on weight calibration, the regression harness is built. It just needs data.
+1. Bechara, A., Damasio, H., Tranel, D., & Damasio, A. R. (1997). Deciding advantageously before knowing the advantageous strategy. *Science*, 275(5304), 1293-1295.
+2. Berns, G. S., & Moore, S. E. (2012). A neural predictor of cultural popularity. *Journal of Consumer Psychology*, 22(1), 154-160.
+3. Brady, W. J., et al. (2017). Emotion shapes the diffusion of moralized content in social networks. *PNAS*, 114(28), 7313-7318.
+4. Cialdini, R. B. (2001). *Influence: Science and Practice* (4th ed.). Allyn & Bacon.
+5. Cialdini, R. B. (2016). *Pre-Suasion*. Simon & Schuster.
+6. Craig, A. D. (2009). How do you feel — now? *Nature Reviews Neuroscience*, 10(1), 59-70.
+7. Damasio, A. R. (1994). *Descartes' Error*. Putnam.
+8. Deng, Y., et al. (2023). Transsuasion: Automatic paraphrase for persuasion. arXiv:2302.00994.
+9. Falk, E. B., et al. (2012). From neural responses to population behavior. *Psychological Science*, 23(5), 439-445.
+10. Feinberg, M., & Willer, R. (2015). From gulf to bridge: When do moral arguments facilitate political influence? *PSPB*, 41(12), 1665-1681.
+11. Graham, J., Haidt, J., & Nosek, B. A. (2009). Liberals and conservatives rely on different sets of moral foundations. *JPSP*, 96(5), 1029-1046.
+12. Knutson, B., et al. (2007). Neural predictors of purchases. *Neuron*, 53(1), 147-156.
+13. Li, Y., et al. (2024). PersuGPT: DailyPersuasion dataset and benchmark. GitHub/PersuGPT.
+14. Matz, S. C., et al. (2024). The potential of generative AI for personalized persuasion at scale. *Scientific Reports*, 14, 4692.
+15. Petty, R. E., & Cacioppo, J. T. (1986). The Elaboration Likelihood Model of persuasion. *Advances in Experimental Social Psychology*, 19, 123-205.
+16. Scherer, K. R. (2001). Appraisal considered as a process of multilevel sequential checking.
+17. Shapira, E., et al. (2025). Human choice prediction in language-based persuasion games. GitHub/HumanChoicePrediction.
+18. Smith, C. A., & Ellsworth, P. C. (1985). Patterns of cognitive appraisal in emotion. *JPSP*, 48(4), 813-838.
+19. Wang, X., et al. (2019). Persuasion for good. *ACL*.
+20. Zeng, G., et al. (2024). A taxonomy of persuasion techniques. *ACL*.

@@ -1,0 +1,86 @@
+{
+  "trait_ablation": {
+    "trait_impacts": {
+      "extraversion": 0.047,
+      "elaboration_likelihood": 0.047,
+      "conscientiousness": 0.0397,
+      "agreeableness": 0.0351,
+      "neuroticism": 0.0243,
+      "involvement": 0.0199,
+      "care_harm": 0.0128,
+      "loyalty_betrayal": 0.011,
+      "economic_ideology": 0.0103,
+      "social_ideology": 0.0103,
+      "openness": 0.0053,
+      "liberty_oppression": 0.0038,
+      "fairness_cheating": 0.0,
+      "authority_subversion": 0.0,
+      "sanctity_degradation": 0.0,
+      "prior_belief": 0.0
+    },
+    "dead_traits": [
+      "openness",
+      "liberty_oppression",
+      "fairness_cheating",
+      "authority_subversion",
+      "sanctity_degradation",
+      "prior_belief"
+    ]
+  },
+  "technique_category_ablation": {
+    "category_impacts": {
+      "attack": 0.0,
+      "cognitive": 0.0,
+      "compliance": 0.0,
+      "credibility": 0.0,
+      "deception": 0.0,
+      "emotion": 0.0036,
+      "fallacy": 0.0,
+      "framing": 0.0044,
+      "linguistic": 0.0,
+      "manipulation": 0.0009,
+      "narrative": 0.0025,
+      "rapport": 0.0027,
+      "reasoning": 0.0012,
+      "social": 0.0027,
+      "urgency": 0.0013
+    },
+    "dead_categories": [
+      "framing",
+      "emotion",
+      "rapport",
+      "social",
+      "narrative",
+      "urgency",
+      "reasoning",
+      "manipulation",
+      "attack",
+      "cognitive",
+      "compliance",
+      "credibility",
+      "deception",
+      "fallacy",
+      "linguistic"
+    ]
+  },
+  "domain_weight_ablation": {
+    "ecommerce": {
+      "universal_compliance": 0.5498,
+      "domain_compliance": 0.6792,
+      "difference_pp": 12.9,
+      "has_domain_outcomes": true
+    },
+    "campaign": {
+      "universal_compliance": 0.4802,
+      "domain_compliance": 0.4802,
+      "difference_pp": 0.0,
+      "has_domain_outcomes": true
+    },
+    "crisis_pr": {
+      "universal_compliance": 0.4826,
+      "domain_compliance": 0.4858,
+      "difference_pp": 0.3,
+      "has_domain_outcomes": true
+    }
+  }
+}
