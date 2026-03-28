@@ -31,12 +31,9 @@ from datetime import datetime
 
 # Import from companion module
 try:
-    from UNIFIED_AUDITOR import Patterns, UnifiedPersuasionAuditor, DetectionResult
+    from core.unified_auditor import Patterns, UnifiedPersuasionAuditor, DetectionResult
 except ImportError:
-    # Fallback if running from different directory
-    import sys
-    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-    from UNIFIED_AUDITOR import Patterns, UnifiedPersuasionAuditor, DetectionResult
+    from unified_auditor import Patterns, UnifiedPersuasionAuditor, DetectionResult
 
 
 # =============================================================================
