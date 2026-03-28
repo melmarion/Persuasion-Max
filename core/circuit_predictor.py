@@ -33,6 +33,8 @@ from dataclasses import dataclass, asdict
 from typing import Optional
 
 from core.appraisal_extractor import AppraisalScores
+from core.recipient_profile import RecipientProfile
+from core.recipient_modulator import RecipientModulator
 
 
 @dataclass
@@ -697,14 +699,41 @@ class CircuitPredictor:
         familiarity: float = 0.5,
         information_load: float = 0.3,
         contradictory_signals: float = 0.0,
+        recipient: Optional[RecipientProfile] = None,
+        detected_techniques: Optional[list] = None,
     ) -> BehavioralPrediction:
-        """Run the full 3-circuit competition and output behavioral prediction."""
+        """Run the full 3-circuit competition and output behavioral prediction.
 
-        approach = self.compute_approach(appraisal, somatic_marker_congruence)
-        avoidance = self.compute_avoidance(appraisal, insula_disgust_signal, familiarity)
+        If recipient is provided, applies individual-difference modulations
+        from RecipientModulator before circuit computation. The same stimulus
+        scored against different recipients produces different predictions.
+        """
+        # Apply recipient modulation if profile provided
+        effective_appraisal = appraisal
+        effective_insula = insula_disgust_signal
+        recipient_mults = {"approach": 1.0, "avoidance": 1.0, "deliberation": 1.0}
+
+        if recipient is not None:
+            modulator = RecipientModulator()
+            mod_dict, effective_insula, recipient_mults, _ = modulator.modulate(
+                profile=recipient,
+                appraisal_dict=appraisal.to_dict(),
+                insula_signal=insula_disgust_signal,
+                detected_techniques=detected_techniques,
+            )
+            effective_appraisal = AppraisalScores(**mod_dict)
+
+        approach = self.compute_approach(effective_appraisal, somatic_marker_congruence)
+        avoidance = self.compute_avoidance(effective_appraisal, effective_insula, familiarity)
         deliberation = self.compute_deliberation(
-            appraisal, approach, avoidance, information_load, contradictory_signals
+            effective_appraisal, approach, avoidance, information_load, contradictory_signals
         )
+
+        # Apply recipient circuit multipliers
+        if recipient is not None:
+            approach = round(max(0.0, approach * recipient_mults["approach"]), 4)
+            avoidance = round(max(0.0, avoidance * recipient_mults["avoidance"]), 4)
+            deliberation = round(max(0.0, deliberation * recipient_mults["deliberation"]), 4)
 
         circuits = CircuitActivations(
             approach=approach,
