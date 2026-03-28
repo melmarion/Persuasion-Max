@@ -17,13 +17,27 @@ Sources:
     - Cialdini (Pre-Suasion): unity + reciprocity + commitment_consistency
     - Voss (Never Split the Difference): labeling + calibrated_question + pacing
 
-Diminishing returns data (from interaction_discovery.json):
-    5 interactions stacked: +1.9pp AUC
-    10 interactions stacked: +2.17pp AUC
-    15 interactions stacked: +2.17pp AUC (no additional lift — saturation at ~10)
+CALIBRATION STATUS:
+    Diminishing returns curve: EMPIRICAL (interaction_discovery.json, N=8000)
+        5 interactions stacked: +1.9pp AUC
+        10 interactions stacked: +2.17pp AUC
+        15 interactions stacked: +2.17pp AUC (saturation at ~10)
+
+    Compound stack multipliers: UNCALIBRATED ESTIMATES
+        Derived from LINGUISTIC_PERSUASION/5_RANKINGS which uses a weighted
+        opinion methodology (40% effect size, 25% synergy estimate, 20%
+        vulnerability depth, 15% field success). The specific multipliers
+        (1.42x-2.1x) are plausible but NOT empirically measured on any
+        dataset. Treat as directional guidance, not ground truth.
+
+    Platform effectiveness per compound: UNCALIBRATED ESTIMATES
+        Hand-assigned based on platform culture analysis, not engagement data.
+        The technique_analyzer feedback loop is designed to calibrate these
+        over time with real performance data.
 
     Implication: deploying more than 3 techniques per stimulus produces
     negligible lift and increases detection risk. Optimal is 2-3.
+    This conclusion IS empirically supported by the interaction stacking data.
 """
 
 
