@@ -118,9 +118,13 @@ class LimbicCascade:
         self,
         extraction_mode: str = "heuristic",
         ollama_model: str = "llama3.2",
+        anthropic_api_key: str = None,
         marker_store_path: Optional[str] = None,
     ):
-        self.extractor = AppraisalExtractor(ollama_model=ollama_model)
+        self.extractor = AppraisalExtractor(
+            ollama_model=ollama_model,
+            anthropic_api_key=anthropic_api_key,
+        )
         self.predictor = CircuitPredictor()
         self.markers = SomaticMarkerStore(store_path=marker_store_path)
         self.reframer = ReframingEngine()
@@ -166,7 +170,7 @@ class LimbicCascade:
         ))
 
         # ── Stage 2: Emotional Tagging (Amygdala) ──────────────────────
-        appraisal = self.extractor.extract(text, mode=self.extraction_mode)
+        appraisal = self.extractor.extract(text, mode=self.extraction_mode, context=context)
         # Amygdala fast path: classify as approach/avoid within ~150ms
         amygdala_threat = (1.0 - appraisal.valence) * (1.0 - appraisal.certainty)
         amygdala_verdict = "approach" if amygdala_threat < 0.4 else "threat" if amygdala_threat > 0.6 else "ambiguous"

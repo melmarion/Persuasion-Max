@@ -25,6 +25,7 @@ class LabeledStimulus:
     expected_circuit: str      # "approach", "avoidance", "deliberation"
     expected_weak_dim: str     # the appraisal dimension most responsible
     notes: str = ""
+    context: str = "general"   # UX context for LLM extraction
 
 
 DATASET = [
@@ -222,6 +223,28 @@ DATASET = [
         "low", "avoidance", "certainty",
         "Information vacuum. Insula uncertainty escalates after ~8s."),
 ]
+
+# ─── Context inference from stimulus ID and content ──────────────────────────
+
+_CONTEXT_MAP = {
+    "h01": "notification", "h02": "permission_request", "h03": "error_state",
+    "h04": "checkout", "h05": "cta", "h06": "onboarding", "h07": "pricing",
+    "h08": "onboarding", "h09": "onboarding", "h10": "onboarding",
+    "h11": "checkout", "h12": "checkout", "h13": "notification", "h14": "loading",
+    "h15": "cancellation", "h16": "landing", "h17": "empty_state",
+    "h18": "pricing", "h19": "cta", "h20": "cta", "h21": "onboarding",
+    "h22": "landing", "h23": "notification", "h24": "onboarding", "h25": "checkout",
+    "l01": "error_state", "l02": "error_state", "l03": "error_state",
+    "l04": "error_state", "l05": "cta", "l06": "cancellation", "l07": "pricing",
+    "l08": "cta", "l09": "pricing", "l10": "pricing", "l11": "checkout",
+    "l12": "onboarding", "l13": "cta", "l14": "cta", "l15": "cta", "l16": "cta",
+    "l17": "empty_state", "l18": "empty_state", "l19": "landing", "l20": "landing",
+    "l21": "landing", "l22": "onboarding", "l23": "landing", "l24": "onboarding",
+    "l25": "loading",
+}
+
+for _s in DATASET:
+    _s.context = _CONTEXT_MAP.get(_s.id, "general")
 
 # Convenience accessors
 HIGH_CONVERTING = [s for s in DATASET if s.conversion == "high"]

@@ -44,10 +44,11 @@ def _pearson_r(x, y):
     return round(sum((xi - mx) * (yi - my) for xi, yi in zip(x, y)) / (n * sx * sy), 4)
 
 
-def run_full_evaluation(mode="heuristic", marker_path=None):
+def run_full_evaluation(mode="heuristic", marker_path=None, anthropic_api_key=None):
     """Run the complete evaluation suite."""
     cascade = LimbicCascade(
         extraction_mode=mode,
+        anthropic_api_key=anthropic_api_key,
         marker_store_path=marker_path or "/tmp/eval_markers_%d.json" % int(time.time()),
     )
     predictor = CircuitPredictor()
@@ -56,7 +57,7 @@ def run_full_evaluation(mode="heuristic", marker_path=None):
 
     results = []
     for stim in DATASET:
-        r = cascade.analyze(stim.text)
+        r = cascade.analyze(stim.text, context=stim.context)
         results.append({
             "id": stim.id,
             "text": stim.text[:80],
@@ -271,18 +272,24 @@ def run_scaling_test(sizes=None):
 
 
 if __name__ == "__main__":
-    print("Running full evaluation suite (heuristic mode)...")
-    report = run_full_evaluation(mode="heuristic")
+    import argparse
+    parser = argparse.ArgumentParser(description="Run evaluation suite")
+    parser.add_argument("--mode", default="heuristic", choices=["heuristic", "claude", "ollama"])
+    args = parser.parse_args()
+
+    print("Running full evaluation suite (%s mode)..." % args.mode)
+    report = run_full_evaluation(mode=args.mode)
 
     # Save JSON
     out_dir = Path(__file__).parent.parent / "results"
     out_dir.mkdir(exist_ok=True)
-    with open(out_dir / "evaluation_report.json", "w") as f:
+    suffix = args.mode
+    with open(out_dir / ("evaluation_%s.json" % suffix), "w") as f:
         json.dump(report, f, indent=2)
 
     # Save markdown
     md = generate_markdown(report)
-    with open(out_dir / "evaluation_report.md", "w") as f:
+    with open(out_dir / ("evaluation_%s.md" % suffix), "w") as f:
         f.write(md)
 
     print(md)
