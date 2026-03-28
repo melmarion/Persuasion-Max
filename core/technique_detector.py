@@ -245,7 +245,10 @@ TECHNIQUES = {
     "identity_lock": {
         "category": "social", "ethical": True,
         "definition": "Framing the desired behavior as what a specific identity group does. Compliance becomes an identity statement, non-compliance becomes identity-threatening.",
-        "patterns": [r"\b((real|smart|serious|top|good) (devs?|engineers?|founders?|people|leaders?|professionals?) (know|do|always|never|understand)|if you.re (the kind|someone) who|people like (us|you))\b"],
+        "patterns": [r"\b(real|smart|serious|top|good) (devs?|engineers?|founders?|people|leaders?|professionals?)\b.{0,40}\b(know|do|always|never|understand)\b",
+                     r"\bif you.re (the kind|someone) who\b",
+                     r"\bpeople like (us|you)\b",
+                     r"\b(anyone who|those who|the (kind|type) of (person|people) who)\b"],
     },
     "pacing_and_leading": {
         "category": "rapport", "ethical": True,
@@ -280,7 +283,7 @@ TECHNIQUES = {
     "door_in_the_face": {
         "category": "compliance", "ethical": True,
         "definition": "Making an extreme initial request that will be rejected, then following with the actual (smaller) request which now seems reasonable by contrast.",
-        "patterns": [r"\b(I know (this|it|that).s a lot|it.s a big ask|even if you can.t.*(at least|maybe|just)|all I.m (really )?asking|the (least|minimum|smallest))\b"],
+        "patterns": [r"\b(big ask|a lot to ask|even if you can.t.{0,30}(at least|maybe|just)|all I.m (really )?asking|the (least|minimum|smallest) you (could|can)|if that.s too much.{0,20}(then|maybe|how about))\b"],
     },
     "foot_in_the_door": {
         "category": "compliance", "ethical": True,
