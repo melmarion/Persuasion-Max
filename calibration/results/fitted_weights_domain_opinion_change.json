@@ -1,0 +1,592 @@
+[
+  {
+    "weight_name": "novelty",
+    "value": -0.01,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "valence",
+    "value": 0.0405,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "goal_relevance",
+    "value": -0.1018,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "coping_potential",
+    "value": 0.0332,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "agency",
+    "value": 0.0175,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "certainty",
+    "value": -0.0612,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "temporal_proximity",
+    "value": -0.0494,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "word_count",
+    "value": -0.0911,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "emotionality",
+    "value": -0.0171,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "concreteness",
+    "value": -0.0413,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "analytical_thinking",
+    "value": -0.063,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "lexical_diversity",
+    "value": 0.0,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "hedge_density",
+    "value": -0.0486,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "certainty_markers",
+    "value": -0.1058,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "self_reference",
+    "value": 0.2732,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "other_reference",
+    "value": -0.2132,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "reading_difficulty",
+    "value": -0.4555,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "tone_positive",
+    "value": 0.142,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "tone_negative",
+    "value": 0.0016,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "logical_appeal",
+    "value": -0.0565,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "evidence_based",
+    "value": 0.0155,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "expert_testimony",
+    "value": 0.0789,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "social_proof",
+    "value": -0.107,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "authority_endorsement",
+    "value": 0.0263,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "bandwagon",
+    "value": -0.0407,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "emotional_appeal_positive",
+    "value": -0.0664,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "emotional_appeal_negative",
+    "value": 0.0662,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "empathy_appeal",
+    "value": -0.0002,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "storytelling",
+    "value": 0.0667,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "self_disclosure",
+    "value": -0.0307,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "commitment_consistency",
+    "value": 0.0031,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "reciprocity",
+    "value": -0.0147,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "scarcity_appeal",
+    "value": -0.0077,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "urgency_appeal",
+    "value": -0.0214,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "gain_frame",
+    "value": -0.0246,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "loss_frame",
+    "value": 0.032,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "anchoring",
+    "value": 0.0167,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "rhetorical_question",
+    "value": 0.0103,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "perspective_shifting",
+    "value": -0.1348,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "deceptive_information",
+    "value": -0.033,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "emotional_manipulation",
+    "value": 0.0,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "gaslighting",
+    "value": 0.0,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "false_equivalence",
+    "value": -0.0957,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "guilt_tripping",
+    "value": 0.0,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "fear_mongering",
+    "value": 0.0156,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "false_urgency",
+    "value": 0.1376,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "false_scarcity",
+    "value": 0.0,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "ad_hominem",
+    "value": 0.0,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "name_calling",
+    "value": 0.099,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "straw_man",
+    "value": 0.0,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "whataboutism",
+    "value": -0.0327,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "false_dilemma",
+    "value": 0.0,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "slippery_slope",
+    "value": -0.0763,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "red_herring",
+    "value": -0.0425,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "appeal_to_ignorance",
+    "value": 0.0,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "manipulative_flattery",
+    "value": 0.0,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "appeal_to_pity",
+    "value": -0.0904,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "obfuscation",
+    "value": 0.023,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  },
+  {
+    "weight_name": "bandwagon_pressure",
+    "value": 0.0,
+    "CI_lower": null,
+    "CI_upper": null,
+    "corpus": "domain_opinion_change",
+    "N": 3404,
+    "provenance": "FITTED",
+    "domain": "domain_opinion_change"
+  }
+]

@@ -1,0 +1,592 @@
+[
+  {
+    "weight_name": "novelty",
+    "value": 0.0408,
+    "CI_lower": -0.015,
+    "CI_upper": 0.0928,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "valence",
+    "value": 0.0711,
+    "CI_lower": 0.0204,
+    "CI_upper": 0.1333,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "goal_relevance",
+    "value": -0.0077,
+    "CI_lower": -0.0822,
+    "CI_upper": 0.0431,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "coping_potential",
+    "value": 0.0348,
+    "CI_lower": -0.037,
+    "CI_upper": 0.0923,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "agency",
+    "value": 0.0001,
+    "CI_lower": -0.054,
+    "CI_upper": 0.0714,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "certainty",
+    "value": -0.0996,
+    "CI_lower": -0.1526,
+    "CI_upper": -0.0269,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "temporal_proximity",
+    "value": -0.0399,
+    "CI_lower": -0.1021,
+    "CI_upper": 0.0241,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "word_count",
+    "value": -0.3637,
+    "CI_lower": -0.4579,
+    "CI_upper": -0.2381,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "emotionality",
+    "value": 0.0113,
+    "CI_lower": -0.0382,
+    "CI_upper": 0.063,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "concreteness",
+    "value": -0.1505,
+    "CI_lower": -0.1891,
+    "CI_upper": -0.0883,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "analytical_thinking",
+    "value": 0.0005,
+    "CI_lower": -0.0597,
+    "CI_upper": 0.1002,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "lexical_diversity",
+    "value": 0.0531,
+    "CI_lower": -0.0306,
+    "CI_upper": 0.1451,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "hedge_density",
+    "value": 0.0338,
+    "CI_lower": -0.0254,
+    "CI_upper": 0.1068,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "certainty_markers",
+    "value": 0.0131,
+    "CI_lower": -0.0542,
+    "CI_upper": 0.0775,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "self_reference",
+    "value": 0.1795,
+    "CI_lower": 0.1308,
+    "CI_upper": 0.2303,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "other_reference",
+    "value": -0.0008,
+    "CI_lower": -0.0579,
+    "CI_upper": 0.0835,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "reading_difficulty",
+    "value": 0.015,
+    "CI_lower": -0.0447,
+    "CI_upper": 0.0717,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "tone_positive",
+    "value": 0.1776,
+    "CI_lower": 0.1019,
+    "CI_upper": 0.2545,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "tone_negative",
+    "value": -0.0227,
+    "CI_lower": -0.0921,
+    "CI_upper": 0.032,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "logical_appeal",
+    "value": 0.0461,
+    "CI_lower": -0.022,
+    "CI_upper": 0.1011,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "evidence_based",
+    "value": 0.0099,
+    "CI_lower": -0.0355,
+    "CI_upper": 0.0765,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "expert_testimony",
+    "value": -0.0104,
+    "CI_lower": -0.1646,
+    "CI_upper": 0.1123,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "social_proof",
+    "value": 0.0238,
+    "CI_lower": -0.0374,
+    "CI_upper": 0.085,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "authority_endorsement",
+    "value": -0.0383,
+    "CI_lower": -0.1178,
+    "CI_upper": 0.0112,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "bandwagon",
+    "value": 0.0033,
+    "CI_lower": -0.0638,
+    "CI_upper": 0.0661,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "emotional_appeal_positive",
+    "value": 0.0177,
+    "CI_lower": -0.0276,
+    "CI_upper": 0.0975,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "emotional_appeal_negative",
+    "value": -0.0388,
+    "CI_lower": -0.2246,
+    "CI_upper": 0.0203,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "empathy_appeal",
+    "value": 0.0309,
+    "CI_lower": -0.1686,
+    "CI_upper": 0.1982,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "storytelling",
+    "value": 0.0238,
+    "CI_lower": -0.0194,
+    "CI_upper": 0.085,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "self_disclosure",
+    "value": 0.0656,
+    "CI_lower": -0.026,
+    "CI_upper": 0.1658,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "commitment_consistency",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "reciprocity",
+    "value": 0.0079,
+    "CI_lower": -0.0458,
+    "CI_upper": 0.0878,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "scarcity_appeal",
+    "value": 0.0396,
+    "CI_lower": -0.0066,
+    "CI_upper": 0.099,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "urgency_appeal",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "gain_frame",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "loss_frame",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "anchoring",
+    "value": -0.0258,
+    "CI_lower": -0.0931,
+    "CI_upper": 0.0177,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "rhetorical_question",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "perspective_shifting",
+    "value": 0.084,
+    "CI_lower": 0.0012,
+    "CI_upper": 0.1191,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "deceptive_information",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "emotional_manipulation",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "gaslighting",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "false_equivalence",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "guilt_tripping",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "fear_mongering",
+    "value": 0.0221,
+    "CI_lower": -0.0307,
+    "CI_upper": 0.1005,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "false_urgency",
+    "value": 0.0361,
+    "CI_lower": -0.0077,
+    "CI_upper": 0.1049,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "false_scarcity",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "ad_hominem",
+    "value": 0.0228,
+    "CI_lower": -0.1161,
+    "CI_upper": 0.1482,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "name_calling",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "straw_man",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "whataboutism",
+    "value": 0.0265,
+    "CI_lower": -0.0303,
+    "CI_upper": 0.0775,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "false_dilemma",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "slippery_slope",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "red_herring",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "appeal_to_ignorance",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "manipulative_flattery",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "appeal_to_pity",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "obfuscation",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  },
+  {
+    "weight_name": "bandwagon_pressure",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "hcp",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "hcp"
+  }
+]

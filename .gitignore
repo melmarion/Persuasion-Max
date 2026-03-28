@@ -66,6 +66,12 @@ nul
 test_output/
 *.test.py
 
+# External datasets (cloned repos — large, not ours)
+data/
+
+# Parsed calibration data (large JSONL files)
+calibration/parsed/
+
 # API Keys (just in case)
 *_api_key.txt
 credentials.json

@@ -1,0 +1,998 @@
+{
+  "daily_persuasion": {
+    "auc_cv": 0.6666,
+    "n": 5000,
+    "pos_rate": 0.6434,
+    "weights": {
+      "novelty": -0.0245,
+      "valence": 0.0275,
+      "goal_relevance": -0.037,
+      "coping_potential": 0.0861,
+      "agency": 0.0159,
+      "certainty": 0.0102,
+      "temporal_proximity": -0.0823,
+      "word_count": -0.1444,
+      "emotionality": 0.0107,
+      "concreteness": -0.0533,
+      "analytical_thinking": -0.0545,
+      "lexical_diversity": -0.083,
+      "hedge_density": -0.0195,
+      "certainty_markers": -0.0922,
+      "self_reference": 0.2778,
+      "other_reference": -0.2124,
+      "reading_difficulty": -0.4142,
+      "tone_positive": 0.0861,
+      "tone_negative": 0.0025,
+      "logical_appeal": 0.005,
+      "evidence_based": -0.0141,
+      "expert_testimony": 0.0485,
+      "social_proof": -0.0806,
+      "authority_endorsement": 0.0252,
+      "bandwagon": -0.0942,
+      "emotional_appeal_positive": -0.0418,
+      "emotional_appeal_negative": 0.0621,
+      "empathy_appeal": -0.0065,
+      "storytelling": 0.0343,
+      "self_disclosure": -0.0269,
+      "commitment_consistency": -0.0121,
+      "reciprocity": 0.0112,
+      "scarcity_appeal": -0.0013,
+      "urgency_appeal": -0.023,
+      "gain_frame": -0.0682,
+      "loss_frame": 0.0484,
+      "anchoring": -0.026,
+      "rhetorical_question": 0.0282,
+      "perspective_shifting": -0.1117,
+      "deceptive_information": -0.0094,
+      "emotional_manipulation": 0.0,
+      "gaslighting": 0.0,
+      "false_equivalence": -0.0491,
+      "guilt_tripping": 0.0,
+      "fear_mongering": -0.0104,
+      "false_urgency": 0.0138,
+      "false_scarcity": 0.0,
+      "ad_hominem": 0.0,
+      "name_calling": 0.0671,
+      "straw_man": 0.0,
+      "whataboutism": -0.0193,
+      "false_dilemma": 0.0633,
+      "slippery_slope": -0.0402,
+      "red_herring": -0.0509,
+      "appeal_to_ignorance": 0.0,
+      "manipulative_flattery": 0.0,
+      "appeal_to_pity": -0.0763,
+      "obfuscation": 0.0222,
+      "bandwagon_pressure": 0.0
+    },
+    "confidence_intervals": {
+      "novelty": {
+        "mean": -0.0278,
+        "ci_lower": -0.0718,
+        "ci_upper": 0.0229,
+        "std": 0.0277
+      },
+      "valence": {
+        "mean": 0.0196,
+        "ci_lower": -0.0531,
+        "ci_upper": 0.0734,
+        "std": 0.0376
+      },
+      "goal_relevance": {
+        "mean": -0.0381,
+        "ci_lower": -0.0884,
+        "ci_upper": 0.0332,
+        "std": 0.0339
+      },
+      "coping_potential": {
+        "mean": 0.0888,
+        "ci_lower": 0.0384,
+        "ci_upper": 0.1519,
+        "std": 0.0292
+      },
+      "agency": {
+        "mean": 0.0162,
+        "ci_lower": -0.0467,
+        "ci_upper": 0.0736,
+        "std": 0.0341
+      },
+      "certainty": {
+        "mean": 0.0169,
+        "ci_lower": -0.0638,
+        "ci_upper": 0.0773,
+        "std": 0.038
+      },
+      "temporal_proximity": {
+        "mean": -0.0842,
+        "ci_lower": -0.1427,
+        "ci_upper": -0.0224,
+        "std": 0.0338
+      },
+      "word_count": {
+        "mean": -0.1421,
+        "ci_lower": -0.2403,
+        "ci_upper": -0.0619,
+        "std": 0.0491
+      },
+      "emotionality": {
+        "mean": 0.0145,
+        "ci_lower": -0.067,
+        "ci_upper": 0.1084,
+        "std": 0.0444
+      },
+      "concreteness": {
+        "mean": -0.0542,
+        "ci_lower": -0.1086,
+        "ci_upper": 0.0091,
+        "std": 0.034
+      },
+      "analytical_thinking": {
+        "mean": -0.057,
+        "ci_lower": -0.0973,
+        "ci_upper": -0.0002,
+        "std": 0.0286
+      },
+      "lexical_diversity": {
+        "mean": -0.0792,
+        "ci_lower": -0.1725,
+        "ci_upper": -0.0085,
+        "std": 0.0473
+      },
+      "hedge_density": {
+        "mean": -0.0123,
+        "ci_lower": -0.0799,
+        "ci_upper": 0.0642,
+        "std": 0.0387
+      },
+      "certainty_markers": {
+        "mean": -0.0866,
+        "ci_lower": -0.1597,
+        "ci_upper": -0.0046,
+        "std": 0.0369
+      },
+      "self_reference": {
+        "mean": 0.2808,
+        "ci_lower": 0.2066,
+        "ci_upper": 0.3418,
+        "std": 0.0362
+      },
+      "other_reference": {
+        "mean": -0.2221,
+        "ci_lower": -0.2801,
+        "ci_upper": -0.147,
+        "std": 0.0379
+      },
+      "reading_difficulty": {
+        "mean": -0.4223,
+        "ci_lower": -0.5011,
+        "ci_upper": -0.3332,
+        "std": 0.0482
+      },
+      "tone_positive": {
+        "mean": 0.0909,
+        "ci_lower": -0.0006,
+        "ci_upper": 0.1598,
+        "std": 0.0449
+      },
+      "tone_negative": {
+        "mean": 0.0019,
+        "ci_lower": -0.0535,
+        "ci_upper": 0.0688,
+        "std": 0.0316
+      },
+      "logical_appeal": {
+        "mean": 0.006,
+        "ci_lower": -0.0557,
+        "ci_upper": 0.069,
+        "std": 0.0351
+      },
+      "evidence_based": {
+        "mean": -0.0235,
+        "ci_lower": -0.0966,
+        "ci_upper": 0.0603,
+        "std": 0.0407
+      },
+      "expert_testimony": {
+        "mean": 0.046,
+        "ci_lower": -0.0124,
+        "ci_upper": 0.1198,
+        "std": 0.033
+      },
+      "social_proof": {
+        "mean": -0.0812,
+        "ci_lower": -0.126,
+        "ci_upper": -0.0191,
+        "std": 0.03
+      },
+      "authority_endorsement": {
+        "mean": 0.027,
+        "ci_lower": -0.0492,
+        "ci_upper": 0.0796,
+        "std": 0.0341
+      },
+      "bandwagon": {
+        "mean": -0.1019,
+        "ci_lower": -0.1529,
+        "ci_upper": -0.0343,
+        "std": 0.0318
+      },
+      "emotional_appeal_positive": {
+        "mean": -0.0451,
+        "ci_lower": -0.1014,
+        "ci_upper": 0.0149,
+        "std": 0.0327
+      },
+      "emotional_appeal_negative": {
+        "mean": 0.0643,
+        "ci_lower": 0.012,
+        "ci_upper": 0.1235,
+        "std": 0.0285
+      },
+      "empathy_appeal": {
+        "mean": -0.0073,
+        "ci_lower": -0.0664,
+        "ci_upper": 0.0635,
+        "std": 0.0357
+      },
+      "storytelling": {
+        "mean": 0.0389,
+        "ci_lower": -0.0189,
+        "ci_upper": 0.0885,
+        "std": 0.0311
+      },
+      "self_disclosure": {
+        "mean": -0.033,
+        "ci_lower": -0.0913,
+        "ci_upper": 0.0195,
+        "std": 0.0334
+      },
+      "commitment_consistency": {
+        "mean": -0.0154,
+        "ci_lower": -0.1856,
+        "ci_upper": 0.1613,
+        "std": 0.0812
+      },
+      "reciprocity": {
+        "mean": 0.0116,
+        "ci_lower": -0.0399,
+        "ci_upper": 0.0635,
+        "std": 0.0273
+      },
+      "scarcity_appeal": {
+        "mean": -0.0055,
+        "ci_lower": -0.0643,
+        "ci_upper": 0.0481,
+        "std": 0.03
+      },
+      "urgency_appeal": {
+        "mean": -0.0199,
+        "ci_lower": -0.1066,
+        "ci_upper": 0.0366,
+        "std": 0.0397
+      },
+      "gain_frame": {
+        "mean": -0.0688,
+        "ci_lower": -0.1364,
+        "ci_upper": -0.0125,
+        "std": 0.0314
+      },
+      "loss_frame": {
+        "mean": 0.0489,
+        "ci_lower": -0.008,
+        "ci_upper": 0.1049,
+        "std": 0.0313
+      },
+      "anchoring": {
+        "mean": -0.0249,
+        "ci_lower": -0.0665,
+        "ci_upper": 0.0195,
+        "std": 0.0263
+      },
+      "rhetorical_question": {
+        "mean": 0.0294,
+        "ci_lower": -0.0316,
+        "ci_upper": 0.0985,
+        "std": 0.0361
+      },
+      "perspective_shifting": {
+        "mean": -0.1111,
+        "ci_lower": -0.1799,
+        "ci_upper": -0.0529,
+        "std": 0.031
+      },
+      "deceptive_information": {
+        "mean": -0.0113,
+        "ci_lower": -0.0703,
+        "ci_upper": 0.0417,
+        "std": 0.031
+      },
+      "emotional_manipulation": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "gaslighting": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "false_equivalence": {
+        "mean": -0.05,
+        "ci_lower": -0.0942,
+        "ci_upper": 0.0143,
+        "std": 0.0279
+      },
+      "guilt_tripping": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "fear_mongering": {
+        "mean": -0.0134,
+        "ci_lower": -0.0766,
+        "ci_upper": 0.0302,
+        "std": 0.0262
+      },
+      "false_urgency": {
+        "mean": 0.051,
+        "ci_lower": -0.1253,
+        "ci_upper": 0.1648,
+        "std": 0.08
+      },
+      "false_scarcity": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "ad_hominem": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "name_calling": {
+        "mean": 0.046,
+        "ci_lower": -0.0096,
+        "ci_upper": 0.0944,
+        "std": 0.0456
+      },
+      "straw_man": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "whataboutism": {
+        "mean": -0.0177,
+        "ci_lower": -0.0761,
+        "ci_upper": 0.0493,
+        "std": 0.0326
+      },
+      "false_dilemma": {
+        "mean": 0.0457,
+        "ci_lower": -0.0096,
+        "ci_upper": 0.0971,
+        "std": 0.0478
+      },
+      "slippery_slope": {
+        "mean": -0.0403,
+        "ci_lower": -0.0943,
+        "ci_upper": 0.0117,
+        "std": 0.0293
+      },
+      "red_herring": {
+        "mean": -0.0544,
+        "ci_lower": -0.1204,
+        "ci_upper": -0.005,
+        "std": 0.0286
+      },
+      "appeal_to_ignorance": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "manipulative_flattery": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "appeal_to_pity": {
+        "mean": -0.0986,
+        "ci_lower": -0.2256,
+        "ci_upper": 0.0986,
+        "std": 0.0857
+      },
+      "obfuscation": {
+        "mean": 0.0233,
+        "ci_lower": -0.0375,
+        "ci_upper": 0.091,
+        "std": 0.0351
+      },
+      "bandwagon_pressure": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      }
+    }
+  },
+  "hcp": {
+    "auc_cv": 0.6343,
+    "n": 5000,
+    "pos_rate": 0.4718,
+    "weights": {
+      "novelty": 0.0408,
+      "valence": 0.0711,
+      "goal_relevance": -0.0077,
+      "coping_potential": 0.0348,
+      "agency": 0.0001,
+      "certainty": -0.0996,
+      "temporal_proximity": -0.0399,
+      "word_count": -0.3637,
+      "emotionality": 0.0113,
+      "concreteness": -0.1505,
+      "analytical_thinking": 0.0005,
+      "lexical_diversity": 0.0531,
+      "hedge_density": 0.0338,
+      "certainty_markers": 0.0131,
+      "self_reference": 0.1795,
+      "other_reference": -0.0008,
+      "reading_difficulty": 0.015,
+      "tone_positive": 0.1776,
+      "tone_negative": -0.0227,
+      "logical_appeal": 0.0461,
+      "evidence_based": 0.0099,
+      "expert_testimony": -0.0104,
+      "social_proof": 0.0238,
+      "authority_endorsement": -0.0383,
+      "bandwagon": 0.0033,
+      "emotional_appeal_positive": 0.0177,
+      "emotional_appeal_negative": -0.0388,
+      "empathy_appeal": 0.0309,
+      "storytelling": 0.0238,
+      "self_disclosure": 0.0656,
+      "commitment_consistency": 0.0,
+      "reciprocity": 0.0079,
+      "scarcity_appeal": 0.0396,
+      "urgency_appeal": 0.0,
+      "gain_frame": 0.0,
+      "loss_frame": 0.0,
+      "anchoring": -0.0258,
+      "rhetorical_question": 0.0,
+      "perspective_shifting": 0.084,
+      "deceptive_information": 0.0,
+      "emotional_manipulation": 0.0,
+      "gaslighting": 0.0,
+      "false_equivalence": 0.0,
+      "guilt_tripping": 0.0,
+      "fear_mongering": 0.0221,
+      "false_urgency": 0.0361,
+      "false_scarcity": 0.0,
+      "ad_hominem": 0.0228,
+      "name_calling": 0.0,
+      "straw_man": 0.0,
+      "whataboutism": 0.0265,
+      "false_dilemma": 0.0,
+      "slippery_slope": 0.0,
+      "red_herring": 0.0,
+      "appeal_to_ignorance": 0.0,
+      "manipulative_flattery": 0.0,
+      "appeal_to_pity": 0.0,
+      "obfuscation": 0.0,
+      "bandwagon_pressure": 0.0
+    },
+    "confidence_intervals": {
+      "novelty": {
+        "mean": 0.0402,
+        "ci_lower": -0.015,
+        "ci_upper": 0.0928,
+        "std": 0.0307
+      },
+      "valence": {
+        "mean": 0.0734,
+        "ci_lower": 0.0204,
+        "ci_upper": 0.1333,
+        "std": 0.0287
+      },
+      "goal_relevance": {
+        "mean": -0.0131,
+        "ci_lower": -0.0822,
+        "ci_upper": 0.0431,
+        "std": 0.0398
+      },
+      "coping_potential": {
+        "mean": 0.038,
+        "ci_lower": -0.037,
+        "ci_upper": 0.0923,
+        "std": 0.0319
+      },
+      "agency": {
+        "mean": 0.0029,
+        "ci_lower": -0.054,
+        "ci_upper": 0.0714,
+        "std": 0.0345
+      },
+      "certainty": {
+        "mean": -0.0959,
+        "ci_lower": -0.1526,
+        "ci_upper": -0.0269,
+        "std": 0.0358
+      },
+      "temporal_proximity": {
+        "mean": -0.0322,
+        "ci_lower": -0.1021,
+        "ci_upper": 0.0241,
+        "std": 0.0363
+      },
+      "word_count": {
+        "mean": -0.3551,
+        "ci_lower": -0.4579,
+        "ci_upper": -0.2381,
+        "std": 0.0597
+      },
+      "emotionality": {
+        "mean": 0.0083,
+        "ci_lower": -0.0382,
+        "ci_upper": 0.063,
+        "std": 0.0264
+      },
+      "concreteness": {
+        "mean": -0.1473,
+        "ci_lower": -0.1891,
+        "ci_upper": -0.0883,
+        "std": 0.0288
+      },
+      "analytical_thinking": {
+        "mean": 0.0147,
+        "ci_lower": -0.0597,
+        "ci_upper": 0.1002,
+        "std": 0.0417
+      },
+      "lexical_diversity": {
+        "mean": 0.0612,
+        "ci_lower": -0.0306,
+        "ci_upper": 0.1451,
+        "std": 0.0469
+      },
+      "hedge_density": {
+        "mean": 0.0408,
+        "ci_lower": -0.0254,
+        "ci_upper": 0.1068,
+        "std": 0.0356
+      },
+      "certainty_markers": {
+        "mean": 0.014,
+        "ci_lower": -0.0542,
+        "ci_upper": 0.0775,
+        "std": 0.0366
+      },
+      "self_reference": {
+        "mean": 0.1801,
+        "ci_lower": 0.1308,
+        "ci_upper": 0.2303,
+        "std": 0.0267
+      },
+      "other_reference": {
+        "mean": -0.0019,
+        "ci_lower": -0.0579,
+        "ci_upper": 0.0835,
+        "std": 0.0328
+      },
+      "reading_difficulty": {
+        "mean": 0.0152,
+        "ci_lower": -0.0447,
+        "ci_upper": 0.0717,
+        "std": 0.0319
+      },
+      "tone_positive": {
+        "mean": 0.1766,
+        "ci_lower": 0.1019,
+        "ci_upper": 0.2545,
+        "std": 0.0401
+      },
+      "tone_negative": {
+        "mean": -0.0235,
+        "ci_lower": -0.0921,
+        "ci_upper": 0.032,
+        "std": 0.035
+      },
+      "logical_appeal": {
+        "mean": 0.0301,
+        "ci_lower": -0.022,
+        "ci_upper": 0.1011,
+        "std": 0.0328
+      },
+      "evidence_based": {
+        "mean": 0.0113,
+        "ci_lower": -0.0355,
+        "ci_upper": 0.0765,
+        "std": 0.0308
+      },
+      "expert_testimony": {
+        "mean": -0.0424,
+        "ci_lower": -0.1646,
+        "ci_upper": 0.1123,
+        "std": 0.0803
+      },
+      "social_proof": {
+        "mean": 0.0263,
+        "ci_lower": -0.0374,
+        "ci_upper": 0.085,
+        "std": 0.0332
+      },
+      "authority_endorsement": {
+        "mean": -0.0394,
+        "ci_lower": -0.1178,
+        "ci_upper": 0.0112,
+        "std": 0.0332
+      },
+      "bandwagon": {
+        "mean": 0.0046,
+        "ci_lower": -0.0638,
+        "ci_upper": 0.0661,
+        "std": 0.033
+      },
+      "emotional_appeal_positive": {
+        "mean": 0.0254,
+        "ci_lower": -0.0276,
+        "ci_upper": 0.0975,
+        "std": 0.0336
+      },
+      "emotional_appeal_negative": {
+        "mean": -0.0389,
+        "ci_lower": -0.2246,
+        "ci_upper": 0.0203,
+        "std": 0.0522
+      },
+      "empathy_appeal": {
+        "mean": 0.0427,
+        "ci_lower": -0.1686,
+        "ci_upper": 0.1982,
+        "std": 0.1185
+      },
+      "storytelling": {
+        "mean": 0.0256,
+        "ci_lower": -0.0194,
+        "ci_upper": 0.085,
+        "std": 0.0284
+      },
+      "self_disclosure": {
+        "mean": 0.0742,
+        "ci_lower": -0.026,
+        "ci_upper": 0.1658,
+        "std": 0.0495
+      },
+      "commitment_consistency": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "reciprocity": {
+        "mean": 0.0152,
+        "ci_lower": -0.0458,
+        "ci_upper": 0.0878,
+        "std": 0.037
+      },
+      "scarcity_appeal": {
+        "mean": 0.0472,
+        "ci_lower": -0.0066,
+        "ci_upper": 0.099,
+        "std": 0.0319
+      },
+      "urgency_appeal": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "gain_frame": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "loss_frame": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "anchoring": {
+        "mean": -0.0284,
+        "ci_lower": -0.0931,
+        "ci_upper": 0.0177,
+        "std": 0.0283
+      },
+      "rhetorical_question": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "perspective_shifting": {
+        "mean": 0.0601,
+        "ci_lower": 0.0012,
+        "ci_upper": 0.1191,
+        "std": 0.0523
+      },
+      "deceptive_information": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "emotional_manipulation": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "gaslighting": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "false_equivalence": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "guilt_tripping": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "fear_mongering": {
+        "mean": 0.0233,
+        "ci_lower": -0.0307,
+        "ci_upper": 0.1005,
+        "std": 0.0343
+      },
+      "false_urgency": {
+        "mean": 0.0412,
+        "ci_lower": -0.0077,
+        "ci_upper": 0.1049,
+        "std": 0.0399
+      },
+      "false_scarcity": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "ad_hominem": {
+        "mean": 0.0085,
+        "ci_lower": -0.1161,
+        "ci_upper": 0.1482,
+        "std": 0.0899
+      },
+      "name_calling": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "straw_man": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "whataboutism": {
+        "mean": 0.0272,
+        "ci_lower": -0.0303,
+        "ci_upper": 0.0775,
+        "std": 0.028
+      },
+      "false_dilemma": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "slippery_slope": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "red_herring": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "appeal_to_ignorance": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "manipulative_flattery": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "appeal_to_pity": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "obfuscation": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      },
+      "bandwagon_pressure": {
+        "mean": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "std": 0.0
+      }
+    }
+  },
+  "domain_commercial": {
+    "auc_cv": 0.6176,
+    "n": 6596,
+    "pos_rate": 0.5027,
+    "weights": {
+      "novelty": 0.0025,
+      "valence": 0.1229,
+      "goal_relevance": -0.0253,
+      "coping_potential": 0.0958,
+      "agency": 0.0416,
+      "certainty": 0.0133,
+      "temporal_proximity": -0.0774,
+      "word_count": 0.3037,
+      "emotionality": 0.0226,
+      "concreteness": -0.2053,
+      "analytical_thinking": -0.0157,
+      "lexical_diversity": 0.3338,
+      "hedge_density": 0.0813,
+      "certainty_markers": 0.0239,
+      "self_reference": 0.1951,
+      "other_reference": 0.0351,
+      "reading_difficulty": -0.0489,
+      "tone_positive": 0.1698,
+      "tone_negative": -0.0215,
+      "logical_appeal": 0.0571,
+      "evidence_based": 0.0298,
+      "expert_testimony": -0.0156,
+      "social_proof": 0.0383,
+      "authority_endorsement": -0.0129,
+      "bandwagon": -0.0963,
+      "emotional_appeal_positive": 0.0109,
+      "emotional_appeal_negative": 0.0029,
+      "empathy_appeal": 0.0042,
+      "storytelling": -0.0057,
+      "self_disclosure": 0.0448,
+      "commitment_consistency": -0.0814,
+      "reciprocity": -0.0096,
+      "scarcity_appeal": 0.044,
+      "urgency_appeal": -0.0201,
+      "gain_frame": -0.059,
+      "loss_frame": 0.021,
+      "anchoring": -0.0405,
+      "rhetorical_question": 0.0376,
+      "perspective_shifting": -0.0181,
+      "deceptive_information": 0.0192,
+      "emotional_manipulation": 0.0,
+      "gaslighting": 0.0,
+      "false_equivalence": 0.0602,
+      "guilt_tripping": 0.0,
+      "fear_mongering": 0.0018,
+      "false_urgency": 0.0143,
+      "false_scarcity": 0.0,
+      "ad_hominem": -0.0064,
+      "name_calling": 0.0,
+      "straw_man": 0.0,
+      "whataboutism": 0.0126,
+      "false_dilemma": 0.0697,
+      "slippery_slope": 0.0415,
+      "red_herring": -0.042,
+      "appeal_to_ignorance": 0.0,
+      "manipulative_flattery": 0.0,
+      "appeal_to_pity": 0.0,
+      "obfuscation": 0.0155,
+      "bandwagon_pressure": 0.0
+    }
+  },
+  "domain_opinion_change": {
+    "auc_cv": 0.6716,
+    "n": 3404,
+    "pos_rate": 0.6639,
+    "weights": {
+      "novelty": -0.01,
+      "valence": 0.0405,
+      "goal_relevance": -0.1018,
+      "coping_potential": 0.0332,
+      "agency": 0.0175,
+      "certainty": -0.0612,
+      "temporal_proximity": -0.0494,
+      "word_count": -0.0911,
+      "emotionality": -0.0171,
+      "concreteness": -0.0413,
+      "analytical_thinking": -0.063,
+      "lexical_diversity": 0.0,
+      "hedge_density": -0.0486,
+      "certainty_markers": -0.1058,
+      "self_reference": 0.2732,
+      "other_reference": -0.2132,
+      "reading_difficulty": -0.4555,
+      "tone_positive": 0.142,
+      "tone_negative": 0.0016,
+      "logical_appeal": -0.0565,
+      "evidence_based": 0.0155,
+      "expert_testimony": 0.0789,
+      "social_proof": -0.107,
+      "authority_endorsement": 0.0263,
+      "bandwagon": -0.0407,
+      "emotional_appeal_positive": -0.0664,
+      "emotional_appeal_negative": 0.0662,
+      "empathy_appeal": -0.0002,
+      "storytelling": 0.0667,
+      "self_disclosure": -0.0307,
+      "commitment_consistency": 0.0031,
+      "reciprocity": -0.0147,
+      "scarcity_appeal": -0.0077,
+      "urgency_appeal": -0.0214,
+      "gain_frame": -0.0246,
+      "loss_frame": 0.032,
+      "anchoring": 0.0167,
+      "rhetorical_question": 0.0103,
+      "perspective_shifting": -0.1348,
+      "deceptive_information": -0.033,
+      "emotional_manipulation": 0.0,
+      "gaslighting": 0.0,
+      "false_equivalence": -0.0957,
+      "guilt_tripping": 0.0,
+      "fear_mongering": 0.0156,
+      "false_urgency": 0.1376,
+      "false_scarcity": 0.0,
+      "ad_hominem": 0.0,
+      "name_calling": 0.099,
+      "straw_man": 0.0,
+      "whataboutism": -0.0327,
+      "false_dilemma": 0.0,
+      "slippery_slope": -0.0763,
+      "red_herring": -0.0425,
+      "appeal_to_ignorance": 0.0,
+      "manipulative_flattery": 0.0,
+      "appeal_to_pity": -0.0904,
+      "obfuscation": 0.023,
+      "bandwagon_pressure": 0.0
+    }
+  },
+  "transfer_matrix": {
+    "daily_persuasion": {
+      "daily_persuasion": 0.6823,
+      "hcp": 0.5468
+    },
+    "hcp": {
+      "daily_persuasion": 0.5211,
+      "hcp": 0.6482
+    }
+  },
+  "ablation": {
+    "appraisal_only_daily_persuasion": 0.5631,
+    "appraisal_only_hcp": 0.5496,
+    "appraisal+linguistic_daily_persuasion": 0.6668,
+    "appraisal+linguistic_hcp": 0.6341,
+    "appraisal+technique_daily_persuasion": 0.5842,
+    "appraisal+technique_hcp": 0.5495,
+    "all_59_features_daily_persuasion": 0.6666,
+    "all_59_features_hcp": 0.6343
+  }
+}

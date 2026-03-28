@@ -1,0 +1,592 @@
+[
+  {
+    "weight_name": "novelty",
+    "value": -0.0245,
+    "CI_lower": -0.0718,
+    "CI_upper": 0.0229,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "valence",
+    "value": 0.0275,
+    "CI_lower": -0.0531,
+    "CI_upper": 0.0734,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "goal_relevance",
+    "value": -0.037,
+    "CI_lower": -0.0884,
+    "CI_upper": 0.0332,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "coping_potential",
+    "value": 0.0861,
+    "CI_lower": 0.0384,
+    "CI_upper": 0.1519,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "agency",
+    "value": 0.0159,
+    "CI_lower": -0.0467,
+    "CI_upper": 0.0736,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "certainty",
+    "value": 0.0102,
+    "CI_lower": -0.0638,
+    "CI_upper": 0.0773,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "temporal_proximity",
+    "value": -0.0823,
+    "CI_lower": -0.1427,
+    "CI_upper": -0.0224,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "word_count",
+    "value": -0.1444,
+    "CI_lower": -0.2403,
+    "CI_upper": -0.0619,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "emotionality",
+    "value": 0.0107,
+    "CI_lower": -0.067,
+    "CI_upper": 0.1084,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "concreteness",
+    "value": -0.0533,
+    "CI_lower": -0.1086,
+    "CI_upper": 0.0091,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "analytical_thinking",
+    "value": -0.0545,
+    "CI_lower": -0.0973,
+    "CI_upper": -0.0002,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "lexical_diversity",
+    "value": -0.083,
+    "CI_lower": -0.1725,
+    "CI_upper": -0.0085,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "hedge_density",
+    "value": -0.0195,
+    "CI_lower": -0.0799,
+    "CI_upper": 0.0642,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "certainty_markers",
+    "value": -0.0922,
+    "CI_lower": -0.1597,
+    "CI_upper": -0.0046,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "self_reference",
+    "value": 0.2778,
+    "CI_lower": 0.2066,
+    "CI_upper": 0.3418,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "other_reference",
+    "value": -0.2124,
+    "CI_lower": -0.2801,
+    "CI_upper": -0.147,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "reading_difficulty",
+    "value": -0.4142,
+    "CI_lower": -0.5011,
+    "CI_upper": -0.3332,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "tone_positive",
+    "value": 0.0861,
+    "CI_lower": -0.0006,
+    "CI_upper": 0.1598,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "tone_negative",
+    "value": 0.0025,
+    "CI_lower": -0.0535,
+    "CI_upper": 0.0688,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "logical_appeal",
+    "value": 0.005,
+    "CI_lower": -0.0557,
+    "CI_upper": 0.069,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "evidence_based",
+    "value": -0.0141,
+    "CI_lower": -0.0966,
+    "CI_upper": 0.0603,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "expert_testimony",
+    "value": 0.0485,
+    "CI_lower": -0.0124,
+    "CI_upper": 0.1198,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "social_proof",
+    "value": -0.0806,
+    "CI_lower": -0.126,
+    "CI_upper": -0.0191,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "authority_endorsement",
+    "value": 0.0252,
+    "CI_lower": -0.0492,
+    "CI_upper": 0.0796,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "bandwagon",
+    "value": -0.0942,
+    "CI_lower": -0.1529,
+    "CI_upper": -0.0343,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "emotional_appeal_positive",
+    "value": -0.0418,
+    "CI_lower": -0.1014,
+    "CI_upper": 0.0149,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "emotional_appeal_negative",
+    "value": 0.0621,
+    "CI_lower": 0.012,
+    "CI_upper": 0.1235,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "empathy_appeal",
+    "value": -0.0065,
+    "CI_lower": -0.0664,
+    "CI_upper": 0.0635,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "storytelling",
+    "value": 0.0343,
+    "CI_lower": -0.0189,
+    "CI_upper": 0.0885,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "self_disclosure",
+    "value": -0.0269,
+    "CI_lower": -0.0913,
+    "CI_upper": 0.0195,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "commitment_consistency",
+    "value": -0.0121,
+    "CI_lower": -0.1856,
+    "CI_upper": 0.1613,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "reciprocity",
+    "value": 0.0112,
+    "CI_lower": -0.0399,
+    "CI_upper": 0.0635,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "scarcity_appeal",
+    "value": -0.0013,
+    "CI_lower": -0.0643,
+    "CI_upper": 0.0481,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "urgency_appeal",
+    "value": -0.023,
+    "CI_lower": -0.1066,
+    "CI_upper": 0.0366,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "gain_frame",
+    "value": -0.0682,
+    "CI_lower": -0.1364,
+    "CI_upper": -0.0125,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "loss_frame",
+    "value": 0.0484,
+    "CI_lower": -0.008,
+    "CI_upper": 0.1049,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "anchoring",
+    "value": -0.026,
+    "CI_lower": -0.0665,
+    "CI_upper": 0.0195,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "rhetorical_question",
+    "value": 0.0282,
+    "CI_lower": -0.0316,
+    "CI_upper": 0.0985,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "perspective_shifting",
+    "value": -0.1117,
+    "CI_lower": -0.1799,
+    "CI_upper": -0.0529,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "deceptive_information",
+    "value": -0.0094,
+    "CI_lower": -0.0703,
+    "CI_upper": 0.0417,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "emotional_manipulation",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "gaslighting",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "false_equivalence",
+    "value": -0.0491,
+    "CI_lower": -0.0942,
+    "CI_upper": 0.0143,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "guilt_tripping",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "fear_mongering",
+    "value": -0.0104,
+    "CI_lower": -0.0766,
+    "CI_upper": 0.0302,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "false_urgency",
+    "value": 0.0138,
+    "CI_lower": -0.1253,
+    "CI_upper": 0.1648,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "false_scarcity",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "ad_hominem",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "name_calling",
+    "value": 0.0671,
+    "CI_lower": -0.0096,
+    "CI_upper": 0.0944,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "straw_man",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "whataboutism",
+    "value": -0.0193,
+    "CI_lower": -0.0761,
+    "CI_upper": 0.0493,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "false_dilemma",
+    "value": 0.0633,
+    "CI_lower": -0.0096,
+    "CI_upper": 0.0971,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "slippery_slope",
+    "value": -0.0402,
+    "CI_lower": -0.0943,
+    "CI_upper": 0.0117,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "red_herring",
+    "value": -0.0509,
+    "CI_lower": -0.1204,
+    "CI_upper": -0.005,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "appeal_to_ignorance",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "manipulative_flattery",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "appeal_to_pity",
+    "value": -0.0763,
+    "CI_lower": -0.2256,
+    "CI_upper": 0.0986,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "obfuscation",
+    "value": 0.0222,
+    "CI_lower": -0.0375,
+    "CI_upper": 0.091,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  },
+  {
+    "weight_name": "bandwagon_pressure",
+    "value": 0.0,
+    "CI_lower": 0.0,
+    "CI_upper": 0.0,
+    "corpus": "daily_persuasion",
+    "N": 5000,
+    "provenance": "FITTED",
+    "domain": "daily_persuasion"
+  }
+]

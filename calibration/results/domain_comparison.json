@@ -1,0 +1,1317 @@
+{
+  "n_features": 59,
+  "n_corpora": 4,
+  "classification_counts": {
+    "DOMAIN-SPECIFIC": 33,
+    "UNIVERSAL": 13,
+    "INSIGNIFICANT": 13
+  },
+  "classifications": {
+    "novelty": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=14.22, ratio=7.4)",
+      "mean_weight": 0.0019,
+      "std_weight": 0.0277,
+      "cv": 14.2208,
+      "sign_consistent": false,
+      "magnitude_ratio": 7.36,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0242,
+        "source_hcp": 0.0486,
+        "domain_opinion_change": -0.01,
+        "domain_commercial": -0.0066
+      }
+    },
+    "valence": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=0.64, ratio=4.1)",
+      "mean_weight": 0.0529,
+      "std_weight": 0.0341,
+      "cv": 0.6445,
+      "sign_consistent": true,
+      "magnitude_ratio": 4.13,
+      "per_corpus": {
+        "source_daily_persuasion": 0.027,
+        "source_hcp": 0.0336,
+        "domain_opinion_change": 0.0395,
+        "domain_commercial": 0.1114
+      }
+    },
+    "goal_relevance": {
+      "classification": "UNIVERSAL",
+      "reason": "consistent sign and CV < 0.5 (CV=0.41, mean=-0.0622)",
+      "mean_weight": -0.0622,
+      "std_weight": 0.0255,
+      "cv": 0.4106,
+      "sign_consistent": true,
+      "magnitude_ratio": 2.7,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0389,
+        "source_hcp": -0.0492,
+        "domain_opinion_change": -0.1052,
+        "domain_commercial": -0.0554
+      }
+    },
+    "coping_potential": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=0.43, ratio=3.7)",
+      "mean_weight": 0.0775,
+      "std_weight": 0.0334,
+      "cv": 0.4308,
+      "sign_consistent": true,
+      "magnitude_ratio": 3.72,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0865,
+        "source_hcp": 0.0644,
+        "domain_opinion_change": 0.0337,
+        "domain_commercial": 0.1253
+      }
+    },
+    "agency": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=0.59, ratio=3.9)",
+      "mean_weight": 0.0304,
+      "std_weight": 0.0179,
+      "cv": 0.5902,
+      "sign_consistent": true,
+      "magnitude_ratio": 3.92,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0154,
+        "source_hcp": 0.0279,
+        "domain_opinion_change": 0.0179,
+        "domain_commercial": 0.0604
+      }
+    },
+    "certainty": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=2.84, ratio=6.2)",
+      "mean_weight": -0.0174,
+      "std_weight": 0.0494,
+      "cv": 2.839,
+      "sign_consistent": false,
+      "magnitude_ratio": 6.17,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0114,
+        "source_hcp": -0.0703,
+        "domain_opinion_change": -0.0594,
+        "domain_commercial": 0.0487
+      }
+    },
+    "temporal_proximity": {
+      "classification": "UNIVERSAL",
+      "reason": "consistent sign and CV < 0.5 (CV=0.25, mean=-0.0850)",
+      "mean_weight": -0.085,
+      "std_weight": 0.0212,
+      "cv": 0.2494,
+      "sign_consistent": true,
+      "magnitude_ratio": 2.12,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0843,
+        "source_hcp": -0.0936,
+        "domain_opinion_change": -0.052,
+        "domain_commercial": -0.1102
+      }
+    },
+    "word_count": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=3.40, ratio=4.8)",
+      "mean_weight": -0.0837,
+      "std_weight": 0.2843,
+      "cv": 3.3957,
+      "sign_consistent": false,
+      "magnitude_ratio": 4.83,
+      "per_corpus": {
+        "source_daily_persuasion": -0.1458,
+        "source_hcp": -0.4464,
+        "domain_opinion_change": -0.0924,
+        "domain_commercial": 0.3497
+      }
+    },
+    "emotionality": {
+      "classification": "INSIGNIFICANT",
+      "reason": "near-zero weight across all corpora (|mean|=0.0047, std=0.0134)",
+      "mean_weight": -0.0047,
+      "std_weight": 0.0134,
+      "cv": 2.8202,
+      "sign_consistent": false,
+      "magnitude_ratio": 2.9,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0108,
+        "source_hcp": -0.0183,
+        "domain_opinion_change": -0.0178,
+        "domain_commercial": 0.0063
+      }
+    },
+    "concreteness": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=0.57, ratio=4.3)",
+      "mean_weight": -0.0924,
+      "std_weight": 0.0529,
+      "cv": 0.5725,
+      "sign_consistent": true,
+      "magnitude_ratio": 4.28,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0531,
+        "source_hcp": -0.0996,
+        "domain_opinion_change": -0.0411,
+        "domain_commercial": -0.1759
+      }
+    },
+    "analytical_thinking": {
+      "classification": "UNIVERSAL",
+      "reason": "consistent sign and CV < 0.5 (CV=0.19, mean=-0.0514)",
+      "mean_weight": -0.0514,
+      "std_weight": 0.0096,
+      "cv": 0.1861,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.72,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0545,
+        "source_hcp": -0.0513,
+        "domain_opinion_change": -0.0631,
+        "domain_commercial": -0.0366
+      }
+    },
+    "lexical_diversity": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=2.66, ratio=24.8)",
+      "mean_weight": 0.0512,
+      "std_weight": 0.1361,
+      "cv": 2.6597,
+      "sign_consistent": false,
+      "magnitude_ratio": 24.84,
+      "per_corpus": {
+        "source_daily_persuasion": -0.084,
+        "source_hcp": 0.0112,
+        "domain_opinion_change": -0.0007,
+        "domain_commercial": 0.2782
+      }
+    },
+    "hedge_density": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=3.12, ratio=4.5)",
+      "mean_weight": 0.0177,
+      "std_weight": 0.055,
+      "cv": 3.1161,
+      "sign_consistent": false,
+      "magnitude_ratio": 4.46,
+      "per_corpus": {
+        "source_daily_persuasion": -0.02,
+        "source_hcp": 0.0505,
+        "domain_opinion_change": -0.0492,
+        "domain_commercial": 0.0893
+      }
+    },
+    "certainty_markers": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=0.67, ratio=12.2)",
+      "mean_weight": -0.0607,
+      "std_weight": 0.0408,
+      "cv": 0.6711,
+      "sign_consistent": true,
+      "magnitude_ratio": 12.24,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0926,
+        "source_hcp": -0.0338,
+        "domain_opinion_change": -0.1077,
+        "domain_commercial": -0.0088
+      }
+    },
+    "self_reference": {
+      "classification": "UNIVERSAL",
+      "reason": "consistent sign and CV < 0.5 (CV=0.18, mean=0.2343)",
+      "mean_weight": 0.2343,
+      "std_weight": 0.0426,
+      "cv": 0.1819,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.55,
+      "per_corpus": {
+        "source_daily_persuasion": 0.2775,
+        "source_hcp": 0.1786,
+        "domain_opinion_change": 0.2739,
+        "domain_commercial": 0.2073
+      }
+    },
+    "other_reference": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=1.14, ratio=7.7)",
+      "mean_weight": -0.099,
+      "std_weight": 0.1127,
+      "cv": 1.1382,
+      "sign_consistent": false,
+      "magnitude_ratio": 7.74,
+      "per_corpus": {
+        "source_daily_persuasion": -0.2113,
+        "source_hcp": -0.0008,
+        "domain_opinion_change": -0.2114,
+        "domain_commercial": 0.0273
+      }
+    },
+    "reading_difficulty": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=0.94, ratio=15.3)",
+      "mean_weight": -0.2256,
+      "std_weight": 0.2119,
+      "cv": 0.9392,
+      "sign_consistent": false,
+      "magnitude_ratio": 15.26,
+      "per_corpus": {
+        "source_daily_persuasion": -0.414,
+        "source_hcp": 0.0298,
+        "domain_opinion_change": -0.4548,
+        "domain_commercial": -0.0634
+      }
+    },
+    "tone_positive": {
+      "classification": "UNIVERSAL",
+      "reason": "consistent sign and CV < 0.5 (CV=0.20, mean=0.1317)",
+      "mean_weight": 0.1317,
+      "std_weight": 0.0266,
+      "cv": 0.2017,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.78,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0863,
+        "source_hcp": 0.1539,
+        "domain_opinion_change": 0.1425,
+        "domain_commercial": 0.144
+      }
+    },
+    "tone_negative": {
+      "classification": "INSIGNIFICANT",
+      "reason": "near-zero weight across all corpora (|mean|=0.0070, std=0.0049)",
+      "mean_weight": 0.007,
+      "std_weight": 0.0049,
+      "cv": 0.6974,
+      "sign_consistent": true,
+      "magnitude_ratio": 7.22,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0026,
+        "source_hcp": 0.0105,
+        "domain_opinion_change": 0.0018,
+        "domain_commercial": 0.013
+      }
+    },
+    "logical_appeal": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=1.78, ratio=28.7)",
+      "mean_weight": 0.0396,
+      "std_weight": 0.0704,
+      "cv": 1.7797,
+      "sign_consistent": false,
+      "magnitude_ratio": 28.73,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0041,
+        "source_hcp": 0.1178,
+        "domain_opinion_change": -0.0578,
+        "domain_commercial": 0.0942
+      }
+    },
+    "evidence_based": {
+      "classification": "INSIGNIFICANT",
+      "reason": "near-zero weight across all corpora (|mean|=0.0081, std=0.0130)",
+      "mean_weight": 0.0081,
+      "std_weight": 0.013,
+      "cv": 1.6045,
+      "sign_consistent": false,
+      "magnitude_ratio": 1.83,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0137,
+        "source_hcp": 0.0192,
+        "domain_opinion_change": 0.0163,
+        "domain_commercial": 0.0105
+      }
+    },
+    "expert_testimony": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=7.19, ratio=6.0)",
+      "mean_weight": -0.0123,
+      "std_weight": 0.0884,
+      "cv": 7.1885,
+      "sign_consistent": false,
+      "magnitude_ratio": 5.98,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0482,
+        "source_hcp": -0.1508,
+        "domain_opinion_change": 0.0786,
+        "domain_commercial": -0.0252
+      }
+    },
+    "social_proof": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=1.98, ratio=4.5)",
+      "mean_weight": -0.0322,
+      "std_weight": 0.0636,
+      "cv": 1.9769,
+      "sign_consistent": false,
+      "magnitude_ratio": 4.51,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0815,
+        "source_hcp": 0.024,
+        "domain_opinion_change": -0.1083,
+        "domain_commercial": 0.0371
+      }
+    },
+    "authority_endorsement": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=7.51, ratio=3.4)",
+      "mean_weight": -0.0043,
+      "std_weight": 0.0325,
+      "cv": 7.512,
+      "sign_consistent": false,
+      "magnitude_ratio": 3.44,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0249,
+        "source_hcp": -0.0527,
+        "domain_opinion_change": 0.0258,
+        "domain_commercial": -0.0153
+      }
+    },
+    "bandwagon": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=0.71, ratio=92.2)",
+      "mean_weight": -0.0647,
+      "std_weight": 0.046,
+      "cv": 0.7116,
+      "sign_consistent": true,
+      "magnitude_ratio": 92.15,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0951,
+        "source_hcp": -0.0013,
+        "domain_opinion_change": -0.0425,
+        "domain_commercial": -0.1198
+      }
+    },
+    "emotional_appeal_positive": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=3.23, ratio=3.4)",
+      "mean_weight": -0.0128,
+      "std_weight": 0.0412,
+      "cv": 3.2312,
+      "sign_consistent": false,
+      "magnitude_ratio": 3.43,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0403,
+        "source_hcp": 0.0353,
+        "domain_opinion_change": -0.0649,
+        "domain_commercial": 0.0189
+      }
+    },
+    "emotional_appeal_negative": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=1.59, ratio=4.3)",
+      "mean_weight": 0.0276,
+      "std_weight": 0.0438,
+      "cv": 1.5876,
+      "sign_consistent": false,
+      "magnitude_ratio": 4.31,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0646,
+        "source_hcp": -0.0392,
+        "domain_opinion_change": 0.069,
+        "domain_commercial": 0.016
+      }
+    },
+    "empathy_appeal": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=2.19, ratio=6.4)",
+      "mean_weight": 0.0096,
+      "std_weight": 0.021,
+      "cv": 2.1881,
+      "sign_consistent": false,
+      "magnitude_ratio": 6.41,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0071,
+        "source_hcp": 0.0455,
+        "domain_opinion_change": -0.001,
+        "domain_commercial": 0.0009
+      }
+    },
+    "storytelling": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=1.55, ratio=7.7)",
+      "mean_weight": 0.0212,
+      "std_weight": 0.0329,
+      "cv": 1.5516,
+      "sign_consistent": false,
+      "magnitude_ratio": 7.67,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0336,
+        "source_hcp": 0.0086,
+        "domain_opinion_change": 0.066,
+        "domain_commercial": -0.0235
+      }
+    },
+    "self_disclosure": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=3.03, ratio=2.7)",
+      "mean_weight": 0.0149,
+      "std_weight": 0.0451,
+      "cv": 3.0305,
+      "sign_consistent": false,
+      "magnitude_ratio": 2.72,
+      "per_corpus": {
+        "source_daily_persuasion": -0.027,
+        "source_hcp": 0.0735,
+        "domain_opinion_change": -0.0309,
+        "domain_commercial": 0.0439
+      }
+    },
+    "commitment_consistency": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=1.56, ratio=32.2)",
+      "mean_weight": -0.0272,
+      "std_weight": 0.0423,
+      "cv": 1.5552,
+      "sign_consistent": false,
+      "magnitude_ratio": 32.23,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0121,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.0031,
+        "domain_commercial": -0.0999
+      }
+    },
+    "reciprocity": {
+      "classification": "INSIGNIFICANT",
+      "reason": "near-zero weight across all corpora (|mean|=0.0008, std=0.0136)",
+      "mean_weight": -0.0008,
+      "std_weight": 0.0136,
+      "cv": "inf",
+      "sign_consistent": false,
+      "magnitude_ratio": 1.96,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0091,
+        "source_hcp": 0.0155,
+        "domain_opinion_change": -0.0178,
+        "domain_commercial": -0.0099
+      }
+    },
+    "scarcity_appeal": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=1.21, ratio=29.4)",
+      "mean_weight": 0.025,
+      "std_weight": 0.0302,
+      "cv": 1.2078,
+      "sign_consistent": false,
+      "magnitude_ratio": 29.42,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0019,
+        "source_hcp": 0.0559,
+        "domain_opinion_change": -0.0083,
+        "domain_commercial": 0.0542
+      }
+    },
+    "urgency_appeal": {
+      "classification": "UNIVERSAL",
+      "reason": "consistent sign but high CV (CV=0.58, mean=-0.0175)",
+      "mean_weight": -0.0175,
+      "std_weight": 0.0102,
+      "cv": 0.5819,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.17,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0232,
+        "source_hcp": 0.0,
+        "domain_opinion_change": -0.0215,
+        "domain_commercial": -0.0251
+      }
+    },
+    "gain_frame": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=0.74, ratio=3.2)",
+      "mean_weight": -0.0429,
+      "std_weight": 0.0319,
+      "cv": 0.7447,
+      "sign_consistent": true,
+      "magnitude_ratio": 3.17,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0682,
+        "source_hcp": 0.0,
+        "domain_opinion_change": -0.0248,
+        "domain_commercial": -0.0786
+      }
+    },
+    "loss_frame": {
+      "classification": "UNIVERSAL",
+      "reason": "consistent sign but high CV (CV=0.66, mean=0.0264)",
+      "mean_weight": 0.0264,
+      "std_weight": 0.0174,
+      "cv": 0.6589,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.91,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0483,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.0319,
+        "domain_commercial": 0.0253
+      }
+    },
+    "anchoring": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=1.58, ratio=10.7)",
+      "mean_weight": -0.0142,
+      "std_weight": 0.0225,
+      "cv": 1.5783,
+      "sign_consistent": false,
+      "magnitude_ratio": 10.75,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0263,
+        "source_hcp": -0.004,
+        "domain_opinion_change": 0.0164,
+        "domain_commercial": -0.043
+      }
+    },
+    "rhetorical_question": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=0.82, ratio=4.4)",
+      "mean_weight": 0.0201,
+      "std_weight": 0.0165,
+      "cv": 0.8206,
+      "sign_consistent": true,
+      "magnitude_ratio": 4.41,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0279,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.0097,
+        "domain_commercial": 0.0428
+      }
+    },
+    "perspective_shifting": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=0.80, ratio=4.4)",
+      "mean_weight": -0.0696,
+      "std_weight": 0.0558,
+      "cv": 0.8018,
+      "sign_consistent": true,
+      "magnitude_ratio": 4.36,
+      "per_corpus": {
+        "source_daily_persuasion": -0.1121,
+        "source_hcp": 0.0,
+        "domain_opinion_change": -0.1353,
+        "domain_commercial": -0.031
+      }
+    },
+    "deceptive_information": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=4.23, ratio=3.4)",
+      "mean_weight": -0.0049,
+      "std_weight": 0.0206,
+      "cv": 4.2303,
+      "sign_consistent": false,
+      "magnitude_ratio": 3.43,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0098,
+        "source_hcp": 0.0,
+        "domain_opinion_change": -0.0336,
+        "domain_commercial": 0.0239
+      }
+    },
+    "emotional_manipulation": {
+      "classification": "INSIGNIFICANT",
+      "reason": "near-zero weight across all corpora (|mean|=0.0000, std=0.0000)",
+      "mean_weight": 0.0,
+      "std_weight": 0.0,
+      "cv": 0.0,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.0,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.0,
+        "domain_commercial": 0.0
+      }
+    },
+    "gaslighting": {
+      "classification": "INSIGNIFICANT",
+      "reason": "near-zero weight across all corpora (|mean|=0.0000, std=0.0000)",
+      "mean_weight": 0.0,
+      "std_weight": 0.0,
+      "cv": 0.0,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.0,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.0,
+        "domain_commercial": 0.0
+      }
+    },
+    "false_equivalence": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=3.22, ratio=1.9)",
+      "mean_weight": -0.019,
+      "std_weight": 0.061,
+      "cv": 3.2165,
+      "sign_consistent": false,
+      "magnitude_ratio": 1.95,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0492,
+        "source_hcp": 0.0,
+        "domain_opinion_change": -0.0957,
+        "domain_commercial": 0.069
+      }
+    },
+    "guilt_tripping": {
+      "classification": "INSIGNIFICANT",
+      "reason": "near-zero weight across all corpora (|mean|=0.0000, std=0.0000)",
+      "mean_weight": 0.0,
+      "std_weight": 0.0,
+      "cv": 0.0,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.0,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.0,
+        "domain_commercial": 0.0
+      }
+    },
+    "fear_mongering": {
+      "classification": "INSIGNIFICANT",
+      "reason": "near-zero weight across all corpora (|mean|=0.0088, std=0.0151)",
+      "mean_weight": 0.0088,
+      "std_weight": 0.0151,
+      "cv": 1.7245,
+      "sign_consistent": false,
+      "magnitude_ratio": 2.82,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0105,
+        "source_hcp": 0.0296,
+        "domain_opinion_change": 0.0154,
+        "domain_commercial": 0.0006
+      }
+    },
+    "false_urgency": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=1.20, ratio=9.9)",
+      "mean_weight": 0.0454,
+      "std_weight": 0.0544,
+      "cv": 1.1974,
+      "sign_consistent": false,
+      "magnitude_ratio": 9.91,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0139,
+        "source_hcp": 0.0301,
+        "domain_opinion_change": 0.1378,
+        "domain_commercial": -0.0001
+      }
+    },
+    "false_scarcity": {
+      "classification": "INSIGNIFICANT",
+      "reason": "near-zero weight across all corpora (|mean|=0.0000, std=0.0000)",
+      "mean_weight": 0.0,
+      "std_weight": 0.0,
+      "cv": 0.0,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.0,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.0,
+        "domain_commercial": 0.0
+      }
+    },
+    "ad_hominem": {
+      "classification": "UNIVERSAL",
+      "reason": "consistent sign but high CV (CV=1.05, mean=0.0519)",
+      "mean_weight": 0.0519,
+      "std_weight": 0.0544,
+      "cv": 1.0494,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.58,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0,
+        "source_hcp": 0.1271,
+        "domain_opinion_change": 0.0,
+        "domain_commercial": 0.0804
+      }
+    },
+    "name_calling": {
+      "classification": "UNIVERSAL",
+      "reason": "consistent sign but high CV (CV=1.04, mean=0.0415)",
+      "mean_weight": 0.0415,
+      "std_weight": 0.043,
+      "cv": 1.0362,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.48,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0671,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.099,
+        "domain_commercial": 0.0
+      }
+    },
+    "straw_man": {
+      "classification": "INSIGNIFICANT",
+      "reason": "near-zero weight across all corpora (|mean|=0.0000, std=0.0000)",
+      "mean_weight": 0.0,
+      "std_weight": 0.0,
+      "cv": 0.0,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.0,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.0,
+        "domain_commercial": 0.0
+      }
+    },
+    "whataboutism": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=8.94, ratio=2.2)",
+      "mean_weight": 0.0039,
+      "std_weight": 0.0349,
+      "cv": 8.9447,
+      "sign_consistent": false,
+      "magnitude_ratio": 2.21,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0222,
+        "source_hcp": 0.049,
+        "domain_opinion_change": -0.037,
+        "domain_commercial": 0.0258
+      }
+    },
+    "false_dilemma": {
+      "classification": "UNIVERSAL",
+      "reason": "consistent sign but high CV (CV=1.03, mean=0.0376)",
+      "mean_weight": 0.0376,
+      "std_weight": 0.0386,
+      "cv": 1.0253,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.38,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0632,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.0,
+        "domain_commercial": 0.0873
+      }
+    },
+    "slippery_slope": {
+      "classification": "DOMAIN-SPECIFIC",
+      "reason": "sign flips or magnitude varies >3x across corpora (CV=2.44, ratio=1.9)",
+      "mean_weight": -0.0186,
+      "std_weight": 0.0454,
+      "cv": 2.4429,
+      "sign_consistent": false,
+      "magnitude_ratio": 1.89,
+      "per_corpus": {
+        "source_daily_persuasion": -0.041,
+        "source_hcp": 0.0,
+        "domain_opinion_change": -0.0774,
+        "domain_commercial": 0.0441
+      }
+    },
+    "red_herring": {
+      "classification": "UNIVERSAL",
+      "reason": "consistent sign but high CV (CV=0.58, mean=-0.0355)",
+      "mean_weight": -0.0355,
+      "std_weight": 0.0207,
+      "cv": 0.5837,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.19,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0509,
+        "source_hcp": 0.0,
+        "domain_opinion_change": -0.0426,
+        "domain_commercial": -0.0487
+      }
+    },
+    "appeal_to_ignorance": {
+      "classification": "INSIGNIFICANT",
+      "reason": "near-zero weight across all corpora (|mean|=0.0000, std=0.0000)",
+      "mean_weight": 0.0,
+      "std_weight": 0.0,
+      "cv": 0.0,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.0,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.0,
+        "domain_commercial": 0.0
+      }
+    },
+    "manipulative_flattery": {
+      "classification": "INSIGNIFICANT",
+      "reason": "near-zero weight across all corpora (|mean|=0.0000, std=0.0000)",
+      "mean_weight": 0.0,
+      "std_weight": 0.0,
+      "cv": 0.0,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.0,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.0,
+        "domain_commercial": 0.0
+      }
+    },
+    "appeal_to_pity": {
+      "classification": "UNIVERSAL",
+      "reason": "consistent sign but high CV (CV=1.01, mean=-0.0417)",
+      "mean_weight": -0.0417,
+      "std_weight": 0.042,
+      "cv": 1.0071,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.18,
+      "per_corpus": {
+        "source_daily_persuasion": -0.0763,
+        "source_hcp": 0.0,
+        "domain_opinion_change": -0.0904,
+        "domain_commercial": 0.0
+      }
+    },
+    "obfuscation": {
+      "classification": "UNIVERSAL",
+      "reason": "consistent sign but high CV (CV=0.59, mean=0.0160)",
+      "mean_weight": 0.016,
+      "std_weight": 0.0094,
+      "cv": 0.5852,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.22,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0221,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.023,
+        "domain_commercial": 0.0189
+      }
+    },
+    "bandwagon_pressure": {
+      "classification": "INSIGNIFICANT",
+      "reason": "near-zero weight across all corpora (|mean|=0.0000, std=0.0000)",
+      "mean_weight": 0.0,
+      "std_weight": 0.0,
+      "cv": 0.0,
+      "sign_consistent": true,
+      "magnitude_ratio": 1.0,
+      "per_corpus": {
+        "source_daily_persuasion": 0.0,
+        "source_hcp": 0.0,
+        "domain_opinion_change": 0.0,
+        "domain_commercial": 0.0
+      }
+    }
+  },
+  "stability_matrix": {
+    "novelty": {
+      "domain_commercial": -0.0066,
+      "domain_opinion_change": -0.01,
+      "source_daily_persuasion": -0.0242,
+      "source_hcp": 0.0486,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "valence": {
+      "domain_commercial": 0.1114,
+      "domain_opinion_change": 0.0395,
+      "source_daily_persuasion": 0.027,
+      "source_hcp": 0.0336,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "goal_relevance": {
+      "domain_commercial": -0.0554,
+      "domain_opinion_change": -0.1052,
+      "source_daily_persuasion": -0.0389,
+      "source_hcp": -0.0492,
+      "classification": "UNIVERSAL"
+    },
+    "coping_potential": {
+      "domain_commercial": 0.1253,
+      "domain_opinion_change": 0.0337,
+      "source_daily_persuasion": 0.0865,
+      "source_hcp": 0.0644,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "agency": {
+      "domain_commercial": 0.0604,
+      "domain_opinion_change": 0.0179,
+      "source_daily_persuasion": 0.0154,
+      "source_hcp": 0.0279,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "certainty": {
+      "domain_commercial": 0.0487,
+      "domain_opinion_change": -0.0594,
+      "source_daily_persuasion": 0.0114,
+      "source_hcp": -0.0703,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "temporal_proximity": {
+      "domain_commercial": -0.1102,
+      "domain_opinion_change": -0.052,
+      "source_daily_persuasion": -0.0843,
+      "source_hcp": -0.0936,
+      "classification": "UNIVERSAL"
+    },
+    "word_count": {
+      "domain_commercial": 0.3497,
+      "domain_opinion_change": -0.0924,
+      "source_daily_persuasion": -0.1458,
+      "source_hcp": -0.4464,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "emotionality": {
+      "domain_commercial": 0.0063,
+      "domain_opinion_change": -0.0178,
+      "source_daily_persuasion": 0.0108,
+      "source_hcp": -0.0183,
+      "classification": "INSIGNIFICANT"
+    },
+    "concreteness": {
+      "domain_commercial": -0.1759,
+      "domain_opinion_change": -0.0411,
+      "source_daily_persuasion": -0.0531,
+      "source_hcp": -0.0996,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "analytical_thinking": {
+      "domain_commercial": -0.0366,
+      "domain_opinion_change": -0.0631,
+      "source_daily_persuasion": -0.0545,
+      "source_hcp": -0.0513,
+      "classification": "UNIVERSAL"
+    },
+    "lexical_diversity": {
+      "domain_commercial": 0.2782,
+      "domain_opinion_change": -0.0007,
+      "source_daily_persuasion": -0.084,
+      "source_hcp": 0.0112,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "hedge_density": {
+      "domain_commercial": 0.0893,
+      "domain_opinion_change": -0.0492,
+      "source_daily_persuasion": -0.02,
+      "source_hcp": 0.0505,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "certainty_markers": {
+      "domain_commercial": -0.0088,
+      "domain_opinion_change": -0.1077,
+      "source_daily_persuasion": -0.0926,
+      "source_hcp": -0.0338,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "self_reference": {
+      "domain_commercial": 0.2073,
+      "domain_opinion_change": 0.2739,
+      "source_daily_persuasion": 0.2775,
+      "source_hcp": 0.1786,
+      "classification": "UNIVERSAL"
+    },
+    "other_reference": {
+      "domain_commercial": 0.0273,
+      "domain_opinion_change": -0.2114,
+      "source_daily_persuasion": -0.2113,
+      "source_hcp": -0.0008,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "reading_difficulty": {
+      "domain_commercial": -0.0634,
+      "domain_opinion_change": -0.4548,
+      "source_daily_persuasion": -0.414,
+      "source_hcp": 0.0298,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "tone_positive": {
+      "domain_commercial": 0.144,
+      "domain_opinion_change": 0.1425,
+      "source_daily_persuasion": 0.0863,
+      "source_hcp": 0.1539,
+      "classification": "UNIVERSAL"
+    },
+    "tone_negative": {
+      "domain_commercial": 0.013,
+      "domain_opinion_change": 0.0018,
+      "source_daily_persuasion": 0.0026,
+      "source_hcp": 0.0105,
+      "classification": "INSIGNIFICANT"
+    },
+    "logical_appeal": {
+      "domain_commercial": 0.0942,
+      "domain_opinion_change": -0.0578,
+      "source_daily_persuasion": 0.0041,
+      "source_hcp": 0.1178,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "evidence_based": {
+      "domain_commercial": 0.0105,
+      "domain_opinion_change": 0.0163,
+      "source_daily_persuasion": -0.0137,
+      "source_hcp": 0.0192,
+      "classification": "INSIGNIFICANT"
+    },
+    "expert_testimony": {
+      "domain_commercial": -0.0252,
+      "domain_opinion_change": 0.0786,
+      "source_daily_persuasion": 0.0482,
+      "source_hcp": -0.1508,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "social_proof": {
+      "domain_commercial": 0.0371,
+      "domain_opinion_change": -0.1083,
+      "source_daily_persuasion": -0.0815,
+      "source_hcp": 0.024,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "authority_endorsement": {
+      "domain_commercial": -0.0153,
+      "domain_opinion_change": 0.0258,
+      "source_daily_persuasion": 0.0249,
+      "source_hcp": -0.0527,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "bandwagon": {
+      "domain_commercial": -0.1198,
+      "domain_opinion_change": -0.0425,
+      "source_daily_persuasion": -0.0951,
+      "source_hcp": -0.0013,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "emotional_appeal_positive": {
+      "domain_commercial": 0.0189,
+      "domain_opinion_change": -0.0649,
+      "source_daily_persuasion": -0.0403,
+      "source_hcp": 0.0353,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "emotional_appeal_negative": {
+      "domain_commercial": 0.016,
+      "domain_opinion_change": 0.069,
+      "source_daily_persuasion": 0.0646,
+      "source_hcp": -0.0392,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "empathy_appeal": {
+      "domain_commercial": 0.0009,
+      "domain_opinion_change": -0.001,
+      "source_daily_persuasion": -0.0071,
+      "source_hcp": 0.0455,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "storytelling": {
+      "domain_commercial": -0.0235,
+      "domain_opinion_change": 0.066,
+      "source_daily_persuasion": 0.0336,
+      "source_hcp": 0.0086,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "self_disclosure": {
+      "domain_commercial": 0.0439,
+      "domain_opinion_change": -0.0309,
+      "source_daily_persuasion": -0.027,
+      "source_hcp": 0.0735,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "commitment_consistency": {
+      "domain_commercial": -0.0999,
+      "domain_opinion_change": 0.0031,
+      "source_daily_persuasion": -0.0121,
+      "source_hcp": 0.0,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "reciprocity": {
+      "domain_commercial": -0.0099,
+      "domain_opinion_change": -0.0178,
+      "source_daily_persuasion": 0.0091,
+      "source_hcp": 0.0155,
+      "classification": "INSIGNIFICANT"
+    },
+    "scarcity_appeal": {
+      "domain_commercial": 0.0542,
+      "domain_opinion_change": -0.0083,
+      "source_daily_persuasion": -0.0019,
+      "source_hcp": 0.0559,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "urgency_appeal": {
+      "domain_commercial": -0.0251,
+      "domain_opinion_change": -0.0215,
+      "source_daily_persuasion": -0.0232,
+      "source_hcp": 0.0,
+      "classification": "UNIVERSAL"
+    },
+    "gain_frame": {
+      "domain_commercial": -0.0786,
+      "domain_opinion_change": -0.0248,
+      "source_daily_persuasion": -0.0682,
+      "source_hcp": 0.0,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "loss_frame": {
+      "domain_commercial": 0.0253,
+      "domain_opinion_change": 0.0319,
+      "source_daily_persuasion": 0.0483,
+      "source_hcp": 0.0,
+      "classification": "UNIVERSAL"
+    },
+    "anchoring": {
+      "domain_commercial": -0.043,
+      "domain_opinion_change": 0.0164,
+      "source_daily_persuasion": -0.0263,
+      "source_hcp": -0.004,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "rhetorical_question": {
+      "domain_commercial": 0.0428,
+      "domain_opinion_change": 0.0097,
+      "source_daily_persuasion": 0.0279,
+      "source_hcp": 0.0,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "perspective_shifting": {
+      "domain_commercial": -0.031,
+      "domain_opinion_change": -0.1353,
+      "source_daily_persuasion": -0.1121,
+      "source_hcp": 0.0,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "deceptive_information": {
+      "domain_commercial": 0.0239,
+      "domain_opinion_change": -0.0336,
+      "source_daily_persuasion": -0.0098,
+      "source_hcp": 0.0,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "emotional_manipulation": {
+      "domain_commercial": 0.0,
+      "domain_opinion_change": 0.0,
+      "source_daily_persuasion": 0.0,
+      "source_hcp": 0.0,
+      "classification": "INSIGNIFICANT"
+    },
+    "gaslighting": {
+      "domain_commercial": 0.0,
+      "domain_opinion_change": 0.0,
+      "source_daily_persuasion": 0.0,
+      "source_hcp": 0.0,
+      "classification": "INSIGNIFICANT"
+    },
+    "false_equivalence": {
+      "domain_commercial": 0.069,
+      "domain_opinion_change": -0.0957,
+      "source_daily_persuasion": -0.0492,
+      "source_hcp": 0.0,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "guilt_tripping": {
+      "domain_commercial": 0.0,
+      "domain_opinion_change": 0.0,
+      "source_daily_persuasion": 0.0,
+      "source_hcp": 0.0,
+      "classification": "INSIGNIFICANT"
+    },
+    "fear_mongering": {
+      "domain_commercial": 0.0006,
+      "domain_opinion_change": 0.0154,
+      "source_daily_persuasion": -0.0105,
+      "source_hcp": 0.0296,
+      "classification": "INSIGNIFICANT"
+    },
+    "false_urgency": {
+      "domain_commercial": -0.0001,
+      "domain_opinion_change": 0.1378,
+      "source_daily_persuasion": 0.0139,
+      "source_hcp": 0.0301,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "false_scarcity": {
+      "domain_commercial": 0.0,
+      "domain_opinion_change": 0.0,
+      "source_daily_persuasion": 0.0,
+      "source_hcp": 0.0,
+      "classification": "INSIGNIFICANT"
+    },
+    "ad_hominem": {
+      "domain_commercial": 0.0804,
+      "domain_opinion_change": 0.0,
+      "source_daily_persuasion": 0.0,
+      "source_hcp": 0.1271,
+      "classification": "UNIVERSAL"
+    },
+    "name_calling": {
+      "domain_commercial": 0.0,
+      "domain_opinion_change": 0.099,
+      "source_daily_persuasion": 0.0671,
+      "source_hcp": 0.0,
+      "classification": "UNIVERSAL"
+    },
+    "straw_man": {
+      "domain_commercial": 0.0,
+      "domain_opinion_change": 0.0,
+      "source_daily_persuasion": 0.0,
+      "source_hcp": 0.0,
+      "classification": "INSIGNIFICANT"
+    },
+    "whataboutism": {
+      "domain_commercial": 0.0258,
+      "domain_opinion_change": -0.037,
+      "source_daily_persuasion": -0.0222,
+      "source_hcp": 0.049,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "false_dilemma": {
+      "domain_commercial": 0.0873,
+      "domain_opinion_change": 0.0,
+      "source_daily_persuasion": 0.0632,
+      "source_hcp": 0.0,
+      "classification": "UNIVERSAL"
+    },
+    "slippery_slope": {
+      "domain_commercial": 0.0441,
+      "domain_opinion_change": -0.0774,
+      "source_daily_persuasion": -0.041,
+      "source_hcp": 0.0,
+      "classification": "DOMAIN-SPECIFIC"
+    },
+    "red_herring": {
+      "domain_commercial": -0.0487,
+      "domain_opinion_change": -0.0426,
+      "source_daily_persuasion": -0.0509,
+      "source_hcp": 0.0,
+      "classification": "UNIVERSAL"
+    },
+    "appeal_to_ignorance": {
+      "domain_commercial": 0.0,
+      "domain_opinion_change": 0.0,
+      "source_daily_persuasion": 0.0,
+      "source_hcp": 0.0,
+      "classification": "INSIGNIFICANT"
+    },
+    "manipulative_flattery": {
+      "domain_commercial": 0.0,
+      "domain_opinion_change": 0.0,
+      "source_daily_persuasion": 0.0,
+      "source_hcp": 0.0,
+      "classification": "INSIGNIFICANT"
+    },
+    "appeal_to_pity": {
+      "domain_commercial": 0.0,
+      "domain_opinion_change": -0.0904,
+      "source_daily_persuasion": -0.0763,
+      "source_hcp": 0.0,
+      "classification": "UNIVERSAL"
+    },
+    "obfuscation": {
+      "domain_commercial": 0.0189,
+      "domain_opinion_change": 0.023,
+      "source_daily_persuasion": 0.0221,
+      "source_hcp": 0.0,
+      "classification": "UNIVERSAL"
+    },
+    "bandwagon_pressure": {
+      "domain_commercial": 0.0,
+      "domain_opinion_change": 0.0,
+      "source_daily_persuasion": 0.0,
+      "source_hcp": 0.0,
+      "classification": "INSIGNIFICANT"
+    }
+  },
+  "corpus_sample_sizes": {
+    "source_daily_persuasion": 5009,
+    "source_hcp": 2991,
+    "domain_opinion_change": 3412,
+    "domain_commercial": 4588
+  }
+}

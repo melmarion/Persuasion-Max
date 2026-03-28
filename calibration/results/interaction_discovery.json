@@ -1,0 +1,198 @@
+{
+  "base_auc": 0.636,
+  "n_samples": 8000,
+  "n_interactions_tested": 800,
+  "n_significant": 7,
+  "top_30_interactions": [
+    {
+      "feature_a": "valence",
+      "feature_b": "reading_difficulty",
+      "idx_a": 1,
+      "idx_b": 16,
+      "auc_lift": 0.00767,
+      "auc_with_interaction": 0.6437
+    },
+    {
+      "feature_a": "word_count",
+      "feature_b": "evidence_based",
+      "idx_a": 7,
+      "idx_b": 20,
+      "auc_lift": 0.00525,
+      "auc_with_interaction": 0.6412
+    },
+    {
+      "feature_a": "goal_relevance",
+      "feature_b": "self_reference",
+      "idx_a": 2,
+      "idx_b": 14,
+      "auc_lift": 0.00476,
+      "auc_with_interaction": 0.6408
+    },
+    {
+      "feature_a": "reading_difficulty",
+      "feature_b": "bandwagon",
+      "idx_a": 16,
+      "idx_b": 24,
+      "auc_lift": 0.00391,
+      "auc_with_interaction": 0.6399
+    },
+    {
+      "feature_a": "reading_difficulty",
+      "feature_b": "gain_frame",
+      "idx_a": 16,
+      "idx_b": 34,
+      "auc_lift": 0.00382,
+      "auc_with_interaction": 0.6398
+    },
+    {
+      "feature_a": "reading_difficulty",
+      "feature_b": "social_proof",
+      "idx_a": 16,
+      "idx_b": 22,
+      "auc_lift": 0.00361,
+      "auc_with_interaction": 0.6396
+    },
+    {
+      "feature_a": "word_count",
+      "feature_b": "scarcity_appeal",
+      "idx_a": 7,
+      "idx_b": 32,
+      "auc_lift": 0.00301,
+      "auc_with_interaction": 0.639
+    }
+  ],
+  "stacking_results": [
+    {
+      "n_interactions": 5,
+      "auc": 0.6554,
+      "lift_over_linear": 0.0194
+    },
+    {
+      "n_interactions": 10,
+      "auc": 0.6577,
+      "lift_over_linear": 0.0217
+    },
+    {
+      "n_interactions": 15,
+      "auc": 0.6577,
+      "lift_over_linear": 0.0217
+    },
+    {
+      "n_interactions": 20,
+      "auc": 0.6577,
+      "lift_over_linear": 0.0217
+    }
+  ],
+  "domain_split": {
+    "opinion_change": {
+      "n": 3412,
+      "base_auc": 0.6725,
+      "interaction_transfer": [
+        {
+          "feature_a": "valence",
+          "feature_b": "reading_difficulty",
+          "overall_lift": 0.00767,
+          "domain_lift": 0.00114,
+          "transfers": 0
+        },
+        {
+          "feature_a": "word_count",
+          "feature_b": "evidence_based",
+          "overall_lift": 0.00525,
+          "domain_lift": -2e-05,
+          "transfers": 0
+        },
+        {
+          "feature_a": "goal_relevance",
+          "feature_b": "self_reference",
+          "overall_lift": 0.00476,
+          "domain_lift": -0.00017,
+          "transfers": 0
+        },
+        {
+          "feature_a": "reading_difficulty",
+          "feature_b": "bandwagon",
+          "overall_lift": 0.00391,
+          "domain_lift": 0.00057,
+          "transfers": 0
+        },
+        {
+          "feature_a": "reading_difficulty",
+          "feature_b": "gain_frame",
+          "overall_lift": 0.00382,
+          "domain_lift": -0.00132,
+          "transfers": 0
+        },
+        {
+          "feature_a": "reading_difficulty",
+          "feature_b": "social_proof",
+          "overall_lift": 0.00361,
+          "domain_lift": -0.00059,
+          "transfers": 0
+        },
+        {
+          "feature_a": "word_count",
+          "feature_b": "scarcity_appeal",
+          "overall_lift": 0.00301,
+          "domain_lift": 0.00388,
+          "transfers": 1
+        }
+      ]
+    },
+    "commercial": {
+      "n": 4588,
+      "base_auc": 0.612,
+      "interaction_transfer": [
+        {
+          "feature_a": "valence",
+          "feature_b": "reading_difficulty",
+          "overall_lift": 0.00767,
+          "domain_lift": 0.00757,
+          "transfers": 1
+        },
+        {
+          "feature_a": "word_count",
+          "feature_b": "evidence_based",
+          "overall_lift": 0.00525,
+          "domain_lift": 0.00302,
+          "transfers": 1
+        },
+        {
+          "feature_a": "goal_relevance",
+          "feature_b": "self_reference",
+          "overall_lift": 0.00476,
+          "domain_lift": 0.00397,
+          "transfers": 1
+        },
+        {
+          "feature_a": "reading_difficulty",
+          "feature_b": "bandwagon",
+          "overall_lift": 0.00391,
+          "domain_lift": 0.00196,
+          "transfers": 0
+        },
+        {
+          "feature_a": "reading_difficulty",
+          "feature_b": "gain_frame",
+          "overall_lift": 0.00382,
+          "domain_lift": 0.00453,
+          "transfers": 1
+        },
+        {
+          "feature_a": "reading_difficulty",
+          "feature_b": "social_proof",
+          "overall_lift": 0.00361,
+          "domain_lift": 0.00204,
+          "transfers": 0
+        },
+        {
+          "feature_a": "word_count",
+          "feature_b": "scarcity_appeal",
+          "overall_lift": 0.00301,
+          "domain_lift": 0.00017,
+          "transfers": 0
+        }
+      ]
+    }
+  }
+}
