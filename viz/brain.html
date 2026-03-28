@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limbic Cascade — Brain Visualization</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'DM Sans', sans-serif; background: #08080F; color: #E8E8F0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 24px; }
+  .container { max-width: 1200px; width: 100%; }
+  h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: #888; font-size: 14px; margin-bottom: 24px; }
+  .top-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
+  .input-panel { background: #12121E; border: 1px solid #252538; border-radius: 16px; padding: 24px; }
+  .input-panel textarea { width: 100%; background: #1A1A2A; border: 1px solid #252538; border-radius: 8px; color: #E8E8F0; font-family: 'DM Sans', sans-serif; font-size: 15px; padding: 12px; resize: vertical; min-height: 80px; }
+  .input-panel textarea:focus { outline: none; border-color: #7C5CFC; }
+  .btn { background: #7C5CFC; color: white; border: none; border-radius: 8px; padding: 10px 24px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: 'DM Sans', sans-serif; }
+  .btn:hover { background: #6344E0; }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .btn-row { display: flex; gap: 8px; margin-top: 12px; }
+  .effectiveness { font-size: 64px; font-weight: 800; text-align: center; margin: 8px 0; font-family: 'JetBrains Mono', monospace; }
+  .behavior-tag { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; text-transform: uppercase; }
+  .behavior-COMPLIANCE { background: rgba(6,214,160,0.15); color: #06D6A0; }
+  .behavior-REJECTION { background: rgba(255,51,102,0.15); color: #FF3366; }
+  .behavior-DELAY { background: rgba(240,180,41,0.15); color: #F0B429; }
+  .stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 12px; }
+  .stat { background: #1A1A2A; border-radius: 8px; padding: 8px 12px; text-align: center; }
+  .stat-label { font-size: 10px; color: #666; text-transform: uppercase; letter-spacing: 0.5px; }
+  .stat-value { font-size: 18px; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
+  .brain-panel { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; }
+  .brain-svg-wrap { background: #12121E; border: 1px solid #252538; border-radius: 16px; padding: 24px; display: flex; align-items: center; justify-content: center; min-height: 420px; }
+  .dimensions-panel { background: #12121E; border: 1px solid #252538; border-radius: 16px; padding: 24px; }
+  .dim-row { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .dim-label { width: 120px; font-size: 12px; font-weight: 500; color: #AAA; text-transform: uppercase; letter-spacing: 0.3px; }
+  .dim-bar-bg { flex: 1; height: 8px; background: #1A1A2A; border-radius: 4px; overflow: hidden; }
+  .dim-bar { height: 100%; border-radius: 4px; transition: width 0.6s ease, background 0.6s ease; }
+  .dim-value { width: 40px; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; }
+  .suggestions { background: #12121E; border: 1px solid #252538; border-radius: 16px; padding: 24px; margin-top: 24px; }
+  .suggestion-item { background: #1A1A2A; border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; font-size: 13px; line-height: 1.5; }
+  .suggestion-dim { color: #7C5CFC; font-weight: 600; font-size: 11px; text-transform: uppercase; }
+  .stage-trace { background: #12121E; border: 1px solid #252538; border-radius: 16px; padding: 24px; margin-top: 24px; }
+  .stage { display: flex; align-items: flex-start; gap: 16px; padding: 12px 0; border-bottom: 1px solid #1A1A2A; }
+  .stage:last-child { border-bottom: none; }
+  .stage-num { background: #7C5CFC; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+  .stage-name { font-weight: 600; font-size: 14px; }
+  .stage-structure { font-size: 12px; color: #888; }
+  .stage-timing { font-size: 11px; color: #555; font-family: 'JetBrains Mono', monospace; }
+  /* Brain SVG regions */
+  .brain-region { transition: opacity 0.6s ease, filter 0.6s ease; cursor: pointer; }
+  .brain-region:hover { filter: brightness(1.3); }
+  .region-label { font-family: 'DM Sans', sans-serif; font-size: 10px; fill: #888; pointer-events: none; }
+  .region-label-active { fill: #E8E8F0; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Limbic Decision Cascade</h1>
+  <p class="subtitle">Neuroanatomical circuit-level persuasion analysis</p>
+
+  <div class="top-row">
+    <div class="input-panel">
+      <textarea id="stimulus" placeholder="Enter stimulus text to analyze...">Get Notion free</textarea>
+      <div class="btn-row">
+        <button class="btn" id="analyzeBtn" onclick="analyze()">Analyze</button>
+        <button class="btn" style="background:#1A1A2A;color:#AAA" onclick="loadExample('error')">Error State</button>
+        <button class="btn" style="background:#1A1A2A;color:#AAA" onclick="loadExample('scarcity')">Scarcity</button>
+        <button class="btn" style="background:#1A1A2A;color:#AAA" onclick="loadExample('cta')">CTA</button>
+      </div>
+    </div>
+    <div class="input-panel" style="text-align:center">
+      <div id="effectivenessDisplay" class="effectiveness" style="color:#06D6A0">—</div>
+      <div id="behaviorTag"></div>
+      <div class="stats" id="circuitStats"></div>
+    </div>
+  </div>
+
+  <div class="brain-panel">
+    <div class="brain-svg-wrap">
+      <svg id="brainSvg" viewBox="0 0 600 450" width="100%" height="100%">
+        <!-- Sagittal brain outline -->
+        <path d="M300,40 C420,40 520,100 540,180 C560,260 540,340 480,380 C420,420 320,430 260,420 C200,410 140,380 100,340 C60,300 40,240 50,180 C60,120 120,60 200,40 C230,34 270,34 300,40Z" fill="none" stroke="#252538" stroke-width="2"/>
+        <!-- Brain regions as positioned ellipses -->
+        <!-- Thalamus (center relay) -->
+        <ellipse id="rgn-thalamus" class="brain-region" cx="300" cy="220" rx="35" ry="25" fill="#7C5CFC" opacity="0.15"/>
+        <text class="region-label" x="300" y="255" text-anchor="middle">Thalamus</text>
+        <!-- Amygdala (deep, anterior-inferior) -->
+        <ellipse id="rgn-amygdala" class="brain-region" cx="220" cy="310" rx="30" ry="22" fill="#FF3366" opacity="0.15"/>
+        <text class="region-label" x="220" y="343" text-anchor="middle">Amygdala</text>
+        <!-- Nucleus Accumbens (ventral striatum) -->
+        <ellipse id="rgn-nac" class="brain-region" cx="250" cy="260" rx="25" ry="18" fill="#06D6A0" opacity="0.15"/>
+        <text class="region-label" x="250" y="285" text-anchor="middle">NAc</text>
+        <!-- Hippocampus (medial temporal) -->
+        <ellipse id="rgn-hippocampus" class="brain-region" cx="340" cy="310" rx="35" ry="20" fill="#F0B429" opacity="0.15"/>
+        <text class="region-label" x="340" y="340" text-anchor="middle">Hippocampus</text>
+        <!-- vmPFC (ventromedial prefrontal) -->
+        <ellipse id="rgn-vmpfc" class="brain-region" cx="170" cy="240" rx="35" ry="25" fill="#A855F7" opacity="0.15"/>
+        <text class="region-label" x="170" y="275" text-anchor="middle">vmPFC</text>
+        <!-- dlPFC (dorsolateral prefrontal) -->
+        <ellipse id="rgn-dlpfc" class="brain-region" cx="160" cy="140" rx="45" ry="30" fill="#00D4FF" opacity="0.15"/>
+        <text class="region-label" x="160" y="120" text-anchor="middle">dlPFC</text>
+        <!-- ACC (anterior cingulate) -->
+        <ellipse id="rgn-acc" class="brain-region" cx="250" cy="160" rx="30" ry="22" fill="#FF6B35" opacity="0.15"/>
+        <text class="region-label" x="250" y="148" text-anchor="middle">ACC</text>
+        <!-- Anterior Insula -->
+        <ellipse id="rgn-insula" class="brain-region" cx="190" cy="190" rx="25" ry="18" fill="#FF2D87" opacity="0.15"/>
+        <text class="region-label" x="190" y="183" text-anchor="middle">Insula</text>
+        <!-- Connection lines (subtle) -->
+        <line x1="300" y1="220" x2="220" y2="310" stroke="#252538" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+        <line x1="300" y1="220" x2="250" y2="260" stroke="#252538" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+        <line x1="220" y1="310" x2="340" y2="310" stroke="#252538" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+        <line x1="340" y1="310" x2="170" y2="240" stroke="#252538" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+        <line x1="170" y1="240" x2="160" y2="140" stroke="#252538" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+        <line x1="250" y1="160" x2="160" y2="140" stroke="#252538" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+        <line x1="190" y1="190" x2="170" y2="240" stroke="#252538" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="dimensions-panel">
+      <h3 style="font-size:14px;margin-bottom:16px;color:#AAA">Appraisal Dimensions</h3>
+      <div id="dimensionBars"></div>
+      <h3 style="font-size:14px;margin:20px 0 12px;color:#AAA">Circuit Competition</h3>
+      <div id="circuitBars"></div>
+    </div>
+  </div>
+
+  <div class="suggestions" id="suggestionsPanel" style="display:none">
+    <h3 style="font-size:14px;margin-bottom:12px;color:#AAA">Reframing Suggestions</h3>
+    <div id="suggestionsList"></div>
+  </div>
+
+  <div class="stage-trace" id="stagePanel" style="display:none">
+    <h3 style="font-size:14px;margin-bottom:12px;color:#AAA">6-Stage Cascade Trace</h3>
+    <div id="stageList"></div>
+  </div>
+</div>
+
+<script>
+const EXAMPLES = {
+  error: "ERROR: Invalid credit card number. Please try again.",
+  scarcity: "Only 2 left in stock! 12 people viewing this right now!",
+  cta: "Get Notion free",
+};
+
+const DIM_COLORS = {
+  novelty: "#7C5CFC", valence: "#06D6A0", goal_relevance: "#F0B429",
+  coping_potential: "#00D4FF", agency: "#FF6B35", certainty: "#A855F7",
+  temporal_proximity: "#FF2D87",
+};
+
+const CIRCUIT_COLORS = { approach: "#06D6A0", avoidance: "#FF3366", deliberation: "#F0B429" };
+
+// Region activation mapping: which circuit activations light up which regions
+const REGION_MAP = {
+  thalamus:     { weight: 0.3, source: "all" },
+  amygdala:     { weight: 1.0, source: "avoidance" },
+  nac:          { weight: 1.0, source: "approach" },
+  hippocampus:  { weight: 0.5, source: "familiarity" },
+  vmpfc:        { weight: 0.7, source: "somatic" },
+  dlpfc:        { weight: 1.0, source: "deliberation" },
+  acc:          { weight: 0.8, source: "deliberation" },
+  insula:       { weight: 1.0, source: "disgust" },
+};
+
+function loadExample(key) {
+  document.getElementById("stimulus").value = EXAMPLES[key];
+  analyze();
+}
+
+async function analyze() {
+  const text = document.getElementById("stimulus").value.trim();
+  if (!text) return;
+  const btn = document.getElementById("analyzeBtn");
+  btn.disabled = true; btn.textContent = "Analyzing...";
+
+  try {
+    const resp = await fetch("http://localhost:8100/analyze", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text }),
+    });
+    const data = await resp.json();
+    render(data);
+  } catch (e) {
+    // Fallback: run locally if API not available
+    renderFallback(text);
+  }
+  btn.disabled = false; btn.textContent = "Analyze";
+}
+
+function renderFallback(text) {
+  // Simple heuristic fallback when API is not running
+  const pos = (text.match(/\b(free|love|win|amazing|excellent|beautiful|reward|congrats|happy|perfect)\b/gi) || []).length;
+  const neg = (text.match(/\b(error|fail|invalid|wrong|denied|rejected|warning|danger|threat|problem|hate)\b/gi) || []).length;
+  const total = pos + neg || 1;
+  const valence = Math.round((pos / total) * 1000) / 1000;
+
+  const data = {
+    effectiveness: 0.5 + valence * 0.4,
+    prediction: {
+      predicted_behavior: valence > 0.5 ? "COMPLIANCE" : neg > pos ? "REJECTION" : "DELAY",
+      compliance_prob: 0.33 + valence * 0.3,
+      rejection_prob: 0.33 - valence * 0.15,
+      delay_prob: 0.34 - valence * 0.15,
+      dominant_pathway: "emotional",
+      durability: valence * 0.5,
+    },
+    circuits: { approach: valence * 0.8, avoidance: (1 - valence) * 0.4, deliberation: 0.2, dominant: valence > 0.5 ? "approach" : "avoidance" },
+    appraisal: { novelty: 0.5, valence, goal_relevance: 0.5, coping_potential: 0.5, agency: 0.5, certainty: 0.5, temporal_proximity: 0.5 },
+    somatic_marker_congruence: 0.5,
+    insula_disgust_signal: neg > 2 ? 0.6 : 0.0,
+    familiarity: 0.5,
+    suggestion_count: 0,
+    top_fix: null,
+  };
+  render(data);
+}
+
+function render(data) {
+  // Effectiveness
+  const eff = Math.round(data.effectiveness * 100);
+  const effEl = document.getElementById("effectivenessDisplay");
+  effEl.textContent = eff + "%";
+  effEl.style.color = eff >= 80 ? "#06D6A0" : eff >= 60 ? "#F0B429" : "#FF3366";
+
+  // Behavior tag
+  const beh = data.prediction.predicted_behavior;
+  document.getElementById("behaviorTag").innerHTML =
+    `<span class="behavior-tag behavior-${beh}">${beh}</span>` +
+    `<span style="color:#666;font-size:12px;margin-left:8px">${data.prediction.dominant_pathway} pathway</span>`;
+
+  // Circuit stats
+  document.getElementById("circuitStats").innerHTML = `
+    <div class="stat"><div class="stat-label">Compliance</div><div class="stat-value" style="color:#06D6A0">${Math.round(data.prediction.compliance_prob * 100)}%</div></div>
+    <div class="stat"><div class="stat-label">Rejection</div><div class="stat-value" style="color:#FF3366">${Math.round(data.prediction.rejection_prob * 100)}%</div></div>
+    <div class="stat"><div class="stat-label">Delay</div><div class="stat-value" style="color:#F0B429">${Math.round(data.prediction.delay_prob * 100)}%</div></div>
+  `;
+
+  // Dimension bars
+  const dimHtml = Object.entries(data.appraisal).map(([k, v]) => {
+    const color = DIM_COLORS[k] || "#7C5CFC";
+    const pct = Math.round(v * 100);
+    return `<div class="dim-row">
+      <div class="dim-label">${k.replace(/_/g, " ")}</div>
+      <div class="dim-bar-bg"><div class="dim-bar" style="width:${pct}%;background:${color}"></div></div>
+      <div class="dim-value" style="color:${color}">${v.toFixed(2)}</div>
+    </div>`;
+  }).join("");
+  document.getElementById("dimensionBars").innerHTML = dimHtml;
+
+  // Circuit bars
+  const crc = data.circuits;
+  const circuitHtml = ["approach", "avoidance", "deliberation"].map(c => {
+    const v = crc[c];
+    const pct = Math.round(Math.min(1, v / 0.5) * 100); // scale to visual range
+    const color = CIRCUIT_COLORS[c];
+    const isDominant = crc.dominant === c;
+    return `<div class="dim-row">
+      <div class="dim-label" style="${isDominant ? 'color:#E8E8F0;font-weight:700' : ''}">${c}${isDominant ? " ◆" : ""}</div>
+      <div class="dim-bar-bg"><div class="dim-bar" style="width:${pct}%;background:${color}"></div></div>
+      <div class="dim-value" style="color:${color}">${v.toFixed(3)}</div>
+    </div>`;
+  }).join("");
+  document.getElementById("circuitBars").innerHTML = circuitHtml;
+
+  // Brain region activations
+  activateBrain(data);
+
+  // Suggestions
+  if (data.top_fix) {
+    document.getElementById("suggestionsPanel").style.display = "block";
+    document.getElementById("suggestionsList").innerHTML =
+      `<div class="suggestion-item"><span class="suggestion-dim">${data.top_fix.dimension} (${data.top_fix.current.toFixed(2)})</span><br>${data.top_fix.fix}</div>`;
+  } else {
+    document.getElementById("suggestionsPanel").style.display = "none";
+  }
+}
+
+function activateBrain(data) {
+  const crc = data.circuits;
+  const maxActivation = Math.max(crc.approach, crc.avoidance, crc.deliberation, 0.01);
+
+  const activations = {
+    thalamus: 0.4, // always somewhat active (relay)
+    amygdala: crc.avoidance / maxActivation,
+    nac: crc.approach / maxActivation,
+    hippocampus: data.familiarity > 0.5 ? 0.7 : 0.3,
+    vmpfc: data.somatic_marker_congruence > 0.5 ? 0.8 : 0.3,
+    dlpfc: crc.deliberation / maxActivation,
+    acc: crc.deliberation / maxActivation * 0.8,
+    insula: data.insula_disgust_signal || 0,
+  };
+
+  for (const [region, level] of Object.entries(activations)) {
+    const el = document.getElementById("rgn-" + region);
+    if (!el) continue;
+    const clamped = Math.min(1, Math.max(0.1, level));
+    el.setAttribute("opacity", (0.15 + clamped * 0.7).toFixed(2));
+    // Add glow filter
+    if (clamped > 0.5) {
+      const color = el.getAttribute("fill");
+      el.style.filter = `drop-shadow(0 0 ${Math.round(clamped * 12)}px ${color})`;
+    } else {
+      el.style.filter = "none";
+    }
+  }
+}
+
+// Auto-analyze on load
+window.addEventListener("load", () => setTimeout(analyze, 300));
+</script>
+</body>
+</html>

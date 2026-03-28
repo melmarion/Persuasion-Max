@@ -40,7 +40,7 @@ class AppraisalScores:
     def to_dict(self) -> dict:
         return asdict(self)
 
-    def to_vector(self) -> list[float]:
+    def to_vector(self) -> list:
         return [
             self.novelty, self.valence, self.goal_relevance,
             self.coping_potential, self.agency, self.certainty,
@@ -51,101 +51,106 @@ class AppraisalScores:
     def mean(self) -> float:
         return sum(self.to_vector()) / 7
 
-    def weakest_dimension(self) -> tuple[str, float]:
+    def weakest_dimension(self) -> tuple:
         d = self.to_dict()
         name = min(d, key=d.get)
         return name, d[name]
 
-    def strongest_dimension(self) -> tuple[str, float]:
+    def strongest_dimension(self) -> tuple:
         d = self.to_dict()
         name = max(d, key=d.get)
         return name, d[name]
 
 
-# ─── Heuristic signals ─────────────────────────────────────────────────────
+# ─── Heuristic signals (all patterns use \b word boundaries) ────────────────
 
 _NOVELTY_HIGH = re.compile(
-    r"(?i)(introducing|unveiled?|never[- ]before|first[- ]ever|breakthrough|"
-    r"revolutionary|reimagined?|reinvent|disrupt|unprecedented|surprise|"
-    r"exclusive|secret|hidden|shocking|unexpected)"
+    r'\b(introducing|unveiled?|never[- ]before|first[- ]ever|breakthrough|'
+    r'revolutionary|reimagined?|reinvent|disrupt|unprecedented|surprise|'
+    r'exclusive|secret|hidden|shocking|unexpected)\b', re.I
 )
 _NOVELTY_LOW = re.compile(
-    r"(?i)(standard|traditional|classic|conventional|usual|typical|"
-    r"familiar|normal|regular|default|basic|simple)"
+    r'\b(standard|traditional|classic|conventional|usual|typical|'
+    r'familiar|normal|regular|default|basic|simple)\b', re.I
 )
 
 _VALENCE_POS = re.compile(
-    r"(?i)(free|love|beautiful|celebrate|reward|bonus|gift|win|"
-    r"congrats|welcome|thank|enjoy|delight|happy|success|perfect|"
-    r"amazing|incredible|wonderful|brilliant|excellent)"
+    r'\b(free|love|beautiful|celebrate|reward|bonus|gift|win|'
+    r'congrats|welcome|thank|enjoy|delight|happy|success|perfect|'
+    r'amazing|incredible|wonderful|brilliant|excellent)\b', re.I
 )
 _VALENCE_NEG = re.compile(
-    r"(?i)(error|fail|invalid|wrong|denied|rejected|expired|"
-    r"warning|danger|risk|threat|problem|issue|broken|lost|miss|"
-    r"unfortunately|sorry|mistake)"
+    r'\b(error|fail(?:ed|ure)?|invalid|wrong|denied|rejected|expired|'
+    r'warning|danger|risk|threat|problem|issue|broken|lost|miss(?:ed)?|'
+    r'unfortunately|sorry|mistake|hate|terrible|awful)\b', re.I
 )
 
 _GOAL_RELEVANCE_HIGH = re.compile(
-    r"(?i)(you|your|my|personali[sz]ed|for you|tailored|custom|"
-    r"based on your|recommended for|matches? your|fits? your|"
-    r"goals?|needs?|what you (want|need|care)|matters? to you)"
+    r'\b(you|your|my|personali[sz]ed|for you|tailored|custom|'
+    r'based on your|recommended for|matches? your|fits? your|'
+    r'goals?|needs?|what you (?:want|need|care)|matters? to you)\b', re.I
+)
+_GOAL_RELEVANCE_LOW = re.compile(
+    r'\b(we (?:built|made|created)|our (?:team|company|platform)|'
+    r'features? include|announcing|introducing our|learn more about us)\b', re.I
 )
 
 _COPING_HIGH = re.compile(
-    r"(?i)(easy|simple|one[- ]click|instant|automatic|no[- ]setup|"
-    r"takes? \d+\s*(seconds?|minutes?|min)|step[- ]by[- ]step|guided|"
-    r"pre[- ]?filled|template|ready[- ]made|just|done|quick)"
+    r'\b(easy|simple|one[- ]click|instant|automatic|no[- ]setup|'
+    r'takes? \d+\s*(?:seconds?|minutes?|min)|step[- ]by[- ]step|guided|'
+    r'pre[- ]?filled|template|ready[- ]made|done|quick)\b', re.I
 )
 _COPING_LOW = re.compile(
-    r"(?i)(complex|difficult|advanced|requires?|mandatory|must|"
-    r"multi[- ]step|extensive|comprehensive|complete all|fill out|"
-    r"submit .{0,20} documents?|upload .{0,20} files?)"
+    r'\b(complex|difficult|advanced|requires?|mandatory|must|'
+    r'multi[- ]step|extensive|comprehensive|complete all|fill out|'
+    r'submit .{0,20} documents?|upload .{0,20} files?)\b', re.I
 )
 
 _AGENCY_HIGH = re.compile(
-    r"(?i)(choose|option|prefer|skip|later|no thanks|decline|"
-    r"your choice|you decide|opt[- ]?(in|out)|customize|control|"
-    r"manage|cancel anytime|no commitment)"
+    r'\b(choose|option|prefer|skip|later|no thanks|decline|'
+    r'your choice|you decide|opt[- ]?(?:in|out)|customize|control|'
+    r'manage|cancel anytime|no commitment)\b', re.I
 )
 _AGENCY_LOW = re.compile(
-    r"(?i)(required|mandatory|must|forced?|cannot skip|"
-    r"no option|only way|you (have|need) to|non[- ]?negotiable|"
-    r"are you sure|don.t miss|last chance)"
+    r'\b(required|mandatory|must|forced?|cannot skip|'
+    r'no option|only way|you (?:have|need) to|non[- ]?negotiable|'
+    r'are you sure|don.t miss|last chance)\b', re.I
 )
 
 _CERTAINTY_HIGH = re.compile(
-    r"(?i)(guaranteed?|money[- ]back|refund|proven|verified|"
-    r"trusted by \d|rated \d|\d+\s*stars?|100%|risk[- ]free|"
-    r"no[- ]risk|case stud|testimonial|specific|exactly)"
+    r'\b(guaranteed?|money[- ]back|refund|proven|verified|'
+    r'trusted by \d|rated \d|\d+\s*stars?|100%|risk[- ]free|'
+    r'no[- ]risk|case stud|testimonial|specific|exactly)\b', re.I
 )
 _CERTAINTY_LOW = re.compile(
-    r"(?i)(maybe|might|could|possibly|results may vary|"
-    r"no guarantee|subject to|terms apply|conditions|"
-    r"estimated|approximately|uncertain)"
+    r'\b(maybe|might|could|possibly|results may vary|'
+    r'no guarantee|subject to|terms apply|conditions|'
+    r'estimated|approximately|uncertain)\b', re.I
 )
 
 _TEMPORAL_HIGH = re.compile(
-    r"(?i)(now|today|instant|immediate|right away|starts? (now|today)|"
-    r"already|live|real[- ]time|currently|this (second|moment)|"
-    r"just (happened|finished|completed))"
+    r'\b(now|today|instant|immediate|right away|starts? (?:now|today)|'
+    r'already|live|real[- ]time|currently|this (?:second|moment)|'
+    r'just (?:happened|finished|completed))\b', re.I
 )
 _TEMPORAL_LOW = re.compile(
-    r"(?i)(eventually|over time|long[- ]term|in the (future|coming)|"
-    r"weeks?|months?|years?|someday|gradually|soon|later|upcoming)"
+    r'\b(eventually|over time|long[- ]term|in the (?:future|coming)|'
+    r'weeks?|months?|years?|someday|gradually|soon|later|upcoming)\b', re.I
 )
 
+
+# ─── Negation-aware scoring ─────────────────────────────────────────────────
 
 _NEGATION_WINDOW = re.compile(
-    r"(?i)(no|not|don.?t|won.?t|can.?t|never|without|neither|nor|lack|"
-    r"fail(?:ed|ure)?|miss(?:ing|ed)?|zero|none)\s+\w*\s*"
+    r'\b(no|not|don.?t|won.?t|can.?t|never|without|neither|nor|lack|'
+    r'fail(?:ed|ure)?|miss(?:ing|ed)?|zero|none)\s+\w*\s*', re.I
 )
 
 
-def _count_negated(text: str, pattern: re.Pattern) -> int:
+def _count_negated(text, pattern):
     """Count how many matches from pattern are preceded by a negation word."""
     negated = 0
     for m in pattern.finditer(text):
-        # Check the 30 chars before the match for negation
         start = max(0, m.start() - 30)
         prefix = text[start:m.start()]
         if _NEGATION_WINDOW.search(prefix):
@@ -153,11 +158,10 @@ def _count_negated(text: str, pattern: re.Pattern) -> int:
     return negated
 
 
-def _score_regex_dimension(text: str, high: re.Pattern, low: re.Pattern) -> float:
-    """Score a dimension based on keyword matches with negation awareness."""
+def _score_regex_dimension(text, high, low):
+    """Score a dimension 0-1 based on keyword matches with negation awareness."""
     h = len(high.findall(text))
     l = len(low.findall(text))
-    # Positive keywords preceded by negation count as negative, and vice versa
     h_negated = _count_negated(text, high)
     l_negated = _count_negated(text, low)
     h_effective = (h - h_negated) + l_negated
@@ -169,13 +173,7 @@ def _score_regex_dimension(text: str, high: re.Pattern, low: re.Pattern) -> floa
     return round(min(1.0, max(0.0, raw)), 3)
 
 
-def _score_single_direction(text: str, pattern: re.Pattern, base: float = 0.5, boost: float = 0.08) -> float:
-    """Score upward from base per match, capped at 1.0."""
-    hits = len(pattern.findall(text))
-    return round(min(1.0, base + hits * boost), 3)
-
-
-# ─── Extraction prompt ─────────────────────────────────────────────────────
+# ─── Extraction prompt ──────────────────────────────────────────────────────
 
 APPRAISAL_PROMPT = """You are a cognitive appraisal scoring system based on Smith & Ellsworth (1985) and Scherer (2001).
 
@@ -202,23 +200,23 @@ STIMULUS:
 class AppraisalExtractor:
     """Extract cognitive appraisal dimensions from text stimuli."""
 
-    def __init__(self, ollama_model: str = "llama3.2", ollama_url: str = "http://localhost:11434"):
+    def __init__(self, ollama_model="llama3.2", ollama_url="http://localhost:11434"):
         self.model = ollama_model
         self.url = ollama_url
 
-    def extract_heuristic(self, text: str) -> AppraisalScores:
+    def extract_heuristic(self, text):
         """Fast regex-based extraction. No LLM required."""
         return AppraisalScores(
             novelty=_score_regex_dimension(text, _NOVELTY_HIGH, _NOVELTY_LOW),
             valence=_score_regex_dimension(text, _VALENCE_POS, _VALENCE_NEG),
-            goal_relevance=_score_single_direction(text, _GOAL_RELEVANCE_HIGH, 0.3, 0.06),
+            goal_relevance=_score_regex_dimension(text, _GOAL_RELEVANCE_HIGH, _GOAL_RELEVANCE_LOW),
             coping_potential=_score_regex_dimension(text, _COPING_HIGH, _COPING_LOW),
             agency=_score_regex_dimension(text, _AGENCY_HIGH, _AGENCY_LOW),
             certainty=_score_regex_dimension(text, _CERTAINTY_HIGH, _CERTAINTY_LOW),
             temporal_proximity=_score_regex_dimension(text, _TEMPORAL_HIGH, _TEMPORAL_LOW),
         )
 
-    def extract_prompt(self, text: str) -> AppraisalScores:
+    def extract_prompt(self, text):
         """LLM-based extraction via Ollama. More accurate, slower."""
         import urllib.request
 
@@ -230,7 +228,7 @@ class AppraisalExtractor:
         }).encode()
 
         req = urllib.request.Request(
-            f"{self.url}/api/generate",
+            "%s/api/generate" % self.url,
             data=payload,
             headers={"Content-Type": "application/json"},
         )
@@ -252,7 +250,7 @@ class AppraisalExtractor:
 
         return AppraisalScores(**cleaned)
 
-    def extract(self, text: str, mode: str = "heuristic") -> AppraisalScores:
+    def extract(self, text, mode="heuristic"):
         """Extract appraisal scores. mode='heuristic' or 'prompt'."""
         if mode == "prompt":
             return self.extract_prompt(text)
