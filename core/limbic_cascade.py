@@ -31,7 +31,7 @@ from core.circuit_predictor import (
     persuasion_effectiveness,
 )
 from core.somatic_marker_store import SomaticMarkerStore
-from core.reframing_engine import ReframingEngine, ReframingSuggestion
+from core.reframing_engine import ReframingEngine, TradeoffProjection
 from core.ux_patterns import UXPatternLibrary
 
 
@@ -57,11 +57,11 @@ class CascadeResult:
     insula_disgust_signal: float
     familiarity: float
     stages: list[StageTrace]
-    suggestions: list[ReframingSuggestion]
-    top_fix: Optional[ReframingSuggestion]
+    tradeoffs: list
+    top_fix: Optional[TradeoffProjection]
 
     def to_dict(self) -> dict:
-        return {
+        d = {
             "stimulus": self.stimulus[:200],
             "appraisal": self.appraisal.to_dict(),
             "circuits": self.circuits.to_dict(),
@@ -71,36 +71,47 @@ class CascadeResult:
             "insula_disgust_signal": self.insula_disgust_signal,
             "familiarity": self.familiarity,
             "weakest_dimension": self.appraisal.weakest_dimension(),
-            "suggestion_count": len(self.suggestions),
-            "top_fix": {
-                "dimension": self.top_fix.target_dimension,
-                "current": self.top_fix.current_score,
-                "fix": self.top_fix.specific_fix,
-            } if self.top_fix else None,
+            "tradeoff_count": len(self.tradeoffs),
         }
+        if self.top_fix:
+            d["top_fix"] = {
+                "dimension": self.top_fix.dimension,
+                "current": self.top_fix.current_value,
+                "projected": self.top_fix.projected_value,
+                "direction": self.top_fix.direction,
+                "delta_immediate": self.top_fix.delta_immediate_compliance,
+                "delta_repeat": self.top_fix.delta_repeat_compliance,
+                "delta_retaliation": self.top_fix.delta_retaliation,
+            }
+        else:
+            d["top_fix"] = None
+        return d
 
     def summary(self) -> str:
-        """Human-readable one-paragraph summary."""
+        """Mechanical summary — no editorial language."""
         pred = self.prediction
         weak_name, weak_val = self.appraisal.weakest_dimension()
         strong_name, strong_val = self.appraisal.strongest_dimension()
 
         lines = [
             f"Effectiveness: {self.effectiveness:.0%}",
-            f"Predicted behavior: {pred.predicted_behavior} "
-            f"(compliance {pred.compliance_prob:.0%}, "
-            f"rejection {pred.rejection_prob:.0%}, "
-            f"delay {pred.delay_prob:.0%})",
-            f"Dominant circuit: {self.circuits.dominant} "
-            f"(pathway: {pred.dominant_pathway})",
-            f"Decision durability: {pred.durability:+.2f} "
-            f"({'stable' if pred.durability > 0.2 else 'at risk of reversal' if pred.durability < 0 else 'moderate'})",
-            f"Strongest dimension: {strong_name} ({strong_val:.2f})",
-            f"Weakest dimension: {weak_name} ({weak_val:.2f})",
+            f"Immediate compliance: {pred.immediate_compliance:.0%}",
+            f"Repeat compliance: {pred.repeat_compliance:.0%}",
+            f"Retaliation probability: {pred.retaliation_probability:.0%}",
+            f"Dominant circuit: {self.circuits.dominant} ({pred.dominant_pathway})",
+            f"Durability: {pred.durability:+.2f}",
+            f"Strongest: {strong_name} ({strong_val:.2f})",
+            f"Weakest: {weak_name} ({weak_val:.2f})",
         ]
 
         if self.top_fix:
-            lines.append(f"Top fix: {self.top_fix.specific_fix}")
+            lines.append(
+                f"Highest-impact change: {self.top_fix.direction} {self.top_fix.dimension} "
+                f"from {self.top_fix.current_value:.2f} to {self.top_fix.projected_value:.2f} "
+                f"→ immediate {self.top_fix.delta_immediate_compliance:+.2f}, "
+                f"repeat {self.top_fix.delta_repeat_compliance:+.2f}, "
+                f"retaliation {self.top_fix.delta_retaliation:+.2f}"
+            )
 
         return "\n".join(lines)
 
@@ -270,9 +281,19 @@ class LimbicCascade:
             },
         ))
 
-        # ── Reframing suggestions ──────────────────────────────────────
-        suggestions = self.reframer.diagnose(appraisal, prediction)
-        top = self.reframer.top_fix(appraisal, prediction)
+        # ── Tradeoff surface ────────────────────────────────────────────
+        tradeoffs = self.reframer.diagnose(
+            appraisal, prediction,
+            somatic_marker_congruence=somatic_congruence,
+            insula_disgust_signal=disgust_signal,
+            familiarity=familiarity,
+        )
+        top = self.reframer.top_fix(
+            appraisal, prediction,
+            somatic_marker_congruence=somatic_congruence,
+            insula_disgust_signal=disgust_signal,
+            familiarity=familiarity,
+        )
 
         return CascadeResult(
             stimulus=text,
@@ -284,7 +305,7 @@ class LimbicCascade:
             insula_disgust_signal=disgust_signal,
             familiarity=familiarity,
             stages=stages,
-            suggestions=suggestions,
+            tradeoffs=tradeoffs,
             top_fix=top,
         )
 

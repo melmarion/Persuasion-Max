@@ -11,7 +11,7 @@ Layers:
     2. Circuit Prediction — approach/avoidance/deliberation competition
     3. Somatic Marker Store — Damasio's hypothesis as persistent computation
     4. Limbic Cascade — 6-stage pipeline orchestrator
-    5. Reframing Engine — targeted fix suggestions
+    5. Reframing Engine — mechanical tradeoff surface (no editorial)
     6. Unified Auditor — technique detection (existing)
     7. Unified Generator — technique generation (existing)
     8. Integrity Detector — integrity pattern detection (existing)

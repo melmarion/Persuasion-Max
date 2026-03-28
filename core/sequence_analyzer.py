@@ -153,12 +153,15 @@ class SequenceAnalyzer:
             appraisal = AppraisalScores(**weak_step.appraisal)
             from core.circuit_predictor import BehavioralPrediction
             dummy_pred = BehavioralPrediction()
-            suggestions = self.reframer.diagnose(appraisal, dummy_pred)
-            if suggestions:
-                reframe = "Step %d ('%s'): %s" % (
+            tradeoffs = self.reframer.diagnose(appraisal, dummy_pred)
+            if tradeoffs:
+                t = tradeoffs[0]
+                reframe = "Step %d ('%s'): %s %s from %.2f to %.2f → %s" % (
                     weakest["to_step"],
                     weak_step.text[:40],
-                    suggestions[0].specific_fix,
+                    t.direction, t.dimension,
+                    t.current_value, t.projected_value,
+                    t.net_assessment,
                 )
 
         # PCA projection

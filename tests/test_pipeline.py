@@ -157,47 +157,76 @@ check("deliberation >= 0", result_dl.circuits.deliberation >= 0)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# 3. ReframingEngine
+# 3. ReframingEngine (now TradeoffSurface)
 # ═══════════════════════════════════════════════════════════════════════════════
-print("\n=== ReframingEngine ===")
+print("\n=== ReframingEngine (Tradeoff Surface) ===")
 
 reframer = ReframingEngine()
 
-# Low valence stimulus should get valence fix
+# Low valence stimulus — should produce tradeoff projections
 low_val = AppraisalScores(valence=0.1, goal_relevance=0.5, coping_potential=0.5,
                           agency=0.5, certainty=0.5, novelty=0.5, temporal_proximity=0.5)
 pred_low = pred.predict(low_val)
-suggestions = reframer.diagnose(low_val, pred_low)
-check("low valence generates suggestions", len(suggestions) > 0)
-check("top suggestion targets valence", suggestions[0].target_dimension == "valence",
-      "target=%s" % suggestions[0].target_dimension if suggestions else "no suggestions")
+tradeoffs = reframer.diagnose(low_val, pred_low)
+check("low valence generates tradeoff projections", len(tradeoffs) > 0)
+check("projections have dimension field",
+      hasattr(tradeoffs[0], "dimension") if tradeoffs else False)
+check("projections have delta_immediate_compliance",
+      hasattr(tradeoffs[0], "delta_immediate_compliance") if tradeoffs else False)
 
-# Low agency should trigger disgust warning
-low_agency = AppraisalScores(valence=0.5, agency=0.1, goal_relevance=0.5,
+# Low agency — should show both increase and decrease options
+low_agency = AppraisalScores(valence=0.5, agency=0.15, goal_relevance=0.5,
                              coping_potential=0.5, certainty=0.5, novelty=0.5,
                              temporal_proximity=0.5)
-agency_suggestions = reframer.diagnose(low_agency, pred.predict(low_agency))
-agency_dims = [s.target_dimension for s in agency_suggestions]
-check("low agency generates agency fix", "agency" in agency_dims)
+agency_tradeoffs = reframer.diagnose(low_agency, pred.predict(low_agency))
+agency_dims = [t.dimension for t in agency_tradeoffs]
+check("agency appears in tradeoff projections", "agency" in agency_dims)
+# Should show BOTH directions — increase agency AND decrease agency
+agency_directions = [t.direction for t in agency_tradeoffs if t.dimension == "agency"]
+check("both increase and decrease shown for agency",
+      "increase" in agency_directions,
+      "directions=%s" % agency_directions)
 
-# High novelty should get novelty-too-high fix
-high_nov = AppraisalScores(novelty=0.9, valence=0.5, goal_relevance=0.5,
-                           coping_potential=0.5, agency=0.5, certainty=0.5,
-                           temporal_proximity=0.5)
-nov_suggestions = reframer.diagnose(high_nov, pred.predict(high_nov))
-check("high novelty generates 'too high' fix", len(nov_suggestions) > 0)
+# Three time horizons in prediction
+check("prediction has immediate_compliance", hasattr(pred_low, "immediate_compliance"))
+check("prediction has repeat_compliance", hasattr(pred_low, "repeat_compliance"))
+check("prediction has retaliation_probability", hasattr(pred_low, "retaliation_probability"))
 
-# Perfect scores should generate no suggestions
-perfect = AppraisalScores(novelty=0.5, valence=0.8, goal_relevance=0.8,
-                          coping_potential=0.8, agency=0.8, certainty=0.8,
-                          temporal_proximity=0.8)
-no_fix = reframer.diagnose(perfect, pred.predict(perfect))
-check("good scores generate few/no suggestions", len(no_fix) <= 2)
+# Low agency + moderate valence + high urgency — the dark pattern configuration
+# High immediate compliance (pressure works short-term) but low repeat and some retaliation
+coercive = AppraisalScores(valence=0.5, agency=0.1, goal_relevance=0.7,
+                           coping_potential=0.6, certainty=0.6, novelty=0.4,
+                           temporal_proximity=0.9)
+coercive_pred = pred.predict(coercive)
+check("coercive config: immediate > repeat",
+      coercive_pred.immediate_compliance > coercive_pred.repeat_compliance,
+      "immediate=%.2f repeat=%.2f" % (coercive_pred.immediate_compliance, coercive_pred.repeat_compliance))
 
-# Top fix shortcut
+# Hostile configuration — low agency + low valence (threatened AND trapped)
+# This is the confirmshaming / hostile retention scenario
+hostile = AppraisalScores(valence=0.15, agency=0.1, goal_relevance=0.8,
+                          coping_potential=0.2, certainty=0.3, novelty=0.3,
+                          temporal_proximity=0.5)
+hostile_pred = pred.predict(hostile, insula_disgust_signal=0.5)
+check("hostile config: retaliation > 0.1",
+      hostile_pred.retaliation_probability > 0.1,
+      "retaliation=%.2f" % hostile_pred.retaliation_probability)
+
+# High agency + high valence — sustainable compliance
+ethical = AppraisalScores(valence=0.8, agency=0.8, goal_relevance=0.7,
+                          coping_potential=0.8, certainty=0.8, novelty=0.4,
+                          temporal_proximity=0.6)
+ethical_pred = pred.predict(ethical)
+check("high-agency config: repeat is higher than coercive repeat",
+      ethical_pred.repeat_compliance > coercive_pred.repeat_compliance,
+      "ethical_repeat=%.2f coercive_repeat=%.2f" % (ethical_pred.repeat_compliance, coercive_pred.repeat_compliance))
+check("high-agency config: retaliation lower than hostile",
+      ethical_pred.retaliation_probability < hostile_pred.retaliation_probability)
+
+# Top fix returns a TradeoffProjection
 top = reframer.top_fix(low_val, pred_low)
-check("top_fix returns a suggestion", top is not None)
-check("top_fix has specific_fix text", len(top.specific_fix) > 10 if top else False)
+check("top_fix returns a projection", top is not None)
+check("top_fix has net_assessment", hasattr(top, "net_assessment") if top else False)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════

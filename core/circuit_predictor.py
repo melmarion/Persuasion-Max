@@ -62,10 +62,33 @@ class CircuitActivations:
 
 @dataclass
 class BehavioralPrediction:
-    """Predicted behavioral outcome from circuit competition."""
+    """Predicted behavioral outcome from circuit competition.
+
+    Three time horizons:
+        immediate_compliance — probability of action on THIS exposure.
+            Low agency + high urgency + high valence CAN produce high
+            immediate compliance even when the user feels coerced.
+            Dark patterns work in the short term. The model reports this
+            mechanically, not editorially.
+
+        repeat_compliance — probability of the same action on NEXT exposure.
+            Negative somatic markers (from low agency, insula disgust)
+            decay repeat compliance. This is where marker durability matters.
+
+        retaliation_probability — probability of active brand harm
+            (negative review, social sharing, regulatory complaint).
+            Highest when avoidance AND agency are simultaneously extreme:
+            the user feels threatened AND trapped.
+
+    The tool reports all three. It does not recommend one configuration
+    over another. It maps the full mechanical surface.
+    """
     compliance_prob: float = 0.0
     rejection_prob: float = 0.0
     delay_prob: float = 0.0
+    immediate_compliance: float = 0.0
+    repeat_compliance: float = 0.0
+    retaliation_probability: float = 0.0
     dominant_pathway: str = "emotional"
     durability: float = 0.0
     circuits: CircuitActivations = None
@@ -75,6 +98,9 @@ class BehavioralPrediction:
             "compliance_prob": self.compliance_prob,
             "rejection_prob": self.rejection_prob,
             "delay_prob": self.delay_prob,
+            "immediate_compliance": self.immediate_compliance,
+            "repeat_compliance": self.repeat_compliance,
+            "retaliation_probability": self.retaliation_probability,
             "dominant_pathway": self.dominant_pathway,
             "durability": self.durability,
             "predicted_behavior": self.predicted_behavior,
@@ -698,18 +724,51 @@ class CircuitPredictor:
 
         dominant_pathway = "emotional" if approach > deliberation else "rational"
 
+        # ─── Three Time Horizons ─────────────────────────────────────────
+
+        # IMMEDIATE COMPLIANCE: raw circuit competition result.
+        # Low agency + high valence + high urgency CAN produce high immediate
+        # compliance. The model does not suppress this. Coercive configurations
+        # produce compliance in the short term — that's a mechanical fact.
+        immediate_compliance = compliance_prob
+
+        # DURABILITY: how stable is this decision?
         # CONSTRAINED: Kahneman & Tversky 1979 — certainty + positive affect = stable
-        # CONSTRAINED: flash sale return rates 2-3x higher (urgency + low certainty = reversal)
+        # CONSTRAINED: flash sale return rates 2-3x higher (urgency + low certainty)
         durability = round(
             appraisal.certainty * appraisal.valence
             - appraisal.temporal_proximity * (1.0 - appraisal.certainty),
             4,
         )
 
+        # REPEAT COMPLIANCE: will they do it again?
+        # Negative somatic markers (from low agency, disgust) decay repeat compliance.
+        # High durability + high agency = strong repeat. Low agency = one-shot.
+        agency_penalty = max(0.0, 0.5 - appraisal.agency) * 0.8  # steep drop below 0.5
+        disgust_penalty = insula_disgust_signal * 0.5
+        repeat_base = immediate_compliance * max(0.0, (durability + 1.0) / 2.0)
+        repeat_compliance = round(max(0.0, min(1.0,
+            repeat_base - agency_penalty - disgust_penalty
+        )), 4)
+
+        # RETALIATION PROBABILITY: will they actively harm the brand?
+        # Highest when avoidance is high AND agency is low (threatened + trapped).
+        # The disgust + anger compound (Scherer 2001) has the highest
+        # retaliation action tendency in the appraisal space.
+        retaliation = round(max(0.0, min(1.0,
+            0.4 * avoidance * (1.0 - appraisal.agency)
+            + 0.3 * insula_disgust_signal * (1.0 - appraisal.agency)
+            + 0.2 * max(0.0, 0.3 - appraisal.agency)  # cliff below 0.3
+            - 0.3 * appraisal.valence  # positive valence suppresses retaliation
+        )), 4)
+
         return BehavioralPrediction(
             compliance_prob=compliance_prob,
             rejection_prob=rejection_prob,
             delay_prob=delay_prob,
+            immediate_compliance=immediate_compliance,
+            repeat_compliance=repeat_compliance,
+            retaliation_probability=retaliation,
             dominant_pathway=dominant_pathway,
             durability=durability,
             circuits=circuits,

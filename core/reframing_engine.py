@@ -1,216 +1,153 @@
 from __future__ import annotations
 """
-Reframing Engine — Targeted Fix Suggestions
-============================================
-When persuasion effectiveness is low, identifies the weakest appraisal
-dimension and suggests specific, actionable fixes.
+Reframing Engine — Mechanical Tradeoff Surface
+================================================
+Reports the CONSEQUENCES of changing each appraisal dimension.
+Does not prescribe which direction to move. Maps the full surface
+of tradeoffs across three time horizons:
 
-Not generic advice ('make it more positive') but targeted interventions
-('coping_potential is 0.25 — add explicit effort estimate or pre-fill the form').
+    immediate_compliance — action on this exposure
+    repeat_compliance — action on next exposure
+    retaliation_probability — active brand harm
 
-Uses the UX pattern library for concrete examples.
+For any stimulus, outputs: "If you increase dimension X from A to B,
+immediate_compliance changes by +C, repeat_compliance by +D,
+retaliation_probability by +E." The operator decides the tradeoff.
 """
 
 from dataclasses import dataclass
 from typing import Optional
 
 from core.appraisal_extractor import AppraisalScores
-from core.circuit_predictor import CircuitActivations, BehavioralPrediction
-from core.ux_patterns import UXPatternLibrary
+from core.circuit_predictor import CircuitPredictor, BehavioralPrediction
 
 
 @dataclass
-class ReframingSuggestion:
-    target_dimension: str
-    current_score: float
-    target_score: float
-    strategy: str
-    specific_fix: str
-    reference_pattern: Optional[str] = None  # product example
-    expected_circuit_shift: str = ""
+class TradeoffProjection:
+    """Predicted consequences of changing one appraisal dimension."""
+    dimension: str
+    current_value: float
+    projected_value: float
+    direction: str                   # "increase" or "decrease"
+    delta_immediate_compliance: float
+    delta_repeat_compliance: float
+    delta_retaliation: float
+    net_assessment: str              # mechanical summary, not editorial
 
 
-# ─── Dimension-specific reframing strategies ────────────────────────────────
-
-REFRAMING_STRATEGIES: dict[str, list[dict]] = {
-    "novelty": [
-        {
-            "when": "too_low",
-            "threshold": 0.3,
-            "strategy": "Introduce pattern interruption",
-            "fixes": [
-                "Replace generic copy with unexpected framing (Slack: 'Herding cats...')",
-                "Add a counterintuitive data point or stat",
-                "Use an unexpected visual metaphor instead of stock imagery",
-                "Break a UI convention in one small, delightful way",
-            ],
-        },
-        {
-            "when": "too_high",
-            "threshold": 0.7,
-            "strategy": "Anchor novelty with familiar scaffolding",
-            "fixes": [
-                "Add a recognizable UI pattern (familiar nav, standard layout)",
-                "Reference a known brand or established concept",
-                "Use 'like X but for Y' framing to give the hippocampus a prior",
-                "Keep novel content within a familiar container (standard card, list, modal)",
-            ],
-        },
-    ],
-    "valence": [
-        {
-            "when": "too_low",
-            "threshold": 0.4,
-            "strategy": "Replace aversive signals with approach signals",
-            "fixes": [
-                "Replace red error states with orange/amber + hedge language (Stripe: 'doesn't look like...')",
-                "Replace negative framing ('Don't miss out') with positive framing ('Get started today')",
-                "Add micro-celebrations for completed actions (chime + spring animation + text)",
-                "Replace 'Error:' prefix with actionable guidance ('Try a different...')",
-            ],
-        },
-    ],
-    "goal_relevance": [
-        {
-            "when": "too_low",
-            "threshold": 0.4,
-            "strategy": "Make the user's goal explicit before presenting value",
-            "fixes": [
-                "Add a single onboarding question: 'What brought you here?' (Headspace model)",
-                "Replace feature lists with outcome statements ('You'll be able to...')",
-                "Use second-person language that references the user's specific situation",
-                "Remove company-centric copy ('We built...') — replace with user-centric ('You get...')",
-            ],
-        },
-    ],
-    "coping_potential": [
-        {
-            "when": "too_low",
-            "threshold": 0.4,
-            "strategy": "Reduce perceived effort and show the finish line",
-            "fixes": [
-                "Add explicit time estimate ('Takes 2 minutes')",
-                "Pre-fill form fields with smart defaults",
-                "Show progress indicator with visible endpoint",
-                "Collapse multi-step into single visible surface (Shopify one-page checkout)",
-                "Replace empty text fields with selection/toggle inputs",
-            ],
-        },
-    ],
-    "agency": [
-        {
-            "when": "too_low",
-            "threshold": 0.3,
-            "strategy": "Restore user control — this is the insula disgust threshold",
-            "fixes": [
-                "Add visible 'Skip' or 'Not now' option to every interruptive element",
-                "Replace confirmshaming with neutral decline copy ('No thanks' not 'No, I hate saving money')",
-                "Make cancellation/exit as easy as sign-up (Spotify model)",
-                "Show what the user controls: 'You can change this anytime in settings'",
-                "Replace forced flows with optional ones — real scarcity, not fake urgency",
-            ],
-        },
-    ],
-    "certainty": [
-        {
-            "when": "too_low",
-            "threshold": 0.4,
-            "strategy": "Place social proof and specificity at the decision point",
-            "fixes": [
-                "Move testimonials to directly below the decision (Basecamp model, not above the fold)",
-                "Replace vague claims with specific numbers ('47% faster' not 'blazing fast')",
-                "Add preview/demo before commitment (show the product working)",
-                "Add money-back or free-tier signal at the CTA, not in the FAQ",
-                "Use declarative copy (Superhuman: 'The fastest email experience ever made')",
-            ],
-        },
-    ],
-    "temporal_proximity": [
-        {
-            "when": "too_low",
-            "threshold": 0.4,
-            "strategy": "Make the benefit immediate and concrete",
-            "fixes": [
-                "Replace 'Over the coming weeks...' with 'Starts today'",
-                "Show immediate value before asking for investment (Duolingo: first lesson before signup)",
-                "Use event-triggered notifications instead of scheduled ones (Strava model)",
-                "Add instant feedback loops — every action produces a visible result",
-                "Replace future promises with present demonstrations",
-            ],
-        },
-    ],
+DIMENSION_STEPS = {
+    # For each dimension: (decrease_to, increase_to)
+    # These are the values we project to when showing tradeoffs
+    "novelty": (0.2, 0.6),
+    "valence": (0.2, 0.8),
+    "goal_relevance": (0.2, 0.8),
+    "coping_potential": (0.2, 0.8),
+    "agency": (0.1, 0.7),
+    "certainty": (0.2, 0.8),
+    "temporal_proximity": (0.2, 0.8),
 }
 
 
 class ReframingEngine:
-    """Analyze appraisal scores and suggest targeted fixes."""
+    """Map the full tradeoff surface for any stimulus."""
 
     def __init__(self):
-        self.patterns = UXPatternLibrary()
+        self.predictor = CircuitPredictor()
 
-    def diagnose(
+    def map_surface(
         self,
         appraisal: AppraisalScores,
         prediction: BehavioralPrediction,
-    ) -> list[ReframingSuggestion]:
-        """Identify all weak dimensions and generate fix suggestions."""
-        suggestions = []
-        scores = appraisal.to_dict()
+        somatic_marker_congruence: float = 0.5,
+        insula_disgust_signal: float = 0.0,
+        familiarity: float = 0.5,
+    ) -> list:
+        """For each dimension, project consequences of increasing and decreasing it.
 
-        for dimension, strategies in REFRAMING_STRATEGIES.items():
-            current = scores[dimension]
-            for strat in strategies:
-                threshold = strat["threshold"]
+        Returns list of TradeoffProjection objects showing the mechanical
+        consequences of each possible change. No editorial recommendations.
+        """
+        current = appraisal.to_dict()
+        projections = []
 
-                if strat["when"] == "too_low" and current < threshold:
-                    # Find a reference pattern
-                    ref_patterns = self.patterns.for_weak_dimension(dimension)
-                    ref = ref_patterns[0].product if ref_patterns else None
+        for dim, (low_target, high_target) in DIMENSION_STEPS.items():
+            current_val = current[dim]
 
-                    for fix in strat["fixes"]:
-                        suggestions.append(ReframingSuggestion(
-                            target_dimension=dimension,
-                            current_score=current,
-                            target_score=min(1.0, threshold + 0.2),
-                            strategy=strat["strategy"],
-                            specific_fix=fix,
-                            reference_pattern=ref,
-                            expected_circuit_shift=self._predict_shift(dimension, prediction),
-                        ))
+            # Project: what if we INCREASE this dimension?
+            if current_val < high_target - 0.05:
+                proj_up = self._project(
+                    appraisal, prediction, dim, high_target,
+                    somatic_marker_congruence, insula_disgust_signal, familiarity,
+                )
+                projections.append(proj_up)
 
-                elif strat["when"] == "too_high" and current > threshold:
-                    for fix in strat["fixes"]:
-                        suggestions.append(ReframingSuggestion(
-                            target_dimension=dimension,
-                            current_score=current,
-                            target_score=max(0.0, threshold - 0.1),
-                            strategy=strat["strategy"],
-                            specific_fix=fix,
-                            expected_circuit_shift=self._predict_shift(dimension, prediction),
-                        ))
+            # Project: what if we DECREASE this dimension?
+            if current_val > low_target + 0.05:
+                proj_down = self._project(
+                    appraisal, prediction, dim, low_target,
+                    somatic_marker_congruence, insula_disgust_signal, familiarity,
+                )
+                projections.append(proj_down)
 
-        # Sort: most impactful fixes first (biggest gap from threshold)
-        suggestions.sort(key=lambda s: abs(s.current_score - s.target_score), reverse=True)
-        return suggestions
+        # Sort by absolute impact on immediate compliance
+        projections.sort(key=lambda p: abs(p.delta_immediate_compliance), reverse=True)
+        return projections
 
-    def _predict_shift(self, dimension: str, prediction: BehavioralPrediction) -> str:
-        """Describe expected circuit shift if this dimension improves."""
-        shifts = {
-            "novelty": "Reduces amygdala threat response if too high; increases NAc salience if too low",
-            "valence": "Shifts dominance from avoidance to approach circuit",
-            "goal_relevance": "Increases both approach and deliberation — but approach more",
-            "coping_potential": "Directly reduces avoidance (helplessness) and deliberation (effort calculation)",
-            "agency": "Below 0.3 triggers insula disgust — fixing this removes the strongest avoidance signal",
-            "certainty": "Reduces deliberation circuit activation; suppresses ACC conflict monitoring",
-            "temporal_proximity": "Suppresses deliberation (urgency overrides analysis) and boosts approach",
-        }
-        return shifts.get(dimension, "")
+    def _project(self, appraisal, current_pred, dim, target_value,
+                 somatic_marker_congruence, insula_disgust_signal, familiarity):
+        """Project the consequence of changing one dimension to a target value."""
+        current_val = appraisal.to_dict()[dim]
+        direction = "increase" if target_value > current_val else "decrease"
 
-    def top_fix(
-        self,
-        appraisal: AppraisalScores,
-        prediction: BehavioralPrediction,
-    ) -> Optional[ReframingSuggestion]:
-        """Return the single highest-impact suggestion."""
-        suggestions = self.diagnose(appraisal, prediction)
-        return suggestions[0] if suggestions else None
+        # Create modified appraisal
+        modified = appraisal.to_dict()
+        modified[dim] = target_value
+        mod_appraisal = AppraisalScores(**modified)
+
+        # Re-predict with modified appraisal
+        mod_pred = self.predictor.predict(
+            mod_appraisal,
+            somatic_marker_congruence=somatic_marker_congruence,
+            insula_disgust_signal=insula_disgust_signal,
+            familiarity=familiarity,
+        )
+
+        # Compute deltas
+        d_immediate = mod_pred.immediate_compliance - current_pred.immediate_compliance
+        d_repeat = mod_pred.repeat_compliance - current_pred.repeat_compliance
+        d_retaliation = mod_pred.retaliation_probability - current_pred.retaliation_probability
+
+        # Mechanical summary — no editorial language
+        parts = []
+        if abs(d_immediate) > 0.02:
+            parts.append("immediate_compliance %+.2f" % d_immediate)
+        if abs(d_repeat) > 0.02:
+            parts.append("repeat_compliance %+.2f" % d_repeat)
+        if abs(d_retaliation) > 0.02:
+            parts.append("retaliation %+.2f" % d_retaliation)
+        net = "; ".join(parts) if parts else "negligible change across all horizons"
+
+        return TradeoffProjection(
+            dimension=dim,
+            current_value=round(current_val, 3),
+            projected_value=round(target_value, 3),
+            direction=direction,
+            delta_immediate_compliance=round(d_immediate, 4),
+            delta_repeat_compliance=round(d_repeat, 4),
+            delta_retaliation=round(d_retaliation, 4),
+            net_assessment=net,
+        )
+
+    def diagnose(self, appraisal, prediction, **kwargs):
+        """Map the full tradeoff surface. Returns list of TradeoffProjection."""
+        return self.map_surface(appraisal, prediction, **kwargs)
+
+    def top_fix(self, appraisal, prediction, **kwargs):
+        """Return the projection with the largest positive impact on
+        immediate compliance. This is mechanical, not editorial — it
+        identifies the single change that moves the number most."""
+        projections = self.map_surface(appraisal, prediction, **kwargs)
+        positive = [p for p in projections if p.delta_immediate_compliance > 0]
+        if not positive:
+            return None
+        return max(positive, key=lambda p: p.delta_immediate_compliance)
