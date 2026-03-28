@@ -1,0 +1,68 @@
+{
+  "n_datapoints": 1017,
+  "accuracy": 0.5369,
+  "auc": 0.5767,
+  "final_loss": 0.6871,
+  "fitted_weights": {
+    "novelty": 0.0315,
+    "valence": 0.1592,
+    "goal_relevance": 0.0228,
+    "coping_potential": -0.0036,
+    "agency": 0.0591,
+    "certainty": 0.0215,
+    "temporal_proximity": -0.0586
+  },
+  "bias": 0.0014,
+  "comparison": [
+    {
+      "dimension": "novelty",
+      "hand_tuned": -0.15,
+      "fitted": 0.0315,
+      "delta": 0.1815,
+      "status": "FITTED"
+    },
+    {
+      "dimension": "valence",
+      "hand_tuned": 0.3,
+      "fitted": 0.1592,
+      "delta": -0.1408,
+      "status": "DIRECTIONALLY CONFIRMED"
+    },
+    {
+      "dimension": "goal_relevance",
+      "hand_tuned": 0.25,
+      "fitted": 0.0228,
+      "delta": -0.2272,
+      "status": "FITTED"
+    },
+    {
+      "dimension": "coping_potential",
+      "hand_tuned": 0.2,
+      "fitted": -0.0036,
+      "delta": -0.2036,
+      "status": "NOT SIGNIFICANT"
+    },
+    {
+      "dimension": "agency",
+      "hand_tuned": 0.1,
+      "fitted": 0.0591,
+      "delta": -0.0409,
+      "status": "DIRECTIONALLY CONFIRMED"
+    },
+    {
+      "dimension": "certainty",
+      "hand_tuned": 0.15,
+      "fitted": 0.0215,
+      "delta": -0.1285,
+      "status": "FITTED"
+    },
+    {
+      "dimension": "temporal_proximity",
+      "hand_tuned": 0.0,
+      "fitted": -0.0586,
+      "delta": -0.0586,
+      "status": "DIRECTIONALLY CONFIRMED"
+    }
+  ],
+  "interpretation": "Model fitted on 1017 datapoints. Accuracy: 53.7%, AUC: 0.577. Weights represent the logistic regression coefficient for each appraisal dimension predicting the behavioral outcome. Positive = dimension increases conversion probability. Negative = dimension decreases it. Compare against hand-tuned weights to identify where theory and data agree vs diverge."
+}
