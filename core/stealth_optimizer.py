@@ -165,6 +165,7 @@ class StealthOptimizer:
         platform: str = "reddit",
         audience: str = "subreddit community member",
         max_stealth_iterations: int = 3,
+        domain: str = "universal",
     ) -> StealthResult:
         """Generate content that is persuasive AND organic-passing.
 

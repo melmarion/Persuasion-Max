@@ -54,6 +54,7 @@ class AnalyzeRequest(BaseModel):
     context: Optional[str] = None
     mode: str = "heuristic"
     multimodal_channels: int = 1
+    domain: str = "universal"
 
 class CompareRequest(BaseModel):
     text_a: str
@@ -115,6 +116,7 @@ class OptimizeRequest(BaseModel):
     audience: str = "general web user"
     iterations: int = 3
     candidates_per_round: int = 5
+    domain: str = "universal"
 
 @app.post("/optimize")
 def optimize_copy(req: OptimizeRequest):
@@ -127,6 +129,30 @@ def optimize_copy(req: OptimizeRequest):
         audience=req.audience,
         iterations=req.iterations,
         candidates_per_round=req.candidates_per_round,
+    )
+    return result.to_dict()
+
+
+class DomainPredictRequest(BaseModel):
+    text: str
+    domain: str = "universal"
+    exposure_count: int = 0
+    crisis_severity: float = 0.5
+    response_timing: float = 0.5
+    stakeholder_type: Optional[str] = None
+
+@app.post("/domain-predict")
+def domain_predict(req: DomainPredictRequest):
+    """Run domain-aware prediction with domain-specific outcomes."""
+    from core.domain_predictor import DomainPredictor
+    dp = DomainPredictor()
+    result = dp.predict(
+        stimulus=req.text,
+        domain=req.domain,
+        exposure_count=req.exposure_count,
+        crisis_severity=req.crisis_severity,
+        response_timing=req.response_timing,
+        stakeholder_type=req.stakeholder_type,
     )
     return result.to_dict()
 

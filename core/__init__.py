@@ -30,3 +30,5 @@ from core.recipient_profile import RecipientProfile
 from core.recipient_modulator import RecipientModulator
 from core.preset_personas import PRESET_PERSONAS, get_persona, list_personas
 from core.text_profiler import TextProfiler
+from core.domain_registry import DomainWeightRegistry
+from core.domain_predictor import DomainPredictor, DomainPrediction

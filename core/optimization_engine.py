@@ -110,6 +110,7 @@ class OptimizationEngine:
         iterations: int = 3,
         candidates_per_round: int = 5,
         target_effectiveness: float = 0.90,
+        domain: str = "universal",
     ) -> OptimizationResult:
         """Run the optimization loop.
 
