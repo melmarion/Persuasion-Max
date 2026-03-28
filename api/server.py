@@ -190,6 +190,20 @@ def srs_due():
     return srs.get_due_cards()
 
 
+# ─── Sequence Analysis Endpoint ──────────────────────────────────────────────
+
+class SequenceRequest(BaseModel):
+    stimuli: list[str] = Field(..., min_length=2)
+
+@app.post("/sequence")
+def analyze_sequence(req: SequenceRequest):
+    """Analyze an ordered sequence of stimuli as a trajectory."""
+    from core.sequence_analyzer import SequenceAnalyzer
+    analyzer = SequenceAnalyzer()
+    result = analyzer.analyze(req.stimuli)
+    return result.to_dict()
+
+
 @app.get("/health")
 def health():
-    return {"status": "ok", "engine": "persuasion-max", "modules": ["limbic_cascade", "training_engine"]}
+    return {"status": "ok", "engine": "persuasion-max", "modules": ["limbic_cascade", "training_engine", "sequence_analyzer"]}

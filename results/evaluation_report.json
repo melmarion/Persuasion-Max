@@ -1,0 +1,1593 @@
+{
+  "meta": {
+    "mode": "heuristic",
+    "n_stimuli": 50,
+    "n_high": 25,
+    "n_low": 25,
+    "timestamp": "2026-03-27T19:30:45"
+  },
+  "circuit_accuracy": {
+    "accuracy": 0.56,
+    "correct": 28,
+    "total": 50
+  },
+  "weak_dimension_accuracy": {
+    "accuracy": 0.26,
+    "correct": 13,
+    "total": 50
+  },
+  "conversion_correlation": {
+    "compliance_r": 0.3885,
+    "effectiveness_r": 0.4742,
+    "mean_effectiveness_high": 0.7789,
+    "mean_effectiveness_low": 0.6739,
+    "separation": 0.105
+  },
+  "confusion_matrix": {
+    "approach": {
+      "approach": 24,
+      "avoidance": 1,
+      "deliberation": 0
+    },
+    "avoidance": {
+      "approach": 8,
+      "avoidance": 4,
+      "deliberation": 0
+    },
+    "deliberation": {
+      "approach": 12,
+      "avoidance": 1,
+      "deliberation": 0
+    }
+  },
+  "ablation": {
+    "novelty": {
+      "accuracy_without": 0.56,
+      "degradation": 0.0,
+      "importance_rank": 2
+    },
+    "valence": {
+      "accuracy_without": 0.5,
+      "degradation": 0.06,
+      "importance_rank": 1
+    },
+    "goal_relevance": {
+      "accuracy_without": 0.58,
+      "degradation": -0.02,
+      "importance_rank": 7
+    },
+    "coping_potential": {
+      "accuracy_without": 0.56,
+      "degradation": 0.0,
+      "importance_rank": 3
+    },
+    "agency": {
+      "accuracy_without": 0.56,
+      "degradation": 0.0,
+      "importance_rank": 4
+    },
+    "certainty": {
+      "accuracy_without": 0.56,
+      "degradation": 0.0,
+      "importance_rank": 5
+    },
+    "temporal_proximity": {
+      "accuracy_without": 0.56,
+      "degradation": 0.0,
+      "importance_rank": 6
+    }
+  },
+  "benchmark_7d_vs_2d": {
+    "seven_d_accuracy": 0.56,
+    "two_d_accuracy": 0.46,
+    "advantage": 0.1,
+    "interpretation": "7-dimension appraisal model outperforms 2-dimension valence-arousal by 10.0 percentage points (56.0% vs 46.0%), demonstrating that cognitive appraisal theory adds predictive value beyond simple sentiment analysis."
+  },
+  "tribe_v2_alignment": {
+    "n_comparisons": 200,
+    "overall_correlation": 0.7762,
+    "methodology": "Cross-stimulus Pearson r between Persuasion-Max circuit scores and TRIBE v2 reference activations for corresponding brain regions"
+  },
+  "per_stimulus": [
+    {
+      "id": "h01",
+      "text": "You earned 50 XP! Keep your streak alive.",
+      "source": "Duolingo",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "temporal_proximity",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7467,
+      "compliance_prob": 0.4943,
+      "rejection_prob": 0.2436,
+      "delay_prob": 0.2621,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.1593,
+        "dominant": "approach",
+        "conflict_level": 0.758
+      }
+    },
+    {
+      "id": "h02",
+      "text": "Notifications help you stay on track. Allow notifications?",
+      "source": "Duolingo",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "agency",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7467,
+      "compliance_prob": 0.4943,
+      "rejection_prob": 0.2436,
+      "delay_prob": 0.2621,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.1593,
+        "dominant": "approach",
+        "conflict_level": 0.758
+      }
+    },
+    {
+      "id": "h03",
+      "text": "This doesn't look like a complete card number.",
+      "source": "Stripe",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "certainty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.703,
+      "compliance_prob": 0.4549,
+      "rejection_prob": 0.2541,
+      "delay_prob": 0.291,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "h04",
+      "text": "Visa ending in 4242",
+      "source": "Stripe",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "novelty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.703,
+      "compliance_prob": 0.4549,
+      "rejection_prob": 0.2541,
+      "delay_prob": 0.291,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "h05",
+      "text": "Get Notion free",
+      "source": "Notion",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "goal_relevance",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.9065,
+      "compliance_prob": 0.4942,
+      "rejection_prob": 0.2712,
+      "delay_prob": 0.2346,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 1.0,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.6,
+        "avoidance": 0.0,
+        "deliberation": 0.145,
+        "dominant": "approach",
+        "conflict_level": 0.545
+      }
+    },
+    {
+      "id": "h06",
+      "text": "Your workspace is ready.",
+      "source": "Notion",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "novelty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7467,
+      "compliance_prob": 0.4943,
+      "rejection_prob": 0.2436,
+      "delay_prob": 0.2621,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.1593,
+        "dominant": "approach",
+        "conflict_level": 0.758
+      }
+    },
+    {
+      "id": "h07",
+      "text": "$30/month. The fastest email experience ever made.",
+      "source": "Superhuman",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "novelty",
+      "predicted_weak_dim": "temporal_proximity",
+      "effectiveness": 0.673,
+      "compliance_prob": 0.4679,
+      "rejection_prob": 0.2613,
+      "delay_prob": 0.2708,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.0
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.1967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "h08",
+      "text": "You're in. Welcome to Superhuman.",
+      "source": "Superhuman",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "coping_potential",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.9503,
+      "compliance_prob": 0.5325,
+      "rejection_prob": 0.2579,
+      "delay_prob": 0.2096,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 1.0,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.725,
+        "avoidance": 0.0,
+        "deliberation": 0.2075,
+        "dominant": "approach",
+        "conflict_level": 0.483
+      }
+    },
+    {
+      "id": "h09",
+      "text": "What brought you here today?",
+      "source": "Headspace",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "novelty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7767,
+      "compliance_prob": 0.481,
+      "rejection_prob": 0.2371,
+      "delay_prob": 0.2819,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 1.0
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.0592,
+        "dominant": "approach",
+        "conflict_level": 0.758
+      }
+    },
+    {
+      "id": "h10",
+      "text": "Take a deep breath. You're exactly where you need to be.",
+      "source": "Headspace",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "certainty",
+      "predicted_weak_dim": "agency",
+      "effectiveness": 0.782,
+      "compliance_prob": 0.4859,
+      "rejection_prob": 0.2194,
+      "delay_prob": 0.2947,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.0,
+        "certainty": 1.0,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.5,
+        "avoidance": 0.295,
+        "deliberation": 0.0,
+        "dominant": "approach",
+        "conflict_level": 0.795
+      }
+    },
+    {
+      "id": "h11",
+      "text": "Complete your order",
+      "source": "Shopify",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "novelty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7467,
+      "compliance_prob": 0.4943,
+      "rejection_prob": 0.2436,
+      "delay_prob": 0.2621,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.1593,
+        "dominant": "approach",
+        "conflict_level": 0.758
+      }
+    },
+    {
+      "id": "h12",
+      "text": "Your items are waiting. Free shipping included.",
+      "source": "Shopify",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "coping_potential",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.9503,
+      "compliance_prob": 0.5325,
+      "rejection_prob": 0.2579,
+      "delay_prob": 0.2096,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 1.0,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.725,
+        "avoidance": 0.0,
+        "deliberation": 0.2075,
+        "dominant": "approach",
+        "conflict_level": 0.483
+      }
+    },
+    {
+      "id": "h13",
+      "text": "Your friend Sarah just finished a 5K run!",
+      "source": "Strava",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "certainty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7767,
+      "compliance_prob": 0.481,
+      "rejection_prob": 0.2371,
+      "delay_prob": 0.2819,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 1.0
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.0592,
+        "dominant": "approach",
+        "conflict_level": 0.758
+      }
+    },
+    {
+      "id": "h14",
+      "text": "Herding cats... one moment.",
+      "source": "Slack",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "valence",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.703,
+      "compliance_prob": 0.4549,
+      "rejection_prob": 0.2541,
+      "delay_prob": 0.291,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "h15",
+      "text": "Cancel anytime. Here's what you'll miss:",
+      "source": "Spotify",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "avoidance",
+      "expected_weak_dim": "valence",
+      "predicted_weak_dim": "valence",
+      "effectiveness": 0.58,
+      "compliance_prob": 0.4629,
+      "rejection_prob": 0.2339,
+      "delay_prob": 0.3032,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.0,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 1.0,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.275,
+        "avoidance": 0.4075,
+        "deliberation": 0.1482,
+        "dominant": "avoidance",
+        "conflict_level": 0.868
+      }
+    },
+    {
+      "id": "h16",
+      "text": "Currently unavailable.",
+      "source": "Apple",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "valence",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.732,
+      "compliance_prob": 0.4419,
+      "rejection_prob": 0.2468,
+      "delay_prob": 0.3114,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 1.0
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "h17",
+      "text": "People with similar taste love these",
+      "source": "Pinterest",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "certainty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.9065,
+      "compliance_prob": 0.4942,
+      "rejection_prob": 0.2712,
+      "delay_prob": 0.2346,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 1.0,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.6,
+        "avoidance": 0.0,
+        "deliberation": 0.145,
+        "dominant": "approach",
+        "conflict_level": 0.545
+      }
+    },
+    {
+      "id": "h18",
+      "text": "We switched from Slack and saved 3 hours a week. \u2014 Jason, CTO at Pixelworks",
+      "source": "Basecamp",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "novelty",
+      "predicted_weak_dim": "temporal_proximity",
+      "effectiveness": 0.673,
+      "compliance_prob": 0.4679,
+      "rejection_prob": 0.2613,
+      "delay_prob": 0.2708,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.0
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.1967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "h19",
+      "text": "Free 14-day trial. No credit card required. Cancel anytime.",
+      "source": "Generic SaaS",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "novelty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.9065,
+      "compliance_prob": 0.4942,
+      "rejection_prob": 0.2712,
+      "delay_prob": 0.2346,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 1.0,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.6,
+        "avoidance": 0.0,
+        "deliberation": 0.145,
+        "dominant": "approach",
+        "conflict_level": 0.545
+      }
+    },
+    {
+      "id": "h20",
+      "text": "Takes 2 minutes. No setup required.",
+      "source": "Generic SaaS",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "novelty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.87,
+      "compliance_prob": 0.4629,
+      "rejection_prob": 0.2718,
+      "delay_prob": 0.2653,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 1.0,
+        "agency": 1.0,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.5,
+        "avoidance": 0.0325,
+        "deliberation": 0.0568,
+        "dominant": "approach",
+        "conflict_level": 0.557
+      }
+    },
+    {
+      "id": "h21",
+      "text": "You're 90% there. Just one more step.",
+      "source": "Generic Onboarding",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "certainty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7467,
+      "compliance_prob": 0.4943,
+      "rejection_prob": 0.2436,
+      "delay_prob": 0.2621,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.1593,
+        "dominant": "approach",
+        "conflict_level": 0.758
+      }
+    },
+    {
+      "id": "h22",
+      "text": "Trusted by 50,000 developers. Here's why:",
+      "source": "Generic Landing",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "valence",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.703,
+      "compliance_prob": 0.4549,
+      "rejection_prob": 0.2541,
+      "delay_prob": 0.291,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "h23",
+      "text": "Your report is ready to download.",
+      "source": "Generic Dashboard",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "novelty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7467,
+      "compliance_prob": 0.4943,
+      "rejection_prob": 0.2436,
+      "delay_prob": 0.2621,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.1593,
+        "dominant": "approach",
+        "conflict_level": 0.758
+      }
+    },
+    {
+      "id": "h24",
+      "text": "Welcome back. You left off on Chapter 3.",
+      "source": "Generic Learning",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "certainty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.9503,
+      "compliance_prob": 0.5325,
+      "rejection_prob": 0.2579,
+      "delay_prob": 0.2096,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 1.0,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.725,
+        "avoidance": 0.0,
+        "deliberation": 0.2075,
+        "dominant": "approach",
+        "conflict_level": 0.483
+      }
+    },
+    {
+      "id": "h25",
+      "text": "Great choice. Your order ships tomorrow.",
+      "source": "Generic E-commerce",
+      "conversion": "high",
+      "expected_circuit": "approach",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "certainty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7467,
+      "compliance_prob": 0.4943,
+      "rejection_prob": 0.2436,
+      "delay_prob": 0.2621,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.1593,
+        "dominant": "approach",
+        "conflict_level": 0.758
+      }
+    },
+    {
+      "id": "l01",
+      "text": "ERROR: Invalid input. Please try again.",
+      "source": "Generic Form",
+      "conversion": "low",
+      "expected_circuit": "avoidance",
+      "predicted_circuit": "avoidance",
+      "expected_weak_dim": "valence",
+      "predicted_weak_dim": "valence",
+      "effectiveness": 0.4593,
+      "compliance_prob": 0.4269,
+      "rejection_prob": 0.2325,
+      "delay_prob": 0.3406,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.0,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.1,
+        "avoidance": 0.5075,
+        "deliberation": 0.1258,
+        "dominant": "avoidance",
+        "conflict_level": 0.618
+      }
+    },
+    {
+      "id": "l02",
+      "text": "Error 500: Internal Server Error",
+      "source": "Generic Web",
+      "conversion": "low",
+      "expected_circuit": "avoidance",
+      "predicted_circuit": "avoidance",
+      "expected_weak_dim": "coping_potential",
+      "predicted_weak_dim": "valence",
+      "effectiveness": 0.4593,
+      "compliance_prob": 0.4269,
+      "rejection_prob": 0.2325,
+      "delay_prob": 0.3406,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.0,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.1,
+        "avoidance": 0.5075,
+        "deliberation": 0.1258,
+        "dominant": "avoidance",
+        "conflict_level": 0.618
+      }
+    },
+    {
+      "id": "l03",
+      "text": "Your session has expired. Please log in again.",
+      "source": "Generic Auth",
+      "conversion": "low",
+      "expected_circuit": "avoidance",
+      "predicted_circuit": "avoidance",
+      "expected_weak_dim": "agency",
+      "predicted_weak_dim": "valence",
+      "effectiveness": 0.5105,
+      "compliance_prob": 0.4632,
+      "rejection_prob": 0.2227,
+      "delay_prob": 0.3141,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.0,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.225,
+        "avoidance": 0.5075,
+        "deliberation": 0.1633,
+        "dominant": "avoidance",
+        "conflict_level": 0.718
+      }
+    },
+    {
+      "id": "l04",
+      "text": "Payment declined. Contact your bank.",
+      "source": "Generic Checkout",
+      "conversion": "low",
+      "expected_circuit": "avoidance",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "coping_potential",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7467,
+      "compliance_prob": 0.4943,
+      "rejection_prob": 0.2436,
+      "delay_prob": 0.2621,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.1593,
+        "dominant": "approach",
+        "conflict_level": 0.758
+      }
+    },
+    {
+      "id": "l05",
+      "text": "No thanks, I don't want to save money.",
+      "source": "Generic Modal",
+      "conversion": "low",
+      "expected_circuit": "avoidance",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "agency",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7635,
+      "compliance_prob": 0.4573,
+      "rejection_prob": 0.2685,
+      "delay_prob": 0.2741,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 1.0,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.4,
+        "avoidance": 0.1325,
+        "deliberation": 0.1118,
+        "dominant": "approach",
+        "conflict_level": 0.732
+      }
+    },
+    {
+      "id": "l06",
+      "text": "Are you SURE you want to cancel? You'll lose EVERYTHING.",
+      "source": "Generic Retention",
+      "conversion": "low",
+      "expected_circuit": "avoidance",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "agency",
+      "predicted_weak_dim": "agency",
+      "effectiveness": 0.6862,
+      "compliance_prob": 0.4914,
+      "rejection_prob": 0.2304,
+      "delay_prob": 0.2781,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.0,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.425,
+        "avoidance": 0.3325,
+        "deliberation": 0.1442,
+        "dominant": "approach",
+        "conflict_level": 0.907
+      }
+    },
+    {
+      "id": "l07",
+      "text": "Only 2 left! 12 people viewing! Timer: 04:59",
+      "source": "Booking.com",
+      "conversion": "low",
+      "expected_circuit": "avoidance",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "agency",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.703,
+      "compliance_prob": 0.4549,
+      "rejection_prob": 0.2541,
+      "delay_prob": 0.291,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "l08",
+      "text": "Act now or miss out forever! Limited time only!",
+      "source": "Generic Ad",
+      "conversion": "low",
+      "expected_circuit": "avoidance",
+      "predicted_circuit": "avoidance",
+      "expected_weak_dim": "agency",
+      "predicted_weak_dim": "valence",
+      "effectiveness": 0.4893,
+      "compliance_prob": 0.4121,
+      "rejection_prob": 0.2245,
+      "delay_prob": 0.3634,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.0,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 1.0
+      },
+      "circuits": {
+        "approach": 0.1,
+        "avoidance": 0.5075,
+        "deliberation": 0.0258,
+        "dominant": "avoidance",
+        "conflict_level": 0.593
+      }
+    },
+    {
+      "id": "l09",
+      "text": "Compare our 3 plans: Basic ($9, 5 features), Pro ($29, 15 features), Enterprise ",
+      "source": "Generic Pricing",
+      "conversion": "low",
+      "expected_circuit": "deliberation",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "certainty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7168,
+      "compliance_prob": 0.451,
+      "rejection_prob": 0.2615,
+      "delay_prob": 0.2874,
+      "appraisal": {
+        "novelty": 0.0,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.195,
+        "deliberation": 0.1005,
+        "dominant": "approach",
+        "conflict_level": 0.845
+      }
+    },
+    {
+      "id": "l10",
+      "text": "Choose your plan. Terms and conditions may apply. Results may vary. Subject to a",
+      "source": "Generic Pricing",
+      "conversion": "low",
+      "expected_circuit": "deliberation",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "certainty",
+      "predicted_weak_dim": "certainty",
+      "effectiveness": 0.6831,
+      "compliance_prob": 0.5102,
+      "rejection_prob": 0.2745,
+      "delay_prob": 0.2153,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 1.0,
+        "certainty": 0.0,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.45,
+        "avoidance": 0.17,
+        "deliberation": 0.413,
+        "dominant": "approach",
+        "conflict_level": 0.963
+      }
+    },
+    {
+      "id": "l11",
+      "text": "Step 1 of 7: Enter your shipping address.",
+      "source": "Generic Checkout",
+      "conversion": "low",
+      "expected_circuit": "deliberation",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "coping_potential",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7467,
+      "compliance_prob": 0.4943,
+      "rejection_prob": 0.2436,
+      "delay_prob": 0.2621,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.1593,
+        "dominant": "approach",
+        "conflict_level": 0.758
+      }
+    },
+    {
+      "id": "l12",
+      "text": "Please fill out the following 12 required fields.",
+      "source": "Generic Form",
+      "conversion": "low",
+      "expected_circuit": "deliberation",
+      "predicted_circuit": "avoidance",
+      "expected_weak_dim": "coping_potential",
+      "predicted_weak_dim": "coping_potential",
+      "effectiveness": 0.522,
+      "compliance_prob": 0.4519,
+      "rejection_prob": 0.2401,
+      "delay_prob": 0.308,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.0,
+        "agency": 0.0,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.2,
+        "avoidance": 0.4325,
+        "deliberation": 0.1832,
+        "dominant": "avoidance",
+        "conflict_level": 0.768
+      }
+    },
+    {
+      "id": "l13",
+      "text": "Submit",
+      "source": "Generic Form",
+      "conversion": "low",
+      "expected_circuit": "deliberation",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "valence",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.703,
+      "compliance_prob": 0.4549,
+      "rejection_prob": 0.2541,
+      "delay_prob": 0.291,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "l14",
+      "text": "Click here to learn more",
+      "source": "Generic Landing",
+      "conversion": "low",
+      "expected_circuit": "deliberation",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "goal_relevance",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.703,
+      "compliance_prob": 0.4549,
+      "rejection_prob": 0.2541,
+      "delay_prob": 0.291,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "l15",
+      "text": "Sign up for our newsletter",
+      "source": "Generic Landing",
+      "conversion": "low",
+      "expected_circuit": "deliberation",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "valence",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.703,
+      "compliance_prob": 0.4549,
+      "rejection_prob": 0.2541,
+      "delay_prob": 0.291,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "l16",
+      "text": "Proceed to next step",
+      "source": "Generic Flow",
+      "conversion": "low",
+      "expected_circuit": "deliberation",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "valence",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.703,
+      "compliance_prob": 0.4549,
+      "rejection_prob": 0.2541,
+      "delay_prob": 0.291,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "l17",
+      "text": "No results found. Try different keywords.",
+      "source": "Generic Search",
+      "conversion": "low",
+      "expected_circuit": "avoidance",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "valence",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.703,
+      "compliance_prob": 0.4549,
+      "rejection_prob": 0.2541,
+      "delay_prob": 0.291,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "l18",
+      "text": "Your cart is empty.",
+      "source": "Generic E-commerce",
+      "conversion": "low",
+      "expected_circuit": "avoidance",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "goal_relevance",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7467,
+      "compliance_prob": 0.4943,
+      "rejection_prob": 0.2436,
+      "delay_prob": 0.2621,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.1593,
+        "dominant": "approach",
+        "conflict_level": 0.758
+      }
+    },
+    {
+      "id": "l19",
+      "text": "Our revolutionary AI-powered platform leverages cutting-edge technology to deliv",
+      "source": "Generic SaaS",
+      "conversion": "low",
+      "expected_circuit": "deliberation",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "certainty",
+      "predicted_weak_dim": "valence",
+      "effectiveness": 0.7117,
+      "compliance_prob": 0.4864,
+      "rejection_prob": 0.2415,
+      "delay_prob": 0.2721,
+      "appraisal": {
+        "novelty": 1.0,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.43,
+        "avoidance": 0.27,
+        "deliberation": 0.151,
+        "dominant": "approach",
+        "conflict_level": 0.84
+      }
+    },
+    {
+      "id": "l20",
+      "text": "We're excited to announce our new product! It has features A, B, C, D, E, F, G, ",
+      "source": "Generic Launch",
+      "conversion": "low",
+      "expected_circuit": "deliberation",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "coping_potential",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.703,
+      "compliance_prob": 0.4549,
+      "rejection_prob": 0.2541,
+      "delay_prob": 0.291,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "l21",
+      "text": "In today's fast-paced digital landscape, businesses need innovative solutions th",
+      "source": "Generic Landing",
+      "conversion": "low",
+      "expected_circuit": "deliberation",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "goal_relevance",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7767,
+      "compliance_prob": 0.481,
+      "rejection_prob": 0.2371,
+      "delay_prob": 0.2819,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 1.0
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.0592,
+        "dominant": "approach",
+        "conflict_level": 0.758
+      }
+    },
+    {
+      "id": "l22",
+      "text": "Rate us 5 stars! (shown on first app launch)",
+      "source": "Generic App",
+      "conversion": "low",
+      "expected_circuit": "avoidance",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "agency",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.7845,
+      "compliance_prob": 0.4563,
+      "rejection_prob": 0.2454,
+      "delay_prob": 0.2983,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 1.0,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.425,
+        "avoidance": 0.195,
+        "deliberation": 0.0,
+        "dominant": "approach",
+        "conflict_level": 0.77
+      }
+    },
+    {
+      "id": "l23",
+      "text": "Trusted by millions! (shown above the fold before any content)",
+      "source": "Generic Landing",
+      "conversion": "low",
+      "expected_circuit": "deliberation",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "goal_relevance",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.703,
+      "compliance_prob": 0.4549,
+      "rejection_prob": 0.2541,
+      "delay_prob": 0.291,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    },
+    {
+      "id": "l24",
+      "text": "Over the coming weeks and months, you'll gradually start to see benefits from ou",
+      "source": "Generic Onboarding",
+      "conversion": "low",
+      "expected_circuit": "deliberation",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "temporal_proximity",
+      "predicted_weak_dim": "temporal_proximity",
+      "effectiveness": 0.7167,
+      "compliance_prob": 0.5069,
+      "rejection_prob": 0.2498,
+      "delay_prob": 0.2433,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 1.0,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.0
+      },
+      "circuits": {
+        "approach": 0.475,
+        "avoidance": 0.2325,
+        "deliberation": 0.2592,
+        "dominant": "approach",
+        "conflict_level": 0.784
+      }
+    },
+    {
+      "id": "l25",
+      "text": "Please wait... loading...",
+      "source": "Generic App",
+      "conversion": "low",
+      "expected_circuit": "avoidance",
+      "predicted_circuit": "approach",
+      "expected_weak_dim": "certainty",
+      "predicted_weak_dim": "novelty",
+      "effectiveness": 0.703,
+      "compliance_prob": 0.4549,
+      "rejection_prob": 0.2541,
+      "delay_prob": 0.291,
+      "appraisal": {
+        "novelty": 0.5,
+        "valence": 0.5,
+        "goal_relevance": 0.5,
+        "coping_potential": 0.5,
+        "agency": 0.5,
+        "certainty": 0.5,
+        "temporal_proximity": 0.5
+      },
+      "circuits": {
+        "approach": 0.35,
+        "avoidance": 0.2325,
+        "deliberation": 0.0967,
+        "dominant": "approach",
+        "conflict_level": 0.883
+      }
+    }
+  ]
+}

@@ -84,24 +84,33 @@ class CircuitPredictor:
     Formulas derived from the limbic decision cascade research,
     integrating appraisal dimensions with somatic marker congruence
     and stimulus familiarity.
+
+    All weights are configurable for calibration. Pass a CircuitWeights
+    dataclass to override defaults.
     """
+
+    def __init__(self, weights=None):
+        # Default weights — calibrated so all 3 circuits can win
+        # at realistic appraisal value ranges
+        self.w = weights or {}
 
     def compute_approach(
         self,
         appraisal: AppraisalScores,
         somatic_marker_congruence: float = 0.5,
     ) -> float:
-        """Nucleus Accumbens → VTA → vmPFC → premotor → motor execution.
-        Transmitter: Dopamine surge.
-        Subjective: 'I want this.'
-        """
+        """Nucleus Accumbens → VTA → vmPFC → premotor → motor execution."""
+        w = self.w.get("approach", {})
         score = (
-            0.30 * appraisal.valence
-            + 0.25 * appraisal.goal_relevance
-            + 0.20 * appraisal.coping_potential
-            + 0.15 * appraisal.certainty
-            + 0.10 * somatic_marker_congruence
-            - 0.15 * max(0.0, appraisal.novelty - 0.7)
+            w.get("valence", 0.30) * appraisal.valence
+            + w.get("goal_relevance", 0.25) * appraisal.goal_relevance
+            + w.get("coping_potential", 0.20) * appraisal.coping_potential
+            + w.get("certainty", 0.15) * appraisal.certainty
+            + w.get("somatic", 0.10) * somatic_marker_congruence
+            - w.get("novelty_penalty", 0.15) * max(0.0, appraisal.novelty - 0.7)
+            # Avoidance signals SUPPRESS approach (amygdala inhibits NAc)
+            - w.get("neg_valence", 0.20) * (1.0 - appraisal.valence)
+            - w.get("neg_agency", 0.10) * (1.0 - appraisal.agency)
         )
         return round(max(0.0, score), 4)
 
@@ -111,17 +120,18 @@ class CircuitPredictor:
         insula_disgust_signal: float = 0.0,
         familiarity: float = 0.5,
     ) -> float:
-        """Amygdala → Hypothalamus → HPA axis → freeze/flee.
-        Transmitter: Cortisol + norepinephrine.
-        Subjective: 'Get me away from this.'
-        """
+        """Amygdala → Hypothalamus → HPA axis → freeze/flee."""
+        w = self.w.get("avoidance", {})
         score = (
-            0.30 * (1.0 - appraisal.coping_potential) * appraisal.goal_relevance
-            + 0.25 * appraisal.novelty * (1.0 - appraisal.certainty)
-            + 0.20 * (1.0 - appraisal.agency)
-            + 0.15 * insula_disgust_signal
-            - 0.20 * appraisal.valence
-            - 0.10 * familiarity
+            # Additive threat signals (not multiplicative — so they compete with approach)
+            w.get("neg_valence", 0.30) * (1.0 - appraisal.valence)
+            + w.get("neg_coping", 0.20) * (1.0 - appraisal.coping_potential)
+            + w.get("neg_agency", 0.20) * (1.0 - appraisal.agency)
+            + w.get("novelty_threat", 0.15) * appraisal.novelty * (1.0 - appraisal.certainty)
+            + w.get("disgust", 0.15) * insula_disgust_signal
+            # Positive signals suppress avoidance
+            - w.get("valence_suppress", 0.25) * appraisal.valence
+            - w.get("familiarity_suppress", 0.10) * familiarity
         )
         return round(max(0.0, score), 4)
 
@@ -133,17 +143,18 @@ class CircuitPredictor:
         information_load: float = 0.3,
         contradictory_signals: float = 0.0,
     ) -> float:
-        """ACC → dlPFC → vmPFC → hippocampus → back to ACC.
-        No single transmitter — cognitive load spike.
-        Subjective: 'I need to think about this.'
-        """
+        """ACC → dlPFC → vmPFC → hippocampus → back to ACC."""
+        w = self.w.get("deliberation", {})
         score = (
-            0.30 * abs(approach_score - avoidance_score)
-            + 0.25 * (1.0 - appraisal.certainty) * appraisal.goal_relevance
-            + 0.20 * information_load
-            + 0.15 * contradictory_signals
-            - 0.20 * appraisal.temporal_proximity
-            - 0.10 * appraisal.coping_potential
+            # Uncertainty is the primary deliberation driver
+            w.get("neg_certainty", 0.30) * (1.0 - appraisal.certainty)
+            + w.get("goal_uncertainty", 0.20) * appraisal.goal_relevance * (1.0 - appraisal.certainty)
+            + w.get("info_load", 0.20) * information_load
+            + w.get("contradictory", 0.15) * contradictory_signals
+            + w.get("conflict", 0.10) * abs(approach_score - avoidance_score)
+            # Urgency and ease suppress deliberation
+            - w.get("temporal_suppress", 0.20) * appraisal.temporal_proximity
+            - w.get("coping_suppress", 0.15) * appraisal.coping_potential
         )
         return round(max(0.0, score), 4)
 
