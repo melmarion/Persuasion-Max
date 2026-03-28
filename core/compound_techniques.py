@@ -182,26 +182,41 @@ COMPOUND_STACKS = {
 #   4 techniques: ~1.5-1.8x (diminishing — detection risk rises faster than lift)
 #   5+ techniques: saturation — no additional persuasion lift, detection risk dominant
 
+# EMPIRICAL diminishing returns (calibrate_compounds.py, N=20,000):
+#   0 techniques: 83.9% success (baseline)
+#   1 technique:  82.6% (-1.3pp)
+#   2 techniques: 83.4% (+0.7pp from 1)
+#   3 techniques: 83.3% (-0.1pp)
+#   4 techniques: 82.6% (-0.7pp)
+#   5 techniques: 81.2% (-1.5pp)
+#   6 techniques: 80.7% (-0.4pp)
+#   7+ techniques: 79.2% (-0.4pp)
+#
+# The curve is FLAT to slightly NEGATIVE. More techniques = slightly worse.
+# This means: compound stacking does NOT produce synergy in this dataset.
+# The value of compounds is in COHERENCE (techniques that reinforce one
+# narrative) not ACCUMULATION (more techniques = more persuasion).
+
 TECHNIQUE_COUNT_MULTIPLIER = {
     1: 1.0,
-    2: 1.35,   # sweet spot: synergy > detection risk
-    3: 1.20,   # marginal lift per additional technique drops
-    4: 1.05,   # barely worth the detection risk
-    5: 0.95,   # detection risk exceeds persuasion lift — net negative
+    2: 1.01,   # EMPIRICAL: negligible lift from adding a second technique
+    3: 1.00,   # EMPIRICAL: flat — no additional lift
+    4: 0.99,   # EMPIRICAL: slight negative — more techniques = slight decline
+    5: 0.97,   # EMPIRICAL: declining
 }
 
 
 def get_diminishing_return_factor(n_techniques: int) -> float:
-    """Per-technique effectiveness multiplier accounting for diminishing returns.
+    """Per-technique marginal factor from empirical calibration (N=20,000).
 
-    Returns the multiplier for the Nth technique added.
-    2 techniques: each gets 1.35x (synergy).
-    3 techniques: third adds 1.20x marginal.
-    4+: marginal benefit approaches zero, detection cost rises.
+    The data shows a FLAT curve — adding more techniques does not increase
+    persuasion effectiveness in naturalistic text. The value of compound
+    stacks is coherence (techniques that fit together narratively), not
+    accumulation.
     """
     if n_techniques in TECHNIQUE_COUNT_MULTIPLIER:
         return TECHNIQUE_COUNT_MULTIPLIER[n_techniques]
-    return 0.90  # 6+ techniques: actively counterproductive
+    return 0.95  # 6+: actively counterproductive
 
 
 def find_best_compound(platform: str, content_type: str = None,

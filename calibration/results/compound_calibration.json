@@ -1,0 +1,146 @@
+{
+  "n_samples": 20000,
+  "baseline_success_rate": 0.8244,
+  "compound_stacks": {
+    "deliberation_bypass": {
+      "status": "insufficient_data",
+      "n_co_occurring": 1,
+      "hand_assigned_multiplier": 2.1
+    },
+    "authority_threat": {
+      "status": "insufficient_data",
+      "n_co_occurring": 0,
+      "hand_assigned_multiplier": 1.95
+    },
+    "ecommerce_conversion": {
+      "status": "calibrated",
+      "n_co_occurring": 12,
+      "n_absent": 12843,
+      "success_rate_present": 0.9167,
+      "success_rate_absent": 0.8249,
+      "empirical_multiplier": 1.111,
+      "hand_assigned_multiplier": 1.85,
+      "delta": -0.739,
+      "techniques": [
+        "social_proof",
+        "scarcity_appeal",
+        "urgency_appeal"
+      ]
+    },
+    "influencer_stack": {
+      "status": "insufficient_data",
+      "n_co_occurring": 9,
+      "hand_assigned_multiplier": 1.68
+    },
+    "pricing_influence": {
+      "status": "calibrated",
+      "n_co_occurring": 71,
+      "n_absent": 16229,
+      "success_rate_present": 0.8099,
+      "success_rate_absent": 0.826,
+      "empirical_multiplier": 0.981,
+      "hand_assigned_multiplier": 1.72,
+      "delta": -0.739,
+      "techniques": [
+        "anchoring",
+        "contrast_principle",
+        "scarcity_appeal"
+      ]
+    },
+    "adams_high_ground": {
+      "status": "insufficient_data",
+      "n_co_occurring": 0,
+      "hand_assigned_multiplier": 1.65
+    },
+    "vulnerability_narrative": {
+      "status": "insufficient_data",
+      "n_co_occurring": 0,
+      "hand_assigned_multiplier": 1.55
+    },
+    "voss_negotiation": {
+      "status": "insufficient_data",
+      "n_co_occurring": 8,
+      "hand_assigned_multiplier": 1.5
+    },
+    "obligation_stack": {
+      "status": "insufficient_data",
+      "n_co_occurring": 0,
+      "hand_assigned_multiplier": 1.55
+    },
+    "social_pressure": {
+      "status": "insufficient_data",
+      "n_co_occurring": 5,
+      "hand_assigned_multiplier": 1.52
+    },
+    "intellectual_seduction": {
+      "status": "insufficient_data",
+      "n_co_occurring": 4,
+      "hand_assigned_multiplier": 1.48
+    },
+    "empathic_redirect": {
+      "status": "insufficient_data",
+      "n_co_occurring": 2,
+      "hand_assigned_multiplier": 1.45
+    },
+    "authority_with_vulnerability": {
+      "status": "insufficient_data",
+      "n_co_occurring": 0,
+      "hand_assigned_multiplier": 1.5
+    },
+    "tribal_mobilization": {
+      "status": "insufficient_data",
+      "n_co_occurring": 1,
+      "hand_assigned_multiplier": 1.58
+    },
+    "foot_in_door_escalation": {
+      "status": "insufficient_data",
+      "n_co_occurring": 0,
+      "hand_assigned_multiplier": 1.45
+    },
+    "contrarian_hook": {
+      "status": "insufficient_data",
+      "n_co_occurring": 0,
+      "hand_assigned_multiplier": 1.42
+    }
+  },
+  "diminishing_returns": {
+    "0": {
+      "n_samples": 193,
+      "success_rate": 0.8394
+    },
+    "1": {
+      "n_samples": 1731,
+      "success_rate": 0.8264,
+      "marginal_lift": -0.013
+    },
+    "2": {
+      "n_samples": 3817,
+      "success_rate": 0.8339,
+      "marginal_lift": 0.0075
+    },
+    "3": {
+      "n_samples": 4834,
+      "success_rate": 0.8329,
+      "marginal_lift": -0.001
+    },
+    "4": {
+      "n_samples": 4183,
+      "success_rate": 0.8261,
+      "marginal_lift": -0.0068
+    },
+    "5": {
+      "n_samples": 2873,
+      "success_rate": 0.8115,
+      "marginal_lift": -0.0146
+    },
+    "6": {
+      "n_samples": 1427,
+      "success_rate": 0.8073,
+      "marginal_lift": -0.0042
+    },
+    "7+": {
+      "n_samples": 942,
+      "success_rate": 0.7925
+    }
+  }
+}
