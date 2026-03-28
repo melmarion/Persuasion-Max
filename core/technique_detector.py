@@ -310,6 +310,26 @@ TECHNIQUES = {
         "definition": "Asking an open-ended question that makes the other person solve your problem while feeling in control. 'How am I supposed to do that?' redirects the cognitive work.",
         "patterns": [r"\b(how (am I|are we|do you expect|would you|could I)|what (would you suggest|do you think|should I)|how (does that|is that going to) work)\b"],
     },
+    "narrative_transportation": {
+        "category": "narrative", "ethical": True,
+        "definition": "Deep story immersion that makes the reader forget they are being persuaded. Counterargument generation drops because the reader is inside the narrative, not evaluating it from outside.",
+        "patterns": [r"\b(I (remember|still remember|can still|will never forget)|it was (a|one of those)|the (moment|day|night|first time) (I|we|when)|there I was|picture this|let me (take you back|tell you))\b"],
+    },
+    "inoculation": {
+        "category": "cognitive", "ethical": True,
+        "definition": "Preemptively addressing and refuting the audience's likely counterarguments before they form them. Weakens future resistance by exposing it as anticipated and already handled.",
+        "patterns": [r"\b(I know what you.re (thinking|going to say)|you.re (probably|going to) (think|say|object)|before you say|yes,? (I know|it sounds|this looks)|the obvious (objection|criticism|pushback) is)\b"],
+    },
+    "social_norming": {
+        "category": "social", "ethical": True,
+        "definition": "Describing what the specific peer group actually does rather than prescribing what should be done. Leverages descriptive norms — people conform to observed behavior of their in-group.",
+        "patterns": [r"\b(most (developers|people|founders|engineers|teams) (in your|I.ve worked with|I know)|the (typical|average|normal) (approach|thing)|what (everyone|most people) actually (does|do)|in my experience,? (most|the majority))\b"],
+    },
+    "myside_bias_exploit": {
+        "category": "cognitive", "ethical": True,
+        "definition": "Presenting information that confirms what the audience already believes, then redirecting that agreement toward your conclusion. The initial agreement lowers resistance to the redirect.",
+        "patterns": [r"\b(you already know|we (all|both) (know|agree)|as you.ve (probably|already) (noticed|seen|experienced)|it.s no secret that|everyone in this (sub|community|space) knows)\b"],
+    },
 }
 
 

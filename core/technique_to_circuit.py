@@ -390,6 +390,43 @@ TECHNIQUE_MODIFIERS = {
                       "the responder feels like the decision-maker. Insula drops because autonomy "
                       "is preserved.",
     },
+    "narrative_transportation": {
+        "appraisal_shifts": {"valence": +0.10, "goal_relevance": +0.15, "novelty": +0.10},
+        "circuit_mods": {"approach": 1.15, "deliberation": 0.55},
+        "insula_mod": -0.15,
+        "provenance": "CONSTRAINED: Green & Brock 2000 (Transportation-Imagery Model). "
+                      "Deep narrative immersion reduces counterargument generation. Deliberation "
+                      "drops to 0.55x — the strongest suppression in the library — because the "
+                      "reader is processing the story, not evaluating the argument. Insula drops "
+                      "because the persuasive intent is hidden inside narrative structure.",
+    },
+    "inoculation": {
+        "appraisal_shifts": {"certainty": +0.15, "coping_potential": +0.10},
+        "circuit_mods": {"deliberation": 0.80, "avoidance": 0.85},
+        "insula_mod": -0.10,
+        "provenance": "CONSTRAINED: McGuire 1961 (Inoculation Theory). Preemptive refutation "
+                      "reduces avoidance by addressing objections before they form. Deliberation "
+                      "drops because the audience's counterarguments were anticipated and handled. "
+                      "Certainty increases because the presenter seems thorough.",
+    },
+    "social_norming": {
+        "appraisal_shifts": {"certainty": +0.10, "coping_potential": +0.10},
+        "circuit_mods": {"approach": 1.10, "deliberation": 0.85},
+        "insula_mod": -0.05,
+        "provenance": "CONSTRAINED: Cialdini (descriptive norms) — 'most people do X' is more "
+                      "persuasive than 'you should do X'. Insula drops slightly because descriptive "
+                      "norms feel informational, not coercive. Distinct from social_proof (which "
+                      "uses numbers) and bandwagon (which uses momentum). Norming uses peer behavior.",
+    },
+    "myside_bias_exploit": {
+        "appraisal_shifts": {"certainty": +0.15, "valence": +0.10},
+        "circuit_mods": {"approach": 1.15, "deliberation": 0.75},
+        "insula_mod": -0.10,
+        "provenance": "UNCALIBRATED: confirmation bias literature (Nickerson 1998). Presenting "
+                      "information the audience already agrees with lowers all defenses. The "
+                      "redirect that follows benefits from the lowered deliberation state. "
+                      "Insula drops because confirming information feels safe.",
+    },
 }
 
 
