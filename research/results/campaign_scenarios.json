@@ -1,0 +1,331 @@
+{
+  "scenario_1_product_launch": {
+    "stimulus": "Introducing FocusFlow \u2014 the first neural-feedback headband that adapts to your concentration patterns in real-time. Early adopters get 30% off this week only. Join 2,000+ beta testers who've already improved their focus by an average of 47%.",
+    "results": [
+      {
+        "persona": "impulse_buyer",
+        "compliance": 0.7168,
+        "immediate_compliance": 0.7168,
+        "repeat_compliance": 0.4504,
+        "retaliation": 0.0,
+        "dominant": "approach",
+        "techniques_detected": [
+          "evidence_based",
+          "bandwagon"
+        ]
+      },
+      {
+        "persona": "price_hunter",
+        "compliance": 0.5022,
+        "immediate_compliance": 0.5022,
+        "repeat_compliance": 0.3155,
+        "retaliation": 0.0,
+        "dominant": "approach",
+        "techniques_detected": [
+          "evidence_based",
+          "bandwagon"
+        ]
+      },
+      {
+        "persona": "brand_loyalist",
+        "compliance": 0.5784,
+        "immediate_compliance": 0.5784,
+        "repeat_compliance": 0.3634,
+        "retaliation": 0.0,
+        "dominant": "approach",
+        "techniques_detected": [
+          "evidence_based",
+          "bandwagon"
+        ]
+      },
+      {
+        "persona": "social_shopper",
+        "compliance": 0.6275,
+        "immediate_compliance": 0.6275,
+        "repeat_compliance": 0.3943,
+        "retaliation": 0.0,
+        "dominant": "approach",
+        "techniques_detected": [
+          "evidence_based",
+          "bandwagon"
+        ]
+      },
+      {
+        "persona": "skeptical_researcher",
+        "compliance": 0.5348,
+        "immediate_compliance": 0.5348,
+        "repeat_compliance": 0.336,
+        "retaliation": 0.0,
+        "dominant": "approach",
+        "techniques_detected": [
+          "evidence_based",
+          "bandwagon"
+        ]
+      }
+    ]
+  },
+  "scenario_2_climate_policy": {
+    "stimuli": {
+      "care_frame": "Our children deserve clean air. This climate policy protects the most vulnerable communities from the devastating effects of pollution. Think of the families suffering near industrial zones.",
+      "loyalty_frame": "This is about protecting our homeland. Americans have always led the world in innovation. Stand with us to preserve our great nation's natural heritage for future generations of patriots."
+    },
+    "results": {
+      "care_frame": [
+        {
+          "persona": "liberal_base",
+          "compliance": 0.5664,
+          "immediate_compliance": 0.5664,
+          "repeat_compliance": 0.262,
+          "retaliation": 0.0,
+          "dominant": "approach",
+          "techniques_detected": [
+            "emotional_appeal_negative"
+          ]
+        },
+        {
+          "persona": "conservative_base",
+          "compliance": 0.4773,
+          "immediate_compliance": 0.4773,
+          "repeat_compliance": 0.2208,
+          "retaliation": 0.0,
+          "dominant": "approach",
+          "techniques_detected": [
+            "emotional_appeal_negative"
+          ]
+        },
+        {
+          "persona": "persuadable_moderate",
+          "compliance": 0.4938,
+          "immediate_compliance": 0.4938,
+          "repeat_compliance": 0.2284,
+          "retaliation": 0.0,
+          "dominant": "approach",
+          "techniques_detected": [
+            "emotional_appeal_negative"
+          ]
+        },
+        {
+          "persona": "disengaged_voter",
+          "compliance": 0.467,
+          "immediate_compliance": 0.467,
+          "repeat_compliance": 0.216,
+          "retaliation": 0.0,
+          "dominant": "approach",
+          "techniques_detected": [
+            "emotional_appeal_negative"
+          ]
+        },
+        {
+          "persona": "issue_activist",
+          "compliance": 0.5061,
+          "immediate_compliance": 0.5061,
+          "repeat_compliance": 0.2341,
+          "retaliation": 0.0,
+          "dominant": "approach",
+          "techniques_detected": [
+            "emotional_appeal_negative"
+          ]
+        }
+      ],
+      "loyalty_frame": [
+        {
+          "persona": "liberal_base",
+          "compliance": 0.4828,
+          "immediate_compliance": 0.4828,
+          "repeat_compliance": 0.2414,
+          "retaliation": 0.0,
+          "dominant": "approach",
+          "techniques_detected": []
+        },
+        {
+          "persona": "conservative_base",
+          "compliance": 0.485,
+          "immediate_compliance": 0.485,
+          "repeat_compliance": 0.2425,
+          "retaliation": 0.0,
+          "dominant": "approach",
+          "techniques_detected": []
+        },
+        {
+          "persona": "persuadable_moderate",
+          "compliance": 0.5023,
+          "immediate_compliance": 0.5023,
+          "repeat_compliance": 0.2511,
+          "retaliation": 0.0,
+          "dominant": "approach",
+          "techniques_detected": []
+        },
+        {
+          "persona": "disengaged_voter",
+          "compliance": 0.4754,
+          "immediate_compliance": 0.4754,
+          "repeat_compliance": 0.2377,
+          "retaliation": 0.0,
+          "dominant": "approach",
+          "techniques_detected": []
+        },
+        {
+          "persona": "issue_activist",
+          "compliance": 0.4941,
+          "immediate_compliance": 0.4941,
+          "repeat_compliance": 0.247,
+          "retaliation": 0.0,
+          "dominant": "approach",
+          "techniques_detected": []
+        }
+      ]
+    }
+  },
+  "scenario_3_crisis_pr": {
+    "stimuli": {
+      "transparent": "We failed to protect your data. On March 15, a vulnerability in our authentication system exposed 50,000 user records. We've identified the root cause, deployed a fix, and are offering free credit monitoring. Here's our full incident report.",
+      "defensive": "While this incident affected some accounts, our security has always been industry-leading. What about the major breaches at our competitors last year? The real issue is the evolving threat landscape, not our security practices."
+    },
+    "results": {
+      "transparent": [
+        {
+          "stakeholder": "media",
+          "trust_recovery": 0.5235,
+          "brand_sentiment": 0.2694,
+          "retaliation": 0.0,
+          "compliance": 0.4836
+        },
+        {
+          "stakeholder": "regulators",
+          "trust_recovery": 0.5169,
+          "brand_sentiment": 0.2668,
+          "retaliation": 0.0,
+          "compliance": 0.5034
+        },
+        {
+          "stakeholder": "customers",
+          "trust_recovery": 0.5031,
+          "brand_sentiment": 0.2612,
+          "retaliation": 0.0,
+          "compliance": 0.4906
+        },
+        {
+          "stakeholder": "employees",
+          "trust_recovery": 0.5031,
+          "brand_sentiment": 0.2612,
+          "retaliation": 0.0,
+          "compliance": 0.4906
+        },
+        {
+          "stakeholder": "investors",
+          "trust_recovery": 0.5169,
+          "brand_sentiment": 0.2668,
+          "retaliation": 0.0,
+          "compliance": 0.5034
+        }
+      ],
+      "defensive": [
+        {
+          "stakeholder": "media",
+          "trust_recovery": 0.2594,
+          "brand_sentiment": -0.1054,
+          "retaliation": 0.464,
+          "compliance": 0.4266
+        },
+        {
+          "stakeholder": "regulators",
+          "trust_recovery": 0.2398,
+          "brand_sentiment": -0.1137,
+          "retaliation": 0.4655,
+          "compliance": 0.4456
+        },
+        {
+          "stakeholder": "customers",
+          "trust_recovery": 0.2409,
+          "brand_sentiment": -0.1133,
+          "retaliation": 0.4655,
+          "compliance": 0.4364
+        },
+        {
+          "stakeholder": "employees",
+          "trust_recovery": 0.2409,
+          "brand_sentiment": -0.1133,
+          "retaliation": 0.4655,
+          "compliance": 0.4364
+        },
+        {
+          "stakeholder": "investors",
+          "trust_recovery": 0.2398,
+          "brand_sentiment": -0.1137,
+          "retaliation": 0.4655,
+          "compliance": 0.4456
+        }
+      ]
+    }
+  },
+  "scenario_4_app_store": {
+    "stimulus": "I built this app because I couldn't find anything that actually worked for building real habits. After 2 years of research into behavioral science, I made the tool I wished existed. 47,000 people are already using it to build lasting routines. Free to start \u2014 no credit card required.",
+    "results": [
+      {
+        "persona": "impulse_buyer",
+        "compliance": 0.6591,
+        "immediate_compliance": 0.6591,
+        "repeat_compliance": 0.585,
+        "retaliation": 0.0,
+        "dominant": "approach",
+        "techniques_detected": [
+          "logical_appeal",
+          "evidence_based",
+          "reciprocity"
+        ]
+      },
+      {
+        "persona": "skeptical_researcher",
+        "compliance": 0.6046,
+        "immediate_compliance": 0.6046,
+        "repeat_compliance": 0.5366,
+        "retaliation": 0.0,
+        "dominant": "approach",
+        "techniques_detected": [
+          "logical_appeal",
+          "evidence_based",
+          "reciprocity"
+        ]
+      },
+      {
+        "persona": "social_shopper",
+        "compliance": 0.6859,
+        "immediate_compliance": 0.6859,
+        "repeat_compliance": 0.6087,
+        "retaliation": 0.0,
+        "dominant": "approach",
+        "techniques_detected": [
+          "logical_appeal",
+          "evidence_based",
+          "reciprocity"
+        ]
+      },
+      {
+        "persona": "brand_loyalist",
+        "compliance": 0.57,
+        "immediate_compliance": 0.57,
+        "repeat_compliance": 0.5059,
+        "retaliation": 0.0,
+        "dominant": "approach",
+        "techniques_detected": [
+          "logical_appeal",
+          "evidence_based",
+          "reciprocity"
+        ]
+      },
+      {
+        "persona": "price_hunter",
+        "compliance": 0.6077,
+        "immediate_compliance": 0.6077,
+        "repeat_compliance": 0.5393,
+        "retaliation": 0.0,
+        "dominant": "approach",
+        "techniques_detected": [
+          "logical_appeal",
+          "evidence_based",
+          "reciprocity"
+        ]
+      }
+    ]
+  }
+}

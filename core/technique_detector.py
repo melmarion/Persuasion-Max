@@ -232,6 +232,81 @@ TECHNIQUES = {
         "definition": "Coercive social pressure implying exclusion for non-compliance.",
         "patterns": [r"\b(everyone else (is|has)|you.ll be the only|don.t (want to )?be left (out|behind))\b"],
     },
+
+    # ─── PRACTITIONER TECHNIQUES (beyond Zeng taxonomy) ─────────────────
+    # Sources: Adams (Win Bigly), Cialdini (Pre-Suasion), Voss (Never Split
+    # the Difference), and field-validated deployment patterns.
+
+    "high_ground_maneuver": {
+        "category": "framing", "ethical": True,
+        "definition": "Reframing to a position where disagreement means opposing a universally held value. The opponent must either agree or argue against something nobody opposes.",
+        "patterns": [r"\b(I (just )?want|all I.m (saying|asking)|who (could|would|doesn.t) (oppose|want|agree)|common sense|basic (decency|fairness|right))\b"],
+    },
+    "identity_lock": {
+        "category": "social", "ethical": True,
+        "definition": "Framing the desired behavior as what a specific identity group does. Compliance becomes an identity statement, non-compliance becomes identity-threatening.",
+        "patterns": [r"\b((real|smart|serious|top|good) (devs?|engineers?|founders?|people|leaders?|professionals?) (know|do|always|never|understand)|if you.re (the kind|someone) who|people like (us|you))\b"],
+    },
+    "pacing_and_leading": {
+        "category": "rapport", "ethical": True,
+        "definition": "Matching the audience's current emotional or cognitive state before redirecting toward the desired conclusion. First validate where they are, then move them.",
+        "patterns": [r"\b(I (used to|know|get it|hear you|understand)|you.re (right|not wrong)|that makes sense.*(but|and|however)|I (felt|thought) the same.*(then|until|before))\b"],
+    },
+    "presupposition": {
+        "category": "linguistic", "ethical": True,
+        "definition": "Embedding an unproven claim inside a statement or question so the audience accepts it as background rather than evaluating it directly.",
+        "patterns": [r"\b(when you (start|get|try|use|buy)|after you.ve|once you (see|realize|experience)|now that (we|you)|the (real|only) question is)\b"],
+    },
+    "future_pacing": {
+        "category": "cognitive", "ethical": True,
+        "definition": "Guiding the audience to vividly imagine a future state where the desired outcome has already occurred. Makes the outcome feel inevitable and concrete.",
+        "patterns": [r"\b(imagine (waking|looking|sitting|opening|feeling)|picture (yourself|this)|six months from now|a year from now|fast forward|what if you (could|already|woke))\b"],
+    },
+    "contrast_principle": {
+        "category": "cognitive", "ethical": True,
+        "definition": "Presenting a worse alternative first so the target option appears more favorable by comparison. The reference point shifts the evaluation frame.",
+        "patterns": [r"\b(compared to|instead of|rather than|before.*(now|today)|used to.*(now|today)|most people.*(but|instead)|the alternative is)\b"],
+    },
+    "curiosity_gap": {
+        "category": "narrative", "ethical": True,
+        "definition": "Opening a knowledge gap that creates psychological tension. The audience must continue engaging to resolve the gap. Incomplete information drives attention.",
+        "patterns": [r"\b(here.s (what|why)|the (real|surprising|weird) (reason|thing|part)|what (happened|nobody|most people don.t)|turns out|I didn.t expect|you won.t believe)\b"],
+    },
+    "labeling": {
+        "category": "rapport", "ethical": True,
+        "definition": "Naming the other person's emotion or situation to demonstrate understanding and build rapport. Makes the audience feel seen, which lowers resistance.",
+        "patterns": [r"\b(it (seems|sounds|looks|feels) like|you.re (probably|clearly) (feeling|thinking|worried)|that must (be|feel)|I (can see|sense|notice) (that|you))\b"],
+    },
+    "door_in_the_face": {
+        "category": "compliance", "ethical": True,
+        "definition": "Making an extreme initial request that will be rejected, then following with the actual (smaller) request which now seems reasonable by contrast.",
+        "patterns": [r"\b(I know (this|it|that).s a lot|it.s a big ask|even if you can.t.*(at least|maybe|just)|all I.m (really )?asking|the (least|minimum|smallest))\b"],
+    },
+    "foot_in_the_door": {
+        "category": "compliance", "ethical": True,
+        "definition": "Securing a small initial commitment that makes larger subsequent requests more likely to be accepted. Each yes makes the next yes easier.",
+        "patterns": [r"\b(just (try|start with|take|do) (one|this|a)|all (you need|it takes) is|start (small|here|with)|the first step|can you just)\b"],
+    },
+    "thinking_past_the_sale": {
+        "category": "framing", "ethical": True,
+        "definition": "Presupposing the decision is already made and discussing details beyond it. Forces the audience to mentally accept the outcome as a precondition of the conversation.",
+        "patterns": [r"\b(when (you|we) (get|start|launch|finish)|after (you|we) (set up|complete|sign)|which (color|plan|option|version) (do you|would you)|where (should|do you want) (we|I) (send|put|start))\b"],
+    },
+    "linguistic_kill_shot": {
+        "category": "attack", "ethical": False,
+        "definition": "A short, vivid, sticky label that permanently reframes how the target is perceived. Designed to be memorable, repeatable, and impossible to shake once attached.",
+        "patterns": [r"\b(low[- ]energy|crooked|sleepy|failing|nasty|crazy|radical|do[- ]nothing|flip[- ]flopp)\b"],
+    },
+    "unity": {
+        "category": "social", "ethical": True,
+        "definition": "Invoking shared group membership or kinship to create an us-together frame. Compliance comes from wanting to act as one of us, not from external pressure.",
+        "patterns": [r"\b(we.re (all|in this|the same)|as (fellow|one of|part of)|our (community|team|group|family|people)|together we|among (us|ourselves)|between you and me)\b"],
+    },
+    "calibrated_question": {
+        "category": "rapport", "ethical": True,
+        "definition": "Asking an open-ended question that makes the other person solve your problem while feeling in control. 'How am I supposed to do that?' redirects the cognitive work.",
+        "patterns": [r"\b(how (am I|are we|do you expect|would you|could I)|what (would you suggest|do you think|should I)|how (does that|is that going to) work)\b"],
+    },
 }
 
 

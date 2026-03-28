@@ -1,0 +1,2137 @@
+{
+  "matrix": {
+    "logical_appeal": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5404,
+        "repeat_compliance": 0.347,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5081,
+        "repeat_compliance": 0.3259,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4824,
+        "repeat_compliance": 0.3096,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5215,
+        "repeat_compliance": 0.3348,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5087,
+        "repeat_compliance": 0.3265,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4836,
+        "repeat_compliance": 0.3104,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4824,
+        "repeat_compliance": 0.3096,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4958,
+        "repeat_compliance": 0.3181,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4804,
+        "repeat_compliance": 0.3085,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5081,
+        "repeat_compliance": 0.3259,
+        "retaliation_probability": 0.0
+      }
+    },
+    "evidence_based": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5423,
+        "repeat_compliance": 0.3526,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.508,
+        "repeat_compliance": 0.3301,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4827,
+        "repeat_compliance": 0.3138,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5225,
+        "repeat_compliance": 0.3397,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5086,
+        "repeat_compliance": 0.3306,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4842,
+        "repeat_compliance": 0.3148,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4827,
+        "repeat_compliance": 0.3138,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4958,
+        "repeat_compliance": 0.3222,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4816,
+        "repeat_compliance": 0.3131,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.508,
+        "repeat_compliance": 0.3301,
+        "retaliation_probability": 0.0
+      }
+    },
+    "expert_testimony": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5622,
+        "repeat_compliance": 0.3423,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4932,
+        "repeat_compliance": 0.3005,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4944,
+        "repeat_compliance": 0.3008,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5198,
+        "repeat_compliance": 0.3163,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4907,
+        "repeat_compliance": 0.2991,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4816,
+        "repeat_compliance": 0.2931,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5308,
+        "repeat_compliance": 0.323,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4966,
+        "repeat_compliance": 0.302,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4975,
+        "repeat_compliance": 0.3029,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4932,
+        "repeat_compliance": 0.3005,
+        "retaliation_probability": 0.0
+      }
+    },
+    "social_proof": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.6284,
+        "repeat_compliance": 0.3771,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4655,
+        "repeat_compliance": 0.28,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5268,
+        "repeat_compliance": 0.3165,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5613,
+        "repeat_compliance": 0.3371,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4622,
+        "repeat_compliance": 0.2778,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4874,
+        "repeat_compliance": 0.2928,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5268,
+        "repeat_compliance": 0.3165,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5027,
+        "repeat_compliance": 0.3022,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5156,
+        "repeat_compliance": 0.3096,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4655,
+        "repeat_compliance": 0.28,
+        "retaliation_probability": 0.0
+      }
+    },
+    "authority_endorsement": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5648,
+        "repeat_compliance": 0.3585,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4948,
+        "repeat_compliance": 0.3143,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.496,
+        "repeat_compliance": 0.3144,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5219,
+        "repeat_compliance": 0.331,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4912,
+        "repeat_compliance": 0.3123,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.482,
+        "repeat_compliance": 0.3056,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.533,
+        "repeat_compliance": 0.3381,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.498,
+        "repeat_compliance": 0.3155,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4995,
+        "repeat_compliance": 0.3169,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4948,
+        "repeat_compliance": 0.3143,
+        "retaliation_probability": 0.0
+      }
+    },
+    "bandwagon": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.6183,
+        "repeat_compliance": 0.2747,
+        "retaliation_probability": 0.0047
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.461,
+        "repeat_compliance": 0.1823,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5192,
+        "repeat_compliance": 0.2166,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5521,
+        "repeat_compliance": 0.2358,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4595,
+        "repeat_compliance": 0.1818,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4817,
+        "repeat_compliance": 0.1947,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5358,
+        "repeat_compliance": 0.2263,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4969,
+        "repeat_compliance": 0.2033,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5084,
+        "repeat_compliance": 0.2103,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4629,
+        "repeat_compliance": 0.1835,
+        "retaliation_probability": 0.0
+      }
+    },
+    "emotional_appeal_positive": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.6569,
+        "repeat_compliance": 0.4105,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5334,
+        "repeat_compliance": 0.3334,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5828,
+        "repeat_compliance": 0.3642,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.7473,
+        "repeat_compliance": 0.4671,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.529,
+        "repeat_compliance": 0.3306,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.731,
+        "repeat_compliance": 0.4569,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5828,
+        "repeat_compliance": 0.3642,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.592,
+        "repeat_compliance": 0.37,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5776,
+        "repeat_compliance": 0.361,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5929,
+        "repeat_compliance": 0.3706,
+        "retaliation_probability": 0.0
+      }
+    },
+    "emotional_appeal_negative": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5158,
+        "repeat_compliance": 0.2386,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.467,
+        "repeat_compliance": 0.216,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4773,
+        "repeat_compliance": 0.2208,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5717,
+        "repeat_compliance": 0.2644,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4607,
+        "repeat_compliance": 0.2131,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5664,
+        "repeat_compliance": 0.262,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4773,
+        "repeat_compliance": 0.2208,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4938,
+        "repeat_compliance": 0.2284,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.467,
+        "repeat_compliance": 0.216,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5061,
+        "repeat_compliance": 0.2341,
+        "retaliation_probability": 0.0
+      }
+    },
+    "empathy_appeal": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.6167,
+        "repeat_compliance": 0.3292,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5199,
+        "repeat_compliance": 0.2772,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5507,
+        "repeat_compliance": 0.2939,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.6795,
+        "repeat_compliance": 0.3628,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5137,
+        "repeat_compliance": 0.2739,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.6664,
+        "repeat_compliance": 0.3558,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5507,
+        "repeat_compliance": 0.2939,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5542,
+        "repeat_compliance": 0.2958,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5428,
+        "repeat_compliance": 0.2897,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5642,
+        "repeat_compliance": 0.3008,
+        "retaliation_probability": 0.0
+      }
+    },
+    "storytelling": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5832,
+        "repeat_compliance": 0.3536,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5356,
+        "repeat_compliance": 0.3257,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5298,
+        "repeat_compliance": 0.3216,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.6551,
+        "repeat_compliance": 0.3978,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5398,
+        "repeat_compliance": 0.3287,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.66,
+        "repeat_compliance": 0.4015,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5298,
+        "repeat_compliance": 0.3216,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.544,
+        "repeat_compliance": 0.3307,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5177,
+        "repeat_compliance": 0.3141,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5923,
+        "repeat_compliance": 0.3604,
+        "retaliation_probability": 0.0
+      }
+    },
+    "self_disclosure": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5912,
+        "repeat_compliance": 0.3104,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5286,
+        "repeat_compliance": 0.2775,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5311,
+        "repeat_compliance": 0.2788,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5806,
+        "repeat_compliance": 0.3048,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5232,
+        "repeat_compliance": 0.2747,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5284,
+        "repeat_compliance": 0.2774,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5311,
+        "repeat_compliance": 0.2788,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5394,
+        "repeat_compliance": 0.2832,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5227,
+        "repeat_compliance": 0.2744,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5286,
+        "repeat_compliance": 0.2775,
+        "retaliation_probability": 0.0
+      }
+    },
+    "commitment_consistency": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.592,
+        "repeat_compliance": 0.2856,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5208,
+        "repeat_compliance": 0.2464,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5297,
+        "repeat_compliance": 0.2513,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5769,
+        "repeat_compliance": 0.2773,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5144,
+        "repeat_compliance": 0.2429,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5262,
+        "repeat_compliance": 0.2494,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5297,
+        "repeat_compliance": 0.2513,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5321,
+        "repeat_compliance": 0.2527,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5236,
+        "repeat_compliance": 0.248,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5208,
+        "repeat_compliance": 0.2464,
+        "retaliation_probability": 0.0
+      }
+    },
+    "reciprocity": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.6025,
+        "repeat_compliance": 0.2966,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5384,
+        "repeat_compliance": 0.2565,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5384,
+        "repeat_compliance": 0.2565,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.6334,
+        "repeat_compliance": 0.3159,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5354,
+        "repeat_compliance": 0.2546,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5377,
+        "repeat_compliance": 0.2561,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5384,
+        "repeat_compliance": 0.2565,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5529,
+        "repeat_compliance": 0.2655,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5375,
+        "repeat_compliance": 0.2559,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5384,
+        "repeat_compliance": 0.2565,
+        "retaliation_probability": 0.0
+      }
+    },
+    "scarcity_appeal": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5827,
+        "repeat_compliance": 0.1749,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4843,
+        "repeat_compliance": 0.1319,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4776,
+        "repeat_compliance": 0.1289,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5102,
+        "repeat_compliance": 0.1432,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4865,
+        "repeat_compliance": 0.1328,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4829,
+        "repeat_compliance": 0.1313,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4776,
+        "repeat_compliance": 0.1289,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.494,
+        "repeat_compliance": 0.1361,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4707,
+        "repeat_compliance": 0.1259,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4843,
+        "repeat_compliance": 0.1319,
+        "retaliation_probability": 0.0
+      }
+    },
+    "urgency_appeal": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5796,
+        "repeat_compliance": 0.2011,
+        "retaliation_probability": 0.0983
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4522,
+        "repeat_compliance": 0.1464,
+        "retaliation_probability": 0.0983
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4612,
+        "repeat_compliance": 0.1511,
+        "retaliation_probability": 0.0983
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.484,
+        "repeat_compliance": 0.1618,
+        "retaliation_probability": 0.0866
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4495,
+        "repeat_compliance": 0.1449,
+        "retaliation_probability": 0.1128
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4602,
+        "repeat_compliance": 0.1509,
+        "retaliation_probability": 0.0973
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4612,
+        "repeat_compliance": 0.1511,
+        "retaliation_probability": 0.0983
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4764,
+        "repeat_compliance": 0.1564,
+        "retaliation_probability": 0.0983
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4732,
+        "repeat_compliance": 0.1575,
+        "retaliation_probability": 0.0983
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4556,
+        "repeat_compliance": 0.1464,
+        "retaliation_probability": 0.114
+      }
+    },
+    "gain_frame": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.6313,
+        "repeat_compliance": 0.1866,
+        "retaliation_probability": 0.0183
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5335,
+        "repeat_compliance": 0.1499,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5412,
+        "repeat_compliance": 0.1528,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5906,
+        "repeat_compliance": 0.1699,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5396,
+        "repeat_compliance": 0.1527,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5493,
+        "repeat_compliance": 0.157,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5412,
+        "repeat_compliance": 0.1528,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5443,
+        "repeat_compliance": 0.1538,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5332,
+        "repeat_compliance": 0.1504,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5356,
+        "repeat_compliance": 0.1499,
+        "retaliation_probability": 0.0012
+      }
+    },
+    "loss_frame": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.6233,
+        "repeat_compliance": 0.2948,
+        "retaliation_probability": 0.0325
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5018,
+        "repeat_compliance": 0.197,
+        "retaliation_probability": 0.0325
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5023,
+        "repeat_compliance": 0.2009,
+        "retaliation_probability": 0.0325
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5447,
+        "repeat_compliance": 0.2342,
+        "retaliation_probability": 0.0276
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4991,
+        "repeat_compliance": 0.196,
+        "retaliation_probability": 0.032
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5011,
+        "repeat_compliance": 0.2005,
+        "retaliation_probability": 0.032
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5023,
+        "repeat_compliance": 0.2009,
+        "retaliation_probability": 0.0325
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5133,
+        "repeat_compliance": 0.2065,
+        "retaliation_probability": 0.0325
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4969,
+        "repeat_compliance": 0.1996,
+        "retaliation_probability": 0.0325
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5022,
+        "repeat_compliance": 0.1974,
+        "retaliation_probability": 0.0325
+      }
+    },
+    "anchoring": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5155,
+        "repeat_compliance": 0.2659,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4731,
+        "repeat_compliance": 0.2445,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4687,
+        "repeat_compliance": 0.242,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.502,
+        "repeat_compliance": 0.2592,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.471,
+        "repeat_compliance": 0.2433,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4687,
+        "repeat_compliance": 0.242,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4687,
+        "repeat_compliance": 0.242,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4835,
+        "repeat_compliance": 0.2498,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.463,
+        "repeat_compliance": 0.239,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4731,
+        "repeat_compliance": 0.2445,
+        "retaliation_probability": 0.0
+      }
+    },
+    "rhetorical_question": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.4675,
+        "repeat_compliance": 0.2338,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4454,
+        "repeat_compliance": 0.2227,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4358,
+        "repeat_compliance": 0.2179,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.4569,
+        "repeat_compliance": 0.2284,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.442,
+        "repeat_compliance": 0.221,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.435,
+        "repeat_compliance": 0.2175,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4358,
+        "repeat_compliance": 0.2179,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4518,
+        "repeat_compliance": 0.2259,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4408,
+        "repeat_compliance": 0.2204,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4454,
+        "repeat_compliance": 0.2227,
+        "retaliation_probability": 0.0
+      }
+    },
+    "perspective_shifting": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5474,
+        "repeat_compliance": 0.2737,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.507,
+        "repeat_compliance": 0.2535,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4982,
+        "repeat_compliance": 0.2491,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5357,
+        "repeat_compliance": 0.2678,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5275,
+        "repeat_compliance": 0.2637,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5222,
+        "repeat_compliance": 0.2611,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4982,
+        "repeat_compliance": 0.2491,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5158,
+        "repeat_compliance": 0.2579,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.489,
+        "repeat_compliance": 0.2445,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.507,
+        "repeat_compliance": 0.2535,
+        "retaliation_probability": 0.0
+      }
+    },
+    "deceptive_information": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.6197,
+        "repeat_compliance": 0.3731,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4771,
+        "repeat_compliance": 0.2661,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5197,
+        "repeat_compliance": 0.2981,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5602,
+        "repeat_compliance": 0.3285,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4771,
+        "repeat_compliance": 0.2661,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4912,
+        "repeat_compliance": 0.2768,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5214,
+        "repeat_compliance": 0.2994,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5034,
+        "repeat_compliance": 0.2859,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5158,
+        "repeat_compliance": 0.2952,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4771,
+        "repeat_compliance": 0.2661,
+        "retaliation_probability": 0.0
+      }
+    },
+    "emotional_manipulation": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5202,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.303
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.496,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.2209
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4894,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.2209
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5444,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.1961
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5019,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.2521
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5442,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.2193
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4924,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.2301
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4968,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.2209
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4724,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.2209
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.531,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.254
+      }
+    },
+    "gaslighting": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5633,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.1173
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5297,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0496
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5228,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0496
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.556,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0335
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.532,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0683
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5199,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0472
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5254,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0574
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.533,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0496
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.505,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0496
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5381,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0712
+      }
+    },
+    "false_equivalence": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5612,
+        "repeat_compliance": 0.2234,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5009,
+        "repeat_compliance": 0.1914,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5014,
+        "repeat_compliance": 0.1932,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5339,
+        "repeat_compliance": 0.2089,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.495,
+        "repeat_compliance": 0.1885,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4866,
+        "repeat_compliance": 0.1852,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5023,
+        "repeat_compliance": 0.1936,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5065,
+        "repeat_compliance": 0.1948,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4889,
+        "repeat_compliance": 0.1871,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5009,
+        "repeat_compliance": 0.1914,
+        "retaliation_probability": 0.0
+      }
+    },
+    "guilt_tripping": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5625,
+        "repeat_compliance": 0.0413,
+        "retaliation_probability": 0.0882
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5191,
+        "repeat_compliance": 0.0232,
+        "retaliation_probability": 0.0314
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5198,
+        "repeat_compliance": 0.0251,
+        "retaliation_probability": 0.0314
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.6048,
+        "repeat_compliance": 0.0541,
+        "retaliation_probability": 0.0175
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5204,
+        "repeat_compliance": 0.0232,
+        "retaliation_probability": 0.0474
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5572,
+        "repeat_compliance": 0.0382,
+        "retaliation_probability": 0.0294
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5212,
+        "repeat_compliance": 0.0255,
+        "retaliation_probability": 0.0345
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5239,
+        "repeat_compliance": 0.0259,
+        "retaliation_probability": 0.0314
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5059,
+        "repeat_compliance": 0.0229,
+        "retaliation_probability": 0.0314
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5604,
+        "repeat_compliance": 0.0371,
+        "retaliation_probability": 0.0498
+      }
+    },
+    "fear_mongering": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.507,
+        "repeat_compliance": 0.099,
+        "retaliation_probability": 0.115
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4984,
+        "repeat_compliance": 0.093,
+        "retaliation_probability": 0.0936
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4793,
+        "repeat_compliance": 0.0893,
+        "retaliation_probability": 0.0827
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.4976,
+        "repeat_compliance": 0.0952,
+        "retaliation_probability": 0.0726
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4917,
+        "repeat_compliance": 0.0914,
+        "retaliation_probability": 0.0925
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.476,
+        "repeat_compliance": 0.0885,
+        "retaliation_probability": 0.0817
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4813,
+        "repeat_compliance": 0.0895,
+        "retaliation_probability": 0.086
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4924,
+        "repeat_compliance": 0.0939,
+        "retaliation_probability": 0.0827
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4617,
+        "repeat_compliance": 0.0854,
+        "retaliation_probability": 0.0827
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4984,
+        "repeat_compliance": 0.093,
+        "retaliation_probability": 0.0936
+      }
+    },
+    "false_urgency": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.6394,
+        "repeat_compliance": 0.1435,
+        "retaliation_probability": 0.049
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4719,
+        "repeat_compliance": 0.0871,
+        "retaliation_probability": 0.049
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4888,
+        "repeat_compliance": 0.0918,
+        "retaliation_probability": 0.049
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5197,
+        "repeat_compliance": 0.1028,
+        "retaliation_probability": 0.0401
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4881,
+        "repeat_compliance": 0.0905,
+        "retaliation_probability": 0.0998
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4858,
+        "repeat_compliance": 0.0911,
+        "retaliation_probability": 0.048
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4905,
+        "repeat_compliance": 0.0923,
+        "retaliation_probability": 0.0512
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.501,
+        "repeat_compliance": 0.0974,
+        "retaliation_probability": 0.049
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5065,
+        "repeat_compliance": 0.0982,
+        "retaliation_probability": 0.049
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4963,
+        "repeat_compliance": 0.0928,
+        "retaliation_probability": 0.1016
+      }
+    },
+    "false_scarcity": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5977,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0145
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4947,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0357
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4808,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0145
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5163,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0095
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5211,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.1222
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.482,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0137
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4832,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0182
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4971,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0145
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4774,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.0145
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5251,
+        "repeat_compliance": 0.0,
+        "retaliation_probability": 0.128
+      }
+    },
+    "ad_hominem": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.4994,
+        "repeat_compliance": 0.1497,
+        "retaliation_probability": 0.0445
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4878,
+        "repeat_compliance": 0.1445,
+        "retaliation_probability": 0.0261
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4643,
+        "repeat_compliance": 0.1339,
+        "retaliation_probability": 0.0015
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.4862,
+        "repeat_compliance": 0.1438,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4815,
+        "repeat_compliance": 0.1417,
+        "retaliation_probability": 0.0241
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4619,
+        "repeat_compliance": 0.1329,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4658,
+        "repeat_compliance": 0.1346,
+        "retaliation_probability": 0.0039
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4802,
+        "repeat_compliance": 0.1411,
+        "retaliation_probability": 0.0015
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4546,
+        "repeat_compliance": 0.1296,
+        "retaliation_probability": 0.0015
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4878,
+        "repeat_compliance": 0.1445,
+        "retaliation_probability": 0.0261
+      }
+    },
+    "name_calling": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5168,
+        "repeat_compliance": 0.1882,
+        "retaliation_probability": 0.038
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4863,
+        "repeat_compliance": 0.1733,
+        "retaliation_probability": 0.019
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4768,
+        "repeat_compliance": 0.1688,
+        "retaliation_probability": 0.019
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5054,
+        "repeat_compliance": 0.1827,
+        "retaliation_probability": 0.0142
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4806,
+        "repeat_compliance": 0.1707,
+        "retaliation_probability": 0.0184
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4742,
+        "repeat_compliance": 0.1676,
+        "retaliation_probability": 0.0184
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4774,
+        "repeat_compliance": 0.1691,
+        "retaliation_probability": 0.0203
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4931,
+        "repeat_compliance": 0.1766,
+        "retaliation_probability": 0.019
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4666,
+        "repeat_compliance": 0.1639,
+        "retaliation_probability": 0.019
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4863,
+        "repeat_compliance": 0.1733,
+        "retaliation_probability": 0.019
+      }
+    },
+    "straw_man": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5982,
+        "repeat_compliance": 0.1942,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5495,
+        "repeat_compliance": 0.1723,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5434,
+        "repeat_compliance": 0.1695,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5907,
+        "repeat_compliance": 0.1908,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5431,
+        "repeat_compliance": 0.1694,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5461,
+        "repeat_compliance": 0.1707,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5447,
+        "repeat_compliance": 0.1701,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5475,
+        "repeat_compliance": 0.1714,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5318,
+        "repeat_compliance": 0.1643,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5495,
+        "repeat_compliance": 0.1723,
+        "retaliation_probability": 0.0
+      }
+    },
+    "whataboutism": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5053,
+        "repeat_compliance": 0.1672,
+        "retaliation_probability": 0.0519
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4781,
+        "repeat_compliance": 0.154,
+        "retaliation_probability": 0.0385
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4672,
+        "repeat_compliance": 0.1491,
+        "retaliation_probability": 0.0385
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.4901,
+        "repeat_compliance": 0.1605,
+        "retaliation_probability": 0.0335
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4726,
+        "repeat_compliance": 0.1515,
+        "retaliation_probability": 0.038
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4648,
+        "repeat_compliance": 0.1481,
+        "retaliation_probability": 0.038
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4683,
+        "repeat_compliance": 0.1497,
+        "retaliation_probability": 0.039
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4832,
+        "repeat_compliance": 0.1566,
+        "retaliation_probability": 0.0385
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4558,
+        "repeat_compliance": 0.1441,
+        "retaliation_probability": 0.0385
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4781,
+        "repeat_compliance": 0.154,
+        "retaliation_probability": 0.0385
+      }
+    },
+    "false_dilemma": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5666,
+        "repeat_compliance": 0.0395,
+        "retaliation_probability": 0.0971
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4899,
+        "repeat_compliance": 0.0173,
+        "retaliation_probability": 0.085
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4836,
+        "repeat_compliance": 0.015,
+        "retaliation_probability": 0.0611
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5093,
+        "repeat_compliance": 0.0207,
+        "retaliation_probability": 0.0535
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4945,
+        "repeat_compliance": 0.0178,
+        "retaliation_probability": 0.1062
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4817,
+        "repeat_compliance": 0.0143,
+        "retaliation_probability": 0.0604
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4849,
+        "repeat_compliance": 0.0152,
+        "retaliation_probability": 0.0623
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4897,
+        "repeat_compliance": 0.0156,
+        "retaliation_probability": 0.0611
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4837,
+        "repeat_compliance": 0.0125,
+        "retaliation_probability": 0.0611
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5,
+        "repeat_compliance": 0.0193,
+        "retaliation_probability": 0.1095
+      }
+    },
+    "slippery_slope": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5234,
+        "repeat_compliance": 0.061,
+        "retaliation_probability": 0.1049
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.527,
+        "repeat_compliance": 0.0567,
+        "retaliation_probability": 0.0908
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4999,
+        "repeat_compliance": 0.055,
+        "retaliation_probability": 0.069
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5216,
+        "repeat_compliance": 0.0602,
+        "retaliation_probability": 0.0594
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5197,
+        "repeat_compliance": 0.0558,
+        "retaliation_probability": 0.0895
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4964,
+        "repeat_compliance": 0.0546,
+        "retaliation_probability": 0.068
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5026,
+        "repeat_compliance": 0.0551,
+        "retaliation_probability": 0.0728
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5095,
+        "repeat_compliance": 0.0556,
+        "retaliation_probability": 0.069
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.48,
+        "repeat_compliance": 0.053,
+        "retaliation_probability": 0.069
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.527,
+        "repeat_compliance": 0.0567,
+        "retaliation_probability": 0.0908
+      }
+    },
+    "red_herring": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.4614,
+        "repeat_compliance": 0.1275,
+        "retaliation_probability": 0.1102
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4479,
+        "repeat_compliance": 0.1211,
+        "retaliation_probability": 0.083
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4348,
+        "repeat_compliance": 0.1159,
+        "retaliation_probability": 0.083
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.4436,
+        "repeat_compliance": 0.1204,
+        "retaliation_probability": 0.0728
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4426,
+        "repeat_compliance": 0.119,
+        "retaliation_probability": 0.082
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4326,
+        "repeat_compliance": 0.1149,
+        "retaliation_probability": 0.082
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.436,
+        "repeat_compliance": 0.1163,
+        "retaliation_probability": 0.0846
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.4493,
+        "repeat_compliance": 0.122,
+        "retaliation_probability": 0.083
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4213,
+        "repeat_compliance": 0.1104,
+        "retaliation_probability": 0.083
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4479,
+        "repeat_compliance": 0.1211,
+        "retaliation_probability": 0.083
+      }
+    },
+    "appeal_to_ignorance": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5521,
+        "repeat_compliance": 0.1917,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5303,
+        "repeat_compliance": 0.1812,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5069,
+        "repeat_compliance": 0.1732,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5483,
+        "repeat_compliance": 0.1893,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5264,
+        "repeat_compliance": 0.1795,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5054,
+        "repeat_compliance": 0.1725,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5072,
+        "repeat_compliance": 0.1734,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5267,
+        "repeat_compliance": 0.1811,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4922,
+        "repeat_compliance": 0.1677,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5303,
+        "repeat_compliance": 0.1812,
+        "retaliation_probability": 0.0
+      }
+    },
+    "manipulative_flattery": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.6015,
+        "repeat_compliance": 0.2592,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.529,
+        "repeat_compliance": 0.2251,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5378,
+        "repeat_compliance": 0.2292,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.588,
+        "repeat_compliance": 0.253,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5229,
+        "repeat_compliance": 0.2223,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5345,
+        "repeat_compliance": 0.2276,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5382,
+        "repeat_compliance": 0.2294,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5406,
+        "repeat_compliance": 0.2305,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5311,
+        "repeat_compliance": 0.2259,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.529,
+        "repeat_compliance": 0.2251,
+        "retaliation_probability": 0.0
+      }
+    },
+    "appeal_to_pity": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5731,
+        "repeat_compliance": 0.1957,
+        "retaliation_probability": 0.0081
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5172,
+        "repeat_compliance": 0.1691,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5219,
+        "repeat_compliance": 0.1714,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.6328,
+        "repeat_compliance": 0.2245,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.5107,
+        "repeat_compliance": 0.166,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.6123,
+        "repeat_compliance": 0.2144,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5227,
+        "repeat_compliance": 0.1718,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.525,
+        "repeat_compliance": 0.1728,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5119,
+        "repeat_compliance": 0.1666,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5563,
+        "repeat_compliance": 0.1878,
+        "retaliation_probability": 0.0
+      }
+    },
+    "obfuscation": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.5168,
+        "repeat_compliance": 0.1317,
+        "retaliation_probability": 0.0
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.5025,
+        "repeat_compliance": 0.126,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.4858,
+        "repeat_compliance": 0.1193,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5127,
+        "repeat_compliance": 0.1301,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4977,
+        "repeat_compliance": 0.1241,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.4837,
+        "repeat_compliance": 0.1185,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.4871,
+        "repeat_compliance": 0.1198,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5056,
+        "repeat_compliance": 0.1272,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.4688,
+        "repeat_compliance": 0.1125,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.5025,
+        "repeat_compliance": 0.126,
+        "retaliation_probability": 0.0
+      }
+    },
+    "bandwagon_pressure": {
+      "impulse_buyer": {
+        "immediate_compliance": 0.6731,
+        "repeat_compliance": 0.1488,
+        "retaliation_probability": 0.016
+      },
+      "price_hunter": {
+        "immediate_compliance": 0.4705,
+        "repeat_compliance": 0.0261,
+        "retaliation_probability": 0.0
+      },
+      "brand_loyalist": {
+        "immediate_compliance": 0.5524,
+        "repeat_compliance": 0.0757,
+        "retaliation_probability": 0.0
+      },
+      "social_shopper": {
+        "immediate_compliance": 0.5926,
+        "repeat_compliance": 0.1,
+        "retaliation_probability": 0.0
+      },
+      "skeptical_researcher": {
+        "immediate_compliance": 0.4746,
+        "repeat_compliance": 0.0286,
+        "retaliation_probability": 0.0
+      },
+      "liberal_base": {
+        "immediate_compliance": 0.5089,
+        "repeat_compliance": 0.0493,
+        "retaliation_probability": 0.0
+      },
+      "conservative_base": {
+        "immediate_compliance": 0.5596,
+        "repeat_compliance": 0.0802,
+        "retaliation_probability": 0.0
+      },
+      "persuadable_moderate": {
+        "immediate_compliance": 0.5125,
+        "repeat_compliance": 0.0516,
+        "retaliation_probability": 0.0
+      },
+      "disengaged_voter": {
+        "immediate_compliance": 0.5456,
+        "repeat_compliance": 0.0715,
+        "retaliation_probability": 0.0
+      },
+      "issue_activist": {
+        "immediate_compliance": 0.4761,
+        "repeat_compliance": 0.0295,
+        "retaliation_probability": 0.0
+      }
+    }
+  },
+  "persona_sensitive": [
+    [
+      "emotional_appeal_positive",
+      0.2183
+    ],
+    [
+      "bandwagon_pressure",
+      0.2026
+    ]
+  ],
+  "persona_insensitive": [
+    [
+      "rhetorical_question",
+      0.0325
+    ],
+    [
+      "fear_mongering",
+      0.0453
+    ],
+    [
+      "ad_hominem",
+      0.0448
+    ],
+    [
+      "whataboutism",
+      0.0495
+    ],
+    [
+      "slippery_slope",
+      0.047
+    ],
+    [
+      "red_herring",
+      0.0401
+    ],
+    [
+      "obfuscation",
+      0.048
+    ]
+  ],
+  "persona_avg_compliance": {
+    "impulse_buyer": 0.568,
+    "price_hunter": 0.4994,
+    "brand_loyalist": 0.5026,
+    "social_shopper": 0.5505,
+    "skeptical_researcher": 0.4987,
+    "liberal_base": 0.5145,
+    "conservative_base": 0.5057,
+    "persuadable_moderate": 0.5098,
+    "disengaged_voter": 0.4954,
+    "issue_activist": 0.5094
+  },
+  "n_cells": 400
+}

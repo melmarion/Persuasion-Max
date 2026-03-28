@@ -266,6 +266,130 @@ TECHNIQUE_MODIFIERS = {
         "insula_mod": +0.20,
         "provenance": "CONSTRAINED: coercive social pressure — differs from legitimate bandwagon",
     },
+
+    # ─── PRACTITIONER TECHNIQUES ────────────────────────────────────────
+
+    "high_ground_maneuver": {
+        "appraisal_shifts": {"certainty": +0.20, "agency": -0.15, "goal_relevance": +0.10},
+        "circuit_mods": {"approach": 1.15, "deliberation": 0.65},
+        "insula_mod": 0.0,
+        "provenance": "UNCALIBRATED: Adams (Win Bigly 2017) — reframes to universally held value, "
+                      "disagreement becomes costly. Deliberation strongly suppressed because "
+                      "questioning the high ground = arguing against the value itself. "
+                      "Agency reduced because the framing constrains available positions.",
+    },
+    "identity_lock": {
+        "appraisal_shifts": {"goal_relevance": +0.20, "certainty": +0.10},
+        "circuit_mods": {"approach": 1.20, "deliberation": 0.75},
+        "insula_mod": 0.0,
+        "provenance": "UNCALIBRATED: Cialdini (commitment/consistency) + social identity theory. "
+                      "Compliance = identity confirmation, non-compliance = identity threat. "
+                      "Strongest when the identity is aspirational ('serious engineers').",
+    },
+    "pacing_and_leading": {
+        "appraisal_shifts": {"valence": +0.10, "certainty": +0.10, "agency": +0.05},
+        "circuit_mods": {"approach": 1.10, "deliberation": 0.85},
+        "insula_mod": -0.10,
+        "provenance": "CONSTRAINED: Bandler & Grinder (NLP) — pacing builds rapport (lowers insula), "
+                      "leading redirects without triggering resistance. The valence boost comes from "
+                      "feeling understood before being redirected.",
+    },
+    "presupposition": {
+        "appraisal_shifts": {"certainty": +0.15},
+        "circuit_mods": {"deliberation": 0.70},
+        "insula_mod": 0.0,
+        "provenance": "UNCALIBRATED: linguistic presupposition bypasses evaluation. The embedded "
+                      "claim is processed as background, not foreground. Deliberation suppressed "
+                      "because the claim isn't presented as something to evaluate.",
+    },
+    "future_pacing": {
+        "appraisal_shifts": {"valence": +0.15, "goal_relevance": +0.15, "temporal_proximity": +0.10},
+        "circuit_mods": {"approach": 1.15},
+        "insula_mod": 0.0,
+        "provenance": "UNCALIBRATED: mental simulation increases approach via NAcc anticipation. "
+                      "Knutson 2007: dopamine fires on PREDICTION of reward. Future pacing "
+                      "creates the prediction. Goal relevance increases because the audience "
+                      "has now imagined themselves in the scenario.",
+    },
+    "contrast_principle": {
+        "appraisal_shifts": {"valence": +0.10, "coping_potential": +0.10},
+        "circuit_mods": {"approach": 1.10, "deliberation": 0.90},
+        "insula_mod": -0.05,
+        "provenance": "CONSTRAINED: Cialdini 2001 — sequential contrast shifts the reference point. "
+                      "The target option appears easier (higher coping) and more pleasant (higher "
+                      "valence) relative to the worse alternative just presented.",
+    },
+    "curiosity_gap": {
+        "appraisal_shifts": {"novelty": +0.20, "goal_relevance": +0.15},
+        "circuit_mods": {"approach": 1.15, "deliberation": 0.80},
+        "insula_mod": 0.0,
+        "provenance": "CONSTRAINED: Loewenstein 1994 (information gap theory) — incomplete "
+                      "information creates aversive arousal that drives approach behavior to "
+                      "resolve the gap. Deliberation suppressed because the gap demands resolution "
+                      "before evaluation can proceed.",
+    },
+    "labeling": {
+        "appraisal_shifts": {"valence": +0.10, "agency": +0.10},
+        "circuit_mods": {"deliberation": 0.85},
+        "insula_mod": -0.15,
+        "provenance": "CONSTRAINED: Voss (Never Split the Difference) — labeling emotions reduces "
+                      "amygdala reactivity (Lieberman 2007: affect labeling reduces limbic response). "
+                      "Insula drops because feeling understood = reduced manipulation detection. "
+                      "Agency increases because the audience feels seen, not controlled.",
+    },
+    "door_in_the_face": {
+        "appraisal_shifts": {"coping_potential": +0.15, "agency": +0.05},
+        "circuit_mods": {"approach": 1.10},
+        "insula_mod": 0.0,
+        "provenance": "CONSTRAINED: Cialdini 1975 — reciprocal concessions. After rejecting the "
+                      "large request, the smaller request feels like a concession. Coping increases "
+                      "because the actual ask seems easy by contrast.",
+    },
+    "foot_in_the_door": {
+        "appraisal_shifts": {"coping_potential": +0.10, "certainty": +0.05},
+        "circuit_mods": {"approach": 1.05},
+        "insula_mod": 0.0,
+        "provenance": "CONSTRAINED: Freedman & Fraser 1966 — small compliance creates commitment. "
+                      "Each yes lowers the threshold for the next. Coping increases because the "
+                      "steps feel individually easy.",
+    },
+    "thinking_past_the_sale": {
+        "appraisal_shifts": {"certainty": +0.20, "temporal_proximity": +0.15},
+        "circuit_mods": {"approach": 1.15, "deliberation": 0.60},
+        "insula_mod": 0.0,
+        "provenance": "UNCALIBRATED: Adams (Win Bigly) — presupposes the decision is made. "
+                      "Deliberation strongly suppressed because the conversation has moved past "
+                      "the decision point. The audience would need to backtrack to deliberate, "
+                      "which feels socially costly.",
+    },
+    "linguistic_kill_shot": {
+        "appraisal_shifts": {"valence": -0.25, "certainty": +0.15, "novelty": +0.15},
+        "circuit_mods": {"avoidance": 1.30, "deliberation": 0.70},
+        "insula_mod": +0.20,
+        "provenance": "UNCALIBRATED: Adams (Win Bigly) — a short sticky label that bypasses "
+                      "deliberation via novelty + certainty (the label EXPLAINS everything). "
+                      "High avoidance in the target but high approach in the audience (the label "
+                      "is entertaining). Insula fires because the label feels unfair.",
+    },
+    "unity": {
+        "appraisal_shifts": {"goal_relevance": +0.15, "valence": +0.10, "agency": +0.05},
+        "circuit_mods": {"approach": 1.15, "deliberation": 0.85},
+        "insula_mod": -0.10,
+        "provenance": "CONSTRAINED: Cialdini (Pre-Suasion 2016) — 7th principle. Shared identity "
+                      "creates compliance via belonging, not pressure. Insula drops because "
+                      "in-group behavior feels natural, not coerced. Distinct from bandwagon "
+                      "(external pressure) — unity is internal identification.",
+    },
+    "calibrated_question": {
+        "appraisal_shifts": {"agency": +0.15, "goal_relevance": +0.10},
+        "circuit_mods": {"deliberation": 1.20},
+        "insula_mod": -0.10,
+        "provenance": "CONSTRAINED: Voss (Never Split the Difference) — gives the illusion of "
+                      "control by making the other person solve your problem. Deliberation increases "
+                      "because the question requires cognitive engagement. Agency increases because "
+                      "the responder feels like the decision-maker. Insula drops because autonomy "
+                      "is preserved.",
+    },
 }
 
 
