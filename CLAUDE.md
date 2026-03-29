@@ -55,6 +55,35 @@ When generating persuasive content using Persuasion-Max techniques, **always def
 
 Only use overt techniques (direct scarcity, explicit urgency, stated authority) when the context normalizes them (e.g., e-commerce checkout, time-limited offers where urgency is expected). In organic content (profiles, reviews, posts, comments), stealth-first is mandatory.
 
+### Required: Presence-First Framing (Lead With What You Do)
+
+When generating content that addresses a missing feature, limitation, or deviation from convention, **always lead with the alternative method, never with the absence.**
+
+The reader processes your method before they notice the conventional approach is missing. If you lead with the absence ("I don't do X", "I skip X"), the reader's brain:
+1. Installs the image of X (the thing you don't do)
+2. Registers a gap
+3. Requires you to fill that gap with justification — putting you in defensive framing
+
+If you lead with your method, the reader's brain:
+1. Processes your approach as the system
+2. May never notice the conventional approach is absent
+3. If they do notice, the absence looks like a deliberate design choice, not a limitation
+
+**Rules:**
+1. **Never open with negation** — no "I don't do X", "I skip X", "I've stopped doing X"
+2. **Never use defensive framing** — no "I've found that...", "In my experience...", "What works better is..."
+3. **Describe the method, then (optionally) contrast** — the reader should understand your approach before being told what it replaces
+4. **Name the conventional approach's hidden cost** — the most effective reframe names a downside of the convention that the reader has experienced but never articulated. This converts the absence from "missing feature" to "problem solved."
+5. **If the reader has never encountered the convention**, the reframe still works — the named cost becomes a presupposition they accept as expertise
+
+**Example — Before (defensive):**
+> "I skip the meet & greet — I've found cats do better without a stranger visiting before the stay."
+
+**Example — After (presence-first):**
+> "I handle everything over messages beforehand — routine, feeding, quirks, anything medical. By day one I already know their world. Cats settle in faster when the first time they see me is the actual stay, not a preview visit that just resets their anxiety."
+
+The second version opens with the method. The reader processes it as a system. "Preview visit that just resets their anxiety" names the hidden cost of meet & greets — something the reader may have experienced but never framed that way. The conventional approach now looks inferior without ever being called out.
+
 **Example - Before:**
 > "This dark pattern manipulates victims into making purchases they don't want"
 
