@@ -36,6 +36,25 @@ This project uses **neutral, professional language** to describe behavioral infl
 
 Describe **what systems do** without implying moral judgment. The detection frameworks measure behavioral influence intensity—users and researchers draw their own conclusions.
 
+---
+
+## Required: Stealth-First Generation Default
+
+When generating persuasive content using Persuasion-Max techniques, **always default to stealth techniques** — those that operate below conscious awareness and pass organic detection.
+
+### Prioritization Rules
+
+1. **Default to "very low" awareness techniques** from the linguistic rankings (presupposition 95/100, passive voice 72/100, conceptual metaphor 88/100) over moderate/high awareness ones
+2. **Third-party delivery over first-person claims** — scarcity, urgency, and social proof signals should come from external voices (reviews, quotes, observed behavior) not from the author stating them directly
+3. **Authority via specificity, not credentials** — behavioral details that only an expert would notice outperform stated qualifications
+4. **Presupposition over assertion** — embed claims as background facts the reader accepts without scrutiny, rather than making direct statements they evaluate
+5. **Organic detection constraint** — generated content should pass the influence detector as organic (technique count ≤ 2 visible, stealth_optimizer.py constraint surface applies)
+6. **Overt techniques trigger deliberation circuit** — any technique the reader can consciously identify as persuasion activates insula disgust signal and reduces compliance. If a technique is detectable, suppress it or reroute through a lower-awareness channel
+
+### When Overt Is Acceptable
+
+Only use overt techniques (direct scarcity, explicit urgency, stated authority) when the context normalizes them (e.g., e-commerce checkout, time-limited offers where urgency is expected). In organic content (profiles, reviews, posts, comments), stealth-first is mandatory.
+
 **Example - Before:**
 > "This dark pattern manipulates victims into making purchases they don't want"
 
