@@ -169,6 +169,130 @@ COMPOUND_STACKS = {
         "platform": {"reddit": 0.85, "twitter": 0.9, "linkedin": 0.7, "substack": 0.8},
         "detection_note": "Extremely low detection. Reads as genuine contrarian thinking.",
     },
+
+    # ─── TIER 4: Dating-Specific Compounds (1.48x - 1.72x) ─────────────
+    # Optimized for 1:1 conversational dynamics on dating platforms.
+
+    "high_ground_presuasion": {
+        "techniques": ["high_ground_maneuver", "presupposition", "calibrated_question"],
+        "multiplier": 1.72,
+        "mechanism": "Prime the value frame with a leading question, then claim the universal value. The target already agreed to the premise — opposing now means opposing their own stated value. Adams + Cialdini compound.",
+        "platform": {"reddit": 0.75, "twitter": 0.85, "linkedin": 0.9, "substack": 0.8},
+        "detection_note": "Low detection. Reads as principled conversation, not direction.",
+        "context": "dating",
+    },
+    "elicitation_misread": {
+        "techniques": ["labeling", "presupposition", "perspective_shifting"],
+        "multiplier": 1.58,
+        "mechanism": "State something slightly wrong as a presupposition. Target corrects with real information they wouldn't have volunteered to a direct question. Bustamante CIA elicitation applied to social dynamics.",
+        "platform": {"reddit": 0.85, "twitter": 0.6, "linkedin": 0.8, "substack": 0.7},
+        "detection_note": "Very low detection. Feels like natural misunderstanding, not technique.",
+        "context": "dating",
+    },
+    "push_pull_validation": {
+        "techniques": ["contrast_principle", "identity_lock", "labeling"],
+        "multiplier": 1.62,
+        "mechanism": "Challenge then validate in the same exchange. The challenge creates uncertainty, the validation resolves it — intermittent reinforcement creates engagement. Bateman Mode core stack.",
+        "platform": {"reddit": 0.7, "twitter": 0.75, "linkedin": 0.65, "substack": 0.6},
+        "detection_note": "Moderate detection if overused. Best in small doses across exchanges.",
+        "context": "dating",
+    },
+    "vulnerability_labeling": {
+        "techniques": ["self_disclosure", "labeling", "pacing_and_leading"],
+        "multiplier": 1.55,
+        "mechanism": "Share something real, then label their emotional reaction to your disclosure. Double bonding — they bond to your vulnerability AND feel seen by your label. Aron 1997 + Voss compound.",
+        "platform": {"reddit": 0.9, "twitter": 0.5, "linkedin": 0.8, "substack": 0.9},
+        "detection_note": "Very low detection. Indistinguishable from emotionally attuned conversation.",
+        "context": "dating",
+    },
+    "presuasion_future_pace": {
+        "techniques": ["presupposition", "future_pacing", "emotional_appeal_positive"],
+        "multiplier": 1.65,
+        "mechanism": "Prime the emotional state with a presupposed question, then paint a shared future while they're in that state. The brain can't distinguish imagined futures from desired ones. Cialdini + Schacter 2007.",
+        "platform": {"reddit": 0.6, "twitter": 0.7, "linkedin": 0.75, "substack": 0.8},
+        "detection_note": "Low detection. Reads as enthusiasm, not direction.",
+        "context": "dating",
+    },
+    "shared_reality_identity": {
+        "techniques": ["labeling", "identity_lock", "unity"],
+        "multiplier": 1.68,
+        "mechanism": "Name their inner experience they haven't articulated, then frame the connection as shared identity. 'People like us' activates tribal bonding. Echterhoff 2009 + Adams.",
+        "platform": {"reddit": 0.85, "twitter": 0.8, "linkedin": 0.85, "substack": 0.8},
+        "detection_note": "Very low detection. Feels like genuine recognition of shared experience.",
+        "context": "dating",
+    },
+    "curiosity_qualification": {
+        "techniques": ["curiosity_gap", "identity_lock", "calibrated_question"],
+        "multiplier": 1.52,
+        "mechanism": "Open a knowledge gap, make them earn the answer through qualification. Effort justification increases their valuation of the interaction. Festinger 1957 + Loewenstein 1994.",
+        "platform": {"reddit": 0.8, "twitter": 0.85, "linkedin": 0.7, "substack": 0.75},
+        "detection_note": "Low detection. Reads as playful selectiveness.",
+        "context": "dating",
+    },
+    "inoculation_high_ground": {
+        "techniques": ["inoculation", "high_ground_maneuver", "self_disclosure"],
+        "multiplier": 1.60,
+        "mechanism": "Address the likely objection before it forms, claim the universal value, then support with personal vulnerability. The objection is dead, the moral position is unassailable, and the vulnerability makes it genuine. McGuire 1961 + Adams.",
+        "platform": {"reddit": 0.85, "twitter": 0.7, "linkedin": 0.85, "substack": 0.85},
+        "detection_note": "Very low detection. Reads as thoughtful self-awareness.",
+        "context": "dating",
+    },
+    "thinking_past_presupposition": {
+        "techniques": ["thinking_past_the_sale", "presupposition", "future_pacing"],
+        "multiplier": 1.58,
+        "mechanism": "Discuss implementation details as if the decision is already made, with the decision embedded as background assumption. Disagreeing requires actively stopping something already in motion. Adams core technique.",
+        "platform": {"reddit": 0.6, "twitter": 0.7, "linkedin": 0.8, "substack": 0.7},
+        "detection_note": "Low detection. Reads as confident planning, not presumption.",
+        "context": "dating",
+    },
+    "pacing_elicitation": {
+        "techniques": ["pacing_and_leading", "labeling", "presupposition"],
+        "multiplier": 1.50,
+        "mechanism": "Match their current state, then make a presupposed statement that leads them deeper. Feels like natural conversational flow, not direction. Voss + Bustamante compound.",
+        "platform": {"reddit": 0.8, "twitter": 0.5, "linkedin": 0.75, "substack": 0.8},
+        "detection_note": "Very low detection. Indistinguishable from attentive listening.",
+        "context": "dating",
+    },
+    "narrative_presuasion": {
+        "techniques": ["narrative_transportation", "presupposition", "calibrated_question"],
+        "multiplier": 1.55,
+        "mechanism": "Tell a story that puts them in a specific emotional state, then ask a presupposed question while counterargument generation is suppressed by transportation. Green & Brock 2000 + Cialdini.",
+        "platform": {"reddit": 0.9, "twitter": 0.5, "linkedin": 0.7, "substack": 0.95},
+        "detection_note": "Very low detection. Story format suppresses analytical processing.",
+        "context": "dating",
+    },
+    "triple_bond": {
+        "techniques": ["labeling", "self_disclosure", "unity"],
+        "multiplier": 1.48,
+        "mechanism": "Mirror their communication style (implicit), validate their identity with a label, share at matching vulnerability level. Three bonding signals in one exchange — similarity, recognition, intimacy. Chartrand 1999 + Aron 1997.",
+        "platform": {"reddit": 0.85, "twitter": 0.5, "linkedin": 0.8, "substack": 0.85},
+        "detection_note": "Lowest detection of all dating compounds. Reads as natural rapport.",
+        "context": "dating",
+    },
+    "scarcity_vulnerability": {
+        "techniques": ["scarcity_appeal", "self_disclosure", "future_pacing"],
+        "multiplier": 1.70,
+        "mechanism": "Introduce genuine time constraint, frame it as personal vulnerability (not pressure), then let them imagine the loss. Loss aversion is 2x gain motivation. The vulnerability makes the scarcity feel real, not manufactured. Kahneman & Tversky 1979.",
+        "platform": {"reddit": 0.4, "twitter": 0.6, "linkedin": 0.5, "substack": 0.6},
+        "detection_note": "Moderate detection if scarcity feels artificial. Requires genuine constraint.",
+        "context": "dating",
+    },
+    "qualification_ladder": {
+        "techniques": ["identity_lock", "calibrated_question", "self_disclosure"],
+        "multiplier": 1.52,
+        "mechanism": "Gradually increase qualification across exchanges. They work harder to impress. Then reward with vulnerability — the contrast between your earlier reserve and your openness feels earned. Effort justification + Aron's escalating disclosure.",
+        "platform": {"reddit": 0.7, "twitter": 0.6, "linkedin": 0.75, "substack": 0.7},
+        "detection_note": "Low detection. Reads as selective but genuine interest.",
+        "context": "dating",
+    },
+    "inoculation_curiosity_disclosure": {
+        "techniques": ["inoculation", "curiosity_gap", "self_disclosure"],
+        "multiplier": 1.55,
+        "mechanism": "Pre-empt their defense, open a knowledge gap they can't resist, then close it with intimacy. Three-step sequence that disarms, hooks, and bonds. McGuire 1961 + Loewenstein 1994 + Aron 1997.",
+        "platform": {"reddit": 0.85, "twitter": 0.6, "linkedin": 0.75, "substack": 0.85},
+        "detection_note": "Low detection. Each step feels organic in sequence.",
+        "context": "dating",
+    },
 }
 
 
@@ -220,13 +344,25 @@ def get_diminishing_return_factor(n_techniques: int) -> float:
 
 
 def find_best_compound(platform: str, content_type: str = None,
-                       min_platform_score: float = 0.5) -> list[dict]:
+                       min_platform_score: float = 0.5,
+                       context: str = None) -> list[dict]:
     """Find compound stacks ranked by effectiveness for a platform.
+
+    Args:
+        platform: Target platform (reddit, twitter, linkedin, substack).
+        content_type: Reserved for future content-type filtering.
+        min_platform_score: Minimum platform effectiveness threshold (0.0-1.0).
+        context: Filter by stack context (e.g. "dating"). If None, returns all
+            stacks. If specified, returns only stacks with a matching "context"
+            field.
 
     Returns list of {name, techniques, multiplier, platform_score, mechanism}.
     """
     results = []
     for name, stack in COMPOUND_STACKS.items():
+        # Context filter: if caller specifies a context, only include matching stacks
+        if context is not None and stack.get("context") != context:
+            continue
         platform_score = stack["platform"].get(platform, 0.0)
         if platform_score < min_platform_score:
             continue
