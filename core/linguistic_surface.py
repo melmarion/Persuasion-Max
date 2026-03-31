@@ -2,10 +2,28 @@ from __future__ import annotations
 """
 Linguistic Surface Features — Zero-cost predictive signal layer
 ================================================================
-12 features extracted via dictionary lookup and regex. No LLM calls.
+15 features extracted via dictionary lookup and regex. No LLM calls.
 Based on Ta et al. 2022, LIWC-22 (Boyd et al. 2022), and the
 Wilczynski et al. 2024 finding that manipulative content is measurably
 MORE emotional, LESS analytical, LONGER, with HIGHER lexical diversity.
+
+Features 13-15 (visual_density, sentence_burstiness, strategic_ambiguity)
+are derived from Adams (2017) persuasion analysis and complement the
+existing 12 with structural and framing signals:
+
+  visual_density      — visual language concentration (named people, imagery,
+                        spatial/color terms). Adams: vision is the most
+                        persuasive sense; visual language activates it in text.
+
+  sentence_burstiness — coefficient of variation in sentence length. Short
+                        sentences punched against long ones (Tate/Adams
+                        structural DNA) create rhythm that holds attention
+                        and prevents habituation.
+
+  strategic_ambiguity — confident vagueness: high certainty markers + low
+                        concreteness + low analytical. Distinct from hedging
+                        (uncertainty). Strategic ambiguity lets each recipient
+                        fill in the version that persuades them most.
 
 These features are orthogonal to the 7 appraisal dimensions — they
 measure properties of the TEXT, not the READER'S evaluation. Adding
@@ -72,10 +90,34 @@ specifically particularly notably significantly importantly essentially
 fundamentally additionally meanwhile conversely alternatively whereas
 """.split())
 
+# Visual language — activates mental imagery without requiring an actual image.
+# Adams (2017): vision is the most persuasive sense; visual language triggers
+# the same mental simulation as seeing. Named people are especially potent
+# because they evoke a recognizable face (the strongest visual anchor).
+_VISUAL_SCENE_WORDS = set("""
+imagine picture see look watch appear show display face eye hand
+red blue green black white dark bright golden silver orange purple
+above below behind front around inside outside left right tall short
+room wall floor door window sky street road field crowd stage
+""".split())
+
+# Vague quantifiers used with confidence — the raw material of strategic ambiguity.
+# These are scope-limiters that leave the claim underspecified while sounding
+# authoritative. Distinct from hedge_words, which signal uncertainty.
+_VAGUE_QUANTIFIERS = set("""
+some many several certain various numerous countless most others
+everyone nobody anyone someone something anything everything nothing
+""".split())
+
 
 @dataclass
 class LinguisticFeatures:
-    """12 surface features extracted from text. No LLM inference required."""
+    """15 surface features extracted from text. No LLM inference required.
+
+    Features 1-12: original linguistic surface layer.
+    Features 13-15: structural/framing signals from Adams (2017) persuasion
+    analysis — visual density, sentence burstiness, strategic ambiguity.
+    """
     word_count: int = 0
     emotionality: float = 0.0        # % words in emotion categories
     concreteness: float = 0.5        # concrete vs abstract language ratio
@@ -86,8 +128,12 @@ class LinguisticFeatures:
     self_reference: float = 0.0      # % first-person pronouns
     other_reference: float = 0.0     # % second-person pronouns (you/your)
     reading_difficulty: float = 0.0  # 0=easy, 1=hard (Flesch-Kincaid based)
-    tone_positive: float = 0.0      # % positive sentiment words
-    tone_negative: float = 0.0      # % negative sentiment words
+    tone_positive: float = 0.0       # % positive sentiment words
+    tone_negative: float = 0.0       # % negative sentiment words
+    # ── Features 13-15 (Adams-derived) ──────────────────────────────────────
+    visual_density: float = 0.0      # % visual scene/imagery words + named-person density
+    sentence_burstiness: float = 0.0 # CoV of sentence lengths (short+long rhythm)
+    strategic_ambiguity: float = 0.0 # confident vagueness: certainty × (1-concreteness) × (1-analytical)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -106,6 +152,9 @@ class LinguisticFeatures:
             self.reading_difficulty,
             self.tone_positive,
             self.tone_negative,
+            self.visual_density,
+            self.sentence_burstiness,
+            self.strategic_ambiguity,
         ]
 
 
@@ -176,6 +225,52 @@ def extract_linguistic_features(text: str) -> LinguisticFeatures:
     tone_positive = pos_hits / n
     tone_negative = neg_hits / n
 
+    # ── Feature 13: Visual density ────────────────────────────────────────────
+    # Two signals combined:
+    #   (a) % scene/imagery/color/spatial words
+    #   (b) named-person density — proper nouns mid-sentence (not at start)
+    #       are strong visual anchors; they evoke a face, not just a concept.
+    visual_hits = sum(1 for w in words if w in _VISUAL_SCENE_WORDS)
+    visual_word_density = visual_hits / n
+    # Named-person proxy: capitalized tokens that are NOT the first word of
+    # a sentence. Raw text scan (not the lowercased word list).
+    named_persons = len(re.findall(
+        r'(?<![.!?\n])\s+[A-Z][a-z]{2,}(?:\s+[A-Z][a-z]{2,})*',
+        text
+    ))
+    named_density = named_persons / max(n_sentences, 1) / 5.0  # normalize: ~5 named/sentence = 1.0
+    visual_density = round(min(1.0, visual_word_density + named_density * 0.3), 4)
+
+    # ── Feature 14: Sentence burstiness ──────────────────────────────────────
+    # Coefficient of variation (std/mean) of sentence lengths in words.
+    # A flat rhythm (low CoV) reads like a report. A bursty rhythm
+    # (high CoV) — short punches followed by longer elaborations — holds
+    # attention and prevents the brain from tuning out.
+    # Adams and the Tate structural DNA both use this pattern deliberately.
+    sentence_lengths = [len(re.findall(r'\b[a-zA-Z]+\b', s)) for s in sentences if s]
+    if len(sentence_lengths) >= 2 and sum(sentence_lengths) > 0:
+        mean_len = sum(sentence_lengths) / len(sentence_lengths)
+        variance = sum((l - mean_len) ** 2 for l in sentence_lengths) / len(sentence_lengths)
+        std_len = variance ** 0.5
+        cov = std_len / mean_len if mean_len > 0 else 0.0
+        sentence_burstiness = round(min(1.0, cov / 1.5), 4)  # normalize: CoV of 1.5 = fully bursty
+    else:
+        sentence_burstiness = 0.0
+
+    # ── Feature 15: Strategic ambiguity ──────────────────────────────────────
+    # Confident vagueness: the sender is certain in tone but underspecified
+    # in content. Each recipient fills in the version that persuades them most.
+    # Formula: certainty_markers × (1 - concreteness) × (1 - analytical_thinking)
+    # High certainty + low concreteness + low analytical = confident but unanchored.
+    # Distinct from hedging (which is uncertain + vague). Strategic ambiguity
+    # is certain + vague — the combination that lets claims mean different things
+    # to different people while sounding authoritative to all of them.
+    vague_hits = sum(1 for w in words if w in _VAGUE_QUANTIFIERS)
+    vague_quantifier_density = vague_hits / n
+    # Blend the two signals: formula + raw vague quantifier density
+    sa_formula = certainty_markers * (1.0 - concreteness) * (1.0 - analytical_thinking)
+    strategic_ambiguity = round(min(1.0, sa_formula * 0.6 + vague_quantifier_density * 0.4), 4)
+
     return LinguisticFeatures(
         word_count=word_count,
         emotionality=round(emotionality, 4),
@@ -189,4 +284,7 @@ def extract_linguistic_features(text: str) -> LinguisticFeatures:
         reading_difficulty=round(reading_difficulty, 4),
         tone_positive=round(tone_positive, 4),
         tone_negative=round(tone_negative, 4),
+        visual_density=visual_density,
+        sentence_burstiness=sentence_burstiness,
+        strategic_ambiguity=strategic_ambiguity,
     )
