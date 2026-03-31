@@ -1,5 +1,7 @@
 # Persuasion-Max: A Multi-Layer Mechanistic Predictor of Persuasive Effectiveness
 
+Research codebase for computational persuasion modeling by a behavioral scientist who treats influence as a mechanistic system rather than a copywriting vibe.
+
 **5-layer architecture grounded in limbic neuroscience. 302 parameters (62.6% empirically grounded). Calibrated on 126K interactions across 2 corpora. 297 tests passing.**
 
 ## Abstract
