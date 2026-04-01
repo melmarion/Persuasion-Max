@@ -44,6 +44,23 @@ Text Stimulus
             → domain-specific outcomes
 ```
 
+## Architecture Diagram
+
+```mermaid
+flowchart LR
+    A["Text Stimulus"] --> B["L1 Linguistic Surface"]
+    A --> C["L2 Appraisal Extraction"]
+    A --> D["L3 Technique Detection"]
+    C --> E["L4 Recipient Modulation"]
+    D --> E
+    B --> F["L5 Domain Weights"]
+    C --> F
+    E --> F
+    F --> G["Circuit Activations"]
+    G --> H["Compliance / Rejection / Delay"]
+    H --> I["Immediate / Repeat / Retaliation"]
+```
+
 ## Key Empirical Results
 
 ### Multi-Domain Calibration (N=126,288)
