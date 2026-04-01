@@ -2,6 +2,13 @@
 
 Research codebase for computational persuasion modeling by a behavioral scientist who treats influence as a mechanistic system rather than a copywriting vibe.
 
+## At a Glance
+
+- **Problem modeled:** why a message persuades, fails, or backfires across different recipients and domains
+- **Interesting mechanism:** a 5-layer pipeline combining linguistic surface cues, cognitive appraisal, technique detection, recipient modulation, and domain weight registries
+- **Technically real:** 302 parameter registry, calibration and ablation workflows, 126K-sample evaluation, and 297 passing tests
+- **Look here first:** `core/`, `validation/`, `calibration/`, and `results/weight_registry.csv`
+
 **5-layer architecture grounded in limbic neuroscience. 302 parameters (62.6% empirically grounded). Calibrated on 126K interactions across 2 corpora. 297 tests passing.**
 
 ## Abstract
