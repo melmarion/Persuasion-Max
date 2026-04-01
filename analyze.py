@@ -13,12 +13,12 @@ Usage:
 import sys
 import json
 import argparse
+from pathlib import Path
 
-sys.path.insert(0, ".")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from core.limbic_cascade import LimbicCascade
 from core.ux_patterns import UXPatternLibrary
-from core.technique_to_appraisal import apply_technique_impacts
 
 
 def cmd_analyze(args):
@@ -84,6 +84,7 @@ def cmd_patterns(args):
 def main():
     parser = argparse.ArgumentParser(description="Limbic Decision Cascade Analyzer")
     sub = parser.add_subparsers(dest="command")
+    command_aliases = {"analyze", "a", "compare", "c", "patterns", "p", "-h", "--help"}
 
     # analyze subcommand (also the default)
     an = sub.add_parser("analyze", aliases=["a"])
@@ -108,7 +109,7 @@ def main():
     pat.add_argument("--search", default=None)
 
     # If no subcommand, treat first arg as text to analyze
-    if len(sys.argv) > 1 and sys.argv[1] not in ("analyze", "a", "compare", "c", "patterns", "p", "-h", "--help"):
+    if len(sys.argv) > 1 and sys.argv[1] not in command_aliases:
         sys.argv.insert(1, "analyze")
 
     args = parser.parse_args()

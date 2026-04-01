@@ -18,8 +18,8 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 from core.appraisal_extractor import AppraisalExtractor, AppraisalScores
-from core.circuit_predictor import CircuitPredictor, CircuitActivations, BehavioralPrediction, persuasion_effectiveness
-from core.technique_detector import TechniqueDetector, TechniqueResult
+from core.circuit_predictor import CircuitPredictor, CircuitActivations, BehavioralPrediction
+from core.technique_detector import TechniqueDetector
 from core.technique_to_circuit import TechniqueCircuitMapper, TECHNIQUE_MODIFIERS
 from core.recipient_profile import RecipientProfile
 from core.recipient_modulator import RecipientModulator
@@ -47,7 +47,7 @@ class DomainPrediction:
     provenance_summary: dict = field(default_factory=dict)
 
     # Full prediction object
-    prediction: BehavioralPrediction = None
+    prediction: Optional[BehavioralPrediction] = None
 
     def to_dict(self) -> dict:
         return {
