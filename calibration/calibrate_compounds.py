@@ -39,7 +39,7 @@ from core.compound_techniques import COMPOUND_STACKS
 OUTPUT_DIR = Path(__file__).parent.parent / "calibration" / "results"
 
 
-def featurize_with_cache(samples, max_samples=20000):
+def featurize_with_cache(samples, max_samples=130000):
     """Featurize samples with technique detection, using cache if available."""
     cache_path = OUTPUT_DIR / "featurized_cache.npz"
 
@@ -124,7 +124,7 @@ def calibrate_compounds(tech_matrix, y, tech_names):
         none_present = np.all(tech_matrix[:, indices] == 0, axis=1)
         n_absent = none_present.sum()
 
-        if n_present < 10:
+        if n_present < 3:
             print("  %s: TOO FEW — only %d samples with all techniques" % (stack_name, n_present))
             results[stack_name] = {
                 "status": "insufficient_data",
@@ -205,7 +205,7 @@ def main():
 
     tech_names = list(TECHNIQUES.keys())
 
-    X, y, tech_matrix = featurize_with_cache(samples, max_samples=20000)
+    X, y, tech_matrix = featurize_with_cache(samples)
     print("Feature matrix: %s, Tech matrix: %s" % (X.shape, tech_matrix.shape))
 
     # Calibrate compound stacks
