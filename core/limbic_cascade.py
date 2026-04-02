@@ -33,6 +33,7 @@ from core.circuit_predictor import (
 from core.somatic_marker_store import SomaticMarkerStore
 from core.reframing_engine import ReframingEngine, TradeoffProjection
 from core.ux_patterns import UXPatternLibrary
+from core.relational_interpreter import RelationalInterpretation, RelationalInterpreter
 
 
 @dataclass
@@ -59,6 +60,7 @@ class CascadeResult:
     stages: list[StageTrace]
     tradeoffs: list
     top_fix: Optional[TradeoffProjection]
+    relational_interpretation: Optional[RelationalInterpretation] = None
 
     def to_dict(self) -> dict:
         d = {
@@ -72,6 +74,10 @@ class CascadeResult:
             "familiarity": self.familiarity,
             "weakest_dimension": self.appraisal.weakest_dimension(),
             "tradeoff_count": len(self.tradeoffs),
+            "relational_interpretation": (
+                self.relational_interpretation.to_dict()
+                if self.relational_interpretation else None
+            ),
         }
         if self.top_fix:
             d["top_fix"] = {
@@ -139,6 +145,7 @@ class LimbicCascade:
         self.predictor = CircuitPredictor()
         self.markers = SomaticMarkerStore(store_path=marker_store_path)
         self.reframer = ReframingEngine()
+        self.relational_interpreter = RelationalInterpreter()
         self.extraction_mode = extraction_mode
 
     def analyze(
@@ -294,6 +301,9 @@ class LimbicCascade:
             insula_disgust_signal=disgust_signal,
             familiarity=familiarity,
         )
+        relational_interpretation = self.relational_interpreter.interpret(
+            text, appraisal, prediction.circuits, prediction
+        )
 
         return CascadeResult(
             stimulus=text,
@@ -307,6 +317,7 @@ class LimbicCascade:
             stages=stages,
             tradeoffs=tradeoffs,
             top_fix=top,
+            relational_interpretation=relational_interpretation,
         )
 
     def compare(self, text_a: str, text_b: str, **kwargs) -> dict:
