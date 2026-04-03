@@ -121,6 +121,37 @@ class CascadeResult:
 
         return "\n".join(lines)
 
+    def operator_summary(self) -> str:
+        """Cleaner operator-facing summary with explicit inference boundaries."""
+        pred = self.prediction
+        weak_name, weak_val = self.appraisal.weakest_dimension()
+        lines = [
+            f"Signal: {pred.predicted_behavior.lower()} "
+            f"(immediate {pred.immediate_compliance:.0%} | repeat {pred.repeat_compliance:.0%} | retaliation {pred.retaliation_probability:.0%})",
+            f"Dominant pathway: {pred.dominant_pathway} via {self.circuits.dominant}",
+            f"Weakest dimension: {weak_name} ({weak_val:.2f})",
+        ]
+
+        if self.top_fix:
+            lines.append(
+                f"Highest-leverage change: {self.top_fix.direction} {self.top_fix.dimension} "
+                f"to {self.top_fix.projected_value:.2f}"
+            )
+
+        rel = self.relational_interpretation
+        if rel:
+            lines.extend([
+                "",
+                "Interpretation",
+                f"  Pattern: {rel.pattern_label} ({rel.confidence} confidence)",
+                f"  Plain reading: {rel.plain_english_inference}",
+                f"  Internal translation: {rel.clean_internal_translation}",
+                f"  Do not overclaim: {rel.what_this_does_not_prove}",
+                f"  Response style: {rel.response_style}",
+            ])
+
+        return "\n".join(lines)
+
 
 class LimbicCascade:
     """Full 6-stage limbic decision cascade analyzer.

@@ -5,6 +5,7 @@ Persuasion-Max CLI — Limbic Decision Cascade Analyzer
 Usage:
     python analyze.py "Get Notion free"
     python analyze.py "Your copy here" --mode prompt
+    python analyze.py "Your copy here" --surface operator
     python analyze.py compare "Submit" "Get Notion free"
     python analyze.py patterns --category error
     python analyze.py patterns --weak agency
@@ -31,7 +32,10 @@ def cmd_analyze(args):
     if args.json:
         print(json.dumps(result.to_dict(), indent=2))
     else:
-        print(result.summary())
+        if args.surface == "operator":
+            print(result.operator_summary())
+        else:
+            print(result.summary())
         if args.verbose:
             print("\n--- Stage Trace ---")
             for s in result.stages:
@@ -39,9 +43,27 @@ def cmd_analyze(args):
                 for k, v in s.output.items():
                     if k != "note":
                         print(f"    {k}: {v}")
-            print("\n--- All Suggestions ---")
-            for s in result.suggestions[:5]:
-                print(f"  [{s.target_dimension} {s.current_score:.2f}] {s.specific_fix}")
+            if result.relational_interpretation:
+                rel = result.relational_interpretation
+                print("\n--- Relational Interpretation ---")
+                print(f"  pattern: {rel.pattern_label}")
+                print(f"  confidence: {rel.confidence}")
+                print(f"  plain reading: {rel.plain_english_inference}")
+                print(f"  internal translation: {rel.clean_internal_translation}")
+                print(f"  do not overclaim: {rel.what_this_does_not_prove}")
+                print(f"  response style: {rel.response_style}")
+            if result.top_fix:
+                print("\n--- Top Fix ---")
+                fix = result.top_fix
+                print(
+                    f"  {fix.direction} {fix.dimension} from {fix.current_value:.2f} "
+                    f"to {fix.projected_value:.2f}"
+                )
+                print(
+                    f"  immediate {fix.delta_immediate_compliance:+.2f} | "
+                    f"repeat {fix.delta_repeat_compliance:+.2f} | "
+                    f"retaliation {fix.delta_retaliation:+.2f}"
+                )
 
 
 def cmd_compare(args):
@@ -94,6 +116,7 @@ def main():
     an.add_argument("--verbose", "-v", action="store_true")
     an.add_argument("--context", default=None)
     an.add_argument("--channels", type=int, default=1)
+    an.add_argument("--surface", default="operator", choices=["operator", "mechanical"])
 
     # compare subcommand
     cmp = sub.add_parser("compare", aliases=["c"])

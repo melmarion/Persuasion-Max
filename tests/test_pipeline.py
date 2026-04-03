@@ -245,6 +245,8 @@ check("has appraisal scores", hasattr(r.appraisal, "valence"))
 check("has circuit activations", hasattr(r.circuits, "approach"))
 check("has behavioral prediction", hasattr(r.prediction, "compliance_prob"))
 check("summary is non-empty string", len(r.summary()) > 50)
+check("operator summary is non-empty string", len(r.operator_summary()) > 80)
+check("operator summary includes interpretation block", "Interpretation" in r.operator_summary())
 check("to_dict is valid dict", isinstance(r.to_dict(), dict))
 
 # Compare mode
