@@ -48,9 +48,19 @@ def cmd_analyze(args):
                 print("\n--- Relational Interpretation ---")
                 print(f"  pattern: {rel.pattern_label}")
                 print(f"  confidence: {rel.confidence}")
+                print(f"  signal present: {rel.signal_present}")
                 print(f"  plain reading: {rel.plain_english_inference}")
+                print(f"  guardedness: {rel.guardedness_read}")
+                print(f"  pressure: {rel.pressure_read}")
+                print(f"  congruence: {rel.congruence_read}")
+                print(f"  distancing: {rel.distancing_read}")
+                print(f"  ambiguity: {rel.ambiguity_read}")
                 print(f"  internal translation: {rel.clean_internal_translation}")
                 print(f"  do not overclaim: {rel.what_this_does_not_prove}")
+                print(f"  next move: {rel.next_move}")
+                print(f"  autonomy protection: {rel.autonomy_protection}")
+                print(f"  tactical empathy: {rel.tactical_empathy}")
+                print(f"  calibrated question posture: {rel.calibrated_question_posture}")
                 print(f"  response style: {rel.response_style}")
             if result.top_fix:
                 print("\n--- Top Fix ---")
@@ -74,9 +84,26 @@ def cmd_compare(args):
     else:
         print(f"A: \"{comp['a']['text']}\"")
         print(f"   Effectiveness: {comp['a']['effectiveness']:.0%} | Behavior: {comp['a']['behavior']}")
+        if comp["a"].get("signal_present"):
+            print(f"   Signal present: {comp['a']['signal_present']}")
+        if comp["a"].get("best_next_move"):
+            print(f"   Best next move: {comp['a']['best_next_move']}")
         print(f"B: \"{comp['b']['text']}\"")
         print(f"   Effectiveness: {comp['b']['effectiveness']:.0%} | Behavior: {comp['b']['behavior']}")
+        if comp["b"].get("signal_present"):
+            print(f"   Signal present: {comp['b']['signal_present']}")
+        if comp["b"].get("best_next_move"):
+            print(f"   Best next move: {comp['b']['best_next_move']}")
         print(f"\nWinner: {comp['winner'].upper()} (delta: {comp['delta_effectiveness']:+.0%})")
+        if comp.get("operator_delta"):
+            op = comp["operator_delta"]
+            print("\nOperator Delta")
+            print(f"   Signal shift: {op['signal_shift']}")
+            print(f"   Cleaner on pressure: {op['pressure_cleaner'].upper()}")
+            print(f"   Cleaner on congruence: {op['congruence_cleaner'].upper()}")
+            print(f"   Cleaner on ambiguity: {op['ambiguity_cleaner'].upper()}")
+            print(f"   Autonomy posture A: {op['autonomy_protection_upgrade']['a']}")
+            print(f"   Autonomy posture B: {op['autonomy_protection_upgrade']['b']}")
 
 
 def cmd_patterns(args):

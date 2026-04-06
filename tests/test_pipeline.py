@@ -247,12 +247,18 @@ check("has behavioral prediction", hasattr(r.prediction, "compliance_prob"))
 check("summary is non-empty string", len(r.summary()) > 50)
 check("operator summary is non-empty string", len(r.operator_summary()) > 80)
 check("operator summary includes interpretation block", "Interpretation" in r.operator_summary())
+check("operator summary includes signal present", "Signal present:" in r.operator_summary())
+check("operator summary includes best next move", "Best next move:" in r.operator_summary())
+check("operator summary includes autonomy protection", "Autonomy protection:" in r.operator_summary())
 check("to_dict is valid dict", isinstance(r.to_dict(), dict))
 
 # Compare mode
 comp = cascade.compare("Submit", "Get Notion free")
 check("compare returns dict with winner", "winner" in comp)
 check("compare has delta", "delta_effectiveness" in comp)
+check("compare exposes operator delta", "operator_delta" in comp and isinstance(comp["operator_delta"], dict))
+check("compare exposes signal present for A", "signal_present" in comp["a"])
+check("compare exposes best next move for B", "best_next_move" in comp["b"])
 
 # Effectiveness ordering: good copy > bad copy
 r_good = cascade.analyze("Free 14-day trial. Cancel anytime.")

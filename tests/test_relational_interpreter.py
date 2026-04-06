@@ -29,6 +29,9 @@ def test_interpretation_is_user_only():
     assert interpretation.suggested_outbound_text is None
     assert interpretation.pattern_label == "ambiguity_or_non-commitment"
     assert "non-commitment" in interpretation.clean_internal_translation
+    assert "ambiguity" in interpretation.signal_present.lower()
+    assert "narrow next-step question" in interpretation.calibrated_question_posture
+    assert "make the next step smaller" in interpretation.next_move
 
 
 def test_soft_rejection_translation_does_not_pathologize():
@@ -49,3 +52,5 @@ def test_soft_rejection_translation_does_not_pathologize():
     assert interpretation.pattern_label == "soft_rejection_or_distancing"
     assert "does not prove" in interpretation.what_this_does_not_prove.lower()
     assert "my value" in interpretation.what_this_does_not_prove.lower()
+    assert "distance is being created" in interpretation.distancing_read
+    assert "not cornering" in interpretation.autonomy_protection

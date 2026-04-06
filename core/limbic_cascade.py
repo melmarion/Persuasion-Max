@@ -143,10 +143,22 @@ class CascadeResult:
             lines.extend([
                 "",
                 "Interpretation",
+                f"  Signal present: {rel.signal_present}",
+                f"  Probably means: {rel.plain_english_inference}",
+                f"  Do not infer: {rel.what_this_does_not_prove}",
+                f"  Best next move: {rel.next_move}",
+                "",
+                "Operator Read",
                 f"  Pattern: {rel.pattern_label} ({rel.confidence} confidence)",
-                f"  Plain reading: {rel.plain_english_inference}",
+                f"  Congruence: {rel.congruence_read}",
+                f"  Guardedness: {rel.guardedness_read}",
+                f"  Pressure: {rel.pressure_read}",
+                f"  Distancing: {rel.distancing_read}",
+                f"  Ambiguity: {rel.ambiguity_read}",
+                f"  Tactical empathy: {rel.tactical_empathy}",
+                f"  Autonomy protection: {rel.autonomy_protection}",
+                f"  Calibrated question posture: {rel.calibrated_question_posture}",
                 f"  Internal translation: {rel.clean_internal_translation}",
-                f"  Do not overclaim: {rel.what_this_does_not_prove}",
                 f"  Response style: {rel.response_style}",
             ])
 
@@ -355,14 +367,42 @@ class LimbicCascade:
         """Analyze two stimuli and return the delta."""
         result_a = self.analyze(text_a, **kwargs)
         result_b = self.analyze(text_b, **kwargs)
+        rel_a = result_a.relational_interpretation
+        rel_b = result_b.relational_interpretation
+
+        operator_delta = None
+        if rel_a and rel_b:
+            operator_delta = {
+                "signal_shift": f"{rel_a.signal_present} -> {rel_b.signal_present}",
+                "pressure_cleaner": "b" if result_b.prediction.retaliation_probability < result_a.prediction.retaliation_probability else "a",
+                "congruence_cleaner": "b" if result_b.circuits.conflict_level < result_a.circuits.conflict_level else "a",
+                "ambiguity_cleaner": "b" if result_b.appraisal.certainty > result_a.appraisal.certainty else "a",
+                "next_move_upgrade": {
+                    "a": rel_a.next_move,
+                    "b": rel_b.next_move,
+                },
+                "autonomy_protection_upgrade": {
+                    "a": rel_a.autonomy_protection,
+                    "b": rel_b.autonomy_protection,
+                },
+                "tactical_empathy_upgrade": {
+                    "a": rel_a.tactical_empathy,
+                    "b": rel_b.tactical_empathy,
+                },
+            }
 
         return {
             "a": {"text": text_a[:100], "effectiveness": result_a.effectiveness,
-                  "behavior": result_a.prediction.predicted_behavior},
+                  "behavior": result_a.prediction.predicted_behavior,
+                  "signal_present": rel_a.signal_present if rel_a else None,
+                  "best_next_move": rel_a.next_move if rel_a else None},
             "b": {"text": text_b[:100], "effectiveness": result_b.effectiveness,
-                  "behavior": result_b.prediction.predicted_behavior},
+                  "behavior": result_b.prediction.predicted_behavior,
+                  "signal_present": rel_b.signal_present if rel_b else None,
+                  "best_next_move": rel_b.next_move if rel_b else None},
             "delta_effectiveness": round(result_b.effectiveness - result_a.effectiveness, 4),
             "a_appraisal": result_a.appraisal.to_dict(),
             "b_appraisal": result_b.appraisal.to_dict(),
+            "operator_delta": operator_delta,
             "winner": "b" if result_b.effectiveness > result_a.effectiveness else "a",
         }
