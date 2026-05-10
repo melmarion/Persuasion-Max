@@ -11,7 +11,7 @@ import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, Depends, HTTPException, Header
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from typing import Optional
@@ -31,12 +31,45 @@ app = FastAPI(
     version="1.0.0",
 )
 
+# CORS: read allowed origins from PMAX_ALLOWED_ORIGINS env (comma-separated).
+# Defaults to localhost dev only — open CORS to "*" was a deploy hazard
+# because the LLM-touching endpoints below burn Anthropic credits.
+_default_origins = "http://localhost:3000,http://localhost:5173,http://127.0.0.1:3000"
+_allowed_origins = [
+    o.strip() for o in os.environ.get("PMAX_ALLOWED_ORIGINS", _default_origins).split(",")
+    if o.strip()
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
+    allow_origins=_allowed_origins,
+    allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
+
+
+# ─── Auth dependency ────────────────────────────────────────────────────────
+# If PMAX_API_KEY is set, every protected endpoint requires the matching
+# X-API-Key header (or Authorization: Bearer <key>). If unset, the API is
+# open — intended only for local dev. Deploy with PMAX_API_KEY set.
+def require_api_key(
+    x_api_key: Optional[str] = Header(default=None),
+    authorization: Optional[str] = Header(default=None),
+) -> None:
+    expected = os.environ.get("PMAX_API_KEY", "").strip()
+    if not expected:
+        return  # local-dev mode: open
+    candidates: list[str] = []
+    if x_api_key:
+        candidates.append(x_api_key)
+    if authorization and authorization.lower().startswith("bearer "):
+        candidates.append(authorization[7:].strip())
+    if expected in candidates:
+        return
+    raise HTTPException(status_code=401, detail="Invalid or missing API key")
+
+
+_AUTH = [Depends(require_api_key)]
+
 
 cascade = LimbicCascade()
 patterns = UXPatternLibrary()
@@ -62,7 +95,7 @@ class CompareRequest(BaseModel):
     mode: str = "heuristic"
 
 
-@app.post("/analyze")
+@app.post("/analyze", dependencies=_AUTH)
 def analyze(req: AnalyzeRequest):
     """Run full 6-stage limbic cascade on a stimulus."""
     c = LimbicCascade(extraction_mode=req.mode)
@@ -74,14 +107,14 @@ def analyze(req: AnalyzeRequest):
     return result.to_dict()
 
 
-@app.post("/compare")
+@app.post("/compare", dependencies=_AUTH)
 def compare(req: CompareRequest):
     """A/B compare two stimuli."""
     c = LimbicCascade(extraction_mode=req.mode)
     return c.compare(req.text_a, req.text_b)
 
 
-@app.get("/patterns")
+@app.get("/patterns", dependencies=_AUTH)
 def get_patterns(
     category: Optional[str] = None,
     weak: Optional[str] = None,
@@ -118,7 +151,7 @@ class OptimizeRequest(BaseModel):
     candidates_per_round: int = 5
     domain: str = "universal"
 
-@app.post("/optimize")
+@app.post("/optimize", dependencies=_AUTH)
 def optimize_copy(req: OptimizeRequest):
     """Generate maximally persuasive copy via iterative scoring."""
     from core.optimization_engine import OptimizationEngine
@@ -141,7 +174,7 @@ class DomainPredictRequest(BaseModel):
     response_timing: float = 0.5
     stakeholder_type: Optional[str] = None
 
-@app.post("/domain-predict")
+@app.post("/domain-predict", dependencies=_AUTH)
 def domain_predict(req: DomainPredictRequest):
     """Run domain-aware prediction with domain-specific outcomes."""
     from core.domain_predictor import DomainPredictor
@@ -157,13 +190,13 @@ def domain_predict(req: DomainPredictRequest):
     return result.to_dict()
 
 
-@app.get("/techniques")
+@app.get("/techniques", dependencies=_AUTH)
 def get_technique_impacts():
     """Get all technique-to-appraisal mappings."""
     return {k: v.to_dict() for k, v in TECHNIQUE_IMPACTS.items()}
 
 
-@app.post("/technique-bridge")
+@app.post("/technique-bridge", dependencies=_AUTH)
 def technique_bridge(techniques_detected: list[str], base_appraisal: Optional[dict] = None):
     """Apply detected technique impacts to appraisal scores."""
     base = base_appraisal or AppraisalScores().to_dict()
@@ -187,31 +220,31 @@ class SRSUpdateRequest(BaseModel):
     quality: int = Field(..., ge=1, le=5)
 
 
-@app.post("/training/score")
+@app.post("/training/score", dependencies=_AUTH)
 def score_response(req: ScoreRequest):
     """Score a player response against NPC psychology."""
     return scorer.score(req.response_text, req.npc_id, req.difficulty)
 
 
-@app.get("/training/techniques")
+@app.get("/training/techniques", dependencies=_AUTH)
 def list_techniques(category: Optional[str] = None):
     """List all techniques from the master library."""
     return techniques.list(category=category)
 
 
-@app.get("/training/techniques/{technique_id}")
+@app.get("/training/techniques/{technique_id}", dependencies=_AUTH)
 def get_technique(technique_id: str):
     """Get detailed technique info."""
     return techniques.get(technique_id)
 
 
-@app.post("/training/combo")
+@app.post("/training/combo", dependencies=_AUTH)
 def evaluate_combo(req: ComboRequest):
     """Evaluate a technique combo sequence."""
     return scorer.evaluate_combo(req.tags)
 
 
-@app.get("/training/reward-sequence")
+@app.get("/training/reward-sequence", dependencies=_AUTH)
 def get_reward_sequence(
     event_type: str = "breakthrough",
     intensity: str = "normal",
@@ -220,19 +253,19 @@ def get_reward_sequence(
     return reward_seq.get_sequence(event_type, intensity)
 
 
-@app.get("/training/difficulty/{level}")
+@app.get("/training/difficulty/{level}", dependencies=_AUTH)
 def get_difficulty(level: str):
     """Get difficulty modifiers for a level."""
     return difficulty.get_level(level)
 
 
-@app.post("/training/srs/update")
+@app.post("/training/srs/update", dependencies=_AUTH)
 def srs_update(req: SRSUpdateRequest):
     """Update spaced repetition card after practice."""
     return srs.update_card(req.skill_id, req.quality)
 
 
-@app.get("/training/srs/due")
+@app.get("/training/srs/due", dependencies=_AUTH)
 def srs_due():
     """Get skills due for review."""
     return srs.get_due_cards()
@@ -243,7 +276,7 @@ def srs_due():
 class SequenceRequest(BaseModel):
     stimuli: list[str] = Field(..., min_length=2)
 
-@app.post("/sequence")
+@app.post("/sequence", dependencies=_AUTH)
 def analyze_sequence(req: SequenceRequest):
     """Analyze an ordered sequence of stimuli as a trajectory."""
     from core.sequence_analyzer import SequenceAnalyzer
