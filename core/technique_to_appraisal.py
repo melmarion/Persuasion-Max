@@ -195,7 +195,11 @@ def apply_technique_impacts(
                      "agency", "certainty", "temporal_proximity"]:
             shift = getattr(impact, dim)
             if shift != 0:
-                adjusted[dim] = round(min(1.0, max(0.0, adjusted[dim] + shift)), 3)
+                # Default missing dimensions to the neutral 0.5 used across the
+                # appraisal layer so a partial base_appraisal (e.g. from an API
+                # client) does not raise KeyError.
+                current = adjusted.get(dim, 0.5)
+                adjusted[dim] = round(min(1.0, max(0.0, current + shift)), 3)
 
         disgust_signals.append(impact.disgust_risk)
 
